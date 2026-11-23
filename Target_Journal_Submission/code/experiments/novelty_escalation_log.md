@@ -211,3 +211,8 @@ Built from abstracts + Crossref/OpenAlex only (ScienceDirect blocked). Claim lim
   crashed when no signal passed the 20%-availability filter in a training window (M2 substation 33, very short
   series). Fix: such a model returns no score (NaN) for that retraining period, as for any missing data.
   Code path never triggered on M1 (M1 scores unchanged). sigma3 M2 recomputed for the remaining substations.
+- 2026-11-23 (session 3) DRY RUN of scripts/m2_evaluate.py on M1 (in-sample, development only; files
+  results/DRYRUN_insample_m1_*.csv). Code runs end-to-end (27 min, 2000 boots). M1 in-sample: no HF4 contrast
+  significant at n = 28; HF1 threshold-free: SRCR-C vs SRCR-all 23/28 faults better, p = 0.009; AE-comfort vs
+  AE p = 0.040; Loop-3s-C vs Loop-3s p = 0.060. Power warning: n = 25 on M2 -> the pooled M1+M2 secondary
+  analysis (A4) is needed for adequate power; report both, primary stays M2.
