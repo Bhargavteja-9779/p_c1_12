@@ -24,7 +24,20 @@ STEP 0: journal landscape and 72-day check (in progress)
 - Pilot (code/experiments/pilot/pilot_signals.py): 44% of 54 faults show |z|>4 control-loop deviation in 7 d
   before report vs own 120-d baseline. Exploratory only; normal-day false-alarm rate not yet measured.
 
+- STEP 0 DONE (2026-11-23): 841 journals scanned. No energy/AI journal at measurable publishers passes the
+  72-day rule. SELECTED: Energy and AI (Elsevier, 2666-5468); 72-day status + IF/quartile UNVERIFIED (stated in
+  journal_selection/selected_journal.md). Reserves: Smart Energy, Energy. Rejected: ESR (passes timing, poor fit).
+- Topic: PreDist DH substations, proposed SRCR (setpoint-relative control-loop residuals + fleet quantile model)
+  evaluated with a new continuous-monitoring protocol. M2 = LOCKED test (experiments/TEST_LOCK.md).
+  Protocol v1 pre-registered: code/experiments/protocol.md.
+- Code: code/src/{data/predist.py, evaluation/continuous.py, evaluation/runner.py, models/online.py, ae.py,
+  baselines.py, srcr.py, features/loops.py}; scripts/run_online_method.py, run_srcr_cv.py, build_cache.py.
+  Python 3.13 main env; official EnergyFaultDetector in /opt/efdenv (py3.12; recreate with
+  `uv venv -p /usr/bin/python3.12 /opt/efdenv && VIRTUAL_ENV=/opt/efdenv uv pip install energy-fault-detector==0.8.1`).
+
 ## NEXT ACTION
-1. `scripts/acceptance_scan.py candidates_filtered.csv` (resumable; appends to acceptance_scan_summary.csv).
-   If it was interrupted, rerun it from journal_selection/; it skips finished ISSNs.
-2. Filter: median well < 72 and p75 <= 72, n_dated >= 20; check scope/IF; pick journal.
+1. Finish M1 scores: ae (default) + srcr (results/scores/*/m1, git-ignored; regenerate via scripts).
+   Then compute operating curves (src/evaluation/runner.operating_curve) and compare at FA budget 2/sub-yr.
+2. Run baselines on M1: rule, sigma3, iforest, loop3s, qnbm, ae_cond (scripts/run_online_method.py).
+3. STEP 1 journal benchmark from Energy and AI papers via OpenAlex/arXiv (ScienceDirect blocked).
+4. Novelty map (30 papers) + scorecard; D6 loop on M1 only.
