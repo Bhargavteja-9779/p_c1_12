@@ -76,3 +76,23 @@ Later versions may ADD experiments; any change to items below is logged with dat
   "minimum false alarms per substation-year needed to reach recall r" for r in the recall levels that both
   methods reach, with cluster-bootstrap CI over substations. The v1 primary endpoint (recall at B = 2) is
   unchanged and remains primary.
+- A4 (2026-11-23, before ANY detector output on M2; only M2 column availability was checked: hc1 loop in
+  58/58 substations, dhw_sup 14, dhw_sto 13, p_ret 19): FACTORIAL ANALYSIS fixed as the primary question.
+  Cells: SCOPE {comfort loops, all signals} x REPRESENTATION {relative to setpoint, absolute} x MODEL.
+    comfort x relative : rule (B1), loop3s_c (B7c), SRCR-C (fleet quantile ML)
+    all     x relative : loop3s (B7), SRCR gate+1s+local with p_ret
+    comfort x absolute : ae_comfort (B4c)
+    all     x absolute : sigma3 (B2), iforest (B3), qnbm (B5), ae (B4), ae_cond (B4)
+  M2 procedure: per-substation methods run online on M2 exactly as on M1; fleet models trained on ALL M1
+  normal data (seeds 0-9), applied to M2 unchanged; every method uses its M1-chosen (tau, c_thr) for
+  B in {1, 2, 4}; realised M2 FA rates reported. Pooled M1+M2 numbers reported as secondary.
+  Pre-registered hypotheses (tested on M2, Holm-corrected within each family):
+   HF1 SCOPE: at matched recall, comfort-scope cells need fewer false alarms than all-signal cells with the
+       same representation and model class (SRCR-C vs SRCR-all; loop3s_c vs loop3s; ae_comfort vs ae):
+       paired per-fault log-rank Wilcoxon, and FA ratio with cluster-bootstrap 95% CI excluding 1.
+   HF2 REPRESENTATION: comfort x relative cells beat comfort x absolute (loop3s_c and SRCR-C vs ae_comfort).
+   HF3 MODEL: within comfort x relative, model class matters little: we report rule vs loop3s_c vs SRCR-C
+       differences with CIs; we do NOT claim equivalence (n too small), only absence/presence of a
+       significant difference.
+   HF4 PRIMARY ENDPOINT (v1): recall at B = 2 on M2, SRCR-C vs every baseline (McNemar exact + paired
+       cluster bootstrap, Holm). Expected direction: SRCR-C >= AE; no hypothesis vs rule.
