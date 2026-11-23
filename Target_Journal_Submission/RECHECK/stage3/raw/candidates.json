@@ -602,5 +602,252 @@
   "abs_src": "arXiv API",
   "doi": "10.48550/arXiv.2602.13288",
   "crossref": "404"
+ },
+ "10.1109/tase.2011.2176490": {
+  "key": "10.1109/tase.2011.2176490",
+  "title": "Performance Assessment and Design for Univariate Alarm Systems Based on FAR, MAR, and AAD",
+  "year": 2011,
+  "venue": "IEEE Transactions on Automation Science and Engineering",
+  "abstract": "The performance of a univariate alarm system can be assessed in many cases by three indices, namely, the false alarm rate (FAR), missed alarm rate (MAR), and averaged alarm delay (AAD). First, this paper studies the definition and computation of the FAR, MAR, and AAD for the basic mechanism of alarm generation solely based on a trip point, and for the advanced mechanism of alarm generation by exploiting alarm on/off delays. Second, a systematic design of alarm systems is investigated based on the three performance indices and the tradeoffs among them. The computation of FAR, MAR, and AAD and the design of alarm systems require the probability density functions (PDFs) of the univariate process variable in the normal and abnormal conditions. Thus, a new method based on mean change detection is proposed to estimate the two PDFs. Numerical examples and an industrial case study are provided to validate the obtained theoretical results on the FAR, MAR and AAD, and to illustrate the proposed performance assessment and alarm system design procedures.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1109/tase.2011.2176490",
+  "crossref": "yes",
+  "cr_title": "Performance Assessment and Design for Univariate Alarm Systems Based on FAR, MAR, and AAD"
+ },
+ "10.1016/j.cherd.2021.06.022": {
+  "key": "10.1016/j.cherd.2021.06.022",
+  "title": "Quality vs. quantity of alarm messages - How to measure the performance of an alarm system",
+  "year": 2021,
+  "venue": "Chemical Engineering Research and Design",
+  "abstract": "Despite significant efforts to measure and assess the performance of alarm systems, to this day, no silver bullet has been found. The majority of the existing standards and guidelines focus on the alarm load of the operators, either during normal or upset plant conditions, and only a small fraction takes into consideration the actions performed by the operators. In this study, an overview of the evolution of alarm system performance metrics is presented and the current data-based approaches are grouped into seven categories based on the goals of and the methodologies associated with each metric. Deriving from our categorical overview, the terminological differences between the academic and industrial approaches of alarm system performance measurement are reflected. Moreover, we highlight how extremely unbalanced the performance measurement of alarm systems is towards quantitative metrics instead of focusing on qualitative assessment, invoking the threat of excessive alarm reductions resulting from such a unilateral approach. The critical aspects of qualitative performance measurement of alarm systems is demonstrated in terms of the comparison of the alarm system of an industrial hydrofluoric acid alkylation unit before and after the alarm rationalization process. The quality of the alarm messages is measured via their informativeness and actionability, in other words, how appropriate the parameter settings are for the everyday work and how actionable they are by the operators of the process.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1016/j.cherd.2021.06.022",
+  "crossref": "yes",
+  "cr_title": "Quality vs. quantity of alarm messages - How to measure the performance of an alarm system"
+ },
+ "10.3389/fdgth.2022.843747": {
+  "key": "10.3389/fdgth.2022.843747",
+  "title": "Computational approaches to alleviate alarm fatigue in intensive care medicine: A systematic literature review",
+  "year": 2022,
+  "venue": "Frontiers in Digital Health",
+  "abstract": "Patient monitoring technology has been used to guide therapy and alert staff when a vital sign leaves a predefined range in the intensive care unit (ICU) for decades. However, large amounts of technically false or clinically irrelevant alarms provoke alarm fatigue in staff leading to desensitisation towards critical alarms. With this systematic review, we are following the Preferred Reporting Items for Systematic Reviews (PRISMA) checklist in order to summarise scientific efforts that aimed to develop IT systems to reduce alarm fatigue in ICUs. 69 peer-reviewed publications were included. The majority of publications targeted the avoidance of technically false alarms, while the remainder focused on prediction of patient deterioration or alarm presentation. The investigated alarm types were mostly associated with heart rate or arrhythmia, followed by arterial blood pressure, oxygen saturation, and respiratory rate. Most publications focused on the development of software solutions, some on wearables, smartphones, or headmounted displays for delivering alarms to staff. The most commonly used statistical models were tree-based. In conclusion, we found strong evidence that alarm fatigue can be alleviated by IT-based solutions. However, future efforts should focus more on the avoidance of clinically non-actionable alarms which could be accelerated by improving the data availability. Systematic Review Registration: https://www.crd.york.ac.uk/prospero/display_record.php?ID=CRD42021233461 , identifier: CRD42021233461.",
+  "abs_src": "OpenAlex",
+  "doi": "10.3389/fdgth.2022.843747",
+  "crossref": "yes",
+  "cr_title": "Computational approaches to alleviate alarm fatigue in intensive care medicine: A systematic literature review"
+ },
+ "10.1145/357830.357849": {
+  "key": "10.1145/357830.357849",
+  "title": "The base-rate fallacy and the difficulty of intrusion detection",
+  "year": 2000,
+  "venue": "ACM Transactions on Information and System Security",
+  "abstract": "Many different demands can be made of intrusion detection systems. An important requirement is that an intrusion detection system be effective ; that is, it should detect a substantial percentage of intrusions into the supervised system, while still keeping the false alarm rate at an acceptable level. This article demonstrates that, for a reasonable set of assumptions, the false alarm rate is the limiting factor for the performance of an intrusion detection system. This is due to the base-rate fallacy phenomenon, that in order to achieve substantial values of the Bayesian detection rate P(Intrusion***Alarm) , we have to achieve a (perhaps in some cases unattainably) low false alarm rate. A selection of reports of intrusion detection performance are reviewed, and the conclusion is reached that there are indications that at least some types of intrusion detection have far to go before they can attain such low false alarm rates.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1145/357830.357849",
+  "crossref": "yes",
+  "cr_title": "The base-rate fallacy and the difficulty of intrusion detection"
+ },
+ "10.1111/2041-210x.13140": {
+  "key": "10.1111/2041-210x.13140",
+  "title": "The area under the precision\u2010recall curve as a performance metric for rare binary events",
+  "year": 2019,
+  "venue": "Methods in Ecology and Evolution",
+  "abstract": "Species distribution models are used to study biogeographic patterns and guide decision\u2010making. The variable quality of these models makes it critical to assess whether a model's outputs are suitable for the intended use, but commonly used evaluation approaches are inappropriate for many ecological contexts. In particular, unrealistically high performance assessments have been associated with models for rare species and predictions over large geographic extents. We evaluated the area under the precision\u2010recall curve ( AUC \u2010 PR ) as a performance metric for rare binary events, focusing on the assessment of species distribution models. Precision is the probability that a species is present given a predicted presence, while recall (more commonly called sensitivity) is the probability the model predicts presence in locations where the species has been observed. We simulated species at three levels of prevalence, compared AUC \u2010 PR and the area under the receiver operating characteristic curve ( AUC \u2010 ROC ) when the geographic extent of predictions was increased and assessed how well each metric reflected a model's utility to guide surveys for new populations. AUC \u2010 PR was robust to species rarity and, unlike AUC \u2010 ROC , not affected by an increasing geographic extent. The major advantages of AUC \u2010 PR arise because it does not incorporate correctly predicted absences and is therefore less prone to exaggerate model performance for unbalanced datasets. AUC \u2010 PR and precision were useful indicators of a model's utility for guiding surveys. We show that AUC \u2010 PR has important advantages for evaluating models of rare species, and its benefits in the context of unbalanced binary responses will make it applicable for other ecological studies. By not considering the true negative quadrant of the confusion matrix, AUC \u2010 PR ameliorates issues that arise when the geographic extent is increased beyond the species\u2019 range or when a large number of background points are used when absence information is unavailable. However, no single metric captures all aspects of performance nor provides an absolute index that can be compared across datasets. Our results indicate AUC \u2010 PR and precision can provide useful and intuitive metrics for evaluating a model's utility for guiding sampling, and can complement other metrics to help delineate a model's appropriate use.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1111/2041-210x.13140",
+  "crossref": "yes",
+  "cr_title": "The area under the precision\u2010recall curve as a performance metric for rare binary events"
+ },
+ "10.1371/journal.pone.0291908": {
+  "key": "10.1371/journal.pone.0291908",
+  "title": "Challenges in the real world use of classification accuracy metrics: From recall and precision to the Matthews correlation coefficient",
+  "year": 2023,
+  "venue": "PLoS ONE",
+  "abstract": "The accuracy of a classification is fundamental to its interpretation, use and ultimately decision making. Unfortunately, the apparent accuracy assessed can differ greatly from the true accuracy. Mis-estimation of classification accuracy metrics and associated mis-interpretations are often due to variations in prevalence and the use of an imperfect reference standard. The fundamental issues underlying the problems associated with variations in prevalence and reference standard quality are revisited here for binary classifications with particular attention focused on the use of the Matthews correlation coefficient (MCC). A key attribute claimed of the MCC is that a high value can only be attained when the classification performed well on both classes in a binary classification. However, it is shown here that the apparent magnitude of a set of popular accuracy metrics used in fields such as computer science medicine and environmental science (Recall, Precision, Specificity, Negative Predictive Value, J, F1, likelihood ratios and MCC) and one key attribute (prevalence) were all influenced greatly by variations in prevalence and use of an imperfect reference standard. Simulations using realistic values for data quality in applications such as remote sensing showed each metric varied over the range of possible prevalence and at differing levels of reference standard quality. The direction and magnitude of accuracy metric mis-estimation were a function of prevalence and the size and nature of the imperfections in the reference standard. It was evident that the apparent MCC could be substantially under- or over-estimated. Additionally, a high apparent MCC arose from an unquestionably poor classification. As with some other metrics of accuracy, the utility of the MCC may be overstated and apparent values need to be interpreted with caution. Apparent accuracy and prevalence values can be mis-leading and calls for the issues to be recognised and addressed should be heeded.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1371/journal.pone.0291908",
+  "crossref": "yes",
+  "cr_title": "Challenges in the real world use of classification accuracy metrics: From recall and precision to the Matthews correlation coefficient"
+ },
+ "10.1007/s10877-015-9808-2": {
+  "key": "10.1007/s10877-015-9808-2",
+  "title": "Reduction of clinically irrelevant alarms in patient monitoring by adaptive time delays",
+  "year": 2015,
+  "venue": "Journal of Clinical Monitoring and Computing",
+  "abstract": "",
+  "abs_src": "OpenAlex",
+  "doi": "10.1007/s10877-015-9808-2",
+  "crossref": "yes",
+  "cr_title": "Reduction of clinically irrelevant alarms in patient monitoring by adaptive time delays"
+ },
+ "10.1021/acs.iecr.8b06354": {
+  "key": "10.1021/acs.iecr.8b06354",
+  "title": "Industrial PID Control Loop Data Repository and Comparison of Fault Detection Methods",
+  "year": 2019,
+  "venue": "Industrial & Engineering Chemistry Research",
+  "abstract": "This paper presents the control loop data of industrial controllers that are recently made available online. All data are verified and some of it has been published previously to develop fault detection and diagnosis methods. Methods to detect faults that occur during the operation of an industrial process are important to improve profitability and have attracted attention previously. However, these methods are not always widely used in industry. One of the reasons is that any method needs to be robust and fully automated. The purpose of the data repository is to present data to test methods so that false positives and negatives are reduced to an insignificant number. Three previously published methods, oscillation detection based on the autocorrelation function, the idle index, and a method for quantization detection, together with a simple, novel saturation detection method and one new detection method are applied to all industrial data. The results are discussed along with ways to improve the robustness and automation potential of these methods.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1021/acs.iecr.8b06354",
+  "crossref": "yes",
+  "cr_title": "Industrial PID Control Loop Data Repository and Comparison\nof Fault Detection Methods"
+ },
+ "2407.12220": {
+  "key": "2407.12220",
+  "title": "Questionable practices in machine learning",
+  "year": "2024",
+  "venue": "arXiv",
+  "abstract": "Evaluating modern ML models is hard. The strong incentive for researchers and companies to report a state-of-the-art result on some metric often leads to questionable research practices (QRPs): bad practices which fall short of outright research fraud. We describe 44 such practices which can undermine reported results, giving examples where possible. Our list emphasises the evaluation of large language models (LLMs) on public benchmarks. We also discuss \"irreproducible research practices\", i.e. decisions that make it difficult or impossible for other researchers to reproduce, build on or audit previous research.",
+  "abs_src": "arXiv API",
+  "doi": "10.48550/arXiv.2407.12220",
+  "crossref": "404"
+ },
+ "2008.08713": {
+  "key": "2008.08713",
+  "title": "Generalizing Fault Detection Against Domain Shifts Using Stratification-Aware Cross-Validation",
+  "year": "2020",
+  "venue": "arXiv",
+  "abstract": "Incipient anomalies present milder symptoms compared to severe ones, and are more difficult to detect and diagnose due to their close resemblance to normal operating conditions. The lack of incipient anomaly examples in the training data can pose severe risks to anomaly detection methods that are built upon Machine Learning (ML) techniques, because these anomalies can be easily mistaken as normal operating conditions. To address this challenge, we propose to utilize the uncertainty information available from ensemble learning to identify potential misclassified incipient anomalies. We show in this paper that ensemble learning methods can give improved performance on incipient anomalies and identify common pitfalls in these models through extensive experiments on two real-world datasets. Then, we discuss how to design more effective ensemble models for detecting incipient anomalies.",
+  "abs_src": "arXiv API",
+  "doi": "10.48550/arXiv.2008.08713",
+  "crossref": "404"
+ },
+ "10.5281/zenodo.24408074": {
+  "key": "10.5281/zenodo.24408074",
+  "title": "Sensor Confirmation Timing and False Alarms in Oil Well Anomaly Detection: An Exploratory Study Using Petrobras 3W Field Records",
+  "year": 2026,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "abstract": "Preprint \u2014 Not peer reviewed This exploratory study examines sensor confirmation timing and false-alarm duration in oil-well anomaly detection using Petrobras 3W Dataset 2.0.0. The study compares temporal sensor confirmation rules across 24 previously explored records containing 13 eligible anomaly events and 12,809 minutes of normal operation. Both v0.8 and v0.12 detected five events within five minutes, while normal-operation alarm duration decreased from 225 to 146 minutes. This comparison does not represent matched alarm budgets. Under separately matched supplementary alarm budgets, v0.11 and v0.12 each detected 5 of 13 events, while normal alarm duration decreased from 217 to 206 minutes (5.1%). The v0.7 baseline produced the shortest normal alarm duration (103 minutes) but detected only 4 of 13 events. An additional short-window rule (v0.19) detected one further type 7 event, yielding 6 of 13 detections and 184 normal alarm minutes. Across 15 previously unused intervals from previously studied wells, all evaluated OrganOS variants missed both eligible type 5 events. A locally implemented, untuned Isolation Forest reference was also evaluated. This comparison does not reproduce a published benchmark protocol. These findings are exploratory. The comparison records were reused during candidate selection, and independent validation on previously unseen wells has not been completed. The accompanying reproduction package preserves experimental evidence, frozen parameters, code, and SHA-256 integrity information. Data source: Petrobras 3W Dataset 2.0.0. Reproducibility: The companion archive 3W_Preprint_Reproduction_Full_Package.zip is provided with the manuscript.",
+  "abs_src": "OpenAlex",
+  "doi": "10.5281/zenodo.24408074",
+  "crossref": "404"
+ },
+ "10.1109/tbme.2025.3618080": {
+  "key": "10.1109/tbme.2025.3618080",
+  "title": "External Validation Complexities: A Comparative Study of Late-Onset Sepsis Prediction Models Across Multiple Clinical Environments",
+  "year": 2025,
+  "venue": "IEEE Transactions on Biomedical Engineering",
+  "abstract": "OBJECTIVE: Neonatal late-onset sepsis (LOS) is a life-threatening condition in preterm infants in neonatal intensive care units (NICUs), with early detection being crucial for improving outcomes. Despite advancements in data-driven prediction models, their generalizability remains uncertain due to a lack of independent validation, particularly on national and international scales. This study evaluates the performance of two LOS prediction models on multiple validation datasets to assess their reliability for clinical implementation. METHODS: Two models were validated: (1) a multi-channel feature-based extreme gradient boosting model (MC-XGB) and (2) a deep neural network using raw RR intervals (RR-DNN). Validation was conducted on three NICU datasets: an internal dataset (68 LOS, 100 controls) from the model-development hospital in the Netherlands, a national external dataset (20 LOS, 20 controls) from another Dutch hospital, and an international external dataset (17 LOS, 17 controls) from a U.S. hospital. Model performance was assessed using the area under the receiver operating characteristic curve (AUC) across multiple prediction time windows, with an hourly risk analysis. RESULTS: Both models achieved a peak AUC of 0.82 in the internal dataset, their predictive performance demonstrates variable declines in external datasets. The respective AUCs for RR-DNN and MC-XGB were 0.80 and 0.72 in the national dataset, and 0.69 and 0.60 in the international dataset. This may result from variations in clinical practices, patient demographics, and monitoring technologies. CONCLUSION: Model performance declined in external validations, highlighting the challenges of implementing predictive models across diverse clinical settings. SIGNIFICANCE: This study emphasizes the need for standardized guidelines and improved data sharing to enhance model development and facilitate reliable integration into NICU workflow for improved LOS management.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1109/tbme.2025.3618080",
+  "crossref": "yes",
+  "cr_title": "External Validation Complexities: A Comparative Study of Late-Onset Sepsis Prediction Models Across Multiple Clinical Environments"
+ },
+ "2510.18520": {
+  "key": "2510.18520",
+  "title": "Partial VOROS: A Cost-aware Performance Metric for Binary Classifiers with Precision and Capacity Constraints",
+  "year": "2025",
+  "venue": "arXiv",
+  "abstract": "The ROC curve is widely used to assess binary classifiers. Yet for some applications, such as alert systems for monitoring hospitalized patients, conventional ROC analysis cannot meet two key deployment needs: enforcing a constraint on precision to avoid false alarm fatigue and imposing an upper bound on the number of predicted positives to represent the capacity of hospital staff. The usual area under the curve metric also does not reflect asymmetric costs for false positives and false negatives. In this paper we address all three of these issues. First, we show how the subset of classifiers that meet precision and capacity constraints occupy a feasible region in ROC space. We establish the polygon-shaped geometry of this region. We then define the partial area of lesser classifiers, a performance metric that is monotonic with cost and only accounts for the feasible region. Averaging this area over a desired distribution for cost parameters results in the partial volume over the ROC surface, or partial VOROS. In experiments predicting mortality risk from vital sign history on several datasets, we show this cost-aware metric can outperform alternatives at ranking classifiers for in-hospital alerts.",
+  "abs_src": "arXiv API",
+  "doi": "10.48550/arXiv.2510.18520",
+  "crossref": "404"
+ },
+ "10.1109/icde65706.2026.00295": {
+  "key": "10.1109/icde65706.2026.00295",
+  "title": "From Benchmarks to Production: Transferring Time Series Anomaly Detection Methods for Electricity Production Monitoring",
+  "year": 2026,
+  "venue": "IEEE International Conference on Data Engineering (ICDE)",
+  "abstract": "Accurate forecasting of electricity production is essential for maintaining the operational efficiency and strategic planning of energy utilities. In industrial settings, such forecasts are generated daily to ensure supply-demand balance and optimal management of production assets. However, the increasing complexity of modern power systems and data flows poses significant challenges for ensuring the reliability and consistency of these forecasts. This paper addresses the problem of anomaly detection in short-term production forecasts at EDF, formulated as identifying atypical intra-day patterns that may signal data quality issues or operational irregularities. We introduce TAMIS, a scalable and interpretable system that analyzes daily production time series to automatically detect anomalous days based on deviations from historical patterns learned from past data. Designed for human-in-the-loop workflows, TAMIS surfaces top-ranked anomalies through an automated daily newsletter, enabling efficient expert review and continuous monitoring. An extensive experimental evaluation on real-world industrial data demonstrates that TAMIS achieves the best accuracy-efficiency trade-off compared to baseline methods. To foster further research and reproducibility, we publicly release the anonymized application datasets used in our study.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1109/icde65706.2026.00295",
+  "crossref": "yes",
+  "cr_title": "From Benchmarks to Production: Transferring Time Series Anomaly Detection Methods for Electricity Production Monitoring"
+ },
+ "2610.15818": {
+  "key": "2610.15818",
+  "title": "Benchmarking Deep Learning Models for Anomaly Detection in Real-World Cloud Telemetry",
+  "year": "2026",
+  "venue": "arXiv",
+  "abstract": "Modern cloud platforms generate high-dimensional, noisy telemetry from thousands of microservices. Unlike classical anomaly detection benchmarks, cloud anomalies are short-lived, irregular, and largely non-periodic, making timely detection challenging. We present an empirical benchmark of deep learning models for anomaly detection using a real-world IBM Cloud Console dataset. We evaluate GRU, Transformer, TimesNet, and Autoformer architectures using the Numenta Anomaly Benchmark (NAB), a timing-aware metric that accounts for early detection and false alarms. TimesNet achieves the highest NAB scores due to strong early-detection sensitivity. Transformer models also detect anomalies early but incur higher false-positive rates. An improved GRU autoencoder, incorporating robust scoring and persistence rules, achieves competitive performance with a more stable false-alarm profile. Overall, the modest performance differences suggest that real cloud anomalies are dominated by short-term deviations rather than persistent periodic structure, emphasizing the importance of timing-aware evaluation and robust post-processing.",
+  "abs_src": "arXiv API",
+  "doi": "10.48550/arXiv.2610.15818",
+  "crossref": "404"
+ },
+ "2511.18739": {
+  "key": "2511.18739",
+  "title": "A Problem-Oriented Taxonomy of Evaluation Metrics for Time Series Anomaly Detection",
+  "year": "2025",
+  "venue": "arXiv",
+  "abstract": "Time series anomaly detection is widely used in IoT and cyber-physical systems, yet its evaluation remains challenging due to diverse application objectives and heterogeneous metric assumptions. This study introduces a problem-oriented framework that reinterprets existing metrics based on the specific evaluation challenges they are designed to address, rather than their mathematical forms or output structures. We categorize over twenty commonly used metrics into six dimensions: 1) basic accuracy-driven evaluation; 2) timeliness-aware reward mechanisms; 3) tolerance to labeling imprecision; 4) penalties reflecting human-audit cost; 5) robustness against random or inflated scores; and 6) parameter-free comparability for cross-dataset benchmarking. Comprehensive experiments are conducted to examine metric behavior under genuine, random, and oracle detection scenarios. By comparing their resulting score distributions, we quantify each metric's discriminative ability -- its capability to distinguish meaningful detections from random noise. The results show that while most event-level metrics exhibit strong separability, several widely used metrics (e.g., NAB, Point-Adjust) demonstrate limited resistance to random-score inflation. These findings reveal that metric suitability must be inherently task-dependent and aligned with the operational objectives of IoT applications. The proposed framework offers a unified analytical perspective for understanding existing metrics and provides practical guidance for selecting or developing more context-aware, robust, and fair evaluation methodologies for time series anomaly detection.",
+  "abs_src": "arXiv API",
+  "doi": "10.48550/arXiv.2511.18739",
+  "crossref": "404"
+ },
+ "10.1016/j.enbuild.2023.113801": {
+  "key": "10.1016/j.enbuild.2023.113801",
+  "title": "Barriers and drivers for implementation of automatic fault detection and diagnosis in buildings and HVAC systems: An outlook from industry experts",
+  "year": 2023,
+  "venue": "Energy and Buildings",
+  "abstract": "This study aimed to assess the current status of Fault Detection and Diagnosis (FDD) implementation in building and Heating, Ventilation and Air Conditioning (HVAC) systems in the building industry.Semi-structured qualitative interviews were conducted with 29 experts from different HVAC company types in the building industry.In addition, a literature review was performed to investigate academic research on FDD implementation.The study identified barriers and drivers to implementing FDD systems, these included; technological and technical, economic and business, users, social and societal, and regulatory.An Automatic Fault Detection and Diagnosis (AFDD) implementation matrix was developed to evaluate FDD implementation in building systems, and all interviewed companies were classified based on their FDD knowledge, services, and type.Results show that expert-rule systems are still prevalent in the industry.The literature review revealed a scarcity of FDD implementation studies in academic research due to challenges in testing and validating results in actual building operation conditions.Lastly, this study discusses the key findings: 1) FDD does not sell, 2) Lack of actively engaging and promoting FDD services, 3) FDD seems to be an academic definition, 4) The bottlenecks: The fault handling process and user's mindset towards FDD, and 5) Governmental regulations and legislatives drive the implementation focus.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1016/j.enbuild.2023.113801",
+  "crossref": "yes",
+  "cr_title": "Barriers and drivers for implementation of automatic fault detection and diagnosis in buildings and HVAC systems: An outlook from industry experts"
+ },
+ "10.1016/j.applthermaleng.2023.120964": {
+  "key": "10.1016/j.applthermaleng.2023.120964",
+  "title": "Automated and real-time anomaly indexing for district heating maintenance decision support system",
+  "year": 2023,
+  "venue": "Applied Thermal Engineering",
+  "abstract": "Faults are estimated to cause a significant amount of energy consumption and waste in district heating systems (DHS), and lowering this is critical to reduce costs and energy waste, but also to increase the security of supply. There are multiple examples of data-driven fault detection and diagnosis methods being employed in DHS to detect faults, however, it has been observed that a great number of faults are detected and it is not sustainable to investigate all of them. This paper, therefore, proposes implementing Chernoff bound, which is a method that can determine the fault probability level of detected faults to filter out insignificant faults. This methodology is integrated into a general continuous fault detection maintenance framework which can utilize multiple fault detection and diagnosis methods. The Chernoff bound methodology is modified for better generalization and implementation, with regard to the input data and other methods employed. The methodology has been applied to a DHS case and has proven to be able to filter out insignificant faults while still retaining a known fault, and identifying other anomalies in the operation. This framework and the introduction of Chernoff bound as a means to rank the confidence of the various detection of faults, can help maintenance crews allocate their time and effort in a better way, to only focus on the most potential critical faults. The data used as a case study is of 1-hour frequency, and some, but not all faults can be observed in such data. The optimal data is hypothesized to be of higher frequency, increasing the capabilities of the framework.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1016/j.applthermaleng.2023.120964",
+  "crossref": "yes",
+  "cr_title": "Automated and real-time anomaly indexing for district heating maintenance decision support system"
+ },
+ "10.1016/j.egyai.2026.100788": {
+  "key": "10.1016/j.egyai.2026.100788",
+  "title": "Concept drift detection in district heating: A characterization framework and detector-centric benchmark",
+  "year": 2026,
+  "venue": "Energy and AI",
+  "abstract": "Machine learning models for district heating load forecasting operate in non-stationary data stream environments where concept drift causes progressive performance deterioration. Systematic approaches to detect drift remain limited due to ad hoc algorithm selection, predominant evaluation within active model adaptation contexts, and lacking application-specific benchmarks with documented ground truth drift occurrences. This paper develops a benchmarking framework for concept drift detection using district heating as the application domain. We present a multidimensional characterization framework employing dissimilarity measurement as the primary dimension to enable cross-category detection method comparison. A standardized evaluation protocol combining detector-centric drift detection metrics, model performance metrics, and computational effort metrics isolates detection accuracy from downstream model adaptation effectiveness. Eight representative drift detection methods spanning performance-based and data distribution-based categories are benchmarked on the DHDrift dataset comprising nine scenarios with sudden and incremental drift at three severity levels, complemented by hyperparameter robustness, noise robustness, and real-world case studies. Maximum MCC of 0.32 highlights the inherent difficulty of detecting drift in seasonal thermal load data. Kolmogorov\u2013Smirnov Windowing achieves highest drift detection accuracy, while Paired Learners demonstrates statistically superior load forecasting improvement. Performance-based methods achieve detection latencies below four days for sudden drift, whereas data distribution-based methods require longer evidence accumulation. All methods operate within real-time computational constraints. However, incremental drift affecting load pattern shapes emerges as a critical capability gap among the evaluated methods. The complementary studies show that leading algorithm rankings persist under suboptimal hyperparameter configurations, measurement noise, and a real-world case, providing initial evidence for transferability.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1016/j.egyai.2026.100788",
+  "crossref": "yes",
+  "cr_title": "Concept drift detection in district heating: A characterization framework and detector-centric benchmark"
+ },
+ "10.1007/s00607-026-01768-0": {
+  "key": "10.1007/s00607-026-01768-0",
+  "title": "Attributing false alarms in multivariate time-series anomaly detection: an injection-based ground-truth protocol and a method\u2013detector matching study",
+  "year": 2026,
+  "venue": "Computing",
+  "abstract": "",
+  "abs_src": "OpenAlex",
+  "doi": "10.1007/s00607-026-01768-0",
+  "crossref": "yes",
+  "cr_title": "Attributing false alarms in multivariate time-series anomaly detection: an injection-based ground-truth protocol and a method\u2013detector matching study"
+ },
+ "10.3390/en19122920": {
+  "key": "10.3390/en19122920",
+  "title": "Predicting District Heating Networks Fault Location with Graph Neural Networks",
+  "year": 2026,
+  "venue": "Energies",
+  "abstract": "District heating networks (DHNs) are critical infrastructure prone to physical failures such as leakage-related faults, which cause significant energy and financial losses. Traditional physics-based monitoring methods are computationally expensive and require the continual recalibration of complex mathematical models, while standard data-driven approaches often fail due to the scarcity of real-world sensor data. This study addresses these challenges by proposing a topology-aware graph neural network (GNN) architecture for fault localization. The methodology follows a two-stage process: first, a graph attention-based architecture is designed and optimized using a synthetic dataset to effectively capture multi-step neighborhood dependencies. Second, the model is adapted and evaluated on a physically simulated dataset of a real urban DHN, comprising 187 nodes and 42,570 operational states. The problem is formulated as a multi-class classification task across supply and return subnets. The results demonstrate high predictive performance, achieving an accuracy of 96% on the supply subnet and 91% on the return subnet. Analysis of prediction errors reveals a strong bias towards local topological mistakes, indicating the model\u2019s ability to capture the physical propagation of disturbances. These findings highlight the efficacy of GNNs in handling sparse data and exploiting network topology for robust DHN monitoring.",
+  "abs_src": "OpenAlex",
+  "doi": "10.3390/en19122920",
+  "crossref": "yes",
+  "cr_title": "Predicting District Heating Networks Fault Location with Graph Neural Networks"
+ },
+ "10.1109/iisec69317.2026.11418403": {
+  "key": "10.1109/iisec69317.2026.11418403",
+  "title": "Automating Machine Learning Optimization for Fault Prediction in District Heating Using Large Language Models",
+  "year": 2026,
+  "venue": "International Informatics and Software Engineering Conference (IISEC)",
+  "abstract": "District heating (DH) is the main heat source in two thirds of homes in Denmark; however, aging networks require proactive maintenance supported by predictive asset management strategies. Machine learning (ML) models have shown promise in estimating fault vulnerability in district heating networks (DHNs). To achieve high model performance, proper optimization strategies are necessary. Traditional approaches such as grid search are time-consuming, creating a need for automated alternatives. This study presents an automated optimization strategy that incorporates an in-the-loop large language model (LLM) to enhance ML model performance. The proposed framework leverages the LLM's ability to learn from historical optimization results and suggest improved parameter values, such as training data size and which oversampling (OS) method to use. A case study of a DHN in Denmark is presented to evaluate the proposed method. To evaluate the LLM-optimized model, the results are compared with prior work, where grid search was used to optimize an ML model on the same dataset. The LLM-optimized model demonstrates higher accuracy among the pipes it predicts most likely to fail, and at a significantly reduced computation time. These findings demonstrate the viability of using LLMs to automate ML optimization for infrastructure fault prediction.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1109/iisec69317.2026.11418403",
+  "crossref": "yes",
+  "cr_title": "Automating Machine Learning Optimization for Fault Prediction in District Heating Using Large Language Models"
+ },
+ "10.46855/energy-proceedings-12258": {
+  "key": "10.46855/energy-proceedings-12258",
+  "title": "Evaluation of an Integrated Fault Detection and Compensation for Building-Level Radiator Systems in District Heating",
+  "year": 2026,
+  "venue": null,
+  "abstract": "Valve and control faults in building-level radiator systems degrade the efficiency of district heating networks and cause occupant discomfort.Although methods for fault detection and compensation exist independently, integrated systems that diagnose and react to specific faults are a recognized research gap.This study presents an integrated fault detection and compensation framework implemented and evaluated within the EnergyPlus simulation environment.The system uses a machine-learning-informed proxy to trigger fault-specific supervisory control actions.A comparative analysis of control-based (stuck-open) versus physically constrained (stuck-closed) faults through an ablation study revealed fundamentally different operational behaviors.For the stuck-open fault, the fault detection and compensation system was highly effective, reducing the discomfort degree-hours by 68% and the energy consumption by 23%.For the stuck-closed fault, the system's inability to restore comfort confirmed its role as a high-fidelity diagnostic tool, proving that such physical faults require maintenance rather than supervisory control.These findings establish a framework for fault-specific responses in district heating-connected buildings.",
+  "abs_src": "OpenAlex",
+  "doi": "10.46855/energy-proceedings-12258",
+  "crossref": "yes",
+  "cr_title": "Evaluation of an Integrated Fault Detection and Compensation for Building-Level Radiator Systems in District Heating"
  }
 }
