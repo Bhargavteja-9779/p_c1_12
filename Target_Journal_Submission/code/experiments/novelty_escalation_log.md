@@ -148,3 +148,18 @@ Min FA/sub-yr needed to reach recall 0.214 / 0.286 / 0.321 (6 / 8 / 9 of 28 faul
  H4a: best F15 pair reaches recall >= 0.393 (11/28) at <= 2 FA/sub-yr (rule alone: 0.321). Falsified otherwise.
  H4b: the rule+AE pair alone reaches >= 0.357 (10/28) at <= 2 FA/sub-yr. Falsified otherwise.
  Multiplicity: 3 partners x 3 budgets reported; final candidate tested once on M2.
+
+## Round 4 results (2026-11-23, M1; results/round4/orfusion_best_ae_underdel_qnbm.csv)
+Ideas counted: 10 + 3 OR-fusion partners = 13 (+1 post-hoc conformal variant).
+Pareto points per method: rule 6, AE 8, underdel 6, qnbm 9 -> 48 / 36 / 54 pairs searched (extra tuning freedom
+vs single methods: optimism to be checked on M2).
+ B=1: rule+AE 0.321 @0.50 ; rule+qnbm 0.321 @0.72 ; rule+underdel 0.321 @0.66   (rule alone 0.286 @0.35)
+ B=2: rule+AE 0.393 @1.44 ; rule+qnbm 0.393 @1.98 ; rule+underdel 0.357 @1.33   (rule alone 0.321 @1.08)
+ B=4: rule+AE 0.429 @2.02 ; rule+qnbm 0.393 @1.98 ; rule+underdel 0.429 @2.92   (rule alone 0.321)
+- H4a SUPPORTED: rule+AE and rule+qnbm reach 0.393 (11/28) at <= 2 FA/sub-yr.
+- H4b SUPPORTED: rule+AE 0.393 >= 0.357.
+- Effect sizes are small in absolute faults (+2 over rule, +5 over AE alone at B=2; n = 28) -> needs bootstrap
+  CIs, seeds 0-9 for AE, and the locked M2 test before any claim.
+- Candidate final methods (frozen after this round): C1 = rule alone; C2 = rule OR AE with M1-chosen operating
+  points per budget. Both need no cross-manufacturer model transfer (rule has no parameters to learn; AE is
+  per-substation online) -> only the operating points transfer from M1 to M2.
