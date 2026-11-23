@@ -1,0 +1,27 @@
+{
+ "query": "abs:\"wind turbine\" AND abs:\"false alarm\"",
+ "source": "arXiv API",
+ "count": 2,
+ "results": [
+  {
+   "openalex": null,
+   "doi": "https://doi.org/10.48550/arxiv.2404.10320",
+   "arxiv_id": "http://arxiv.org/abs/2404.10320v2",
+   "title": "CARE to Compare: A real-world dataset for anomaly detection in wind turbine data",
+   "year": "2024",
+   "date": "2024-04-16",
+   "venue": "arXiv",
+   "abstract": "Anomaly detection plays a crucial role in the field of predictive maintenance for wind turbines, yet the comparison of different algorithms poses a difficult task because domain specific public datasets are scarce. Many comparisons of different approaches either use benchmarks composed of data from many different domains, inaccessible data or one of the few publicly available datasets which lack detailed information about the faults. Moreover, many publications highlight a couple of case studies where fault detection was successful. With this paper we publish a high quality dataset that contains data from 36 wind turbines across 3 different wind farms as well as the most detailed fault information of any public wind turbine dataset as far as we know. The new dataset contains 89 years worth of real-world operating data of wind turbines, distributed across 44 labeled time frames for anomalies that led up to faults, as well as 51 time series representing normal behavior. Additionally, the quality of training data is ensured by turbine-status-based labels for each data point. Furthermore, we propose a new scoring method, called CARE (Coverage, Accuracy, Reliability and Earliness), which takes advantage of the information depth that is present in the dataset to identify a good all-around anomaly detection model. This score considers the anomaly detection performance, the ability to recognize normal behavior properly and the capability to raise as few false alarms as possible while simultaneously detecting anomalies early."
+  },
+  {
+   "openalex": null,
+   "doi": "https://doi.org/10.48550/arxiv.2007.01708",
+   "arxiv_id": "http://arxiv.org/abs/2007.01708v1",
+   "title": "Fault Diagnosis of the 10MW Floating Offshore Wind Turbine Benchmark: a Mixed Model and Signal-based Approach",
+   "year": "2020",
+   "date": "2020-07-03",
+   "venue": "arXiv",
+   "abstract": "Floating Offshore Wind Turbines (FOWTs) operate in the harsh marine environment with limited accessibility and maintainability. Not only failures are more likely to occur than in land-based turbines, but also corrective maintenance is more expensive. In the present study, a mixed model and signal-based Fault Diagnosis (FD) architecture is developed to detect and isolate critical faults in FOWTs. More specifically, a model-based scheme is developed to detect and isolate the faults associated with the turbine system. It is based on a fault detection and approximation estimator and fault isolation estimators, with time-varying adaptive thresholds to guarantee against false-alarms. In addition, a signal-based scheme is established, within the proposed architecture, for detecting and isolating two representative mooring lines faults. For the purpose of verification, a 10MW FOWT benchmark is developed and its operating conditions, which contains predefined faults, are simulated by extending the high-fidelity simulator. Based on it, the effectiveness of the proposed architecture is illustrated. In addition, the advantages and limitations are discussed by comparing its fault detection to the results delivered by other approaches. Results show that the proposed architecture has the best performance in detecting and isolating the critical faults in FOWTs under diverse operating conditions."
+  }
+ ]
+}

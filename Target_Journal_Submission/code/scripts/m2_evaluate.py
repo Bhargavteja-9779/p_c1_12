@@ -17,7 +17,8 @@ from src.evaluation import continuous as C, runner as R
 from src.evaluation.diagnose import fault_ranks
 from src.models import online as O
 
-M = int(sys.argv[1]); NBOOT = int(sys.argv[2]) if len(sys.argv) > 2 else 2000
+if __name__ == "__main__":  # guarded so CELLS/holm can be imported by later analyses
+    M = int(sys.argv[1]); NBOOT = int(sys.argv[2]) if len(sys.argv) > 2 else 2000
 C_GRID = [1, 2, 3, 6, 9, 12, 18, 24, 36, 48, 72, 96, 144, 216, 288]
 # label: (M1 score name, M2 score name, scope, representation, model)
 CELLS = {"rule": ("rule", "rule", "comfort", "relative", "rule"),

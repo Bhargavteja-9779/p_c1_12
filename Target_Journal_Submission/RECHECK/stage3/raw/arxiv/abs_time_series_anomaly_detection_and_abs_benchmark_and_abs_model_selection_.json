@@ -1,0 +1,37 @@
+{
+ "query": "abs:\"time series anomaly detection\" AND abs:benchmark AND abs:\"model selection\"",
+ "source": "arXiv API",
+ "count": 3,
+ "results": [
+  {
+   "openalex": null,
+   "doi": "https://doi.org/10.48550/arxiv.2610.20243",
+   "arxiv_id": "http://arxiv.org/abs/2610.20243v2",
+   "title": "Retrieval Over Training: Similarity search-based Model Selection for Time Series Anomaly Detection",
+   "year": "2026",
+   "date": "2026-10-14",
+   "venue": "arXiv",
+   "abstract": "Anomaly detection is a fundamental task for time-series analytics, with important implications for the downstream performance of many applications. Despite the large number of anomaly detection methods proposed in the literature, recent benchmark studies have shown that no single detector performs best across highly heterogeneous time series. Therefore, a practical and scalable solution is to develop a model-selection method that, for a given time series, selects the anomaly detector most likely to perform well. Nevertheless, the model selection approaches proposed in the literature suffer from a significant drop in accuracy when applied in Out-of-Distribution (OOD) settings. In this paper, we tackle the aforementioned limitation and propose RAMSAD, a retrieval-based framework for model selection in time-series anomaly detection. Given a new time series, our method queries a knowledge base of previously observed instances, retrieves the top-k most similar series, and transfers detector recommendations from their performance profiles. The framework can operate with standard similarity measures as well as embedding-based representations. Our results show that RAMSAD outperforms existing baselines in In-Distribution (ID) settings and is the most robust selector in OOD, where, when selecting a small subset of detectors, it matches or exceeds ensembles that run the entire detector pool, at a fraction of their cost. Overall, we demonstrate that similarity-based retrieval constitutes a strong and efficient foundation for model selection in time-series anomaly detection."
+  },
+  {
+   "openalex": null,
+   "doi": "https://doi.org/10.48550/arxiv.2510.26643",
+   "arxiv_id": "http://arxiv.org/abs/2510.26643v2",
+   "title": "MSAD: A Deep Dive into Model Selection for Time series Anomaly Detection",
+   "year": "2025",
+   "date": "2025-10-30",
+   "venue": "arXiv",
+   "abstract": "Anomaly detection is a fundamental task for time series analytics with important implications for the downstream performance of many applications. Despite increasing academic interest and the large number of methods proposed in the literature, recent benchmarks and evaluation studies demonstrated that no overall best anomaly detection methods exist when applied to very heterogeneous time series datasets. Therefore, the only scalable and viable solution to solve anomaly detection over very different time series collected from diverse domains is to propose a model selection method that will select, based on time series characteristics, the best anomaly detection methods to run. Existing AutoML solutions are, unfortunately, not directly applicable to time series anomaly detection, and no evaluation of time series-based approaches for model selection exists. Towards that direction, this paper studies the performance of time series classification methods used as model selection for anomaly detection. In total, we evaluate 234 model configurations derived from 16 base classifiers across more than 1980 time series, and we propose the first extensive experimental evaluation of time series classification as model selection for anomaly detection. Our results demonstrate that model selection methods outperform every single anomaly detection method while being in the same order of magnitude regarding execution time. This evaluation is the first step to demonstrate the accuracy and efficiency of time series classification algorithms for anomaly detection, and represents a strong baseline that can then be used to guide the model selection step in general AutoML pipelines. Preprint version of an article accepted at the VLDB Journal."
+  },
+  {
+   "openalex": null,
+   "doi": "https://doi.org/10.48550/arxiv.2506.21550",
+   "arxiv_id": "http://arxiv.org/abs/2506.21550v2",
+   "title": "mTSBench: Benchmarking Multivariate Time Series Anomaly Detection and Model Selection at Scale",
+   "year": "2025",
+   "date": "2025-06-26",
+   "venue": "arXiv",
+   "abstract": "Anomaly detection in multivariate time series is essential across domains such as healthcare, cybersecurity, and industrial monitoring, yet remains fundamentally challenging due to high-dimensional dependencies, the presence of cross-correlations between time-dependent variables, and the scarcity of labeled anomalies. We introduce mTSBench, the largest benchmark to date for multivariate time series anomaly detection and model selection, consisting of 344 labeled time series across 19 datasets from a wide range of application domains. We comprehensively evaluate 24 anomaly detectors, including the only two publicly available large language model-based methods for multivariate time series. Consistent with prior findings, we observe that no single detector dominates across datasets, motivating the need for effective model selection. We benchmark three recent model selection methods and find that even the strongest of them remain far from optimal. Our results highlight the outstanding need for robust, generalizable selection strategies. We open-source the benchmark at https://plan-lab.github.io/mtsbench to encourage future research."
+  }
+ ]
+}
