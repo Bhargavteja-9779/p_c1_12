@@ -172,3 +172,11 @@ vs single methods: optimism to be checked on M2).
 - No comparison survives Holm at n = 28 faults. Recall-at-budget is underpowered on one manufacturer; the
   primary inference must pool M1 + M2 (52 faults) and use the paired curve-level secondary endpoint (normalised
   area under recall-vs-FA for B in [0, 6]) as pre-registered. Not remarkable on M1 alone.
+
+## Seeds 0-9 on M1 (AE retrained per seed; rule deterministic; C2 operating points re-selected per seed on M1)
+ recall mean +- SD (min-max) over 10 seeds:
+  AE alone  B=1 0.13 (seeds 1-9: 0.127+-0.026) ; B=2 0.183+-0.045 (0.107-0.250; seed 0 = 0.214) ; B=4 0.313+-0.024
+  C2 rule OR AE  B=1 0.343+-0.018 (0.321-0.357) ; B=2 0.382+-0.017 (0.357-0.393) ; B=4 0.429+-0.024 (0.393-0.464)
+  rule alone B=1 0.286 ; B=2 0.321 ; B=4 0.321
+ C2 >= rule in 10/10 seeds at every budget; C2 - AE at B=2 ~ +0.20 in every seed. Stable across seeds.
+ Files: results/m1_table_aeseeds.csv, results/round4/orfusion_best_ae_seed1_..._ae_seed9.csv

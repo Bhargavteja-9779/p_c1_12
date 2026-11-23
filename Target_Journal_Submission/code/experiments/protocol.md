@@ -63,3 +63,20 @@ Later versions may ADD experiments; any change to items below is logged with dat
 - Efficiency: training and scoring time per substation-year, model size.
 - Real-world impact: for a 93-substation fleet, expected alarms per week and complaints pre-empted per year
   at each budget; technician visits per pre-empted complaint.
+
+## Amendment A1 (2026-11-23) — candidate freeze before the locked M2 evaluation
+Reason: the novelty-escalation loop on M1 (rounds 0-4, 13 ideas, log in novelty_escalation_log.md) showed that
+the fleet SRCR model is dominated by the expert rule B1; the best development candidate is a budget-split
+OR-fusion of B1 with B4 (AE). The original v1 analyses (all baselines, SRCR) are still reported.
+Frozen final candidates:
+ - C1 = B1 rule (k = 5 K, HC/DHW loops, shortfall only), M1-chosen (tau, c_thr) per budget.
+ - C2 = B1 OR B4 (alarm if either alarms); (rule_tau, rule_c, ae_tau, ae_c) chosen on M1 per budget and per AE
+   seed from the Pareto fronts (results/round4/orfusion_best_*.csv). On M2 the AE of seed k uses seed k's M1
+   operating points; report mean +- SD over seeds 0-9 and seed 0 for the paired tests.
+ - All v1 baselines (B1-B5, B7, AE-cond) at their M1-chosen operating points; SRCR (gate + one-sided + local)
+   as an ablation, its fleet model trained on ALL M1 substations (seed 0) and applied to M2 (transfer).
+Primary M2 analysis: recall at B = 2 with M1 operating points unchanged; achieved M2 FA/sub-yr reported.
+Pooled M1+M2 inference (52 faults, 93 substations): paired cluster bootstrap + exact McNemar + Holm, C2 vs
+each baseline and C1 vs AE; curve-level endpoint = normalised area under recall vs FA/sub-yr for FA in [0, 6]
+(each method's own operating curve over the shared grid; M2 part uses the full M2 curve - descriptive only).
+M2 is evaluated exactly once with these frozen specifications; any deviation is logged.
