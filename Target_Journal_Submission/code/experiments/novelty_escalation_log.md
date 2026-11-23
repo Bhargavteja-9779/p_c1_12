@@ -186,3 +186,43 @@ vs single methods: optimism to be checked on M2).
 - 2026-11-23: M2 score run crashed for sigma3 and IForest on a substation whose training window had no usable
   numeric column. Fix: such windows get no score (NaN), as with any model without training data. Does not touch
   M1 (never triggered) nor any frozen operating point. No M2 evaluation had been run.
+
+## Round 5 plan (written 2026-11-23 BEFORE running; user asked for more novelty; M2 still NOT evaluated)
+Diagnosis: (i) the gain of C2 is small in absolute faults; (ii) "rule OR AE" reads as a mere combination with no
+reason WHY the two are complementary; (iii) per-substation fixed thresholds may spend the fleet FA budget on a
+few noisy substations. Three genuinely different fix families (all on M1 only; ideas 14-16):
+ F17 Substation-calibrated alarm evidence (budget redistribution). Online, per substation and per 90-day block,
+     map the raw score to its exceedance probability under the substation's OWN past scores (up to 365 d before
+     the block, known exclusions removed): e = -log10 p. Same criticality counter; tau grid on e {2, 2.5, 3, 4},
+     same c grid. Applied to rule, AE (seed 0) and their OR-fusion.
+     H5a: calibrated rule OR calibrated AE reaches M1 recall >= 0.429 (12/28) at <= 2 FA/sub-yr (C2: 0.393).
+     H5b: the FA share of the 5 noisiest substations falls versus uncalibrated C2 at B = 2.
+ F16 Complementary-by-design learned partner: AE trained WITHOUT any loop measurement/setpoint column
+     ("ae_noloop": drops every column containing "setpoint" and the secondary loop supply / DHW
+     upper-storage temperatures (NOLOOP in run_online_method.py); keeps primary-side, return, valve, pump, flow signals), so it can only see hydraulic/primary/pressure behaviour the rule cannot.
+     H5c: rule OR ae_noloop >= C2 recall at B = 2 on M1 (seed 0; seeds 0-4 if supported).
+ F18 Pre-registered physics-based fault-signature taxonomy, tested ONLY on locked M2 (prediction, not fitting).
+     Classes fixed from the fault label text before M2 evaluation:
+       A supply-path restriction (shows as loop measurement below setpoint): primary motorised control valve
+         (all 4 labels), differential pressure regulator (setting / defective), DHW storage charging pump,
+         strainer poor flow, air in piping, temperature monitor/controller defective.
+       B circulation / hydraulic integrity: heating-circuit pump failure, leakage, heat exchanger external
+         leakage, safety relief valve water loss, low expansion-vessel pre-charge, shut-off valve closed.
+       C intent error (wrong setpoint/parameter; the loop tracks a wrong target): control unit incorrect
+         parameterisation.  U: unknown.
+     H5d (M2): rule recall in class A > rule recall in classes B+C.
+     H5e (M2): among faults detected by AE but not by the rule, the share in B+C exceeds the share of B+C among
+     faults detected by the rule. Caveat: M1 detections were seen when writing this taxonomy, so only M2 counts.
+ Multiplicity: ideas 14-16 counted (total 16). Any survivor becomes candidate C3 in protocol Amendment A2,
+ written BEFORE m2_eval.py runs; C1/C2 stay as frozen.
+
+## Round 5 results — F17 substation calibration (M1; results/round5/)
+ cal_rule: B=1 0.250 @0.61, B=2 0.286 @1.96, B=4 0.286 (raw rule 0.286 / 0.321 / 0.321)
+ cal_ae:   B=1 0.143, B=2 0.143 @0.85, B=4 0.250 (raw AE seed 0: 0.214 at B=2)
+ cal_rule OR cal_ae (8x6 Pareto pairs): B=1 0.286, B=2 0.321 @1.07, B=4 0.357 (C2: 0.321 / 0.393 / 0.429)
+ H5a FALSIFIED (0.321 < 0.429). H5b FALSIFIED: top-5 substations' FA share 0.376 (C2) -> 0.470 (calibrated).
+ Reason (diagnosis): calibrating each substation against its own past makes a quiet, well-tuned substation
+ alarm on small deviations that are normal fleet-wide, so the budget moves TO quiet substations instead of away
+ from noisy ones; and faults in substations with a chronically poor history are pushed below threshold. Absolute,
+ physically scaled evidence (Kelvin of shortfall) carries information that rank calibration discards.
+ F17 dropped. Negative result kept for the paper ("own-history calibration hurts").

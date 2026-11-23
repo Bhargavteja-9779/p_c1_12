@@ -40,7 +40,7 @@ class _Net(nn.Module):
 
 class AEDetector:
     def __init__(self, conditional=False, latent_frac=0.65, lr=4.5e-4, noise=0.05, batch=256, epochs=10,
-                 score_type="mahalanobis", q=0.99, seed=0, max_rows=60000):
+                 score_type="mahalanobis", q=0.99, seed=0, max_rows=60000, drop_cols=()):
         self.__dict__.update(locals()); del self.__dict__["self"]
 
     def _prep(self, X):
@@ -52,7 +52,8 @@ class AEDetector:
     def fit(self, X: pd.DataFrame):
         torch.manual_seed(self.seed); rng = np.random.default_rng(self.seed)
         nan_frac = X.isna().mean()
-        cols = [c for c in X.columns if nan_frac[c] <= 0.8 and X[c].nunique(dropna=True) > 1]
+        cols = [c for c in X.columns if nan_frac[c] <= 0.8 and X[c].nunique(dropna=True) > 1
+                and not any(d in c for d in self.drop_cols)]
         self.cols = cols
         Z = X[cols].to_numpy(float)
         self.lo, self.hi = np.nanpercentile(Z, 0.1, 0), np.nanpercentile(Z, 99.9, 0)
