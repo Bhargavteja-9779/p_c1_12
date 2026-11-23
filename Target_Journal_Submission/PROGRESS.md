@@ -57,9 +57,8 @@ STEP 0: journal landscape and 72-day check (in progress)
   full text of 10.1016/j.energy.2026.142993 (control-strategy mode rules) and 10.1016/j.enbuild.2024.114009.
 
 ## NEXT ACTION
-1. Round 3 (pre-register hypotheses in the log first): daily decision unit, LBNL AHU second domain,
-   conformal FA-budget threshold, under-delivery fusion.
-2. Novelty map (>=30, candidates in journal_selection/lit_raw.csv) + scorecard once the method is fixed.
+1. Round 3 DONE (no primary gain; see log). Round 4: pre-register, then run (candidates in log).
+2. Novelty map DONE; scorecard once the method is fixed.
 3. Then seeds 0-9, full baselines table on M1, single locked evaluation on M2.
 
 ## Resume notes (saved 2026-11-23 before account switch)

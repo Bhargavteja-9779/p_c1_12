@@ -103,3 +103,22 @@ Base score for all round-3 variants: srcr_comp composed with gate + one-sided + 
  H3c (F12): adding the under-delivery channel to F10 raises detected faults at <= 2 FA/sub-yr by >= 2
      (absolute count) versus F10 alone. Falsified otherwise.
  F11 (second domain, LBNL AHU) deferred to round 4: needs a separate data pipeline.
+
+## Round 3 results (2026-11-23, M1 development; results/round3/round3_srcr_comp__v_gate_1s_local.csv)
+Reproducibility: all M1 scores regenerated from code on a new machine; round-2 table reproduced exactly.
+Ideas counted so far: 7 + #8 daily unit, #9 conformal per-substation threshold (+1 post-hoc fallback variant,
+counted), #10 under-delivery channel = 10 families (11 with the post-hoc variant).
+- H3a SUPPORTED only weakly (no gain): daily unit recall at <=2 FA/sub-yr 0.321 = R2 10-min 0.321, but with more
+  false alarms (271 vs 186). B=1: 0.214 = 0.214; B=4: 0.357 = 0.357. The daily unit is an equivalent, simpler
+  operator interface, not an improvement.
+- H3b (i) PARTLY FALSIFIED: achieved FA/sub-yr 0.40 (B=1, below 0.5B because 70% of days have too little own
+  history for alpha=1/365), 1.45 (B=2, valid), 3.14 (B=4, valid). (ii) SUPPORTED: share of false alarms from the
+  5 worst substations 0.33 (B=2) vs 0.66 with a global daily threshold. (iii) FALSIFIED: recall 0.179 at B=2
+  (post-hoc fleet fallback: 0.214). Conformal thresholds equalise the alarm burden but cost recall.
+- Diagnosis: top-5 FA substations (35, 21, 18, 33, 8) hold 66% of FAs but only 6/28 target faults; Spearman
+  rho(FA count, target faults) = 0.30 (p = 0.08). Own-past thresholds absorb slowly developing degradation
+  (a fault's precursor becomes part of the 'normal' calibration set) -> lost detections.
+- H3c FALSIFIED: R2 + under-delivery at <=2 FA/sub-yr recall 0.214 (-3 faults vs F10). Post-hoc observation
+  (NOT pre-registered, not claimable): at B=4 the fusion reaches 0.464 vs 0.357 (+3 faults).
+- Verdict round 3: no gain on the primary endpoint. Rounds without primary gain: 1 (r1), 0 (r2: FA gain),
+  1 (r3). Not remarkable yet.
