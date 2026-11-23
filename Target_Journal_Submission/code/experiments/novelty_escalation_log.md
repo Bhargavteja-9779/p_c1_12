@@ -82,3 +82,31 @@ families; 6 composed variants evaluated.
  F13 Substation-level conformal threshold for a guaranteed FA budget (theory, N3).
  F14 Change primary endpoint emphasis to false alarms at matched recall (better powered; pre-register as
      secondary, already listed in protocol amendments).
+
+## Round 3 plan (hypotheses written BEFORE running, 2026-11-23, new machine; M1 only)
+Diagnosis carried from round 2: recall differences are 1-3 faults (n=28) and cannot carry the paper; the
+better-powered and operator-relevant quantity is the false-alarm rate, and in particular whether an operator
+can SET it in advance (alarm budget) and get it on unseen substations / an unseen manufacturer.
+Families tested this round (ideas #8-#11):
+ F10 Daily decision unit: D_d = 95th percentile of the 10-min composed SRCR score (gate+1s+local) over day d
+     (NaN if < 72 valid steps); alarm active during day d+1 if D_d > thr (causal; consecutive alarm days merge
+     into one episode, then 24 h refractory as before).
+ F13 Fleet conformal alarm budget: thr = empirical (1 - alpha) quantile of D over NORMAL days of the training
+     folds' substations (cross-fitted, never the substation itself), alpha = B / 365.25 for budget B false
+     alarms per substation-year. Zero-shot (no own history needed). Same rule applied to the AE baseline
+     (AE score daily 95th percentile) so the comparison is fair.
+ F13b Substation-adaptive conformal: thr_s(d) = max(fleet thr, own-past (1 - alpha) quantile of D over the
+     substation's previous normal days, used only once >= 1/alpha own normal days exist).
+ F12 Under-delivery channel: delivery channel restricted to 'low' heat power / flow during heating season
+     (outdoor 24 h mean < 12 degC), mapped to a fleet-calibrated level and fused by max with the execution
+     channel at the daily unit.
+ F11 Second domain (LBNL AHU FDD data) -> deferred: checked only for reachability this round.
+Pre-registered hypotheses:
+ H3a (F10): daily unit + threshold sweep reaches recall >= 0.321 at <= 2 FA/sub-yr AND needs >= 30% fewer
+      false alarms than the 10-min counter version at matched recall 0.214. Falsified if either fails.
+ H3b (F13): on held-out folds the realised FA/sub-yr for B in {1, 2, 4} lies in [0.5 B, 1.25 B] for SRCR;
+      reported for AE too (no hypothesis on AE). Falsified if any budget falls outside.
+ H3c (F13b): adaptive conformal lowers the share of false alarms coming from the 5 worst substations by
+      >= 15 percentage points vs fleet conformal at B = 2, with <= 1 lost detection. Falsified otherwise.
+ H3d (F12): under-delivery fusion adds >= 2 detected faults at the realised <= 2 FA/sub-yr point over F10
+      alone. Falsified otherwise.
