@@ -174,3 +174,16 @@ Minimum FA/sub-yr needed to reach a recall level (same tau x c_thr grid for all)
   deep normal-behaviour models (the published benchmark) raise ~10x more false alarms than a setpoint-relative
   comfort rule at equal recall. This must be confirmed on the locked M2 and against ae_comfort / ae_cond /
   iforest / qnbm (running).
+
+## Mechanism of false alarms (2026-11-23, M1; scripts/mechanism_fa.py, results/mechanism_fa_*.csv)
+Conditions in the 24 h before each false-alarm start vs 1050 random normal times (30 per substation):
+| condition (24 h before)                   | AE FA (n=223, 32 subs) | SRCR-C FA (n=180, 20 subs) | random normal |
+| summer month (May-Sep)                    | 0.61 | 0.15 | 0.41 |
+| heating off (median HC1 setpoint <= 20 C) | 0.23 | 0.04 | 0.10 |
+| comfort shortfall > 5 K for >= 1 h        | 0.17 | 0.93 | 0.18 |
+| setpoint range >= 10 K                    | 0.65 | 0.82 | 0.63 |
+- AE false alarms are enriched for seasonal regime changes (summer, heating off) and NOT for comfort
+  shortfall (0.17 ~ base 0.18): they flag changes of operating regime, not loss of service.
+- 93% of SRCR-C 'false alarms' coincide with a physically real shortfall (supply > 5 K below an active
+  setpoint for >= 1 h) that was not reported. They are verifiable service deviations (or unreported faults),
+  i.e. actionable for an operator, which an AE alarm is not. To report as finding; not proof of faults.
