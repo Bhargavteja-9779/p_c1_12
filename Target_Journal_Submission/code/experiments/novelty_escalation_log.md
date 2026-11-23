@@ -199,4 +199,4 @@ Built from abstracts + Crossref/OpenAlex only (ScienceDirect blocked). Claim lim
   attribution on labelled DH data. Locked-test / alarm-burden protocols exist for wind turbines: protocol
   novelty holds only "for DH substations". Control-strategy rules exist (10.1016/j.energy.2026.142993): the
   new part is the controlled factorial on a public benchmark.
-- TO CHECK in full text: whether 10.1016/j.egyai.2026.100824 uses PreDist.
+- 10.1016/j.egyai.2026.100824 (STST): OpenAlex reference list (66 refs, checked 2026-11-23 session 3) cites neither the PreDist paper (W7159838334) nor the Zenodo record (W7105746820); abstract: six datasets, supervised F1 0.77-0.98, no continuous-monitoring FA rate. Use of PreDist: probably not, UNVERIFIED (full text blocked).

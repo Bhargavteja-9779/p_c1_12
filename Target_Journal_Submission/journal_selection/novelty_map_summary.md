@@ -38,7 +38,7 @@ Based on our search of Crossref/OpenAlex on 2026-11-23 with the queries listed b
 4. **Locked tests and alarm-burden accounting already exist in wind** (CARE-based papers 2024-2026). Claim protocol novelty "for DH substations" only.
 5. **The three-layer hybrid already uses control-strategy rules** with low false-alarm rates. Our rule class is not new on its own. The novelty is the controlled factorial and the public benchmark.
 6. **Unverified:**
-   - whether "From lab to practice" (10.1016/j.egyai.2026.100824) uses PreDist (it surfaced in an "enercity" query);
+   - whether "From lab to practice" (10.1016/j.egyai.2026.100824) uses PreDist (it surfaced in an "enercity" query); [session 3: its OpenAlex reference list cites neither the PreDist paper nor the Zenodo record; still UNVERIFIED because it surfaced for "enercity" — treat as possible PreDist user and cite it as such only if confirmed]
    - the 3 papers without abstracts, including the 2024 Energy and Buildings LSTM adaptive-threshold sensor FDD paper, which may discuss false alarms.
    Check these full texts before submission.
 
