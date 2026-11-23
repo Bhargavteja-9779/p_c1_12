@@ -158,3 +158,19 @@ Ideas counted so far: 11 + #12 comfort-only (drop p_ret), #13 p_ret low-side onl
 - DECISION: fix the method candidate = SRCR-C (comfort loops, gated, one-sided, fleet-prior -> local
   calibration, criticality counter). Next: seeds 0-9, all baselines on M1, novelty map + scorecard, then the
   single locked evaluation on M2.
+
+## Desk-rejection check after round 4: "does a simpler method work?" (2026-11-23, M1; results/matched_recall_fast_baselines.csv)
+Minimum FA/sub-yr needed to reach a recall level (same tau x c_thr grid for all):
+| recall | SRCR-C | rule (comfort shortfall > 5 K) | loop3s_c (own-history, comfort, gated, 1-sided) | loop3s | sigma3 | AE |
+| 0.214  | 0.18   | 0.15 | 0.14 | 1.12 | 1.35 | 1.78 |
+| 0.250  | 0.60   | 0.17 | 0.44 | 1.62 | 1.37 | 2.15 |
+| 0.321  | 0.65   | 1.08 | 3.53 | 3.56 | 2.74 | 5.63 |
+| 0.357  | 1.44   | 11.5 | 20.5 | 3.84 | 5.06 | 5.63 |
+- HONEST FINDING: the large gain over AE comes mostly from WHAT is monitored (comfort loops, relative to the
+  setpoint), not from the fleet model. The expert rule is as good as SRCR-C up to recall 0.25. SRCR-C is only
+  better at higher recall (0.321-0.357), i.e. 1-2 extra faults (n = 28) — not statistically remarkable.
+- Consequence for the paper: the learned fleet model cannot be sold as the core novelty. Candidate core
+  contribution shifts to an evaluation finding (N5 + N7): under deployment-realistic continuous monitoring,
+  deep normal-behaviour models (the published benchmark) raise ~10x more false alarms than a setpoint-relative
+  comfort rule at equal recall. This must be confirmed on the locked M2 and against ae_comfort / ae_cond /
+  iforest / qnbm (running).

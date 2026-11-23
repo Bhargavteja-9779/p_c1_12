@@ -63,3 +63,16 @@ Later versions may ADD experiments; any change to items below is logged with dat
 - Efficiency: training and scoring time per substation-year, model size.
 - Real-world impact: for a 93-substation fleet, expected alarms per week and complaints pre-empted per year
   at each budget; technician visits per pre-empted complaint.
+
+## Amendments (dated; original v1 analyses are still reported)
+- A1 (2026-11-23, before round 2; recorded late on 2026-11-23): tau grid extended to {1, 1.5, 2, 3, 4} for
+  ALL methods (runner.TAU_GRID). Evaluable M1 targets as computed by the harness = 28 (v1 text said 29).
+- A2 (2026-11-23, after D6 round 4 on M1, before any M2 scoring): method candidate fixed as SRCR-C
+  (comfort loops only, setpoint gating, one-sided shortfall, fleet-prior -> local calibration, criticality
+  counter). Because "comfort-only" knowledge was found on M1, two baselines receive the same knowledge:
+  B7c loop three-sigma restricted to comfort loops, gated and one-sided (own history, no fleet model) and
+  B4c autoencoder restricted to comfort signals (loop measurements, setpoints, outdoor temperature).
+- A3 (2026-11-23, added AFTER round-4 results were seen on M1, so labelled post hoc): secondary endpoint
+  "minimum false alarms per substation-year needed to reach recall r" for r in the recall levels that both
+  methods reach, with cluster-bootstrap CI over substations. The v1 primary endpoint (recall at B = 2) is
+  unchanged and remains primary.

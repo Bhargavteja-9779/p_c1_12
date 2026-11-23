@@ -139,3 +139,38 @@ class OwnQuantileNBM:
             z = np.maximum((lo - y) / np.maximum(md - lo, 0.5), (y - hi) / np.maximum(hi - md, 0.5))
             best = np.fmax(best, 1.0 + z)
         return best
+
+
+COMFORT_LOOPS = ("hc1", "hc1_1", "hc1_2", "dhw_sup", "dhw_sto")
+
+
+def comfort_columns():
+    """Secondary-side comfort signals (loop measurements and setpoints) plus outdoor temperature."""
+    from ..features.loops import LOOPS
+    return [c for name, y, ys in LOOPS if name in COMFORT_LOOPS for c in (y, ys)] + ["outdoor_temperature"]
+
+
+class LoopThreeSigmaComfort:
+    """B7c (added 2026-11-23, amendment A2): the comfort-only, gated, one-sided version of B7, i.e. SRCR-C
+    WITHOUT the fleet quantile model and local calibration (own-history mean/sd of the shortfall residual)."""
+    SP_OFF = 20.0
+
+    def fit(self, X):
+        self.stats = {}
+        for name, y, ys in available_loops(X):
+            if name not in COMFORT_LOOPS:
+                continue
+            on = X[ys] > self.SP_OFF
+            e = (X[y] - X[ys])[on]
+            if e.notna().sum() > 100:
+                self.stats[name] = (e.mean(), e.std() + 0.5)
+        return self
+
+    def score(self, X):
+        best = np.full(len(X), np.nan)
+        for name, y, ys in available_loops(X):
+            if name in self.stats:
+                mu, sd = self.stats[name]
+                z = ((mu - (X[y] - X[ys])) / sd).where(X[ys] > self.SP_OFF).to_numpy(float)
+                best = np.fmax(best, z / 3.0)
+        return best
