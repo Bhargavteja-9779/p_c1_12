@@ -25,6 +25,18 @@ Branch: claude/peaceful-planck-2kznjo. Started 2026-11-23.
   repositories found via OpenAlex): median 89 d, p75 141 d; last 6 months (n=11) median 65, p75 92.5.
   -> FAILS the 72-day rule. Scanning alternative Elsevier journals with the same method (stage1/alt.log).
 
+- Stage 5 early check: fresh clean-env scores reproduce 12/12 committed M1 operating points of rule, sigma3, loop3s,
+  loop3s_c EXACTLY. Leakage found: fault exclusions treated as known before their report (src/models/online.py
+  known_exclusions); 4/982 fits, M1 subs 4 and 7 only; M2 unaffected (stage5/stage5_leak_exclusions.csv).
+- Stage 4 round 1 pre-registered (stage4/preregistration_E.md). H-E4 SUPPORTED: on M2 only 3/33 operating
+  points beat random alarms at the same FA rate (code/results/chance_level.csv); M1 27/33 (in-sample).
+- Stage 2 story written (stage2_story.md). Stage 6.1 references re-verified (stage6/); EEMUA 191 dropped.
+- Stage 3 hostile prior-art search delegated (writes stage3/novelty_map_v2.csv, stage3/prior_art_report.md).
+- Stage 1 alt-journal scan (stage1/multi_journal_dates.py, 20 Elsevier journals) running: Results in Engineering
+  median 93 / p75 105 (n=25), Smart Energy 127.5 / 250 (n=10): both FAIL.
+
 ## NEXT ACTION
-Finish the alternative-journal scan (stage1/multi_journal_dates.py), write stage1/stage1_journal_report.md,
-decide journal; then Stage 2.
+1. Wait for run_all full (log logs/run_all_full.log); then compare ALL committed numbers (m2_evaluate output vs
+   results/locked_m2_*.csv in git), run scripts/protocol_gap.py and scripts/random_label.py (venv python).
+2. Fix exclusion leakage (knowledge time = report date), re-score M1 subs 4, 7, report delta.
+3. Finish stage1 report when alt scan ends; Stage 3 merge when agent reports; then Stage 4 scorecard, Stage 7 writing.

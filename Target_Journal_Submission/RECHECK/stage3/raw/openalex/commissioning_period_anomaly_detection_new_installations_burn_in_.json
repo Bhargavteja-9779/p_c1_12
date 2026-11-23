@@ -1,0 +1,172 @@
+{
+ "query": "commissioning period anomaly detection new installations burn-in",
+ "filter": null,
+ "count": 1986,
+ "results": [
+  {
+   "openalex": "https://openalex.org/W2923289611",
+   "doi": null,
+   "title": "Engine crankshaft torsional vibration analysis for anomalies detection",
+   "year": 2018,
+   "date": "2018-06-11",
+   "venue": "Aaltodoc (Aalto University)",
+   "type": "dissertation",
+   "cites": 2,
+   "abstract": "Reliability is a key factor in medium speed engines. Since they are employed in power plants and vessels, there is the constant need to increase the accuracy of their anomaly detection loops. Here I investigated a novel idea aimed at decreasing the number of sensors deployed. The goal was to understand whether using only one speed sensor, located at the flywheel, is enough to detect and possibly classify different abnormal operating conditions. \\n \\nA torsional vibration model of a V20 spark-ignited gas engine was developed and validated with field data. The model was then used to simulate normal, heavy knock, misfire and overpressure conditions. Subsequently, the speed signals of the crankshaft, measured at the flywheel, were analysed in the time- and frequency-domains, in order to identify possible patterns that could be linked to the four scenarios. \\nThe spectra of the signals were then processed with two machine-learning approaches: pattern recognition and a neural network. \\n \\nBoth approaches showed accuracies up to 97% in the classification of the scenarios. Amongst the pattern recognition algorithms, the Ensemble with Subspace kNN proved to be the most accurate one, with a remarkably low rate of false negatives (<1%). The neural network had a slightly lower accuracy in the binary identification between normal and abnormal situations, but it performed better in classifying the different anomalies. The results are promising. They indicate that, with some further improvement, the method tested and developed in this thesis could be a reliable alternative to the safety systems currently in use in engines."
+  },
+  {
+   "openalex": "https://openalex.org/W2968678386",
+   "doi": "https://doi.org/10.22161/ijaers.68.15",
+   "title": "Efficiency of the Engine of Great Porte and Detection of Anomalies in the Operation of the Piston-Cylinder System through the Monitoring in Real Time",
+   "year": 2019,
+   "date": "2019-01-01",
+   "venue": "International Journal of Advanced Engineering Research and Science",
+   "type": "article",
+   "cites": 1,
+   "abstract": "From the goodness of internal combustion engines as primary drive They Have Been Increasingly more widespread in power generation, either isolated power plants in the working system-based systems.Engines of large size and Especially the Internal Combustion engine (IC), Increasingly are Becoming more widespread in the generation of electricity by the degree of perfection That is Increasing, however in the the powers of these Also higher, costs of parts que make it up, and done maintenance activities engines Become more expensive, for that reason the consideration During the exploitation is to monitor the operation of the same, in real time.In this article Describes some of the characteristics of the great internal combustion engine and indications."
+  },
+  {
+   "openalex": "https://openalex.org/W7131907734",
+   "doi": "https://doi.org/10.1142/s0129065726500279",
+   "title": "Unsupervised Convolutional Neural Networks Using Home Presence Sensors for Behavioural Anomaly Detection in Older Adults",
+   "year": 2026,
+   "date": "2026-05-05",
+   "venue": "International Journal of Neural Systems",
+   "type": "article",
+   "cites": 0,
+   "abstract": "The ageing population and the preference to remain at home pose significant challenges for ensuring the safety and well-being of older adults, particularly those living alone. This study investigates whether deviations in daily behaviour can be identified through a noninvasive monitoring system based on simple, low-cost presence sensors combined with unsupervised deep learning models. The objective is to detect behaviour changes potentially related to cognitive or functional decline, for later assessment, without performing any clinical diagnosis. Unsupervised convolutional autoencoders are used to model typical activity patterns and identify deviations through reconstruction errors. The approach was validated using three datasets: two public datasets (CASAS Aruba and HH120) and a proprietary dataset collected from 50 real-world households under long-term monitoring conditions (MIRATAR dataset). As none of these datasets contains clinically labelled anomalous events, system evaluation relies on the controlled injection of synthetic anomalies into the test data. The results demonstrate consistent performance across the datasets, with improvements in F1-score as more stringent anomaly detection thresholds are applied. At the 98th percentile threshold, the system achieved average F1-scores of 0.96 (MIRATAR), 0.98 (CASAS Aruba), and 0.99 (CASAS HH120). In addition, the proposed autoencoder-based approach was compared with classical unsupervised anomaly detection methods, including Isolation Forest and One-Class SVM, across all evaluated datasets."
+  },
+  {
+   "openalex": "https://openalex.org/W4385151087",
+   "doi": "https://doi.org/10.21175/rad.abstr.book.2023.35.9",
+   "title": "A new approach to directional radiation detection",
+   "year": 2023,
+   "date": "2023-01-01",
+   "venue": "Book of Abstracts",
+   "type": "conference-paper",
+   "cites": 9,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W585080827",
+   "doi": "https://doi.org/10.17863/cam.5722",
+   "title": "The siting of UK Nuclear Power Installations",
+   "year": 2013,
+   "date": "2013-11-27",
+   "venue": "RePEc: Research Papers in Economics",
+   "type": "preprint",
+   "cites": 4,
+   "abstract": "choosing a suitable site for a nuclear installation requires the consideration and balancin9 of several factors which are sometimes in tension with one another. One particularly interesting tension is a human and demographic one. On the one hand it is beneficial to place nuclear stations close to centres of population, to reduce transmission losses and other costs (including to the local environment) of transporting electricity over large distances from generator to consumer. On the other it is advantageous to place nuclear stations some distance away from such population centres in order to minimise the potential human consequences of a major release of radioactive materials in the (extremely unlikely) event of a major nuclear accident, not only in terms of direct exposure but also concerning the management of emergency planning, notably evacuation. This paper considers the emergence of policies aimed at managing this tension in the UK. In the first phase of nuclear development (roughly speaking 1945 to 1965) there was a highly cautious attitude, with installations being placed in remote rural locations with verylow population density. The second phase (1965 to 1985) saw a more relaxed approach allowin9 Advanced Gas-Cooled Reactor construction closer to population centres (in 'semi-urban' locations, notably at Hartlepool and Heysham). In the third phase (1985 to 2005) there was very little new nuclear development, Sizewell B (the first and so far only pressurised water power reactor in the UK) being co-located with an early Magnox station on the rural Suffolk coast. However, there was considerable effort expended on trying to find a site for disposal of radioactive wastes. Renewed interest in nuclear new build grew from 2005 onwards and led to a number of sites being identified for new reactors before 2025; all having previously hosted nuclear stations and including the semi-urban locations of the 1960s and 1970s. Finally, some speculative comments are made as to what a 'fifth phase' starting in 2025 might look like."
+  },
+  {
+   "openalex": "https://openalex.org/W4413421022",
+   "doi": "https://doi.org/10.1088/1361-6587/adfe90",
+   "title": "Overview of JET Restart: Integrated Commissioning and Plasma Commissioning",
+   "year": 2025,
+   "date": "2025-09-04",
+   "venue": "Plasma Physics and Controlled Fusion",
+   "type": "article",
+   "cites": 0,
+   "abstract": "The Joint European Torus (JET) Restart is a critical phase in the operation of the JET, enabling the transition of JET plant from Shutdown to experimental plasma campaigns. This paper provides a comprehensive overview divided into its two main stages. The first stage, Integrated Commissioning, encompasses the activation and synchronization of critical systems, from magnet energization to diagnostics calibration. The second stage, Plasma Commissioning, focuses on achieving reliable and sustained plasma initiation, conditioning plasma-facing components, and optimizing auxiliary heating and other systems. The paper details the sequential phases and steps of JET Restart, outlines the planning and coordination, and introduces how the commissioning procedures for Restart activities are reviewed, managed, and monitored. The paper also explores the specific commissioning activities required for deuterium\u2013tritium experimental campaigns, highlighting the additional safety measures and operational adjustments needed for tritium handling. By documenting the JET Restart methodology and lessons learned, this paper provides valuable insights for the commissioning of next-generation fusion machines. As one of the most complex fusion facilities globally, JET\u2019s Restart activities serve as a critical benchmark for the operational procedures of future large-scale fusion machines."
+  },
+  {
+   "openalex": "https://openalex.org/W2996120650",
+   "doi": null,
+   "title": "Series arc faults in low-voltage AC electrical installations",
+   "year": 2018,
+   "date": "2018-02-08",
+   "venue": "Common Library Network (Der Gemeinsame Bibliotheksverbund)",
+   "type": "dissertation",
+   "cites": 10,
+   "abstract": "This thesis provides a complete analysis of all the topics related to series arc faults in low-voltage electrical installations. The part played by series arc faults in the outbreak of hazardous electrical fires is explained by using fire statistics, performing an electrical and thermal characterization of the phenomenon, and comparing with other electrical faults their ability to ignite an insulation material. The analysis demonstrates that the series arc fault generates a heat stress that largely exceeds the ignition threshold of insulation polymers. Other electrical faults such as bolted short-circuit, overload, earth leakage, and glowing fault result in much lower risks of fire ignition. The principles of arc fault detection are explained and the contribution of the active protection AFDD (arc fault detection device) is taken into account in this analysis. The option of achieving a passive protection using appropriate insulation materials is also explored. The performance requirements described in the product standard of AFDD are reviewed and recommendations for improving the standards are proposed."
+  },
+  {
+   "openalex": "https://openalex.org/W1487591011",
+   "doi": "https://doi.org/10.2172/764357",
+   "title": "Residential commissioning: a review of related literature",
+   "year": 2000,
+   "date": "2000-01-31",
+   "venue": "OSTI OAI (U.S. Department of Energy Office of Scientific and Technical Information)",
+   "type": "report",
+   "cites": 13,
+   "abstract": "Currently, houses do not perform optimally or even as many codes and forecasts predict, largely because they are field assembled and there is no consistent process to identify problems or to correct them.The emerging process of residential commissioning can rectify this situation by providing performance assurances.Residential commissioning is defined within this report as a performance assurance process in the form of agreed upon metrics, diagnostics, and norms that might be carried out between the time installation and construction are complete and when the buyer occupies the new house.It also includes many activities such as rating, auditing, supercommissioning, or recommissioning.As such, it represents an expansion of processes currently carried out by people such as home energy raters, home inspectors, auditors, and weatherization contractors.This expansion includes the energy performance of the large number of existing California houses, as well as the indoor environmental performance of all houses in the State.The literature review reported here is the first step in a larger 30 month-long project that will lay the groundwork for a residential commissioning industry in California focused on end-use energy and non-energy issues.The intent of the review is to facilitate access to existing literature related to residential commissioning.Emphasis is placed on reviewing documents published over the past 20 years, which represents the period of time over which building commissioning and closely related issues have been actively reported.This report discusses the status of commercial building commissioning and compares it with residential commissioning.Based on an extensive review of 469 readily available documents, it summarizes existing metrics, diagnostics, and norms for all building types that are relevant for evaluating, tuning, and retrofitting various aspects of new and existing houses.The relevant areas of concern for California houses are: Building Envelope, Cooling Equipment and Heat Pumps, Air Distribution Systems, Indoor Air Quality, Combustion Appliances, Controls, and Other Electrical Appliances.There is a substantial amount of useful information in the literature about metrics, diagnostics, and norms that are relevant to residential commissioning.However, there are also some significant gaps.This report concludes by highlighting gaps in existing knowledge that require further research and development.Areas in particular need of work include: metrics, diagnostics, and norms for thermal mass and moisture-damage susceptibility; diagnostics for steady-state capacity and efficiency, as well as refrigerant charge level, for cooling equipment and heat pumps; diagnostics and norms for ventilation effectiveness and efficiency; diagnostics to evaluate the potential for backdrafting and combustion gas spillage; and metrics, diagnostics, and norms for controls and other electrical appliances.Only 33 of the 469 papers specifically addressed a house as a system of interacting components, although many"
+  },
+  {
+   "openalex": "https://openalex.org/W4292018473",
+   "doi": "https://doi.org/10.21079/11681/45081",
+   "title": "Installation utility monitoring and control system technical guide",
+   "year": 2022,
+   "date": "2022-08-16",
+   "venue": "US Army Corps of Engineers: Engineer Research and Development Center (Knowledge Core)",
+   "type": "report",
+   "cites": 1,
+   "abstract": "Army policy calls for each installation to install a building automation system (aka utility monitoring and control system [UMCS]) to provide for centralized monitoring of buildings and utilities to reduce energy and water commodity and maintenance costs. Typically, the UMCS, including building control systems (BCS), is installed and expanded in piecemeal fashion resulting in intersystem incompatibilities. The integration of multivendor BCSs into a single basewide UMCS, and subsequent UMCS operation, can present technical and administrative challenges due to its complexity and cybersecurity requirements. Open Control Systems technology and open communications protocols, including BACnet, LonWorks, and Niagara Framework, help overcome technical incompatibilities. Additional practical considerations include funding, control systems commissioning, staffing, training, and the need for a commitment to proper operation, use, and sustainment of the UMCS. This document provides guidance to Army installations to help achieve a successful basewide UMCS through its full life cycle based on DoD criteria and technical requirements for Open Control Systems and cybersecurity. It includes institutional knowledge on technical solutions and business processes amassed from decades of collaboration with Army installations and learned from and with their staff. Detailed activities spanning both implementation and sustainment include planning, procurement, installation, integration, cybersecurity authorization, and ongoing management."
+  },
+  {
+   "openalex": "https://openalex.org/W2794142664",
+   "doi": "https://doi.org/10.6028/nist.ir.89-4113",
+   "title": "Lightning and surge protection of photovoltaic installations- two case histories: Vulcano and Kythnos",
+   "year": 1989,
+   "date": "1989-01-01",
+   "venue": null,
+   "type": "report",
+   "cites": 11,
+   "abstract": "Two installations of photovoltaic (PV) systems were damaged during lightning storms.The two sites were visited and the damaged equipment that was still available on the site was examined for analysis of the suspected light- ning-related damage.The evidence, however, is insufficient to conclude that all the observed damage was caused by the direct effect of lightning.A possible scenario may be that lightning-induced overvoltages caused insula- tion breakdown at the edges of the photovoltaic modules, with subsequent damage done by the dc current generated by the array.Other surge protection considerations are also addressed, and suggestions are presented for further investigations.' Photographs died in this text are included in Appendix D, suiting on page 37."
+  },
+  {
+   "openalex": "https://openalex.org/W3161551592",
+   "doi": "https://doi.org/10.26855/jepes.2021.05.001",
+   "title": "Combined Heat and Power Plant Installation at Oil and Gas Fields: Is It Cost-Effective?",
+   "year": 2021,
+   "date": "2021-05-11",
+   "venue": "Journal of Electrical Power & Energy Systems",
+   "type": "article",
+   "cites": 1,
+   "abstract": "The paper presents an economic feasibility analysis applied to assess the cost effectiveness of implementing a combined heat and power system at oil and gas fields. The purpose of this paper is to present a generic methodological framework by calculating return on investments in order to investigate the economic benefit and a payback period at the plants installed capacity. The findings of this analysis demonstrate that the mode of operation with sale of electricity at feed-in tariff and supply of excess heat to third parties is the most cost-effective because of its shortest payback period of 2.80 years. However, mode of operation with sale of electricity at free market and using heat for own consumption is the least economical, with payback period of 20.84 years. The paper provides important insights into strategic long-term and challenging decisions made by investors highlighting potential risks and providing the roadmap and appropriate price signals on critical energy projects under market conditions."
+  },
+  {
+   "openalex": "https://openalex.org/W4405276495",
+   "doi": "https://doi.org/10.34660/inf.2022.46.58.011",
+   "title": "LIGHTNING PROTECTION OF ELECTRICAL INSTALLATIONS OF THE INTEGRATED POWER GRID",
+   "year": 2024,
+   "date": "2024-12-11",
+   "venue": "Scientific Research of the SCO Countries: Synergy and Integration",
+   "type": "conference-paper",
+   "cites": 0,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W4313584778",
+   "doi": "https://doi.org/10.3389/ffgc.2022.1052299",
+   "title": "Suitability of band angle indices for burned area mapping in the Maule Region (Chile)",
+   "year": 2023,
+   "date": "2023-01-04",
+   "venue": "Frontiers in Forests and Global Change",
+   "type": "article",
+   "cites": 7,
+   "abstract": "In January 2017, 114 active fires burned throughout Chile at the same time. These fires spread quickly due to high temperatures, fast dry winds, and low vegetation water content. The fire events burned more than 570,000 ha, from which 20% of the area was endangered native forest. Timely and accurate burned area mapping is crucial for the evaluation of damages and management of the affected areas. As Chile is a diverse country with many types of ecosystems and vegetation, the use of novel spectral indices may improve the accuracy of satellite data-based burned area mapping algorithms. In this study, we explored the contribution of band angle indices (BAnI) to burned area mapping. The BAnI are based on trigonometric equations that proved to be sensitive to moisture conditions. Then, we aimed to test their sensitivity to the burned area spectral signature. We used Sentinel-2 data at 20 m resolution to calibrate and implement a random forest (RF) classifier in Google Earth Engine (GEE) computing platform. We ran the RF classifier with and without BAnI to evaluate their potential to identify burned areas and performed two accuracy assessments comparing the results with visually digitized fire perimeters from (1) WorldView 3 (WV3) images, and (2) Sentinel at 10 m resolution. We determined that both BA classifications were more accurate than the perimeters created by the Chilean National Forest Corporation (CONAF), which overestimates the area burnt. The overestimation of CONAF perimeters is produced by considering as burned the inner unburned areas and omitting some small, burned areas. The first assessment showed no significant differences between the two RF classifications. However, the second validation showed lower omission and commission errors for the RF classifier with the BAnI (5 and 17.8%, respectively). On the other hand, comparing both BA classifications with and without BAnI, we observed differences in the spatial distribution of the errors. However, the RF classification with BAnI offered fewer commission errors located in agricultural areas. The burned area algorithms developed in GEE showed their potential to map the fire-affected area quickly, efficiently, and accurately, accounting for all the areas burned in the season, including the small and agricultural fires the official perimeters did not consider."
+  },
+  {
+   "openalex": "https://openalex.org/W7221512326",
+   "doi": "https://doi.org/10.3390/rs18203494",
+   "title": "High-Resolution Burned Area Mapping Using Sentinel-2 Imagery and Robust Satellite Techniques",
+   "year": 2026,
+   "date": "2026-10-12",
+   "venue": "Remote Sensing",
+   "type": "article",
+   "cites": 2,
+   "abstract": "High accuracy in burned area (BA) mapping is desirable for many fire-related applications. Most operational products are based on coarse-resolution satellite data with a final spatial resolution ranging from 250 m to 1000 m. The use of higher-resolution satellite data, such as that from the Multispectral Imager (MSI) on board Sentinel-2, is usually reserved for generating BA products only for specific countries and time periods. Moreover, BA algorithms are typically driven by fire detection products to minimize false identifications. The resulting accuracy of such BA products depends strongly on land cover, fire regime, and the reliability of the considered fire detection products. In this paper, we exploit the multitemporal Robust Satellite Technique (RST) to identify burned areas and implement a workflow based on Sentinel-2 images within Google Earth Engine. Test results from two complete region-wide experiments conducted under contrasting seasonal, phenological, and agricultural conditions showed that 97.85% of the mapped area was confirmed as burned within the adopted multi-source validation framework, with an area-based commission error of 1.38% and omission error of 0.60%. Missed detections documented by the Regional Spatial Data Infrastructure (RSDI) amounted to 10.60 ha, corresponding to approximately 0.9% of the burned area reported by RSDI over the tested periods. Polygon-level intercomparison with RSDI and the European Forest Fire Information System (EFFIS) yielded Intersection over Union (IoU) values of 0.69 and 0.83, respectively. The proposed approach mapped larger burned areas than those reported by both RSDI (+48%) and EFFIS (+143%) as well."
+  },
+  {
+   "openalex": "https://openalex.org/W4384937271",
+   "doi": "https://doi.org/10.1016/j.asr.2023.07.024",
+   "title": "Ionosphere variability I: Advances in observational, monitoring and detection capabilities",
+   "year": 2023,
+   "date": "2023-07-01",
+   "venue": "Advances in Space Research",
+   "type": "article",
+   "cites": 19,
+   "abstract": ""
+  }
+ ]
+}

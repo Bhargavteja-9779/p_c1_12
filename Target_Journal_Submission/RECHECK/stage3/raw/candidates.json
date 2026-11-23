@@ -1,0 +1,257 @@
+{
+ "10.1145/3744256.3812567": {
+  "key": "10.1145/3744256.3812567",
+  "title": "Individualized Drift Detection in District Heating via Persistence based Monitoring of Model Residuals",
+  "year": 2026,
+  "venue": "ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (BuildSys)",
+  "abstract": "District heating systems require continuous monitoring to detect performance degradation, leakage, and control-related issues before they lead to customer discomfort or energy loss. In practice, strong seasonality, meter-specific dynamics, and heterogeneous operating regimes limit the effectiveness of population-level models and shared thresholds. This work presents a multi-stage, individualized drift detection framework in which each meter is monitored relative to its own historical behavior using per-meter forecasting models based on the TSMixer architecture. Drift is defined as a sustained deviation between model predictions and observed sensor readings, with residual persistence filtering out transient fluctuations. A rule-based taxonomy is used to categorize detected drift patterns. The framework is evaluated on up to 4 years of data for each of 182 meters from a large district heating fleet. The Stage-1 alerting layer achieves a lead-time recall of 67.0%, while the Stage-2 maintenance recommendation layer attains a recall of 34.1% with a median lead time of 128.6 days. For meters without recorded faults, the system maintains a 63.8% non-recommendation rate for interventions and concentrates recommendations on a limited subset of the fleet (Gini = 0.74). These results suggest that while the detection of subtle drifts remains challenging, individualized monitoring provides a structured approach for identifying a portion of fleet-wide degradation with significant lead time.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1145/3744256.3812567",
+  "crossref": "yes",
+  "cr_title": "Individualized Drift Detection in District Heating via Persistence based Monitoring of Model Residuals"
+ },
+ "https://openalex.org/W7153690826": {
+  "key": "https://openalex.org/W7153690826",
+  "title": "Investigating Physics-Informed Machine Learning in Anomaly Detection of District Heating Substations",
+  "year": 2026,
+  "venue": "Fraunhofer-Publica (Fraunhofer-Gesellschaft)",
+  "abstract": "",
+  "abs_src": "OpenAlex",
+  "doi": ""
+ },
+ "https://openalex.org/W7141782287": {
+  "key": "https://openalex.org/W7141782287",
+  "title": "Predictive maintenance of district heating substations with the gray box method Pr\u00e4diktive Instandhaltung von Fernw\u00e4rme-Hausstationen mit Grey-Box-Verfahren",
+  "year": 2025,
+  "venue": "Fraunhofer-Publica (Fraunhofer-Gesellschaft)",
+  "abstract": "Das Projekt PreDist nutzt digitale Methoden, um die lnstandhaltung van Hausstationen zu optimieren. Durch Feldtests und Laboruntersuchungen werden verbesserte Verfahren zur Fehlerdiagnose und -frOherkennung entwickelt. Die Ergebnisse fordern die digitale Transformation van Warmenetzen. Fernwarme gilt als eine Schllisseltechnologie fi.ir eine nachhaltige und umweltschonende thermische Energieversorgung von Gebauden.",
+  "abs_src": "OpenAlex",
+  "doi": ""
+ },
+ "10.1016/j.dib.2025.111320": {
+  "key": "10.1016/j.dib.2025.111320",
+  "title": "Exploring district heating systems: A SCADA dataset for enhanced explainability",
+  "year": 2025,
+  "venue": "Data in Brief",
+  "abstract": "Optimizing District Heating Systems (DHS) to achieve sustainability objectives and minimize costs requires access to comprehensive real-world datasets. This paper introduces a dataset comprising field data collected from a DHS system featuring five heating substations installed in residential buildings within the city of Ni\u0161, Serbia. Spanning a period of up to five years (2019-2024), the dataset originates from a SCADA system, capturing critical parameters such as heating fluid temperatures in the supply and return lines of both primary and secondary flows, energy transmission measurements, and outdoor temperatures from a local meteorological station. All measured data underwent comprehensive pre-processing using established methodologies, resulting in uniformly spaced hourly data free of errors or missing values. Furthermore, a preliminary exploratory data analysis was conducted to uncover insights into the underlying relationships and distributions within the data. We contend that this dataset is of considerable relevance to researchers and practitioners in the fields of smart cities, energy efficiency, and district heating.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1016/j.dib.2025.111320",
+  "crossref": "yes",
+  "cr_title": "Exploring district heating systems: A SCADA dataset for enhanced explainability"
+ },
+ "10.5281/zenodo.23127438": {
+  "key": "10.5281/zenodo.23127438",
+  "title": "IMOS-SWIL District Heating Dataset",
+  "year": 2026,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "abstract": "This dataset provides synchronized, high-resolution multi-physics measurements collected by IMOS-EPFL in collaboration with Aalborg University using the controlled district heating testbed at the Smart Water Infrastructures Laboratory (SWIL), Aalborg University, Denmark. The data were collected as part of the Intelligent Thermal Energy Networks (ITEN) research project, funded by the Swiss Federal Institute of Metrology (METAS), and were developed to support research on smart heat meter monitoring, data-driven monitoring, and machine learning for district heating systems. The experimental system consists of a heat station, pumping station, pipe units, and two consumer substations arranged in a representative district heating configuration. Each consumer station is equipped with two redundant commercial smart heat meters installed in series. Their measurements are averaged to reduce measurement noise and provide reliable reference signals for virtual sensing evaluation. The release contains four CSV files corresponding to four distinct operating conditions: File Time samples Approx. duration DS01.csv 15,218 8.45 h DS02.csv 15,286 8.49 h DS03.csv 15,078 8.38 h DS04.csv 8,200 4.56 h Total 53,782 29.88 h All variables are synchronized and sampled at 0.5 Hz, corresponding to one measurement every two seconds. Each CSV contains 65 synchronized variables and contains no missing values. SCADA measurements The dataset includes measurements from four main parts of the testbed: Heat station: variables with the prefix Boiler_ Pipe unit: variables with the prefix Pipe_ Pumping station: variables with the prefix Pump_ Consumer units: variables with the prefix Consumer_ The principal SCADA variables used in the accompanying study consist of 44 sensor signals covering three physical modalities: 20 temperature measurements, distributed across the heat station, pipe units, pumping station, and consumer units; 15 pressure measurements, including pressure and differential-pressure measurements across the network; 9 flow-rate measurements, located at the heat station, pipe units, pumping station, and consumer units. The complete list of SCADA inputs and their locations is reported in the associated publication. Typical variable names include Boiler_T1, Pipe_T2_1, Consumer_T_21, and Pump_T3_1 for temperature measurements; Boiler_dP2, Pipe_P1_1, Consumer_P_21, and Pump_P3_1 for pressure measurements; and Boiler_Q2_1, Pipe_Q3_1, and Consumer_Q1_21 for flow measurements. The released CSV files additionally retain auxiliary experimental/testbed channels beyond the 44 SCADA variables used as model inputs in the accompanying study. Smart-meter reference measurements In addition to the SCADA measurements, each CSV contains 10 processed smart-meter variables obtained by averaging measurements from the redundant meter pairs at the two consumer substations. For Consumer / Smart Meter location 1, the following variables are provided: avg_of_F1_F2 \u2014 averaged flow measurement; avg_of_V1_V2 \u2014 averaged volume measurement; avg_of_E1_E2 \u2014 averaged energy measurement; avg_of_T1_in_T2_in \u2014 averaged inlet temperature; avg_of_T1_out_T2_out \u2014 averaged outlet temperature. For Consumer / Smart Meter location 2, the corresponding variables are: avg_of_F3_F4 \u2014 averaged flow measurement; avg_of_V3_V4 \u2014 averaged volume measurement; avg_of_E3_E4 \u2014 averaged energy measurement; avg_of_T3_in_T4_in \u2014 averaged inlet temperature; avg_of_T3_out_T4_out \u2014 averaged outlet temperature. The commercial smart meters provide high-accuracy consumer-side measurements and are used as reference measurements in the accompanying study. The virtual sensing experiments reported in the associated paper focus on six reference variables: flow rate, inlet temperature, and outlet temperature at each of the two consumer substations. The volume and energy channels are retained in this public release to enable additional research applications. Operating conditions The four datasets correspond to different consumer-demand configurations. Consumer fan speeds were varied between experiments, producing four combinations of operating conditions. In addition, boiler on-off control introduced thermal variability by reheating the supply water when its temperature decreased and switching off the boiler after the target temperature was restored. These interventions generate different hydraulic and thermal operating regimes. The four datasets are therefore suitable for evaluating generalization across operating regimes. In the accompanying paper, a leave-one-dataset-out evaluation is used: three operating conditions are used for training, and the remaining condition is used for testing. Intended use The dataset can support research on: virtual sensing and soft sensing; virtual smart heat metering; district-heating monitoring and state estimation; graph neural networks and spatial-temporal learning; multivariate and multi-physics time-series modeling; sensor reconstruction and missing-measurement estimation; anomaly and sensor-fault detection; data-driven digital twins; thermo-hydraulic system identification and monitoring. A key motivation for releasing this dataset is the limited availability of public district heating datasets that combine synchronized temperature, pressure, flow, and consumer-side smart-meter measurements. The dataset is intended as a controlled and reproducible benchmark for developing and comparing data-driven virtual-sensing methods. Associated publication This dataset accompanies: K. Faghih Niresi, C. M\u00f8ller Jensen, C. S. Kalles\u00f8e, R. Wisniewski, and O. Fink, \u201cVirtual Smart Metering in District Heating Networks via Heterogeneous Spatial-Temporal Graph Neural Networks,\u201d Energy and Buildings, 2026. Users of this dataset are kindly requested to cite both the dataset and the associated publication.",
+  "abs_src": "OpenAlex",
+  "doi": "10.5281/zenodo.23127438",
+  "crossref": "404"
+ },
+ "10.1016/j.energy.2024.133097": {
+  "key": "10.1016/j.energy.2024.133097",
+  "title": "Identifying untraced faults associated with high return temperatures from heating systems in buildings connected to district heating networks",
+  "year": 2024,
+  "venue": "Energy",
+  "abstract": "The district heating (DH) system is in its transition towards the 4th generation district heating (4GDH), and the high DH return temperatures need to be addressed during the process. In the existing building heating systems, many faults, malfunctions, or sub-optimal operations can lead to high DH return temperatures. However, the field of fault detection and diagnostics (FDD) within heating systems is notably under-researched in contrast to their counterparts in ventilation and air conditioning in building HVAC systems. This divergence can be attributed to several factors, including limited digital integration, a scarcity of data, and the non-obvious nature of faults in heating systems. In this study, we utilized heat cost allocators (HCA) and energy meters to investigate the features and potential impacts of four untraced faults that can lead to high district heating (DH) return temperatures in both space heating and domestic hot water systems in large buildings. We identified component-level faults, including heat exchanger overflow, space heating temperature controller failures, and excessive operating temperatures due to bypass, as well as system-level issues such as non-uniform heat distribution in buildings and its impacts. This exploration provides new, critical insights for advancing FDD research in HVAC and DH systems.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1016/j.energy.2024.133097",
+  "crossref": "yes",
+  "cr_title": "Identifying untraced faults associated with high return temperatures from heating systems in buildings connected to district heating networks"
+ },
+ "10.21427/d7cz21": {
+  "key": "10.21427/d7cz21",
+  "title": "Can Threshold-Based Sensor Alerts be Analysed to Detect Faults in a District Heating Network?",
+  "year": 2018,
+  "venue": "Arrow - TU Dublin (Technological University Dublin)",
+  "abstract": "Older IoT \u201csmart sensors\u201d create system alerts from threshold rules on reading values. These simple thresholds are not very flexible to changes in the network. Due to the large number of false positives generated, these alerts are often ignored by network operators. Current state-of-the-art analytical models typically create alerts using raw sensor readings as the primary input. However, as greater numbers of sensors are being deployed, the growth in the number of readings that must be processed becomes problematic. The number of analytic models deployed to each of these systems is also increasing as analysis is broadened. This study aims to investigate if alerts created using threshold rules can be used to predict network faults. By using threshold-based alerts instead of raw continuous readings, the amount of data that the analytic models need to process is greatly reduced. The study was done using alert data from a European city\u2019s District Heating network. The alerts were generated by \u201csmart sensors\u201d that used threshold rules. Analytic models were tested to find the most accurate prediction of a network fault. Work order (maintenance) records were used as the target variable indicating a fault had occurred at the same time and location as the alert was active. The target variable was highly imbalanced (96:4) with a minority class being when a Work Order was required. The decision tree model developed used misclassification costs to achieve a reasonable accuracy with a trade-off between precision (.63) and recall (.56). The sparse nature of the alert data may be to blame for this result. The results show promise that this method could work well on datasets with better sensor coverage.",
+  "abs_src": "OpenAlex",
+  "doi": "10.21427/d7cz21",
+  "crossref": "404"
+ },
+ "10.36001/phme.2026.v9i1.4944": {
+  "key": "10.36001/phme.2026.v9i1.4944",
+  "title": "Sensor Fault Detection via Virtual Smart Heat Metering with Spatial-Temporal Graph Neural Networks",
+  "year": 2026,
+  "venue": "PHM Society European Conference",
+  "abstract": "Sensor faults and miscalibrated sensors represent an important challenge in district heating networks, where measurement errors, drift, calibration inaccuracies, or communication issues can compromise the reliability of thermal and hydraulic monitoring. Detecting such issues in a timely manner is essential for maintaining operational efficiency and ensuring the trustworthiness of system data. A promising approach for addressing these challenges is to compare physical measurements with estimates generated by virtual sensors. Virtual sensing enables the reconstruction of unmeasured or unreliable variables using data-driven models and existing measurements, thereby providing an estimate of the expected measurement value under the current operating and environmental conditions, which can serve as reference against which anomalous or inconsistent sensor behavior can be identified. In this work, we develop a virtual-sensor\u2013based framework for sensor fault and miscalibration detection using a heterogeneous spatial\u2013temporal graph neural network (HSTGNN). The proposed model learns both the spatial relationships among sensors and the temporal dynamics of their measurements to construct accurate virtual smart heat meter outputs. To evaluate the approach, we use a controlled laboratory dataset collected at the Aalborg Smart Water Infrastructure Laboratory, which provides synchronized high-resolution measurements of flow, temperature, and pressure representative of district heating operating conditions. Experimental results demonstrate that the proposed HSTGNN improves fault detection performance compared to several baseline methods.",
+  "abs_src": "OpenAlex",
+  "doi": "10.36001/phme.2026.v9i1.4944",
+  "crossref": "yes",
+  "cr_title": "Sensor Fault Detection via Virtual Smart Heat Metering with Spatial-Temporal Graph Neural Networks"
+ },
+ "10.1007/978-3-032-09844-3_22": {
+  "key": "10.1007/978-3-032-09844-3_22",
+  "title": "Closing a Sim-to-Sim Gap for Automatic Fault Detection in DHC Systems Using Hybrid Modelling",
+  "year": 2026,
+  "venue": "Lecture notes in networks and systems",
+  "abstract": "Accurate fault detection in district heating and cooling systems remains a challenge due to limitations in traditional simulation models. This paper explores a hybrid modelling approach that combines physics-based models with artificial neural networks to address this issue. Two methods of integrating these models are tested on simulated scenarios that replicate complex component behaviour. The first method applies corrections after full system simulation, while the second corrects outputs at the component level in real time. Both approaches reduce the discrepancy between simulated and reference data, but only the second method shows clear architectural changes based on component disturbances. This suggests a stronger potential for identifying faulty behaviour without the need for labelled datasets. The results demonstrate the value of integrating data-driven corrections at the component level to improve simulation accuracy and support fault detection in district heating and cooling systems.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1007/978-3-032-09844-3_22",
+  "crossref": "yes",
+  "cr_title": "Closing a\u00a0Sim-to-Sim Gap for\u00a0Automatic Fault Detection in\u00a0DHC Systems Using Hybrid Modelling"
+ },
+ "https://openalex.org/W3171635799": {
+  "key": "https://openalex.org/W3171635799",
+  "title": "Spot the difference!: On the way towards automated fault handling in district heating buildings",
+  "year": 2021,
+  "venue": "Lund University Publications (Lund University)",
+  "abstract": "This thesis focuses on how district heating utilities may work with fault handling in customer installations as a tool to reduce their return temperature levels. Reduced return temperatures would make it possible to improve the efficiency of the district heating systems and decrease their environmental impact. Faults in the customer installations cause high return temperatures that increase the return temperature of the entire district heating system. Thus, to reduce the system return temperatures, such faults must be detected, diagnosed, and corrected. The focus of the thesis has been to understand and identify the specific challenges that arise when integrating data analysis of district heating customer data as a natural part of the utilities\u2019 fault handling processes and find (parts of) the solutions to these challenges. The reason for this is that faults in the customer installation manifest themselves in district heating customer data. Thus, it is possible to analyse this data to detect faults.The results show that a multitude of different faults may occur in a customer installation. However, some faults are more common than others, and these faults should be prioritized when developing fault detection methods using data analysis. There is also a need to develop a mutual way to name faults that occur in the installation. Today, the district heating utilities use different words when talking about the same faults, making it hard to compare results from different district heating systems. It also makes it hard to create labelled data sets, which are needed to develop and validate successful fault detection tools based on data analysis. However, two different data analysis methods for fault detection have been developed without access to labelled data. Both methods show that it is possible to utilize customer data analysis to detect faults in customer installations.To realize the full potential of the fault detection tools, the utilities need to utilize them on a larger scale within their organization. Important organizational aspects include identifying a clear stakeholder in the fault handling process and calculating the economic value of eliminating faults. There is also a need to change the current fault handling processes to better align with automated fault detection tools. Therefore, an important result in this thesis is a suggestion for how a fault handling process based on data analysis may be designed.District heating utilities may use the results of this thesis to improve their fault handling processes of customer installations, thereby reducing their return temperatures and improving the possibilities of district heating being part of the future energy systems.",
+  "abs_src": "OpenAlex",
+  "doi": ""
+ },
+ "10.1016/j.energy.2023.128387": {
+  "key": "10.1016/j.energy.2023.128387",
+  "title": "Generation and evaluation of a synthetic dataset to improve fault detection in district heating and cooling systems",
+  "year": 2023,
+  "venue": "Energy",
+  "abstract": "",
+  "abs_src": "OpenAlex",
+  "doi": "10.1016/j.energy.2023.128387",
+  "crossref": "yes",
+  "cr_title": "Generation and evaluation of a synthetic dataset to improve fault detection in district heating and cooling systems"
+ },
+ "10.1016/j.energy.2026.142174": {
+  "key": "10.1016/j.energy.2026.142174",
+  "title": "Component-level fault diagnosis in district heating networks by using a physics-based approach",
+  "year": 2026,
+  "venue": "Energy",
+  "abstract": "A District Heating Network (DHN) is composed of several components that may be prone to faults; therefore, diagnostic tools are necessary to identify malfunctions that reduce system efficiency. This study presents a physics-based diagnostic tool for the detection and identification of faults in the key DHN components, namely, pumps, pipes, valves and heat exchangers. Fault detection involves locating the faulty component, whereas fault identification enables the estimation of fault signature as well as its magnitude. The proposed diagnostic tool relies on a physics-based model of the DHN. The governing equations include the variables (namely, health indices and valve opening) that are useful to assess the health state of each DHN component (i.e., healthy or faulty condition, and fault magnitude). The values of such variables are identified by means of an optimization algorithm. The DHN serving the Campus of the University of Parma (Italy) is used as a case study. Its operation is reproduced by means of a reliable data simulator in both healthy and faulty conditions. The results demonstrate that the proposed diagnostic tool accurately evaluates the health state of all DHN components, i.e., both fault detection and fault signature are correctly identified. In addition, the difference between the actual and calculated fault magnitude is negligible in most cases, proving that the health state of each DHN component is always reliably estimated. Its reliability, computational efficiency, and robustness to noise make the diagnostic tool suitable for real-world applications.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1016/j.energy.2026.142174",
+  "crossref": "yes",
+  "cr_title": "Component-level fault diagnosis in district heating networks by using a physics-based approach"
+ },
+ "10.26868/25222708.2025.1775": {
+  "key": "10.26868/25222708.2025.1775",
+  "title": "Simulation-based benchmarking of VWART for fault detection in heat interface units",
+  "year": 2025,
+  "venue": "Building Simulation Conference proceedings",
+  "abstract": "In recent years, buildings have become increasingly digitised and monitored. As a result, in many cases, it is found that the energy performance of buildings falls short of expectations. Several studies indicate that this performance gap can be related to the presences of faults in the building's energy system, which can be responsible for 4-30% of the energy consumption [1]. Therefore, interest in fault detection and diagnosis (FDD) techniques for building energy systems has increased. However, building energy systems are inherently diverse, encompassing a wide range of components, configurations, and control strategies. This diversity makes it challenging to develop generic, robust, and reliable FDD algorithms. These FDD algorithms rely on historical and/or case-specific operational data for their development. Consequently, they may not fully capture the nuances of the different system configurations [1].In this research, we address the advantages of using a simulation-based approach for the development of reliable, robust, and generic FDD algorithms. More specifically, the approach is applied to a type of collective residential heating system called the combined heat distribution circuit (CHDC), also known as the flatstation concept. By simulating various configurations of the CHDC and common fault scenarios identified in previous research [2], operation conditions are emulated, and a fault detection strategy involving key performance indicators, such as the Volume-Weighted Average Return Temperature (VWART), and thresholds are developed. The most impactful system parameters on the performance indicators, such as the temperature regime, type of components, controls, and type of occupant, are explored. Based on this knowledge, statistical analysis, clustering techniques, and logistic regression are used to develop the FD strategy and define proper thresholds. Subsequently, the simulation-based monitoring approach is assessed by applying the methodology for one the faults encountered in previous research [2] using data from residential heat meters. Finally, we reflect on the applicability of the simulation-based approach and future improvements.",
+  "abs_src": "OpenAlex",
+  "doi": "10.26868/25222708.2025.1775",
+  "crossref": "yes",
+  "cr_title": "Simulation-based benchmarking of VWART for fault detection in heat interface units"
+ },
+ "10.1016/j.egyai.2025.100658": {
+  "key": "10.1016/j.egyai.2025.100658",
+  "title": "Reproducibility of machine learning-based fault detection and diagnosis for HVAC systems in buildings: An empirical study",
+  "year": 2025,
+  "venue": "Energy and AI",
+  "abstract": "Reproducibility is a cornerstone of credible scientific research. The topic gained prominence in fields such as psychology, medicine and artificial intelligence where concerns about non-replicable results sparked ongoing discussions about research practices. However, its status within machine learning for building systems is underexamined. Therefore, this work contributes to closing this gap by analyzing the reproducibility of machine learning-based fault detection and diagnosis studies published over the past decade. We found that nearly all articles are not reproducible due to insufficient disclosure across key dimensions of reproducibility. Notably, 72% of the articles do not specify whether the dataset used is public, proprietary, or commercially available. Only two papers share a link to their code, one of which was broken. Two-thirds of the publications were authored exclusively by academic researchers, yet no significant differences in reproducibility were observed compared to publications with industry-affiliated authors. These findings highlight the need for targeted interventions, including reproducibility guidelines, training for researchers, and policies by journals and conferences that promote transparency and reproducibility.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1016/j.egyai.2025.100658",
+  "crossref": "yes",
+  "cr_title": "Reproducibility of machine learning-based fault detection and diagnosis for HVAC systems in buildings: An empirical study"
+ },
+ "10.1016/j.enbuild.2019.03.024": {
+  "key": "10.1016/j.enbuild.2019.03.024",
+  "title": "A performance evaluation framework for building fault detection and diagnosis algorithms",
+  "year": 2019,
+  "venue": "Energy and Buildings",
+  "abstract": "",
+  "abs_src": "OpenAlex",
+  "doi": "10.1016/j.enbuild.2019.03.024",
+  "crossref": "yes",
+  "cr_title": "A performance evaluation framework for building fault detection and diagnosis algorithms"
+ },
+ "10.2172/1503166": {
+  "key": "10.2172/1503166",
+  "title": "Metrics and Methods to Assess Building Fault Detection and Diagnosis Tools",
+  "year": 2019,
+  "venue": "OSTI OAI (U.S. Department of Energy Office of Scientific and Technical Information)",
+  "abstract": "This paper presents the research methodology and findings related to fault definition, input samples, and evaluation metrics. We discuss these findings in light of key considerations for FDD algorithm performance testing, and conclude with recommendations and suggested areas of future work.",
+  "abs_src": "OpenAlex",
+  "doi": "10.2172/1503166",
+  "crossref": "yes",
+  "cr_title": "Metrics and Methods to Assess Building Fault Detection and Diagnosis Tools"
+ },
+ "10.1038/s41597-023-02197-w": {
+  "key": "10.1038/s41597-023-02197-w",
+  "title": "A labeled dataset for building HVAC systems operating in faulted and fault-free states",
+  "year": 2023,
+  "venue": "Scientific Data",
+  "abstract": "Open data is fueling innovation across many fields. In the domain of building science, datasets that can be used to inform the development of operational applications - for example new control algorithms and performance analysis methods - are extremely difficult to come by. This article summarizes the development and content of the largest known public dataset of building system operations in faulted and fault free states. It covers the most common HVAC systems and configurations in commercial buildings, across a range of climates, fault types, and fault severities. The time series points that are contained in the dataset include measurements that are commonly encountered in existing buildings as well as some that are less typical. Simulation tools, experimental test facilities, and in-situ field operation were used to generate the data. To inform more data-hungry algorithms, most of the simulated data cover a year of operation for each fault-severity combination. The data set is a significant expansion of that first published by the lead authors in 2020.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1038/s41597-023-02197-w",
+  "crossref": "yes",
+  "cr_title": "A labeled dataset for building HVAC systems operating in faulted and fault-free states"
+ },
+ "10.1038/s41597-025-06179-y": {
+  "key": "10.1038/s41597-025-06179-y",
+  "title": "Labeled Datasets for Air Handling Units Operating in Faulted and Fault-free States",
+  "year": 2026,
+  "venue": "Scientific Data",
+  "abstract": "Data-driven fault detection and diagnosis (FDD) for buildings' heating, ventilating, and air conditioning (HVAC) systems has gained popularity in recent years. However, the scarcity of well-labeled data that represents true fault symptoms presents a challenge for developing new FDD methods. Furthermore, there is growing interest in applying transfer learning (TL) for building applications, where well-labeled data from one building is used to diagnose faults in a related but different building. Successful evaluation of TL algorithms requires at least two datasets that share similarities yet exhibit differences in some operational conditions. Unfortunately, the lack of comparative studies to identify suitable dataset pairs has slowed the progress of TL or other inter-dataset studies. To address these challenges, this paper focuses on the air handling unit (AHU), a key HVAC subsystem, and 1) presents the publication of eight new datasets, operating under fault-free and various faulty conditions; and 2) conducts a comprehensive study on AHU fault datasets to identify dataset pairs and their associated faults that are most suitable for evaluating TL algorithms.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1038/s41597-025-06179-y",
+  "crossref": "yes",
+  "cr_title": "Labeled Datasets for Air Handling Units Operating in Faulted and Fault-free States"
+ },
+ "10.1016/j.buildenv.2025.113889": {
+  "key": "10.1016/j.buildenv.2025.113889",
+  "title": "Evaluating cross-building transferability of attention-based automated fault detection and diagnosis for air handling units: Auditorium and hospital case study",
+  "year": 2025,
+  "venue": "Building and Environment",
+  "abstract": "",
+  "abs_src": "OpenAlex",
+  "doi": "10.1016/j.buildenv.2025.113889",
+  "crossref": "yes",
+  "cr_title": "Evaluating cross-building transferability of attention-based automated fault detection and diagnosis for air handling units: Auditorium and hospital case study"
+ },
+ "10.5281/zenodo.23863311": {
+  "key": "10.5281/zenodo.23863311",
+  "title": "Code and results for \"Not all faults are equal: impact-weighted evaluation of HVAC fault detection with paired fault-free simulations and field experiments\"",
+  "year": 2026,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "abstract": "Python code and derived results accompanying the article \u201cNot all faults are equal: impact-weighted evaluation of HVAC fault detection with paired fault-free simulations and field experiments\u201d. Using the public LBNL Fault Detection and Diagnostics Datasets, the code derives day-level energy-cost and service penalties for 63 simulated fault scenarios (rooftop unit, chiller plant, boiler plant) from paired faulted/fault-free runs, estimates weather-normalised impacts for 48 experimental fault-days on a real rooftop unit (ORNL), and compares four fault detectors using conventional and impact-weighted metrics (cost- and service-weighted recall, alarm precision on material fault-days). Raw data are not redistributed; see README for download and reproduction steps.",
+  "abs_src": "OpenAlex",
+  "doi": "10.5281/zenodo.23736320",
+  "crossref": "404"
+ },
+ "10.1080/23744731.2023.2263324": {
+  "key": "10.1080/23744731.2023.2263324",
+  "title": "Empirical analysis of the prevalence of HVAC faults in commercial buildings",
+  "year": 2023,
+  "venue": "Science and Technology for the Built Environment",
+  "abstract": "Commercial building HVAC systems experience many sensing, mechanical, and control-related faults that increase energy consumption and impact occupant comfort. Fault detection & diagnostics (FDD) software has been demonstrated to identify and help diagnose these types of faults. Several studies have demonstrated FDD energy savings potential, but there is limited empirical data characterizing the quantity and type of faults reported by FDD tools. This paper presents results of an FDD fault reporting study, employing multi-year monitoring data for over 60,000 pieces of HVAC equipment, covering over 90 fault types, and using new metrics that we developed to characterize fault prevalence. Study results offer an unprecedented accounting of the quantity of faults reported, the most commonly occurring faults, and fault persistence. We find that 21 air handling unit (AHU) faults were reported on 20% or more AHUs in our dataset, and 18 AHU faults persisted for more than 20% of the time period covered by the data. On any given day, 40% of AHUs and 30% of air terminal units saw a reported fault of some kind. Based on in-depth analysis of these results we provide recommendations for building operators, FDD software developers, and researchers to enable more efficient commercial building operation.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1080/23744731.2023.2263324",
+  "crossref": "yes",
+  "cr_title": "Empirical analysis of the prevalence of HVAC faults in commercial buildings"
+ },
+ "10.1016/j.enbuild.2025.115844": {
+  "key": "10.1016/j.enbuild.2025.115844",
+  "title": "Fault detection in AHU: A walkthrough for implementation in a Danish educational building",
+  "year": 2025,
+  "venue": "Energy and Buildings",
+  "abstract": "The implementation of fault detection in research articles is relatively sparse, yet it holds significant potential to contribute to the decarbonization of our building stock. This study proposes a Fault Detection (FD) methodology that can be split into three stages. 1) FD algorithm development, testing, and validation on known datasets. 2) platform creation, data collection and curation, and method implementation. 3) FD algorithm testing on an operational system running under normal conditions with no artificially induced faults. The results showed that for step 1, using suitable evaluation metrics for realistic datasets is highly important, as otherwise wrong conclusions can be drawn. It was further found that the proposed FD methodology, as intended, led to choosing an algorithm that did not cause many false alarms, as the emphasis was on avoiding these, but also that changing the weighting of the included terms could shift the focus to prioritize other issues.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1016/j.enbuild.2025.115844",
+  "crossref": "yes",
+  "cr_title": "Fault detection in AHU: A walkthrough for implementation in a Danish educational building"
+ },
+ "10.1016/j.energy.2023.128180": {
+  "key": "10.1016/j.energy.2023.128180",
+  "title": "Fault data seasonal imbalance and insufficiency impacts on data-driven heating, ventilation and air-conditioning fault detection and diagnosis performances for energy-efficient building operations",
+  "year": 2023,
+  "venue": "Energy",
+  "abstract": "The heating, ventilation and air-conditioning fault impacts vary with different seasonal climatic conditions, but the fault data may not be available under some seasons in real buildings due to the frequency and span of fault occurrences. This study evaluates the fault detection and diagnosis (FDD) performance differences of the proposed convolutional and recurrent neural networks under limited seasonal fault data scenarios and an ideal scenario covering climatic conditions from multiple seasons. The fault and normal data were gathered from fault simulations using a verified prototype building EnergyPlus model and two real fault datasets. Four different data experiments based on the simulated dataset were implemented to assess FDD performance differences, and two sets of further experiments based on each real fault dataset were conducted to verify the findings from previous experiments. The results show that the FDD architectures, trained on sufficient fault data under a certain season(s), indicate poor generalization ability to identify faults under unseen seasons. Moreover, the coverage of fault data under different seasons is more crucial in enhancing FDD performances than the amount of fault data under each season. These findings will help researchers consider this practical issue when evaluating new or existing data-driven FDD methods.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1016/j.energy.2023.128180",
+  "crossref": "yes",
+  "cr_title": "Fault data seasonal imbalance and insufficiency impacts on data-driven heating, ventilation and air-conditioning fault detection and diagnosis performances for energy-efficient building operations"
+ },
+ "10.6028/nist.ir.7365": {
+  "key": "10.6028/nist.ir.7365",
+  "title": "Results from field testing of embedded air handling unit and variable air volume box fault detection tools",
+  "year": 2006,
+  "venue": null,
+  "abstract": "Fault detection and diagnostic (FDD) methods that can detect common mechanical faults and control errors in air-handling units (AHUs) and variable-air-volume (VAV) boxes were developed and commercialized.The tools are sufficiently simple that they can be embedded in commercial building automation and control systems and rely only upon the sensor data and control signals that are commonly available in these systems.AHU Performance Assessment Rules (APAR) is a diagnostic tool that uses a set of expert rules derived from mass and energy balances to detect faults in air-handling units.VAV box Performance Assessment Control Charts (VPACC) is a diagnostic tool that uses statistical quality control measures to detect faults or control problems in VAV boxes.This report describes the transfer of the FDD methods from research to commercial use.An interface between the FDD tools and the building operator is introduced.Results are presented from a multiple site field demonstration in which APAR and VPACC were embedded in commercial AHU and VAV box controllers.Robust FDD parameters are tabulated for both APAR and VPACC.The parameters, which eliminate the need for site-specific configuration, were developed based on experience from the field demonstration.",
+  "abs_src": "OpenAlex",
+  "doi": "10.6028/nist.ir.7365",
+  "crossref": "yes",
+  "cr_title": "Results from field testing of embedded air handling unit and variable air volume box fault detection tools"
+ }
+}
