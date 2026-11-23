@@ -122,3 +122,29 @@ counted), #10 under-delivery channel = 10 families (11 with the post-hoc variant
   (NOT pre-registered, not claimable): at B=4 the fusion reaches 0.464 vs 0.357 (+3 faults).
 - Verdict round 3: no gain on the primary endpoint. Rounds without primary gain: 1 (r1), 0 (r2: FA gain),
   1 (r3). Not remarkable yet.
+
+## Diagnosis after round 3: full M1 baseline table (results/m1_table.csv, m1_curves.csv; same tau/c grid for all)
+Min FA/sub-yr needed to reach recall 0.214 / 0.286 / 0.321 (6 / 8 / 9 of 28 faults):
+  B1 rule (HC/DHW shortfall vs setpoint, no learning) 0.15 / 1.08 / 1.08 ; SRCR R2 0.40 / 1.48 / 1.48 ;
+  sigma3 1.35 / 2.74 / 2.74 ; loop3s 1.12 / 3.56 / 3.56 ; AE (benchmark) 1.78 / 5.63 / 5.63 ;
+  AE-cond 2.25 / 4.05 / 4.05 ; IForest 2.42 / 18.3 / 18.3 ; qnbm 1.89(0.179) / 3.70(0.321).
+- THE EXPERT RULE DOMINATES EVERY LEARNED METHOD, INCLUDING SRCR. Rule and SRCR detect exactly the same 9 faults
+  (44, 57, 1, 62, 38, 7, 69, 15, 10); SRCR adds no detection and more false alarms. The fleet quantile model is
+  therefore NOT a contribution on M1. What carries the signal is the setpoint-relative, one-sided (shortfall)
+  representation itself, which the rule already has.
+- AE detects 6 faults, 4 of which neither rule nor SRCR detect: 20 (safety valve water loss), 53 (shut-off valve
+  closed), 49 (DHW night-mode parameterisation), 47 (heating pump blocked). Union rule|AE = 13/28.
+- Consequence for the story (honest pivot, N5 + N7): under deployment-realistic continuous evaluation, a
+  transparent setpoint-shortfall rule beats the published deep NBM benchmark by ~5x fewer false alarms at equal
+  recall, and the learned model's value lies in a COMPLEMENTARY fault set (hydraulic / pump / valve faults that
+  do not show as a tracking shortfall).
+
+## Round 4 plan (hypotheses written BEFORE running)
+ F15 Budget-split OR-fusion: alarm = rule alarm OR learned-detector alarm; the FA budget B is split between the
+     two by choosing the pair of operating points (each from its own Pareto front on M1) maximising recall subject
+     to combined FA <= B. Partners pre-registered: AE (benchmark), underdel, qnbm (3 ideas, all counted).
+ F16 Residualised learned detector: train/score the AE only on time when the rule is quiet... (NOT run in round 4;
+     listed for round 5 if F15 supported).
+ H4a: best F15 pair reaches recall >= 0.393 (11/28) at <= 2 FA/sub-yr (rule alone: 0.321). Falsified otherwise.
+ H4b: the rule+AE pair alone reaches >= 0.357 (10/28) at <= 2 FA/sub-yr. Falsified otherwise.
+ Multiplicity: 3 partners x 3 budgets reported; final candidate tested once on M2.
