@@ -8,3 +8,4 @@ Target_Journal_Submission/code/results/logs/r_*.log
 Target_Journal_Submission/code/results/logs/dry_*.log
 Target_Journal_Submission/code/results/logs/secondary.log
 Target_Journal_Submission/RECHECK/stage1/pdfs/
+Target_Journal_Submission/RECHECK/logs/run_all_full.log
