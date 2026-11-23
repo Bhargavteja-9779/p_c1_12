@@ -35,6 +35,8 @@ Branch: claude/peaceful-planck-2kznjo. Started 2026-11-23.
 - Stage 1 alt-journal scan (stage1/multi_journal_dates.py, 20 Elsevier journals) running: Results in Engineering
   median 93 / p75 105 (n=25), Smart Energy 127.5 / 250 (n=10): both FAIL.
 
+- LIVE FILES untracked while jobs run (remove from .gitignore and force-add when done): stage1/alt.log, stage1/alt_journal_dates.csv, stage3/raw/, logs/run_all_full.log.
+
 ## NEXT ACTION
 1. Wait for run_all full (log logs/run_all_full.log); then compare ALL committed numbers (m2_evaluate output vs
    results/locked_m2_*.csv in git), run scripts/protocol_gap.py and scripts/random_label.py (venv python).

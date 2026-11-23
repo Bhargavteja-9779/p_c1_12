@@ -1,6 +1,0 @@
-{
- "query": "abs:\"isolation forest\" AND abs:autoencoder AND abs:\"fault detection\" AND abs:comparison",
- "source": "arXiv API",
- "count": 0,
- "results": []
-}

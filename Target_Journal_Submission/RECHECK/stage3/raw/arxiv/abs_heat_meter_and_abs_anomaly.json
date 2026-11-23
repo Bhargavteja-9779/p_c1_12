@@ -1,6 +1,0 @@
-{
- "query": "abs:\"heat meter\" AND abs:anomaly",
- "source": "arXiv API",
- "count": 0,
- "results": []
-}

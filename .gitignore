@@ -10,3 +10,5 @@ Target_Journal_Submission/code/results/logs/secondary.log
 Target_Journal_Submission/RECHECK/stage1/pdfs/
 Target_Journal_Submission/RECHECK/logs/run_all_full.log
 Target_Journal_Submission/RECHECK/stage1/alt.log
+Target_Journal_Submission/RECHECK/stage1/alt_journal_dates.csv
+Target_Journal_Submission/RECHECK/stage3/raw/
