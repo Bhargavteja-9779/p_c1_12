@@ -39,9 +39,15 @@ STEP 0: journal landscape and 72-day check (in progress)
   (src/models/channels.py), fusion (src/models/fusion.py). Journal benchmark delegated to a sub-agent (writes
   journal_benchmark.csv, journal_level_profile.md, style_notes.md) — if missing after resume, redo STEP 1.
 
+- STEP 1 DONE: journal_benchmark.csv (40 Energy and AI papers, 16 full text), level profile, style notes.
+- D6 rounds 0-2 DONE (log in code/experiments/novelty_escalation_log.md). Best so far on M1:
+  srcr_comp + compose(gate=True, one_sided=True, local=True): recall 0.321 at 1.48 FA/sub-yr; AE 0.214.
+  Not yet 'remarkable'. Components: scripts/run_srcr_components.py; variants: scripts/round2_variants.py.
+- Baselines rule/sigma3/loop3s/iforest/qnbm launched on M1 (check results/scores/<name>/m1 has 35 files;
+  rerun scripts/run_online_method.py <name> 1 if not).
+
 ## NEXT ACTION
-1. When results/scores/{intent,delivery}/m1 have 35 files: run diagnosis (src/evaluation/diagnose.fault_ranks)
-   and fusion (fusion.fuse(['srcr','intent','delivery'],1,fusion.m1_folds(),'fused3')), then
-   runner.operating_curve on 'fused3'; log round 1 in novelty_escalation_log.md vs hypotheses H1a-c.
-2. Novelty map: candidate list at /tmp/claude-0/novelty_candidates.csv (regenerate from
-   journal_selection/lit_raw.csv) -> novelty_map.csv (>=30) + novelty_scorecard.md.
+1. Round 3 (pre-register hypotheses in the log first): daily decision unit, LBNL AHU second domain,
+   conformal FA-budget threshold, under-delivery fusion.
+2. Novelty map (>=30, candidates in journal_selection/lit_raw.csv) + scorecard once the method is fixed.
+3. Then seeds 0-9, full baselines table on M1, single locked evaluation on M2.

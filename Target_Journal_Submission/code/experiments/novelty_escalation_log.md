@@ -60,3 +60,25 @@ Ideas counted so far: #1 SRCR-v0, #2 intent channel, #3 delivery channel, #4 max
  H2a: F8 cuts SRCR false alarms by >= 30% at the round-0 operating point with no lost detection.
  H2b: F7 (+F8) raises M1 recall at <= 2 FA/sub-yr by >= 0.10 absolute over SRCR-v0 (0.25 -> >= 0.35).
  H2c: F9 cuts false alarms by >= 20% at a fixed operating point with <= 1 lost detection.
+
+## Round 2 results (2026-11-23, M1 development; results/round2_srcr_comp.csv)
+Ideas counted so far: 4 + #5 gating, #6 local (fleet-prior -> local-posterior) calibration, #7 one-sided = 7
+families; 6 composed variants evaluated.
+- Recall at <=2 FA/sub-yr: base 0.214, gate 0.250, gate+1s 0.286, gate+local 0.250, gate+1s+local 0.321,
+  1s+local 0.321. AE (tau swept) 0.214.
+- H2a SUPPORTED: at tau 4 / c_thr 48, gating cuts false alarms 239 -> 121 (-49%) at equal recall (0.214).
+- H2c SUPPORTED: one-sided cuts 121 -> 86 (-29%) at equal recall.
+- H2b FALSIFIED at the pre-set threshold: best variant +0.071 recall over SRCR-v0 (needed +0.10).
+- Strongest effect is on false alarms at matched recall: gate+1s+local reaches recall 0.214 at 0.40 FA/sub-yr;
+  AE needs 1.78 FA/sub-yr for the same recall (~4.5x more). Recall differences remain 1-3 faults (n=28): not
+  remarkable yet.
+- Search for additional labelled DH data (HuggingFace, Zenodo): none besides PreDist. Candidate second domain
+  for generality of the setpoint-relative principle: LBNL building FDD datasets (OpenEI, AHU with setpoints).
+
+## Round 3 candidates (to pre-register before running)
+ F10 Daily decision unit (operator morning report) instead of 10-min criticality counter.
+ F11 Second domain (LBNL AHU FDD) to test whether gated/one-sided/fleet-calibrated setpoint residuals generalise.
+ F12 Delivery channel restricted to under-delivery + gating by heating season, fused only with exec channel.
+ F13 Substation-level conformal threshold for a guaranteed FA budget (theory, N3).
+ F14 Change primary endpoint emphasis to false alarms at matched recall (better powered; pre-register as
+     secondary, already listed in protocol amendments).
