@@ -5,6 +5,7 @@ import pandas as pd
 from src.data import predist as P
 from src.evaluation import runner as R
 methods = sys.argv[1].split(",")
+tag = sys.argv[2] if len(sys.argv) > 2 else ""
 rows, curves = [], []
 for m in methods:
     if len(os.listdir(R.score_path(m, 1))) < len(P.substations(1)):
@@ -12,9 +13,9 @@ for m in methods:
     t, c = R.best_at_budgets(m, 1); c["method"] = m
     rows.append(t); curves.append(c)
     print(t[["method", "budget", "tau", "c_thr", "recall", "fa_per_sub_year", "median_lead_h"]].round(3).to_string(index=False, header=False), flush=True)
-pd.concat(rows).to_csv("results/m1_table.csv", index=False)
+pd.concat(rows).to_csv(f"results/m1_table{tag}.csv", index=False)
 C = pd.concat(curves)
-C.to_csv("results/m1_curves.csv", index=False)
+C.to_csv(f"results/m1_curves{tag}.csv", index=False)
 out = []
 for r in (0.143, 0.214, 0.286, 0.321):
     for m, g in C.groupby("method"):

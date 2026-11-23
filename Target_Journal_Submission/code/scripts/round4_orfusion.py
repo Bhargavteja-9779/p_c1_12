@@ -10,7 +10,7 @@ from src.models import online as O
 
 M = 1
 BUDGETS = (1, 2, 4)
-curves = pd.read_csv("Target_Journal_Submission/code/results/m1_curves.csv" if not os.path.exists("results/m1_curves.csv") else "results/m1_curves.csv")
+curves = pd.concat([pd.read_csv(f) for f in ["results/m1_curves.csv"] + ([os.environ["EXTRA_CURVES"]] if os.environ.get("EXTRA_CURVES") else [])])
 
 
 def pareto(method, fa_max=6.0):
