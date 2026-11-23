@@ -84,13 +84,20 @@ STEP 2-3: method fixed (factorial framing); M1 rebuild + seeds, then locked M2 e
 - Session 3 rebuild check: srcr_comp seed 0 reproduces round 4 EXACTLY (SRCR-C 0.321/0.357/0.357 at
   0.654/1.436/1.436 FA/sub-yr; gate+1s+local 0.214/0.321/0.357). Seeds 1-9 M1 chain launched (r_srcr_seed*.log).
 
-## NEXT ACTION
-1. Wait/collect M1 heavy baselines (ae_comfort, ae_cond, iforest, qnbm; logs results/logs/b_*.log; rerun
-   `python3 scripts/run_online_method.py <name> 1` if fewer than 35 files in results/scores/<name>/m1).
-   Then `python3 scripts/matched_recall.py <list> all_m1` and paired_ranks for the factorial cells.
-2. Pre-register the factorial hypotheses in protocol.md (amendment A4) BEFORE any M2 scoring.
-3. Mechanism analysis: what drives AE false alarms (per-signal reconstruction error share; setpoint changes).
-4. Novelty map (>=30) + scorecard for the pivoted framing; seeds 0-9; single locked M2 evaluation.
+## NEXT ACTION (rewritten session 3)
+Running in background (check results/scores/<name>/m{1,2} file counts; M1 = 35, M2 = 58 files):
+  M1: ae_comfort, ae_cond, qnbm (xargs pool), srcr_comp_seed1..9 (+variants) chain.
+  M2: rule/sigma3/loop3s/loop3s_c, then (after M1 pool) ae, ae_comfort, ae_cond, iforest, qnbm, run_m2_fleet 0.
+  If a container restart kills them: rerun the same commands; compute_scores skips finished substations.
+1. When M1 complete: matched_recall + paired_ranks for all cells (M1 table); seed summary for SRCR (1-9).
+2. run_m2_fleet.py 1..9; then scripts/m2_evaluate.py 2 EXACTLY ONCE (log it in novelty_escalation_log).
+3. Pre-registered v1 secondary analyses still owed (report all, incl. negative): cold start by days of own
+   history (important: M2 median series = 182 d), missing loops, temporal sensitivity (fleet trained < 2018),
+   efficiency (train/score time), fleet-level impact (alarms/week for 93 subs), PreDist event protocol
+   (F0.5/earliness) for comparability, error analysis by fault label. Disclose: v1 said 24 evaluable M2
+   faults, harness counts 25; v1 B6 fleet-pooled AE was not run (say so or run it).
+4. Figures (~10) + tables (3-4) from real data; manuscript (manuscript/), reviews REVIEW/, docx + cover letter.
+
 ## Resume notes (saved 2026-11-23 before account switch)
 - Results/scores and data cache are NOT in git (large). On a new machine: run
   `bash Target_Journal_Submission/code/scripts/download_data.sh`, then `python3 code/scripts/build_cache.py`,
