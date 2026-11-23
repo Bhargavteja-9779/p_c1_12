@@ -1,0 +1,443 @@
+doi,date,title,n_alt_pdf,pdf
+https://doi.org/10.1016/j.egyai.2025.100571,2025-08-04,Conformal Prediction for electricity price forecasting in the day-ahead and real-time balancing market,1,https://arxiv.org/pdf/2502.04935
+https://doi.org/10.1016/j.egyai.2025.100559,2025-07-15,Machine learning-assisted optimization of CsPbI₃-based all-inorganic perovskite solar cells: A combined SCAPS-1D and XGBoost approach,0,
+https://doi.org/10.1016/j.egyai.2025.100573,2025-08-06,Comparative analysis of conformal prediction techniques and machine learning models for very short-term solar power forecasting,0,
+https://doi.org/10.1016/j.egyai.2025.100585,2025-08-08,Towards a smarter battery management system: A critical review on deep learning-based state of charge estimation of lithium-ion batteries,1,https://depositonce.tu-berlin.de/bitstreams/5964c469-9d20-4f6a-9cb5-4cc880640e38/download
+https://doi.org/10.1016/j.egyai.2025.100595,2025-08-23,Opening the AI black-box: Symbolic regression with Kolmogorov–Arnold Networks for advanced energy applications,1,https://arxiv.org/pdf/2504.03913
+https://doi.org/10.1016/j.egyai.2025.100540,2025-07-01,Multi-temporal PV power prediction using long short-term memory and wavelet packet decomposition,1,https://re.public.polimi.it/bitstream/11311/1308084/1/1-s2.0-S2666546825000722-main.pdf
+https://doi.org/10.1016/j.egyai.2025.100671,2026-01-01,Graph reinforcement learning for power grids: A comprehensive survey,1,https://arxiv.org/pdf/2407.04522
+https://doi.org/10.1016/j.egyai.2025.100594,2025-08-20,Meta-heuristic federated learning aggregation methods for load forecasting,0,
+https://doi.org/10.1016/j.egyai.2025.100545,2025-06-23,Enhancing electric vehicle charging load prediction in data-scarce scenarios: A hybrid deep learning-based approach integrating clustering analysis and transfer learning,0,
+https://doi.org/10.1016/j.egyai.2025.100555,2025-07-23,Automating Monte Carlo simulations in nuclear engineering with domain knowledge-embedded large language model agents,0,
+https://doi.org/10.1016/j.egyai.2025.100577,2025-07-29,Data-driven modeling of polymer electrolyte fuel cells: Towards predictive analytics with explainable artificial intelligence,1,https://publications.rwth-aachen.de/record/1036362/files/1036362.pdf
+https://doi.org/10.1016/j.egyai.2025.100532,2025-06-11,Explaining deep neural network models for electricity price forecasting with XAI,2,https://arxiv.org/pdf/2506.19894
+https://doi.org/10.1016/j.egyai.2025.100576,2025-07-26,Integrating artificial intelligence into energy management: A case study on energy consumption data analysis and forecasting in a German manufacturing company,0,
+https://doi.org/10.1016/j.egyai.2025.100591,2025-08-26,Intelli-Dispatch-SQL: An LLM-based agent for reliable Text-to-SQL in power dispatching,0,
+https://doi.org/10.1016/j.egyai.2025.100547,2025-07-05,Predicting future polarization curves from operating data: Machine learning-based investigation of degradation modeling concepts for PEM water electrolysis,1,https://repo.uni-hannover.de/bitstreams/f1a263c2-20ba-46a0-a5be-d587dfbeea91/download
+https://doi.org/10.1016/j.egyai.2026.100842,2026-07-20,Towards generalization of graph neural networks for AC optimal power flow,1,https://arxiv.org/pdf/2510.06860
+https://doi.org/10.1016/j.egyai.2025.100647,2025-12-01,Fast and generalisable parameter-embedded neural operators for lithium-ion battery simulation,1,https://arxiv.org/pdf/2508.08087
+https://doi.org/10.1016/j.egyai.2026.100689,2026-01-22,DFL-RUL: Decentralised Federated Learning for Battery Remaining Useful Life Estimation on Heterogeneous Edge-to-cloud,1,https://napier-repository.worktribe.com/file/4960714/1/DFL-RUL%3A%20Decentralised%20Federated%20Learning%20for%20Battery%20Remaining%20Useful%20Life%20Estimation%20on%20Heterogeneous%20Edge-to-cloud
+https://doi.org/10.1016/j.egyai.2025.100533,2025-06-25,Decision-focused fine-tuning of time series foundation models for dispatchable feeder optimization,1,https://arxiv.org/pdf/2503.01936
+https://doi.org/10.1016/j.egyai.2025.100606,2025-09-02,Opportunities and perspectives of artificial intelligence in electrocatalysts design for water electrolysis,0,
+https://doi.org/10.1016/j.egyai.2026.100682,2026-01-01,A transformer-LSTM network enhanced by EEMD for ultra-short-term wind power forecasting,0,
+https://doi.org/10.1016/j.egyai.2025.100553,2025-07-02,Physics-informed deep convolutional hierarchical encoder-decoder neural network for flow field prediction in wind farms,0,
+https://doi.org/10.1016/j.egyai.2025.100658,2025-12-01,Reproducibility of machine learning-based fault detection and diagnosis for HVAC systems in buildings: An empirical study,1,https://arxiv.org/pdf/2508.00880
+https://doi.org/10.1016/j.egyai.2025.100667,2025-12-15,Interpretable transformer based intra-day solar forecasting with spatiotemporal satellite and numerical weather prediction inputs,0,
+https://doi.org/10.1016/j.egyai.2025.100552,2025-07-15,A Hybrid machine learning–statistical based method for short-term energy consumption prediction in residential buildings,0,
+https://doi.org/10.1016/j.egyai.2026.100688,2026-02-02,Power system operational reliability evaluation with retrieval-augmented generation enhanced large language model,0,
+https://doi.org/10.1016/j.egyai.2025.100538,2025-07-02,Physics-Guided Memory Network for building energy modeling,1,https://arxiv.org/pdf/2508.09161
+https://doi.org/10.1016/j.egyai.2025.100542,2025-06-16,Fast data augmentation for battery degradation prediction,1,https://arxiv.org/pdf/2503.13552
+https://doi.org/10.1016/j.egyai.2025.100535,2025-06-24,Transformer-based forecasting for high-frequency natural gas production data,0,
+https://doi.org/10.1016/j.egyai.2025.100561,2025-07-15,Achieving high precision and balanced multi-energy load forecasting with mixed time scales: a multi-task learning model with stacked cross-attention,0,
+https://doi.org/10.1016/j.egyai.2025.100548,2025-07-15,HEAT: Hierarchical-constrained Encoder-Assisted Time series clustering for fault detection in district heating substations,1,https://bth.diva-portal.org/smash/get/diva2:1989588/FULLTEXT01
+https://doi.org/10.1016/j.egyai.2025.100588,2025-08-09,A quantum neural network model for short term wind speed forecasting using weather data,0,
+https://doi.org/10.1016/j.egyai.2025.100625,2025-09-24,"A robust hybrid machine learning framework for short-term load forecasting: integrating multi-linear regression, long short-term memory, and feed-forward neural networks for enhanced accuracy and efficiency",0,
+https://doi.org/10.1016/j.egyai.2026.100930,2026-10-16,Modeling membrane degradation in PEM electrolyzers with Physics-Informed Neural Networks,2,https://arxiv.org/pdf/2507.02887
+https://doi.org/10.1016/j.egyai.2025.100549,2025-07-02,Active-learning-driven error control for data-driven state of charge estimation across the lithium battery lifecycle,0,
+https://doi.org/10.1016/j.egyai.2025.100537,2025-07-02,Accelerating sodium-ion electrode material development through AI-driven optimization and predictive modeling,0,
+https://doi.org/10.1016/j.egyai.2025.100584,2025-07-31,Augmented robustness in home demand prediction: Integrating statistical loss function with enhanced cross-validation in machine learning hyperparameter optimisation,0,
+https://doi.org/10.1016/j.egyai.2025.100586,2025-08-11,A flow-based model for conditional and probabilistic electricity consumption profile generation,1,https://arxiv.org/pdf/2405.02180
+https://doi.org/10.1016/j.egyai.2025.100626,2025-10-15,Fault detection in new wind turbines with limited data by generative transfer learning,1,https://arxiv.org/pdf/2504.17709
+https://doi.org/10.1016/j.egyai.2026.100756,2026-04-17,Variational digital twins,1,https://arxiv.org/pdf/2507.01047
+https://doi.org/10.1016/j.egyai.2025.100541,2025-06-16,Continuous variable quantum reinforcement learning for HVAC control and power management in residential building,0,
+https://doi.org/10.1016/j.egyai.2025.100558,2025-07-23,Artificial intelligence in photovoltaic fault diagnosis: A Natural Language-Based Topic-tSNE Fusion analysis,1,https://hal.science/hal-05251841v1/file/1-s2.0-S2666546825000904-main%20%281%29.pdf
+https://doi.org/10.1016/j.egyai.2025.100568,2025-07-16,Study of current distribution generation in PEMFC based on conditional variational auto-encoder,0,
+https://doi.org/10.1016/j.egyai.2025.100648,2025-11-25,"An explainable artificial intelligence feature selection framework for transparent, trustworthy, and cost-efficient energy forecasting",1,https://repo.uni-hannover.de/bitstreams/1e9aebb7-ed5a-48ee-b027-63f597e268ab/download
+https://doi.org/10.1016/j.egyai.2026.100717,2026-03-17,Deep reinforcement learning-based coordinated optimization between distribution networks and microgrids towards demand response uncertainty,0,
+https://doi.org/10.1016/j.egyai.2025.100575,2025-08-21,Semi-supervised battery state of health estimation for field applications,1,https://epub.uni-bayreuth.de/id/eprint/9100/1/1-s2.0-S2666546825001077-main.pdf
+https://doi.org/10.1016/j.egyai.2025.100610,2025-09-02,Generative artificial intelligence: Pioneering a new paradigm for research and education in smart energy systems,0,
+https://doi.org/10.1016/j.egyai.2025.100608,2025-09-11,Deep kernel Bayesian optimisation for closed-loop electrode microstructure design with user-defined properties,1,https://arxiv.org/pdf/2508.00833
+https://doi.org/10.1016/j.egyai.2025.100605,2025-09-17,Energy-GNoME: A living database of selected materials for energy applications,2,https://arxiv.org/pdf/2411.10125
+https://doi.org/10.1016/j.egyai.2025.100623,2025-10-05,Evaluating activation strategies and their stability on PEM water electrolyzers using machine learning,0,
+https://doi.org/10.1016/j.egyai.2025.100642,2025-10-28,Smart energy strategies: Leveraging LSTM and LLMs for advanced energy management,0,
+https://doi.org/10.1016/j.egyai.2025.100646,2025-11-28,BatteryTSFM: Generalizable long-horizon degradation prediction across conditions and chemistries via time series foundation models,0,
+https://doi.org/10.1016/j.egyai.2026.100747,2026-04-18,Applications of physics-informed neural networks in fluid flow in porous media - A review study,0,
+https://doi.org/10.1016/j.egyai.2025.100570,2025-08-06,Cyber-physical-human systems for mobile robots in energy asset management: Current practices and future opportunities,1,https://eprints.gla.ac.uk/360611/1/360611.pdf
+https://doi.org/10.1016/j.egyai.2025.100600,2025-08-27,"A hybrid monthly electricity demand forecasting model combining an Hodrick-Prescott filter, recurrent neural networks, and autoregressive integrated moving average",0,
+https://doi.org/10.1016/j.egyai.2025.100564,2025-08-28,AI challenge for safe and low carbon power grid operation,0,
+https://doi.org/10.1016/j.egyai.2025.100628,2025-10-01,Investigation of fuel cell stack performance degradation based on 1000 h durability experiments and long short-term memory prediction frameworks under dynamic load conditions,0,
+https://doi.org/10.1016/j.egyai.2025.100655,2025-11-28,Surrogate-driven design optimization with uncertainty constraints in Monte Carlo simulations,0,
+https://doi.org/10.1016/j.egyai.2026.100706,2026-02-26,Data-driven optimization of hybrid membrane electrode assembly configurations for enhanced proton exchange membrane fuel cell performance,0,
+https://doi.org/10.1016/j.egyai.2025.100565,2025-08-05,Detection of wind turbine rotor imbalance using unsupervised output-only vibration data analysis,0,
+https://doi.org/10.1016/j.egyai.2025.100662,2025-11-29,Large format battery SoC estimation: An ultrasonic sensing and deep transfer learning predictions for heterogeneity,0,
+https://doi.org/10.1016/j.egyai.2026.100690,2026-01-31,Explainable optimized voting ensemble for photovoltaic power forecasting,0,
+https://doi.org/10.1016/j.egyai.2026.100751,2026-04-12,Deep reinforcement learning-enabled intelligent thermal management controls for hybrid fuel cell-battery powertrains under cold conditions,0,
+https://doi.org/10.1016/j.egyai.2025.100554,2025-07-15,Constrained reduced-order modeling using bounded Gaussian processes for physically consistent reacting flow predictions,0,
+https://doi.org/10.1016/j.egyai.2025.100587,2025-08-05,Optimization framework for energy-efficient and uniform jet impingement cooling for heterogeneous integration packaging,0,
+https://doi.org/10.1016/j.egyai.2025.100592,2025-08-09,Hybrid deep learning architecture for temperature gradient control of a solid oxide electrolysis cell under fluctuating wind power,0,
+https://doi.org/10.1016/j.egyai.2025.100664,2025-12-13,Cooperative multi-agent reinforcement learning for grid-aware EV charging management with cross-site redirection,0,
+https://doi.org/10.1016/j.egyai.2026.100679,2026-01-01,A graph neural network enhanced decision transformer for efficient optimization in dynamic smart charging environments,1,https://arxiv.org/pdf/2502.01778
+https://doi.org/10.1016/j.egyai.2026.100685,2026-02-05,Trustworthy and explainable deep reinforcement learning for safe and energy-efficient process control: A use case in industrial compressed air systems,1,https://arxiv.org/pdf/2512.18317
+https://doi.org/10.1016/j.egyai.2026.100708,2026-02-27,Discerning the underlying trends in electrocatalytic hydrogen evolution activity of MOF/MOF-derived materials using data-driven approach,0,
+https://doi.org/10.1016/j.egyai.2026.100743,2026-04-03,Machine learning-assisted optimization of eco-friendly Sb₂S₃ thin-film solar cells: a sustainable SCAPS-1D and SHAP-based design framework,0,
+https://doi.org/10.1016/j.egyai.2026.100780,2026-05-25,Energy forecasting under missing data: Comparative evaluation of augmented representations and decoder-only time-series imputation,0,
+https://doi.org/10.1016/j.egyai.2025.100590,2025-08-05,Transient thermomechanical response of an electrolyte supported planar solid oxide electrolysis cell under dynamic loading conditions,0,
+https://doi.org/10.1016/j.egyai.2025.100611,2025-09-02,Whale algorithm optimized anode pressure controller for fuel cell systems in ejector recirculation mode,0,
+https://doi.org/10.1016/j.egyai.2025.100612,2025-09-03,An enhanced sorting framework for retired batteries based on multi-dimensional features and an integrated clustering approach,0,
+https://doi.org/10.1016/j.egyai.2025.100620,2025-09-14,Predictive maintenance for wind turbines: A physics-driven reinforcement learning strategy with economic-reliability collaborative optimization,0,
+https://doi.org/10.1016/j.egyai.2025.100670,2025-12-19,TRACE: Time series representation learning with contrastive embeddings for anomaly detection in photovoltaic systems,0,
+https://doi.org/10.1016/j.egyai.2026.100698,2026-02-09,Advancing multi-generation energy system optimization through artificial intelligence-driven configuration optimization: a novel framework for simultaneous component selection and parameter adjustment,0,
+https://doi.org/10.1016/j.egyai.2026.100693,2026-02-11,An adaptive estimation approach based on fisher information to overcome the flat voltage plateau challenges of SOC estimation in LFP batteries,0,
+https://doi.org/10.1016/j.egyai.2026.100790,2026-06-01,Data-driven degradation analysis of proton exchange membrane electrolyzer stacks under dynamic load operation,1,https://research.aalto.fi/files/224733269/1-s2.0-S2666546826001163-main.pdf
+https://doi.org/10.1016/j.egyai.2025.100597,2025-08-21,Physics-embedded graph learning unlocks integrated energy system modeling,0,
+https://doi.org/10.1016/j.egyai.2025.100627,2025-10-01,EGBAD: Ensemble graph-boosted anomaly detection for user-level multi-energy load data,0,
+https://doi.org/10.1016/j.egyai.2025.100630,2025-10-17,Dual attention-enhanced data augmentation for diagnosing water management faults in proton exchange membrane fuel cells using imbalanced multi-sine AC data,0,
+https://doi.org/10.1016/j.egyai.2025.100653,2025-11-29,Deep reinforcement learning for joint dispatch of battery storage and gas turbines in renewable-powered microgrids,0,
+https://doi.org/10.1016/j.egyai.2026.100676,2026-01-01,A novel spatiotemporal relation fused network for solar photovoltaic power forecasting,0,
+https://doi.org/10.1016/j.egyai.2026.100735,2026-03-24,Residual-based physics-informed neural network modelling for coupled transport phenomena in porous gas diffusion layers,0,
+https://doi.org/10.1016/j.egyai.2026.100752,2026-04-14,Data-driven landscape scenicness mapping for continental-scale onshore wind resource assessment,0,
+https://doi.org/10.1016/j.egyai.2025.100539,2025-07-02,Graph-based two-level clustering for electric vehicle usage patterns,0,
+https://doi.org/10.1016/j.egyai.2025.100536,2025-06-19,Distributed nonlinear model predictive control for building energy systems: An ALADIN implementation study,0,
+https://doi.org/10.1016/j.egyai.2025.100557,2025-07-15,Size or diversity? Synthetic dataset recommendations for machine learning heating energy prediction models in early design stages for residential buildings,1,https://research.chalmers.se/publication/547604/file/547604_Fulltext.pdf
+https://doi.org/10.1016/j.egyai.2025.100607,2025-09-11,Consumer phase identification in distribution grids using Graph Neural Networks based on synthetic and measured power profiles,1,https://publications.rwth-aachen.de/record/1019265/files/1019265.pdf
+https://doi.org/10.1016/j.egyai.2025.100544,2025-06-22,Enhancing visual feature constraints in segmentation models for photovoltaic panel recognition,0,
+https://doi.org/10.1016/j.egyai.2025.100596,2025-08-25,Enhancing wind speed prediction in wind farms through ordinal classification,1,http://helvia.uco.es/xmlui/bitstream/10396/33334/1/OC_WS_2025.pdf
+https://doi.org/10.1016/j.egyai.2025.100616,2025-09-08,LFTL: Lightweight feature transfer learning with channel-independent LSTM for distributed PV forecasting,0,
+https://doi.org/10.1016/j.egyai.2025.100640,2025-11-05,Explainable artificial intelligence relates perovskite luminescence images to current-voltage metrics,0,
+https://doi.org/10.1016/j.egyai.2026.100699,2026-02-16,Implementation of a machine learning supported model predictive control for a 5th generation district heating and cooling energy hub,1,https://publications.rwth-aachen.de/record/1032628/files/1032628.pdf
+https://doi.org/10.1016/j.egyai.2025.100578,2025-07-26,WD-PSTALSTM: a data-driven hybrid model for prediction of diesel vehicle NOx emissions,0,
+https://doi.org/10.1016/j.egyai.2025.100566,2025-07-26,A neural-network-enhanced parameter-varying framework for multi-objective model predictive control applied to buildings,0,
+https://doi.org/10.1016/j.egyai.2025.100582,2025-07-31,D2: An LLM agent driving end-to-end visual AI modeling in energy platforms,0,
+https://doi.org/10.1016/j.egyai.2025.100579,2025-07-29,A multi-factor collaborative electricity load forecasting method based on feature importance and multi-scale feature extraction,0,
+https://doi.org/10.1016/j.egyai.2025.100615,2025-09-03,Prediction of geothermal heat flow for sustainable energy applications with sparse geological data using machine learning,0,
+https://doi.org/10.1016/j.egyai.2025.100613,2025-09-11,Machine-learning-accelerated screening of multi-element doped CuSb catalysts for enhanced C2+ selectivity in CO2 electroreduction,0,
+https://doi.org/10.1016/j.egyai.2025.100651,2025-11-25,MVLFLM: A parameter-efficient large language model framework for cross-domain multi-voltage load forecasting in smart grids,0,
+https://doi.org/10.1016/j.egyai.2025.100657,2025-11-27,Machine learning-guided optimization of high-performance porous composite membranes for alkaline water electrolysis,0,
+https://doi.org/10.1016/j.egyai.2025.100649,2025-11-27,Scenario generation via moments-informed normalizing flows for stochastic optimization of local energy markets,0,
+https://doi.org/10.1016/j.egyai.2026.100681,2026-01-01,Spectrogram-driven unsupervised autoencoder with isolation forest and one-class SVM for lab-scale wind turbine blade fault detection,0,
+https://doi.org/10.1016/j.egyai.2026.100714,2026-03-07,Optimal sizing of hybrid offshore wind-wave energy systems using neighborhood-reinforced ant colony optimization,0,
+https://doi.org/10.1016/j.egyai.2026.100722,2026-03-13,Transfer learning and explainable AI for heating load forecasting: A large-scale benchmark with SHAP-based static features,0,
+https://doi.org/10.1016/j.egyai.2026.100715,2026-03-13,Spatio-temporal Transformer-based modeling of multi-turbine wake effects for wind farm power forecasting,0,
+https://doi.org/10.1016/j.egyai.2026.100733,2026-03-24,An enhanced explainable large language model-based framework for electric vehicle charging station occupancy prediction,0,
+https://doi.org/10.1016/j.egyai.2026.100765,2026-05-01,Wind power forecasting with a VMD-LSTM-informer hybrid deep learning model,0,
+https://doi.org/10.1016/j.egyai.2025.100531,2025-06-11,Improving HVAC control with transfer learning: Using padding techniques for cross-building pre-training and fine-tuning,0,
+https://doi.org/10.1016/j.egyai.2025.100569,2025-07-26,Operando impedance-based battery cell internal temperature estimation under non-stationarity and non-linearity conditions,0,
+https://doi.org/10.1016/j.egyai.2025.100589,2025-08-13,Abnormal state detection of diesel engine with flexible monitoring thresholds,0,
+https://doi.org/10.1016/j.egyai.2025.100603,2025-09-03,District heating optimization in residential buildings using reinforcement learning with adaptive context-aware predictive environment,0,
+https://doi.org/10.1016/j.egyai.2026.100726,2026-03-26,"Forecasting residential heating and electricity demand with scalable, high-resolution, open-source models",2,http://arxiv.org/pdf/2505.22873
+https://doi.org/10.1016/j.egyai.2025.100637,2025-10-28,Imputing the long-term missing heating load data using a generative network,1,https://depositonce.tu-berlin.de/bitstreams/edc97df2-045d-40fa-b8fd-1d9a0eb7df6a/download
+https://doi.org/10.1016/j.egyai.2025.100650,2025-11-25,Dual-channel representation learning with wind speed correction factor for enhanced wind power forecasting,0,
+https://doi.org/10.1016/j.egyai.2025.100656,2025-12-02,MI-VMD-BSCNet: A lightweight spatiotemporal modeling framework for tube temperature prediction in coal-fired boiler water-walls,0,
+https://doi.org/10.1016/j.egyai.2026.100683,2026-01-01,Photovoltaic Knowledge-Informed Neural Network (PKINN): Interpretable power prediction model under Fluctuating Environmental Conditions,0,
+https://doi.org/10.1016/j.egyai.2026.100707,2026-02-27,Multi-source ageing integration and transfer learning with LSTM for lithium-ion battery state-of-health estimation,0,
+https://doi.org/10.1016/j.egyai.2026.100697,2026-03-02,Reinforcement learning for residential energy storage management at the neighborhood scale: A multi-benchmark evaluation,0,
+https://doi.org/10.1016/j.egyai.2026.100716,2026-03-13,Performance enhancement of tin-based perovskite solar cells by analysing experimental dataset via machine learning,0,
+https://doi.org/10.1016/j.egyai.2026.100720,2026-03-14,Proactive scheduling of resilient networked microgrids via data-efficient security region learning,0,
+https://doi.org/10.1016/j.egyai.2026.100749,2026-04-10,Bridging data-driven and physics-based models for lithium-ion battery state analysis and future performance assessment via active material volume fraction,1,https://upcommons.upc.edu/bitstreams/11fe6ecf-75db-4d24-875a-de2d908e692f/download
+https://doi.org/10.1016/j.egyai.2026.100867,2026-08-27,FETS Benchmark: Foundation Models Enable Scalable and Generalizable Energy Time Series Forecasting,1,https://arxiv.org/pdf/2604.22328
+https://doi.org/10.1016/j.egyai.2026.100772,2026-05-09,Artificial intelligence and machine learning for production prediction and optimization of oil and gas surface networks,0,
+https://doi.org/10.1016/j.egyai.2026.100775,2026-05-16,Data-driven prediction of interface evolution in multiphase flows using Fourier Neural Operators,1,https://arxiv.org/pdf/2505.13463
+https://doi.org/10.1016/j.egyai.2026.100771,2026-05-20,Cross-dataset battery life forecasting with time-series foundation models: From zero-shot to prefix-adapted,0,
+https://doi.org/10.1016/j.egyai.2026.100786,2026-05-30,Intraday spatiotemporal PV power prediction at national scale using satellite-based solar forecast models,1,https://arxiv.org/pdf/2601.04751
+https://doi.org/10.1016/j.egyai.2026.100814,2026-06-24,Bridging information gaps in degradation forecasting for PEM water electrolysis: From physical consistency to latent parameter inference via physics-embedded residual networks,0,
+https://doi.org/10.1016/j.egyai.2026.100856,2026-07-25,Cross-laboratory generalization failure in perovskite solar cell machine learning: A diagnostic protocol and evaluation threshold,0,
+https://doi.org/10.1016/j.egyai.2025.100551,2025-07-16,Adaptive Hybrid PSO-Embedded GA for neuroevolutionary training of multilayer perceptron controllers in VSC-based islanded microgrids,0,
+https://doi.org/10.1016/j.egyai.2025.100562,2025-07-23,Toward profitable energy futures trading strategies using reinforcement learning incorporating disagreement and connectedness methods enabled by large language models,0,
+https://doi.org/10.1016/j.egyai.2025.100581,2025-08-05,Feature selection of power system data for frequency prediction with BO-LightGBM-Boruta,0,
+https://doi.org/10.1016/j.egyai.2025.100598,2025-08-27,Intelligent coalbed methane drainage optimization: A deep reinforcement learning-driven life-cycle strategy,0,
+https://doi.org/10.1016/j.egyai.2025.100617,2025-09-11,Enhancing energy control stability under extreme conditions by integrating weather forecasts into ARLEM,0,
+https://doi.org/10.1016/j.egyai.2025.100529,2025-06-07,A temporal fusion transformer augmented GeoAI framework for estimating hourly land surface solar irradiation,0,
+https://doi.org/10.1016/j.egyai.2025.100567,2025-07-29,Understanding the role of autoencoders for stiff dynamical systems using information theory,1,https://arxiv.org/pdf/2503.06325
+https://doi.org/10.1016/j.egyai.2025.100599,2025-08-27,A novel framework for vehicle charging pattern recognition and charging duration prediction based on EA-CAE and K-means clustering,0,
+https://doi.org/10.1016/j.egyai.2025.100546,2025-07-03,A Deep-learning based Model with Intra- and Inter-Well Constraints for Intelligent Identification of Stratigraphic Layers,0,
+https://doi.org/10.1016/j.egyai.2025.100560,2025-07-15,Vision transformers for estimating irradiance using data scarce sky images,2,https://eprints.soton.ac.uk/504862/1/EN_AI_PAPER.pdf
+https://doi.org/10.1016/j.egyai.2025.100563,2025-07-20,Method for compensating multi-time measurement data of distribution network based on alternating minimization matrix completion combined with VMD-ARIMA-LSTM,0,
+https://doi.org/10.1016/j.egyai.2025.100580,2025-08-05,Identifying latent workforce capacities for extreme heat resilience: An artificial intelligence assisted approach,0,
+https://doi.org/10.1016/j.egyai.2025.100618,2025-09-09,An uncertainty-aware bi-level multitask SqueezeNet for dynamic security assessment in power systems with focus on critical generator identification under small and imbalanced datasets,0,
+https://doi.org/10.1016/j.egyai.2025.100621,2025-09-23,Explainable and generalizable AI for AGC dispatch with heterogeneous generation units: A case study using graph convolutional networks,0,
+https://doi.org/10.1016/j.egyai.2025.100622,2025-09-24,Joint reinforcement learning to optimize multiple UAV charger deployments for individual energy requirement in IoT,0,
+https://doi.org/10.1016/j.egyai.2025.100634,2025-10-28,ScaleONet: Scalable and control-oriented modeling of building cluster thermal dynamics using deep operator networks — A practical case study for a Belgian district,1,https://lirias.kuleuven.be/retrieve/10042a23-26eb-4811-96e1-a6a8aea490fe
+https://doi.org/10.1016/j.egyai.2025.100645,2025-11-08,Autonomous wind turbine performance curve modeling based on SCADA data: A vision intelligence powered method,0,
+https://doi.org/10.1016/j.egyai.2025.100666,2025-12-13,Edge-cloud artificial intelligence digital twin thermal modeling for rotating sintered core heat pipes,0,
+https://doi.org/10.1016/j.egyai.2026.100684,2026-01-01,Dual-path feature extraction with MoE optimization for ultra-short-term wind power forecasting,0,
+https://doi.org/10.1016/j.egyai.2026.100686,2026-01-21,Explainable AI for predicting household demand flexibility: Insights from smart meter data and price-based programs,0,
+https://doi.org/10.1016/j.egyai.2026.100692,2026-02-04,Conditional diffusion modeling for probabilistic behind-the-meter PV disaggregation,1,https://upcommons.upc.edu/bitstreams/0a60705b-d37e-4c97-879d-fb5f008b4d04/download
+https://doi.org/10.1016/j.egyai.2026.100700,2026-02-11,Industrial data-driven machine learning framework for wafer quality-based decision making toward smart solar-cell manufacturing,0,
+https://doi.org/10.1016/j.egyai.2026.100712,2026-02-27,Early deployment of deep learning models for lithium-ion battery state-of-health prediction with limited initial data,0,
+https://doi.org/10.1016/j.egyai.2026.100711,2026-03-07,A weighted least squares error hetero-functional graph state estimator of the American multi-modal energy system,1,https://arxiv.org/pdf/2509.19045
+https://doi.org/10.1016/j.egyai.2026.100713,2026-03-07,Integrating electrochemical-thermal-mechanical physical informed neural network framework for lithium-ion batteries state of health estimation,0,
+https://doi.org/10.1016/j.egyai.2026.100725,2026-03-20,Towards extreme application scenarios: perspectives on artificial intelligence-driven smart energy management systems,0,
+https://doi.org/10.1016/j.egyai.2026.100727,2026-03-24,"Autonomous digital twin framework for gas turbine combined cycle control loops: Comparative study of proportional-integral control, reinforcement learning, and reinforcement learning with agents",0,
+https://doi.org/10.1016/j.egyai.2026.100734,2026-03-25,Interpretable rate-of-penetration prediction using a Bayesian-optimized MAML-LSTM-Transformer under small-sample conditions,0,
+https://doi.org/10.1016/j.egyai.2026.100748,2026-04-10,Semi-supervised learning with physicochemical health indicators using an Encoder-Gaussian process framework for battery state of health estimation under dynamic discharge conditions,0,
+https://doi.org/10.1016/j.egyai.2026.100784,2026-05-25,Visualization of water transport behavior and distribution characteristics in PEMFC flow channels based on deep learning image recognition,0,
+https://doi.org/10.1016/j.egyai.2026.100788,2026-05-30,Concept drift detection in district heating: A characterization framework and detector-centric benchmark,0,
+https://doi.org/10.1016/j.egyai.2026.100797,2026-06-10,Spatio-temporal feature fusion and few-shot learning framework with cross-city knowledge transfer for traffic flow prediction,0,
+https://doi.org/10.1016/j.egyai.2026.100819,2026-06-25,SafePowerGraph: A safety-aware benchmarking framework for scalable graph neural networks in power flow and optimal power flow,0,
+https://doi.org/10.1016/j.egyai.2026.100820,2026-06-29,"Explainable AI for Smart Grid Intelligence: A Comprehensive Review of Techniques, Applications and Future Directions",0,
+https://doi.org/10.1016/j.egyai.2026.100942,2026-10-24,Systematic evaluation of TabPFN-TS and Chronos-2 for zero-shot heat load forecasting in district heating networks,1,https://arxiv.org/pdf/2608.20024
+https://doi.org/10.1016/j.egyai.2025.100643,2025-10-31,Hybrid LSTM-MLP model with NSGA-II-based hyperparameter optimization for non-invasive occupancy estimation,0,
+https://doi.org/10.1016/j.egyai.2025.100636,2025-11-20,"An intelligent multi-layer framework for attack conduction, detection and reconstruction in the smart grid with renewable energies",0,
+https://doi.org/10.1016/j.egyai.2025.100654,2025-11-28,A novel method for multivariate short-term offshore wind forecasting via time–frequency clustering and inverted attention,0,
+https://doi.org/10.1016/j.egyai.2025.100661,2025-11-29,Predictive modelling of slurry viscosity using transfer learning to mitigate uncertainties in pilot-scale lithium-ion battery manufacturing process,0,
+https://doi.org/10.1016/j.egyai.2025.100663,2025-12-10,Thermal conductivity prediction of BN composites based on Enhanced Co-ANN combined with physical attention mechanisms,0,
+https://doi.org/10.1016/j.egyai.2025.100665,2025-12-19,Assessing long-term electricity market design for ambitious decarbonization targets using multi-agent reinforcement learning,3,https://arxiv.org/pdf/2512.17444
+https://doi.org/10.1016/j.egyai.2025.100673,2025-12-23,Combining values and images in deep learning models for time series forecasting: An electricity market case study,0,
+https://doi.org/10.1016/j.egyai.2026.100677,2026-01-07,DeepTherm: A unified deep learning approach to thermochemistry prediction for gas-phase molecules,0,
+https://doi.org/10.1016/j.egyai.2026.100675,2026-01-01,Practicality-enhanced behind-the-meter PV power generation disaggregation based on synchronization and transferability fused LSTM framework,0,
+https://doi.org/10.1016/j.egyai.2026.100691,2026-01-29,Heat pump detection and load disaggregation in low-resolution smart meter data with convolutional neural networks,0,
+https://doi.org/10.1016/j.egyai.2026.100702,2026-02-14,Development of physics-consistent conditional diffusion model to overcome data scarcity in critical heat flux,2,https://www.dora.lib4ri.ch/psi/dload/psi:85602/PDF/view
+https://doi.org/10.1016/j.egyai.2026.100695,2026-02-14,Evaluating the impact of Numerical Weather Prediction variables on wind power forecasting: A case study of the Alpha Ventus offshore wind farm,1,http://dau.url.edu/bitstream/20.500.14342/6328/1/e-ai-insunza-2026-24-100695.pdf
+https://doi.org/10.1016/j.egyai.2026.100704,2026-02-23,A deep learning framework for heat demand forecasting using time–frequency representations of decomposed features,1,https://arxiv.org/pdf/2603.01137
+https://doi.org/10.1016/j.egyai.2026.100710,2026-03-02,Agentic framework for programmatic crystal structure generation using a fine-tuned worker–supervisor large language model,0,
+https://doi.org/10.1016/j.egyai.2026.100721,2026-03-13,Graph neural network-based surrogate modeling for fast and scalable simulations of meshed district heating networks,0,
+https://doi.org/10.1016/j.egyai.2026.100732,2026-03-24,Development of an optimal multi-agent reinforcement learning control method for an integrated PVT–heat pump system,0,
+https://doi.org/10.1016/j.egyai.2026.100736,2026-03-27,A machine learning based method for hydrogen oxidation mechanisms classification in solid oxide cells,0,
+https://doi.org/10.1016/j.egyai.2026.100729,2026-03-31,Optimization of an high-pressure turbine vane for pressure gain combustion cycles through convolutional neural network,1,https://iris.polito.it/bitstream/11583/3009529/1/Elsevier_EaAI_doi_10.1016-j.egyai.2026.100729.pdf
+https://doi.org/10.1016/j.egyai.2026.100741,2026-04-03,AI-driven methodology for mining scientific literature and extracting databases: A case study on a chemical process,0,
+https://doi.org/10.1016/j.egyai.2026.100757,2026-04-18,"Physics-informed neural networks for methane sorption: Cross-gas transfer learning, ensemble collapse under physics constraints, and Monte Carlo Dropout uncertainty quantification",1,https://arxiv.org/pdf/2604.13992
+https://doi.org/10.1016/j.egyai.2026.100746,2026-04-20,Machine learning tabulation of thermochemistry: Transfer learning for non-adiabatic flames,0,
+https://doi.org/10.1016/j.egyai.2026.100761,2026-04-24,Similarity-based solar power forecasting: A technical advance for global energy systems,0,
+https://doi.org/10.1016/j.egyai.2026.100774,2026-05-23,"Causal inference and machine learning in power and energy systems: A review of assumptions, applications and opportunities",1,https://lirias.kuleuven.be/retrieve/b6253fe1-403c-416b-a64c-90f2b77f54dc
+https://doi.org/10.1016/j.egyai.2026.100800,2026-06-05,Predicting thermal sensation vote in an educational building: A comparative assessment of PMV-based mapping and machine learning approaches,0,
+https://doi.org/10.1016/j.egyai.2026.100801,2026-06-06,Deep reinforcement learning for hydrogen-mediated grid resilience under compound climate extremes: An explainable AI framework,0,
+https://doi.org/10.1016/j.egyai.2026.100821,2026-06-23,Data-driven forecasting of solid oxide electrolysis cell degradation using deep transfer learning,0,
+https://doi.org/10.1016/j.egyai.2026.100840,2026-07-09,Power-infrastructure expansion planning for training-oriented AI data centers under large-model scaling uncertainty,0,
+https://doi.org/10.1016/j.egyai.2026.100828,2026-07-09,An open-weight Large Language Model agent for condition monitoring and predictive maintenance in wind energy systems,0,
+https://doi.org/10.1016/j.egyai.2026.100847,2026-07-21,Physics-informed operator learning for parameter estimation in lithium-ion-battery models enhanced by global experimental design and local identifiability analysis,1,https://publica.fraunhofer.de/bitstreams/e591d5de-a227-42e3-a97c-f1dec39bcc99/download
+https://doi.org/10.1016/j.egyai.2025.100583,2025-08-05,"An AI-based fuel designer tool for sustainable E-fuel development: Methodology, Validation, and Optimization",0,
+https://doi.org/10.1016/j.egyai.2025.100556,2025-07-15,Intelligent acoustic detection of blade icing on wind turbines: 600 W prototype study,0,
+https://doi.org/10.1016/j.egyai.2025.100614,2025-09-11,A hybrid Artificial Intelligence method for estimating flicker in power systems,1,https://arxiv.org/pdf/2506.13611
+https://doi.org/10.1016/j.egyai.2025.100629,2025-10-05,Stress-informed transfer learning: Accelerated battery life evaluation model across diverse operating conditions and cell mechanisms,0,
+https://doi.org/10.1016/j.egyai.2025.100534,2025-06-10,A comprehensive study of high-efficiency optimization method on designing segmented annular thermoelectric module,0,
+https://doi.org/10.1016/j.egyai.2025.100572,2025-07-23,Optimizing combined cooling and power systems in refrigerated trucks: a deep deterministic policy gradient approach,0,
+https://doi.org/10.1016/j.egyai.2025.100574,2025-08-05,An FPGA-accelerated multi-level AI-integrated simulation framework for multi-time domain power systems with high penetration of power converters,0,
+https://doi.org/10.1016/j.egyai.2025.100602,2025-08-27,Neural-accelerated numerical model for packed bed latent heat storage system,1,https://hal.science/hal-05285919v1/file/1-s2.0-S266654682500134X-main.pdf
+https://doi.org/10.1016/j.egyai.2025.100631,2025-10-18,Data-driven machine learning model estimates efficiency gains from passive filters under variable loads,1,https://opus.hs-offenburg.de/files/11555/1-s2.0-S2666546825001636-main.pdf
+https://doi.org/10.1016/j.egyai.2025.100633,2025-10-28,Adaptive smoothing drift normalization for day-ahead net load forecasting in renewable power system,0,
+https://doi.org/10.1016/j.egyai.2025.100639,2025-11-01,A new approach to fundamental electricity market modelling: Exploring market dynamics and speculator influence,0,
+https://doi.org/10.1016/j.egyai.2025.100659,2025-11-29,Kinetic-model identification in metal-hydride reactions using neural network autoencoder surrogate models,0,
+https://doi.org/10.1016/j.egyai.2025.100668,2025-12-13,Bubble segmentation and heat flux estimation in nucleate boiling using a resource-efficient deep learning framework,0,
+https://doi.org/10.1016/j.egyai.2025.100674,2025-12-22,An analytical solutions-enhanced neural network for high-accuracy modeling: A case study on gas turbine,0,
+https://doi.org/10.1016/j.egyai.2025.100669,2025-12-22,Battery aging and behavioral pattern identification: A fleet analytics framework for regulatory compliance testing,0,
+https://doi.org/10.1016/j.egyai.2026.100687,2026-01-29,Data-driven machine learning modelling for the manufacturing of the fuel electrode support in solid oxide cells,0,
+https://doi.org/10.1016/j.egyai.2026.100705,2026-02-22,An extrapolative machine learning framework for forecasting nitrogen oxide mitigation in alcohol enhanced ammonia-methane blends,2,https://www.researchsquare.com/article/rs-7800991/latest.pdf
+https://doi.org/10.1016/j.egyai.2026.100703,2026-02-25,TFDM-CR: Time–frequency diffusion modeling for lithium-ion battery capacity prediction incorporating regeneration phenomena,0,
+https://doi.org/10.1016/j.egyai.2026.100709,2026-02-28,Toward smarter HVAC control: Machine learning reveals hidden drivers in thermal comfort databases,0,
+https://doi.org/10.1016/j.egyai.2026.100718,2026-03-14,The role of spatio-temporal satellite-derived products and numerical weather forecasts in data-driven intra-day solar forecasting,0,
+https://doi.org/10.1016/j.egyai.2026.100724,2026-03-16,Forecasting Finnish aFRR energy reserve market prices using deep learning and tree-based models,0,
+https://doi.org/10.1016/j.egyai.2026.100719,2026-03-19,Real-world self-adaptive digital twin: An example of commercial air-source heat pump,0,
+https://doi.org/10.1016/j.egyai.2026.100918,2026-10-10,Characterization and forecasting of national-scale solar power ramp events,1,https://arxiv.org/pdf/2603.26596
+https://doi.org/10.1016/j.egyai.2026.100744,2026-04-03,A multimodal feature fusion and large language model approach for the combustion stability diagnosis of 660 MWth coal-fired boilers,0,
+https://doi.org/10.1016/j.egyai.2026.100742,2026-04-03,Mathematically-guided ultra-short-term wind power forecasting based on adaptive mixture of experts,0,
+https://doi.org/10.1016/j.egyai.2026.100739,2026-04-11,Multi-objective deep reinforcement learning for frequency emergency control with auxiliary voltage deviation mitigation,0,
+https://doi.org/10.1016/j.egyai.2026.100753,2026-04-16,Distributed optimal scheduling of integrated energy system including ADN and DHN with adaptive robust optimization,0,
+https://doi.org/10.1016/j.egyai.2026.100750,2026-04-24,Machine learning-based estimation of icing losses in wind farms: Applications in pre-construction energy yield assessment,0,
+https://doi.org/10.1016/j.egyai.2026.100762,2026-04-24,From peak shaving to stress redistribution: Emergent heatwave resilience through weather-informed decentralized reinforcement learning,0,
+https://doi.org/10.1016/j.egyai.2026.100758,2026-04-25,FlameRF: A fast time-resolved reconstruction technique for turbulent flame using Tensorial Radiance Fields,0,
+https://doi.org/10.1016/j.egyai.2026.100767,2026-05-01,Neural network-driven multi-objective optimization for solid-state hydrogen sources dead-ended proton exchange membrane fuel cell power systems,0,
+https://doi.org/10.1016/j.egyai.2026.100796,2026-06-06,Accelerating battery materials discovery with an agentic AI for automated XPS analysis integrating physical constraints and chemometrics,0,
+https://doi.org/10.1016/j.egyai.2026.100798,2026-06-06,Predictive road-aware deep reinforcement learning for energy management of fuel cell hybrid electric vehicles: A real-world Tunisian case study,0,
+https://doi.org/10.1016/j.egyai.2026.100810,2026-06-11,Physics-informed artificial intelligence for reliable failure pressure prediction of corroded energy pipelines,0,
+https://doi.org/10.1016/j.egyai.2026.100826,2026-06-23,Forecasting sectoral electricity consumption in the selected European countries: machine learning versus deep learning models,0,
+https://doi.org/10.1016/j.egyai.2026.100808,2026-06-25,Physics-informed machine learning for battery heat generation estimation and temperature prediction with minimal experimentation,1,https://wrap.warwick.ac.uk/id/eprint/202198/1/paper_final_energy_and_ai.pdf
+https://doi.org/10.1016/j.egyai.2026.100829,2026-06-30,Short-term load forecasting for electric vehicle charging stations based on an adaptive multi-module cascaded framework,0,
+https://doi.org/10.1016/j.egyai.2026.100833,2026-07-01,A unified benchmark of deep learning and classical machine learning models for weather-based solar power forecasting: Balancing complexity and skill,0,
+https://doi.org/10.1016/j.egyai.2026.100835,2026-07-06,Graph neural network-based multi-agent reinforcement learning for active voltage control: Performance and topology robustness,0,
+https://doi.org/10.1016/j.egyai.2026.100844,2026-07-09,Integrated machine-learning framework for prediction of transient fuel flow dynamics in a gasoline direct injection (GDI) injector,0,
+https://doi.org/10.1016/j.egyai.2026.100859,2026-08-06,A cloud based Digital Twin architecture for battery management systems with edge integration and advanced sensing,0,
+https://doi.org/10.1016/j.egyai.2026.100871,2026-08-13,Exploring the tabular foundation model TabPFN for performance map prediction of variable-speed heat pumps and compressors,1,https://opus.hs-offenburg.de/files/13212/main.pdf
+https://doi.org/10.1016/j.egyai.2025.100550,2025-07-02,Denseception network method for transient stability prediction of power systems,0,
+https://doi.org/10.1016/j.egyai.2025.100609,2025-09-23,Presolving convexified optimal power flow with mixtures of gradient experts,1,https://arxiv.org/pdf/2312.07276
+https://doi.org/10.1016/j.egyai.2025.100635,2025-10-28,Taming deep reinforcement learning agents with pricing mechanism: Validation in power distribution systems,1,https://pure.tue.nl/ws/files/370329327/1-s2.0-S2666546825001673-main.pdf
+https://doi.org/10.1016/j.egyai.2025.100641,2025-10-30,A comparative analysis of regression algorithms and a real world application of multivariable energy signatures,1,https://iris.polito.it/bitstream/11583/3004835/2/1-s2.0-S2666546825001739-main.pdf
+https://doi.org/10.1016/j.egyai.2026.100802,2026-06-26,Machine Learning-based uncertainty quantification in Capacity Expansion Models,1,https://www.dora.lib4ri.ch/empa/dload/empa:45857/PDF/view
+https://doi.org/10.1016/j.egyai.2025.100660,2025-12-23,A World Model framework with digital twin for scheduling demand-side resources under systemic complexity,0,
+https://doi.org/10.1016/j.egyai.2025.100672,2026-01-01,Evolving power system operator rules for real-time congestion management,0,
+https://doi.org/10.1016/j.egyai.2026.100680,2026-01-01,Towards secure federated learning for energy forecasting under adversarial attacks,1,https://publikationen.bibliothek.kit.edu/1000190447/174817995
+https://doi.org/10.1016/j.egyai.2026.100694,2026-02-14,Forecasting battery capacity with dynamic transitions in operational conditions,0,
+https://doi.org/10.1016/j.egyai.2026.100701,2026-02-19,Optimizing long-term hydrothermal scheduling with adaptive scenario fan selection and inflow prediction in the Nordic region,0,
+https://doi.org/10.1016/j.egyai.2026.100723,2026-03-15,Surrogate-based risk-aware scenario screening for facilitating the operational decision-making in renewables-dominated power systems,0,
+https://doi.org/10.1016/j.egyai.2026.100730,2026-03-27,Accelerated computing of dynamic carbon emission factor for large-scale power grid using conjugate gradient squared method with p-norm preconditioner,0,
+https://doi.org/10.1016/j.egyai.2026.100737,2026-03-29,Geophysical decision transformer: Generative control for geological carbon storage,0,
+https://doi.org/10.1016/j.egyai.2026.100745,2026-04-05,Accelerating supercapacitor lifetime optimization using quantum machine learning surrogates,0,
+https://doi.org/10.1016/j.egyai.2026.100755,2026-04-17,Reinforcement learning-based real-time control of a reversible pump turbine for reduced response time in pumped hydropower,0,
+https://doi.org/10.1016/j.egyai.2026.100764,2026-05-01,Robust explainable forecasting via heterogeneous sensor fusion with applications in residential peak load management,0,
+https://doi.org/10.1016/j.egyai.2026.100768,2026-05-01,Physics-informed distributed reinforcement learning for privacy-aware voltage regulation using local smart meter data,1,https://publications.tno.nl/publication/34646015/pHVaBebN/Liu-2026-Physics-informed.pdf
+https://doi.org/10.1016/j.egyai.2026.100760,2026-05-01,A generative AI-Enhanced hybrid framework for reliable long-term photovoltaic power forecasting,1,https://eprints.gla.ac.uk/385089/2/385089.pdf
+https://doi.org/10.1016/j.egyai.2026.100948,2026-10-27,Differentiable chemistry in PINNs for solving parameterized and stiff reaction systems,1,https://arxiv.org/pdf/2605.04708
+https://doi.org/10.1016/j.egyai.2026.100773,2026-05-21,A physics-informed collaborative interpretable framework for wind turbine anomaly detection,0,
+https://doi.org/10.1016/j.egyai.2026.100785,2026-05-25,Autonomous AI-for-Science physics-informed multi-phase optimization and decision-making on data center cold plates,0,
+https://doi.org/10.1016/j.egyai.2026.100779,2026-05-25,Satellite solar radiation forecasting by next-frame prediction — Advances and future opportunities,0,
+https://doi.org/10.1016/j.egyai.2026.100783,2026-05-28,Progress variable optimization: Effects on the manifold topology and reduced-order modeling,1,https://www.dora.lib4ri.ch/empa/dload/empa:45564/PDF/view
+https://doi.org/10.1016/j.egyai.2026.100961,2026-11-12,Application of reinforcement learning for multigroup energy grid optimization for neutron transport criticality problems,1,https://arxiv.org/pdf/2605.27895
+https://doi.org/10.1016/j.egyai.2026.100793,2026-05-30,Embedding composite failure mechanics into neural networks: A physics-constrained framework for dual-criteria failure assessment of Type IV pressure vessels,0,
+https://doi.org/10.1016/j.egyai.2026.100782,2026-05-30,A scalable machine learning framework for hybrid solar–wind site suitability screening,0,
+https://doi.org/10.1016/j.egyai.2026.100787,2026-06-02,Interpretable transient stability assessment for power system: A novel adjoint-based physics-dynamics learning method,0,
+https://doi.org/10.1016/j.egyai.2026.100791,2026-06-04,An AI-driven de novo design and optimisation of sustainable aviation fuels,1,https://dipot.ulb.ac.be/dspace/bitstream/2013/412197/1/doi_395841.pdf
+https://doi.org/10.1016/j.egyai.2026.100876,2026-08-28,Accelerating gas-network feasibility screening with a physics-informed graph neural network surrogate,1,https://arxiv.org/pdf/2607.13610
+https://doi.org/10.1016/j.egyai.2026.100799,2026-06-05,Multi-decadal climate change impacts on African solar hydrogen: Weighted ensemble forecasting and techno-economic vulnerability,0,
+https://doi.org/10.1016/j.egyai.2026.100807,2026-06-15,On the operational impact of forecast generalization quality in short-term load forecasting,0,
+https://doi.org/10.1016/j.egyai.2026.100818,2026-06-22,On the robustness of short-term building energy forecasting under cross-climate transfer,0,
+https://doi.org/10.1016/j.egyai.2026.100816,2026-06-22,Toward early battery anomaly detection: A multimodal dataset and deep learning framework for lithium-ion batteries,0,
+https://doi.org/10.1016/j.egyai.2026.100809,2026-06-23,Peer-to-peer electricity platforms with endogenous prices: A Multi-Agent Neural Network Control approach,0,
+https://doi.org/10.1016/j.egyai.2026.100815,2026-06-24,Federated Transfer Learning for cold-start building energy prediction under data scarcity and privacy constraints,0,
+https://doi.org/10.1016/j.egyai.2026.100812,2026-06-25,Machine learning-based surrogate models trained with limited datasets for a thermoelectric energy harvester,0,
+https://doi.org/10.1016/j.egyai.2026.100824,2026-06-29,From lab to practice: Towards a substation-invariant self-supervised transformer for low-label fault detection in district heating,1,https://repository.uantwerpen.be/docstore/d:irua:36595
+https://doi.org/10.1016/j.egyai.2026.100822,2026-06-30,Room-level indoor temperature forecasting using a grey-box model with dynamic thermostat offset and TRV-controlled heating,1,https://biblio.ugent.be/publication/01KWF3H02BZS4SEZQNPDH23F6F/file/01KWF3KJRY6AJHNSVWQR7H6FHG.pdf
+https://doi.org/10.1016/j.egyai.2026.100832,2026-06-30,A novel multi-scale spatio-temporal graph attention network for wind vector forecasting,0,
+https://doi.org/10.1016/j.egyai.2026.100837,2026-07-02,A surrogate-model methodology for thermoacoustic engine design using multilayer perceptrons,0,
+https://doi.org/10.1016/j.egyai.2026.100838,2026-07-02,Time-domain simulation based on physics-informed DeepONet,0,
+https://doi.org/10.1016/j.egyai.2026.100834,2026-07-03,Improving numerical fluid flow modeling by resolving under-resolution pores from X-ray images of porous media: a hybrid deep reinforcement learning framework,0,
+https://doi.org/10.1016/j.egyai.2026.100839,2026-07-03,Learning-augmented model predictive control for energy management in hydrogen-battery hybrid trains: A comparative deep learning study,1,https://iris.polito.it/bitstream/11583/3012790/1/1-s2.0-S2666546826001655-main%20%281%29.pdf
+https://doi.org/10.1016/j.egyai.2026.100843,2026-07-09,AI-assisted structure reconstruction and multiphysics modeling of gas diffusion layers,0,
+https://doi.org/10.1016/j.egyai.2026.100841,2026-07-11,VoltGNN: A graph neural network for autonomous renewable energy redistribution in IoT-driven smart grids,0,
+https://doi.org/10.1016/j.egyai.2026.100846,2026-08-03,Large-scale synthetic dataset and machine learning benchmark for fault localization in distribution systems,0,
+https://doi.org/10.1016/j.egyai.2026.100872,2026-08-13,Power system analysis in renewable energy systems research: a bibliometric review of publications on Python for power system analysis framework,0,
+https://doi.org/10.1016/j.egyai.2026.100869,2026-08-13,Physics-Informed AI-Based EV smart inverter control for two-stage Volt/Var coordination in renewable-rich active distribution networks,1,https://scholars.cityu.edu.hk/files/528332482/523510883.pdf
+https://doi.org/10.1016/j.egyai.2026.100866,2026-08-14,Risk-aware peak-load profile forecasting for new electric vehicle fast-charging stations without historical data,0,
+https://doi.org/10.1016/j.egyai.2026.100884,2026-09-03,Degradation-aligned self-supervised learning for state of health estimation of lithium-ion batteries under label sparsity,1,https://arxiv.org/pdf/2608.16612
+https://doi.org/10.1016/j.egyai.2026.100870,2026-08-19,An empirical benchmark of deep time-series models for smart meter energy forecasting,1,https://arxiv.org/pdf/2608.18675
+https://doi.org/10.1016/j.egyai.2026.100874,2026-08-20,AI-driven battery materials innovation for AIDC energy storage,0,
+https://doi.org/10.1016/j.egyai.2026.100882,2026-08-26,Continual learning for building energy forecasting via hybrid elastic weight consolidation and synaptic intelligence,0,
+https://doi.org/10.1016/j.egyai.2026.100889,2026-08-27,Campaign-disjoint validation of machine-learned critical heat flux models: leakage quantification and physics-anchored residual transfer,0,
+https://doi.org/10.1016/j.egyai.2026.100887,2026-09-04,Improving day-ahead probabilistic solar irradiance forecasting via shape-prior flow matching for numerical weather prediction downscaling,0,
+https://doi.org/10.1016/j.egyai.2026.100881,2026-09-09,Relaxed Shape Alignment and Temporal Distortion Loss for improving solar ramp events prediction,1,https://scholars.cityu.edu.hk/files/528320063/523508790.pdf
+https://doi.org/10.1016/j.egyai.2026.100909,2026-09-17,Query-adaptive graph retrieval-augmented generation for traceable power-quality knowledge reasoning,0,
+https://doi.org/10.1016/j.egyai.2026.100925,2026-10-05,Decentralized intelligence in smart grids: a comprehensive survey of edge computing and federated learning,0,
+https://doi.org/10.1016/j.egyai.2026.100951,2026-10-21,Identifying AI-oriented data centers and their electricity consumption from facility-level public evidence,0,
+https://doi.org/10.1016/j.egyai.2025.100543,2025-06-27,Flexible aggressiveness probabilistic optimisation (FAPO) bidding for peer-to-peer electricity trading,0,
+https://doi.org/10.1016/j.egyai.2025.100632,2025-10-18,"A method for lost circulation risk identification: Labeling, LSTM transfer learning recognition, and delayed matching verification",0,
+https://doi.org/10.1016/j.egyai.2025.100528,2025-06-11,Efficient sampling of polycyclic aromatic compounds for free energy predictions through active learning,0,
+https://doi.org/10.1016/j.egyai.2025.100601,2025-08-27,The pyxis project: A geospatial data system for emission estimation monitoring in the oil and gas industry,0,
+https://doi.org/10.1016/j.egyai.2026.100803,2026-06-11,Machine Learning-Enhanced Converter Models for Harmonic Analysis in Distribution Grids,0,
+https://doi.org/10.1016/j.egyai.2026.100865,2026-08-11,From Distributional to Quantile Neural Basis Models: The case of electricity price forecasting,1,https://arxiv.org/pdf/2509.14113
+https://doi.org/10.1016/j.egyai.2025.100652,2025-11-27,Machine learning for photovoltaic single axis tracker fault detection and classification,0,
+https://doi.org/10.1016/j.egyai.2026.100678,2026-01-01,A bi-level advanced control framework for large-scale control of buildings with system-level impact,0,
+https://doi.org/10.5281/zenodo.18743452,2026-02-23,Progress variable optimization: Effects on the manifold topology and reduced-order modeling,0,
+https://doi.org/10.1016/j.egyai.2026.100731,2026-03-24,Geologically deep learning for high-resolution sparse 3D oil reservoir modeling,0,
+https://doi.org/10.1016/j.egyai.2026.100728,2026-03-24,A long short-term memory networks-informer based prediction model in coal management of thermal units,0,
+https://doi.org/10.1016/j.egyai.2026.100740,2026-04-03,Cooling energy storage/release performance for the proposed refrigeration and cooling energy storage coupling system,0,
+https://doi.org/10.1016/j.egyai.2026.100738,2026-04-04,Predicting wind speeds in complex forested terrain using Reynolds-Averaged Navier-Stokes surrogates and data-driven feedforward convolutional neural networks,1,https://publica.fraunhofer.de/bitstreams/f2e25881-395c-43f7-8373-40775654b5c7/download
+https://doi.org/10.1016/j.egyai.2026.100963,2026-11-12,From predictive accuracy to decision reliability in the scarce data regime: A surrogate–calibration framework for battery thermal management optimisation,0,
+https://doi.org/10.1016/j.egyai.2026.100754,2026-04-17,Measurement data recovery for power distribution systems based on physics-guided spatio-temporal graph neural network and online data fusion,0,
+https://doi.org/10.1016/j.egyai.2026.100763,2026-04-23,A data-driven digital twin approach for real-time flux density prediction in solar power towers using ray-level deep learning corrections,0,
+https://doi.org/10.18154/rwth-2026-03663,2026-01-01,Implementation of a machine learning supported model predictive control for a 5th generation district heating and cooling energy hub,0,
+https://doi.org/10.1016/j.egyai.2026.100759,2026-05-01,OVEN: A deep learning framework for photovoltaic site identification,0,
+https://doi.org/10.1016/j.egyai.2026.100766,2026-05-01,"Physics-guided, noise-resilient and interpretable machine learning framework for fault detection and diagnosis in variable refrigerant flow systems",0,
+https://doi.org/10.1016/j.egyai.2026.100769,2026-05-01,A multi-task learning framework for real-time integrated FDIA localization and state correction of cyber–physical power systems,0,
+https://doi.org/10.1016/j.egyai.2026.100770,2026-05-09,Kite-based airborne wind energy on Mars: A hybrid physics-analytical and machine learning feasibility framework with uncertainty quantification,0,
+https://doi.org/10.1016/j.egyai.2026.100777,2026-05-16,Down Sampling Feature Extractor: Improving non-intrusive load monitoring via an efficient down-sampling and feature extraction strategy,0,
+https://doi.org/10.18154/rwth-2026-05349,2026-01-01,Data-driven landscape scenicness mapping for continental-scale onshore wind resource assessment,0,
+https://doi.org/10.1016/j.egyai.2026.100781,2026-05-24,A leakage-free optimized Variational Mode Decomposition-based state space framework for crude oil volatility forecasting,0,
+https://doi.org/10.1016/j.egyai.2026.100789,2026-05-27,Can AI be energy positive in cement manufacturing? Evaluating AI-driven efficiency through a first-order framework and case study,0,
+https://doi.org/10.1016/j.egyai.2026.100920,2026-10-19,S3TS: Stochastic Scenario-Structured Tree Search for advanced planning under uncertainty,2,https://biblio.ugent.be/publication/01M5W79MWADYMWJBEYG8GQFJ3E/file/01M5W7AMS247WCCWR4WBP0HD7T.pdf
+https://doi.org/10.1016/j.egyai.2026.100895,2026-09-01,Effect of physics regularization on generative adversarial training for fast prediction of yawed wind turbine wakes,0,
+https://doi.org/10.1016/j.egyai.2026.100792,2026-06-06,Reward design for deep Reinforcement Learning driven wind farm control: What matters for optimal performance,0,
+https://doi.org/10.1016/j.egyai.2026.100794,2026-06-06,Comparative analysis of generative and deterministic deep learning models for fast power flow prediction,0,
+https://doi.org/10.1016/j.egyai.2026.100806,2026-06-11,Nexus of control: A dynamic consensus framework for energy-positive autonomous emergency braking,0,
+https://doi.org/10.1016/j.egyai.2026.100805,2026-06-15,Exploring a multi-agent framework with large language models for nuclear design automation,0,
+https://doi.org/10.1016/j.egyai.2026.100804,2026-06-16,Detecting intrusions in Internet of Energy (IoE) systems using an automated machine learning framework,0,
+https://doi.org/10.18154/rwth-2026-05958,2026-01-01,Concept drift detection in district heating: A characterization framework and detector-centric benchmark,0,
+https://doi.org/10.1016/j.egyai.2026.100811,2026-06-18,DSA-SafetyBench: A safety-aware benchmark for artificial-intelligence-based dynamic security assessment in energy systems,0,
+https://doi.org/10.1016/j.egyai.2026.100795,2026-06-22,Modeling of freestream disturbance intensity effects on crossflow instability induced transition in high-speed boundary layers,0,
+https://doi.org/10.1016/j.egyai.2026.100813,2026-06-22,A scalable AI-driven framework for automated modelling of overhead electric distribution networks for intelligent grid asset management,0,
+https://doi.org/10.1016/j.egyai.2026.100817,2026-06-24,Behavioral modeling of corporate charging hubs introducing a novel clustering method,0,
+https://doi.org/10.1016/j.egyai.2026.100823,2026-06-29,A data-augmented AI framework for early-stage building energy design support,0,
+https://doi.org/10.1016/j.egyai.2026.100825,2026-06-29,Bounded residual Temporal Convolutional Network for multi-site day-ahead numerical weather prediction global horizontal irradiance correction,0,
+https://doi.org/10.1016/j.egyai.2026.100827,2026-06-30,Price-aware artificial intelligence for market-aligned photovoltaic power nowcasting under quarter-hourly electricity settlement,1,https://re.public.polimi.it/bitstream/11311/1320908/1/1-s2.0-S2666546826001539-main.pdf
+https://doi.org/10.1016/j.egyai.2026.100831,2026-06-30,High-resolution deep learning-enabled computational fluid dynamics benchmark for downward-facing flow boiling applications,0,
+https://doi.org/10.1016/j.egyai.2026.100845,2026-07-09,Experimental validation of a neural-network-based method for fault detection in heat pump evaporators,0,
+https://doi.org/10.1016/j.egyai.2026.100830,2026-07-09,Enhanced Bifacial Photovoltaic Power Prediction through Procedural Training and Comprehensive Irradiance Data,0,
+https://doi.org/10.18154/rwth-2026-06673,2026-01-01,Experimental validation of a neural-network-based method for fault detection in heat pump evaporators,0,
+https://doi.org/10.1016/j.egyai.2026.100954,2026-10-31,Cross-building long-term heating-load imputation using a unified GAN with adaptive shared representation learning,1,https://doi.org/10.2139/ssrn.7130319
+https://doi.org/10.1016/j.egyai.2026.100965,2026-11-01,DARLIN: Domain-guided augmented retrieval for LLM-based interpretable and transferable HVAC control,1,https://papers.ssrn.com/sol3/Delivery.cfm/3db96a71-4689-4cef-8595-8e57f3ac9fa9-MECA.pdf?abstractid=7135996&mirid=1
+https://doi.org/10.1016/j.egyai.2026.100849,2026-07-17,Intelligent Global Maximum Power Point Tracking using Neighboring Pixel Algorithm and classification and regression trees assisted Virtual Imaging under partial shading conditions,0,
+https://doi.org/10.1016/j.egyai.2026.100848,2026-07-23,Multi-site short-term wind-component forecasting with hybrid adaptive spatiotemporal domain-informed neural network,0,
+https://doi.org/10.1016/j.egyai.2026.100855,2026-07-25,Contextual retrieval-augmented tree ensemble boosting for multi-horizon solar PV power forecasting,0,
+https://doi.org/10.1016/j.egyai.2026.100854,2026-07-27,Transfer learning with gradient-structural regularization for turbulent combustion under data scarcity,0,
+https://doi.org/10.1016/j.egyai.2026.100836,2026-07-27,AI-Driven Automated Optimization in Monte Carlo Simulations for Nuclear Energy Applications,0,
+https://doi.org/10.1016/j.egyai.2026.100857,2026-07-30,Distributed uncertainty-aware multi-agent-inspired learning for wind power forecasting,0,
+https://doi.org/10.1016/j.egyai.2026.100851,2026-08-02,"Agent-driven anomaly detection in smart energy management systems: Taxonomy, evidence, and a deployment roadmap",0,
+https://doi.org/10.1016/j.egyai.2026.100860,2026-08-02,"Region-based methods in renewable-dominated power systems: A review, unified framework, and AI perspectives",0,
+https://doi.org/10.1016/j.egyai.2026.100850,2026-08-03,Multi-objective HVAC control using modified hybrid deep reinforcement learning algorithms,0,
+https://doi.org/10.1016/j.egyai.2026.100955,2026-11-03,From nodes to edges: Edge-centric GNNs for distribution grid reliability,0,
+https://doi.org/10.1016/j.egyai.2026.100863,2026-08-05,Predicting PEMFC degradation under real vehicle conditions using a hybrid method based on proximal policy optimization,0,
+https://doi.org/10.1016/j.egyai.2026.100852,2026-08-06,RL-LUBE: A reinforcement learning-based lower and upper bound estimation method for ultra-short-term wind power interval prediction,0,
+https://doi.org/10.1016/j.egyai.2026.100864,2026-08-06,Executable flexibility coordination of electric vehicle aggregators via temporal reinforcement learning in coupled electricity markets,0,
+https://doi.org/10.1016/j.egyai.2026.100858,2026-08-07,A decomposition-based sequential deep learning model for time series forecasting: SSD-GRU for wind data,0,
+https://doi.org/10.1016/j.egyai.2026.100861,2026-08-06,Predicting the electrical conductivity of doped TiO2 via machine learning with special attention enhancement on first principles featuring data,0,
+https://doi.org/10.1016/j.egyai.2026.100868,2026-08-13,Data-driven discovery and first-principles design of novel cathode materials for sodium-ion batteries,0,
+https://doi.org/10.1016/j.egyai.2026.100862,2026-08-13,Robust unsupervised gearbox fault detection under variable-speed operating conditions,0,
+https://doi.org/10.1016/j.egyai.2026.100883,2026-08-28,A change-intensity-aware forecasting framework for ultra-short-term wind power prediction,0,
+https://doi.org/10.1016/j.egyai.2026.100877,2026-08-28,Edge-optimized and interpretable deep learning framework for high-volatility residential load prediction,0,
+https://doi.org/10.1016/j.egyai.2026.100873,2026-08-29,Photovoltaic systems as cloud sensors: Cloud cover estimation from inverter data using machine learning,0,
+https://doi.org/10.1016/j.egyai.2026.100880,2026-08-29,A joint sparse reconstruction method for unsteady flow-field measurement under variable operating conditions,0,
+https://doi.org/10.1016/j.egyai.2026.100879,2026-08-29,A neurosymbolic decision framework for flexible battery scheduling in renewable energy communities,0,
+https://doi.org/10.1016/j.egyai.2026.100893,2026-09-01,Neural-network prediction of methanol-additive spray penetration and cone angle across flash-boiling and non-flashing regimes,0,
+https://doi.org/10.1016/j.egyai.2026.100875,2026-09-01,15-minute data center load reconstruction under heterogeneous weak observations: Cross-domain proxy pretraining and conditional diffusion,0,
+https://doi.org/10.1016/j.egyai.2026.100878,2026-09-01,A federated discrete reinforcement learning architecture for enhancing convergence and interpretability in distributed control,0,
+https://doi.org/10.1016/j.egyai.2026.100888,2026-09-04,Evaluating transferability of recommender systems from entity-level data to spatially aggregated household data in the context of green technology adoption,0,
+https://doi.org/10.1016/j.egyai.2026.100896,2026-09-06,Tool-augmented vs. autonomous LLM agents for building energy model modifications: A comparative study using NECB compliance models,0,
+https://doi.org/10.1016/j.egyai.2026.100890,2026-09-06,A Bayesian-optimized CNN-GRU framework for multimodal short-term solar photovoltaic power forecasting,0,
+https://doi.org/10.1016/j.egyai.2026.100894,2026-09-09,Heterogeneous expert-guided hierarchical reinforcement learning for coordinated cruise and energy management of FCHEVs,0,
+https://doi.org/10.1016/j.egyai.2026.100903,2026-09-12,Response signatures for seismic diagnosis and inspection prioritization of corroded buried gas pipelines,0,
+https://doi.org/10.1016/j.egyai.2026.100899,2026-09-12,U-Net convolutional architecture for squealer tip film cooling prediction and multi-objective optimization,1,https://iris.polito.it/bitstream/11583/3015411/1/1-s2.0-S2666546826002259-main.pdf
+https://doi.org/10.1016/j.egyai.2026.100892,2026-09-12,A generative-enhanced temporal modeling framework for reliable anomaly detection in photovoltaic industrial systems,0,
+https://doi.org/10.1016/j.egyai.2026.100904,2026-09-12,Do standardized residential energy models represent the variables that matter? Evidence from explainable machine learning,0,
+https://doi.org/10.1016/j.egyai.2026.100906,2026-09-12,Adaptive interaction-diagnostic graph-hierarchical reinforcement learning for industrial energy efficiency analysis under process anomalies,0,
+https://doi.org/10.1016/j.egyai.2026.100901,2026-09-15,Conformalized graph neural networks for distribution system state estimation with finite-sample-valid uncertainty quantification,0,
+https://doi.org/10.1016/j.egyai.2026.100898,2026-09-17,Digital twin-enabled reinforcement learning for adaptive and degradation-aware control of high-temperature electrolysis,0,
+https://doi.org/10.1016/j.egyai.2026.100913,2026-09-17,FDASR-PINNs: A feature-enhanced dual-head physics-informed neural network for sparse-data liquid hydrogen dispersion prediction,0,
+https://doi.org/10.1016/j.egyai.2026.100900,2026-09-17,State-Adaptive Forecast Error Recalibration for probabilistic wind power forecasting,0,
+https://doi.org/10.1016/j.egyai.2026.100908,2026-09-17,"Solar irradiance forecasting across horizons: information-source boundaries, hand-offs, and evaluation requirements",0,
+https://doi.org/10.1016/j.egyai.2026.100912,2026-09-17,External short-circuit damage characterization and rapid hierarchical safety diagnosis of lithium iron phosphate batteries,0,
+https://doi.org/10.1016/j.egyai.2026.100915,2026-09-17,Joint prediction of thermal fields and effective thermal conductivity for thermal barrier coatings using a physics-informed gated-modulated dual-branch network,0,
+https://doi.org/10.1016/j.egyai.2026.100886,2026-09-17,Electricity price prediction with univariate Long Short-Term Memory and zero-shot foundation transformer models,0,
+https://doi.org/10.1016/j.egyai.2026.100914,2026-09-17,Benchmarking Chronos-2 for European wholesale electricity price forecasting: Evidence from foundation and conventional forecasting models,0,
+https://doi.org/10.1016/j.egyai.2026.100910,2026-09-17,A time-stepping finite-difference physics-informed neural network (TFD-PINN) for transient two-phase flows,0,
+https://doi.org/10.1016/j.egyai.2026.100907,2026-09-22,A machine learning framework for automated planning of hybrid energy systems using generalizable deep reinforcement learning,0,
+https://doi.org/10.1016/j.egyai.2026.100916,2026-09-23,A hybrid data-driven methodology for forecasting normal and extreme electricity prices,0,
+https://doi.org/10.1016/j.egyai.2026.100911,2026-09-23,Machine learning based design of an aggregated model of wind farms using external measurements only,0,
+https://doi.org/10.1016/j.egyai.2026.100905,2026-09-01,Predictive value of degradation modes for electrode-resolved DC resistance in lithium-ion batteries,0,
+https://doi.org/10.1016/j.egyai.2026.100902,2026-09-24,Cross-condition knee point prediction of lithium-ion batteries using interpretable residual neural networks,0,
+https://doi.org/10.1016/j.egyai.2026.100917,2026-09-24,GateFormer: Forecast-space decomposition for intra-hour solar irradiance prediction from sky images,1,https://arxiv.org/pdf/2610.30942
+https://doi.org/10.1016/j.egyai.2026.100975,2026-11-01,Tail reliability of machine-learning probabilistic forecasts in the GB day-ahead electricity market,2,https://doi.org/10.2139/ssrn.7524654
+https://doi.org/10.1016/j.egyai.2026.100919,2026-09-27,Vision-based state-of-charge estimation in latent thermal energy storage systems: A proof-of-concept domain-adapted deep learning framework,0,
+https://doi.org/10.1016/j.egyai.2026.100897,2026-09-29,Constraint-aware deep reinforcement learning with nonlinear model predictive control shielding for hybrid energy storage systems under pulsed loads,0,
+https://doi.org/10.1016/j.egyai.2026.100922,2026-10-02,Explainable deep learning for operando X-ray diffraction analysis of lithium-ion batteries,0,
+https://doi.org/10.1016/j.egyai.2026.100928,2026-10-05,Cross-chemistry battery state-of-health estimation from adaptive partial charging using interpretable physics-informed Efficient Kolmogorov–Arnold networks,0,
+https://doi.org/10.1016/j.egyai.2026.100934,2026-10-05,Closing the learning loop in lithium–sulfur batteries through physics-informed and trustworthy artificial intelligence,1,https://www.dora.lib4ri.ch/empa/dload/empa:48613/PDF/view
+https://doi.org/10.1016/j.egyai.2026.100926,2026-10-05,"Large language models, ChatGPT, and beyond: A new paradigm for condition monitoring and prognosis in power and energy systems",0,
+https://doi.org/10.1016/j.egyai.2026.100935,2026-10-05,Physics-driven deep learning for inverse extraction of capacitive parameters and faradaic contribution in supercapacitors,0,
+https://doi.org/10.1016/j.egyai.2026.100924,2026-10-08,Wind gusts prediction using multivariate time series classification,0,
+https://doi.org/10.1016/j.egyai.2026.100927,2026-10-09,Spatio-temporal conditional probabilistic modeling for short-term wind speed field forecasting under sparse gridded observations,0,
+https://doi.org/10.1016/j.egyai.2026.100929,2026-10-09,Artificial Intelligence–Based Multi-Purpose Adaptive Control for High-Speed Electric Machines using Gaussian Process Regression: Development and Experimental Validation,0,
+https://doi.org/10.1016/j.egyai.2026.100932,2026-10-09,X-AiDO: An expert AI-driven framework coupled with multi-optimization for gas adsorption prediction in activated carbons,0,
+https://doi.org/10.1016/j.egyai.2026.100923,2026-10-10,Homogenized modeling of coupled flow–heat transfer in plate heat exchangers with variable channels and flow configurations,2,https://publikationen.bibliothek.kit.edu/1000198632/194826235
+https://doi.org/10.1016/j.egyai.2026.100921,2026-10-12,Synthetic data generation for electric vehicle charging,1,https://edepot.wur.nl/726008
+https://doi.org/10.1016/j.egyai.2026.100944,2026-10-13,Dual-layer energy management strategy combining model predictive control and deep reinforcement learning for fuel cell-battery hybrid power systems,0,
+https://doi.org/10.1016/j.egyai.2026.100931,2026-10-15,Machine learning surrogate modelling for enhanced heat transfer in heat exchangers: A state-of-the-art review,0,
+https://doi.org/10.1016/j.egyai.2026.100943,2026-10-17,A process-informed state-aware Machine Learning methodology for stringer machine energy estimation in PV manufacturing environment,0,
+https://doi.org/10.1016/j.egyai.2026.100933,2026-10-17,Evaluating rollout-verified reinforcement fine-tuning of a reasoning model for multi-zone variable-air-volume control,1,https://arxiv.org/pdf/2607.27914
+https://doi.org/10.1016/j.egyai.2026.100945,2026-10-17,Physics-anchored residual learning for ship fuel consumption and carbon dioxide emission prediction,0,
+https://doi.org/10.1016/j.egyai.2026.100936,2026-10-17,The price of a degree-hour in data-centre cooling: Auditing deep reinforcement learning against model predictive control,0,
+https://doi.org/10.1016/j.egyai.2026.100941,2026-10-18,Compact early-to-middle-cycle descriptors reveal empirical charge–discharge imbalance as a predictor of long-horizon lithium–sulfur battery degradation,0,
+https://doi.org/10.1016/j.egyai.2026.100952,2026-10-21,A data-driven frost-aware control method for air source heat pumps based on sparse identification and model predictive control,1,https://doi.org/10.2139/ssrn.7442046
+https://doi.org/10.1016/j.egyai.2026.100947,2026-10-21,Silicon carbide foam packed-bed reactor for solar-driven biomass pyrolysis: Robust design under variable solar input,0,
+https://doi.org/10.1016/j.egyai.2026.100950,2026-10-21,Signal decomposition and machine learning for wind power forecasting in wind-to-hydrogen systems,0,
+https://doi.org/10.1016/j.egyai.2026.100938,2026-10-23,Spatio-temporal solar power forecasting using GAN-enhanced irradiance maps and deep neural networks,0,
+https://doi.org/10.1016/j.egyai.2026.100937,2026-10-22,A neural surrogate for practical identifiability and sensor placement in distributed battery thermal models,0,
+https://doi.org/10.1016/j.egyai.2026.100946,2026-10-24,Structure-preserving Virtualized Twin Control framework for time-evolving optimal ammonia combustion,1,https://ir.library.osaka-u.ac.jp/repo/ouka/all/106933/EnergyAI_26_100946.pdf
+https://doi.org/10.1016/j.egyai.2026.100939,2026-10-27,A two-stage BiLSTM framework for imbalance-aware cyberattack detection and classification in microgrid network traffic,0,
+https://doi.org/10.1016/j.egyai.2026.100949,2026-10-27,Coordinating data centers in day-ahead electricity markets via a network-aware aggregative game,0,
+https://doi.org/10.1016/j.egyai.2026.100953,2026-10-30,Evaluating attention and adaptive ensembles for wind power forecasting under controlled information access,0,
+https://doi.org/10.1016/j.egyai.2026.100956,2026-10-29,Temporal reconstruction of centrifugal-compressor casing pressure using rotor-synchronous decomposition and shared sparse priors,0,
+https://doi.org/10.1016/j.egyai.2026.100958,2026-10-31,A hybrid physics–AI framework combining fractional-order model and residual neural networks for battery voltage prediction across temperature and aging,0,
+https://doi.org/10.1016/j.egyai.2026.100957,2026-10-31,AI-Based automatic topology identification of photovoltaic (PV) systems using real-time data for topology-independent fault diagnosis,0,
+https://doi.org/10.1016/j.egyai.2026.100964,2026-11-05,Scientific visualization of hierarchical lithium-ion battery structure via computer vision-a review,0,
+https://doi.org/10.1016/j.egyai.2026.100959,2026-11-06,Time-series foundation models for energy infrastructure: Evidence and requirements for digital-twin-grade integration,0,
+https://doi.org/10.1016/j.egyai.2026.100940,2026-11-09,From physics to prediction: A critical review of artificial intelligence for liquid hydrogen storage thermal management,0,
+https://doi.org/10.1016/j.egyai.2026.100966,2026-11-10,Optimal structural design of electric submersible pumps based on deep learning and the NSGA-II method,0,
+https://doi.org/10.1016/j.egyai.2026.100960,2026-11-01,Model predictive-fractional control with support vector machine-based FDI detection for smart grid frequency regulation,0,
+https://doi.org/10.1016/j.egyai.2026.100970,2026-11-01,Artificial Intelligence for Combustion-State Sensing and Prediction in Internal Combustion Engines Across Multiple Fuel Types: A Review,0,
+https://doi.org/10.1016/j.egyai.2026.100967,2026-11-01,Quantum Conditional Born Machine model-based offline reinforcement learning for risk-aware strategic bidding in coupled electricity-carbon markets,0,
+https://doi.org/10.1016/j.egyai.2026.100968,2026-11-18,What the survey literature says about reinforcement learning for building control: A critical synthesis,0,
+https://doi.org/10.1016/j.egyai.2026.100972,2026-11-01,Deep learning-driven flow-field prediction for complex-structured fluid systems: recent advances and future outlook,0,
+https://doi.org/10.1016/j.egyai.2026.100969,2026-11-01,Control-conditional latent diffusion for joint probabilistic forecasting of hospital heating-plant operation,0,
+https://doi.org/10.1016/j.egyai.2026.100971,2026-11-19,"Ensemble learning for day-ahead district heat load forecasting: Base learners, ensemble structures, and combination rules across training data partitioning strategies",0,
+https://doi.org/10.1016/j.egyai.2026.100973,2026-11-01,A Comprehensive Review on Artificial Intelligence for Image-Based Photovoltaic Fault Detection in Desert Climates,0,
+https://doi.org/10.1016/j.egyai.2026.100977,2026-11-01,A Recency-Adaptive Degradation Ensemble for Cross-Cell Generalization in Electric Vehicle Battery Management Systems,0,
+https://doi.org/10.1016/j.egyai.2026.100979,2026-11-01,Evidence Grounded Retrieval-Augmented Generation Framework for Regulatory Barrier Analysis in U.S. Nuclear Power Plant Licensing,0,
+https://doi.org/10.1016/j.egyai.2026.100978,2026-11-01,Data-driven framework for rapid design assessment of proton exchange membrane water electrolyzer activation voltage profile,0,
+https://doi.org/10.1016/j.egyai.2026.100980,2026-11-01,Machine-Learning Investigation of Hidden Feedstock–Process–Product Regimes in Thermal Polymer Pyrolysis,0,

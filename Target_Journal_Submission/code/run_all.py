@@ -31,7 +31,7 @@ def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--mode", choices=["quick", "full"], default="quick")
     ap.add_argument("--jobs", type=int, default=os.cpu_count() or 4)
     a = ap.parse_args(); full = a.mode == "full"
-    sh("bash scripts/download_data.sh && python3 scripts/build_cache.py")
+    sh(f"bash scripts/download_data.sh && {sys.executable} scripts/build_cache.py")
     py = sys.executable
     methods = FAST + (HEAVY if full else [])
     seeds = range(10) if full else [0]
