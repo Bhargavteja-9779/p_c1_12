@@ -180,3 +180,6 @@ vs single methods: optimism to be checked on M2).
   rule alone B=1 0.286 ; B=2 0.321 ; B=4 0.321
  C2 >= rule in 10/10 seeds at every budget; C2 - AE at B=2 ~ +0.20 in every seed. Stable across seeds.
  Files: results/m1_table_aeseeds.csv, results/round4/orfusion_best_ae_seed1_..._ae_seed9.csv
+
+## M2 access log
+- 2026-11-23: after Amendment A1 freeze, M2 detector SCORES computed for all frozen methods (no evaluation yet).
