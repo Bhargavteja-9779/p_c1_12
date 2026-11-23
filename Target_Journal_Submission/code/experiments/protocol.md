@@ -96,3 +96,18 @@ Later versions may ADD experiments; any change to items below is logged with dat
        significant difference.
    HF4 PRIMARY ENDPOINT (v1): recall at B = 2 on M2, SRCR-C vs every baseline (McNemar exact + paired
        cluster bootstrap, Holm). Expected direction: SRCR-C >= AE; no hypothesis vs rule.
+- A5 (2026-11-23, session 3, BEFORE any M2 detector output; analysis code committed first:
+  scripts/m2_evaluate.py). Details A4 left open, fixed now:
+  * Matched recall for HF1-HF3 FA ratios: r* = recall that method A (comfort / relative side of the pair)
+    reaches on M2 at its M1-chosen B = 2 operating point. FA ratio = min FA rate of B reaching r* over the full
+    (tau, c_thr) grid / same for A, each rate with +0.5 false-alarm continuity correction. If B never reaches
+    r*, the ratio is reported as infinite (favours A). 95% CI by cluster bootstrap over substations (2000
+    replicates, seed 20261123). Same grid for every method.
+  * HF4 recall difference CI: cluster bootstrap (1000 replicates) with fixed M1-chosen thresholds.
+    McNemar exact on per-fault detections. Holm within HF1, HF2 and HF4 separately; HF3 descriptive.
+  * Seeds: fleet SRCR models seeds 0-9 (each seed: own M1 cross-fitted run -> own M1 thresholds -> M2).
+    Primary tests use seed 0 (the development seed); seeds 1-9 reported as mean, sd, range of M2 recall/FA.
+    Per-substation stochastic baselines (AE family, iForest, qNBM): seed 0 only on M2, plus seeds 1-2 for
+    ae and ae_comfort if compute allows (CPU budget; disclosed). Deterministic methods need no seeds.
+  * Code is run on M1 first (in-sample dry run, M = 1) only to test it; those numbers are not reported as
+    test results.
