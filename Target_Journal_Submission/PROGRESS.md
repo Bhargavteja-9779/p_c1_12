@@ -76,6 +76,11 @@ STEP 2-3: method fixed (factorial framing); M1 rebuild + seeds, then locked M2 e
 - USER 2026-11-23: manuscript must state "Code will be made available on request.", no funding, no competing interests (verbatim, see
   manuscript/declarations.md. The repo still gets README + run_all.py + tests (for reviewers on request).
 
+- References: manuscript/novelty_refs.bib (51, Crossref-verified from novelty map) + background_refs.bib/.csv
+  (39; ISA-18.2 and EEMUA 191 UNVERIFIED/no DOI; Holm 1979 + Demsar 2006 no resolvable DOI). Hermans 2024
+  (10.1016/j.segy.2024.100159: seasonal model error + quantile thresholds on DH substations) is CLOSE to SRCR ->
+  must be discussed in related work. Gueck 2024 CARE score: check full text before citing its definition.
+
 ## NEXT ACTION
 1. Wait/collect M1 heavy baselines (ae_comfort, ae_cond, iforest, qnbm; logs results/logs/b_*.log; rerun
    `python3 scripts/run_online_method.py <name> 1` if fewer than 35 files in results/scores/<name>/m1).
