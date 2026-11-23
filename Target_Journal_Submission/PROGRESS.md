@@ -57,19 +57,14 @@ STEP 0: journal landscape and 72-day check (in progress)
   full text of 10.1016/j.energy.2026.142993 (control-strategy mode rules) and 10.1016/j.enbuild.2024.114009.
 
 ## NEXT ACTION
-State (2026-11-23): rounds 0-4 done, 13 ideas counted. KEY FINDING: on M1 the expert setpoint-shortfall RULE
-dominates all learned methods incl. SRCR (same 9 faults, fewer FAs); AE detects a complementary set (pump/valve/
-leak/parameterisation). Best candidate C2 = rule OR AE (budget split): 11/28 at 1.44 FA/sub-yr; not significant
-on M1 alone (see log). SRCR fleet model is NOT a contribution -> story pivot to N5 (continuous protocol) +
-N7 (transparent setpoint rule beats deep NBM; learned model only valuable for complementary faults) + hybrid.
-1. AE seeds 1-9 on M1 running (logs results/logs/regen/aeseed_p*.log; /tmp/claude-0/seeds.sh). When done:
-   recompute C2 per seed (scripts/round4_orfusion.py with ae_seedK) -> mean +- SD.
-2. Freeze candidates C1 (rule), C2 (rule OR AE), plus all baselines at M1-chosen operating points in
-   protocol.md amendments; compute AE/baselines on M2 (per-substation, online); single locked M2 evaluation;
-   pooled M1+M2 inference incl. curve-AUC endpoint.
-3. DONE: all 58 M2 substations have the HC1 setpoint loop (DHW sup 14, DHW sto 13) -> rule applicable.
-4. Scorecard + Reviewer Number Zero with the pivoted story; then paper drafting (STEP per BRIEF).
-5. Optional round 5: residualised AE (F16) and LBNL AHU second domain (generality).
+State: rounds 0-4 + seeds 0-9 on M1 DONE. Candidates FROZEN (protocol.md Amendment A1): C1 rule, C2 rule OR AE.
+M1 seeds: C2 0.382+-0.017 vs AE 0.183+-0.045 vs rule 0.321 at B=2.
+1. M2 scores computing (job list /tmp/claude-0/m2jobs.txt run via xargs -P4; logs results/logs/regen/m2_*;
+   if lost on a new machine, regenerate: run_online_method.py {rule,sigma3,loop3s,iforest} 2; qnbm/ae_cond 2;
+   ae 2 k/3 seed for seeds 0-9; run_srcr_transfer.py). Check results/scores/<m>/m2 has 58 files each.
+2. Then run scripts/m2_eval.py ONCE (locked test) -> results/m2/. Log it in the M2 access log.
+3. Write m2_curves.py (curve-AUC endpoint, descriptive), error analysis by fault label.
+4. Scorecard + Reviewer Number Zero (pivoted story) -> paper drafting.
 
 ## Resume notes (saved 2026-11-23 before account switch)
 - Results/scores and data cache are NOT in git (large). On a new machine: run
