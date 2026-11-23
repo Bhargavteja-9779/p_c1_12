@@ -126,3 +126,35 @@ fusion = 11. (Round-2 numbers reproduced exactly on the rebuilt machine: 0.321 r
 - Most important observation: false alarms are extremely concentrated. At budgets <= 1/sub-yr, 5 of 35
   substations produce 90-100% of SRCR false alarms. Next step: check whether these are unlabelled persistent
   anomalies (label noise in 'normal' time) and whether AE flags the same substations.
+
+## Round 4 plan (hypotheses written BEFORE running, 2026-11-23; M1 only)
+Diagnosis: in raw components, the primary-return limiter loop (p_ret, two-sided) has the highest exceedance
+rate (sub 18: 1.5% of steps z>3; sub 35: 0.9%, all in the heating season) while comfort loops rarely exceed.
+High primary return temperature is an efficiency problem that customers do not report (no comfort loss), so
+it is plausibly NOT a target-fault signal. Families:
+ F15 Comfort-only execution channel: drop p_ret (keep hc*, dhw_* shortfall, gated, local-calibrated).
+ F16 p_ret low-side only (return far BELOW limit = valve stuck closed / no flow) kept, high side dropped.
+ F17 CUSUM alarm logic on z: S_t = max(0, S_{t-1} + min(z_t, 10) - k), alarm while S_t >= h; k in {0,1,2},
+     h on a 12-value grid matched to the counter grid budget (same number of operating points per method).
+ H4a: F15 or F16 reduces M1 false alarms by >= 30% at matched recall 0.214 vs gate+1s+local, with no lost
+      detection at the <= 2 FA/sub-yr operating point (recall stays >= 0.321). Falsified otherwise.
+ H4b: F17 raises recall at <= 2 FA/sub-yr by >= 0.07 (2 faults) over the counter for the best variant of H4a.
+
+## Round 4 results (2026-11-23, M1 development; results/round2_srcr_comp_v_g1l_noret-v_g1l_retlow.csv,
+## results/round4_cusum_*.csv, results/matched_recall_r4_vs_ae.csv)
+Ideas counted so far: 11 + #12 comfort-only (drop p_ret), #13 p_ret low-side only, #14 CUSUM = 14.
+- H4a SUPPORTED: comfort-only (gate + one-sided + local, p_ret dropped) needs 0.18 FA/sub-yr for recall 0.214
+  (gate+1s+local: 0.40, -55%) and keeps recall 0.357 at <= 2 FA/sub-yr (no lost detection).
+  Recall at budgets B = 1/2/4: 0.321 / 0.357 / 0.357 (0.65 / 1.44 / 1.44 FA/sub-yr realised).
+  p_ret low-side only: 0.286 / 0.357 / 0.393 — between the two.
+- H4b FALSIFIED: CUSUM on the comfort-only score reaches only 0.286 at <= 2 FA/sub-yr (counter 0.357).
+- Versus AE (re-run on this machine, same grid): minimum FA/sub-yr to reach recall 0.214: AE 1.78 vs
+  comfort-only SRCR 0.18 (~10x); recall 0.321: AE 5.63 vs 0.65 (~8.7x). Recall at <= 1 FA/sub-yr: 0.321 vs 0.143.
+- Interpretation (to test, not yet claimed): the primary return limiter reacts to efficiency problems
+  (high return temperature) that do not reach customers and are not reported; scoring only the loops that
+  carry comfort makes alarms match what customers report. This is a 2-sentence reusable idea:
+  "Score only the control loops whose failure the stakeholder experiences, relative to the controller's own
+  setpoint, with a fleet model that needs no own history."
+- DECISION: fix the method candidate = SRCR-C (comfort loops, gated, one-sided, fleet-prior -> local
+  calibration, criticality counter). Next: seeds 0-9, all baselines on M1, novelty map + scorecard, then the
+  single locked evaluation on M2.
