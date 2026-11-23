@@ -2,3 +2,10 @@ ae_cond m1 s3 53s
 ae_cond m1 s6 10s
 ae_cond m1 s9 63s
 ae_cond m1 s12 71s
+ae_cond m1 s15 77s
+ae_cond m1 s18 113s
+ae_cond m1 s21 83s
+ae_cond m1 s24 52s
+ae_cond m1 s27 3s
+ae_cond m1 s30 2s
+ae_cond m1 s33 52s

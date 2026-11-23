@@ -35,9 +35,13 @@ STEP 0: journal landscape and 72-day check (in progress)
   Python 3.13 main env; official EnergyFaultDetector in /opt/efdenv (py3.12; recreate with
   `uv venv -p /usr/bin/python3.12 /opt/efdenv && VIRTUAL_ENV=/opt/efdenv uv pip install energy-fault-detector==0.8.1`).
 
+- D6 round 0 done (see code/experiments/novelty_escalation_log.md). Round 1 running: intent + delivery channels
+  (src/models/channels.py), fusion (src/models/fusion.py). Journal benchmark delegated to a sub-agent (writes
+  journal_benchmark.csv, journal_level_profile.md, style_notes.md) — if missing after resume, redo STEP 1.
+
 ## NEXT ACTION
-1. Finish M1 scores: ae (default) + srcr (results/scores/*/m1, git-ignored; regenerate via scripts).
-   Then compute operating curves (src/evaluation/runner.operating_curve) and compare at FA budget 2/sub-yr.
-2. Run baselines on M1: rule, sigma3, iforest, loop3s, qnbm, ae_cond (scripts/run_online_method.py).
-3. STEP 1 journal benchmark from Energy and AI papers via OpenAlex/arXiv (ScienceDirect blocked).
-4. Novelty map (30 papers) + scorecard; D6 loop on M1 only.
+1. When results/scores/{intent,delivery}/m1 have 35 files: run diagnosis (src/evaluation/diagnose.fault_ranks)
+   and fusion (fusion.fuse(['srcr','intent','delivery'],1,fusion.m1_folds(),'fused3')), then
+   runner.operating_curve on 'fused3'; log round 1 in novelty_escalation_log.md vs hypotheses H1a-c.
+2. Novelty map: candidate list at /tmp/claude-0/novelty_candidates.csv (regenerate from
+   journal_selection/lit_raw.csv) -> novelty_map.csv (>=30) + novelty_scorecard.md.
