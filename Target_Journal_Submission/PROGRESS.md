@@ -1,7 +1,7 @@
 # PROGRESS
 
 ## Current phase
-STEP 2-3: method fixed (factorial framing); M1 rebuild + seeds, then locked M2 evaluation
+PAPER A (honest pre-registered benchmark) — writing phase. All experiments for the core story are DONE.
 
 ## Decisions so far (with reasons)
 - 2026-11-23: Acceptance time is measured from Crossref received/accepted dates (all articles of the last
@@ -84,21 +84,49 @@ STEP 2-3: method fixed (factorial framing); M1 rebuild + seeds, then locked M2 e
 - Session 3 rebuild check: srcr_comp seed 0 reproduces round 4 EXACTLY (SRCR-C 0.321/0.357/0.357 at
   0.654/1.436/1.436 FA/sub-yr; gate+1s+local 0.214/0.321/0.357). Seeds 1-9 M1 chain launched (r_srcr_seed*.log).
 
-## NEXT ACTION (rewritten session 3)
-Running in background (check results/scores/<name>/m{1,2} file counts; M1 = 35, M2 = 58 files):
-  M1: ae_comfort, ae_cond, qnbm (xargs pool), srcr_comp_seed1..9 (+variants) chain.
-  M2: rule/sigma3/loop3s/loop3s_c, then (after M1 pool) ae, ae_comfort, ae_cond, iforest, qnbm, run_m2_fleet 0.
-  If a container restart kills them: rerun the same commands; compute_scores skips finished substations.
-1. When M1 complete: matched_recall + paired_ranks for all cells (M1 table); seed summary for SRCR (1-9).
-2. run_m2_fleet.py 1..9; then scripts/m2_evaluate.py 2 EXACTLY ONCE (log it in novelty_escalation_log).
-3. Pre-registered v1 secondary analyses still owed (report all, incl. negative): cold start by days of own
-   history (important: M2 median series = 182 d), missing loops, temporal sensitivity (fleet trained < 2018),
-   efficiency (train/score time), fleet-level impact (alarms/week for 93 subs), PreDist event protocol
-   (F0.5/earliness) for comparability, error analysis by fault label. Disclose: v1 said 24 evaluable M2
-   faults, harness counts 25; v1 B6 fleet-pooled AE was not run (say so or run it).
-4. Figures (~10) + tables (3-4) from real data; manuscript (manuscript/), reviews REVIEW/, docx + cover letter.
+- SESSION 3 OUTCOMES (2026-11-23):
+  * LOCKED M2 (results/locked_m2_*.csv, log LOCKED_m2.log): SRCR-C 0/25 at every budget; best = sigma3 0.28,
+    qnbm 0.20, ae_comfort 0.12, rule/loop3s/loop3s_c/iforest 0.08, ae 0.04, srcr_all/ae_cond 0. HF4 failed.
+  * Secondary (results/secondary_*.csv): 5 of sigma3's 7 M2 hits are faults < 90 d after first record
+    (start-up artefact); after 90 d no method > 2/18 M2 faults. Pooled M1+M2 threshold-free: comfort scope
+    beats all-signal for fleet model (p=0.016) and AE (p=0.021). Rank transfer M1->M2: Spearman -0.33..0.07.
+  * User chose B -> round 5 (peer-relative channels, ideas #15-19) FAILED on M1 (pre-registered). 19 ideas total.
+  * USER DECISION (final): OPTION A = honest benchmark paper. Do NOT develop further methods.
 
-## Resume notes (saved 2026-11-23 before account switch)
+## NEXT ACTION (paper A)
+Story: "Fault-detector rankings do not transfer across controller manufacturers: a pre-registered
+continuous-monitoring benchmark for district heating substations" (title draft; ~13-15 words, journal style).
+RQ1 how many faults are caught on a held-out manufacturer at operational FA budgets; RQ2 do development
+rankings transfer; RQ3 why not (fault mix, start-up artefact, FA calibration transfers but detection does not);
+RQ4 does monitoring scope matter (threshold-free pooled yes; operationally no). Also: AE FA mechanism (seasonal
+regime, M1), all 19 ideas reported (search transparency).
+1. Contrast with the benchmark's own event protocol (pre-registered secondary): implement PreDist event-wise
+   evaluation (7-day windows, 50/50 fault vs normal events from P.normal_events, F0.5 / earliness) for the AE
+   and 2-3 others on M1 and M2 — read arXiv 2511.14791 (full text reachable) for exact definitions first.
+   Key sentence: "the same AE that scores X on the balanced event protocol catches 1/25 at <= 2 FA/sub-yr".
+2. SRCR-C seed summary (seeds 0-9 on M1 and M2): M1 seeds 1-8 complete (round2 csvs), seed 9 M1 missing ->
+   run `python3 scripts/run_srcr_components.py 9 && python3 scripts/round2_variants.py srcr_comp_seed9
+   v_g1l_noret,v_gate_1s_local`; M2 seed scores srcr_c_seedK exist for 1-9. Report mean/sd of M2 recall.
+3. Efficiency table from logs (seconds per substation per method; results/logs/r_*.log, r_m2_*.log).
+4. Figures (~10, real data only; load dataviz skill): fleet/data overview; protocol schematic; M1 vs M2 recall
+   per cell (rank reversal); recall-vs-FA curves M1/M2; cold-start bins; by-fault-label heatmap; AE FA
+   mechanism; threshold-free rank pairs (pooled); ablation (results/ablation_srcr_m1_seed0.csv); case plot of
+   one fault. Tables: data (done in sections/03), factorial cells + operating points M1/M2, HF tests, ideas log.
+5. Rewrite manuscript/sections/03_data_methods.md for paper A framing (SRCR-C is one of 11 cells, not "proposed";
+   add round 5 to 5.4). Then intro, related work (cite Hermans 2024, HEAT 2025, SHEDAD, PreDist paper, CARE),
+   results, discussion, limitations, conclusion; declarations from manuscript/declarations.md (user wording).
+6. Reviews REVIEW/review_01..10 + stakeholder; audits; Final_Manuscript.docx + PDF, cover_letter.docx,
+   risk_report.md (state desk-rejection risk of a negative-result benchmark plainly); decision READY / NOT READY.
+Pending from user: author names, affiliations, CRediT roles.
+
+## Resume notes (updated 2026-11-23 session 3, before account switch)
+- Score files (results/scores, ~78 dirs) and data cache are NOT in git. To rebuild everything on a new machine
+  (CPU 4 cores: ~8-10 h): pip deps below; `bash code/scripts/download_data.sh`; `python3 code/scripts/build_cache.py`;
+  then from code/: run_online_method.py <m> 1 and <m> 2 for rule sigma3 loop3s loop3s_c iforest qnbm ae ae_cond
+  ae_comfort (use k/n partitions in parallel); run_srcr_components.py 0..9 + round2_variants.py; run_m2_fleet.py
+  0..9; round5_peer.py 1. All result CSVs needed for the paper ARE in git (results/*.csv), so writing can start
+  without rebuilding; rebuild only for figures that need raw scores (curves, case plot, cold start).
+- Old resume notes:
 - Results/scores and data cache are NOT in git (large). On a new machine: run
   `bash Target_Journal_Submission/code/scripts/download_data.sh`, then `python3 code/scripts/build_cache.py`,
   then regenerate scores (download_data.sh now creates data/raw itself): run_online_method.py ae 1 / ae_cond 1, run_srcr_cv.py 1, run_online_method.py intent 1 /
