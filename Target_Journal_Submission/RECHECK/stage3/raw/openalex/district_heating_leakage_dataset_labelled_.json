@@ -1,0 +1,172 @@
+{
+ "query": "district heating leakage dataset labelled",
+ "filter": null,
+ "count": 2092,
+ "results": [
+  {
+   "openalex": "https://openalex.org/W3176768571",
+   "doi": "https://doi.org/10.3390/buildings11070275",
+   "title": "Detection of District Heating Pipe Network Leakage Fault Using UCB Arm Selection Method",
+   "year": 2021,
+   "date": "2021-06-27",
+   "venue": "Buildings",
+   "type": "article",
+   "cites": 20,
+   "abstract": "District heating networks make up an important public energy service, in which leakage is the main problem affecting the safety of pipeline network operation. This paper proposes a Leakage Fault Detection (LFD) method based on the Linear Upper Confidence Bound (LinUCB) which is used for arm selection in the Contextual Bandit (CB) algorithm. With data collected from end-users\u2019 pressure and flow information in the simulation model, the LinUCB method is adopted to locate the leakage faults. Firstly, we use a hydraulic simulation model to simulate all failure conditions that can occur in the network, and these change rate vectors of observed data form a dataset. Secondly, the LinUCB method is used to train an agent for the arm selection, and the outcome of arm selection is the leaking pipe label. Thirdly, the experiment results show that this method can detect the leaking pipe accurately and effectively. Furthermore, it allows operators to evaluate the system performance, supports troubleshooting of decision mechanisms, and provides guidance in the arrangement of maintenance."
+  },
+  {
+   "openalex": "https://openalex.org/W3032505049",
+   "doi": "https://doi.org/10.1016/j.patrec.2020.05.024",
+   "title": "UAV image analysis for leakage detection in district heating systems using machine learning",
+   "year": 2020,
+   "date": "2020-05-29",
+   "venue": "Pattern Recognition Letters",
+   "type": "article",
+   "cites": 55,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W4409004058",
+   "doi": "https://doi.org/10.53469/jrse.2024.07(03).9",
+   "title": "A Novel PCA_ERF Method for Leakage Detection of District Heating System",
+   "year": 2025,
+   "date": "2025-03-25",
+   "venue": "Journal of Research in Science and Engineering",
+   "type": "article",
+   "cites": 0,
+   "abstract": "The leakage of district heating system can lead to serious consequences. Therefore, the leakage detection of the district heating system has always been the focus of research in various industries. Relying on the intelligent heating experimental pipe-network system in Shandong Jianzhu University, this paper takes 4 topological heating experimental pipe-networks as the research objects, constructs the real-time operation datasets, simulation datasets and the cross datasets of the above two, creatively proposes a PCA-ERF (Principal Component Analysis-Extremely Random Forest) based method for the leakage detection task. The method adopts PCA to map the original pressure and flow data of the heating network into the vector space, which has a stronger feature expression ability firstly; then the decision trees for classification are trained by ERF with stronger randomness; finally, the final classification results are obtained by integrating the judgment of all the decision trees. The experimental results show that the PCA_ERF method shows excellent performance under different cross-data ratios, especially when the cross-data ratio is 2:1, the accuracy of the proposed PCA-ERF method in the leakage prediction for 4 different topologies is 98.08%, 97.1%, 98.92% and 97.64% respectively, which can complete the leakage detection task of complex heating network with multiple topologies."
+  },
+  {
+   "openalex": "https://openalex.org/W1413383838",
+   "doi": "https://doi.org/10.1016/j.apenergy.2015.07.061",
+   "title": "Fault detection in district heating substations",
+   "year": 2015,
+   "date": "2015-08-14",
+   "venue": "Applied Energy",
+   "type": "article",
+   "cites": 164,
+   "abstract": "Current temperature levels in European district heating networks are still too high with respect to future conditions as customer heat demands decrease and new possible heat source options emerge. A considerable reduction of temperature levels can be accomplished by eliminating current faults in substations and customer heating systems. These faults do not receive proper attention today, because neither substations nor customer heating systems are centrally supervised. The focus of this paper has been to identify these faults by annual series of hourly meter readings obtained from automatic meter reading systems at 135 substations in two Swedish district heating systems. Based on threshold methods, various faults were identified in 74% of the substations. The identified faults were divided into three different fault groups: Unsuitable heat load pattern, low average annual temperature difference, and poor substation control. The most important conclusion from this early study of big data volumes is that automatic meter reading systems can provide proactive fault detection by continuous commissioning of district heating substations in the future. A complete reduction of current faults corresponds to approximately half the required reduction of the current temperature levels in the effort toward future low-temperature district heating networks."
+  },
+  {
+   "openalex": "https://openalex.org/W7154691278",
+   "doi": "https://doi.org/10.3390/buildings16081586",
+   "title": "A Compact and Robust Framework for Multi-Condition Transient Pressure-Wave-Based Leakage Identification in District Heating Networks",
+   "year": 2026,
+   "date": "2026-04-17",
+   "venue": "Buildings",
+   "type": "article",
+   "cites": 0,
+   "abstract": "Leakage identification in district heating networks is challenging because leakage-induced transient pressure waves often overlap with pressure disturbances triggered by routine operations such as valve regulation, pump speed variation, and emergency shut-off. In addition, the scarcity of high-quality labeled leakage samples limits the robustness of data-driven models under small-sample conditions. To address these issues, this study proposes a compact and moderately interpretable framework for multi-condition identification from transient pressure-wave signals, integrating signal preprocessing, handcrafted statistical feature extraction, multiclass ReliefF-based feature selection, and class-wise generative adversarial network augmentation in the selected feature space. A dataset containing four representative conditions, namely leakage, valve regulation, pump speed regulation, and emergency valve shut-off, was constructed using an integrated indoor district heating network testbed. After Hampel-based spike suppression and zero-phase Butterworth band-pass filtering within 0.5 to 300 Hz, time- and frequency-domain statistical features were extracted, and a compact subset was selected by multiclass ReliefF. A class-wise generative adversarial network was then used to augment the training set in feature space, while all evaluations were performed strictly on real samples. The results show that feature-space augmentation improves robustness and generalization under operational disturbances and noise. Using random forest as the representative classifier, Accuracy and Macro-F1 increased from 0.960 to 0.985, while leakage recall improved from 0.920 to 0.980. Further comparisons confirmed that the ReliefF-selected subset outperformed representative alternatives such as LASSO and mRMR. Overall, the proposed framework provides an effective solution for distinguishing leakage events from operational disturbances and offers practical support for online monitoring and intelligent operation of district heating networks."
+  },
+  {
+   "openalex": "https://openalex.org/W3210888925",
+   "doi": "https://doi.org/10.3390/app11136112",
+   "title": "Opportunities for Machine Learning in District Heating",
+   "year": 2021,
+   "date": "2021-06-30",
+   "venue": "Applied Sciences",
+   "type": "article",
+   "cites": 50,
+   "abstract": "The district heating (DH) industry is facing an important transformation towards more efficient networks that utilise significantly lower water temperatures to distribute the heat. This change requires taking advantage of new technologies, and Machine Learning (ML) is a popular direction. In the last decade, we have witnessed an extreme growth in the number of published research papers that focus on applying ML techniques to the DH domain. However, based on our experience in the field, and an extensive review of the state-of-the-art, we perceive a mismatch between the most popular research directions, such as forecasting, and the challenges faced by the DH industry. In this work, we present our findings, explain and demonstrate the key gaps between the two communities and suggest a road-map ahead towards increasing the impact of ML research in the DH industry."
+  },
+  {
+   "openalex": "https://openalex.org/W4383911796",
+   "doi": "https://doi.org/10.1016/j.energy.2023.128387",
+   "title": "Generation and evaluation of a synthetic dataset to improve fault detection in district heating and cooling systems",
+   "year": 2023,
+   "date": "2023-07-11",
+   "venue": "Energy",
+   "type": "article",
+   "cites": 41,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W4403066736",
+   "doi": "https://doi.org/10.1016/j.autcon.2024.105709",
+   "title": "Detecting district heating leaks in thermal imagery: Comparison of anomaly detection methods",
+   "year": 2024,
+   "date": "2024-10-02",
+   "venue": "Automation in Construction",
+   "type": "article",
+   "cites": 22,
+   "abstract": "District heating systems offer means to transport heat to end-energy users through underground pipelines. When leakages occur, a lack of reliable monitoring makes pinpointing their locations a difficult and costly task for network operators. In recent years, aerial thermography has emerged as a means to find leakages as hot-spots, with several papers proposing image analysis algorithms for their detection. While all publications boast high performance metrics, the methods are constructed around very different datasets, making a true comparison impossible. Using a new set of aerial thermal images from two German cities, this paper implements, improves, and evaluates three anomaly detection methods for leakage detection: triangle-histogram-thresholding, saliency mapping, and local thresholding with filter kernels. The approaches are integrated into a software pipeline with globally applicable pre- and postprocessing, including vignetting correction. While all methods reliably detect thermal anomalies and are suitable for automated leakage detection, triangle-histogram-thresholding is the most robust."
+  },
+  {
+   "openalex": "https://openalex.org/W7159838334",
+   "doi": "https://doi.org/10.1016/j.energy.2026.141178",
+   "title": "Enabling predictive maintenance in district heating substations: A labelled dataset and fault detection evaluation framework based on service data",
+   "year": 2026,
+   "date": "2026-04-30",
+   "venue": "Energy",
+   "type": "article",
+   "cites": 6,
+   "abstract": "Early detection of faults in district heating substations is imperative to reduce return temperatures and enhance efficiency. However, progress in this domain has been hindered by the limited availability of public, labelled datasets. We present an open-source framework combining a service-report-validated public dataset, an evaluation method based on accuracy, reliability, and earliness, and baseline results implemented with EnergyFaultDetector, an open-source Python framework developed for automated anomaly detection in operational data from energy systems. The dataset contains time series of operational data from 93 substations across two manufacturers, annotated with a list of disturbances due to faults and maintenance actions, a set of normal-event examples and detailed fault metadata. We evaluate EnergyFaultDetector models, adapted and configured for district heating substations, using three metrics: accuracy for recognising normal behaviour, an eventwise F-score for reliable fault detection with few false alarms, and earliness for early detection. The framework also supports root cause analysis using ARCANA, a feature-attribution method for autoencoders. We demonstrate three use cases to assist operators in interpreting anomalies and identifying underlying faults. The models achieve high normal-behaviour accuracy (0.98) and eventwise F 0 . 5 of 0.83 and could detect 60% of the faults in the dataset before the customer reported a problem, with an average lead time of 3 to 5 days. Integrating an open dataset, metrics, open-source code, and baselines establishes a reproducible, fault-centric benchmark with operationally meaningful evaluation, enabling consistent comparison and development of early fault detection and diagnosis methods for district heating substations."
+  },
+  {
+   "openalex": "https://openalex.org/W4327970367",
+   "doi": "https://doi.org/10.3390/electronics12061448",
+   "title": "Intelligent Approaches to Fault Detection and Diagnosis in District Heating: Current Trends, Challenges, and Opportunities",
+   "year": 2023,
+   "date": "2023-03-18",
+   "venue": "Electronics",
+   "type": "article",
+   "cites": 60,
+   "abstract": "This paper presents a comprehensive survey of state-of-the-art intelligent fault detection and diagnosis in district heating systems. Maintaining an efficient district heating system is crucial, as faults can lead to increased heat loss, customer discomfort, and operational cost. Intelligent fault detection and diagnosis can help to identify and diagnose faulty behavior automatically by utilizing artificial intelligence or machine learning. In our survey, we review and discuss 57 papers published in the last 12 years, highlight the recent trends, identify current research gaps, discuss the limitations of current techniques, and provide recommendations for future studies in this area. While there is an increasing interest in the topic, and the past five years have shown much advancement, the absence of open-source high-quality labeled data severely hinders progress. Future research should aim to explore transfer learning, domain adaptation, and semi-supervised learning to improve current performance. Additionally, a researcher should increase knowledge of district heating data using data-centric approaches to establish a solid foundation for future fault detection and diagnosis in district heating."
+  },
+  {
+   "openalex": "https://openalex.org/W4312191847",
+   "doi": "https://doi.org/10.1088/1742-6596/2385/1/012096",
+   "title": "Fault diagnosis in district heating networks",
+   "year": 2022,
+   "date": "2022-12-01",
+   "venue": "Journal of Physics Conference Series",
+   "type": "conference-paper",
+   "cites": 3,
+   "abstract": "District Heating Networks (DHNs), which dispatch thermal energy from a heat source to end-users by means of a heat carrier, are composed of pipes that can be affected by faults that endanger system reliability. Thus, reliable diagnostic approaches have to be employed to evaluate the health state of the DHN. In the framework of the ENERGYNIUS research project, the authors of this paper developed a diagnostic approach aimed at detecting and identifying the most frequent faults that affect DHN pipes, i.e., water leakages, heat losses and pressure losses. The diagnostic approach detects and identifies pipe faults by coupling a DHN model with an optimization algorithm. As a result, the health indices of each pipe of the DHN, the fault position, its type and magnitude are provided. This study investigates the capability of the diagnostic approach by using two datasets, in which challenging faults were hypothetically implanted in the DHN of the campus of the University of Parma. The diagnostic approach successfully detected and identified both faults, by also accurately assessing fault magnitude. In addition, the relative error with which each DHN variable is predicted is lower than 0.06 %."
+  },
+  {
+   "openalex": "https://openalex.org/W4401281224",
+   "doi": "https://doi.org/10.1016/j.energy.2024.132711",
+   "title": "A systematic approach for data generation for intelligent fault detection and diagnosis in District Heating",
+   "year": 2024,
+   "date": "2024-08-03",
+   "venue": "Energy",
+   "type": "article",
+   "cites": 30,
+   "abstract": "This study introduces a novel systematic approach to address the challenge of labeled data scarcity for fault detection and diagnosis (FDD) in District Heating (DH) systems. To replicate real-world DH fault scenarios, we have created a controlled laboratory emulation of a generic DH substation integrated with a climate chamber. Furthermore, we present an FDD pipeline using an isolation forest and a one-class support vector machine for fault detection alongside a random forest and a support vector machine for fault diagnosis. Our research analyzed the impact of data sampling frequencies on the FDD models, revealing that shorter intervals, such as 1-min and 5-min, significantly improve FDD performance. We provide detailed information on six scenarios, including normal operation, a minor valve leak, a valve leak, a stuck valve, a high heat curve, and a temperature sensor deviation. For each scenario, we present their signature, quantifying their unique behavior and providing deeper insights into the operational implications. The signatures suggest that, while variable, faults have a consistent pattern seen in the generic DH substation. While this work contributes directly to the DH field, our methodology also extends its applicability to a broader context where labeled data is scarce."
+  },
+  {
+   "openalex": "https://openalex.org/W7166516896",
+   "doi": "https://doi.org/10.1016/j.egyai.2026.100824",
+   "title": "From lab to practice: Towards a substation-invariant self-supervised transformer for low-label fault detection in district heating",
+   "year": 2026,
+   "date": "2026-06-29",
+   "venue": "Energy and AI",
+   "type": "article",
+   "cites": 1,
+   "abstract": "Automated Fault Detection and Diagnosis (FDD) in District Heating (DH) is essential for reducing return temperatures, improving operational efficiency, and supporting the transition to low-temperature, low-carbon integrated energy systems. Practical deployment remains difficult because labelled fault data are scarce and heterogeneous across domains, while unlabelled operational data are abundant, creating a practical mismatch. To address this, we propose a Self-supervised Time Series Transformer (STST) for low-label FDD using routinely available primary-side measurements. We evaluate the method on six datasets spanning laboratory fault emulations, simulation, and real-world DH networks. The results show that primary-side temperatures contain strong fault-discriminative information, while flow measurements add sensitivity to hydraulically driven faults. The proposed method performs competitively in scarce-label and heterogeneous-field settings, achieving F 1 values between 0.77 and 0.98. Cross-domain experiments indicate that fault-relevant structure is transferable across substations within the same network, although transfer remains asymmetric across networks. Overall, the results suggest that self-supervised pre-training and regularised fine-tuning can improve transformer-based DH fault detection under stricter field conditions, while CNN-based and hybrid baselines remain highly competitive in cleaner or more separable regimes. Practical deployment across new networks, therefore, still requires attention to source\u2013target compatibility, local validation, and remaining domain shift."
+  },
+  {
+   "openalex": "https://openalex.org/W3126992257",
+   "doi": "https://doi.org/10.3390/designs5010007",
+   "title": "Is Innovation Redesigning District Heating? A Systematic Literature Review",
+   "year": 2021,
+   "date": "2021-01-30",
+   "venue": "Designs",
+   "type": "review",
+   "cites": 11,
+   "abstract": "The district heating (DH) industry has been characterized by continuous innovation for several decades, but there is limited knowledge on the characteristics of the sector\u2019s innovation activities, arguably the most important information for understanding how the sector can continue to develop and further support the energy transition of society. We perform a systematic literature review (SLR) to identify the types of innovation, the levels of innovation and the relation between different innovations in the DH sector. A total of 899 articles are analyzed and coded into eight groups: fuel, supply, distribution, transfer, DH system, city system, impact and business. Most of the articles (68%) were identified in the groups: \u201csupply\u201d, \u201cDH system,\u201d and \u201cimpact\u201d, with a focus on DH from a system or production perspective and its environmental impact. We find that there is limited research on DH firms\u201d challenges, including management perspectives, such as asset management and customer focus. Despite this potential, we find only a limited number of articles related to innovation. Not much scholarly attention has been given to areas of large cost-saving, especially capital cost."
+  },
+  {
+   "openalex": "https://openalex.org/W4413275980",
+   "doi": "https://doi.org/10.1016/j.energy.2025.138016",
+   "title": "From bearings to substations: Transfer Learning for fault detection in district heating",
+   "year": 2025,
+   "date": "2025-08-18",
+   "venue": "Energy",
+   "type": "article",
+   "cites": 8,
+   "abstract": "Fault Detection and Diagnosis (FDD) in District Heating (DH) systems is vital for improving operational efficiency. As DH networks evolve towards Fourth-Generation District Heating (4GDH), their reliance on lower operational temperatures intensifies the need for robust FDD. However, implementing effective FDD faces challenges due to the lack of labelled fault data and the complexity of DH substations. This paper introduces a novel FDD methodology using Transfer Learning (TL) to bridge the gap between faulty bearings, controlled DH substation experiments and real-world operational data. We propose a fault signature method that aligns the data to reduce the domain gap, revealing similarities between faulty bearings\u2019 vibration patterns and \u0394 T readings in DH substations. The TL-enhanced models demonstrated robust performance, achieving F1 scores up to 98% on lab data and 91% on real-world operational data, respectively. These results mark a notable advancement in FDD of DH substations, as our method offers accurate fault detection and valuable insights across diverse operational contexts, ranging from valve issues, faulty sensors, wrong control strategies and normal behaviour. Notably, temperature dynamics resemble behaviour akin to faulty bearing vibrations, highlighting their potential as a critical indicator of a faulty substation, enabling more effective FDD in DH systems."
+  }
+ ]
+}

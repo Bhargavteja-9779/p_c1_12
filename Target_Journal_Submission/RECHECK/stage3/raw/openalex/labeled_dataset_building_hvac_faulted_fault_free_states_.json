@@ -1,0 +1,172 @@
+{
+ "query": "labeled dataset building HVAC faulted fault-free states",
+ "filter": null,
+ "count": 1138,
+ "results": [
+  {
+   "openalex": "https://openalex.org/W4378981802",
+   "doi": "https://doi.org/10.1038/s41597-023-02197-w",
+   "title": "A labeled dataset for building HVAC systems operating in faulted and fault-free states",
+   "year": 2023,
+   "date": "2023-06-01",
+   "venue": "Scientific Data",
+   "type": "data-paper",
+   "cites": 56,
+   "abstract": "Open data is fueling innovation across many fields. In the domain of building science, datasets that can be used to inform the development of operational applications - for example new control algorithms and performance analysis methods - are extremely difficult to come by. This article summarizes the development and content of the largest known public dataset of building system operations in faulted and fault free states. It covers the most common HVAC systems and configurations in commercial buildings, across a range of climates, fault types, and fault severities. The time series points that are contained in the dataset include measurements that are commonly encountered in existing buildings as well as some that are less typical. Simulation tools, experimental test facilities, and in-situ field operation were used to generate the data. To inform more data-hungry algorithms, most of the simulated data cover a year of operation for each fault-severity combination. The data set is a significant expansion of that first published by the lead authors in 2020."
+  },
+  {
+   "openalex": "https://openalex.org/W7119532147",
+   "doi": "https://doi.org/10.1038/s41597-025-06179-y",
+   "title": "Labeled Datasets for Air Handling Units Operating in Faulted and Fault-free States",
+   "year": 2026,
+   "date": "2026-01-09",
+   "venue": "Scientific Data",
+   "type": "data-paper",
+   "cites": 9,
+   "abstract": "Data-driven fault detection and diagnosis (FDD) for buildings' heating, ventilating, and air conditioning (HVAC) systems has gained popularity in recent years. However, the scarcity of well-labeled data that represents true fault symptoms presents a challenge for developing new FDD methods. Furthermore, there is growing interest in applying transfer learning (TL) for building applications, where well-labeled data from one building is used to diagnose faults in a related but different building. Successful evaluation of TL algorithms requires at least two datasets that share similarities yet exhibit differences in some operational conditions. Unfortunately, the lack of comparative studies to identify suitable dataset pairs has slowed the progress of TL or other inter-dataset studies. To address these challenges, this paper focuses on the air handling unit (AHU), a key HVAC subsystem, and 1) presents the publication of eight new datasets, operating under fault-free and various faulty conditions; and 2) conducts a comprehensive study on AHU fault datasets to identify dataset pairs and their associated faults that are most suitable for evaluating TL algorithms."
+  },
+  {
+   "openalex": "https://openalex.org/W4361026914",
+   "doi": "https://doi.org/10.1016/j.apenergy.2023.121030",
+   "title": "A review of data-driven fault detection and diagnostics for building HVAC systems",
+   "year": 2023,
+   "date": "2023-03-27",
+   "venue": "Applied Energy",
+   "type": "article",
+   "cites": 396,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W4395071168",
+   "doi": "https://doi.org/10.1016/j.buildenv.2024.111568",
+   "title": "Transformer encoder based self-supervised learning for HVAC fault detection with unlabeled data",
+   "year": 2024,
+   "date": "2024-04-24",
+   "venue": "Building and Environment",
+   "type": "article",
+   "cites": 53,
+   "abstract": "Data driven methods are the most studied fault detection and diagnostics (FDD) type in buildings HVAC systems. However, most studies rely on labeled data for specific faults which are hard to find and collect for real systems. While the fault-free data is easier to collect, it is still time consuming to label for large systems operation. Moreover, most of the studies rely on the usage of supervised learning algorithms which do not generalize well beyond the training data making unseen faults hard to detect. In this paper, we define a methodology to use a self-supervised learning method for HVAC systems' FDD using a Transformer encoder, moreover, we tested it on a real case study. By strategically masking portions of the multivariate time-series data using Markov chain approach with two states. The model is trained by predicting these concealed segments. This approach, independent of labeled data, offers a scalable solution for practical HVAC applications. Anomalies are labeled using the Peak Over Threshold (POT) method, which dynamically determines thresholds by fitting reconstruction errors to a generalized Pareto distribution. Subsequent fault diagnostics emphasize features with pronounced reconstruction errors, pinpointing potential HVAC malfunctions. This methodology reduces dependence on labeled datasets and augments the model's generalization, facilitating detection of unobserved faults. This approach was applied to data from a real building. As a results multiple faults were detected mainly due to the malfunctioning of the monitoring system. The model demonstrates the ability to detect both sequential and individual faults. The period from October 19th to December 23rd was detected as a fault period due to the change in the trend of the data because of the monitoring system. \u2022 Introduced a self-supervised learning method for HVAC fault detection using a Transformer encoder. \u2022 Employed strategic data masking with a Markov chain approach, eliminating the need for labeled data. \u2022 Utilized Peak Over Threshold method for dynamic, data-driven anomaly threshold determination. \u2022 Demonstrated the model's efficacy in a real-world case study, detecting multiple HVAC faults. \u2022 The proposed method enhances fault detection accuracy and generalizability, reducing reliance on labeled datasets."
+  },
+  {
+   "openalex": "https://openalex.org/W3197360587",
+   "doi": "https://doi.org/10.3390/en14175581",
+   "title": "Development of a Unified Taxonomy for HVAC System Faults",
+   "year": 2021,
+   "date": "2021-09-06",
+   "venue": "Energies",
+   "type": "article",
+   "cites": 39,
+   "abstract": "Detecting and diagnosing HVAC faults is critical for maintaining building operation performance, reducing energy waste, and ensuring indoor comfort. An increasing deployment of commercial fault detection and diagnostics (FDD) software tools in commercial buildings in the past decade has significantly increased buildings\u2019 operational reliability and reduced energy consumption. A massive amount of data has been generated by the FDD software tools. However, efficiently utilizing FDD data for \u2018big data\u2019 analytics, algorithm improvement, and other data-driven applications is challenging because the format and naming conventions of those data are very customized, unstructured, and hard to interpret. This paper presents the development of a unified taxonomy for HVAC faults. A taxonomy is an orderly classification of HVAC faults according to their characteristics and causal relations. The taxonomy includes fault categorization, physical hierarchy, fault library, relation model, and naming/tagging scheme. The taxonomy employs both a physical hierarchy of HVAC equipment and a cause-effect relationship model to reveal the root causes of faults in HVAC systems. A structured and standardized vocabulary library is developed to increase data representability and interpretability. The developed fault taxonomy can be used for HVAC system \u2018big data\u2019 analytics such as HVAC system fault prevalence analysis or the development of an HVAC FDD software standard. A common type of HVAC equipment-packaged rooftop unit (RTU) is used as an example to demonstrate the application of the developed fault taxonomy. Two RTU FDD software tools are used to show that after mapping FDD data according to the taxonomy, the meta-analysis of the multiple FDD reports is possible and efficient."
+  },
+  {
+   "openalex": "https://openalex.org/W2947746467",
+   "doi": null,
+   "title": "Continuous Commissioning of Buildings: HVAC Fault Detection and Diagnosis",
+   "year": 2018,
+   "date": "2018-01-01",
+   "venue": "eScholarship (California Digital Library)",
+   "type": "dissertation",
+   "cites": 2,
+   "abstract": "It is almost certain that all systems contain faults, and Heating, Ventilation, and Air Conditioning (HVAC) systems are no exception. About 41% of total energy consumption in the U.S. of year 2014 is used for heating and air conditioning, that is about 40 quadrillion (10^15) British thermal units (BTU)! In the past, fault detection and diagnosis (FDD) has been commissioned by man, which is costly and inefficient. If FDD can be done automatically and continuously, a great amount of energy could be saved and our buildings would become more sustainable.People have been working on HVAC FDD for years, and will continue to make progress. However, buildings are complicated, and so are the HVAC systems which comes with them. Thanks to the fast growth of computers and developments of machine learning algorithms in recent years, we have more tools to work with.In despite of many researches done on HVAC FDD, we have noticed that very few publications have focused on scalability and low cost. In order to address this challenge, we will propose an approach which focuses on control data. In this thesis, we will be relying on simulation data because of data access issues and the lower cost for experiments. A list of machine learning algorithms are introduced for data exploration and analysis, a control data focused model free approach is presented as well, and finally, FDD is carried out by implementing anomaly algorithms."
+  },
+  {
+   "openalex": "https://openalex.org/W3143361927",
+   "doi": "https://doi.org/10.1080/23744731.2021.1898243",
+   "title": "Research challenges and directions in HVAC fault prevalence",
+   "year": 2021,
+   "date": "2021-04-05",
+   "venue": "Science and Technology for the Built Environment",
+   "type": "article",
+   "cites": 28,
+   "abstract": "This study provides a review of the current state of knowledge, gaps, and potential value in research on the prevalence of faults in commercial buildings. Two separate efforts were made in this study: (1) we performed a literature review to determine the extent of currently available fault prevalence data for heating, ventilation, and air-conditioning (HVAC) systems, and (2) we conducted dozens of interviews with subject matter experts and stakeholders to determine the HVAC fault data that would be of greatest value. Through the literature review and interviews, we discovered unmet needs for empirical data on the prevalence of faults at the desired level of granularity, consistency, and scale; this lack of data leads us to recommend future work studying commercial buildings\u2019 HVAC fault prevalence, with robust fault taxonomy and a variety of meaningful fault prevalence metrics."
+  },
+  {
+   "openalex": "https://openalex.org/W4415823117",
+   "doi": "https://doi.org/10.1016/j.enbuild.2025.116658",
+   "title": "A label-free hybrid fault detection and diagnosis approach for HVAC systems using bayesian networks",
+   "year": 2025,
+   "date": "2025-11-03",
+   "venue": "Energy and Buildings",
+   "type": "article",
+   "cites": 9,
+   "abstract": "The building sector accounts for up to 40 % of global energy demand, with HVAC systems responsible for nearly half of this consumption. Faulty HVAC operation can result in substantial energy waste, reduced equipment lifespan, and increased operational costs. To address these challenges, the scientific community has focused on developing Fault Detection and Diagnosis (FDD) strategies that are both accurate and applicable in real conditions. Although data-driven approaches have shown strong potential, their practical deployment remains limited by the need for labeled data and variables not commonly available in real buildings. This paper presents a hybrid FDD framework based on Bayesian Networks (BNs) that combines data-driven models with expert knowledge. A set of reference models, using Random Forest algorithms, was developed to predict key variable values and define a baseline. Deviations from this baseline, expressed as residuals, were converted into virtual evidence and combined with hard evidence derived from domain expertise. These inputs were fed into a set of BN models, one for each operational mode, whose parameters and system-level structure were informed by expert knowledge and constructed efficiently through semantic metadata schemas based on brick ontology. The BNs performed fault detection and component isolation while the diagnosis is supported by targeted statistical analyses tailored to each system component. The main advantage of the proposed framework is that it requires only variables typically available in building management systems and does not rely on the a-priori knowledge of fault labels. The approach was validated on a simulated dataset from the Single Duct Air Handling Unit developed by the LBNL and further tested on a Fan Coil Unit. It achieved detection and isolation accuracies of approximately 91 % and 87 %, respectively, confirming its robustness, adaptability, and practical relevance."
+  },
+  {
+   "openalex": "https://openalex.org/W4313435396",
+   "doi": "https://doi.org/10.3390/s23010001",
+   "title": "A Review of Data-Driven Approaches and Techniques for Fault Detection and Diagnosis in HVAC Systems",
+   "year": 2022,
+   "date": "2022-12-20",
+   "venue": "Sensors",
+   "type": "review",
+   "cites": 108,
+   "abstract": "Heating, ventilation, and air conditioning (HVAC) systems are a popular research topic because buildings' energy is mostly used for heating and/or cooling. These systems heavily rely on sensory measurements and typically make an integral part of the smart building concept. As such, they require the implementation of fault detection and diagnosis (FDD) methodologies, which should assist users in maintaining comfort while consuming minimal energy. Despite the fact that FDD approaches are a well-researched subject, not just for improving the operation of HVAC systems but also for a wider range of systems in industrial processes, there is a lack of application in commercial buildings due to their complexity and low transferability. The aim of this review paper is to present and systematize cutting-edge FDD methodologies, encompassing approaches and special techniques that can be applied in HVAC systems, as well as to provide best-practice heuristics for researchers and solution developers in this domain. While the literature analysis targets the FDD perspective, the main focus is put on the data-driven approach, which covers commonly used models and data pre-processing techniques in the field. Data-driven techniques and FDD solutions based on them, which are most commonly used in recent HVAC research, form the backbone of our study, while alternative FDD approaches are also presented and classified to properly contextualize and round out the review."
+  },
+  {
+   "openalex": "https://openalex.org/W3212906182",
+   "doi": "https://doi.org/10.3390/civileng2040053",
+   "title": "Knowledge Discovery by Analyzing the State of the Art of Data-Driven Fault Detection and Diagnostics of Building HVAC",
+   "year": 2021,
+   "date": "2021-11-10",
+   "venue": "CivilEng",
+   "type": "article",
+   "cites": 28,
+   "abstract": "The automated fault detection and diagnostics (AFDD) of heating, ventilation, and air conditioning (HVAC) using data mining and machine learning models have recently received substantial attention from researchers and practitioners. Various models have been developed over the years for AFDD of complete HVAC or its sub-systems. However, HVAC complexities, which partly have roots in its close coupling nature and interrelated dependencies, mean that understanding the relationship between faults and the suitability of the techniques remains an unanswered question. The literature analysis and interactive visualization of the data collected from the past implementation of AFDD models can provide useful insight to further explore this question by applying artificial intelligence (AI). Association rule mining (ARM) is deployed by this paper, using the frequent pattern (FP) growth algorithm to generate frequent fault sets for most common HVAC faults from the body of AFDD models developed in the literature to represent the status quo. A new model is developed for common HVAC faults and the techniques most frequently used to detect and diagnose them. A recommender system is developed using the ARM model to extract knowledge from the body of knowledge of HVAC data-driven AFDD in the form of rule-sets that reflect the associations. Findings of this review paper can significantly help civil and building engineers, as well as facility managers, in better management of building HVAC systems."
+  },
+  {
+   "openalex": "https://openalex.org/W2993409746",
+   "doi": null,
+   "title": "Fault Diagnosis Of Sensor And Actuator Faults In Multi-Zone Hvac Systems",
+   "year": 2019,
+   "date": "2019-06-01",
+   "venue": "Qatar University QSpace (Qatar University)",
+   "type": "dissertation",
+   "cites": 1,
+   "abstract": "Globally, the buildings sector accounts for 30% of the energy consumption and more than 55% of the electricity demand. Specifically, the Heating, Ventilation, and Air Conditioning (HVAC) system is the most extensively operated component and it is responsible alone for 40% of the final building energy usage. HVAC systems are used to provide healthy and comfortable indoor conditions, and their main objective is to maintain the thermal comfort of occupants with minimum energy usage. HVAC systems include a considerable number of sensors, controlled actuators, and other components. They are at risk of malfunctioning or failure resulting in reduced efficiency, potential interference with the execution of supervision schemes, and equipment deterioration. Hence, Fault Diagnosis (FD) of HVAC systems is essential to improve their reliability, efficiency, and performance, and to provide preventive maintenance. In this thesis work, two neural network-based methods are proposed for sensor and actuator faults in a 3-zone HVAC system. For sensor faults, an online semi-supervised sensor data validation and fault diagnosis method using an Auto-Associative Neural Network (AANN) is developed. The method is based on the implementation of Nonlinear Principal Component Analysis (NPCA) using a Back-Propagation Neural Network (BPNN) and it demonstrates notable capability in sensor fault and inaccuracy correction, measurement noise reduction, missing sensor data replacement, and in both single and multiple sensor faults diagnosis. In addition, a novel on-line supervised multi-model approach for actuator fault diagnosis using Convolutional Neural Networks (CNNs) is developed for single actuator faults. It is based a data transformation in which the 1-dimensional data are configured into a 2-dimensional representation without the use of advanced signal processing techniques. The CNN-based actuator fault diagnosis approach demonstrates improved performance capability compared with the commonly used Machine Learning-based algorithms (i.e., Support Vector Machine and standard Neural Networks). The presented schemes are compared with other commonly used HVAC fault diagnosis methods for benchmarking and they are proven to be superior, effective, accurate, and reliable. The proposed approaches can be applied to large-scale buildings with additional zones."
+  },
+  {
+   "openalex": "https://openalex.org/W4304114014",
+   "doi": "https://doi.org/10.1016/j.apenergy.2022.120050",
+   "title": "Using discrete Bayesian networks for diagnosing and isolating cross-level faults in HVAC systems",
+   "year": 2022,
+   "date": "2022-10-10",
+   "venue": "Applied Energy",
+   "type": "article",
+   "cites": 65,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W2580526132",
+   "doi": null,
+   "title": "Intelligent application of fault detection and isolation on HVAC system",
+   "year": 2014,
+   "date": "2014-01-01",
+   "venue": "UTS ePRESS (University of Technology Sydney)",
+   "type": "dissertation",
+   "cites": 1,
+   "abstract": "Efficient heating, ventilation, and air-conditioning (HVAC) systems are one of the big challenges today around the world. The fault detection and isolation (FDI) play a significant role in the monitoring, repairing and maintaining of technical systems for the final destination of safety and cost reduction. FDI makes an infrastructure to effectively reduce total cost of maintenance and thus increases the capacity utilization rates of equipment. Reduction of energy wasting in the system by real-time fault detection is another goal. Among all HVAC system\u2019s studies, the focus of this thesis is on developing of fast and reliable FDI structure that can cover all subsections of HVAC system including cooling tower, chiller and air handling units (AHU) which greatly affect building energy consumption and indoor environment quality. \\nThe first stage of this study is to develop and validates a mathematical HVAC model then follows by simulation and sensitivity analysis. The simulation makes a good capability of producing artificial fault free and faulty data for review of any upcoming failure over the HVAC system. These data with wide range of fault severities can be used to assess the performance of HVAC automated fault detection and isolation (AFDI) system. \\nTwo categories of process history diagnosis methods have been reviewed and assessed for the development of AFDI algorithms at second stage of this study. Principal component analysis (PCA) and support vector machine (SVM) classification are two chosen algorithm which have been analysed in depth and initially tested by simulated data from stage one. This review has been continued by developing online SVM algorithm with incremental learning technique and then tested both on simulated and operational data. \\nAn experimental rig is designed and applied in the last stage of this research. This setup is configured inside the HVAC laboratory of UTS to collect operational data for the operating test. Operational data as outcome of this stage was then used for test of developed AFDI from last stage. Artificial neural network (ANN) algorithm compressed in frame of black box model for fault free reference. Finally, a combination of black box model and developed AFDI was tested and evaluated for cooling tower and air handling unit (AHU) faults based on operational data. The result shows increasing of robustness, performance and accuracy for the proposed AFDI over the operational data."
+  },
+  {
+   "openalex": "https://openalex.org/W7108213300",
+   "doi": "https://doi.org/10.1016/j.egyai.2025.100658",
+   "title": "Reproducibility of machine learning-based fault detection and diagnosis for HVAC systems in buildings: An empirical study",
+   "year": 2025,
+   "date": "2025-12-01",
+   "venue": "Energy and AI",
+   "type": "article",
+   "cites": 17,
+   "abstract": "Reproducibility is a cornerstone of credible scientific research. The topic gained prominence in fields such as psychology, medicine and artificial intelligence where concerns about non-replicable results sparked ongoing discussions about research practices. However, its status within machine learning for building systems is underexamined. Therefore, this work contributes to closing this gap by analyzing the reproducibility of machine learning-based fault detection and diagnosis studies published over the past decade. We found that nearly all articles are not reproducible due to insufficient disclosure across key dimensions of reproducibility. Notably, 72% of the articles do not specify whether the dataset used is public, proprietary, or commercially available. Only two papers share a link to their code, one of which was broken. Two-thirds of the publications were authored exclusively by academic researchers, yet no significant differences in reproducibility were observed compared to publications with industry-affiliated authors. These findings highlight the need for targeted interventions, including reproducibility guidelines, training for researchers, and policies by journals and conferences that promote transparency and reproducibility."
+  },
+  {
+   "openalex": "https://openalex.org/W4206506338",
+   "doi": "https://doi.org/10.3390/en15010341",
+   "title": "Fault Detection and Efficiency Assessment for HVAC Systems Using Non-Intrusive Load Monitoring: A Review",
+   "year": 2022,
+   "date": "2022-01-04",
+   "venue": "Energies",
+   "type": "article",
+   "cites": 71,
+   "abstract": "Heat, ventilation, and air conditioning (HVAC) systems are some of the most energy-intensive equipment in buildings and their faulty or inefficient operation can significantly increase energy waste. Non-Intrusive Load Monitoring (NILM), which is a software-based tool, has been a popular research area over the last few decades. NILM can play an important role in providing future energy efficiency feedback and developing fault detection and diagnosis (FDD) tools in smart buildings. Therefore, the review of NILM-based methods for FDD and the energy efficiency (EE) assessment of HVACs can be beneficial for users as well as buildings and facilities operators. To the best of the authors\u2019 knowledge, this paper is the first review paper on the application of NILM techniques in these areas and highlights their effectiveness and limitations. This review shows that even though NILM could be successfully implemented for FDD and the EE evaluation of HVACs, and enhance the performance of these techniques, there are many research opportunities to improve or develop NILM-based FDD methods to deal with real-world challenges. These challenges and future research works are also discussed in-depth."
+  }
+ ]
+}

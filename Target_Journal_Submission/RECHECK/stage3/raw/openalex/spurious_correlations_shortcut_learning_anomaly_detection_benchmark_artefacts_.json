@@ -1,0 +1,172 @@
+{
+ "query": "spurious correlations shortcut learning anomaly detection benchmark artefacts",
+ "filter": null,
+ "count": 100,
+ "results": [
+  {
+   "openalex": "https://openalex.org/W7214224739",
+   "doi": "https://doi.org/10.1016/j.ces.2026.125216",
+   "title": "A multimodal deep learning framework for physics-guided anomaly detection and time-series prediction",
+   "year": 2026,
+   "date": "2026-09-24",
+   "venue": "Chemical Engineering Science",
+   "type": "article",
+   "cites": 0,
+   "abstract": "Anomaly detection in batch processes is hindered by transient dynamics, scarce fault labels, and reliance on single-modality sensor data. This work introduces UTOPYA (Unified Temporal Observation for Physics-Guided Anomaly Detection and Time-Series Prediction), a 15.2M-parameter multimodal framework for anomaly detection, time-series prediction, and phase classification in batch distillation through Feature-wise Linear Modulation (FiLM) conditioned cross-modal attention and gated fusion. The dataset provides eight measurement modalities, while the reported headline configuration fuses six representations: process time-series, audio, gas chromatography composition, static tabular metadata, textual control-system logs, and a molecular-graph representation. NMR spectra and camera images are evaluated separately and yield no measurable test-set gain; continuous video streams are not processed. A physics-guided regularisation scheme enforces temporal smoothness and thermodynamic monotonicity, while curriculum learning introduces samples in order of physical difficulty. On the 119-experiment multimodal batch distillation dataset of Arweiler et al. (2026), UTOPYA achieves a window-level AUROC of 0.832 and a multi-signal experiment-level AUROC of 0.874, outperforming four external baselines (PCA, autoencoder, Isolation Forest, and LSTM autoencoder) under identical conditions by 0.147 in window-level AUROC. A multimodal ablation over 15 configurations shows that static context via FiLM conditioning lifts experiment-level multi-signal AUROC by 0.145 over the unimodal baseline (0.729 to 0.874). A training ablation across 14 design choices shows that instance normalisation, Mixup, ensembling, test-time augmentation, and stochastic weight averaging fail to improve or degrade generalisation, highlighting a fundamental tension between smoothing-based regularisation and anomaly detection in data-scarce process monitoring deployment."
+  },
+  {
+   "openalex": "https://openalex.org/W7167742208",
+   "doi": "https://doi.org/10.21437/odyssey.2026-1",
+   "title": "An Intervention-Based Framework for Shortcut Diagnosis in Spoofing Countermeasures",
+   "year": 2026,
+   "date": "2026-06-23",
+   "venue": "The Speaker and Language Recognition Workshop (Odyssey)",
+   "type": "conference-paper",
+   "cites": 1,
+   "abstract": "While deepfake audio detection systems achieve high performance in controlled benchmarks, their reliability often diminishes in the wild. Prior work shows that dataset-specific artifacts contribute to this gap. Yet, systematic tools to identify which acoustic properties a model exploits as shortcuts remain limited. We propose an intervention-based diagnostic framework, grounded in a directed graphical model, that formally distinguishes confound-driven shortcut dependencies from legitimate domain shift. We operationalise this through controlled acoustic perturbations targeting non-speech structure, spectral content, and signal energy, complemented by corpus-level distributional analysis. Evaluating XLS-R-300M with RawGAT-ST across ASVspoof challenges datasets, we quantify model sensitivity to specific intervention types. Results reveal that non-speech interventions produce the largest performance shifts, confirming non-speech intervals as a dominant shortcut."
+  },
+  {
+   "openalex": "https://openalex.org/W7214364309",
+   "doi": "https://doi.org/10.51483/ijaiml.6.3.2026.791-808",
+   "title": "Explainable Deep Learning Approach for Covert Narcissism Detection with Cross-Domain Generalization",
+   "year": 2026,
+   "date": "2026-01-01",
+   "venue": "International Journal of Artificial Intelligence and Machine Learning",
+   "type": "article",
+   "cites": 0,
+   "abstract": "Deep learning classifiers for covert narcissism detection have begun to reach usable in-domain accuracy, but two questions remain largely untested: do their explanations genuinely reflect the model's reasoning, and do accuracy, explanations, and fairness hold up outside the training data? This paper answers both questions for a MentalBERT-based detector trained on a 5,945-sentence taxonomy-grounded corpus. The detector reached 94.87% macro-F1 on a random split, 84.23% on held-out categories, and 92.20% under a length-matched control, all well above a length-only baseline, showing it learns the construct rather than a shortcut. Three explanation methods, SHAP, LIME, and Integrated Gradients, agreed moderately with each other (Jaccard@10 = 0.42-0.58) and stayed stable under paraphrasing (0.68), so the explanations look plausible. A stricter, causal test told a different story: removing the words these methods flagged as important changed the model's confidence no more than removing random words did (SHAP: 0.287 vs. 0.629 random; Integrated Gradients: 0.302 vs. 0.586 random). Plausible explanations, in other words, were not faithful ones. Testing the detector on two labelled corpora (Jigsaw, Davidson) showed it confusing general hostility with covert narcissism (53.0% accuracy, 17.4% precision at 96.1% recall on Jigsaw). On unlabelled real-world text (MBTI forum posts, Reddit/PANDORA), it flagged 66% and 81% of unrelated content as narcissistic, against a 50.1% in-domain rate, a shortcut traced to the corpus's fully LLM-generated writing style. Four fixes were tested: adding real-world negative examples during training eliminated most false positives (66%\u21920%; 81%\u219210.5%) without hurting accuracy; further pretraining on real text barely helped; confidence recalibration improved honesty but not correctness; and an anomaly detector caught some, not all, failures. The lesson: strong accuracy and convincing explanations do not prove a model is trustworthy, and fixing the training data mattered far more than adjusting the model around it."
+  },
+  {
+   "openalex": "https://openalex.org/W7223859103",
+   "doi": "https://doi.org/10.48550/arxiv.2610.33849",
+   "title": "Ranking Is Not Deciding: Benchmark Shortcuts and Operating-Point Collapse in Query-Time RAG Poisoning Defenses",
+   "year": 2026,
+   "date": "2026-10-24",
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "cites": 0,
+   "abstract": "Query-time filters that screen each retrieved document before it reaches the generator are the dominant published defense against retrieval-augmented generation poisoning, and they report near-perfect detection on domain benchmarks. We show that this performance is predicted by how the poison set was built rather than by what the filter reads: removing a single construction cue destroys the deployed decision before it destroys the ranking. Two label-free statistics of a poison set and its clean corpus profile the cue: containment, how often the target question appears verbatim in the poison, and length overlap. PoisonedRAG's released code prepends the target question to every inserted passage. Of the 21 published defense evaluations we survey, 8 verifiably run poison built this way and 5 substitute a length cue; separately, 12 report no false-positive rate at the operating point they deploy. Deleting only that prefix from the attack authors' own passages (0.93 still retrieved for their target) takes RAGuard, a published content filter we re-implement, from AUROC 0.953 to 0.758 and its miss rate from 0.191 to 0.763. Across four corpora, four attack families and ten per-document defenses on one shared candidate set, the profile predicts where detection saturates. Padding medical poison to clean length with word-shuffled filler that carries no content takes TrustRAG's set-level stage from a miss rate of 0.000 to 0.827, and one learned scorer of ours from 0.000 to 0.986 (0.321 at a matched 5% false-positive rate) while its AUROC holds at 0.953. The ranking survives; the decision does not. A defense-aware attacker defeats our own scorer, so we claim no defense. A detection result is evidence only when it is reported with its poison set's construction profile and the false-positive rate at the threshold actually deployed; we release the script that computes the profile."
+  },
+  {
+   "openalex": "https://openalex.org/W4404307848",
+   "doi": "https://doi.org/10.48550/arxiv.2410.18970",
+   "title": "Bridging Explainability and Embeddings: BEE Aware of Spuriousness",
+   "year": 2026,
+   "date": "2026-04-20",
+   "venue": "International Conference on Learning Representations",
+   "type": "conference-paper",
+   "cites": 0,
+   "abstract": "Current methods for detecting spurious correlations rely on analyzing dataset statistics or error patterns, leaving many harmful shortcuts invisible when counterexamples are absent. We introduce BEE (Bridging Explainability and Embeddings), a framework that shifts the focus from model predictions to the weight space, and to the embedding geometry underlying decisions. By analyzing how fine-tuning perturbs pretrained representations, BEE uncovers spurious correlations that remain hidden from conventional evaluation pipelines. We use linear probing as a transparent diagnostic lens, revealing spurious features that not only persist after full fine-tuning but also transfer across diverse state-of-the-art models. Our experiments cover numerous datasets and domains: vision (Waterbirds, CelebA, ImageNet-1k), language (CivilComments, MIMIC-CXR medical notes), and multiple embedding families (CLIP, CLIP-DataComp.XL, mGTE, BLIP2, SigLIP2). BEE consistently exposes spurious correlations: from concepts that slash the ImageNet accuracy by up to 95%, to clinical shortcuts in MIMIC-CXR notes that induce dangerous false negatives. Together, these results position BEE as a general and principled tool for diagnosing spurious correlations in weight space, enabling principled dataset auditing and more trustworthy foundation models. The source code is publicly available at https://github.com/bit-ml/bee."
+  },
+  {
+   "openalex": "https://openalex.org/W3180062783",
+   "doi": "https://doi.org/10.1109/spw53761.2021.00009",
+   "title": "Troubleshooting an Intrusion Detection Dataset: the CICIDS2017 Case Study",
+   "year": 2021,
+   "date": "2021-05-01",
+   "venue": "IEEE Security and Privacy Workshops (SPW)",
+   "type": "conference-paper",
+   "cites": 440,
+   "abstract": "Numerous studies have demonstrated the effectiveness of machine learning techniques in application to network intrusion detection. And yet, the adoption of machine learning for securing large-scale network environments remains challenging. The community acknowledges that network security presents unique challenges for machine learning, and the lack of training data representative of modern traffic remains one of the most intractable issues. New attempts are continuously made to develop high quality benchmark datasets and proper data collection methodologies. The CICIDS2017 dataset is one of the recent results, created to meet the demanding criterion of representativeness for network intrusion detection. In this paper we revisit CICIDS2017 and its data collection pipeline and analyze correctness, validity and overall utility of the dataset for the learning task. During this in-depth analysis, we uncover a series of problems with traffic generation, flow construction, feature extraction and labelling that severely affect the aforementioned properties. We investigate the causes of these shortcomings and address most of them by applying an improved data processing methodology. As a result, more than 20 percent of original traffic traces are reconstructed or relabelled. Machine learning benchmarks on the final dataset demonstrate significant improvements. Our study exemplifies how data collection issues may have enormous impact on model evaluation and provides recommendations for their anticipation and prevention."
+  },
+  {
+   "openalex": "https://openalex.org/W7222426543",
+   "doi": "https://doi.org/10.48550/arxiv.2610.21638",
+   "title": "Spurious Attention Heads in Vision Transformers: Mechanistic Identification of Annotation-Driven Bias in Medical Chest X-Ray Analysis",
+   "year": 2026,
+   "date": "2026-10-15",
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "cites": 0,
+   "abstract": "Vision Transformers deployed in medical imaging exploit spurious correlations, yet the internal mechanisms remain unidentified and impossible to fix. We apply mechanistic interpretability to locate one such mechanism in ViT-Base 16: a single attention head (L8H10) that functions as a dedicated annotation-reader on chest X-rays, attending to corner text rather than lung pathology in 62% of 200 COVID-19 images. Causal validation via inpainting confirms annotation content rather than luminance or edge density drives the behaviour, increasing lung attention 1.52 times upon removal in affected images ($p{<}0.0001$). The finding replicates across NIH ChestX-ray14 (79%), DeiT-Base (88%), and ViT-Large 16 (80%), establishing spurious annotation-attending heads as a consistent property of ViT-family architectures across two datasets and three architectures. Full fine-tuning does not suppress the behaviour and may entrench it: 98.4% of spurious images remain spurious and the spurious rate rises marginally, as the shortcut is reinforced rather than removed. Critically, single-head ablation produces $p{=}0.340$ and multi-head ablation of all three identified carriers produces $p{=}0.532$, meaning a causally verified annotation-reading circuit is completely invisible to output-level evaluation. Mechanistic auditing finds what behavioural testing cannot."
+  },
+  {
+   "openalex": "https://openalex.org/W4408502165",
+   "doi": "https://doi.org/10.1038/s42256-025-01000-2",
+   "title": "Explainable AI reveals Clever Hans effects in unsupervised learning models",
+   "year": 2025,
+   "date": "2025-03-17",
+   "venue": "Nature Machine Intelligence",
+   "type": "article",
+   "cites": 88,
+   "abstract": "Unsupervised learning has become an essential building block of artifical intelligence systems. The representations it produces, for example, in foundation models, are critical to a wide variety of downstream applications. It is therefore important to carefully examine unsupervised models to ensure not only that they produce accurate predictions on the available data but also that these accurate predictions do not arise from a Clever Hans (CH) effect. Here, using specially developed explainable artifical intelligence techniques and applying them to popular representation learning and anomaly detection models for image data, we show that CH effects are widespread in unsupervised learning. In particular, through use cases on medical and industrial inspection data, we demonstrate that CH effects systematically lead to significant performance loss of downstream models under plausible dataset shifts or reweighting of different data subgroups. Our empirical findings are enriched by theoretical insights, which point to inductive biases in the unsupervised learning machine as a primary source of CH effects. Overall, our work sheds light on unexplored risks associated with practical applications of unsupervised learning and suggests ways to systematically mitigate CH effects, thereby making unsupervised learning more robust."
+  },
+  {
+   "openalex": "https://openalex.org/W7223675940",
+   "doi": "https://doi.org/10.65630/ijrretas.2026.v12i2.302",
+   "title": "A Hybrid Light GBM Framework Integrating Feature Selection and Cost-Sensitive Learning for Network Outlier Detection",
+   "year": 2026,
+   "date": "2026-02-03",
+   "venue": "International Journal for Rapid Research in Engineering Technology & Applied Science",
+   "type": "article",
+   "cites": 0,
+   "abstract": "Machine learning intrusion detectors are often judged on benchmarks with redundant features, severe class imbalance and evaluation shortcuts. This study builds and evaluates a hybrid framework that combines a correlation filter, a rank-aggregated feature ranking based on mutual information and LightGBM split gain, softened square-root cost-sensitive weighting, and a regularised LightGBM classifier with early stopping. Every design choice was settled on a validation subset carved from the official UNSW-NB15 training partition, and the official test partition of 82,332 flows was used once for final measurement. The pipeline retained 15 of 42 features. Square-root weighting gave the best validation macro-F1 (0.634 against 0.601 without treatment) and outperformed SMOTE and hybrid resampling. On the test partition, the framework reached a ten-class macro-F1 of 0.530, the highest of seven models, and a binary F1 of 0.890 with an AUC of 0.977. Its accuracy was, however, significantly lower than that of five of six baselines under McNemar's test, and its false alarm rate was 25.6%. An ablation study showed that stabilising the learner with regularisation and early stopping contributed 7.0 of the 9.4 points of macro-F1 gained over default LightGBM. Feature selection cut training time by 37.3%. SHAP analysis identified the source time-to-live as the dominant feature, yet removing it changed binary F1 by only 0.001. A nine-point gap between validation and test binary F1 was traced to distribution shift, not duplicate leakage. The framework improves rare-class detection at low training cost, but benchmark results on this dataset must be read with caution."
+  },
+  {
+   "openalex": "https://openalex.org/W7225748015",
+   "doi": "https://doi.org/10.71426/jcdt.v2.i2.pp207-215",
+   "title": "A Leakage-Controlled Evaluation Protocol for Machine-Learning Intrusion Detection on the TON_IoT Network Dataset",
+   "year": 2026,
+   "date": "2026-11-11",
+   "venue": "Journal of Computing and Data Technology",
+   "type": "article",
+   "cites": 0,
+   "abstract": "Intrusion detectors trained on the TON_IoT network data routinely report near-perfect scores, but the extent to which these scores reflect attack behaviour rather than dataset-specific collection artefacts remains unclear. This study evaluates four classifiers using four progressively stricter evaluation protocols on the 211,043-flow train\u2013test file: naive random splitting with all columns, removal of addressing and free-text identifiers, deduplication before splitting, and holding out entire attacker hosts. A probe trained only on IP addresses and ports reached a binary macro-F1 of 0.9999 and a ten-class macro-F1 of up to 0.932, indicating that the identifiers alone are highly predictive of the labels in this dataset. Exact duplicates made up 9.7% of rows, and 12.1% of test rows under naive cross-validation had a copy in the training fold. Removing identifiers cut multiclass macro-F1 from 0.986 to 0.953 for random forest, with man-in-the-middle F1 falling from 0.903 to 0.757. Under host hold-out, attack recall stayed above 0.95, while false-alarm rates on unseen benign hosts varied substantially across hold-outs. The evaluation protocols, identifier-only probe, and reporting checklist provide practical safeguards for future studies using this dataset."
+  },
+  {
+   "openalex": "https://openalex.org/W7223078163",
+   "doi": null,
+   "title": "Hybrid Machine Learning Approaches for Efficient Network Outlier Detection: A Review of LightGBM-Based Frameworks",
+   "year": 2025,
+   "date": "2025-06-18",
+   "venue": "International journal of engineering science & humanities.",
+   "type": "article",
+   "cites": 0,
+   "abstract": "The rapid growth of network traffic volume, connected devices and attack diversity has made outlier detection one of the most demanding problems in modern cybersecurity. Signature-based systems are unable to recognise novel or mutated attacks, while many deep learning detectors deliver high accuracy at a computational cost that limits their use in high-speed or resource-constrained environments. Light Gradient Boosting Machine (LightGBM), a histogram-based gradient boosting decision tree framework, has emerged as a strong candidate for efficient network outlier detection because it combines fast training, low memory consumption and competitive accuracy on tabular flow data. It first traces the evolution of network anomaly detection and the development of gradient boosting algorithms, and then analyses benchmark datasets, classical and deep learning detectors, LightGBM-based hybrid frameworks, and the cross-cutting issues of class imbalance, interpretability and deployment. Three comparative tables summarise datasets, algorithm families and representative LightGBM-centred frameworks. The review finds that hybridisation, through feature selection, resampling, parallel processing, ensemble stacking and explainability layers, consistently improves the efficiency and reliability of LightGBM detectors. It also identifies persistent gaps in dataset quality, cross-dataset generalisation, concept drift handling and adversarial robustness, and proposes directions for future research."
+  },
+  {
+   "openalex": "https://openalex.org/W7167472478",
+   "doi": "https://doi.org/10.70917/ijcisim-2026-2060",
+   "title": "EXPLAINABLE DEEP LEARNING FRAMEWORK FOR REAL-TIME NETWORK INTRUSION DETECTION AND ATTACK CLASSIFICATION",
+   "year": 2026,
+   "date": "2026-06-23",
+   "venue": "International Journal of Computer Information Systems and Industrial Management Applications",
+   "type": "article",
+   "cites": 0,
+   "abstract": "The escalating volume and sophistication of cyber-attacks demand network intrusion detection systems (NIDS) that are simultaneously accurate, fast and transparent. Conventional machine-learning detectors struggle to model the joint spatial and temporal structure of network traffic, and modern deep models are frequently opaque, which impedes analyst trust and forensic auditing. This paper proposes an explainable deep-learning framework that couples a one-dimensional convolutional neural network (1D-CNN) for spatial feature extraction with a long short-term memory (LSTM) network for temporal dependency modelling, followed by a softmax layer for multi-class attack classification. Post-hoc explainability is provided through SHapley Additive exPlanations (SHAP) and Local Interpretable Model-agnostic Explanations (LIME), which rank the flow features responsible for each decision. The framework is evaluated on the public CIC-IDS2017 and CSE-CIC-IDS2018 benchmarks for multi-class detection of seven traffic categories. The proposed CNN-LSTM attains 99.21% accuracy, 99.10% macro F1-score and a micro-average AUC of 0.9995, outperforming a deep neural network, a 1D-CNN and a bidirectional LSTM baseline by 0.7\u20132.3 percentage points. Ablation studies confirm the complementary value of the convolutional and recurrent components and of class-imbalance handling, while SHAP and LIME analyses reveal that flow-duration, packet-length and inter-arrival-time features dominate the decisions, in agreement with domain knowledge. The framework offers an accurate and interpretable solution suitable for real-time deployment in security operations.."
+  },
+  {
+   "openalex": "https://openalex.org/W4294006717",
+   "doi": "https://doi.org/10.48550/arxiv.2208.14024",
+   "title": "Positive Difference Distribution for Image Outlier Detection using Normalizing Flows and Contrastive Data",
+   "year": 2023,
+   "date": "2023-04-01",
+   "venue": "Transactions on machine learning research",
+   "type": "article",
+   "cites": 4,
+   "abstract": "Detecting test data deviating from training data is a central problem for safe and robust machine learning. Likelihoods learned by a generative model, e.g., a normalizing flow via standard log-likelihood training, perform poorly as an outlier score. We propose to use an unlabelled auxiliary dataset and a probabilistic outlier score for outlier detection. We use a self-supervised feature extractor trained on the auxiliary dataset and train a normalizing flow on the extracted features by maximizing the likelihood on in-distribution data and minimizing the likelihood on the contrastive dataset. We show that this is equivalent to learning the normalized positive difference between the in-distribution and the contrastive feature density. We conduct experiments on benchmark datasets and compare to the likelihood, the likelihood ratio and state-of-the-art anomaly detection methods."
+  },
+  {
+   "openalex": "https://openalex.org/W7131436708",
+   "doi": "https://doi.org/10.48550/arxiv.2602.20068",
+   "title": "The Invisible Gorilla Effect in Out-of-distribution Detection",
+   "year": 2026,
+   "date": "2026-02-23",
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "cites": 0,
+   "abstract": "Deep Neural Networks achieve high performance in vision tasks by learning features from regions of interest (ROI) within images, but their performance degrades when deployed on out-of-distribution (OOD) data that differs from training data. This challenge has led to OOD detection methods that aim to identify and reject unreliable predictions. Although prior work shows that OOD detection performance varies by artefact type, the underlying causes remain underexplored. To this end, we identify a previously unreported bias in OOD detection: for hard-to-detect artefacts (near-OOD), detection performance typically improves when the artefact shares visual similarity (e.g. colour) with the model's ROI and drops when it does not - a phenomenon we term the Invisible Gorilla Effect. For example, in a skin lesion classifier with red lesion ROI, we show the method Mahalanobis Score achieves a 31.5% higher AUROC when detecting OOD red ink (similar to ROI) compared to black ink (dissimilar) annotations. We annotated artefacts by colour in 11,355 images from three public datasets (e.g. ISIC) and generated colour-swapped counterfactuals to rule out dataset bias. We then evaluated 40 OOD methods across 7 benchmarks and found significant performance drops for most methods when artefacts differed from the ROI. Our findings highlight an overlooked failure mode in OOD detection and provide guidance for more robust detectors. Code and annotations are available at: https://github.com/HarryAnthony/Invisible_Gorilla_Effect."
+  },
+  {
+   "openalex": "https://openalex.org/W7222889871",
+   "doi": "https://doi.org/10.1922/comdem.v3i3s.18688",
+   "title": "Leakage-Controlled Cross-Dataset Evaluation of Self-Supervised Graph-Based Network Intrusion Detection",
+   "year": 2026,
+   "date": "2026-09-30",
+   "venue": "Computer and decision making.",
+   "type": "article",
+   "cites": 0,
+   "abstract": "Flow-based network intrusion detection systems (NIDS) report steadily improving benchmark results, yet these results are frequently inflated by feature leakage and by evaluation confined to a single dataset. This article turns leakage from a declared precaution into a measured quantity and packages the measurement as a reusable evaluation protocol: a feature policy that removes IP addresses and reduces ports to three semantic categories, supervised probes that quantify each suspected shortcut channel, mandatory zero-shot cross-dataset testing, and base-rate-aware reporting. A port-only probe separates the classes almost perfectly inside NF-BoT-IoT-v2, at ROC-AUC 0.998, but falls to 0.615 on NF-UNSW-NB15-v2 \u2014 the gap is the size of the shortcut. The protocol is exercised end to end with FlowGuard, a lightweight self-supervised graph autoencoder trained exclusively on benign traffic. Under the sanitized protocol FlowGuard reaches ROC-AUC 0.968 on NF-UNSW-NB15-v2; raw cross-dataset transfer collapses to 0.332, and an unsupervised CORAL alignment step restores it to 0.926 without any target-domain labels, subject to a benign-majority condition that we characterize and operationalize with three label-free indicators. The model has 32,617 parameters (0.13 MB), processes one flow in 1.48\u20131.69 microseconds on four CPU threads, and its decision threshold is calibrated without labels: thresholds set on training benign traffic yield test false-positive rates of 0.0098, 0.0247, 0.0495 and 0.0987 for targets of 0.010, 0.025, 0.050 and 0.100. We also report negative results, including an IP-memorization probe that did not collapse under grouped splitting, and release the complete pipeline for replication."
+  }
+ ]
+}

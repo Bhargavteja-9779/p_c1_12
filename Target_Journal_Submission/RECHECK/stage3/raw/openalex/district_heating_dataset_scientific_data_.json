@@ -1,0 +1,172 @@
+{
+ "query": "district heating dataset Scientific Data",
+ "filter": null,
+ "count": 19331,
+ "results": [
+  {
+   "openalex": "https://openalex.org/W2909741517",
+   "doi": "https://doi.org/10.1016/j.apenergy.2019.113409",
+   "title": "A data-driven approach for discovering heat load patterns in district heating",
+   "year": 2019,
+   "date": "2019-06-10",
+   "venue": "Applied Energy",
+   "type": "article",
+   "cites": 110,
+   "abstract": "Understanding the heat usage of customers is crucial for effective district heating operations and management. Unfortunately, existing knowledge about customers and their heat load behaviors is quite scarce. Most previous studies are limited to small-scale analyses that are not representative enough to understand the behavior of the overall network. In this work, we propose a data-driven approach that enables large-scale automatic analysis of heat load patterns in district heating networks without requiring prior knowledge. Our method clusters the customer profiles into different groups, extracts their representative patterns, and detects unusual customers whose profiles deviate significantly from the rest of their group. Using our approach, we present the first large-scale, comprehensive analysis of the heat load patterns by conducting a case study on many buildings in six different customer categories connected to two district heating networks in the south of Sweden. The 1222 buildings had a total floor space of 3.4 million square meters and used 1540 TJ heat during 2016. The results show that the proposed method has a high potential to be deployed and used in practice to analyze and understand customers\u2019 heat-use habits."
+  },
+  {
+   "openalex": "https://openalex.org/W7130507276",
+   "doi": "https://doi.org/10.1007/s12053-026-10419-4",
+   "title": "Worldwide scientific landscape on district heating systems",
+   "year": 2026,
+   "date": "2026-02-19",
+   "venue": "Energy Efficiency",
+   "type": "article",
+   "cites": 7,
+   "abstract": "This study aims to assess the research trends and progress in the field of district heating, a key technology for improving energy efficiency and environmental sustainability. By analyzing bibliometric indicators such as publication volume, citations, authorship, and keywords, the study provides insights into the growth, regional focus, and thematic evolution of district heating research from 2004 to 2023. The study employs a bibliometric analysis of Scopus-indexed publications on district heating, spanning from 2004 to 2023. Using the Vosviewer software, a cluster analysis was conducted to categorize the research landscape into distinct themes. The results indicate a steady increase in publications on district heating, especially over the last decade, with a significant proportion of research output originating from China and Europe. The cluster analysis identified five primary themes in district heating research: energy sustainability, thermal and geothermal energy, renewable energy integration and district heating networks, buildings, and cogeneration. Furthermore, an analysis of the evolution of research keywords reveals a transition from the focus on renewable energy integration (2014\u20132016) to a shift towards network optimization techniques (2018) and, more recently (2020), towards digitalization and automation. This evolution is characterised by a focus on digital storage, model predictive control, and demand-side management to enhance system efficiency. The present study provides a comprehensive bibliometric overview and introduces a novel integrative perspective by systematically linking the temporal evolution of scientific production with thematic clustering and policy-relevant implications. It highlights how emerging trends, such as digitalisation, low-temperature networks and sector coupling, are reshaping the future of district heating systems. The findings reveal the growing importance of digital and automated approaches to enhance district heating efficiency and sustainability."
+  },
+  {
+   "openalex": "https://openalex.org/W3210888925",
+   "doi": "https://doi.org/10.3390/app11136112",
+   "title": "Opportunities for Machine Learning in District Heating",
+   "year": 2021,
+   "date": "2021-06-30",
+   "venue": "Applied Sciences",
+   "type": "article",
+   "cites": 50,
+   "abstract": "The district heating (DH) industry is facing an important transformation towards more efficient networks that utilise significantly lower water temperatures to distribute the heat. This change requires taking advantage of new technologies, and Machine Learning (ML) is a popular direction. In the last decade, we have witnessed an extreme growth in the number of published research papers that focus on applying ML techniques to the DH domain. However, based on our experience in the field, and an extensive review of the state-of-the-art, we perceive a mismatch between the most popular research directions, such as forecasting, and the challenges faced by the DH industry. In this work, we present our findings, explain and demonstrate the key gaps between the two communities and suggest a road-map ahead towards increasing the impact of ML research in the DH industry."
+  },
+  {
+   "openalex": "https://openalex.org/W4303021565",
+   "doi": "https://doi.org/10.3389/fenrg.2022.971912",
+   "title": "Design optimization of district heating systems: A review",
+   "year": 2022,
+   "date": "2022-10-07",
+   "venue": "Frontiers in Energy Research",
+   "type": "article",
+   "cites": 73,
+   "abstract": "District heating systems offer the possibility of lowering emissions and support the goal of reaching a carbon-neutral energy system by integrating renewable heat sources. Therefore, this work provided a systematic literature review to identify potential research gaps and show the literature distribution over the relevant topics. The focus is on the design optimization with (non-)linear programming of district heating systems in the context of decarbonization. Furthermore, crucial energy balance equations were extracted from the literature for a potential optimization problem. The systematic literature review limited its search to two databases, 10 years timespan, a quality measure, and uses keywords regarding topic and method. Categories were derived based on the subject and literature to cluster the found publications and identify potential research gaps. The results showed potential research gaps in the depiction of different stakeholder decisions, reduction of computational efforts, and their resulting uncertainties. Additionally, they identified gaps in the integration of low-grade heat sources, thermal storage facilities, and energy converters, especially geothermal energy, large-scale heat pumps, and seasonal storages."
+  },
+  {
+   "openalex": "https://openalex.org/W4383911796",
+   "doi": "https://doi.org/10.1016/j.energy.2023.128387",
+   "title": "Generation and evaluation of a synthetic dataset to improve fault detection in district heating and cooling systems",
+   "year": 2023,
+   "date": "2023-07-11",
+   "venue": "Energy",
+   "type": "article",
+   "cites": 41,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W4375862040",
+   "doi": "https://doi.org/10.1038/s41598-023-34146-3",
+   "title": "Toward explainable heat load patterns prediction for district heating",
+   "year": 2023,
+   "date": "2023-05-08",
+   "venue": "Scientific Reports",
+   "type": "article",
+   "cites": 37,
+   "abstract": "Heat networks play a vital role in the energy sector by offering thermal energy to residents in certain countries. Effective management and optimization of heat networks require a deep understanding of users' heat usage patterns. Irregular patterns, such as peak usage periods, can exceed the design capacities of the system. However, previous work has mostly neglected the analysis of heat usage profiles or performed on a small scale. To close the gap, this study proposes a data-driven approach to analyze and predict heat load in a district heating network. The study uses data from over eight heating seasons of a cogeneration DH plant in Cheongju, Korea, to build analysis and forecast models using supervised machine learning (ML) algorithms, including support vector regression (SVR), boosting algorithms, and multilayer perceptron (MLP). The models take weather data, holiday information, and historical hourly heat load as input variables. The performance of these algorithms is compared using different training sample sizes of the dataset. The results show that boosting algorithms, particularly XGBoost, are more suitable ML algorithms with lower prediction errors than SVR and MLP. Finally, different explainable artificial intelligence approaches are applied to provide an in-depth interpretation of the trained model and the importance of input variables."
+  },
+  {
+   "openalex": "https://openalex.org/W4406603526",
+   "doi": "https://doi.org/10.2478/bipcm-2024-0015",
+   "title": "Overview of Data-Driven Methods for District Heating Systems Diagnosis",
+   "year": 2024,
+   "date": "2024-09-01",
+   "venue": "Buletinul Institutului Politehnic din Ia\u015fi. Sec\u0163ia Construc\u0163ii de ma\u015fini/Buletinul Institutului Politehnic din Ia\u015fi, Sec\u0163ia Construc\u0163ii de ma\u015fini",
+   "type": "article",
+   "cites": 3,
+   "abstract": "District heating systems are essential for efficient and sustainable urban energy management, offering significant energy savings and environmental benefits. This paper presents some key data-driven methodologies, including advanced data analytics, machine learning, artificial neural networks and other modern methods to evaluate and optimize the design and operation of district heating networks. Several application areas are discussed: demand forecasting, design optimization of the network, fault detection and diagnosis. Recommendations regarding the use of Big Data and AI-driven insights combined with traditional thermal-hydraulic analysis to address challenges such as load variability, energy losses, and operational inefficiencies are formulated. Key challenges and limitations are highlighted, such as data quality and availability, algorithm choice, scalability, etc. The paper aims to provide insights into the potential of data-driven methods to transform classic district heating systems into smarter and sustainable systems towards wide implementation of the 4GDH."
+  },
+  {
+   "openalex": "https://openalex.org/W7223203645",
+   "doi": "https://doi.org/10.5281/zenodo.23561262",
+   "title": "Reproducibility Data and Code for Heat-Loss Identifiability in Sparsely Monitored District Heating Networks",
+   "year": 2026,
+   "date": "2026-10-22",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "type": "software",
+   "cites": 0,
+   "abstract": "This repository provides the research data, computational models, source code, numerical results, and reproducibility workflows supporting the study \u201cHeat-Loss Identifiability in Sparsely Monitored District Heating Networks: Interior Sensing and Hydraulic Uncertainty.\u201d The study investigates the reliability and limitations of estimating district-heating network heat losses using sparse temperature measurements, with particular emphasis on calibration equifinality, interior sensing, hydraulic uncertainty, and model-form mismatch. The repository contains: A 769-candidate calibration ensemble, including 16 near-equivalent solutions with model-inferred heat-loss estimates ranging from 422.906 to 892.967 kW. 144 controlled interior-sensing trials evaluating measurement uncertainty and sensor configurations. 180 graded hydraulic-mismatch trials examining heat-loss interval reliability. 120 matched two-channel trials assessing the effects of additional hydraulic and thermal measurements. Calibration sensitivity analyses, external thermal and hydraulic comparisons, and analytical and numerical verification tests. Reproducible Python implementations, model configurations, reference results, figure-generation scripts, automated verification tools, and documentation. External assessments incorporate AIT Pongau thermal measurements, Aalborg laboratory hydraulic evidence, and OpenDHN accounting data. The S\u00f8nderborg source datasets are not redistributed within this archive. Documented acquisition and preprocessing workflows support reproducibility using the original data sources, subject to their continued availability, licensing, and access conditions. Third-party materials remain governed by their original attribution and redistribution requirements. Scientific scope: Network-wide heat-loss estimates are model-derived rather than independently measured field quantities. Controlled sensing and mismatch experiments use synthetic reference conditions. These distinctions are preserved throughout the repository. The original research software is distributed under the MIT License. Third-party datasets and externally licensed materials remain subject to their respective licensing and attribution requirements. The archive supports transparent verification, independent computational reproduction, and further research on heat-loss identifiability in district-heating systems. Version history Version 1.1.0 \u2014 Reproducibility workflow improvements (24 October 2026) This release improves external-data dependency handling, corrects the hydraulic analysis workflow, strengthens numerical verification, and updates the checksum manifest and reproducibility documentation. The reported scientific findings and numerical conclusions remain unchanged. Third-party datasets remain subject to their original licensing and access conditions."
+  },
+  {
+   "openalex": "https://openalex.org/W2426605366",
+   "doi": "https://doi.org/10.1155/2016/3403150",
+   "title": "Data-Driven Machine-Learning Model in District Heating System for Heat Load Prediction: A Comparison Study",
+   "year": 2016,
+   "date": "2016-01-01",
+   "venue": "Applied Computational Intelligence and Soft Computing",
+   "type": "article",
+   "cites": 59,
+   "abstract": "We present our data-driven supervised machine-learning (ML) model to predict heat load for buildings in a district heating system (DHS). Even though ML has been used as an approach to heat load prediction in literature, it is hard to select an approach that will qualify as a solution for our case as existing solutions are quite problem specific. For that reason, we compared and evaluated three ML algorithms within a framework on operational data from a DH system in order to generate the required prediction model. The algorithms examined are Support Vector Regression (SVR), Partial Least Square (PLS), and random forest (RF). We use the data collected from buildings at several locations for a period of 29 weeks. Concerning the accuracy of predicting the heat load, we evaluate the performance of the proposed algorithms using mean absolute error (MAE), mean absolute percentage error (MAPE), and correlation coefficient. In order to determine which algorithm had the best accuracy, we conducted performance comparison among these ML algorithms. The comparison of the algorithms indicates that, for DH heat load prediction, SVR method presented in this paper is the most efficient one out of the three also compared to other methods found in the literature."
+  },
+  {
+   "openalex": "https://openalex.org/W4391454582",
+   "doi": "https://doi.org/10.1109/tcst.2024.3355476",
+   "title": "Physics-Informed Neural Network Modeling and Predictive Control of District Heating Systems",
+   "year": 2024,
+   "date": "2024-02-01",
+   "venue": "IEEE Transactions on Control Systems Technology",
+   "type": "article",
+   "cites": 79,
+   "abstract": "This article addresses the data-based modeling and optimal control of district heating systems (DHSs). Physical models of such large-scale networked systems are governed by complex nonlinear equations that require a large amount of parameters, leading to potential computational issues in optimizing their operation. A novel methodology is hence proposed, exploiting operational data and available physical knowledge to attain accurate and computationally efficient DHSs dynamic models. The proposed idea consists in leveraging multiple recurrent neural networks (RNNs) and in embedding the physical topology of the DHS network in their interconnections. With respect to standard RNN approaches, the resulting modeling methodology, denoted as physics-informed RNN (PI-RNN), enables to achieve faster training procedures and higher modeling accuracy, even when reduced-dimension models are exploited. The developed PI-RNN modeling technique paves the way for the design of a nonlinear model predictive control (NMPC) regulation strategy, enabling, with limited computational time, to minimize production costs, to increase system efficiency and to respect operational constraints over the whole DHS network. The proposed methods are tested in simulation on a DHS benchmark referenced in the literature, showing promising results from the modeling and control perspective."
+  },
+  {
+   "openalex": "https://openalex.org/W4404100673",
+   "doi": "https://doi.org/10.7250/9789934371189",
+   "title": "Method of District Heating Tariff Benchmarks",
+   "year": 2024,
+   "date": "2024-11-06",
+   "venue": null,
+   "type": "dissertation",
+   "cites": 0,
+   "abstract": "In the Thesis, a thermal energy tariff benchmark method and principles for its practical use were developed. The method is based on the generation of a virtual DH market by using the Monte Carlo imitation model, which is based on the results of analyses of actual data of DH companies. By using the method, the DH industry could be aligned with the market principles and its regulation could be decoupled from various short-term interests. Thus, it would balance the interests of DH companies with the needs of consumers and the transformation of the industry towards climate neutrality. Users of the method could be Regulators and industry policymakers in countries where DH plays a key role in energy supply."
+  },
+  {
+   "openalex": "https://openalex.org/W3116534491",
+   "doi": "https://doi.org/10.1016/j.ecmx.2020.100068",
+   "title": "Landscape of district heating systems in Germany \u2013 Status quo and categorization",
+   "year": 2020,
+   "date": "2020-12-23",
+   "venue": "Energy Conversion and Management X",
+   "type": "article",
+   "cites": 37,
+   "abstract": "Studies on decarbonizing district heating systems are either system specific or use artificial district heating systems. In contrast to the liberalized electricity sector, there are no disclosure obligations in the district heating sector. This paper offers eight district heating system categories, representing the landscape of district heating systems in Germany as of 31st December 2019. As a basis, the German district heating systems and their heat generation technologies were researched using public power plant lists, notices and approvals by the authorities, press releases, plant brochures, and operator websites. The collected data was validated through individual contact and information gathered by the AGFW, the German District Heating Association. Key figures based on economic and operational anticipated behavior are formed and evaluated for 82 district heating systems with an installed thermal capacity each greater than 50 MWth. Those key figures are then used in an agglomerative clustering algorithm to form the presented categories. By publishing the key figures, the inaccessibility of data is overcome, and the complexity in models for studies on a national level can be reduced. Possible transformation pathways can be derived per category and district heating system operators can transfer the results to their own systems."
+  },
+  {
+   "openalex": "https://openalex.org/W4403733555",
+   "doi": "https://doi.org/10.54337/ijsepm.8812",
+   "title": "The ODHeatMap tool: Open data district heating tool for sustainable energy planning",
+   "year": 2024,
+   "date": "2024-10-21",
+   "venue": "International Journal of Sustainable Energy Planning and Management",
+   "type": "article",
+   "cites": 11,
+   "abstract": "Building footprints are a geographical indication of the spatial distribution of built-up infrastructure, thereby reflecting energy demand patterns, including heating requirements. Heating demands spatial distribution shown in heat atlases are primordial for evaluating district heating systems feasibility, which are a key decarbonizing technology that offers more sustainable heat supply in dense urban areas. Sustainable energy planning frameworks utilize district heating potentials as metrics for the formulation of alternate system configurations aimed at decarbonizing societies and creating an understanding of heating transition pathways. However, the availability and accessibility of the data needed for assessing these potentials is highly contextual and often challenges modelling processes. Simultaneously, there is a growing potential for open data and software mechanisms that could aid in addressing these challenges and create otherwise unavailable heat mapping resources. This paper describes the development of the ODHeatMap tool, a workflow built with open data in python functions that transform building footprints into a heat atlas. Ulaanbaatar city is used as a demonstration area for the tools functionalities, with the outputs being applied in a broader study aimed at developing strategies for Mongolia's heating sector. The tool is accessible through a fully cloud-based environment and can be used in any given geographical context."
+  },
+  {
+   "openalex": "https://openalex.org/W4392628645",
+   "doi": "https://doi.org/10.26868/25222708.2023.1576",
+   "title": "Towards automated fault detection and diagnosis in district heating customers: generation and analysis of a labeled dataset with ground truth",
+   "year": 2023,
+   "date": "2023-09-04",
+   "venue": "Building Simulation Conference proceedings",
+   "type": "conference-paper",
+   "cites": 11,
+   "abstract": "This study is built upon the current research in fault detection and diagnosis (FDD) in district heating (DH). Presently the main studies in this field are on interviewing DH companies regarding their FDD practices or developing algorithms to automatically detect faults in DH substations. Particularly, Gadd and Werner (2015) present a framework based on three indicators to detect anomalous patterns in the DH customer substations operation by analyzing energy and temperature data from smart heat meters (SHM). These indicators are unexpected heat load patterns according to the building's typology (I1), low annual average in supply and return temperature difference (I2), and poor correlation between energy usage and outdoor temperature (I3).Today, some DH companies apply these indicators for automated fault detection while the diagnosis process is still carried out by a human user. This is due to the lack of measurements, properly labeled system data, or infrastructure to work with advanced FDD systems.This study attempts to investigate this matter by:a) Coupling approximately 300 fault reports written by technicians with measurements from SHM data.b) Providing an overview of typical faults occurring in DH customers.c) Testing the abovementioned indicators to assess their efficacy for FDD purposes.In several European countries like Denmark, more than 50% of their building stock is connected to the DH grid. Moreover, countries outside Europe, like Russia and China, are also integrating this system into their cities. Even if many nations are implementing this solution, research shows that the DH sector must evolve, termed 4th generation district heating (4GDH), by lowering the supply temperature of the heated fluid.One of the measures to lower the supply temperature is effectively and frequently detecting and fixing the existing and future faults in the DH systems. According to Gadd and Werner (2015), on a small buildings sample, 74% of buildings displayed indicators that might imply a faulty substation, meaning a vast possibility to decrease the supply temperatures by improving the network\u2019s heat systems.The relevance of this study is, to the best of the authors\u2019 knowledge, the first large labeled faults dataset that goes to the component level in the DH substations coupled with energy measurements. Analyzing such datasets allows for developing future automated FDD algorithms, reducing the large customer\u2019s energy usage over time, decreasing the diagnosis cost related to technician inspections, and detecting anomalies before the system\u2019s complete failure.All analyzed buildings had low supply and return temperature differences (<15\u2070C), thus the reason for being visited by the DH company technicians. However, some buildings displayed unexpected heating patterns (I1), while others had a poor correlation between energy demand and outdoor temperature (I3). According to Gadd and Werner (2015), I1 is mainly caused by human factors and wrong building controls. In contrast, I3 is primarily produced by a fault in the substation. Specifically in this dataset, most faults in the present dataset are due to valve problems (e.g., incorrect regulation or broken) and incorrect user heating practices (improper radiators and towel dryers\u2019 usage), significantly decreasing the temperature difference (I2).Also, during the assessment visit, the wrong settings in the system were adjusted, increasing the temperature differences significantly (15-25\u2070C more), and the customers received advice to use their heating systems efficiently (e.g., opening windows with heating systems turned off). The results of these interventions helped increase the DH system\u2019s efficiency and lowered customers\u2019 heating expenses.This demonstrates that having detailed fault assessments in the DH sector benefits heating provider companies and their customers. Additionally proving, that assessing and correcting faults in the DH grid is a present action measure to move towards 4GDH systems."
+  },
+  {
+   "openalex": "https://openalex.org/W3197825223",
+   "doi": "https://doi.org/10.3390/atmos12091110",
+   "title": "Environmental Impact of District Heating System Retrofitting",
+   "year": 2021,
+   "date": "2021-08-29",
+   "venue": "Atmosphere",
+   "type": "article",
+   "cites": 8,
+   "abstract": "Retrofitting of district heating systems is a comprehensive process which covers all stages of district heating (DH) systems: production, distribution and consumption. This study quantitatively shows the effect of retrofitting measures and represents strengths and weaknesses of different development scenarios. Improvements in production units show improvements in fuel use efficiency and thus indirectly reduce CO2 emissions due to unburned fuel. For this purpose, validated district planning tools have been used. Tool uses mathematical model for calculation and evaluation of all three main components of the DH system. For the quantitative evaluation, nine efficiency and balance indicators were used. For each indicator, recommended boundary values were proposed. In total, six simulation scenarios were simulated, and the last scenario have shown significant reduction in CO2 emissions by 40% (from 3376 to 2000 t CO2 compared to the actual state), while share of biomass has reached 47%."
+  }
+ ]
+}

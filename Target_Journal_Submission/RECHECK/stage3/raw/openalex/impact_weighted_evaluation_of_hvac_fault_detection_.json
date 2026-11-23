@@ -1,0 +1,172 @@
+{
+ "query": "impact-weighted evaluation of HVAC fault detection",
+ "filter": null,
+ "count": 2412,
+ "results": [
+  {
+   "openalex": "https://openalex.org/W7224088100",
+   "doi": "https://doi.org/10.5281/zenodo.23736320",
+   "title": "Code and results for \"Not all faults are equal: impact-weighted evaluation of HVAC fault detection with paired fault-free simulations and field experiments\"",
+   "year": 2026,
+   "date": "2026-10-28",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "type": "software",
+   "cites": 0,
+   "abstract": "Python code and derived results accompanying the article \u201cNot all faults are equal: impact-weighted evaluation of HVAC fault detection with paired fault-free simulations and field experiments\u201d. Using the public LBNL Fault Detection and Diagnostics Datasets, the code derives day-level energy-cost and service penalties for 63 simulated fault scenarios (rooftop unit, chiller plant, boiler plant) from paired faulted/fault-free runs, estimates weather-normalised impacts for 48 experimental fault-days on a real rooftop unit (ORNL), and compares four fault detectors using conventional and impact-weighted metrics (cost- and service-weighted recall, alarm precision on material fault-days). Raw data are not redistributed; see README for download and reproduction steps."
+  },
+  {
+   "openalex": "https://openalex.org/W4361026914",
+   "doi": "https://doi.org/10.1016/j.apenergy.2023.121030",
+   "title": "A review of data-driven fault detection and diagnostics for building HVAC systems",
+   "year": 2023,
+   "date": "2023-03-27",
+   "venue": "Applied Energy",
+   "type": "article",
+   "cites": 396,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W7165941492",
+   "doi": "https://doi.org/10.22214/ijraset.2026.83862",
+   "title": "Fault Detection in HVAC Systems Using Machine Learning",
+   "year": 2026,
+   "date": "2026-06-30",
+   "venue": "International Journal for Research in Applied Science and Engineering Technology",
+   "type": "article",
+   "cites": 0,
+   "abstract": "This paper presents a comprehensive machine learning-based approach for automatic fault detection in Heating, Ventilation, and Air Conditioning (HVAC) systems. HVAC systems are the largest energy consumers in commercial buildings, accounting for 40\u201350% of total energy usage. Undetected faults result in significant energy waste, reduced efficiency, and elevated maintenance costs. Traditional rule-based threshold monitoring systems fail to capture the complex, multivariate relationships between system parameters, making them unsuitable for early-stage fault detection. In this study, a synthetic dataset of 10,000 samples was generated, encompassing eight temperature sensors (T1\u2013T8) and compressor power (kW) as features, covering five condition classes: Normal, Condenser Failure, Low Refrigerant, Poor Cooling, and Sensor Failure. A Random Forest ensemble classifier was trained and evaluated against three competing algorithms \u2014 Decision Tree, K-Nearest Neighbours, and Logistic Regression \u2014 using five-fold stratified cross-validation. The proposed Random Forest model achieved 97.76% cross-validation accuracy and 97.55% test accuracy, with macro-averaged precision and recall both at 0.98, substantially outperforming conventional methods. Extensive analysis including ROC curves, learning curves, feature importance rankings, and per-class performance metrics validate the robustness and generalizability of the system. The results demonstrate that machine learning can effectively replace conventional rule-based building management systems for proactive, predictive HVAC maintenance."
+  },
+  {
+   "openalex": "https://openalex.org/W4313435396",
+   "doi": "https://doi.org/10.3390/s23010001",
+   "title": "A Review of Data-Driven Approaches and Techniques for Fault Detection and Diagnosis in HVAC Systems",
+   "year": 2022,
+   "date": "2022-12-20",
+   "venue": "Sensors",
+   "type": "review",
+   "cites": 108,
+   "abstract": "Heating, ventilation, and air conditioning (HVAC) systems are a popular research topic because buildings' energy is mostly used for heating and/or cooling. These systems heavily rely on sensory measurements and typically make an integral part of the smart building concept. As such, they require the implementation of fault detection and diagnosis (FDD) methodologies, which should assist users in maintaining comfort while consuming minimal energy. Despite the fact that FDD approaches are a well-researched subject, not just for improving the operation of HVAC systems but also for a wider range of systems in industrial processes, there is a lack of application in commercial buildings due to their complexity and low transferability. The aim of this review paper is to present and systematize cutting-edge FDD methodologies, encompassing approaches and special techniques that can be applied in HVAC systems, as well as to provide best-practice heuristics for researchers and solution developers in this domain. While the literature analysis targets the FDD perspective, the main focus is put on the data-driven approach, which covers commonly used models and data pre-processing techniques in the field. Data-driven techniques and FDD solutions based on them, which are most commonly used in recent HVAC research, form the backbone of our study, while alternative FDD approaches are also presented and classified to properly contextualize and round out the review."
+  },
+  {
+   "openalex": "https://openalex.org/W3168505565",
+   "doi": "https://doi.org/10.3390/electronics10121418",
+   "title": "Condition-Based Maintenance of HVAC on a High-Speed Train for Fault Detection",
+   "year": 2021,
+   "date": "2021-06-12",
+   "venue": "Electronics",
+   "type": "article",
+   "cites": 28,
+   "abstract": "Reliability-centered maintenance (RCM) is a well-established method for preventive maintenance planning. This paper focuses on the optimization of a maintenance plan for an HVAC (heating, ventilation and air conditioning) system located on high-speed trains. The first steps of the RCM procedure help in identifying the most critical items of the system in terms of safety and availability by means of a failure modes and effects analysis. Then, RMC proposes the optimal maintenance tasks for each item making up the system. However, the decision-making diagram that leads to the maintenance choice is extremely generic, with a consequent high subjectivity in the task selection. This paper proposes a new fuzzy-based decision-making diagram to minimize the subjectivity of the task choice and preserve the cost-efficiency of the procedure. It uses a case from the railway industry to illustrate the suggested approach, but the procedure could be easily applied to different industrial and technological fields. The results of the proposed fuzzy approach highlight the importance of an accurate diagnostics (with an overall 86% of the task as diagnostic-based maintenance) and condition monitoring strategy (covering 54% of the tasks) to optimize the maintenance plan and to minimize the system availability. The findings show that the framework strongly mitigates the issues related to the classical RCM procedure, notably the high subjectivity of experts. It lays the groundwork for a general fuzzy-based reliability-centered maintenance method."
+  },
+  {
+   "openalex": "https://openalex.org/W2580526132",
+   "doi": null,
+   "title": "Intelligent application of fault detection and isolation on HVAC system",
+   "year": 2014,
+   "date": "2014-01-01",
+   "venue": "UTS ePRESS (University of Technology Sydney)",
+   "type": "dissertation",
+   "cites": 1,
+   "abstract": "Efficient heating, ventilation, and air-conditioning (HVAC) systems are one of the big challenges today around the world. The fault detection and isolation (FDI) play a significant role in the monitoring, repairing and maintaining of technical systems for the final destination of safety and cost reduction. FDI makes an infrastructure to effectively reduce total cost of maintenance and thus increases the capacity utilization rates of equipment. Reduction of energy wasting in the system by real-time fault detection is another goal. Among all HVAC system\u2019s studies, the focus of this thesis is on developing of fast and reliable FDI structure that can cover all subsections of HVAC system including cooling tower, chiller and air handling units (AHU) which greatly affect building energy consumption and indoor environment quality. \\nThe first stage of this study is to develop and validates a mathematical HVAC model then follows by simulation and sensitivity analysis. The simulation makes a good capability of producing artificial fault free and faulty data for review of any upcoming failure over the HVAC system. These data with wide range of fault severities can be used to assess the performance of HVAC automated fault detection and isolation (AFDI) system. \\nTwo categories of process history diagnosis methods have been reviewed and assessed for the development of AFDI algorithms at second stage of this study. Principal component analysis (PCA) and support vector machine (SVM) classification are two chosen algorithm which have been analysed in depth and initially tested by simulated data from stage one. This review has been continued by developing online SVM algorithm with incremental learning technique and then tested both on simulated and operational data. \\nAn experimental rig is designed and applied in the last stage of this research. This setup is configured inside the HVAC laboratory of UTS to collect operational data for the operating test. Operational data as outcome of this stage was then used for test of developed AFDI from last stage. Artificial neural network (ANN) algorithm compressed in frame of black box model for fault free reference. Finally, a combination of black box model and developed AFDI was tested and evaluated for cooling tower and air handling unit (AHU) faults based on operational data. The result shows increasing of robustness, performance and accuracy for the proposed AFDI over the operational data."
+  },
+  {
+   "openalex": "https://openalex.org/W2292324575",
+   "doi": null,
+   "title": "Energy Efficient Control and Fault Detection for HVAC Systems",
+   "year": 2014,
+   "date": "2014-07-29",
+   "venue": "Padua@research (University of Padova)",
+   "type": "article",
+   "cites": 1,
+   "abstract": "The interest in HVAC (Heating, Ventilation and Air-Conditioning) technology has rapidly increased in the last years. HVAC systems have become important in the design of medium-large buildings in order to ensure thermal comfort in the environments with respect to the temperature and humidity of the air. Control, optimisation and maintenance procedures are fundamental in HVAC systems in order to guarantee people comfort and energy efficient solutions in their management. Two different topics are covered in this thesis. Energy Efficient Control of Ice Thermal Energy Storage Systems HVAC plants have recently begun to be matched with thermal energy storage systems. If properly designed, installed, and maintained, these systems can be used to store energy when its cost is low and exploiting it when the price increases. In particular, in HVAC cooling systems, a common thermal storage medium is ice. From a control and optimisation point of view, a cooling plant with ice storage proves to be a complex system. Standard control strategies seem not to be able to achieve the right trade-off between energy efficiency and demand satisfaction. In this thesis, in order to design efficient control strategies for storage systems, a HVAC model with ice storage is developed in a simulation environment. The thermal behaviour of the HVAC system is derived from the mass and energy conservation equations; in particular the ice storage is considered a hybrid system, thus taking into consideration both sensible and latent heat. Three standard control methods are compared with a non-linear predictive control strategy. The simulations results show that the implemented non-linear predictive control strategy provides the best control for the efficient energy management of ice storage systems. Fault Detection in HVAC Systems Operating problems associated with degraded equipment, poor maintenance, and improperly implemented controls, plague many HVAC systems. Fault detection methods can therefore play a key role in monitoring complex HVAC plants, detecting anomalous behaviours in such a way as to keep the systems in their best operational conditions with minimum costs. In this thesis, fault detection and diagnosis methods on variable air volume (VAV) systems are first designed. To this aim, a VAV system model with two zones is developed; the control of system is obtained with a direct feedback linearisation technique. Supervised classification methods are used to detect and diagnose the simulated faults in the model. The simulations results show the good performances of the classification in the detection and diagnosis of the most common faults in VAV systems. Detection methods are then developed for the most relevant faults affecting chillers. To this aim, data collected in the research project 1043-RP promoted by ASHRAE (American Society of Heating, Refrigerating and Air Conditioning Engineers) are used. In this project experimental studies were conducted on a centrifugal water-cooled chiller in order to collect data in both normal and faulty situations. The developed technique is based on one-class classification methods with a novelty detection approach, where only normal data are used to characterize the correct system behaviour. The classification results confirm the effectiveness of the proposed method for the detection of the most common faults in chillers."
+  },
+  {
+   "openalex": "https://openalex.org/W4386483780",
+   "doi": "https://doi.org/10.3390/s23187690",
+   "title": "Advancing Fault Detection in HVAC Systems: Unifying Gramian Angular Field and 2D Deep Convolutional Neural Networks for Enhanced Performance",
+   "year": 2023,
+   "date": "2023-09-06",
+   "venue": "Sensors",
+   "type": "article",
+   "cites": 29,
+   "abstract": "Efficiency and comfort in buildings rely on on well-functioning HVAC systems. However, system faults can compromise performance. Modern data-driven fault detection methods, considering diverse techniques, encounter challenges in understanding intricate interactions and adapting to dynamic conditions present in HVAC systems during occupancy periods. Implementing fault detection during active operation, which aligns with real-world scenarios and captures dynamic interactions and environmental changes, is considered highly valuable. To address this, utilizing the dynamic simulation system HVAC SIMulation PLUS (HVACSIM+), an HVAC fault model was developed using 194 sensor signals from each HVAC component within a single-story, four-room building. The advanced HVAC fault detection framework, leveraging simulated HVAC operational scenarios with the Gramian angular field (GAF) and two-dimensional convolutional neural networks (GAF-2DCNNs), offers a robust and proactive solution. By utilizing the GAF capacity to convert time-series sensor data into informative 2D images, integrated with 2DCNN for automated feature extraction, hidden temporal relationships within 1D signals are captured. After training on nine significant HVAC faults and normal conditions during occupancy, the effectiveness of the proposed GAF-2DCNN is evaluated through comparisons with support vector machine (SVM), random forest (RF), and hybrid RF-SVM, one-dimensional convolutional neural networks (1D-CNNs). The results demonstrates an impressive overall accuracy of 97%, accompanied by precision, recall, and F1 scores that surpass 90% for individual HVAC faults. Through the introduction of the unified approach that integrates HVACSIM+ simulated data and GAF-2DCNN, a notable enhancement in robustness and reliability for handling substantial HVAC faults is achieved."
+  },
+  {
+   "openalex": "https://openalex.org/W3170962134",
+   "doi": "https://doi.org/10.3390/su13126828",
+   "title": "Fault Detection and RUL Estimation for Railway HVAC Systems Using a Hybrid Model-Based Approach",
+   "year": 2021,
+   "date": "2021-06-16",
+   "venue": "Sustainability",
+   "type": "article",
+   "cites": 46,
+   "abstract": "Heating, ventilation, and air conditioning (HVAC) systems installed in a passenger train carriage are critical systems, whose failures can affect people or the environment. This, together with restrictive regulations, results in the replacement of critical components in initial stages of degradation, as well as a lack of data on advanced stages of degradation. This paper proposes a hybrid model-based approach (HyMA) to overcome the lack of failure data on a HVAC system installed in a passenger train carriage. The proposed HyMA combines physics-based models with data-driven models to deploy diagnostic and prognostic processes for a complex and critical system. The physics-based model generates data on healthy and faulty working conditions; the faults are generated in different levels of degradation and can appear individually or together. A fusion of synthetic data and measured data is used to train, validate, and test the proposed hybrid model (HyM) for fault detection and diagnostics (FDD) of the HVAC system. The model obtains an accuracy of 92.60%. In addition, the physics-based model generates run-to-failure data for the HVAC air filter to develop a remaining useful life (RUL) prediction model, the RUL estimations performed obtained an accuracy in the range of 95.21\u201397.80% Both models obtain a remarkable accuracy. The development presented will result in a tool which provides relevant information on the health state of the HVAC system, extends its useful life, reduces its life cycle cost, and improves its reliability and availability; thus enhancing the sustainability of the system."
+  },
+  {
+   "openalex": "https://openalex.org/W1512999181",
+   "doi": null,
+   "title": "Applied change of mean detection techniques for HVAC fault detection and diagnosis and power monitoring",
+   "year": 1995,
+   "date": "1995-01-01",
+   "venue": "DSpace@MIT (Massachusetts Institute of Technology)",
+   "type": "dissertation",
+   "cites": 4,
+   "abstract": "A signal processing technique, the detection of abrupt changes in a time-series signal, is implemented with two different applications related to energy use in buildings. The first application is a signal pre-processor for an advanced electric power monitor, the Nonintrusive Load Monitor (NILM), which is being developed by researchers at the Massachusetts Institute of Technology. A variant form of the generalized likelihood ratio (GLR) change-detection algorithm is determined to be appropriate for detecting power transients which are used by the NILM to uniquely identify the start-up of electric end-uses. An extension of the GLR change-detection technique is used with a second application, fault detection and diagnosis in building heating ventilation and air-conditioning (HVAC) systems. The method developed here analyzes the transient behavior of HVAC sensors to define conditions of correct operation of a computer simulated constant air volume HVAC sub-system. Simulated faults in a water-to-air heat exchanger (coil fouling and a leaky valve) are introduced into the computer model. GLR-based analysis of the transients of the faulted HVAC system is used to uniquely define the faulty state. The fault detection method's sensitivity to input parameters is explored and further avenues for research with this method are suggested."
+  },
+  {
+   "openalex": "https://openalex.org/W7220844058",
+   "doi": "https://doi.org/10.1038/s41598-026-74282-0",
+   "title": "A physics-informed dynamic graph and evidence fusion method for fault alarm detection in building HVAC systems",
+   "year": 2026,
+   "date": "2026-10-07",
+   "venue": "Scientific Reports",
+   "type": "article",
+   "cites": 0,
+   "abstract": "To address the superposition of normal thermal disturbances and fault characteristics in building heating, ventilation, and air conditioning (HVAC) systems, as well as conflicts among different diagnostic evidence sources, a physics-constrained dynamic graph and multi-source evidence fusion method for fault alarm detection is developed. The method employs the Dynamic Coupling-Informed Graph Attention Network to characterize the time-varying directional coupling relationships among air-side temperature variables, equipment control variables, and operational states. The graph structure is subject to hard constraints derived from known HVAC airflow paths and control logic, while dynamic edge weights are estimated from rolling lagged relationships in normal operational data. The Physics-Informed Neural Network incorporates discrete thermal equilibrium residuals into the training objective and separates normal thermal disturbances from abnormal disturbances using normal-state supervision, smoothness constraints, and sparsity constraints. The Dual-Stream Temporal-Frequency Attention Encoder extracts short-term abrupt-change and slow-varying drift features, respectively. The Adaptive Conflict Redistribution based on Evidential Reasoning reallocates conflicting evidence according to historical consistency, physical consistency, and confidence stability. Experiments are conducted using Fault Detection and Diagnostics data, with the training, validation, and test sets partitioned by complete fault events. The results show that the proposed method achieves an overall alarm accuracy of 98.7%, with a false alarm rate of 1.2% and a missed alarm rate of 1.1%. Stable identification performance is maintained across different fault categories and under perturbation- and noise-corrupted conditions. These results indicate that the proposed method can improve the reliability of fault identification and alarm fusion under complex HVAC operational conditions."
+  },
+  {
+   "openalex": "https://openalex.org/W7212686168",
+   "doi": "https://doi.org/10.2139/ssrn.7438633",
+   "title": "Explainable Robustness Assessment of Data-Driven HVAC Fault Detection under Noise, Drift, Bias, Missingness, and Downsampling",
+   "year": 2026,
+   "date": "2026-01-01",
+   "venue": "SSRN Electronic Journal",
+   "type": "preprint",
+   "cites": 0,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W3178160966",
+   "doi": "https://doi.org/10.1016/j.adapen.2021.100055",
+   "title": "Sensor impact evaluation and verification for fault detection and diagnostics in building energy systems: A review",
+   "year": 2021,
+   "date": "2021-07-10",
+   "venue": "Advances in Applied Energy",
+   "type": "article",
+   "cites": 86,
+   "abstract": "Sensors are the key information source for fault detection and diagnostics (FDD) in buildings. However, sensors are often not properly designed, installed, calibrated, located, and maintained, which negatively impacts FDD performance. Several sensor-related FDD topics have been widely studied, covering a wide range of fault types and applications. However, it is difficult to get a clear picture of the technical development of sensor-related topics in FDD. A systematic review of sensor topics is needed to summarize the existing research in a logical way, draw conclusions on the current development, and predict the future development of sensors in building FDD. To address this gap, we conducted a comprehensive literature review of more than 100 FDD-sensor-related papers. In this article, we subdivide the FDD tasks into building-level, system-level, and component-level FDD, and review sensor-related topics in each category. Our major conclusions are: (a) current data-driven FDD research focuses more on FDD algorithms than sensors, (b) sensor \u201chardware\u201d research topics are less studied than sensor \u201csoftware\u201d topics, (c) very few papers focus on sensor engineering as an integral aspect of FDD development, and (d) some important sensor topics, such as sensor cost-effectiveness and sensor schema/layout/location, are not well studied. Finally, we discuss the need for a systematic framework of FDD sensors and models to integrate sensor design/selection, sensor data analysis/mining, feature selection, physics-based or data-driven algorithm development, sensor fault detection, sensor calibration, and sensor maintenance. Finally, expert interviews are conducted to validate the above findings and conclusions."
+  },
+  {
+   "openalex": "https://openalex.org/W7116604165",
+   "doi": null,
+   "title": "Residential HVAC Installation Faults: Field Prevalence, Drivers, and Energy Impacts",
+   "year": 2025,
+   "date": "2025-12-01",
+   "venue": "Lincoln (University of Nebraska)",
+   "type": "article",
+   "cites": 0,
+   "abstract": "Faults in residential comfort systems can have detrimental effects on the performance of the system, reducing the energy efficiency, affecting indoor comfort, and shortening equipment lifespan. Many of the faults occur at installation. However, there has not previously been a systematic and nationally representative study to indicate the prevalence of the faults, meaning the distribution of faults by fault type and fault intensity. Understanding true fault prevalence is essential to be able to identify derivers, and to assess the incremental electricity consumption of the new installation systems. This study presents on-site data from 341 new central cooling systems\u2014air conditioners and heat pumps\u2014in eight U.S. cities across various climate zones. Using non-invasive diagnostics, I classified three installation faults\u2014refrigerant charge deviation, indoor-coil airflow, and liquid-line restriction\u2014by type and intensity, producing fault distributions at state and regional levels. I then analyzed potential drivers using house/system metadata (such as floor area, vintage, efficiency, thermostat behavior, contractor participation), along with climate and regional practice indicators, employing multivariate models to find fault correlates. To estimate energy impacts for 2023, I allocated national AHRI shipments to states through three streams: new construction, replacements, and first-time installs. A baseline of annual electricity use without faults was created using state-level operating intensity, shipment tonnage, and SEER standards. Finally, fault distributions were mapped to COP-based energy multipliers to estimate excess electricity use in 2023 for new installations. Some key findings on fault intensities, prevalence, and energy impacts include: Evaporator airflow fault intensity: On average 16% below the 400 cfm/ton nominal; \u201320% (~360 cfm/ton) is the most common level; heat pumps lower than ACs. Refrigerant charge fault intensity: Average \u20136.5% (undercharge); 23% of systems have a serious deviation (\u2265 20% under/over). Liquid-line restriction fault intensity: ~25% minor restriction; ~1% serious (rare). Socioeconomic status showed no meaningful association with any fault type. Energy: 2.49 TWh excess electricity use for 2023 new installs above the no-fault baseline (8.94% of 27.86 TWh), driven chiefly by South Atlantic (~856 GWh), West South Central (~504 GWh), and Pacific (~249 GWh). Advisor: David Yuill"
+  },
+  {
+   "openalex": "https://openalex.org/W4383682364",
+   "doi": "https://doi.org/10.35490/ec3.2023.199",
+   "title": "Advances in data-driven fault detection and diagnosis for HVAC systems: a review of recent developments",
+   "year": 2023,
+   "date": "2023-07-09",
+   "venue": "Computing in construction",
+   "type": "conference-paper",
+   "cites": 3,
+   "abstract": "Building performance can degrade precipitously after commissioning without adequate maintenance. HVAC system malfunctions can result in excessive energy consumption, associated CO2 emissions, and poor indoor environmental quality, and productivity loss. Fault Detection and Diagnosis (FDD) algorithms using sensor networks and IoT devices are a topic of significant research. This paper presents a comprehensive literature review of HVAC FDD applications using machine learning methods, including supervised classification, unsupervised learning, regression, statistics-based, and hybrid approaches. Each is discussed with respect to their state of development, relative advantages and limitations."
+  }
+ ]
+}
