@@ -1,7 +1,7 @@
 # PROGRESS
 
 ## Current phase
-STEP 0: journal landscape and 72-day check (in progress)
+STEP 2-3: method fixed (factorial framing); M1 rebuild + seeds, then locked M2 evaluation
 
 ## Decisions so far (with reasons)
 - 2026-11-23: Acceptance time is measured from Crossref received/accepted dates (all articles of the last
@@ -56,6 +56,11 @@ STEP 0: journal landscape and 72-day check (in progress)
   absolute signals), (iii) MODEL (rule / own-history stats / fleet quantile ML / AE). Cells already available:
   rule, loop3s_c, srcr-C (comfort x relative); loop3s, srcr gate_1s_local (all loops x relative);
   sigma3, iforest, qnbm, ae, ae_cond (all x absolute); ae_comfort (comfort x absolute).
+
+- 2026-11-23 (session 3, branch claude/youthful-meitner-qelzen): fast-forwarded onto stoic-carson; NEXT ACTION
+  items 2 (A4), 3 (mechanism) and novelty map were already done there. Fresh container: data + cache rebuilt;
+  ALL M1 factorial cells being regenerated (logs results/logs/r_*.log). The previous session's ae_comfort and
+  qnbm M1 runs never finished (logs stop at s17/s19).
 
 ## NEXT ACTION
 1. Wait/collect M1 heavy baselines (ae_comfort, ae_cond, iforest, qnbm; logs results/logs/b_*.log; rerun
