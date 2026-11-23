@@ -42,6 +42,8 @@ class ThreeSigma:
         return self
 
     def score(self, X):
+        if not self.cols:  # no usable signal in the training window (seen on M2) -> no score
+            return np.full(len(X), np.nan)
         Z = ((X[self.cols] - self.mu) / self.sd).abs().to_numpy(float)
         return np.nanmax(np.where(np.isnan(Z), -np.inf, Z), 1).clip(min=0) / 3.0
 
@@ -53,6 +55,8 @@ class IForest:
 
     def fit(self, X):
         self.cols = numeric_cols(X)
+        if not self.cols:  # no usable signal in the training window (seen on M2) -> no score
+            return self
         Z = X[self.cols]
         self.mu = Z.mean()
         Z = Z.fillna(self.mu).to_numpy(float)
@@ -64,6 +68,8 @@ class IForest:
         return self
 
     def score(self, X):
+        if not self.cols:
+            return np.full(len(X), np.nan)
         Z = X[self.cols].fillna(self.mu).to_numpy(float)
         return -self.m.score_samples(Z) / self.thr
 

@@ -75,6 +75,7 @@ M1 seeds: C2 0.382+-0.017 vs AE 0.183+-0.045 vs rule 0.321 at B=2.
      ae 1 k/4 SEED for seeds 1-9; run_srcr_components.py 0; round2_variants.py srcr_comp.
      (M1 tables results/m1_table*.csv, m1_curves*.csv, round4/*.csv ARE in git, so op points need no recompute.)
   4. M2 scores (frozen methods): see job list in NEXT ACTION item 1; run 4 in parallel (xargs -P 4).
+     sigma3/iforest M2 crash (no usable columns) FIXED in baselines.py; rerun them on M2.
      Session 2 ended with M2 partially done (rule, loop3s complete) - all M2 must be recomputed on a new machine.
   5. Then scripts/m2_eval.py ONCE, scripts/m2_curves.py.
 - Run time on 4 CPU cores: M1 regen ~2 h, AE seeds M1 ~2 h, M2 all ~3 h.

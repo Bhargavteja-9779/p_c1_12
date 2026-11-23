@@ -183,3 +183,6 @@ vs single methods: optimism to be checked on M2).
 
 ## M2 access log
 - 2026-11-23: after Amendment A1 freeze, M2 detector SCORES computed for all frozen methods (no evaluation yet).
+- 2026-11-23: M2 score run crashed for sigma3 and IForest on a substation whose training window had no usable
+  numeric column. Fix: such windows get no score (NaN), as with any model without training data. Does not touch
+  M1 (never triggered) nor any frozen operating point. No M2 evaluation had been run.
