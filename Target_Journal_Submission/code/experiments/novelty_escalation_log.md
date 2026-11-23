@@ -237,3 +237,31 @@ Built from abstracts + Crossref/OpenAlex only (ScienceDirect blocked). Claim lim
     Fleet model worse than own-history comfort statistic (p = 0.031) and rule (p = 0.080).
   * By label: leakage (7) and heating-circuit pump failure (6) are almost never caught by comfort-scoped
     methods; AE / qNBM / sigma3 catch 1-2 each.
+
+## USER DECISION (2026-11-23, session 3): option B = develop a new method on M1 after the locked M2 failure.
+Integrity consequences (to be stated in the paper): M2 is no longer a clean test. Round 5 is MOTIVATED by the
+M2 diagnosis (hydraulic fault types, start-up period, short histories). Any M2 evaluation of a round-5 method
+is a DISCLOSED SECOND LOOK, run once, after the method is frozen and committed. Time-box: ONE round; if its
+hypotheses fail on M1, stop and recommend option A.
+
+## Round 5 plan (hypotheses written BEFORE any round-5 code was written, 2026-11-23; M1 only)
+Diagnosis (from locked M2 + secondary analyses): comfort-loop scope misses hydraulic faults (leakage, pumps,
+pressure regulators); own-history models are immature in a substation's first months; AE false alarms follow
+seasonal regime. Novelty-map check: same-day peer comparison exists (HEAT, Energy and AI 2025; SHEDAD 2024;
+multi-turbine reference 2022); changepoints on dT/flow exist (arXiv 2026). Any gain is incremental unless it is
+large. Families (ideas #15-#19; total ideas tried becomes 19):
+ F18 PEER-PHYS: daily physics features compared with the SAME DAY's distribution over the other substations
+     of the fleet (robust median / 1.4826 MAD, leave-one-out): primary cooling dT (low side), primary return
+     temperature (high side), DHW upper-storage 10th percentile (low side). No own history, no training;
+     seasonal regime and weather are shared by peers and cancel. Daily score used from the NEXT day (causal).
+ F19 PEER-COMFORT: same-day peer z of the daily HC1/DHW shortfall (gated, one-sided).
+ F20 PEER-ALL: max of F18 and F19.
+ F21 OWN-CHANGE: changepoint of daily dT and flow vs the substation's previous 14 days (robust z, own history).
+ F22 FUSE: max(PEER-ALL, SRCR-C) with per-channel scaling fixed a priori (each channel score = z / 3).
+Hypotheses (M1, n = 28; thresholds on the shared tau x c_thr grid; daily score broadcast to 10-min steps):
+ H5a: PEER-PHYS ranks >= 3 more M1 faults within the top 2% of normal days than the best existing cell
+      (threshold-free, diagnose.fault_ranks), with >= 2 of the gained faults hydraulic (leakage, pump,
+      pressure regulator, valve). Falsified otherwise.
+ H5b: the best of F18-F22 reaches M1 recall >= 0.43 (12/28) at <= 2 FA/sub-yr (best existing M1: 0.393
+      at B = 4, 0.357 at B = 2). Falsified otherwise.
+ If H5b is falsified the round fails -> recommend option A to the user.
