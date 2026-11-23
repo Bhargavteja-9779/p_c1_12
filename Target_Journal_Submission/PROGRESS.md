@@ -51,3 +51,13 @@ STEP 0: journal landscape and 72-day check (in progress)
    conformal FA-budget threshold, under-delivery fusion.
 2. Novelty map (>=30, candidates in journal_selection/lit_raw.csv) + scorecard once the method is fixed.
 3. Then seeds 0-9, full baselines table on M1, single locked evaluation on M2.
+
+## Resume notes (saved 2026-11-23 before account switch)
+- Results/scores and data cache are NOT in git (large). On a new machine: run
+  `bash Target_Journal_Submission/code/scripts/download_data.sh`, then `python3 code/scripts/build_cache.py`,
+  then regenerate scores: run_online_method.py ae 1 / ae_cond 1, run_srcr_cv.py 1, run_online_method.py intent 1 /
+  delivery 1, run_srcr_components.py 0, round2_variants.py srcr_comp (all from Target_Journal_Submission/code).
+  pip deps: scikit-learn scipy lightgbm torch(cpu) pyarrow tabulate pypdf matplotlib.
+- Novelty-map candidate abstracts saved: journal_selection/novelty_candidates.csv (37 papers).
+- User asked (pending reply): verify Energy and AI submission-to-acceptance + IF/quartile; may supply
+  author guidelines PDF, author details, extra DH data.
