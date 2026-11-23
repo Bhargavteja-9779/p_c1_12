@@ -82,3 +82,24 @@ families; 6 composed variants evaluated.
  F13 Substation-level conformal threshold for a guaranteed FA budget (theory, N3).
  F14 Change primary endpoint emphasis to false alarms at matched recall (better powered; pre-register as
      secondary, already listed in protocol amendments).
+
+## Round 3 plan (hypotheses written BEFORE running; 2026-11-23, new machine, scores regenerated from code)
+Base score for all round-3 variants: srcr_comp composed with gate + one-sided + local (round-2 best, "R2").
+ F10 Daily decision unit (inference/protocol): one decision per substation-day ("morning report").
+     Daily score D = 90th percentile of the 10-min score within the calendar day (>= 72 valid steps), alarm
+     raised at the END of the day (00:00 next day; conservative for lead time). Threshold swept on M1.
+ F13 Substation-level conformal threshold (theory): alarm on day d if D_d > q_(1-alpha) of the substation's OWN
+     past normal daily scores (previous 365 days, known exclusions removed; split-conformal rank rule
+     k = ceil((n+1)(1-alpha))). If n < 60 own days, the calibration set is the pooled daily scores of the OTHER
+     cross-fitting folds' substations (fleet prior). alpha = B / 365 per day for budget B FA/sub-yr.
+     Guarantee (exchangeable normal days): P(false alarm on a normal day) <= alpha -> E[FA/sub-yr] <= B.
+ F12 Under-delivery channel: delivery channel restricted to the low side of heat power (one-sided), and only
+     on heating-season days (24-h mean outdoor temperature < 15 degC); fused with R2 at the daily level by
+     max of fleet-calibrated surprise levels (as fusion.py, daily).
+ H3a (F10): at <= 2 FA/sub-yr, daily unit recall >= R2 10-min recall (0.321); falsified if lower.
+ H3b (F13): (i) achieved M1 FA/sub-yr within [0.5B, 1.5B] for B in {1, 2, 4} (calibration validity);
+     (ii) share of false alarms from the 5 worst substations drops from 72% (round 1) to < 40%;
+     (iii) recall at the B = 2 conformal setting >= 0.36. Falsified per item.
+ H3c (F12): adding the under-delivery channel to F10 raises detected faults at <= 2 FA/sub-yr by >= 2
+     (absolute count) versus F10 alone. Falsified otherwise.
+ F11 (second domain, LBNL AHU) deferred to round 4: needs a separate data pipeline.
