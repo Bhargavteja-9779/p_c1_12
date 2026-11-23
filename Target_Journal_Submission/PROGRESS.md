@@ -67,6 +67,9 @@ STEP 0: journal landscape and 72-day check (in progress)
   (5 unit tests, pytest passes), code/requirements.txt, manuscript/draft_methods.md (data/protocol/methods,
   no results).
 
+- USER INPUT (2026-11-23): authors + declarations saved in manuscript/authors_declarations.md. Final
+  deliverable = one submission-ready zip; strip AI-tool mentions from deliverable files (see open question there).
+
 ## NEXT ACTION
 State: rounds 0-4 + seeds 0-9 on M1 DONE. Candidates FROZEN (protocol.md Amendment A1): C1 rule, C2 rule OR AE.
 M1 seeds: C2 0.382+-0.017 vs AE 0.183+-0.045 vs rule 0.321 at B=2.
