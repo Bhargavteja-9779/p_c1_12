@@ -1,0 +1,19 @@
+key,query,works_2023_2026
+wind_scada_fault,wind turbine SCADA anomaly detection,2618
+hdd_failure,hard disk drive failure prediction SMART,1727
+water_leak,water distribution network leak detection machine learning,13885
+hvac_fdd,HVAC fault detection and diagnosis machine learning,2816
+pv_forecast,solar photovoltaic power forecasting deep learning,24121
+fraud_delay,fraud detection verification latency delayed labels,4403
+flood_lstm,streamflow prediction LSTM ungauged basins,1411
+sepsis_alarm,sepsis early warning alarm fatigue machine learning,732
+battery_life,battery cycle life early prediction machine learning,25295
+aq_sensor_calib,low-cost air quality sensor calibration machine learning,29646
+secom,semiconductor manufacturing yield prediction SECOM,68
+railway,railway track defect prediction machine learning,3768
+district_heating,district heating substation fault detection,653
+ev_charging,electric vehicle charging demand forecasting,37652
+drought_crop,crop yield forecasting machine learning county,4979
+power_outage_storm,power outage prediction storms machine learning,2248
+dam_seepage,dam deformation monitoring prediction machine learning,4775
+bridge_shm_temp,structural health monitoring environmental variability damage detection,53370
