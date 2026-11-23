@@ -48,3 +48,17 @@ def operating_curve(method, m, taus=(1.0,), c_grid=None, subs=None):
             res = [C.evaluate_substation(pd.Series(k >= c, index=idx), lab) for k, idx, lab in cnt]
             r = C.summarise(res); r.update(tau=tau, c_thr=c); rows.append(r)
     return pd.DataFrame(rows)
+
+
+TAU_GRID = (1.0, 1.5, 2.0, 3.0, 4.0)
+
+
+def best_at_budgets(method, m, budgets=(1, 2, 4), taus=TAU_GRID, subs=None):
+    """Best recall at each false-alarm budget over the shared (tau, c_thr) grid. Returns (table, full curve)."""
+    curve = pd.concat([operating_curve(method, m, taus=(t,), subs=subs) for t in taus], ignore_index=True)
+    rows = []
+    for B in budgets:
+        ok = curve[curve.fa_per_sub_year <= B].sort_values(["recall", "fa_per_sub_year"], ascending=[False, True])
+        r = ok.iloc[0].to_dict() if len(ok) else {"recall": 0.0}
+        r["budget"] = B; r["method"] = method; rows.append(r)
+    return pd.DataFrame(rows), curve
