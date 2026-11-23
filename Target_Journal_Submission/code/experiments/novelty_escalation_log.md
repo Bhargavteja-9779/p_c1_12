@@ -36,3 +36,27 @@ Pre-registered hypotheses for the top three (F1, F2, F3):
  H1b: F2 brings >= 2 of {pump failures 5, 24, 47; leakages 10, 65} below rank 2%. Falsified otherwise.
  H1c: Fusion F3 (execution + intent + delivery) raises M1 recall at 2 FA/sub-yr by >= 0.10 absolute over
       SRCR-v0, while keeping each channel's contribution non-zero in ablation. Falsified otherwise.
+
+## Round 1 results (2026-11-23, M1 development)
+Ideas counted so far: #1 SRCR-v0, #2 intent channel, #3 delivery channel, #4 max-fusion (3 variants + AE).
+- Threshold-free (faults with best pre-report day in top 2% of 45k normal days): execution 9/28, intent 4,
+  delivery 4, AE 2, union of 3 channels 16.
+- H1a FALSIFIED: intent channel brings only 1/11 parameterisation faults below 2% (event 49).
+- H1b SUPPORTED (narrowly): delivery channel brings pump failure 47 (0.11%) and leakage 10 (1.4%) below 2%.
+- H1c FALSIFIED: recall at <=2 FA/sub-yr: fused3 0.25, exec+delivery 0.18, exec+intent 0.25, fused+AE 0.18,
+  SRCR-v0 0.25, AE (tau swept) 0.21. Max-fusion adds false alarms as fast as detections.
+- Diagnosis of false alarms (SRCR-v0, tau 3, c 48): 214 FAs, 5 of 35 substations produce 72%, 18 produce none.
+  AE: 223 FAs spread over 32 substations. Inspection: (i) summer, HC1 setpoint 10 degC = heating OFF while
+  supply floats at 22-31 degC (sub 35); (ii) substation-specific control style: setpoint swinging 59-76 degC
+  within a day (sub 17); (iii) normal DHW storage dips 5 K below setpoint during draw-off (sub 18).
+
+## Round 2 plan (hypotheses written BEFORE running)
+ F8 Loop-activity gating (physics): a loop whose setpoint <= 20 degC is OFF; its residual is undefined.
+ F7 Fleet-prior -> local-posterior calibration (hierarchical / empirical Bayes): the fleet z of each loop is
+    recentred and rescaled with the substation's OWN past (robust median/MAD of daily z over the previous
+    60 days, no labels used), weighted by w = n/(n+14) with n = days of own history (zero-shot when n=0).
+ F9 Comfort-aligned one-sided residual: for heating and DHW loops only shortfall (measurement below setpoint)
+    is scored; the primary return limiter keeps both sides.
+ H2a: F8 cuts SRCR false alarms by >= 30% at the round-0 operating point with no lost detection.
+ H2b: F7 (+F8) raises M1 recall at <= 2 FA/sub-yr by >= 0.10 absolute over SRCR-v0 (0.25 -> >= 0.35).
+ H2c: F9 cuts false alarms by >= 20% at a fixed operating point with <= 1 lost detection.
