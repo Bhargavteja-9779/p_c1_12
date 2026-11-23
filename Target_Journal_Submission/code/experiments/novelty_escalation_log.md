@@ -226,3 +226,27 @@ few noisy substations. Three genuinely different fix families (all on M1 only; i
  from noisy ones; and faults in substations with a chronically poor history are pushed below threshold. Absolute,
  physically scaled evidence (Kelvin of shortfall) carries information that rank calibration discards.
  F17 dropped. Negative result kept for the paper ("own-history calibration hurts").
+
+## Round 5 addition — F19 protocol-gap analysis (pre-registered 2026-11-23 before running; idea 17)
+Same online scores, same alarm logic, two protocols. Event protocol (as in the dataset benchmark): fault events
+(efd_possible, window = 7 d before report) and the dataset's predefined normal events (Event start-end); an event
+is flagged if the alarm is active at any step in its window; event precision, recall, F0.5. Continuous protocol
+as in protocol v1. For each of the 8 v1 methods (rule, sigma3, loop3s, iforest, qnbm, ae, ae_cond, srcr):
+ (i) the (tau, c) maximising event F0.5 on M1 -> its continuous FA/sub-yr and recall (M1; M2 in locked eval);
+ (ii) event precision vs continuous alarm precision at that point; (iii) Spearman correlation between the
+ method ranking by best event F0.5 and by continuous recall at B = 2.
+ H5f: the event-F0.5-optimal point exceeds 4 FA/sub-yr (2x the primary budget) for >= 5 of 8 methods (M1 and M2).
+ H5g: event precision >= 5x continuous alarm precision for every method at the event-optimal point.
+ H5h (exploratory): rank correlation < 0.5 (protocol choice changes which method looks best).
+
+## Round 5 results — F19 protocol gap (M1; results/protocol_gap/m1_*.csv; 29 fault + ~35 normal events)
+ At each method's event-F0.5-optimal (tau, c):  event precision | continuous alarm precision | continuous FA/sub-yr
+  rule 1.00 | 0.045 | 1.2 ; sigma3 0.91 | 0.008 | 10.4 ; loop3s 0.94 | 0.008 | 11.1 ; iforest 0.93 | 0.004 | 18.3 ;
+  qnbm 0.91 | 0.019 | 2.4 ; AE 0.74 | 0.008 | 10.7 ; AE-cond 0.73 | 0.006 | 13.9 ; SRCR 1.00 | 0.031 | 2.2
+ H5f SUPPORTED on M1: 5/8 methods exceed 4 FA/sub-yr (10.4-18.3) at the event-optimal point.
+ H5g SUPPORTED on M1: event precision is 22x-215x the continuous alarm precision (min 22x, rule).
+ H5h (exploratory) SUPPORTED: Spearman rho = 0.40 (p = 0.32, n = 8) between event-F0.5 ranking and continuous
+ recall@B=2 ranking. Event protocol ranks three-sigma best (F0.5 0.84) and the rule second-to-last (0.75);
+ continuous protocol ranks the rule/SRCR best (0.321) and three-sigma mid (0.25).
+ Meaning: a balanced event benchmark would pick detectors that, deployed on 93 substations, raise ~1,000 false
+ alarms per year. This is the strongest finding so far (N5 + N7) and is tested on locked M2 in the final eval.
