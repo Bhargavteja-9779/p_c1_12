@@ -219,3 +219,11 @@ Built from abstracts + Crossref/OpenAlex only (ScienceDirect blocked). Claim lim
 - 2026-11-23 (session 3) LOCKED EVALUATION: all 11 cells scored on M2 (seed 0, 58/58 substations each).
   scripts/m2_evaluate.py 2 2000 run ONCE now (code as committed for A5 + the logged NaN bug fix). Output:
   results/locked_m2_operating_points.csv, results/locked_m2_tests.csv, results/logs/LOCKED_m2.log.
+- LOCKED M2 RESULT (2026-11-23, session 3; results/locked_m2_*.csv): NEGATIVE for the proposed method.
+  Recall at B = 2 (M1-chosen thresholds), n = 25: sigma3 0.28, qnbm 0.20, ae_comfort 0.12, rule 0.08,
+  loop3s_c 0.08, loop3s 0.08, iforest 0.08, ae 0.04, srcr_c 0.00, srcr_all 0.00, ae_cond 0.00.
+  HF4 (SRCR-C >= baselines) FAILED: SRCR-C worse than sigma3 (McNemar p = 0.016 raw) and qnbm (0.0625).
+  HF1 (scope) not supported on M2 (p 0.37 / 0.93 / 0.28). HF2: SRCR-C vs AE-comfort reversed (AE-comfort
+  better, p = 0.016). HF3: SRCR-C ranks worse than rule (p = 0.0003) and loop3s_c (0.003).
+  Realised FA rates stayed near budget for most methods (calibration transfer OK; detection transfer failed).
+  This result is final for the pre-registered analysis; M2 is now burned for method selection.
