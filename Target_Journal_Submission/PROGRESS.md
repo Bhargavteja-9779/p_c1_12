@@ -51,6 +51,11 @@ STEP 0: journal landscape and 72-day check (in progress)
   scripts/round3.py written (F10 daily, F13 conformal, F12 underdel = new channel "underdel"). Novelty map
   delegated (journal_selection/novelty_map.csv + novelty_map_summary.md).
 
+- Novelty map DONE: journal_selection/novelty_map.csv (47 rows) + novelty_map_summary.md. Claimable: N1 (setpoint
+  residual + gating + one-sided), N5 (continuous FA/sub-yr protocol); partial N2, N6; NOT N3 (split-conformal FA
+  guarantees are standard; fleet+conformal exists for wind, 10.1088/1742-6596/3224/6/062054), NOT N4. To check:
+  full text of 10.1016/j.energy.2026.142993 (control-strategy mode rules) and 10.1016/j.enbuild.2024.114009.
+
 ## NEXT ACTION
 1. Round 3 (pre-register hypotheses in the log first): daily decision unit, LBNL AHU second domain,
    conformal FA-budget threshold, under-delivery fusion.
