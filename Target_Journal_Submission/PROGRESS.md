@@ -63,6 +63,8 @@ STEP 0: journal landscape and 72-day check (in progress)
   ending in 'EXIT <code>'; file results/logs/regen/ALLDONE appears when the queue finishes.
   If the machine is lost: rerun deps/data/cache steps, then `nohup bash code/scripts/runall.sh &` (job list code/scripts/jobs_s3.txt)
   (existing score files are skipped).
+- Added while waiting: code/scripts/m2_errors.py (error analysis, run after m2_eval.py), code/tests/
+  (5 unit tests, pytest passes), code/requirements.txt.
 
 ## NEXT ACTION
 State: rounds 0-4 + seeds 0-9 on M1 DONE. Candidates FROZEN (protocol.md Amendment A1): C1 rule, C2 rule OR AE.
