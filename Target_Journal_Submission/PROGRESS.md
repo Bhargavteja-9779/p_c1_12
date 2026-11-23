@@ -56,6 +56,14 @@ STEP 0: journal landscape and 72-day check (in progress)
   guarantees are standard; fleet+conformal exists for wind, 10.1088/1742-6596/3224/6/062054), NOT N4. To check:
   full text of 10.1016/j.energy.2026.142993 (control-strategy mode rules) and 10.1016/j.enbuild.2024.114009.
 
+
+## Session 3 (2026-11-23, account 3, branch claude/focused-wozniak-yepo5i)
+- New machine again: deps + data + cache rebuilt. ALL M1 + M2 score jobs (94) launched in one queue:
+  code/results/logs/regen/jobs_s3.txt via runall.sh (xargs -P4); per-job logs results/logs/regen/<md5>.log
+  ending in 'EXIT <code>'; file results/logs/regen/ALLDONE appears when the queue finishes.
+  If the machine is lost: rerun deps/data/cache steps, then `nohup bash results/logs/regen/runall.sh &`
+  (existing score files are skipped).
+
 ## NEXT ACTION
 State: rounds 0-4 + seeds 0-9 on M1 DONE. Candidates FROZEN (protocol.md Amendment A1): C1 rule, C2 rule OR AE.
 M1 seeds: C2 0.382+-0.017 vs AE 0.183+-0.045 vs rule 0.321 at B=2.
