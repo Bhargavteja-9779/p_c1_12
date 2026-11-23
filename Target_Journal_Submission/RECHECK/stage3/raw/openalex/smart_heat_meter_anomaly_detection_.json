@@ -1,0 +1,282 @@
+{
+ "query": "smart heat meter anomaly detection",
+ "filter": null,
+ "count": 9409,
+ "results": [
+  {
+   "openalex": "https://openalex.org/W4396214404",
+   "doi": "https://doi.org/10.1109/access.2024.3395051",
+   "title": "Anomaly Detection in Smart Environments: A Comprehensive Survey",
+   "year": 2024,
+   "date": "2024-01-01",
+   "venue": "IEEE Access",
+   "type": "article",
+   "cites": 110,
+   "abstract": "Anomaly detection is a critical task in ensuring the security and safety of infrastructure and individuals in smart environments. This paper provides a comprehensive analysis of recent anomaly detection solutions in data streams supporting smart environments, with a specific focus on multivariate time series anomaly detection in various environments, such as smart home, smart transport, and smart industry. The aim is to offer a thorough overview of the current state-of-the-art in anomaly detection techniques applicable to these environments. This includes an examination of publicly available datasets suitable for developing these techniques. The survey is designed to inform future research and practical applications in the field, serving as a valuable resource for researchers and practitioners. It not only reviews a range of state-of-the-art anomaly detection methods, from statistical and proximity-based to those adopting deep learning-methods but also covers fundamental aspects of anomaly detection. These aspects include the categorization of anomalies, detection scenarios, challenges associated, and evaluation metrics for assessing the techniques\u2019 performance."
+  },
+  {
+   "openalex": "https://openalex.org/W4302291044",
+   "doi": "https://doi.org/10.4218/etrij.2022-0135",
+   "title": "Anomaly detection of smart metering system for power management with battery storage system/electric vehicle",
+   "year": 2022,
+   "date": "2022-10-06",
+   "venue": "ETRI Journal",
+   "type": "article",
+   "cites": 63,
+   "abstract": "A novel smart metering technique capable of anomaly detection was proposed for real\u2010time home power management system. Smart meter data generated in real\u2010time were obtained from 900 households of single apartments. To detect outliers and missing values in smart meter data, a deep learning model, the autoencoder, consisting of a graph convolutional network and bidirectional long short\u2010term memory network, was applied to the smart metering technique. Power management based on the smart metering technique was executed by multi\u2010objective optimization in the presence of a battery storage system and an electric vehicle. The results of the power management employing the proposed smart metering technique indicate a reduction in electricity cost and amount of power supplied by the grid compared to the results of power management without anomaly detection."
+  },
+  {
+   "openalex": "https://openalex.org/W4316660992",
+   "doi": "https://doi.org/10.1109/access.2023.3237554",
+   "title": "Distributed Anomaly Detection in Smart Grids: A Federated Learning-Based Approach",
+   "year": 2023,
+   "date": "2023-01-01",
+   "venue": "IEEE Access",
+   "type": "article",
+   "cites": 329,
+   "abstract": "The smart grid integrates Information and Communication Technologies (ICT) into the traditional power grid to manage the generation, distribution, and consumption of electrical energy. Despite its many advantages, it faces significant challenges, such as detecting abnormal behaviours in the grid. Identifying anomalous behaviours helps to discover unusual user power consumption, faulty infrastructure, power outages, equipment failures, energy thefts, or cyberattacks. Machine learning (ML)-based techniques on smart meter data has shown remarkable results in anomaly detection. However, traditional ML-based anomaly detection requires smart meters to share local data with a central server, which raises concerns regarding data security and user privacy. Server-based model training faces additional challenges, such as the requirement of centralised computing power, reliable network communication, large bandwidth capacity, and latency issues, all of which affect the real-time anomaly detection performance. Motivated by these concerns, we propose a Federated Learning (FL)-based smart grid anomaly detection scheme where ML models are trained locally in smart meters without sharing data with a central server, thus ensuring user privacy. In the proposed approach, a global model is downloaded from the server to smart meters for on-device training. After local training, local model parameters are sent to the server to improve the global model. We secure the model parameter updates from adversaries using the SSL/TLS protocol. Using standard datasets, we investigate the anomaly detection performance of federated learning and observe that FL models achieve anomaly detection performance comparable to centralised ML models while ensuring user privacy. Further, our study shows that the proposed FL-based models perform efficiently in terms of memory, CPU usage, bandwidth and power consumption at edge devices and are suitable for implementation in resource-constrained environments, such as smart meters, for anomaly detection."
+  },
+  {
+   "openalex": "https://openalex.org/W7202346243",
+   "doi": "https://doi.org/10.3390/s26165122",
+   "title": "Anomaly Detection and Data Repair for Smart Meter Data in Smart Cities: A Comprehensive Review and Future Perspectives",
+   "year": 2026,
+   "date": "2026-08-13",
+   "venue": "Sensors",
+   "type": "review",
+   "cites": 1,
+   "abstract": "Smart meters are the core terminals for distribution network data acquisition in smart cities, yet their collected data commonly suffer from quality issues caused by harsh operating environments, communication failures, hardware degradation, and human factors. This paper presents a systematic review of anomaly detection and data repair methods for smart meter data based on a critical analysis of many publications. First, we characterize five typical anomalies-sudden jumps, reading stagnation, reverse readings, pulse spikes, and gradual drifts-from physical root causes to data manifestations and provide unified mathematical definitions with explicit traceability to the existing literature. Additional anomaly types including meter replacement jumps, data duplication from retransmission, complete missing segments, and timestamp errors are also discussed to present a more complete picture of operational data quality challenges. Second, existing anomaly detection methods are systematically reviewed and classified into four categories-statistical, machine learning, deep learning, and dedicated time-series methods-with representative studies, quantitative performance metrics, and scenario-specific applicability examined for each. Third, data repair approaches are reviewed across four categories-traditional interpolation, matrix completion, generative models, and time-series prediction-with systematic comparison of their accuracy and limitations across different anomaly types and durations. Based on the synthesized evidence, we identify three cross-cutting structural limitations that persist across method categories: the performance ceiling of data-only detection without physical constraint embedding, the open-loop architecture that separates detection from repair and allows error propagation, and the exclusive reliance on statistical error metrics that fails to distinguish physically plausible repairs from those violating conservation laws. To address these gaps, we discuss a physics-guided integrated framework incorporating physical constraint embedding, joint anomaly diagnosis, scenario-adaptive repair, and posterior verification as a promising forward-looking direction. Finally, open challenges and future research directions are outlined, including parameter adaptation in unlabeled scenarios, multi-source data fusion for physical disambiguation, new power system extensions, explainable AI integration, edge-computing deployment, and standardized benchmark development. This review provides a comprehensive theoretical reference and technical roadmap for smart meter data quality research in the context of smart city energy systems."
+  },
+  {
+   "openalex": "https://openalex.org/W4416184237",
+   "doi": "https://doi.org/10.1109/aupec66173.2025.11219523",
+   "title": "Hybrid AI Anomaly Detection for Smart-Grid Electricity Theft",
+   "year": 2025,
+   "date": "2025-09-29",
+   "venue": "Australasian Universities Power Engineering Conference",
+   "type": "conference-paper",
+   "cites": 0,
+   "abstract": "Electricity theft remains a persistent risk in residential smart grids as cyber-physical attacks grow in sophistication. Within residential smart grids, the Advanced Metering Infrastructure (AMI) used by smart homes is susceptible to the persistent risk of electricity theft due to its inherent features. In the context of voluminous datasets in AMIs, there is an opportunity to use artificial i ntelligence (AI) / machine learning (ML) models to effectively detect anomalies and security threats. This paper presents a hybrid anomaly detection methodology that integrates a Convolutional Neural Network with Long Short-Term Memory (CNN-LSTM) predictor for temporal modelling and a residual-augmented Local Outlier Factor with Neural Network (LOF-NN) for unsupervised scoring. Experiments were conducted on a simulated smart home using publicly-available high-resolution smart meter data from a household heat pump circuit, comparing a curated high-weight feature set to the original input. Results across four time windows show that feature selection improves detection accuracy and stability. The CNN-LSTM achieved superior short-term F1 scores with highweight features, while LOF-NN delivers robust long-term performance. These findings support scalable a nd potentially-adaptive electricity theft detection, advancing operational technology (OT) security in smart grids."
+  },
+  {
+   "openalex": "https://openalex.org/W4396847406",
+   "doi": "https://doi.org/10.55041/ijsrem33546",
+   "title": "Anomaly Detection in Smart Grid Application",
+   "year": 2024,
+   "date": "2024-05-12",
+   "venue": "INTERANTIONAL JOURNAL OF SCIENTIFIC RESEARCH IN ENGINEERING AND MANAGEMENT",
+   "type": "article",
+   "cites": 0,
+   "abstract": "The smart grid, a modernized electrical grid integrating advanced communication and information technologies, enables bidirectional flow of electricity and information, offering numerous benefits such as enhanced reliability, efficiency, and sustainability. However, the complexity and scale of the smart grid introduce new challenges, including the need for effective anomaly detection to ensure its secure and reliable operation. This research paper presents a comprehensive review of state-of-the-art anomaly detection techniques in smart grid applications. We explore various methodologies, including statistical methods, machine learning algorithms, and hybrid approaches, highlighting their strengths and limitations. Furthermore, we discuss the importance of accurate data preprocessing and feature selection to enhance anomaly detection performance. Through a comparative analysis, we demonstrate the effectiveness of different techniques in detecting anomalies in smart grid datasets. Our findings provide valuable insights for researchers and practitioners in developing robust anomaly detection systems for smart grid applications, ultimately contributing to the advancement of smart grid technology."
+  },
+  {
+   "openalex": "https://openalex.org/W4366518818",
+   "doi": "https://doi.org/10.1016/j.energy.2023.127569",
+   "title": "Fault and anomaly detection in district heating substations: A survey on methodology and data sets",
+   "year": 2023,
+   "date": "2023-04-20",
+   "venue": "Energy",
+   "type": "article",
+   "cites": 61,
+   "abstract": "District heating systems are essential building blocks for affordable, low-carbon heat supply. Early detection and elimination of faults is crucial for the efficiency of these systems and necessary to achieve the low temperatures targeted for 4th generation district heating systems. Especially methods for fault and anomaly detection in district heating substations are currently of high interest, as faults in substations can be repaired quickly and inexpensively, and smart meter data are becoming widely available. In this paper, we review recent scientific publications presenting data-driven approaches for fault and anomaly detection in district heating substations with a focus on methods and data sets. Our review indicates that researchers use a wide variety of methods, mostly focusing on unsupervised anomaly detection rather than fault detection. This is due to a lack of labeled data sets, preventing the use of supervised learning methods and quantitative analysis. Together with the lack of publicly available data sets, this impedes the accurate comparison of individual methods. To overcome this impediment, increase the comparability of different methods and foster competition, future research should focus on establishing publicly available data sets, and industry-relevant metrics as benchmarks."
+  },
+  {
+   "openalex": "https://openalex.org/W4415242981",
+   "doi": "https://doi.org/10.32996/jhsss.2024.6.12.15",
+   "title": "Machine Learning Techniques for Anomaly Detection in Smart Grids",
+   "year": 2024,
+   "date": "2024-12-27",
+   "venue": "Journal of Humanities and Social Sciences Studies",
+   "type": "article",
+   "cites": 4,
+   "abstract": "The development of smart grids that incorporate advanced metering infrastructure, two\u2010way communication networks, and automated control networks has changed power networks. The expansion of digital interconnectivity exposes these systems to different anomalies, including cyber intrusions together with equipment malfunctions, and energy theft. Traditional rule\u2010based detection methods are increasingly inadequate in the face of large volumes of heterogeneous data and sophisticated attack vectors. Machine learning (ML) techniques have emerged as promising tools for real\u2010time and high\u2010accuracy anomaly detection, ultimately contributing to enhanced grid security and resilience. This paper provides a comprehensive review of ML methods applied to anomaly detection in smart grids, examines case studies with numerical performance indicators, and discusses the challenges of deploying these methods in real\u2010world environments. The results highlight that ML algorithms\u2014including supervised, unsupervised, and deep learning methods can achieve detection accuracies above 90% in several applications. Insights from recent research and field implementations demonstrate that the integration of ML into smart grid frameworks not only improves operational efficiency but also mitigates the risk of system failures and cyberattacks."
+  },
+  {
+   "openalex": "https://openalex.org/W7123774920",
+   "doi": "https://doi.org/10.36079/lamintang.ijeste-0802.777",
+   "title": "Anomaly Detection Using Autoencoders for Household Electricity Meters",
+   "year": 2025,
+   "date": "2025-12-25",
+   "venue": "International Journal of Education Science Technology and Engineering (IJESTE)",
+   "type": "article",
+   "cites": 1,
+   "abstract": "Household electricity consumption often exhibits sudden and unexplained spikes that typically go unnoticed until the monthly bill arrives. These anomalies may stem from equipment malfunction, inefficient appliance usage, or irregular electrical patterns that households cannot easily observe. This study proposes an unsupervised anomaly detection framework based on autoencoders to identify abnormal consumption behavior from high resolution household electricity meter data. The model learns normal consumption patterns through reconstruction and flags anomalies using a dynamic threshold derived from reconstruction error distribution. Experimental results demonstrate strong detection capability, particularly for sudden spikes, achieving a precision of 0.92, recall of 0.88, and F1 score of 0.90. The findings highlight the potential of deep learning\u2013based unsupervised methods to support real time, edge deployable solutions for energy efficiency and early fault detection in residential environments."
+  },
+  {
+   "openalex": "https://openalex.org/W4376105295",
+   "doi": "https://doi.org/10.1049/cps2.12057",
+   "title": "Detecting smart meter false data attacks using hierarchical feature clustering and incentive weighted anomaly detection",
+   "year": 2023,
+   "date": "2023-05-09",
+   "venue": "IET Cyber-Physical Systems Theory & Applications",
+   "type": "article",
+   "cites": 3,
+   "abstract": "Spot pricing is often suggested as a method of increasing demand\u2010side flexibility in electrical power load. However, few works have considered the vulnerability of spot pricing to financial fraud via false data injection (FDI) style attacks. The authors consider attacks which aim to alter the consumer load profile to exploit intraday price dips. The authors examine an anomaly detection protocol for cyber\u2010attacks that seek to leverage spot prices for financial gain. In this way the authors outline a methodology for detecting attacks on industrial load smart meters. The authors first create a feature clustering model of the underlying business, segregated by business type. The authors then use these clusters to create an incentive\u2010weighted anomaly detection protocol for false data attacks against load profiles. This clustering\u2010based methodology incorporates both the load profile and spot pricing considerations for the detection of injected load profiles. To reduce false positives, the authors model incentive\u2010based detection, which includes knowledge of spot prices, into the anomaly tracking, enabling the methodology to account for changes in the load profile which are unlikely to be attacks."
+  },
+  {
+   "openalex": "https://openalex.org/W7166718992",
+   "doi": "https://doi.org/10.3390/smartcities9070110",
+   "title": "Physics-Guided Detection of Multiplicative Under-Registration in Smart Meter Time Series Under Smart-City Confounders",
+   "year": 2026,
+   "date": "2026-06-30",
+   "venue": "Smart Cities",
+   "type": "article",
+   "cites": 0,
+   "abstract": "Smart-city advanced metering infrastructure enables utility-scale remote analytics, but some forms of under-registration closely resemble lawful changes in demand and are hard to model as anomalies. We study a narrow, physically motivated event family at the single-meter level, namely multiplicative under-registration with unknown onset (a shunt-like attack), in which recorded active energy is approximately scaled by a factor \u03b1<1 after a change-point while the daily-profile structure and spectral shape remain invariant. We formalize the problem and develop a physics-guided detector family based on weighted daily-profile regression (GLS) and its robust variant (RGLS), with quality-control filters, spectral-consistency checks, and an optional reactive-channel gate, designed to stay selective under confounders such as rooftop photovoltaics, electric-vehicle charging, and heat-pump onsets. On a device-disjoint Low Carbon London benchmark (487 households) the preferred GLS detector attains precision 0.915, recall 0.978, and F1=0.945 at \u03b1=0.10 while keeping the non-theft suspected rate near 1%; a cross-dataset check on Open Power System Data with real EV/PV/heat-pump overlays yields zero false alarms on all 72 cases, and Mendeley and WPuQ benchmarks add a second large family and a reactive-channel test. We compare against external baselines (classical change-point detection, Isolation Forest, autoencoder, LSTM, gradient boosting, and a supervised statistical pipeline) on the same protocol: generic anomaly detectors fail on this shape-preserving attack, and supervised models match the detector only in-distribution while, unlike it, failing to transfer to real lawful confounders. All metrics carry bootstrap confidence intervals, and a full reproducibility bundle accompanies the submission."
+  },
+  {
+   "openalex": "https://openalex.org/W4321105694",
+   "doi": "https://doi.org/10.3390/en16041974",
+   "title": "Smart Energy Meters for Smart Grids, an Internet of Things Perspective",
+   "year": 2023,
+   "date": "2023-02-16",
+   "venue": "Energies",
+   "type": "article",
+   "cites": 166,
+   "abstract": "Smart energy has evolved over the years to include multiple domains integrated across multiple technology themes, such as electricity, smart grid, and logistics, linked through communication technology and processed in the cloud in a holistic way to deliver on global challenges. Advances in sensing, communication, and computation technologies have been made that enable better smart system implementations. In smart energy systems, sensing technologies have spanned multiple domains with newer techniques that are more accurate, have greater dynamic ranges, and are more reliable. Similarly, communication techniques have now evolved into very high-speed, flexible, and dynamic systems. Computation techniques have seen a quantum leap with greater integration, powerful computing engines, and versatile software stacks that are easily available and modifiable. Finally, the system integration has also seen advances in the form of management, automation, and analytics paradigms. Consequently, smart energy systems have witnessed a revolutionary transformation. The complexity has correspondingly grown exponentially. With regard to smart meters, the measurement component has to scale up to meet the demands of the evolved energy eco-system by relying on the advancements offered. The internet of things (IoT) is a key technology enabler in this scenario, and the smart meter is a key component. In recent years, metering technology has evolved in both complexity and functionality. Therefore, it must use the advances offered by IoT to deliver a new role. The internet of things (IoT) is a key technology enabler in this scenario and the smart meter a key component. In recent years, metering technology has evolved in both complexity and functionality. To deliver on its new role, it must use the advances offered by IoT. In this review, we analyze the smart meter as a combination of sensing, computing, and communication nodes for flexible and complex design paradigms. The components are, in turn, reviewed vis-\u00e0-vis the advances offered by IoT. The resultant gaps are reported for future design challenges in the conclusion. The identified gaps are the lack of usage of the full spectrum of the available technology and the lack of an inter-disciplinary approach to smart meter design."
+  },
+  {
+   "openalex": "https://openalex.org/W4381568796",
+   "doi": "https://doi.org/10.1007/s43926-023-00034-5",
+   "title": "Anomaly-based intrusion detection system for IoT application",
+   "year": 2023,
+   "date": "2023-05-30",
+   "venue": "Discover Internet of Things",
+   "type": "article",
+   "cites": 255,
+   "abstract": "Internet-of-Things (IoT) connects various physical objects through the Internet and it has a wide application, such as in transportation, military, healthcare, agriculture, and many more. Those applications are increasingly popular because they address real-time problems. In contrast, the use of transmission and communication protocols has raised serious security concerns for IoT devices, and traditional methods such as signature and rule-based methods are inefficient for securing these devices. Hence, identifying network traffic behavior and mitigating cyber attacks are important in IoT to provide guaranteed network security. Therefore, we develop an Intrusion Detection System (IDS) based on a deep learning model called Pearson-Correlation Coefficient - Convolutional Neural Networks (PCC-CNN) to detect network anomalies. The PCC-CNN model combines the important features obtained from the linear-based extractions followed by the Convolutional Neural Network. It performs a binary classification for anomaly detection and also a multiclass classification for various types of attacks. The model is evaluated on three publicly available datasets: NSL-KDD, CICIDS-2017, and IOTID20. We first train and test five different (Logistic Regression, Linear Discriminant Analysis, K Nearest Neighbour, Classification and Regression Tree,& Support Vector Machine) PCC-based Machine Learning models to evaluate the model performance. We achieve the best similar accuracy from the KNN and CART model of 98%, 99%, and 98%, respectively, on the three datasets. On the other hand, we achieve a promising performance with a better detection accuracy of 99.89% and with a low misclassification rate of 0.001 with our proposed PCC-CNN model. The integrated model is promising, with a misclassification rate (or False alarm rate) of 0.02, 0.02, and 0.00 with Binary and Multiclass intrusion detection classifiers. Finally, we compare and discuss our PCC-CNN model in comparison to five traditional PCC-ML models. Our proposed Deep Learning (DL)-based IDS outperforms traditional methods."
+  },
+  {
+   "openalex": "https://openalex.org/W2786918196",
+   "doi": "https://doi.org/10.1109/tsg.2018.2818167",
+   "title": "Review of Smart Meter Data Analytics: Applications, Methodologies, and Challenges",
+   "year": 2018,
+   "date": "2018-03-22",
+   "venue": "IEEE Transactions on Smart Grid",
+   "type": "article",
+   "cites": 1637,
+   "abstract": "The widespread popularity of smart meters enables an immense amount of fine-grained electricity consumption data to be collected. Meanwhile, the deregulation of the power industry, particularly on the delivery side, has continuously been moving forward worldwide. How to employ massive smart meter data to promote and enhance the efficiency and sustainability of the power grid is a pressing issue. To date, substantial works have been conducted on smart meter data analytics. To provide a comprehensive overview of the current research and to identify challenges for future research, this paper conducts an application-oriented review of smart meter data analytics. Following the three stages of analytics, namely, descriptive, predictive, and prescriptive analytics, we identify the key application areas as load analysis, load forecasting, and load management. We also review the techniques and methodologies adopted or developed to address each application. In addition, we also discuss some research trends, such as big data issues, novel machine learning technologies, new business models, the transition of energy systems, and data privacy and security."
+  },
+  {
+   "openalex": "https://openalex.org/W4396716085",
+   "doi": "https://doi.org/10.48550/arxiv.2405.02574",
+   "title": "A Data Mining-Based Dynamical Anomaly Detection Method for Integrating with an Advance Metering System",
+   "year": 2024,
+   "date": "2024-05-04",
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "cites": 6,
+   "abstract": "Building operations consume 30% of total power consumption and contribute 26% of global power-related emissions. Therefore, monitoring, and early detection of anomalies at the meter level are essential for residential and commercial buildings. This work investigates both supervised and unsupervised approaches and introduces a dynamic anomaly detection system. The system introduces a supervised Light Gradient Boosting machine and an unsupervised autoencoder with a dynamic threshold. This system is designed to provide real-time detection of anomalies at the meter level. The proposed dynamical system comes with a dynamic threshold based on the Mahalanobis distance and moving averages. This approach allows the system to adapt to changes in the data distribution over time. The effectiveness of the proposed system is evaluated using real-life power consumption data collected from smart metering systems. This empirical testing ensures that the system's performance is validated under real-world conditions. By detecting unusual data movements and providing early warnings, the proposed system contributes significantly to visual analytics and decision science. Early detection of anomalies enables timely troubleshooting, preventing financial losses and potential disasters such as fire incidents."
+  },
+  {
+   "openalex": "https://openalex.org/W2987793235",
+   "doi": "https://doi.org/10.1109/tii.2019.2952917",
+   "title": "LSTM Learning With Bayesian and Gaussian Processing for Anomaly Detection in Industrial IoT",
+   "year": 2019,
+   "date": "2019-11-11",
+   "venue": "IEEE Transactions on Industrial Informatics",
+   "type": "article",
+   "cites": 325,
+   "abstract": "The data generated by millions of sensors in the industrial Internet of Things (IIoT) are extremely dynamic, heterogeneous, and large scale and pose great challenges on the real-time analysis and decision making for anomaly detection in the IIoT. In this article, we propose a long short-term memory (LSTM)-Gauss-NBayes method, which is a synergy of the long short-term memory neural network (LSTM-NN) and the Gaussian Bayes model for outlier detection in the IIoT. In a nutshell, the LSTM-NN builds a model on normal time series. It detects outliers by utilizing the predictive error for the Gaussian Naive Bayes model. Our method exploits advantages of both LSTM and Gaussian Naive Bayes models, which not only has strong prediction capability of LSTM for future time point data, but also achieves an excellent classification performance of the Gaussian Naive Bayes model through the predictive error. We evaluate our approaches on three real-life datasets that involve both long-term and short-term time dependence. Empirical studies demonstrate that our proposed techniques outperform the best-known competitors, which is a preferable choice for detecting anomalies."
+  },
+  {
+   "openalex": "https://openalex.org/W4417445024",
+   "doi": "https://doi.org/10.1038/s41598-025-31007-z",
+   "title": "Cyber-resilient machine learning framework for accurate individual load forecasting and anomaly detection in smart grids",
+   "year": 2025,
+   "date": "2025-12-18",
+   "venue": "Scientific Reports",
+   "type": "article",
+   "cites": 15,
+   "abstract": "With the evolution of smart grids, accurate and secure predictions of the electricity load become crucial for efficient energy management and reliability. In this paper, a scalable and cyber-resilient methodology for electricity consumption forecasting on individual smart meter level based on machine learning and anomaly detection schemes is proposed. The proposed technique utilizes K-MEANS Clustering and Neural Networks (KMEANS-NN) to enhance Individual Load Forecasting (ILF) with reduced computational complexity and high prediction accuracy. A Principal Component Analysis based One-Class Support Vector Machine (PCA-OCSVM) model is employed as an Anomaly Detection Scheme (ADS) to identify the false data injection attacks in smart meter telemetry. The system uses five months of real-world data from [Formula: see text] smart meters gathered under the supervision of Electrical Distribution Sector (EDS) of Suez Canal Authority (SCA) in Egypt. KMEANS-NN strategy reduces significantly MAAPE by up to [Formula: see text] and cuts computational time from days to minutes. It improves forecasting accuracy across four proposed models: ARIMA, CTREE, MLP and NNETAR. To assess the cyber-security profile, [Formula: see text] of the dataset is orchestrated with scaling, ramping and random cyber-attack simulation. Proposed ADS achieves [Formula: see text] overall accuracy, [Formula: see text] sensitivity, [Formula: see text] precision, [Formula: see text] specificity and F1-score of[Formula: see text], whereas it's [Formula: see text] accurate on clean data. This integrated model offers accurate, efficient, and secure load forecasting presenting good potential for its deployment in large-scale smart grid environments."
+  },
+  {
+   "openalex": "https://openalex.org/W7171315044",
+   "doi": "https://doi.org/10.36001/phme.2026.v9i1.4944",
+   "title": "Sensor Fault Detection via Virtual Smart Heat Metering with Spatial-Temporal Graph Neural Networks",
+   "year": 2026,
+   "date": "2026-07-03",
+   "venue": "PHM Society European Conference",
+   "type": "conference-paper",
+   "cites": 0,
+   "abstract": "Sensor faults and miscalibrated sensors represent an important challenge in district heating networks, where measurement errors, drift, calibration inaccuracies, or communication issues can compromise the reliability of thermal and hydraulic monitoring. Detecting such issues in a timely manner is essential for maintaining operational efficiency and ensuring the trustworthiness of system data. A promising approach for addressing these challenges is to compare physical measurements with estimates generated by virtual sensors. Virtual sensing enables the reconstruction of unmeasured or unreliable variables using data-driven models and existing measurements, thereby providing an estimate of the expected measurement value under the current operating and environmental conditions, which can serve as reference against which anomalous or inconsistent sensor behavior can be identified. In this work, we develop a virtual-sensor\u2013based framework for sensor fault and miscalibration detection using a heterogeneous spatial\u2013temporal graph neural network (HSTGNN). The proposed model learns both the spatial relationships among sensors and the temporal dynamics of their measurements to construct accurate virtual smart heat meter outputs. To evaluate the approach, we use a controlled laboratory dataset collected at the Aalborg Smart Water Infrastructure Laboratory, which provides synchronized high-resolution measurements of flow, temperature, and pressure representative of district heating operating conditions. Experimental results demonstrate that the proposed HSTGNN improves fault detection performance compared to several baseline methods."
+  },
+  {
+   "openalex": "https://openalex.org/W4392655974",
+   "doi": "https://doi.org/10.1038/s41598-024-56126-x",
+   "title": "Anomaly detection in IoT-based healthcare: machine learning for enhanced security",
+   "year": 2024,
+   "date": "2024-03-11",
+   "venue": "Scientific Reports",
+   "type": "article",
+   "cites": 238,
+   "abstract": "Internet of Things (IoT) integration in healthcare improves patient care while also making healthcare delivery systems more effective and economical. To fully realize the advantages of IoT in healthcare, it is imperative to overcome issues with data security, interoperability, and ethical considerations. IoT sensors periodically measure the health-related data of the patients and share it with a server for further evaluation. At the server, different machine learning algorithms are applied which help in early diagnosis of diseases and issue alerts in case vital signs are out of the normal range. Different cyber attacks can be launched on IoT devices which can result in compromised security and privacy of applications such as health care. In this paper, we utilize the publicly available Canadian Institute for Cybersecurity (CIC) IoT dataset to model machine learning techniques for efficient detection of anomalous network traffic. The dataset consists of 33 types of IoT attacks which are divided into 7 main categories. In the current study, the dataset is pre-processed, and a balanced representation of classes is used in generating a non-biased supervised (Random Forest, Adaptive Boosting, Logistic Regression, Perceptron, Deep Neural Network) machine learning models. These models are analyzed further by eliminating highly correlated features, reducing dimensionality, minimizing overfitting, and speeding up training times. Random Forest was found to perform optimally across binary and multiclass classification of IoT Attacks with an approximate accuracy of 99.55% under both reduced and all feature space. This improvement was complimented by a reduction in computational response time which is essential for real-time attack detection and response."
+  },
+  {
+   "openalex": "https://openalex.org/W3026070893",
+   "doi": "https://doi.org/10.1016/j.cose.2020.101896",
+   "title": "Anomaly-based framework for detecting power overloading cyberattacks in smart grid AMI",
+   "year": 2020,
+   "date": "2020-05-23",
+   "venue": "Computers & Security",
+   "type": "article",
+   "cites": 43,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W3184933923",
+   "doi": "https://doi.org/10.1109/isgteurope52324.2021.9640122",
+   "title": "Probabilistic Forecast Combination for Anomaly Detection in Building Heat Load Time Series",
+   "year": 2021,
+   "date": "2021-10-18",
+   "venue": "IEEE PES Innovative Smart Grid Technologies Europe",
+   "type": "conference-paper",
+   "cites": 2,
+   "abstract": "We consider the problem of automated anomaly detection for building level heat load time series. An anomaly detection model must be applicable to a diverse group of buildings and provide robust results on heat load time series with low signal-to-noise ratios, several seasonalities, and significant exogenous effects. We propose to employ a probabilistic forecast combination approach based on an ensemble of deterministic forecasts in an anomaly detection scheme that classifies observed values based on their probability under a predictive distribution. We show empirically that forecast based anomaly detection provides improved accuracy when employing a forecast combination approach."
+  },
+  {
+   "openalex": "https://openalex.org/W4405044504",
+   "doi": "https://doi.org/10.1016/j.neucom.2024.129088",
+   "title": "Comparative analysis of unsupervised anomaly detection techniques for heat detection in dairy cattle",
+   "year": 2024,
+   "date": "2024-12-05",
+   "venue": "Neurocomputing",
+   "type": "article",
+   "cites": 15,
+   "abstract": "Population growth has increased the demand for meat and dairy products , making livestock , especially cattle, key to meeting this demand. This has led to an increase in herd size , complicating efficient herd management. To meet this challenge, innovative technologies, such as monitoring collars, have been developed to improve individual animal management. This research work evaluates and compares three unsupervised anomaly detection methods to identify estrus in dairy cows from intensive farms, based on daily activity data recorded by a commercial monitoring collar. Data from two different dairy farms have been used and the results have been compared by evaluating the behavior both individually and at herd level. The results obtained show a good performance of the selected techniques in the individual animal models. Thus, this research demonstrates that these techniques can be very useful tools in farm management , providing valuable information, improving productivity and, consequently, increasing the economic performance of the farm."
+  },
+  {
+   "openalex": "https://openalex.org/W3029967902",
+   "doi": null,
+   "title": "Data-driven water distribution system analysis \u2013 exploring challenges and potentials from smart meters and beyond",
+   "year": 2020,
+   "date": "2020-01-01",
+   "venue": null,
+   "type": "dissertation",
+   "cites": 1,
+   "abstract": "The availability of clean drinking water at any time is often taken for granted. However, the reliable supply of drinking water is, unfortunately, challenged by various threats, such as global warming and aging infrastructures, which put an immense pressure on the drinking water systems as we know them today. Consequently, utilities, technology providers and researchers seek to identify optimised and new approaches to maintaining and improving the quality of the delivered water. In an age of digitalisation, data-driven approaches are becoming increasingly important, as they have demonstrated various benefits for the operation and design of water distribution networks. However, the increased collection and application of the data also pose a major challenge to the water sector. This PhD developed methods to help utilities in validating and applying their data in novel ways by analysing \u2018real world\u2019 data obtained from five Danish utilities, applied in six case studies. The PhD study was sectioned into: 1) data collection; 2) data validation and reconstruction; and 3) data application. Data-collection devices such as smart meters are increasingly deployed throughout water distribution systems. When utilities introduce smart meters, the selection of sampling resolutions has a trade-off between the applicability of the collected data and transmission costs. Analysis of a district metered area with smart meters installed revealed that common sampling resolutions of between 1 and 24 hours are sufficient for water loss assessments as long as utilities have representative demand patterns of their network available. However, sampling resolutions < 1 hour are potentially important to obtain reliable water quality simulations. Automatic validation and reconstruction processing of the collected data are of paramount importance for utilities. The PhD project developed a systematic approach for categorizing anomalies. Four categories were introduced, with Type 0 describing system anomalies, Types 1 and 2 describing sensor data containing a low data quality, and Type 3 covering sensor data anomalies storing information about actual \u2013 though unusual \u2013 events appearing in the water distribution network. To identify anomalies of Types 1 and 2, seven validation tests were developed. Analysis of pressure and flow data sets from three Danish utilities revealed a large proportion of anomalies, with on average 10% missing data and up to 35% anomalies of Types 1 and 2 in a utility\u2019s pressure data sets. These high numbers also emphasised the need for reconstruction processes to generate reliable data streams that are required in data applications. An example was presented whereby artificial neural networks were used to provide missing data and to further validate dubious observations. The collection of data from water distribution systems is not a new concept, but large amounts of data (such as temperature data) are often left unused due to a lack of evidence of successful applications. To show the benefits of temperature data, a temperature model and a hydraulic model were combined to identify the status and location of valves in the network. This novel approach and field tests in the network unexpectedly revealed various anomalies of Type 0 in the utility\u2019s asset database, ultimately casting doubt on the validity of the hydraulic model. As long as such anomalies prevail in the data sets, it is not possible to apply advanced data-driven applications successfully. Another issue in the case study included a low quantity of applicable temperature data. Smart meter temperature data, potentially available in each household, can be used to overcome this challenge. In another case study, the simulated temperature throughout a district metered area showed a satisfying resemblance to smart meter temperature data (average root mean square error of 0.9 \u00baC). This highlights the potential of using smart meter temperature data for more advanced applications, such as leakage detection and valve status detection. Silo thinking is traditionally a common feature of the water sector, and the value of water supply data is thus often overlooked in external applications. In a case study, the effect of deploying heat pumps on the water distribution network mains was assessed as a supplement to the district heating system of Copenhagen. A net heat extraction potential of 20.7 MW was estimated. Moreover, this caused the share of users complying with an upper temperature limit of 12 \u00baC to increase from 41% to 81% during August. In another case study, smart meter water consumption data were linked to an urban drainage model to compare simulated wastewater flows with in-sewer observations. The in-sewer observations were found to be erroneous, and the smart meter data were deemed more valid in estimating dry weather flow than in-sewer observations. Overall, the project showed that many anomalies prevailing in the utilities\u2019 asset databases and sensor data are first discovered through the application of the data. As long as utilities cannot maintain a high level of data reliability, it is doubtful whether more sensors will increase utilities\u2019 understanding of their systems. The true potential of the data will not be unlocked until a high level of data reliability is secured. In the coming years, utilities, technology providers and researchers should together identify methods for reducing the uncertainties prevailing in asset and sensor data, making it possible for the sector to reach higher levels of digital maturity."
+  },
+  {
+   "openalex": "https://openalex.org/W4408710333",
+   "doi": "https://doi.org/10.1109/tsg.2025.3553173",
+   "title": "A Unified Model for Smart Meter Data Applications",
+   "year": 2025,
+   "date": "2025-03-21",
+   "venue": "IEEE Transactions on Smart Grid",
+   "type": "article",
+   "cites": 16,
+   "abstract": "Making adequate utilization of smart meter data is conducive to improving the energy efficiency of the power system from demand side, especially with booming artificial intelligence (AI) technology. However, most existing AI-based methods are highly incompatible to each other due to unique designs based on their respective tasks. Low compatibility will lead to duplicate modeling among similar tasks and skyrocketing implementation costs, which is not suitable for diverse and changing demand-side tasks. Although large language models provide a promising way to build the general-purpose models, they either need substantial resources for pre-training or case-by-case design for fine-tuning. Hence, there are practically rare task-generic models available for power systems. In this paper, we propose a novel unified model for smart meter data applications. Specifically, we first propose a unified model with mixture-of-expert layers to ensure sufficient model capacity in a cost-effective manner, which makes the training from scratch affordable. Then, we design an information bottleneck-based training scheme to facilitate the unified model to efficiently learn the generic knowledge. Moreover, we develop a general framework based on pre-training paradigm to formulate a uniform objective function and provide a consistent workflow for different tasks. Finally, the effectiveness and superiority of our proposed method are validated on public datasets, where the proposed unified model can be applied to load forecasting, data imputation as well as anomaly detection, and realizes comparable performance to state-of-the-art task-specific methods."
+  },
+  {
+   "openalex": "https://openalex.org/W2346720329",
+   "doi": "https://doi.org/10.1016/j.inffus.2016.04.007",
+   "title": "Spatial anomaly detection in sensor networks using neighborhood information",
+   "year": 2016,
+   "date": "2016-05-10",
+   "venue": "Information Fusion",
+   "type": "article",
+   "cites": 164,
+   "abstract": "The field of wireless sensor networks (WSNs), embedded systems with sensing and networking capability, has now matured after a decade-long research effort and technological advances in electronics and networked systems. An important remaining challenge now is to extract meaningful information from the ever-increasing amount of sensor data collected by WSNs. In particular, there is strong interest in algorithms capable of automatic detection of patterns, events or other out-of-the order, anomalous system behavior. Data anomalies may indicate states of the system that require further analysis or prompt actions. Traditionally, anomaly detection techniques are executed in a central processing facility, which requires the collection of all measurement data at a central location, an obvious limitation for WSNs due to the high data communication costs involved. In this paper we explore the extent by which one may depart from this classical centralized paradigm, looking at decentralized anomaly detection based on unsupervised machine learning. Our aim is to detect anomalies at the sensor nodes, as opposed to centrally, to reduce energy and spectrum consumption. We study the information gain coming from aggregate neighborhood data, in comparison to performing simple, in-node anomaly detection. We evaluate the effects of neighborhood size and spatio-temporal correlation on the performance of our new neighborhood-based approach using a range of real-world network deployments and datasets. We find the conditions that make neighborhood data fusion advantageous, identifying also the cases in which this approach does not lead to detectable improvements. Improvements are linked to the diffusive properties of data (spatio-temporal correlations) but also to the type of sensors, anomalies and network topological features. Overall, when a dataset stems from a similar mixture of diffusive processes precision tends to benefit, particularly in terms of recall. Our work paves the way towards understanding how distributed data fusion methods may help managing the complexity of wireless sensor networks, for instance in massive Internet of Things scenarios."
+  }
+ ]
+}

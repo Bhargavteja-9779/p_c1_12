@@ -1,0 +1,172 @@
+{
+ "query": "false alarm rate per hour detection performance evaluation",
+ "filter": null,
+ "count": 41956,
+ "results": [
+  {
+   "openalex": "https://openalex.org/W4387937774",
+   "doi": "https://doi.org/10.1177/21695067231192573",
+   "title": "A Controlled Experiment on the Impact of Intrusion Detection False Alarm Rate on Analyst Performance",
+   "year": 2023,
+   "date": "2023-09-01",
+   "venue": "Proceedings of the Human Factors and Ergonomics Society Annual Meeting",
+   "type": "article",
+   "cites": 22,
+   "abstract": "Organizations use intrusion detection systems (IDSes) to identify harmful activity among millions of computer network events. Cybersecurity analysts review IDS alarms to verify whether malicious activity occurred and to take remedial action. However, IDS systems exhibit high false alarm rates. This study examines the impact of IDS false alarm rate on human analyst sensitivity (probability of detection), precision (positive predictive value), and time on task when evaluating IDS alarms. A controlled experiment was conducted with participants divided into two treatment groups, 50% IDS false alarm rate and 86% false alarm rate, who classified whether simulated IDS alarms were true or false alarms. Results show statistically significant differences in precision and time on task. The median values for the 86% false alarm rate group were 47% lower precision and 40% slower time on task than the 50% false alarm rate group. No significant difference in analyst sensitivity was observed."
+  },
+  {
+   "openalex": "https://openalex.org/W2089588733",
+   "doi": "https://doi.org/10.1109/jstars.2015.2417756",
+   "title": "Manifold Adaptation for Constant False Alarm Rate Ship Detection in South African Oceans",
+   "year": 2015,
+   "date": "2015-04-13",
+   "venue": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+   "type": "article",
+   "cites": 81,
+   "abstract": "The detection of ships at sea is a difficult task made more so by uncooperative ships, especially when using transponder-based ship detection systems. Synthetic aperture radar (SAR) imagery provides a means of observation independent of the ships cooperation, and over the years, a vast amount of research has gone into the detection of ships using this imagery. One of the most common methods used for ship detection in SAR imagery is the cell-averaging constant false alarm rate (CA-CFAR) prescreening method. It uses a scalar threshold value to determine how bright a pixel needs to be in order to be classified as a ship, and thus inversely how many false alarms are permitted. This paper presents by a method of converting the scalar threshold into a threshold manifold. The manifold is adjusted using a simulated annealing (SA) algorithm to optimally fit to information provided by the ship distribution map, which is generated from transponder data. By carefully selecting the input solution and threshold boundaries, much of the computational inefficiencies usually associated with SA can be avoided. The proposed method was tested on six ASAR images against five other methods and had a reported detection accuracy (DA) of 85.2% with a corresponding FAR of 1.01 \u00d7 10-7."
+  },
+  {
+   "openalex": "https://openalex.org/W2060198688",
+   "doi": "https://doi.org/10.1117/12.2015322",
+   "title": "Improved detection and false alarm rejection for chemical vapors using passive hyperspectral imaging",
+   "year": 2013,
+   "date": "2013-05-29",
+   "venue": "Proceedings of SPIE, the International Society for Optical Engineering/Proceedings of SPIE",
+   "type": "conference-paper",
+   "cites": 6,
+   "abstract": "Two AIRIS sensors were tested at Dugway Proving Grounds against chemical agent vapor simulants. The primary objectives of the test were to: 1) assess performance of algorithm improvements designed to reduce false alarm rates with a special emphasis on solar effects, and 3) evaluate performance in target detection at 5 km. The tests included 66 total releases comprising alternating 120 kg glacial acetic acid (GAA) and 60 kg triethyl phosphate (TEP) events. The AIRIS sensors had common algorithms, detection thresholds, and sensor parameters. The sensors used the target set defined for the Joint Service Lightweight Chemical Agent Detector (JSLSCAD) with TEP substituted for GA and GAA substituted for VX. They were exercised at two sites located at either 3 km or 5 km from the release point. Data from the tests will be presented showing that: 1) excellent detection capability was obtained at both ranges with significantly shorter alarm times at 5 km, 2) inter-sensor comparison revealed very comparable performance, 3) false alarm rates < 1 incident per 10 hours running time over 143 hours of sensor operations were achieved, 4) algorithm improvements eliminated both solar and cloud false alarms. The algorithms enabling the improved false alarm rejection will be discussed. The sensor technology has recently been extended to address the problem of detection of liquid and solid chemical agents and toxic industrial chemical on surfaces. The phenomenology and applicability of passive infrared hyperspectral imaging to this problem will be discussed and demonstrated."
+  },
+  {
+   "openalex": "https://openalex.org/W3035525586",
+   "doi": "https://doi.org/10.1109/medcomnet49392.2020.9191549",
+   "title": "A Model-Based Approach to Anomaly Detection Trading Detection Time and False Alarm Rate",
+   "year": 2020,
+   "date": "2020-06-01",
+   "venue": "Mediterranean Communication and Computer Networking Conference (MedComNet)",
+   "type": "conference-paper",
+   "cites": 7,
+   "abstract": "The complexity and ubiquity of modern computing systems is a fertile ground for anomalies, including security and privacy breaches. In this paper, we propose a new methodology that addresses the practical challenges to implement anomaly detection approaches. Specifically, it is challenging to define normal behavior comprehensively and to acquire data on anomalies in diverse cloud environments. To tackle those challenges, we focus on anomaly detection approaches based on system performance signatures. In particular, performance signatures have the potential of detecting zero-day attacks, as those approaches are based on detecting performance deviations and do not require detailed knowledge of attack history. The proposed methodology leverages an analytical performance model and experimentation, and allows to control the rate of false positives in a principled manner. The methodology is evaluated using the TPCx-V workload, which was profiled during a set of executions using resource exhaustion anomalies that emulate the effects of anomalies affecting system performance. The proposed approach was able to successfully detect the anomalies, with a low number of false positives (precision 90%-98%)."
+  },
+  {
+   "openalex": "https://openalex.org/W4392237031",
+   "doi": "https://doi.org/10.2118/217697-ms",
+   "title": "Evaluating Profitability of Hybrid Approach for Early Stuck-Sign Detection: Analyzing False Alarms and Quantifying Reduction in Nonproductive Time",
+   "year": 2024,
+   "date": "2024-02-27",
+   "venue": "SPE/IADC Drilling Conference",
+   "type": "conference-paper",
+   "cites": 2,
+   "abstract": "This study investigates the profitability of early sign detection of stuck pipes by considering the trade-off between reducing nonproductive time (NPT) through detection and increasing NPT through false alarms. Our objectives are to propose a hybrid approach combining physics-based knowledge and data science, analyze the timing of false alarms, improve the model to minimize false alarms, and evaluate profitability by quantifying NPT reduction. Our proposed detection method combines physics-based knowledge and data science techniques, specifically capturing torque and standpipe pressure increases. First, we enhance the method by refining the model equation, learning method, and anomaly calculation method. Second, using field data from multiple wells collected over several months, we analyze the timing of false alarms and further refine the model to reduce them. Finally, to evaluate the profitability of our method, we examine the frequency of stuck incidents, NPT owing to stuck incidents, and NPT owing to false positives, and then quantify the reduction in NPT, considering both true-positive and false-positive rates. By applying our method to 11 wells, we generated approximately 130 days of stuck risk output. By determining a threshold that detects 40% of the stuck signs, we identified 37 false alarms. Analysis of these false positives revealed that nine could potentially indicate stuck signs, 23 could be disregarded by the operator or filtered out through data preprocessing, and five persist as challenging cases for the current method. Based on these findings, we further enhanced the model to reduce false alarms and successfully reduced the count to 11. In addition, our profitability calculation, based on NPT and considering the trade-off between true positives and false positives, demonstrates the potential for a reduction of several hours per year. Furthermore, implementing stuck sign detection is expected to lead to cost savings associated with bottom hole assembly losses, fishing, and sidetrack operations. The novelty of our research lies in evaluating the profitability of early stuck sign detection by analyzing false alarms using multiple wells and long-term data. This analysis enables us to enhance the detection model and demonstrate the profitability of the proposed hybrid approach. Our study emphasizes the importance of considering both the true-positive and false-positive rates to enhance and evaluate the performance of early stuck sign detection methods."
+  },
+  {
+   "openalex": "https://openalex.org/W2781556396",
+   "doi": "https://doi.org/10.1212/wnl.0000000000004893",
+   "title": "Automated real-time detection of tonic-clonic seizures using a wearable EMG device",
+   "year": 2018,
+   "date": "2018-01-06",
+   "venue": "Neurology",
+   "type": "article",
+   "cites": 196,
+   "abstract": "OBJECTIVE: To determine the accuracy of automated detection of generalized tonic-clonic seizures (GTCS) using a wearable surface EMG device. METHODS: We prospectively tested the technical performance and diagnostic accuracy of real-time seizure detection using a wearable surface EMG device. The seizure detection algorithm and the cutoff values were prespecified. A total of 71 patients, referred to long-term video-EEG monitoring, on suspicion of GTCS, were recruited in 3 centers. Seizure detection was real-time and fully automated. The reference standard was the evaluation of video-EEG recordings by trained experts, who were blinded to data from the device. Reading the seizure logs from the device was done blinded to all other data. RESULTS: The mean recording time per patient was 53.18 hours. Total recording time was 3735.5 hours, and device deficiency time was 193 hours (4.9% of the total time the device was turned on). No adverse events occurred. The sensitivity of the wearable device was 93.8% (30 out of 32 GTCS were detected). Median seizure detection latency was 9 seconds (range -4 to 48 seconds). False alarm rate was 0.67/d. CONCLUSIONS: The performance of the wearable EMG device fulfilled the requirements of patients: it detected GTCS with a sensitivity exceeding 90% and detection latency within 30 seconds. CLASSIFICATION OF EVIDENCE: This study provides Class II evidence that for people with a history of GTCS, a wearable EMG device accurately detects GTCS (sensitivity 93.8%, false alarm rate 0.67/d)."
+  },
+  {
+   "openalex": "https://openalex.org/W2541795188",
+   "doi": "https://doi.org/10.1109/iembs.2004.1403098",
+   "title": "Evaluation of a BSS algorithm for artifacts rejection in epileptic seizure detection",
+   "year": 2005,
+   "date": "2005-03-21",
+   "venue": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)",
+   "type": "conference-paper",
+   "cites": 10,
+   "abstract": "A data efficient blind sources separation (BSS) algorithm has been applied to preprocess intracranial EEG (ECoG) for artifact rejection. After artifacts correction a recurrence time statistics T1 feature was evaluated from the 'cleaned' data. Seizure detection performance was compared between BSS preprocessing and without preprocessing. Test results show that in a data set, for a detection rate of 96%, the false alarm rate dropped from 0.13 per hour without BSS preprocessing to 0.08 with preprocessing. For the other set of data, the false alarm rate dropped from 0.34 to 0.21 at a detection rate of 100%."
+  },
+  {
+   "openalex": "https://openalex.org/W3091216692",
+   "doi": "https://doi.org/10.6028/nist.tn.2118",
+   "title": "False Alarm Testing for Radiation Detection Systems",
+   "year": 2020,
+   "date": "2020-10-02",
+   "venue": null,
+   "type": "report",
+   "cites": 4,
+   "abstract": "An operator of a radiation detection system that displays a high rate of false alarms may become desensitized to these alarms.This action is known as alarm fatigue and can have detrimental results as the operator may cease to respond to what may be valid alarms.To mitigate these adverse outcomes, an agency may seek to procure radiation detection systems with adequately low false alarm rates.In developing a test to confirm that the system satisfies the stated false alarm rate threshold requirement, the number of required observations or test duration is often an initial question.In this chapter, we demonstrate how an experimenter can develop a successful false alarm test with two provided pieces of information: the false alarm rate threshold requirement and a statement of acceptable risk or required confidence.Using the statistical hypothesis testing framework, we illustrate the meaning of risk and confidence from both the consumer's and producer's perspectives and provide guidance on selecting an informed false alarm rate threshold requirement and statement of acceptable risk.We consider the binomial and Poisson probability models that apply to testing of radiation detection systems that are employed with and without occupancy sensors, respectively.From these probability models we define the power of a test and demonstrate how an experimenter can use a power curve to balance the tradeoffs between test burden (costs) and producer risk (type II error) while satisfying the required confidence.We provide sample size and acceptance criterion tables to define fixed sample tests that satisfy a variety of false alarm thresholds and levels of acceptable risk for systems with and without occupancy sensors."
+  },
+  {
+   "openalex": "https://openalex.org/W1591441319",
+   "doi": null,
+   "title": "Field-of-view, detection range, and false alarm trade-offs in vision-based aircraft detection",
+   "year": 2012,
+   "date": "2012-09-23",
+   "venue": "QUT ePrints (Queensland University of Technology)",
+   "type": "article",
+   "cites": 14,
+   "abstract": "This paper presents a survey of previously presented vision based aircraft detection flight test, and then presents new flight test results examining the impact of camera field-of view choice on the detection range and false alarm rate characteristics of a vision-based aircraft detection technique. Using data collected from approaching aircraft, we examine the impact of camera fieldof-view choice and confirm that, when aiming for similar levels of detection confidence, an improvement in detection range can be obtained by choosing a smaller effective field-of-view (in terms of degrees per pixel)."
+  },
+  {
+   "openalex": "https://openalex.org/W2912220142",
+   "doi": "https://doi.org/10.22489/cinc.2018.108",
+   "title": "Supervised Transfer Learning for Personalized Heart Rate Based Epileptic Seizure Detection",
+   "year": 2018,
+   "date": "2018-12-30",
+   "venue": "Computing in cardiology",
+   "type": "conference-paper",
+   "cites": 2,
+   "abstract": "Seizure alarm systems can improve the quality of life of refractory epilepsy patients, but require seizure detection algorithms.State-of-the-art heart rate-based algorithms often use a patient-independent approach due to insufficient annotated patient data, which does not allow a robust personalization.Ictal heart rate changes are however patient-dependent and could benefit from personalized algorithms.In this study, we propose to personalize seizure detection by using supervised transfer learning, which allows to train a classifier with a limited amount of data by using a reference classifier.It is evaluated on 207 hours of data including 74 seizures from 6 patients.An optimal performance of 89.8% sensitivity was achieved with on average 1.1 false alarms per hour, which is 54% false alarms less than the reference patient-independent classifier by using a limited amount of patient data.This shows that transfer learning can be used for a fast and robust personalization of detection algorithms."
+  },
+  {
+   "openalex": "https://openalex.org/W4213234709",
+   "doi": "https://doi.org/10.1111/jce.15417",
+   "title": "A wearable cardioverter defibrillator with a low false alarm rate",
+   "year": 2022,
+   "date": "2022-02-28",
+   "venue": "Journal of Cardiovascular Electrophysiology",
+   "type": "article",
+   "cites": 19,
+   "abstract": "INTRODUCTION: A wearable cardioverter defibrillator (WCD) is indicated in appropriate patients to reduce the risk for sudden cardiac death. Challenges for patients wearing a WCD have been frequent false shock alarms primarily due to electrocardiogram noise and wear discomfort. The objective of this study was to test a contemporary WCD designed for reduced false shock alarms and improved comfort. METHODS: One hundred and thirty patients with left ventricular ejection fraction \u226440% and an active implantable cardioverter defibrillator (ICD) were fitted with the ASSURE WCD (Kestra Medical Technologies) and followed for 30 days. WCD detection was enabled and shock alarm markers recorded, but shocks and shock alarms were disabled. All WCD episodes and ICD ventricular tachycardia/ventricular fibrillation (VT/VF) episodes were adjudicated. The primary endpoint was the false-positive shock alarm rate with a performance goal of 1 every 3.4 days (0.29 per patient-day). RESULTS: Of 163 WCD episodes, 4 were VT/VF and 159 non-VT/VF (121 rhythms with noise, 32 uncertain with noise, 6 atrial flutter without noise). Only three false-positive shock alarm markers were recorded; one false-positive shock alarm every 1333 patient-days (0.00075 per patient-day, 95% confidence interval: 0.00015-0.00361; p < .001). No ICD recorded VT/VF episodes meeting WCD detection criteria (\u2265170 bpm for \u226520 s) were missed by the WCD during 3501 patient-days of use. Median wear was 31.0 days (interquartile range [IQR] 2.0) and median daily use 23.0 h (IQR 1.7). Adverse events were mostly mild: skin irritation (19.4%) and musculoskeletal discomfort (8.5%). CONCLUSION: The ASSURE WCD demonstrated a low false-positive shock alarm rate, low patient-reported discomfort, and no serious adverse events."
+  },
+  {
+   "openalex": "https://openalex.org/W7127593857",
+   "doi": "https://doi.org/10.1109/csr69374.2026.11759798",
+   "title": "Evaluating False Alarm and Missing Attacks in CAN IDS",
+   "year": 2026,
+   "date": "2026-08-01",
+   "venue": "IEEE International Conference on Cyber Security and Resilience (CSR)",
+   "type": "conference-paper",
+   "cites": 0,
+   "abstract": "Modern vehicles rely on electronic control units (ECUs) interconnected through the Controller Area Network (CAN), making in-vehicle communication a critical security concern. Machine learning (ML)-based intrusion detection systems (IDS) are increasingly deployed to protect CAN traffic, yet their robustness against adversarial manipulation remains largely unexplored. We present a systematic adversarial evaluation of CAN IDS using the ROAD dataset, comparing four shallow learning models with a deep neural network-based detector. Using protocol-compliant, payload-level perturbations generated via FGSM, BIM and PGD, we evaluate adversarial effects on both benign and malicious CAN frames. While all models achieve strong baseline performance under benign conditions, adversarial perturbations reveal substantial vulnerabilities. Although shallow and deep models are robust to false-alarm induction, with the deep neural network (DNN) performing best on benign traffic, all architectures suffer significant increases in missed attacks. Notably, under gradient-based attacks, the shallow model extra trees (ET) demonstrates improved robustness to missed-attack induction compared to the other models. Our results demonstrate that adversarial manipulation can simultaneously trigger false alarms and evade detection, underscoring the need for adversarial robustness evaluation in safety-critical automotive IDS."
+  },
+  {
+   "openalex": "https://openalex.org/W2946354270",
+   "doi": "https://doi.org/10.1117/12.2518778",
+   "title": "\u00b5ChemLab: twenty years of developing CBRNE detection systems with low false alarm rates",
+   "year": 2019,
+   "date": "2019-05-17",
+   "venue": "Chemical, Biological, Radiological, Nuclear, and Explosives (CBRNE) Sensing",
+   "type": "conference-paper",
+   "cites": 3,
+   "abstract": "Gas Chromatography (GC) is routinely used in the laboratory to temporally separate chemical mixtures into their constituent components for improved chemical identification. This paper will provide a overview of more than twenty years of development of one-dimensional field-portable micro GC systems, highlighting key experimental results that illustrate how a reduction in false alarm rate (FAR) is achieved in real-world environments. Significantly, we will also present recent results on a micro two-dimensional GC (micro GCxGC) technology. This ultra-small system consists of microfabricated columns, NanoElectroMechanical System (NEMS) cantilever resonators for detection, and a valve-based stop-flow modulator. The separation of a 29-component polar mixture in less than 7 seconds is demonstrated along with peak widths in the second dimension ranging from 10-60 ms. For this system, a peak capacity of just over 300 was calculated for separation in about 6 s. This work has important implications for field detection, to drastically reduce FAR and significantly improve chemical selectivity and identification. This separation performance was demonstrated with the NEMS resonator and bench scale FID. But other detectors, suitably fast and sensitive can work as well. Recent research has shown that the identification power of GCxGC-FID can match that of GC-MS. This result indicates a path to improved size, weight, power, and performance in micro GCxGC systems outfitted with relatively non-specific, lightweight detectors. We will briefly discuss the performance of possible options, such as the pulsed discharge helium ionization detector (PDHID) and miniature correlation ion mobility spectrometer (mini-CIMS)."
+  },
+  {
+   "openalex": "https://openalex.org/W2169516439",
+   "doi": "https://doi.org/10.1109/icassp.1999.759797",
+   "title": "Detection of target speakers in audio databases",
+   "year": 1999,
+   "date": "1999-01-01",
+   "venue": "IEEE International Conference on Acoustics Speech and Signal Processing",
+   "type": "conference-paper",
+   "cites": 17,
+   "abstract": "The problem of speaker detection in audio databases is addressed in this paper. Gaussian mixture modeling is used to build target speaker and background models. A detection algorithm based on a likelihood ratio calculation is applied to estimate target speaker segments. Evaluation procedures are defined in detail for this task. Results are given for different subsets of the HUB4 broadcast news database. For one target speaker, with the data restricted to high quality speech segments, the segment miss rate is approximately 7%. For unrestricted data, the segment miss rate is approximately 27%. In both cases the segment false alarm rate is 4 or 5 per hour. For two target speakers with unrestricted data, the segment miss rate is approximately 63% with about 27 segment false alarms per hour. The decrease in performance for two target speakers is largely associated with short speech segments in the two target speaker test data which are undetectable in the current configuration of the detection algorithm."
+  },
+  {
+   "openalex": "https://openalex.org/W2776522021",
+   "doi": "https://doi.org/10.48550/arxiv.1712.09776",
+   "title": "Deep Architectures for Automated Seizure Detection in Scalp EEGs",
+   "year": 2017,
+   "date": "2017-12-28",
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "cites": 56,
+   "abstract": "Automated seizure detection using clinical electroencephalograms is a challenging machine learning problem because the multichannel signal often has an extremely low signal to noise ratio. Events of interest such as seizures are easily confused with signal artifacts (e.g, eye movements) or benign variants (e.g., slowing). Commercially available systems suffer from unacceptably high false alarm rates. Deep learning algorithms that employ high dimensional models have not previously been effective due to the lack of big data resources. In this paper, we use the TUH EEG Seizure Corpus to evaluate a variety of hybrid deep structures including Convolutional Neural Networks and Long Short-Term Memory Networks. We introduce a novel recurrent convolutional architecture that delivers 30% sensitivity at 7 false alarms per 24 hours. We have also evaluated our system on a held-out evaluation set based on the Duke University Seizure Corpus and demonstrate that performance trends are similar to the TUH EEG Seizure Corpus. This is a significant finding because the Duke corpus was collected with different instrumentation and at different hospitals. Our work shows that deep learning architectures that integrate spatial and temporal contexts are critical to achieving state of the art performance and will enable a new generation of clinically-acceptable technology."
+  }
+ ]
+}

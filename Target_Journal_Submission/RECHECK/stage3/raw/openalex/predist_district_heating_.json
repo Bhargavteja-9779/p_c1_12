@@ -1,0 +1,139 @@
+{
+ "query": "PreDist district heating",
+ "filter": null,
+ "count": 12,
+ "results": [
+  {
+   "openalex": "https://openalex.org/W7105749811",
+   "doi": "https://doi.org/10.5281/zenodo.17522255",
+   "title": "PreDist Dataset - Operational data of district heating substations labelled with faults and maintenance information",
+   "year": 2025,
+   "date": "2025-11-04",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "type": "dataset",
+   "cites": 2,
+   "abstract": "This dataset consists of operational data and labels based on incident reports and maintenance data of district heating substations of enercity Netz GmbH. The labels are available as a list of \u2018disturbances\u2019 as well as a list of fault reports including a short description and problem category, which can be used to develop (early) fault detection models for district heating substations. In addition, fault labels and monitoring potential were added to the reports where possible. The dataset is published together with the paper \"Enabling Predictive Maintenance in District Heating Substations: A Labelled Dataset and Fault Detection Evaluation Framework based on Service Data\", which explains the dataset in detail. When referring to this dataset, please cite the paper mentioned in the related work section. The PreDist dataset contains time series of 93 district heating substations from two manufacturers, M1 and M2, each time series spanning different lengths of time, depending on when the substation was \u2018digitised\u2019. Both sub-datasets contain a list of faults (based on incident reports), a list of disturbances (incident reports, and corrective and preventive maintenance tasks and activities), feature descriptions and a list of pre-defined \u2018normal events\u2019, which can be used in addition to the faults to evaluate normal behaviour models."
+  },
+  {
+   "openalex": "https://openalex.org/W7105746820",
+   "doi": "https://doi.org/10.5281/zenodo.17522254",
+   "title": "PreDist Dataset - Operational data of district heating substations labelled with faults and maintenance information",
+   "year": 2026,
+   "date": "2026-04-10",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "type": "dataset",
+   "cites": 0,
+   "abstract": "This dataset consists of operational data and labels based on incident reports and maintenance data of district heating substations of enercity Netz GmbH. The labels are available as a list of \u2018disturbances\u2019 as well as a list of fault reports including a short description and problem category, which can be used to develop (early) fault detection models for district heating substations. In addition, fault labels and monitoring potential were added to the reports where possible. The dataset is published together with the paper \"Enabling Predictive Maintenance in District Heating Substations: A Labelled Dataset and Fault Detection Evaluation Framework based on Service Data\", which explains the dataset in detail. When referring to this dataset, please cite the paper mentioned in the related work section. The PreDist dataset contains time series of 93 district heating substations from two manufacturers, M1 and M2, each time series spanning different lengths of time, depending on when the substation was \u2018digitised\u2019. Both sub-datasets contain a list of faults (based on incident reports), a list of disturbances (incident reports, and corrective and preventive maintenance tasks and activities), feature descriptions and a list of pre-defined \u2018normal events\u2019, which can be used in addition to the faults to evaluate normal behaviour models.Changes in version 2:A list of all substations with associated configuration type has been added to each manufacturer (file 'configuration_types.csv'). The readme file has been updated accordingly and includes a short description of the different configuration types present in the dataset."
+  },
+  {
+   "openalex": "https://openalex.org/W7162615597",
+   "doi": null,
+   "title": "Role of artificial intelligence in improving the operation of district heating systems in Finland",
+   "year": 2026,
+   "date": "2026-01-01",
+   "venue": "LUTPub (LUT University)",
+   "type": "dissertation",
+   "cites": 0,
+   "abstract": "District heating (DH) systems play an important role in providing efficient heat supply for residential and industrial buildings, particularly in Finland because of its cold climate zone. With increasing digitalization of energy systems, operational data from DH networks enables the development of data-driven monitoring methods for improving system reliability and anomaly detection. This thesis investigates the use of Artificial Intelligence (AI)-based predictive models for anomaly detection in DH systems. Particularly, linear regression and decision tree models are applied to predict system behavior using operational variables. Anomalies are detected using Shewhart Statistical Process Control (SPC) charts applied to residual signals between measured and predicted values. The proposed approach is also compared with a traditional threshold-based anomaly detection method. The case study is conducted using operational time-series data from the PreDist dataset obtained from a German district heating operator. The results show that both machine learning models were capable of detecting anomalies in DH operation, with the decision tree model detecting a larger number of anomaly samples and the linear regression model producing fewer false alarms compared to the traditional model. Overall, the study demonstrates the potential of AI-based methods for supporting operational monitoring in DH systems."
+  },
+  {
+   "openalex": "https://openalex.org/W7162230853",
+   "doi": null,
+   "title": "Fr\u00fchzeitige Fehlererkennung in Hausstationen: Erfahrungen aus dem Projekt PreDist",
+   "year": 2026,
+   "date": "2026-04-29",
+   "venue": "Fraunhofer-Publica (Fraunhofer-Gesellschaft)",
+   "type": "other",
+   "cites": 0,
+   "abstract": "Der Vortrag \"Fr\u00fchzeitige Fehlererkennung in Hausstationen: Erfahrungen aus dem Projekt PreDist\" stellt Ergebnisse aus dem Forschungsprojekt PreDist vor, das pr\u00e4diktive Instandhaltung in Fernw\u00e4rme-Hausstationen adressiert. Grundlage bildet der \u00f6ffentlich verf\u00fcgbare PreDist-Datensatz (Zenodo: 10.5281/zenodo.17522254). Auf dieser Basis wird der EnergyFaultDetector, ein open-source-basiertes Python-Framework, zur automatisierten Anomalieerkennung evaluiert. Der EnergyFaultDetector nutzt einen ARCANA-basierten Autoencoder und erzeugt interpretierbare, fr\u00fchzeitige Alarme. In der Evaluation werden eine Genauigkeit von 98 % im Normalbetrieb, ein F\u2080.\u2085-Score von 0,83 (Precision 0,92; Recall 0,60) sowie eine durchschnittliche Fr\u00fcherkennung von etwa vier Tagen vor Kundenmeldung erreicht. Drei exemplarische Anwendungsf\u00e4lle demonstrieren die Praxistauglichkeit der ARCANA-basierten Ursachenzuordnung. Das zugeh\u00f6rige Paper \"\u201eEnabling predictive maintenance in district heating substations: A labelled dataset and fault detection evaluation framework based on service data\" (Energy, 2026, 141178) liefert die wissenschaftliche Grundlage und skizziert weitere Schritte, insbesondere die Integration physikalischer Modelle (Greybox-Ans\u00e4tze), um die Erkennungsleistung weiter zu steigern und pr\u00e4diktive Wartung in der Praxis zu etablieren."
+  },
+  {
+   "openalex": "https://openalex.org/W7166516896",
+   "doi": "https://doi.org/10.1016/j.egyai.2026.100824",
+   "title": "From lab to practice: Towards a substation-invariant self-supervised transformer for low-label fault detection in district heating",
+   "year": 2026,
+   "date": "2026-06-29",
+   "venue": "Energy and AI",
+   "type": "article",
+   "cites": 1,
+   "abstract": "Automated Fault Detection and Diagnosis (FDD) in District Heating (DH) is essential for reducing return temperatures, improving operational efficiency, and supporting the transition to low-temperature, low-carbon integrated energy systems. Practical deployment remains difficult because labelled fault data are scarce and heterogeneous across domains, while unlabelled operational data are abundant, creating a practical mismatch. To address this, we propose a Self-supervised Time Series Transformer (STST) for low-label FDD using routinely available primary-side measurements. We evaluate the method on six datasets spanning laboratory fault emulations, simulation, and real-world DH networks. The results show that primary-side temperatures contain strong fault-discriminative information, while flow measurements add sensitivity to hydraulically driven faults. The proposed method performs competitively in scarce-label and heterogeneous-field settings, achieving F 1 values between 0.77 and 0.98. Cross-domain experiments indicate that fault-relevant structure is transferable across substations within the same network, although transfer remains asymmetric across networks. Overall, the results suggest that self-supervised pre-training and regularised fine-tuning can improve transformer-based DH fault detection under stricter field conditions, while CNN-based and hybrid baselines remain highly competitive in cleaner or more separable regimes. Practical deployment across new networks, therefore, still requires attention to source\u2013target compatibility, local validation, and remaining domain shift."
+  },
+  {
+   "openalex": "https://openalex.org/W4411919447",
+   "doi": "https://doi.org/10.1016/j.energy.2025.137210",
+   "title": "Prioritisation of faults in district heating substations: Towards predictive maintenance and optimised operation",
+   "year": 2025,
+   "date": "2025-07-02",
+   "venue": "Energy",
+   "type": "article",
+   "cites": 12,
+   "abstract": "Effectively detecting and handling faults in district heating substations is vital to ensure the security of heat supply and improve system efficiency. This is a challenging task due to the growing number of substations and limited monitoring and service personnel. Digitalisation on the demand side offers an opportunity to develop data-driven methods for automatic fault detection, enabling utilities to optimise maintenance interventions across multiple customers. A variety of different faults can occur in substations, which can reflect differently on operational data. It is then necessary to prioritise faults to address the most relevant ones in developing adequate detection methods and supporting operators in their Operation and Maintenance (O&M) processes. Failure Modes and Effects Analysis (FMEA) is a widely used methodology to prioritise potential failures, but it misses aspects relevant to O&M. In this study, we propose an adaptation of the original FMEA for the prioritisation of faults with focus on O&M optimisation. The methodology uses a Maintenance Priority Number (MPN) for the ranking of faults based on severity, occurrence, monitoring potential and maintenance capability of the fault. Severe and frequent faults, which have a potential to be monitored and maintained yield the highest MPNs and should be in focus from an O&M perspective. Using the proposed methodology the most relevant faults for predictive maintenance in substations in Germany have been identified. These are the contamination of screening devices, pump failures and fouling of heat exchangers. These faults should be in focus when developing automatic fault detection and diagnosis methods."
+  },
+  {
+   "openalex": "https://openalex.org/W7141782287",
+   "doi": null,
+   "title": "Predictive maintenance of district heating substations with the gray box method Pr\u00e4diktive Instandhaltung von Fernw\u00e4rme-Hausstationen mit Grey-Box-Verfahren",
+   "year": 2025,
+   "date": "2025-01-01",
+   "venue": "Fraunhofer-Publica (Fraunhofer-Gesellschaft)",
+   "type": "article",
+   "cites": 0,
+   "abstract": "Das Projekt PreDist nutzt digitale Methoden, um die lnstandhaltung van Hausstationen zu optimieren. Durch Feldtests und Laboruntersuchungen werden verbesserte Verfahren zur Fehlerdiagnose und -frOherkennung entwickelt. Die Ergebnisse fordern die digitale Transformation van Warmenetzen. Fernwarme gilt als eine Schllisseltechnologie fi.ir eine nachhaltige und umweltschonende thermische Energieversorgung von Gebauden."
+  },
+  {
+   "openalex": "https://openalex.org/W7159838334",
+   "doi": "https://doi.org/10.1016/j.energy.2026.141178",
+   "title": "Enabling predictive maintenance in district heating substations: A labelled dataset and fault detection evaluation framework based on service data",
+   "year": 2026,
+   "date": "2026-04-30",
+   "venue": "Energy",
+   "type": "article",
+   "cites": 6,
+   "abstract": "Early detection of faults in district heating substations is imperative to reduce return temperatures and enhance efficiency. However, progress in this domain has been hindered by the limited availability of public, labelled datasets. We present an open-source framework combining a service-report-validated public dataset, an evaluation method based on accuracy, reliability, and earliness, and baseline results implemented with EnergyFaultDetector, an open-source Python framework developed for automated anomaly detection in operational data from energy systems. The dataset contains time series of operational data from 93 substations across two manufacturers, annotated with a list of disturbances due to faults and maintenance actions, a set of normal-event examples and detailed fault metadata. We evaluate EnergyFaultDetector models, adapted and configured for district heating substations, using three metrics: accuracy for recognising normal behaviour, an eventwise F-score for reliable fault detection with few false alarms, and earliness for early detection. The framework also supports root cause analysis using ARCANA, a feature-attribution method for autoencoders. We demonstrate three use cases to assist operators in interpreting anomalies and identifying underlying faults. The models achieve high normal-behaviour accuracy (0.98) and eventwise F 0 . 5 of 0.83 and could detect 60% of the faults in the dataset before the customer reported a problem, with an average lead time of 3 to 5 days. Integrating an open dataset, metrics, open-source code, and baselines establishes a reproducible, fault-centric benchmark with operationally meaningful evaluation, enabling consistent comparison and development of early fault detection and diagnosis methods for district heating substations."
+  },
+  {
+   "openalex": "https://openalex.org/W7164143244",
+   "doi": "https://doi.org/10.1016/j.segy.2026.100256",
+   "title": "Challenges in detection of heating curve misconfiguration: An empirical study",
+   "year": 2026,
+   "date": "2026-05-01",
+   "venue": "Smart Energy",
+   "type": "article",
+   "cites": 1,
+   "abstract": "District heating networks require well-adjusted heating curves to ensure efficient heating while maintaining indoor comfort. Misconfigured heating curves can lead to insufficient heating or energy waste, yet determining when an adjustment is needed remains challenging. This study evaluates two data-driven methods for identifying substations that require heating curve updates and demonstrates why, under current data and labeling conditions, they largely fail to provide reliable signals for heating curve misalignment. First, we use the Prophet model to analyze return temperature trends, assuming that persistent deviations indicate a mismatch between supply temperature and building demand. Second, we train a conditional autoencoder (CAE) as a normal behavior model to detect anomalies before customers report insufficient heat. The results show that the Prophet model is only reliable for certain substations. Its performance varies widely and often fails to capture complex patterns. The CAE successfully detects technical hardware faults, such as safety valve malfunctions that cause abrupt physical inconsistencies. However, incorrect heating curve settings usually result in gradual drifts within normal system temperature ranges rather than sudden anomalies. Consequently, the CAE interprets the suboptimal settings as normal behavior. Key challenges include a lack of preventive maintenance data, since models are trained primarily on customer reports rather than operator interventions. Furthermore, data gaps and substation-specific models that overfit reduce the robustness of network-wide detection. These findings suggest that identifying misaligned heating curves requires more than just detecting abrupt sensor changes and highlighting the need for datasets that incorporate operator-led interventions and richer labels."
+  },
+  {
+   "openalex": "https://openalex.org/W7138863801",
+   "doi": "https://doi.org/10.3390/s26061915",
+   "title": "Survival Models for Predictive Maintenance and Remaining Useful Life in Sensor-Enabled Smart Energy Networks: A Review",
+   "year": 2026,
+   "date": "2026-03-18",
+   "venue": "Sensors",
+   "type": "review",
+   "cites": 2,
+   "abstract": "Smart energy networks, including electricity distribution and district heating, are increasingly operated as sensor-enabled infrastructures where maintenance decisions must be made under heterogeneous and time-varying operating conditions. In these settings, time-to-event data are rarely complete; preventive actions and limited observation horizons routinely introduce censoring and truncation, so models and validation procedures must account for partially observed lifetimes to avoid biased inference and misleading performance estimates. This review surveys survival models for predictive maintenance (PdM) and remaining useful life (RUL) estimation, spanning non-parametric, semi-parametric, parametric, and learning-based approaches, with emphasis on censoring-aware formulations and the use of static and time-varying covariates derived from sensor, inspection, and contextual information. A structured taxonomy and a systematic mapping of model families to data types, core assumptions (proportional hazards versus parametric distributional structure), and decision-oriented outputs such as risk ranking, horizon failure probabilities, and RUL distributions are presented. Evaluation practice is also synthesized by covering discrimination metrics, censoring-aware RUL accuracy measures, and probabilistic assessment via proper scoring rules, including the time-dependent Brier score and Integrated Brier Score (IBS). The review provides researchers and practitioners with a practical guide to selecting, fitting, and evaluating survival models for risk-informed maintenance planning in smart energy networks."
+  },
+  {
+   "openalex": "https://openalex.org/W7220716421",
+   "doi": "https://doi.org/10.48550/arxiv.2610.05409",
+   "title": "BeliefGraph-JEPA: Structured Latent World Models for Action-Conditioned Time Series",
+   "year": 2026,
+   "date": "2026-10-04",
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "cites": 0,
+   "abstract": "Action-conditioned time-series forecasting requires accounting for how future actions and exogenous forcings influence multiple targets through partially observed effects with different delays and persistence. Direct conditioning leaves the evolution and target-specific influence of these effects implicit in the predictor, while static relational graphs specify connections without tracking evolving effects. This motivates representing future-driver influence through structured latent states that evolve over the forecast horizon and route information to individual targets. We introduce BeliefGraph-JEPA, a structured latent world model that factorizes driver influence into typed latent-effect states. These states are rolled forward under future drivers and routed through a graph to target-specific nodes, forming the predictive base of a joint-embedding predictive architecture. A capacity-controlled residual supplements this base with direct driver information. On four multi-target clinical, agricultural, environmental, and industrial systems, the framework outperforms a range of pretrained and supervised known-future-covariate baselines. Matched controls isolate latent dynamics, future rollout, graph routing, and residual capacity; future rollout and graph-first residual routing improve forecasting across all four systems."
+  },
+  {
+   "openalex": "https://openalex.org/W7216411173",
+   "doi": "https://doi.org/10.48550/arxiv.2610.01842",
+   "title": "On the Divergence of Accuracy and Mechanism Consistency in Time Series World Models",
+   "year": 2026,
+   "date": "2026-10-01",
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "cites": 1,
+   "abstract": "A time series world model (TSWM) predicts a controlled system's state from its observed history and planned actions and exogenous inputs. Current approaches build forecasters with actions as covariates, trained and evaluated on prediction error under the executed plan. Yet world models compare unexecuted plans, but their responses to changed plans remain untested. We ask which design choices matter and whether accurate forecasters respond to changed plans as real systems do. We address both with a formalization and benchmark. The formalization separates state, actions and exogenous inputs, distinguishes continuous, mode and event actions, and introduces mechanism consistency, a metric built on declared action-state relations with known directions, such as a vasopressor raising blood pressure: it checks whether shifting an action moves the forecast in the declared direction. The benchmark consolidates eight public datasets with real actions from engineered infrastructure and clinical care, varying prediction space, plan fusion and plan encoding across seven backbones and five seeds. First, a frozen latent prediction space lowers MAE by 9.9% over observation space and gated output fusion lowers it by 12.7% over input concatenation on average, with both improving all eight datasets; temporal plan encoding changes average MAE by at most 2.2%. Second, prediction error and mechanism consistency diverge: the lowest-error configuration is at or below chance in consistency on four of five datasets with declared mechanisms, and no design choice avoids this. Finally, directional supervision, a loss penalizing the wrong-signed part of the response to a shifted action, significantly raises consistency on penalized mechanisms with no change in MAE. Together they give TSWMs a recipe: a frozen latent space and output-side fusion for accuracy, and a training objective for mechanism consistency."
+  }
+ ]
+}

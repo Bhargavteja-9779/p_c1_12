@@ -1,0 +1,227 @@
+{
+ "query": "anomaly detection evaluation false alarms",
+ "filter": "from_publication_date:2025-11-01",
+ "count": 17689,
+ "results": [
+  {
+   "openalex": "https://openalex.org/W7203687795",
+   "doi": "https://doi.org/10.48550/arxiv.2608.15090",
+   "title": "Distribution-free false-alarm calibration and chance-corrected spatial evaluation for industrial anomaly detection",
+   "year": 2026,
+   "date": "2026-08-15",
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "cites": 0,
+   "abstract": "Studies of industrial visual inspection commonly report the area under the receiver operating characteristic curve (AUROC) and the overlap between anomaly maps and defect masks. Neither measure specifies the false-alarm rate at a selected threshold, while recurrent defect locations and mask geometry can inflate overlap. We combine a distribution-free upper tolerance threshold with a paired-minus-crossed spatial test. This test compares each detector's score-contributing locations with the matched defect mask and with masks from other images; the difference in rates defines spatial-evidence lift relative to the empirical chance-overlap rate. We evaluate three detectors on 120 point-defect images from three ISP-AD modalities and three fixed data splits. Of 378 alarms, 230 overlap the matched mask. Paired and crossed rates are nevertheless similar in eight of nine detector--modality cells; only DINOv2--ASM has a positive 95\\% bootstrap lower bound (lift 0.259, 95\\% interval 0.159--0.347). On the independent Magnetic Tile Defect dataset, the same analysis gives lifts of 0.203 (0.169--0.236) for Wide ResNet-50 (WRN50) patch memory and 0.231 (0.202--0.262) for Vision Transformer B/16 (ViT-B/16) patch memory, with one-sided permutation $p=10^{-5}$ for both. When crossed masks are restricted to the same defect class, the lifts remain 0.185 and 0.210. Exact sample planning shows that, with 150 calibration normals, a 95\\%-confidence distribution-free claim is supported only for target false-positive rates of 1.98\\% or higher; a 1\\% target requires at least 299 normals. The results support reporting operating-point performance and chance-corrected spatial evidence alongside AUROC and raw mask overlap."
+  },
+  {
+   "openalex": "https://openalex.org/W7165131621",
+   "doi": "https://doi.org/10.3390/s26123896",
+   "title": "Anomaly Detection in Wind Turbines: Persistence-Based Alarm Confirmation for False-Alarm Mitigation and Detection-Latency Trade-Offs",
+   "year": 2026,
+   "date": "2026-06-19",
+   "venue": "Sensors",
+   "type": "article",
+   "cites": 1,
+   "abstract": "Anomaly detection models trained exclusively on healthy data are widely used in wind turbine condition monitoring because failure data are scarce, heterogeneous, and often unavailable. However, these models produce anomaly indicators that are sensitive not only to fault-related degradation but also to normal operational variability, transient disturbances, and changes in loading conditions. As a result, the practical behavior of an alarm system depends not only on the anomaly detection model but also on the decision rule used to activate and maintain alarm states. This study presents a decision-oriented evaluation of persistence-based alarm confirmation in wind turbine anomaly detection. Four representative techniques are analyzed within a unified framework: Isolation Forest, One-Class Support Vector Machine, Referenced Moving Window Principal Component Analysis using Q-statistic and percentage component weight indicators, and Autoencoder-based reconstruction error. The evaluation combines controlled OpenFAST simulations of rotor unbalance under different severity and noise conditions with an industrial SCADA case study involving a documented main bearing fault. Results show that temporal persistence strongly shapes alarm outcomes across methods and datasets. Low persistence values favor early detection but promote alarms from isolated threshold exceedances, whereas moderate persistence substantially reduces false positives while preserving detection capability in severe and well-observable faults. Excessive persistence increases detection latency and missed detections, particularly for weak, intermittent, or slowly evolving fault signatures. These findings indicate that persistence-based alarm confirmation should be treated as an explicit decision-level configuration variable, rather than as a fixed post-processing or alarm-state heuristic, when designing anomaly detection systems for wind turbine condition monitoring."
+  },
+  {
+   "openalex": "https://openalex.org/W7223458961",
+   "doi": "https://doi.org/10.55972/spectrum.v27i1.439",
+   "title": "Low-False-Alarm Evaluation Changes the Ranking of Multisensor Anomaly Detectors",
+   "year": 2026,
+   "date": "2026-10-09",
+   "venue": "Aplica\u00e7\u00f5es Operacionais em \u00c1reas de Defesa",
+   "type": "article",
+   "cites": 0,
+   "abstract": "This study investigated multisensor anomaly detection under low false-alarm constraints in safety-critical systems, examining whether conventional aggregate metrics provide a reliable basis for model selection under strict false-alarm budgets. A detection framework combining temporal modeling, anomaly scoring, calibration, and temporal persistence was evaluated across forecasting, autoencoding, and conformal multisensor approaches on four public multivariate sensor datasets. Low-false-alarm evaluation changed detector rankings in seven model-dataset pairs: on the Mars Science Laboratory dataset, the Temporal Autoencoder moved from third to first place under recall at false-alarm rate up to 0.05, reaching 0.1062; on the Secure Water Treatment dataset, the Gated Recurrent Unit Forecaster reached 0.6448; on the Water Distribution dataset, subsystem-aware grouping increased the same metric from 0.0241 to 0.1838, while correlation-based grouping degraded performance. Calibration improved false-alarm control but did not compensate for poor score separability, and cross-sensor modeling was beneficial only when groupings reflected the monitored system structure."
+  },
+  {
+   "openalex": "https://openalex.org/W7204952196",
+   "doi": "https://doi.org/10.2139/ssrn.7385366",
+   "title": "Calibration Design for Reliable False-Alarm Control in Benign-Trained UAV Anomaly Detection",
+   "year": 2026,
+   "date": "2026-01-01",
+   "venue": "SSRN Electronic Journal",
+   "type": "preprint",
+   "cites": 0,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W7171317798",
+   "doi": "https://doi.org/10.1080/09540091.2026.2707826",
+   "title": "RBC-AD: conformal anomaly detection with explicit false-alarm control for the Tennessee Eastman Process",
+   "year": 2026,
+   "date": "2026-07-26",
+   "venue": "Connection Science",
+   "type": "article",
+   "cites": 5,
+   "abstract": "Fault detection in the Tennessee Eastman Process (TEP) is challenged by transient dynamics, post-injection regime transitions, and score drift that destabilize fixed-threshold detectors and increase false alarms. In the proposed Risk-Budgeted Conformal Anomaly Detection (RBC-AD) framework, a calibration-based anomaly detector integrates a causal forecasting backbone, frequency-aware scoring, and conformal decisioning. The forecaster is a dilated temporal convolutional network with causal self-attention, trained on fault-free runs to predict one-step-ahead Gaussian parameters by minimizing negative log-likelihood. Detection then scores each window using a fused nonconformity measure that combines the window-averaged predictive log-likelihood with an FFT-based frequency deviation term, using robust normalization fitted on a held-out calibration split and tuning the fusion weight under leakage-controlled splits. Conformal quantiles at miscoverage level \u03b1=0.05 define normal, uncertain, and anomaly states with finite-sample correction. Run-level partitioning over 500 runs per split and post-injection sampling (3,000 normal windows, 8,000 fault windows) achieves ROC-AUC = 1.000 and PR-AUC = 1.000 under the post-injection-only protocol; full-stream results provide the deployment-relevant assessment. Static conformal thresholds (\u03b8u=0.1977, \u03b8a=0.3033) yield F1 = 0.9989 and F1 = 0.9999. Deployment selects an uncertainty threshold to satisfy an empirical normal alarm-rate target of 0.05. Full-stream evaluation reports uncertainty rate and detection delay under k-consecutive alarm logic, with optional drift-triggered recalibration using normal-stream scores."
+  },
+  {
+   "openalex": "https://openalex.org/W7225155439",
+   "doi": "https://doi.org/10.1109/iotaiee70863.2026.11749388",
+   "title": "CITA: One-Sided Tail Aggregation for In-Vehicle CAN Bus Anomaly Detection Under Strict False-Alarm Budgets",
+   "year": 2026,
+   "date": "2026-08-01",
+   "venue": null,
+   "type": "conference-paper",
+   "cites": 0,
+   "abstract": "The in-vehicle controller area network (CAN) carries safety-critical traffic between electronic control units without source authentication, so bus-level anomaly detection is a practical line of defence. Window-level intrusion detectors are usually ranked by threshold-free criteria such as AUC, whereas a deployed system operates at a fixed false-alarm budget; scores built on distance, density or reconstruction error also treat a deviation as omnidirectional, although bus contention displaces legitimate traffic in one direction only. We present CITA, which normalizes each inter-arrival time by the base period of its identifier, maps eight window statistics to their upper-tail empirical probabilities, and pools them by Fisher\u2019s rule under a threshold read from an attack-free quantile. Since only upper-tail excursions raise the score and the mapping depends on ranks alone, no detection budget is spent on directions carrying no signal. On four public Car-Hacking captures, evaluated after removing every attacker frame, CITA raises recall at a 10\u22123false-alarm rate from 0.265 to 0.318 against its omnidirectional counterpart and reaches 2.83 times the recall of a single-statistic rule, at 0.33 microseconds and 16 kB per 8.9 ms window."
+  },
+  {
+   "openalex": "https://openalex.org/W7133612763",
+   "doi": "https://doi.org/10.3390/s26051627",
+   "title": "An Energy Detection Algorithm with Clustering-Based False Alarm Suppression for Magnetic Anomaly Detection",
+   "year": 2026,
+   "date": "2026-03-05",
+   "venue": "Sensors",
+   "type": "article",
+   "cites": 1,
+   "abstract": "To overcome the limitations of Orthonormal Basis Function (OBF) methods in magnetic anomaly detection, including high false alarm rates and ambiguous target localization due to background noise, this paper introduces a high-confidence detection algorithm based on hierarchical clustering with an optimal cut height. The core of our approach is a theoretically derived optimal cut height, which is calculated from a physical model of the magnetic dipole's vertical gradient field. This model establishes the implicit functional relationship between the effective detection range and key parameters, including magnetic moment orientation, geomagnetic inclination, and sensor height. The calculated optimal cut height serves as the critical criterion in a complete-linkage hierarchical clustering algorithm, which processes the alarm point clouds generated by a preliminary Greatest-of Cell-Averaging Constant False Alarm Rate (GOCA-CFAR) detector. This effectively suppresses isolated false alarms caused by background fluctuations while preserving spatially coherent alarm clusters within the target's effective detection range, thereby significantly enhancing detection confidence. Results from both simulations and field experiments validate the efficacy of the proposed algorithm, demonstrating its superior capability to reliably discriminate genuine targets from false alarms compared to traditional one-dimensional CFAR detection."
+  },
+  {
+   "openalex": "https://openalex.org/W7125925639",
+   "doi": "https://doi.org/10.1109/ase63991.2025.00291",
+   "title": "Evaluating Large Language Models for Time Series Anomaly Detection in Aerospace Software",
+   "year": 2025,
+   "date": "2025-11-16",
+   "venue": "IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+   "type": "conference-paper",
+   "cites": 5,
+   "abstract": "Time series anomaly detection (TSAD) is essential for ensuring the safety and reliability of aerospace software systems. Although large language models (LLMs) provide a promising training-free alternative to unsupervised approaches, their effectiveness in aerospace settings remains under-examined because of complex telemetry, misaligned evaluation metrics, and the absence of domain knowledge. To address this gap, we introduce ATSADBench, the first benchmark for aerospace TSAD. ATSADBench comprises nine tasks that combine three pattern-wise anomaly types, univariate and multivariate signals, and both in-loop and out-of-loop feedback scenarios, yielding 108,000 data points. Using this benchmark, we systematically evaluate state-of-the-art open-source LLMs under two paradigms: Direct, which labels anomalies within sliding windows, and Prediction-Based, which detects anomalies from prediction errors. To reflect operational needs, we reformulate evaluation at the window level and propose three user-oriented metrics: Alarm Accuracy (AA), Alarm Latency (AL), and Alarm Contiguity (AC), which quantify alarm correctness, timeliness, and credibility. We further examine two enhancement strategies, few-shot learning and retrieval-augmented generation (RAG), to inject domain knowledge. The evaluation results show that (1) LLMs perform well on univariate tasks but struggle with multivariate telemetry, (2) their AA and AC on multivariate tasks approach random guessing, (3) few-shot learning provides modest gains whereas RAG offers no significant improvement, and (4) in practice LLMs can detect true anomaly onsets yet sometimes raise false alarms, which few-shot prompting mitigates but RAG exacerbates. These findings offer guidance for future LLM-based TSAD in aerospace software."
+  },
+  {
+   "openalex": "https://openalex.org/W7238587178",
+   "doi": null,
+   "title": "Formally Exploring Visual Anomaly Detection Evaluation Metrics",
+   "year": 2026,
+   "date": "2026-09-29",
+   "venue": "International Conference on Machine Learning",
+   "type": "conference-paper",
+   "cites": 0,
+   "abstract": "Inaccurate Visual Anomaly Detection (VAD) can lead to critical failures in safety-sensitive domains, including autonomous navigation and industrial surveillance. With the increasing abundance and rapid proliferation of VAD algorithms, their reliable evaluation has become increasingly important and challenging. Commonly used evaluation metrics often fail to capture practically relevant aspects of model behavior, yielding inconsistent or misleading assessments by overlooking errors such as redundant detections and the spatial distribution of false positives. In this paper, we formalize the requirements for VAD evaluation by introducing a set of axiomatic, verifiable properties that an evaluation metric should satisfy. Through a systematic analysis of state-of-the-art evaluation methods, we show that none satisfies all proposed properties. To address this gap, we introduce SAAM-ALARM, a novel evaluation metric that satisfies these properties. Our results show that SAAM-ALARM provides a more nuanced and theoretically sound assessment, establishing a stronger standard for performance benchmarking in VAD."
+  },
+  {
+   "openalex": "https://openalex.org/W7237010839",
+   "doi": "https://doi.org/10.5281/zenodo.24408074",
+   "title": "Sensor Confirmation Timing and False Alarms in Oil Well Anomaly Detection: An Exploratory Study Using Petrobras 3W Field Records",
+   "year": 2026,
+   "date": "2026-11-20",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "type": "preprint",
+   "cites": 0,
+   "abstract": "Preprint \u2014 Not peer reviewed This exploratory study examines sensor confirmation timing and false-alarm duration in oil-well anomaly detection using Petrobras 3W Dataset 2.0.0. The study compares temporal sensor confirmation rules across 24 previously explored records containing 13 eligible anomaly events and 12,809 minutes of normal operation. Both v0.8 and v0.12 detected five events within five minutes, while normal-operation alarm duration decreased from 225 to 146 minutes. This comparison does not represent matched alarm budgets. Under separately matched supplementary alarm budgets, v0.11 and v0.12 each detected 5 of 13 events, while normal alarm duration decreased from 217 to 206 minutes (5.1%). The v0.7 baseline produced the shortest normal alarm duration (103 minutes) but detected only 4 of 13 events. An additional short-window rule (v0.19) detected one further type 7 event, yielding 6 of 13 detections and 184 normal alarm minutes. Across 15 previously unused intervals from previously studied wells, all evaluated OrganOS variants missed both eligible type 5 events. A locally implemented, untuned Isolation Forest reference was also evaluated. This comparison does not reproduce a published benchmark protocol. These findings are exploratory. The comparison records were reused during candidate selection, and independent validation on previously unseen wells has not been completed. The accompanying reproduction package preserves experimental evidence, frozen parameters, code, and SHA-256 integrity information. Data source: Petrobras 3W Dataset 2.0.0. Reproducibility: The companion archive 3W_Preprint_Reproduction_Full_Package.zip is provided with the manuscript."
+  },
+  {
+   "openalex": "https://openalex.org/W7214548445",
+   "doi": "https://doi.org/10.3390/s26206376",
+   "title": "Federated Flight Anomaly Detection with Self-Supervised Forecasting: A Flight-Disjoint Evaluation",
+   "year": 2026,
+   "date": "2026-10-09",
+   "venue": "Sensors",
+   "type": "article",
+   "cites": 0,
+   "abstract": "Reliable anomaly detection is essential for the safe operation of unmanned aerial vehicles (UAVs), particularly in distributed settings where flight telemetry is generated across multiple vehicles or operational sessions and cannot always be centrally collected. This work investigates UAV anomaly detection using models capable of generalizing to unseen flights while keeping raw telemetry within the simulated client partitions during federated training. A self-supervised forecasting framework is evaluated under a simulated federated partitioning of the ALFA corpus and benchmarked using local training, Federated Averaging (FedAvg), FedProx, personalized FedAvg, and centralized learning under a strictly flight-disjoint evaluation protocol. The evaluation comprises 47 complete flights, including 36 failed and 11 nominal flights, grouped into 13 heterogeneous session-based federated clients that serve as statistical partitions rather than physically independent UAVs. The resulting federated setting exhibits non-IID characteristics due to differences in local flight composition and data volume across clients. Federated training is performed for 20 communication rounds with two local epochs per round, and evaluation uses three-fold flight-disjoint cross-validation. Complete flights, including failed flights, are assigned exclusively to either the training or held-out test partition within each fold, ensuring that no samples or overlapping windows from a test flight contribute to model training. An LSTM learns nominal flight dynamics through multivariate next-step forecasting, and the resulting forecasting error is converted into an anomaly score. FedAvg achieves an area under the receiver operating characteristic curve (AUC) of 0.908 and detects 83.3% of failed flights, performing competitively with centralized learning, which obtains an AUC of 0.904 and an 84.4% detection rate. Beyond discrimination performance, calibration, threshold scope, temporal persistence, detection delay, and false-alarm burden are also evaluated. With rolling calibration and a global threshold, the detector maintains an 87.2% flight-level detection rate with a median detection delay of 0.72 s while reducing the false-alarm burden from 202.1 to 66.0 events per hour. However, this alarm frequency remains too high for unattended operational deployment. A more conservative configuration reduces the burden to 8.17 events per hour while retaining 82.8% failed-flight detection and achieving an event precision of 0.851, although the median detection delay increases to 3.38 s. Within this session-partitioned experimental setting, parameter aggregation recovers most of the performance loss associated with local-only training and approaches centralized performance without pooling raw telemetry. These findings should be interpreted as evidence for distributed model aggregation under statistical data partitioning rather than as validation of a fully deployed federated UAV network, while the operational analysis further shows that strong discrimination and flight-level detection do not necessarily translate into practically acceptable alarm behavior."
+  },
+  {
+   "openalex": "https://openalex.org/W7128805934",
+   "doi": "https://doi.org/10.1016/j.ress.2026.112417",
+   "title": "Conformal machine learning for reliable anomaly detection in industrial cyber-physical systems",
+   "year": 2026,
+   "date": "2026-02-14",
+   "venue": "Reliability Engineering & System Safety",
+   "type": "article",
+   "cites": 21,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W7134934661",
+   "doi": "https://doi.org/10.24425/ijet.2026.157880",
+   "title": "Data exploration algorithms in anomaly detection in communication protocols",
+   "year": 2026,
+   "date": "2026-01-19",
+   "venue": "International Journal of Electronics and Telecommunications",
+   "type": "article",
+   "cites": 0,
+   "abstract": "Cybersecurity in modern communication networks is of paramount importance, particularly in critical infrastructure sectors. Anomaly detection in communication protocols is a key component in identifying and mitigating cyber threats. This study explores data-centric approaches for anomaly detection using machine learning algorithms. We evaluate the effectiveness of ensemble models incorporating Isolation Forest, XGBoost, and Autoencoders to reduce false positives while maintaining high accuracy. Our methodology involves training on both labeled and unlabeled datasets, including NSL-KDD and CIC-IDS2017, to simulate real-world attack scenarios. Experimental results demonstrate that the proposed ensemble learning approach enhances detection performance, offering a balanced trade-off between precision and false alarm reduction. These findings contribute to the development of robust and scalable intrusion detection systems suitable for deployment"
+  },
+  {
+   "openalex": "https://openalex.org/W7147728916",
+   "doi": "https://doi.org/10.17632/yygwbr2vyh",
+   "title": "Joint False Alarm Dataset (JFAD)",
+   "year": 2026,
+   "date": "2026-04-01",
+   "venue": "Mendeley Data",
+   "type": "dataset",
+   "cites": 0,
+   "abstract": "This repository presents the Joint False Alarm Dataset (JFAD). The dataset is designed to support the training, evaluation, and validation of deep learning models for thermal anomaly detection and false alarm reduction in terrestrial remote sensing scenarios. JFAD provides a comprehensive representation of thermal interference sources that commonly trigger false detections, making it a strong benchmark for developing robust cascade-based detection architectures. JFAD was constructed by consolidating two complementary repositories: the Addressing False Alarm Situations (AFAS) dataset and the Thermal Anomaly (TA) dataset. Together, these collections characterize a broad spectrum of challenging thermal conditions across both the near-infrared (NIR) and long-wave infrared (LWIR) domains. The dataset includes diverse environments such as urban infrastructure monitoring, rural surveillance, and wilderness fire-like anomaly scenarios. A key contribution of this dataset is the re-annotation of the TA subset, extending traditional bounding-box labels into pixel-level instance masks. This enables models to better distinguish filament-like structures such as powerlines from irregular thermal signatures caused by incipient fires, solar glint, or exhaust emissions, an essential requirement for minimizing false alarms in real-world deployments. Dataset Composition The JFAD dataset comprises a total of 6098 thermal images, aggregated from multiple measurement campaigns and established open benchmarks, including: 1) FLIR Advanced Driver Assistance Systems (ADAS) 2) TarDAL M3FD 3) Powerline Image Dataset (PID) 4) In-house thermal acquisitions across urban, rural, and wilderness settings The dataset reflects substantial cross-sensor variability, incorporating different platforms, resolutions, and monitoring conditions. For experimental evaluation, JFAD is divided into: 4308 training samples and 1790 validation samples Technical Specifications File Formats: JPEG, TXT, NPY Spectral Bands: NIR and LWIR Resolution Range: 160\u00d7120 up to 640\u00d7512 Cameras used: FLIR Tau 2, FLIR A615, FLIR A35, Seek Mosaic, and FLIR Lepton This repository contains the dataset used in our work. If you wish to replicate our experiments or access the full implementation, please refer to the link provided in the Related Links section, which directs you to the official GitHub repository associated with the paper."
+  },
+  {
+   "openalex": "https://openalex.org/W7130432732",
+   "doi": "https://doi.org/10.1016/j.jjimei.2026.100397",
+   "title": "BPGV: Behavioral provenance graph views to enhance anomaly detection",
+   "year": 2026,
+   "date": "2026-02-18",
+   "venue": "International Journal of Information Management Data Insights",
+   "type": "article",
+   "cites": 3,
+   "abstract": "Provenance-based Intrusion Detection Systems (PIDS) have shown potential in mitigating cyber threats in dynamic real-world environments. PIDS construct provenance graphs from audit logs to detect anomalous nodes, edges, or subgraph patterns. However, as provenance graphs grow in complexity, timely and accurately detecting anomalies becomes increasingly challenging, often resulting in higher false alarm rates. A key limitation of existing graph summarization techniques is their inadequate consideration of graph nodes\u2019 context, leading to limited generalization abilities to capture unseen benign variants. Moreover, there is a lack of subgraph extraction techniques considering contextual information to extract subgraphs for various graph views, leading to reduced robustness and optimization due to the single-model anomaly detection approach. To address these shortcomings, we first present a taxonomy to systematically categorize and evaluate provenance graphs from the perspective of graph summarization, subgraph extraction, and graph representation. Second, we propose a Behavioral Provenance Graph View Anomaly Detection (BPGVAD) framework to detect behavioral anomalies, enabled by two key components: Behavioral Provenance Graph Summarization (BPGS) and Behavioral Provenance Graph Extraction (BPGE). The BPGS generalizes and summarizes nodes based on their context to capture unseen benign node variants. The BPGE extracts subgraphs from different graph views derived from BPGS to enable an optimized multi-model approach for anomaly detection. We evaluated the effectiveness of the BPGVAD framework using the DARAP OpTC dataset, and the results demonstrated improved anomaly detection performance with an accuracy of 99.332%, recall of 1, and a significantly low false alarm rate of 0.669%."
+  },
+  {
+   "openalex": "https://openalex.org/W7167707198",
+   "doi": "https://doi.org/10.33003/fjs-2026-1010-5420",
+   "title": "Securing IoT-Enabled Smart Agriculture through Blockchain-Enhanced Federated Anomaly Detection: An Empirical Evaluation",
+   "year": 2026,
+   "date": "2026-06-22",
+   "venue": "FUDMA Journal of Sciences",
+   "type": "article",
+   "cites": 0,
+   "abstract": "IoT-enabled smart agriculture is reshaping farm management through continuous sensing, remote monitoring, irrigation automation and data-supported decision-making. These benefits also expose farm cyber-physical systems to attacks that can falsify device identity, replay legitimate messages, inject abnormal packets, alter data streams, interrupt services and permit unauthorised access. This study develops and evaluates B-FedAgriIDS, a blockchain-enhanced federated anomaly-detection framework for securing smart-agriculture IoT environments. The framework places autoencoder-based anomaly detection at edge gateways, applies federated averaging to support collaborative learning without centralising raw farm data, and uses a permissioned blockchain to manage device identity, access verification, alert integrity and auditable logging. A comparative empirical design was used to assess a centralised autoencoder baseline, a federated-only autoencoder and the proposed blockchain-enhanced federated model. The proposed model achieved the strongest performance, with 97% detection accuracy and a 4% false alarm rate, compared with 89% accuracy and 12% false alarms for the centralised baseline and 94% accuracy and 8% false alarms for the federated-only model. Blockchain operations remained within an estimated 50-100 ms latency range, which is suitable for monitoring, authentication and alert-recording functions in farm networks. The findings show that combining privacy-preserving learning with permissioned ledger governance can strengthen detection, accountability and operational trust in distributed digital-agriculture systems."
+  },
+  {
+   "openalex": "https://openalex.org/W7163668823",
+   "doi": "https://doi.org/10.48550/arxiv.2606.05274",
+   "title": "Anomaly Detection for Electro-Hydrostatic Actuators using LSTM Autoencoder",
+   "year": 2026,
+   "date": "2026-06-03",
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "cites": 0,
+   "abstract": "Electro-Hydrostatic Actuators (EHAs) are widely used in aerospace and industrial systems, where timely detection of sensor anomalies is essential to ensure safe and reliable operation. However, the large volume and high sampling frequency of EHA sensor data pose challenges for accurate and efficient anomaly detection. Conventional statistical and classical machine-learning methods such as Z-score, Interquartile Range (IQR), Median Absolute Deviation (MAD), Isolation Forest, Gaussian Mixture, and k-means often fail to capture the temporal dependencies inherent in EHA signals, resulting in limited detection accuracy and elevated false-alarm rates. Furthermore, systematic evaluations of data-driven anomaly detection approaches for EHA systems remain scarce, particularly under varying operational conditions. This study presents an offline anomaly-detection framework for univariate EHA sensor signals, focusing on temperature and pressure data collected from a controlled test bench. The method employs a reconstruction-based Long Short-Term Memory (LSTM) autoencoder, calibrated and evaluated using validation-set reconstruction-error distributions. Performance is assessed across multiple fault-injection scenarios using accuracy, precision, recall, and F1-score, complemented by sensitivity analyses under varying operating conditions. The LSTM autoencoder achieved an average accuracy of 99.0\\%, precision up to 100\\%, recall between 90.2\\% and 99.6\\%, and F1-scores from 93.1\\% to 99.8\\%, demonstrating high detection sensitivity and a very low false-alarm rate across all evaluated sensors. These results highlight the feasibility of data-driven offline anomaly detection for EHAs. Future work will focus on adapting the developed framework for an online (real-time) environment."
+  },
+  {
+   "openalex": "https://openalex.org/W7203707824",
+   "doi": "https://doi.org/10.2139/ssrn.7304002",
+   "title": "Anomaly Detection in State-Space Models via Residual Stationarity Intervention and Classification",
+   "year": 2026,
+   "date": "2026-01-01",
+   "venue": "SSRN Electronic Journal",
+   "type": "preprint",
+   "cites": 0,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W7130398283",
+   "doi": "https://doi.org/10.70286/isu-18.02.2026.012",
+   "title": "RELIABILITY-AWARE ANOMALY DETECTION FOR STREAMING MULTIMODAL TIME SERIES IN DECISION SUPPORT SYSTEMS",
+   "year": 2026,
+   "date": "2026-02-18",
+   "venue": null,
+   "type": "article",
+   "cites": 0,
+   "abstract": "In streaming multimodal monitoring, modality degradations (e.g., sensor noise or missing data) often trigger false alarms in anomaly detectors, violating operational constraints on the False Alarm Rate (FAR). This paper formulates the problem of FAR-budgeted anomaly detection and proposes a Reliability-Constrained Anomaly Detection (RC-AD) method. RC-AD utilizes online modality reliability estimates to gate the contribution of degraded channels to the anomaly score and to dynamically adjust thresholding logic. Evaluation on controlled streams and real air quality data demonstrates that RC-AD maintains the FAR budget while achieving significantly higher recall on degraded segments compared to naive multimodal baselines."
+  },
+  {
+   "openalex": "https://openalex.org/W7167465394",
+   "doi": "https://doi.org/10.1109/cniot69547.2026.11582255",
+   "title": "Unified Reproduction and Event-Level Evaluation of Industrial Multivariate Time-Series Anomaly Detection Methods",
+   "year": 2026,
+   "date": "2026-05-22",
+   "venue": "International Conference on Computing, Networks and Internet of Things (CNIOT)",
+   "type": "conference-paper",
+   "cites": 1,
+   "abstract": "Industrial multivariate time-series anomaly detection is important for monitoring industrial control systems. Existing studies usually report point-level metrics, although industrial anomalies often occur as continuous events rather than isolated abnormal timestamps. As a result, point-level scores may not adequately reflect event hit ability, event coverage, false alarms, or alarm fragmentation. This paper presents a unified reproduction and event-level evaluation of seven representative methods, including PCA-SPE, iForest, AE, DAGMM, USADStable, OmniAnomaly, and TranAD, on the SWaT and WADI datasets under a consistent pipeline for preprocessing, thresholding, event extraction, and metric calculation. Experimental results show that favorable point-level performance does not necessarily imply strong event-level detection, and that threshold selection and minimum-duration filtering substantially affect event-level outputs. The study provides an empirical benchmark for method comparison and event-oriented evaluation in industrial monitoring scenarios."
+  }
+ ]
+}

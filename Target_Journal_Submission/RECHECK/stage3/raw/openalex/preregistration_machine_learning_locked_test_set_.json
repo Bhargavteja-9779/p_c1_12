@@ -1,0 +1,172 @@
+{
+ "query": "preregistration machine learning locked test set",
+ "filter": null,
+ "count": 691,
+ "results": [
+  {
+   "openalex": "https://openalex.org/W7161844731",
+   "doi": "https://doi.org/10.2139/ssrn.6732238",
+   "title": "Preregistration for Experiments with AI Agents",
+   "year": 2026,
+   "date": "2026-01-01",
+   "venue": "SSRN Electronic Journal",
+   "type": "preprint",
+   "cites": 7,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W7221773168",
+   "doi": "https://doi.org/10.1038/s41598-026-74760-5",
+   "title": "ECLIPSE v2.0: a reproducible scaffold for severe confirmatory testing through preregistration, single-shot validation, and static-analysis screening",
+   "year": 2026,
+   "date": "2026-10-14",
+   "venue": "Scientific Reports",
+   "type": "article",
+   "cites": 0,
+   "abstract": "The replication crisis has exposed systematic methodological weaknesses across the empirical sciences, yet existing infrastructure offers little technical enforcement and few reproducible tools for assessing rigor. We propose ECLIPSE v2.0, a computational scaffold combining preregistration, cryptographically verified data splitting (SHA-256), single-shot holdout validation, integrity scoring, anomaly screening and static analysis into an auditable workflow for confirmatory testing. Three instruments are introduced, each an operational tool rather than a definitive measure: the Eclipse Integrity Score, a heuristic operationalization of protocol-level integrity across five dimensions; the Standardized Test-set Discrepancy Score, a descriptive signal flagging holdout results unusually good relative to cross-validation folds, screened against empirically derived cutoffs rather than nominal significance levels; and an Automated Code Auditor screening scripts for protocol violations. Controlled construct checks demonstrate component non-redundancy and ranking stability under the synthetic generator and weighting schemes used, but not external validity. No retrospective corpus can validly compute the score alongside replication outcomes, so we pre-specify a prospective test of incremental validity over binary preregistration and cite evidence that broad methodological-quality indicators track external-validation performance in clinical prediction models, which is indirectly relevant rather than a validation of those dimensions. ECLIPSE is offered as a scaffold, not a guarantee of compliance."
+  },
+  {
+   "openalex": "https://openalex.org/W4413398928",
+   "doi": "https://doi.org/10.1007/s11229-025-05191-4",
+   "title": "Preregistration does not improve the transparent evaluation of severity in Popper\u2019s philosophy of science or when deviations are allowed",
+   "year": 2025,
+   "date": "2025-08-21",
+   "venue": "Synthese",
+   "type": "article",
+   "cites": 13,
+   "abstract": "One justification for preregistering research hypotheses, methods, and analyses is that it improves the transparent evaluation of the severity of hypothesis tests. In this article, I consider two cases in which preregistration does not improve this evaluation. First, I argue that, although preregistration may facilitate the transparent evaluation of severity in Mayo\u2019s error statistical philosophy of science, it does not facilitate this evaluation in Popper\u2019s theory-centric approach. To illustrate, I show that associated concerns about Type I error rate inflation are only relevant in the error statistical approach and not in a theory-centric approach. Second, I argue that a test procedure that is preregistered but that also allows deviations in its implementation (i.e., \u201ca plan, not a prison\u201d) does not provide a more transparent evaluation of Mayoian severity than a non-preregistered procedure. In particular, I argue that sample-based validity-enhancing deviations cause an unknown inflation of the test procedure\u2019s Type I error rate and, consequently, an unknown reduction in its capability to license inferences severely. I conclude that preregistration does not improve the transparent evaluation of severity (a) in Popper\u2019s philosophy of science or (b) in Mayo\u2019s approach when deviations are allowed."
+  },
+  {
+   "openalex": "https://openalex.org/W4403749567",
+   "doi": "https://doi.org/10.48550/arxiv.2407.12220",
+   "title": "Questionable practices in machine learning",
+   "year": 2024,
+   "date": "2024-07-17",
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "cites": 31,
+   "abstract": "Evaluating modern ML models is hard. The strong incentive for researchers and companies to report a state-of-the-art result on some metric often leads to questionable research practices (QRPs): bad practices which fall short of outright research fraud. We describe 44 such practices which can undermine reported results, giving examples where possible. Our list emphasises the evaluation of large language models (LLMs) on public benchmarks. We also discuss \"irreproducible research practices\", i.e. decisions that make it difficult or impossible for other researchers to reproduce, build on or audit previous research."
+  },
+  {
+   "openalex": "https://openalex.org/W4410403288",
+   "doi": "https://doi.org/10.31222/osf.io/yqvtu_v1",
+   "title": "Preregistration does not improve the transparent evaluation of severity in Popper\u2019s philosophy of science or when deviations are allowed.",
+   "year": 2025,
+   "date": "2025-05-15",
+   "venue": "MetArXiv (OSF Preprints)",
+   "type": "preprint",
+   "cites": 0,
+   "abstract": "One justification for preregistering research hypotheses, methods, and analyses is that it improves the transparent evaluation of the severity of hypothesis tests. In this article, I consider two cases in which preregistration does not improve this evaluation. First, I argue that, although preregistration may facilitate the transparent evaluation of severity in Mayo\u2019s error statistical philosophy of science, it does not facilitate this evaluation in Popper\u2019s theory-centric approach. To illustrate, I show that associated concerns about Type I error rate inflation are only relevant in the error statistical approach and not in a theory-centric approach. Second, I argue that a test procedure that is preregistered but that also allows deviations in its implementation (i.e., \u201ca plan, not a prison\u201d) does not provide a more transparent evaluation of Mayoian severity than a non-preregistered procedure. In particular, I argue that sample-based validity-enhancing deviations cause an unknown inflation of the test procedure\u2019s Type I error rate and, consequently, an unknown reduction in its capability to license inferences severely. I conclude that preregistration does not improve the transparent evaluation of severity (a) in Popper\u2019s philosophy of science or (b) in Mayo\u2019s approach when deviations are allowed."
+  },
+  {
+   "openalex": "https://openalex.org/W7226028714",
+   "doi": "https://doi.org/10.17605/osf.io/xnmj5",
+   "title": "Machine Learning vs ADA Risk Test and FINDRISC for Undiagnosed Diabetes Screening in NHANES: Preregistered Temporal Validation",
+   "year": 2026,
+   "date": "2026-10-13",
+   "venue": "Open Science Framework",
+   "type": "study-registration",
+   "cites": 0,
+   "abstract": "This preregistration describes a secondary analysis of publicly available NHANES data (2011\u20132023) to develop and temporally validate a screening model for undiagnosed diabetes in US adults using only non-laboratory predictors (age, sex, BMI, waist circumference, hypertension and blood-pressure medication, family history, gestational diabetes, physical activity and prior high glucose). Models are developed on NHANES 2011\u20132016 and evaluated once, with all specifications locked, on 2017\u2013March 2020; August 2021\u2013August 2023 serves as a secondary post-pandemic validation with a reduced predictor set. Undiagnosed diabetes is defined as HbA1c \u22656.5% (primary) or HbA1c \u22656.5% or fasting plasma glucose \u2265126 mg/dL (sensitivity) among adults aged 20+ without diagnosed or treated diabetes. The primary hypothesis (H1) is that, when set to refer the same proportion of adults for confirmatory testing as the ADA Risk Test (score \u22655), a gradient-boosting model will have a lower false-negative rate than the ADA Risk Test, an adapted FINDRISC and logistic regression using identical predictors. Secondary analyses cover fixed-sensitivity performance, calibration, a non-Hispanic Asian versus non-Hispanic White false-negative contrast, and two-stage screening efficiency. Reporting follows TRIPOD+AI."
+  },
+  {
+   "openalex": "https://openalex.org/W3212712419",
+   "doi": "https://doi.org/10.3389/fonc.2021.772663",
+   "title": "Machine Learning for Head and Neck Cancer: A Safe Bet?\u2014A Clinically Oriented Systematic Review for the Radiation Oncologist",
+   "year": 2021,
+   "date": "2021-11-18",
+   "venue": "Frontiers in Oncology",
+   "type": "review",
+   "cites": 38,
+   "abstract": "BACKGROUND AND PURPOSE: Machine learning (ML) is emerging as a feasible approach to optimize patients' care path in Radiation Oncology. Applications include autosegmentation, treatment planning optimization, and prediction of oncological and toxicity outcomes. The purpose of this clinically oriented systematic review is to illustrate the potential and limitations of the most commonly used ML models in solving everyday clinical issues in head and neck cancer (HNC) radiotherapy (RT). MATERIALS AND METHODS: Electronic databases were screened up to May 2021. Studies dealing with ML and radiomics were considered eligible. The quality of the included studies was rated by an adapted version of the qualitative checklist originally developed by Luo et al. All statistical analyses were performed using R version 3.6.1. RESULTS: Forty-eight studies (21 on autosegmentation, four on treatment planning, 12 on oncological outcome prediction, 10 on toxicity prediction, and one on determinants of postoperative RT) were included in the analysis. The most common imaging modality was computed tomography (CT) (40%) followed by magnetic resonance (MR) (10%). Quantitative image features were considered in nine studies (19%). No significant differences were identified in global and methodological scores when works were stratified per their task (i.e., autosegmentation). DISCUSSION AND CONCLUSION: The range of possible applications of ML in the field of HN Radiation Oncology is wide, albeit this area of research is relatively young. Overall, if not safe yet, ML is most probably a bet worth making."
+  },
+  {
+   "openalex": "https://openalex.org/W4403102026",
+   "doi": "https://doi.org/10.1002/ejp.4736",
+   "title": "Navigating the light and shadow of scientific publishing faced with machine learning and generative AI",
+   "year": 2024,
+   "date": "2024-10-03",
+   "venue": "European Journal of Pain",
+   "type": "review",
+   "cites": 11,
+   "abstract": "BACKGROUND: The public release of ChatGPT in November 2022 sparked a boom and public interest in generative artificial intelligence (AI) that has led to journals and journal families hastily releasing generative AI policies, ranging from asking authors for acknowledgement or declaration to the outright banning of use. RESULTS: Here, we briefly discuss the basics of machine learning, generative AI, and how it will affect scientific publishing. We focus especially on potential risks and benefits to the scientific community as a whole and journals specifically. CONCLUSION: While the concerns of editors, for example about manufactured studies, are valid, some recently implemented or suggested policies will not be sustainable in the long run. The quality of generated text and code is quickly becoming so high that it will not only be impossible to detect the use of generative AI but would also mean taking a powerful tool away from researchers that can make their life easier every day. SIGNIFICANCE: We discuss the history and current state of AI and highlight its relevance for medical publishing and pain research. We provide guidance on how to act now to increase good scientific practice in the world of ChatGPT and call for a task force focusing on improving publishing pain research with use of generative AI."
+  },
+  {
+   "openalex": "https://openalex.org/W7160076470",
+   "doi": "https://doi.org/10.1177/21677026261439026",
+   "title": "Replicability and Validity of a New Artificial-Intelligence Assessment of Posttraumatic Stress Disorder From Patient Language: A Sequential Evaluation With Model Preregistration",
+   "year": 2026,
+   "date": "2026-05-04",
+   "venue": "Clinical Psychological Science",
+   "type": "article",
+   "cites": 1,
+   "abstract": "Artificial intelligence (AI) shows promise in identifying psychopathology through language, but replicability in AI models remains challenging. We develop an AI-based language assessment of posttraumatic-stress-disorder (PTSD) severity and introduce the sequential evaluation with model preregistration to rigorously evaluate its validity and replicability. This design includes two phases: development with preregistration and evaluation. Data included development ( N = 1,437) and prospective ( N = 346) samples, in which participants described their lives during automated interviews. In the prospective sample, preregistered models correlated with PTSD CheckList scores ( r = .38, p < .001) and converged with PTSD diagnosis (area under the curve [AUC] = .76; outperforming demographics and trauma exposures: AUC = .61, p < .01). We found that for each standard-deviation increase, mental-health-care expenditure rose by $696.50 ( p < .001). Our preregistered PTSD model assessments are replicable in prospectively collected clinical data and showed external validity against expense criteria. With further development, such models can be used to screen for PTSD or monitor treatment response, especially in telehealth or automated interviews, in which deployment can be seamless."
+  },
+  {
+   "openalex": "https://openalex.org/W7214011188",
+   "doi": "https://doi.org/10.1016/j.microc.2026.119784",
+   "title": "Machine learning\u2013enabled vibrational spectroscopy for translational bioclinical applications",
+   "year": 2026,
+   "date": "2026-09-22",
+   "venue": "Microchemical Journal",
+   "type": "article",
+   "cites": 1,
+   "abstract": "Vibrational spectroscopy has become a versatile, label-free microanalytical platform for interrogating molecular alterations in biological and clinical analysis, exploiting the complementary strengths of infrared and Raman spectroscopies. Recent advances in FTIR microscopy, Raman microscopy, and surface-enhanced Raman scattering (SERS) have significantly improved chemical specificity, spatial resolution, and sensitivity, positioning these techniques as promising tools for bioclinical investigations. Likewise, the integration of machine learning has enhanced data interpretation and classification performance; however, clinical translation remains constrained by limited interpretability, inconsistent validation practices, and poor inter-study reproducibility. This review critically synthesises recent developments in machine learning\u2013assisted vibrational spectroscopy with an emphasis on microchemical robustness rather than an exhaustive survey of applications. Evaluation of methodological choices across the analytical pipeline, from spectral acquisition and preprocessing to feature extraction, model selection, and validation, reveals how these decisions systematically influence analytical reliability and clinical credibility. The balance between classical chemometrics and modern machine learning is critically examined alongside challenges posed by high-dimensional heterogeneous data and the need for interpretable, regulation-aligned models. A structured roadmap is proposed for reproducible and clinically actionable infrared and Raman spectroscopic microchemical diagnostics."
+  },
+  {
+   "openalex": "https://openalex.org/W2999955312",
+   "doi": "https://doi.org/10.34917/16076262",
+   "title": "Improving OCR Post Processing with Machine Learning Tools",
+   "year": 2019,
+   "date": "2019-01-01",
+   "venue": "Digital Scholarship - UNLV (University of Nevada Reno)",
+   "type": "dissertation",
+   "cites": 10,
+   "abstract": "Optical Character Recognition (OCR) Post Processing involves data cleaning steps for documents that were digitized, such as a book or a newspaper article. One step in this process is the identification and correction of spelling and grammar errors generated due to the flaws in the OCR system. This work is a report on our efforts to enhance the post processing for large repositories of documents. The main contributions of this work are: \u2022 Development of tools and methodologies to build both OCR and ground truth text correspondence for training and testing of proposed techniques in our experiments. In particular, we will explain the alignment problem and tackle it with our de novo algorithm that has shown a high success rate. \u2022 Exploration of the Google Web 1T corpus to correct errors using context. We show that over half of the errors in the OCR text can be detected and corrected. \u2022 Applications of machine learning tools to generalize the past ad hoc approaches to OCR error corrections. As an example, we investigate the use of logistic regression to select the correct replacement for misspellings in the OCR text. \u2022 Use of container technology to address the state of reproducible research in OCR and Computer Science as a whole. Many of the past experiments in the field of OCR are not considered reproducible research questioning whether the original results were outliers or finessed."
+  },
+  {
+   "openalex": "https://openalex.org/W4206562423",
+   "doi": "https://doi.org/10.1111/j.1365-2044.2001.2094-4.x",
+   "title": "Luer-lock epidural connections",
+   "year": 2001,
+   "date": "2001-06-01",
+   "venue": "Anaesthesia",
+   "type": "article",
+   "cites": 21,
+   "abstract": "The recent tragic death of a patient following intravenous rather than epidural administration of a local anaesthetic should serve to stimulate more interest in safety design. The undoubted benefit of epidural infusion analgesia for postoperative pain relief has significantly increased its popularity. We can therefore expect even such extremely rare tragedies to become more frequent. Indeed, we are aware of three cases of cross-connected epidural and intravenous central lines in the past five years in the South East alone \u2013 despite procedures and policies designed to minimise risk. Is it not time that we re-assessed the safety of having a common luer-lock connection for both intravenous and epidural drug administration? Perhaps the easiest design modification would be to reverse the current female port at the end of epidural and spinal catheters into a male ending. This would then physically prevent connection of a standard intravenous syringe to a spinal or epidural catheter. A specific \u2018spinal syringe\u2019 with a female connection would be required to enable epidural or spinal drug administration. A second stage in the development of this approach would be to re-design the epidural and spinal needles themselves with male ports, so that the initial epidural or spinal injection would again require a \u2018spinal syringe\u2019. The manufacturing technology is there to produce such ports \u2013 but do we as a profession dedicated to safety have the will to require a change? The profession has insisted on, and got, high standards of safety in anaesthetic machines and patient monitoring when the patient is asleep. Why not aim for similar safety when the patient is awake with an epidural or spinal?"
+  },
+  {
+   "openalex": "https://openalex.org/W4406139081",
+   "doi": "https://doi.org/10.31219/osf.io/nm9de",
+   "title": "Causal Forest and Doubly Robust Machine Learning for Political Science",
+   "year": 2025,
+   "date": "2025-01-07",
+   "venue": "OSF Preprints (OSF Preprints)",
+   "type": "preprint",
+   "cites": 0,
+   "abstract": "Machine learning (ML) methods in general and tree-based methods in particular are onthe rise in the social sciences. While ML is widely valued for predictive accuracy, newcausally-oriented machine learning methods actually leverage this power for statisticalinference and treatment effect estimation. In this article, we synthesize this causalML literature into a new paradigm we coin \u201cDoubly Robust Machine Learning,\u201d orDRML. Our conceptual framework makes clear the benefits of these new methods, likecausal forest, and explains how researchers can fruitfully employ these approaches toimprove on the power, precision, and coverage of standard estimators. We demonstratethese benefits for average and conditional effect estimation through a massive array ofover one million Monte Carlo simulations spanning a wide range of possible researchsettings. Taken together, our results provide the conceptual and empirical basis forthe use of DRML in social science applications."
+  },
+  {
+   "openalex": "https://openalex.org/W4410960154",
+   "doi": "https://doi.org/10.1186/s40337-025-01265-3",
+   "title": "Predicting anorexia nervosa treatment efficacy: an explainable machine learning approach",
+   "year": 2025,
+   "date": "2025-06-02",
+   "venue": "Journal of Eating Disorders",
+   "type": "article",
+   "cites": 9,
+   "abstract": "INTRODUCTION: Anorexia nervosa (AN) is a psychopathology with an alarmingly high mortality rate. The growing number of individuals seeking help, coupled with the limited resources of clinics, highlights the critical need to identify factors that can predict treatment efficacy. Machine learning (ML) techniques hold great promise in this regard. This data-driven approach offers an unbiased means to uncover predictors of specific outcomes, advancing the understanding and management of this challenging condition. OBJECTIVE: Six supervised ML algorithms (e.g., Decision Tree and Random Forest) were applied to develop a binary classification model predicting short-term weight recovery/stabilization in AN inpatients and identify the most critical factors influencing this outcome. METHODS: Change in Body Mass Index (BMI) from admission to discharge (\u0394BMI) was used as the outcome, allowing to classify patients into \"improved\" (BMI stability or increase) and \"aggravation\" (BMI decrease). Predictors included clinically relevant psychological tests and physical parameters. Scikit-learn features importance, and SHAP (SHapley Additive exPlanations) analyses were used to investigate predictor importance. RESULTS: The Random Forest model achieved an accuracy of 0.77, an AUC-ROC of 0.72, and a PR curve score of 0.88. Body Uneasiness, Personal Alienation, and Interpersonal Problems subscales emerged as best predictors. SHAP analysis confirmed these results at the individual prediction level. DISCUSSION: Results encouraged interventions focused on body-self experience in addition to interpersonal relationships, including body-swapping experiences and metaverse activities, respectively. This could maximize treatment efficacy, effectively allocating limited resources to achieve clinically relevant outcomes."
+  },
+  {
+   "openalex": "https://openalex.org/W4406984455",
+   "doi": "https://doi.org/10.31219/osf.io/nm9de_v2",
+   "title": "Causal Forest and Doubly Robust Machine Learning for Political Science",
+   "year": 2025,
+   "date": "2025-01-30",
+   "venue": "OSF Preprints (OSF Preprints)",
+   "type": "preprint",
+   "cites": 1,
+   "abstract": "Machine learning (ML) methods in general and tree-based methods in particular are on the rise in the social sciences. While ML is widely valued for predictive accuracy, new causally-oriented machine learning methods actually leverage this power for statistical inference and treatment effect estimation. In this article, we synthesize this causal ML literature into a new paradigm we coin \"Doubly Robust Machine Learning,\" or DRML. Our conceptual framework makes clear the benefits of these new methods, like causal forest, and explains how researchers can fruitfully employ these approaches to improve on the power, precision, and coverage of standard estimators. We demonstrate these benefits for average and conditional effect estimation through a massive array of over one million Monte Carlo simulations spanning a wide range of possible research settings. Taken together, our results provide the conceptual and empirical basis for the use of DRML in social science applications."
+  }
+ ]
+}

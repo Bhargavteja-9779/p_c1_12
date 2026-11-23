@@ -5,3 +5,31 @@ invalid pdf header: b'<!doc'
 EOF marker not found
 invalid pdf header: b'<!DOC'
 EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!DOC'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/Subtype': '/Type1', '/FirstChar': 32, '/Type': '/Font', '/FontDescriptor': IndirectObject(45, 0, 140542241148752), '/BaseFont': '/ELLNFM+Helvetica', '/Encoding': '/WinAnsiEncoding', '/LastChar': 32, '/Widths': [278]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/Subtype': '/Type1', '/FirstChar': 45, '/Type': '/Font', '/FontDescriptor': IndirectObject(48, 0, 140542241148752), '/BaseFont': '/ELLNGN+Univers', '/Encoding': '/WinAnsiEncoding', '/LastChar': 119, '/Widths': [333, 278, 278, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 278, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 556, 0, 500, 611, 556, 0, 611, 611, 278, 278, 0, 278, 944, 611, 611, 611, 0, 389, 500, 333, 611, 0, 833]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!DOC'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/Type': '/Font', '/Subtype': '/Type1', '/Encoding': '/WinAnsiEncoding', '/FontDescriptor': IndirectObject(57, 0, 140542241149952), '/BaseFont': '/EOOCNJ+Univers', '/LastChar': 119, '/Widths': [333, 278, 278, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 278, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 556, 0, 500, 611, 556, 0, 611, 611, 278, 278, 0, 278, 944, 611, 611, 611, 0, 389, 500, 333, 611, 0, 833], '/FirstChar': 45}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/Type': '/Font', '/Subtype': '/Type1', '/Encoding': '/WinAnsiEncoding', '/FontDescriptor': IndirectObject(81, 0, 140542241149952), '/BaseFont': '/EOOCNI+Helvetica', '/LastChar': 32, '/Widths': [278], '/FirstChar': 32}, but is not installed. Consider installing fontTools if you encounter encoding problems.

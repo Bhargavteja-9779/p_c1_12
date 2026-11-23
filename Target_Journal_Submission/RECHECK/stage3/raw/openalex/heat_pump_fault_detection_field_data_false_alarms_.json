@@ -1,0 +1,227 @@
+{
+ "query": "heat pump fault detection field data false alarms",
+ "filter": null,
+ "count": 2547,
+ "results": [
+  {
+   "openalex": "https://openalex.org/W3126389188",
+   "doi": "https://doi.org/10.1016/j.jobe.2021.102254",
+   "title": "A review of the fault behavior of heat pumps and measurements, detection and diagnosis methods including virtual sensors",
+   "year": 2021,
+   "date": "2021-01-31",
+   "venue": "Journal of Building Engineering",
+   "type": "article",
+   "cites": 97,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W4292096586",
+   "doi": "https://doi.org/10.1016/j.rser.2022.112826",
+   "title": "A review of common faults in large-scale heat pumps",
+   "year": 2022,
+   "date": "2022-08-17",
+   "venue": "Renewable and Sustainable Energy Reviews",
+   "type": "article",
+   "cites": 87,
+   "abstract": "Large-scale heat pumps can contribute towards the decarbonisation of district heating systems and industrial processes. Unidentified faults can have a negative impact on the availability, performance and maintenance costs of heat pump systems. This study provides a description of faults related to the operation of 53 heat pumps based on a vapour compression cycle. Faults were characterized according to potential causes, mitigation or prevention implications as well as detection and diagnosis methods. Faults in the compressor, evaporator and source heat exchanger were more recurrent than in other components of large-scale heat pumps. Overall, the most common faults were fouling of heat exchangers and refrigerant leakage. Faults related to negative impacts like system shutdown, performance reduction and release of refrigerant into the environment, were mainly described to be originated in the compressor. Several directions for future research were identified, which included developing specific fault detection and diagnosis methods for large-scale heat pump applications, proposing methods to detect and diagnose multiple and simultaneous faults, and integrating performance degradation monitoring with fault detection and diagnosis."
+  },
+  {
+   "openalex": "https://openalex.org/W2728904880",
+   "doi": "https://doi.org/10.6028/nist.sp.1087",
+   "title": "Cooling mode fault detection and diagnosis method for a residential heat pump",
+   "year": 2008,
+   "date": "2008-01-01",
+   "venue": null,
+   "type": "report",
+   "cites": 30,
+   "abstract": "This research addresses the need for fault detection and diagnosis (FDD) in residential-style, air conditioner, and heat pump systems in an attempt to make these systems more trouble free and energy efficient over their entire lifetime.This work is one of the first to apply FDD techniques to a residential system with the added control element of a thermostatic expansion valve (TXV).Any control element actively seeks to perform its duties and thus obscures any faults occurring by making adjustments.This research work takes this into account and shows how FDD techniques may be applied to this type of system operating in the cooling mode.Performance characteristics of an R410A residential unitary split heat pump equipped with a TXV were investigated in the cooling mode under no-fault and faulty conditions.Six artificial faults were imposed: compressor/reversing valve leakage, improper outdoor air flow, improper indoor air flow, liquid-line restriction, refrigerant undercharge/overcharge, and presence of non-condensable gas.An automated method of steady-state detection was developed to produce consistent collection of data for all tests.The no-fault test measurements were used to develop a multivariate polynomial reference model for those system features (temperatures) that varied the most when a single fault was imposed.Outdoor air dry-bulb temperature, indoor air dry-bulb temperature, and indoor air dew-point temperature were used as the independent variables.From the no-fault reference model, feature residuals (differences between model predictions and measured values) were determined.Since the system was controlled by a TXV, the system could adapt itself to external variation much easier than a system with a fixed area expansion device.This added measure of refrigerant flow control provided by the TXV meant that the system compensated for faulty behavior more easily than a fixed area expansion device system.The distinctiveness of a fault depended on the TXV control status (fully open or fully closed), and thus the TXV affected the fault response of the selected features.The rule-based chart method of fault detection and diagnosis presented in this work requires knowledge of the variation of system features at steady-state and during transient operation.Knowledge of the transient variation of the various features is necessary to establish the size of the moving window used by the steady-state detector, which is a key part of our FDD method.The goodness of fit of the no-fault reference model along with the lack of measurement repeatability from one day to the next was included in developing the FDD algorithm.The steady-state detector is the foundation upon which the FDD algorithm rests; only when all system features are within their strictly defined steady-state limits does the FDD algorithm begin applying the rule sets as defined in its rule-based chart.These steady-state limits are based upon the standard deviation of the feature values, within a fixed-time-interval moving window, being less than three times their no-fault steady-state standard deviation values.Once the steady-state detector indicates that the important FDD features are steady, the difference in the moving window mean and the no-fault reference model values, feature residuals, are calculated using the no-fault reference model.A feature residual may have one of three values; positive or up-arrow , negative or down-arrow , or neutral [no change, NC (-)].The NC case is defined by a positive and negative threshold about the moving window mean value.Each case has an associated probability of occurrence, P(C | X), as shown in Figure i."
+  },
+  {
+   "openalex": "https://openalex.org/W4403391324",
+   "doi": "https://doi.org/10.1109/iotsms62296.2024.10710259",
+   "title": "Fault Detection On Heat Pump Operational Data Using Machine Learning Algorithms",
+   "year": 2024,
+   "date": "2024-09-02",
+   "venue": "International Conference on Internet of Things: Systems, Management and Security (IOTSMS)",
+   "type": "conference-paper",
+   "cites": 2,
+   "abstract": "Heat pumps, being complex systems, are susceptible to various malfunctions. By harnessing contemporary IoT technologies, these devices continuously transmit data which enables monitoring, maintenance, and efficiency. This study focuses on identifying compressor short duration cycles as faults through supervised machine learning algorithms such as XGBoost, Random Forest, SVM, and k-NN. Data preprocessing and labeling were conducted using extensive logged data from heat pump systems, addressing issues like high dimensionality, data sparsity, and temporal dependencies. The methodology included feature engineering, interpolation of missing data, and downsampling for compressor short duration cycles. Supervised machine learning models were applied to classify these short duration cycles. Among the models, XGBoost achieved the highest accuracy and F1-scores, effectively distinguishing between normal and fault conditions. The findings highlight the potential of machine learning to enhance predictive maintenance and operational efficiency in heat pumps."
+  },
+  {
+   "openalex": "https://openalex.org/W1536293186",
+   "doi": null,
+   "title": "Fault detection and diagnosis for air conditioners and heat pumps based on virtual sensors",
+   "year": 2013,
+   "date": "2013-01-01",
+   "venue": "Purdue e-Pubs (Purdue University System)",
+   "type": "dissertation",
+   "cites": 20,
+   "abstract": "The primary goal of this research is to develop and demonstrate an integrated, on-line performance monitoring and diagnostic system with low cost sensors for air conditioning and heat pump equipment. Automated fault detection and diagnostics (FDD) has the potential for improving energy efficiency along with reducing service costs and comfort complaints. To achieve this goal, virtual sensors with low cost measurements and simple models were developed to estimate quantities that would be expensive and or difficult to measure directly. A virtual refrigerant charge sensor (VRC) was extended with three approaches for determining refrigerant charge for equipment having variable-speed compressors and fans. Three different virtual refrigerant mass flow (VRMF) sensors were evaluated for estimating refrigerant mass flow rate. The first model uses a compressor map that relates refrigerant flow rate to measurements of condensing and evaporating saturation temperature, and inlet temperature measurements. The second model uses a compressor energy balance with the power consumption from a virtual compressor power (VCP) sensor and energy heat loss model, which is relatively independent of compressor and expansion valve faults that influence mass flow rate. The third model was developed using an empirical correlation for thermal expansion valves (TXV) and electronic expansion valves (EEV) based on an orifice equation. To assess the impact of faults on system performance, capacity, efficiency, and operating cost were evaluated using data for units tested in the laboratory and for data obtained from manufacturers. The impacts of faults were used in deciding thresholds for the FDD demonstration system. Information about capacity, power consumption, and energy efficiency can be used in real-time monitoring of the economic status of equipment and for decision support. The complete diagnostic FDD system was implemented and demonstrated for a rooftop air conditioner (RTU) that incorporates integrated virtual sensors and fault impact evaluation for decision support. The FDD RTU demonstration system provided the following diagnostic outputs: 1) loss of compressor performance, 2) low or high refrigerant charge, 3) fouled condenser or evaporator filter, 4) faulty expansion device, and 5) liquid-line restriction. The tests also quantified the benefits of this technology with measurements of equipment performance and demonstrated implementation with low sensor costs."
+  },
+  {
+   "openalex": "https://openalex.org/W2914253649",
+   "doi": "https://doi.org/10.3390/en12030545",
+   "title": "Refrigerant Charge Fault Detection and Diagnosis Algorithm for Water-to-Water Heat Pump Unit",
+   "year": 2019,
+   "date": "2019-02-10",
+   "venue": "Energies",
+   "type": "article",
+   "cites": 20,
+   "abstract": "Refrigerant charge faults have a great adverse effect on the performance of heat pumps and must therefore be detected and diagnosed early in real time. In this study, the effect of refrigerant charge faults on a water-to-water heat pump is experimentally investigated in cooling mode and heating mode at various outdoor entering water temperature conditions. The study showed that refrigerant undercharge affects the performance of water-to-water heat pump more in heating mode than in cooling mode. Results from the study are used to develop a refrigerant charge fault detection and diagnosis (FDD) algorithm that works using correlations and rule-based refrigerant fault characteristic charts. The FDD algorithm is able to detect refrigerant charge faults in the water-to-water heat pump within an error threshold of \u00b14.5% and \u00b11.1% in cooling mode and heating mode respectively."
+  },
+  {
+   "openalex": "https://openalex.org/W2765488536",
+   "doi": "https://doi.org/10.1016/j.proeng.2017.10.171",
+   "title": "Research on the PCA-based Intelligent Fault Detection Methodology for Sewage Source Heat Pump System",
+   "year": 2017,
+   "date": "2017-01-01",
+   "venue": "Procedia Engineering",
+   "type": "conference-paper",
+   "cites": 17,
+   "abstract": "As an energy-saving and environmentally friendly technology, sewage source heat pump is rapidly developing to be widely implemented in urban distributed energy system. However, in the lifecycle, the faulty operation of sewage source heat pump system (SSHPs) results in energy wastage, low efficiency, system unreliability and shorter equipment life. A novel PCA-based fault detection methodology is proposed for fault detection of SSHPs. Analyzing of the square prediction error (SPE) and Hotelling\u2019s T 2 principal component analysis (PCA) is a valid intelligent detection method to figure out faulty operation. Approximately 4,800 records of running state parameters was investigated from a 500,000 m 2 sewage source heat pump central heating system of community building in Xi\u2019an, China. The PCA-based fault detection model of the SSHPs was established, and the SPE and Hotelling\u2019s T 2 was calculated and analyzed. The analysis results presented that the PCA-based fault detection methodology can distinguish anomalies from normal operation, and availably detect the faults of SSHPs. Hence, the PCA-based fault detection methodology can ensure the healthy and efficient operation of SSHPs, and improve the application prospect of the system."
+  },
+  {
+   "openalex": "https://openalex.org/W7167784717",
+   "doi": "https://doi.org/10.1016/j.egyai.2026.100845",
+   "title": "Experimental validation of a neural-network-based method for fault detection in heat pump evaporators",
+   "year": 2026,
+   "date": "2026-07-09",
+   "venue": "Energy and AI",
+   "type": "article",
+   "cites": 0,
+   "abstract": "The heat pump industry expects a significant shortage of qualified technicians, which will affect quick replacement and service work. It is therefore sensible to reduce unnecessary maintenance work on heat pumps. However, undetected faults can have a significant impact on efficiency and therefore, operating cost. A shift from regular maintenance to demand-based strategies is therefore desirable. Fault Detection and Diagnosis has been shown to be a valuable tool for implementing demand-based maintenance by enabling the automatic detection of malfunctions. Several methods for the automatic detection of evaporator fouling have been developed. However, experimental validation of complete fault-detection frameworks in this context remains scarce. In this study, an anomaly detection of the evaporator air volume flow is performed as a proxy for evaporator fouling. It is based on an artificial neural network that learns the behavior of the fault-free system, which is used as a reference to evaluate the current state. The residual is evaluated using a threshold-based approach and Bayesian classification in order to detect fault states. Using this method, about 98% of our experimental datapoints were correctly classified, with a detection rate of up to 91.1%. This experimentally validated proof of concept highlights the potential of this approach for predictive maintenance applications."
+  },
+  {
+   "openalex": "https://openalex.org/W4411611771",
+   "doi": "https://doi.org/10.3390/en18133286",
+   "title": "State-of-the-Art Methodologies for Self-Fault Detection, Diagnosis and Evaluation (FDDE) in Residential Heat Pumps",
+   "year": 2025,
+   "date": "2025-06-23",
+   "venue": "Energies",
+   "type": "article",
+   "cites": 8,
+   "abstract": "The European Union\u2019s 2050 targets for decarbonization and electrification are promoting the widespread integration of heat pumps for space heating, cooling, and domestic hot water in buildings. However, their energy and environmental performance can be significantly compromised by soft faults, such as refrigerant leakage or heat exchanger fouling, which may reduce system efficiency by up to 25%, even with maintenance intervals every two years. As a result, the implementation of self-fault detection, diagnosis, and evaluation (FDDE) tools based on operational data has become increasingly important. The complexity and added value of these tools grow as they progress from simple fault detection to quantitative fault evaluation, enabling more accurate and timely maintenance strategies. Direct fault measurements are often unfeasible due to spatial, economic, or intrusiveness constraints, thus requiring indirect methods based on low-cost and accessible measurements. In such cases, overlapping fault symptoms may create diagnostic ambiguities. Moreover, the accuracy of FDDE approaches depends on the type and number of sensors deployed, which must be balanced against cost considerations. This paper provides a comprehensive review of current FDDE methodologies for heat pumps, drawing insights from the academic literature, patent databases, and commercial products. Finally, the role of artificial intelligence in enhancing fault evaluation capabilities is discussed, along with emerging challenges and future research directions."
+  },
+  {
+   "openalex": "https://openalex.org/W3090708157",
+   "doi": "https://doi.org/10.3390/app10196789",
+   "title": "A Sparse Autoencoder-Based Unsupervised Scheme for Pump Fault Detection and Isolation",
+   "year": 2020,
+   "date": "2020-09-28",
+   "venue": "Applied Sciences",
+   "type": "article",
+   "cites": 36,
+   "abstract": "Pumps are one of the most critical machines in the petrochemical process. Condition monitoring of such parts and detecting faults at an early stage are crucial for reducing downtime in the production line and improving plant safety, efficiency and reliability. This paper develops a fault detection and isolation scheme based on an unsupervised machine learning method, sparse autoencoder (SAE), and evaluates the model on industrial multivariate data. The Mahalanobis distance (MD) is employed to calculate the statistical difference of the residual outputs between monitoring and normal states and is used as a system-wide health indicator. Furthermore, fault isolation is achieved by a reconstruction-based two-dimensional contribution map, in which the variables with larger contributions are responsible for the detected fault. To demonstrate the effectiveness of the proposed scheme, two case studies are carried out based on a multivariate data set from a pump system in an oil and petrochemical factory. The classical principal component analysis (PCA) method is compared with the proposed method and results show that SAE performs better in terms of fault detection than PCA, and can effectively isolate the abnormal variables, which can hence help effectively trace the root cause of the detected fault."
+  },
+  {
+   "openalex": "https://openalex.org/W4361026914",
+   "doi": "https://doi.org/10.1016/j.apenergy.2023.121030",
+   "title": "A review of data-driven fault detection and diagnostics for building HVAC systems",
+   "year": 2023,
+   "date": "2023-03-27",
+   "venue": "Applied Energy",
+   "type": "article",
+   "cites": 396,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W2746377384",
+   "doi": "https://doi.org/10.6028/nist.tn.1774",
+   "title": "FDD CX: A Fault Detection and Diagnostic Commissioning Tool for Residential Air Conditions and Heat Pumps",
+   "year": 2012,
+   "date": "2012-11-01",
+   "venue": null,
+   "type": "report",
+   "cites": 2,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W4385339024",
+   "doi": "https://doi.org/10.52202/069564-0074",
+   "title": "Fault Detection and Diagnosis by Machine Learning Methods in Air-To-Water Heat Pumps: Evaluation of Evaporator Fouling",
+   "year": 2023,
+   "date": "2023-01-01",
+   "venue": "International Conference on Efficiency, Cost, Optimization, Simulation and Environmental Impact of Energy Systems (ECOS)",
+   "type": "conference-paper",
+   "cites": 8,
+   "abstract": "Heat pumps have emerged as key technology to pave the way for a sustainable heat supply in buildings.However, the ongoing shortage of trained experts counteracts the current heat pump trend.Increasing the capacity of experts, services like Fault Detection and Diagnosis (FDD) can support the identification of malfunctions and integration of methods for predictive maintenance.The primary objective of FDD is to detect faults, diagnose their causes, and possibly enable correction to prevent efficiency losses as well as system damage or downtime.This involves a comparison between a fault-free reference case and the real system.In research, machine-learning methods like Artificial Neural Networks (ANN) show the capability to learn the behavior of fault-free systems.In practice, however, the implementation of ANN is limited due to missing data in operation for training.Therefore, it is common to utilize physically simulated data for pre-training.One way to achieve high efficiency in heat pumps is to maximize heat transfer in the evaporator.Fouling within this component therefore leads to significant performance degradation and reduced system lifespan.As a result, this work introduces and evaluates an extendable FDD method for evaporator fouling in air-to-water heat pumps.To detect evaporator fouling during operation using an ANN, a transient model of a refrigerant cycle provides the training data.Based on literature, the fouling effect is emulated afterwards, serving the data for the reference system considering faulty operation.Applying the present concept, we reveal a reduction in COP due to evaporator fouling of approximately 3 % over a whole year, while our fault detection methodology detects 55.65 % of the faults within the given heat pump model.Overall, this study provides insights into the performance of FDD methods for evaporator fouling in air-to-water heat pumps, which can help to improve the efficiency and reliability within the system lifespan.The results of this study demonstrate that the concept of FDD offers the potential to be applied in practice, and proposes recommendations for future perspectives about ANN within FDD in heat pump systems."
+  },
+  {
+   "openalex": "https://openalex.org/W3011342695",
+   "doi": "https://doi.org/10.1016/j.energy.2020.117323",
+   "title": "Real-world application of machine-learning-based fault detection trained with experimental data",
+   "year": 2020,
+   "date": "2020-03-09",
+   "venue": "Energy",
+   "type": "article",
+   "cites": 118,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W7224868381",
+   "doi": "https://doi.org/10.26868/29761662.2026.305",
+   "title": "Simulation-Based Fault Detection for a Commercial Ground Source Heat Pump: A Physics-Informed Hybrid Framework",
+   "year": 2026,
+   "date": "2026-09-09",
+   "venue": "Proceedings of BauSIM",
+   "type": "conference-paper",
+   "cites": 0,
+   "abstract": "This study presents a hybrid fault detection and diagnosis framework applied to a water-to-water ground-source heat pump serving an office building. Leveraging Building Management System data, we develop a steady-state thermodynamic model of the refrigerant cycle. This physics-based model is cali- brated against real sensor measurements to isolate physically interpretable residuals\u2014specifically, deviations in compressor isentropic efficiency and heat-exchanger conductance. To overcome the scarcity of real-world fault data, synthetic degradation scenarios (compressor wear and heat-exchanger fouling) are generated via parametric simulation. These labelled datasets train a lightweight machine-learning classifier to accurately identify anomalies. By bridging thermodynamic simulation with data-driven algorithms, the proposed framework extracts fault-sensitive features that are both computationally efficient and physically transparent. This methodology addresses a critical gap in geothermal operational monitoring, laying the groundwork for robust digital twin applications and predictive maintenance in the tertiary sector."
+  },
+  {
+   "openalex": "https://openalex.org/W4416344033",
+   "doi": "https://doi.org/10.1109/tcst.2026.3740257",
+   "title": "Modeling and Physics-Enhanced Fault Detection in Wastewater Pump Stations",
+   "year": 2026,
+   "date": "2026-01-01",
+   "venue": "IEEE Transactions on Control Systems Technology",
+   "type": "article",
+   "cites": 0,
+   "abstract": "Monitoring wastewater pump stations is essential because they are critical infrastructure. However, monitoring is still often performed manually due to the lack of suitable algorithmic methods and data. This paper introduces a high-fidelity, physics-enhanced simulator of a three-pump wastewater station that captures transient hydro-mechanical dynamics at a one-second resolution. The simulator is fully parameter-driven, adaptable to other wastewater stations, and capable of generating datasets for data-driven analytics. It can also generate balanced faulty datasets when real failures are scarce or confidential. A comparison with high-frequency SCADA data from a municipal station shows strong agreement across key operational metrics. Furthermore, the paper proposes robust statistical and mathematical frameworks for fault detection and isolation, including a nested-model F-test to detect pump degradation or system faults, and a tangent residual approach to distinguish pump faults from system faults using operating-point kinematics. This framework enables what-if studies, facilitates early fault diagnosis based on flow rate and head, and provides actionable insights for condition-based maintenance in wastewater pumping infrastructure."
+  },
+  {
+   "openalex": "https://openalex.org/W4388573852",
+   "doi": "https://doi.org/10.3390/s23229090",
+   "title": "A Technique for Centrifugal Pump Fault Detection and Identification Based on a Novel Fault-Specific Mann\u2013Whitney Test",
+   "year": 2023,
+   "date": "2023-11-10",
+   "venue": "Sensors",
+   "type": "article",
+   "cites": 10,
+   "abstract": "This work presents a technique for fault detection and identification in centrifugal pumps (CPs) using a novel fault-specific Mann-Whitney test (FSU Test) and K-nearest neighbor (KNN) classification algorithm. Traditional fault indicators, such as the mean, peak, root mean square, and impulse factor, lack sensitivity in detecting incipient faults. Furthermore, for defect identification, supervised models rely on pre-existing knowledge about pump defects for training purposes. To address these concerns, a new centrifugal pump fault indicator (CPFI) that does not rely on previous knowledge is developed based on a novel fault-specific Mann-Whitney test. The new fault indicator is obtained by decomposing the vibration signature (VS) of the centrifugal pump hierarchically into its respective time-frequency representation using the wavelet packet transform (WPT) in the first step. The node containing the fault-specific frequency band is selected, and the Mann-Whitney test statistic is calculated from it. The combination of hierarchical decomposition of the vibration signal for fault-specific frequency band selection and the Mann-Whitney test form the new fault-specific Mann-Whitney test. The test output statistic yields the centrifugal pump fault indicator, which shows sensitivity toward the health condition of the centrifugal pump. This indicator changes according to the working conditions of the centrifugal pump. To further enhance fault detection, a new effect ratio (ER) is introduced. The KNN algorithm is employed to classify the fault type, resulting in promising improvements in fault classification accuracy, particularly under variable operating conditions."
+  },
+  {
+   "openalex": "https://openalex.org/W3207886734",
+   "doi": "https://doi.org/10.1109/access.2021.3119573",
+   "title": "E-SFD: Explainable Sensor Fault Detection in the ICS Anomaly Detection System",
+   "year": 2021,
+   "date": "2021-01-01",
+   "venue": "IEEE Access",
+   "type": "article",
+   "cites": 82,
+   "abstract": "Industrial Control Systems (ICS) are evolving into smart environments with increased interconnectivity by being connected to the Internet. These changes increase the likelihood of security vulnerabilities and accidents. As the risk of cyberattacks on ICS has increased, various anomaly detection studies are being conducted to detect abnormal situations in industrial processes. However, anomaly detection in ICS suffers from numerous false alarms. When false alarms occur, multiple sensors need to be checked, which is impractical. In this study, when an anomaly is detected, sensors displaying abnormal behavior are visually presented through XAI-based analysis to support quick practical actions and operations. Anomaly Detection has designed and applied better anomaly detection technology than the first prize at HAICon2020, an ICS security threat detection AI contest hosted by the National Security Research Institute last year, and explains the anomalies detected in its model. To the best of our knowledge, our work is at the forefront of explainable anomaly detection research in ICS. Therefore, it is expected to increase the utilization of anomaly detection technology in ICS."
+  },
+  {
+   "openalex": "https://openalex.org/W2893319954",
+   "doi": "https://doi.org/10.36001/phmconf.2018.v10i1.517",
+   "title": "Development and Field Evaluation of Data-driven Whole Building Fault Detection and Diagnosis Strategy",
+   "year": 2018,
+   "date": "2018-09-24",
+   "venue": "Annual Conference of the PHM Society",
+   "type": "conference-paper",
+   "cites": 7,
+   "abstract": "Faults, i.e., malfunctioned sensors, components, control, and systems, in a building have significantly adverse impacts on the building\u2019s energy consumption and indoor environment. To date, extensive research has been conducted on the development of component level fault detection and diagnosis (FDD) for building systems, especially the Heating, Ventilating, and Air Conditioning (HVAC) system. However, for faults that have multi-system impacts, component level FDD tools may encounter high false alarm rate due to the fact that HVAC subsystems are often tightly coupled together. Hence, the detection and diagnosis of whole building faults is the focus of this study. Here, a whole building fault refers to a fault that occurs in one subsystem but triggers abnormalities in other subsystems and have significant adverse whole building energy impact. The wide adoption of building automation systems (BAS) and the development of machine learning techniques make it possible and cost-efficient to detect and diagnose whole building faults using data-driven methods. In this study, a whole building FDD strategy which adopts weather and schedule information based pattern matching (WPM) method and feature based Principal Component Analysis (FPCA) for fault detection, as well as Bayesian Networks (BNs) based method for fault diagnosis is developed. Fault tests are implemented in a real campus building. The collected data are used to evaluate the performance of the proposed whole building FDD strategies."
+  },
+  {
+   "openalex": "https://openalex.org/W2038076318",
+   "doi": "https://doi.org/10.1080/10789669.2002.10391289",
+   "title": "Demonstration of Fault Detection and Diagnosis Methods for Air-Handling Units",
+   "year": 2002,
+   "date": "2002-01-01",
+   "venue": "Science and Technology for the Built Environment",
+   "type": "article",
+   "cites": 131,
+   "abstract": "Results are presented from controlled field tests of two methods for detecting and diagnosing faults in HVAC equipment. The tests were conducted in a unique research building that featured two air-handling units serving matched sets of unoccupied rooms with adjustable internal loads. Tests were also conducted in the same building on a third air handler serving areas used for instruction and by building staff. One of the two fault detection and diagnosis (FDD) methods used first-principles-based models of system components. The data used by this approach were obtained from sensors typically installed for control purposes. The second method was based on semiempirical correlations of submetered electrical power with flow rates or process control signals. Faults were introduced into the air-mixing, filter-coil, and fan sections of each of the three air-handling units. In the matched air-handling units, faults were implemented over three blind test periods (summer, winter, and spring operating conditions). In each test period, the precise timing of the implementation of the fault conditions was unknown to the researchers. The faults were, however, selected from an agreed set of conditions and magnitudes, established for each season. This was necessary to ensure that at least some magnitudes of the faults could be detected by the FDD methods during the limited test period. Six faults were used for a single summer test period involving the third air-handling unit. These fault conditions were completely unknown to the researchers and the test period was truly blind. The two FDD methods were evaluated on the basis of their sensitivity, robustness, the number of sensors required, and ease of implementation. Both methods detected nearly all of the faults in the two matched air-handling units but fewer of the unknown faults in the third air-handling unit. Fault diagnosis was more difficult than detection. The first-principles-based method misdiagnosed several faults. The electrical power correlation method demonstrated greater success in diagnosis, although the limited number of faults addressed in the tests contributed to this success. The first-principles-based models require a larger number of sensors than the electrical power correlation models, although the latter method requires power meters that are not typically installed. The first-principles-based models require training data for each subsystem model to tune the respective parameters so that the model predictions more precisely represent the target system. This is obtained by an open-loop test procedure. The electrical power correlation method uses polynomial models generated from data collected from \u201cnormal\u201d system operation, under closed-loop control. Both methods were found to require further work in three principal areas: to reduce the number of parameters to be identified; to assess the impact of less expensive or fewer sensors; and to further automate their implementation. The first-principles-based models also require further work to improve the robustness of predictions."
+  }
+ ]
+}

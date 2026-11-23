@@ -1,0 +1,282 @@
+{
+ "query": "air handling unit fault detection transferability across buildings",
+ "filter": null,
+ "count": 22260,
+ "results": [
+  {
+   "openalex": "https://openalex.org/W2038076318",
+   "doi": "https://doi.org/10.1080/10789669.2002.10391289",
+   "title": "Demonstration of Fault Detection and Diagnosis Methods for Air-Handling Units",
+   "year": 2002,
+   "date": "2002-01-01",
+   "venue": "Science and Technology for the Built Environment",
+   "type": "article",
+   "cites": 131,
+   "abstract": "Results are presented from controlled field tests of two methods for detecting and diagnosing faults in HVAC equipment. The tests were conducted in a unique research building that featured two air-handling units serving matched sets of unoccupied rooms with adjustable internal loads. Tests were also conducted in the same building on a third air handler serving areas used for instruction and by building staff. One of the two fault detection and diagnosis (FDD) methods used first-principles-based models of system components. The data used by this approach were obtained from sensors typically installed for control purposes. The second method was based on semiempirical correlations of submetered electrical power with flow rates or process control signals. Faults were introduced into the air-mixing, filter-coil, and fan sections of each of the three air-handling units. In the matched air-handling units, faults were implemented over three blind test periods (summer, winter, and spring operating conditions). In each test period, the precise timing of the implementation of the fault conditions was unknown to the researchers. The faults were, however, selected from an agreed set of conditions and magnitudes, established for each season. This was necessary to ensure that at least some magnitudes of the faults could be detected by the FDD methods during the limited test period. Six faults were used for a single summer test period involving the third air-handling unit. These fault conditions were completely unknown to the researchers and the test period was truly blind. The two FDD methods were evaluated on the basis of their sensitivity, robustness, the number of sensors required, and ease of implementation. Both methods detected nearly all of the faults in the two matched air-handling units but fewer of the unknown faults in the third air-handling unit. Fault diagnosis was more difficult than detection. The first-principles-based method misdiagnosed several faults. The electrical power correlation method demonstrated greater success in diagnosis, although the limited number of faults addressed in the tests contributed to this success. The first-principles-based models require a larger number of sensors than the electrical power correlation models, although the latter method requires power meters that are not typically installed. The first-principles-based models require training data for each subsystem model to tune the respective parameters so that the model predictions more precisely represent the target system. This is obtained by an open-loop test procedure. The electrical power correlation method uses polynomial models generated from data collected from \u201cnormal\u201d system operation, under closed-loop control. Both methods were found to require further work in three principal areas: to reduce the number of parameters to be identified; to assess the impact of less expensive or fewer sensors; and to further automate their implementation. The first-principles-based models also require further work to improve the robustness of predictions."
+  },
+  {
+   "openalex": "https://openalex.org/W4415354967",
+   "doi": "https://doi.org/10.1016/j.buildenv.2025.113889",
+   "title": "Evaluating cross-building transferability of attention-based automated fault detection and diagnosis for air handling units: Auditorium and hospital case study",
+   "year": 2025,
+   "date": "2025-10-20",
+   "venue": "Building and Environment",
+   "type": "article",
+   "cites": 38,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W4295854772",
+   "doi": "https://doi.org/10.3390/app12178837",
+   "title": "Semi-Supervised Transfer Learning Methodology for Fault Detection and Diagnosis in Air-Handling Units",
+   "year": 2022,
+   "date": "2022-09-02",
+   "venue": "Applied Sciences",
+   "type": "article",
+   "cites": 24,
+   "abstract": "Heating, ventilation and air-conditioning (HVAC) systems are the major energy consumers among buildings\u2019 equipment. Reliable fault detection and diagnosis schemes can effectively reduce their energy consumption and maintenance costs. In this respect, data-driven approaches have shown impressive results, but their accuracy depends on the availability of representative data to train the models, which is not common in real applications. For this reason, transfer learning is attracting growing attention since it tackles the problem by leveraging the knowledge between datasets, increasing the representativeness of fault scenarios. However, to date, research on transfer learning for heating, ventilation and air-conditioning has mostly been focused on learning algorithmic, overlooking the importance of a proper domain similarity analysis over the available data. Thus, this study proposes the design of a transfer learning approach based on a specific data selection methodology to tackle dissimilarity issues. The procedure is supported by neural network models and the analysis of eventual prediction uncertainties resulting from the assessment of the target application samples. To verify the proposed methodology, it is applied to a semi-supervised transfer learning case study composed of two publicly available air-handling unit datasets containing some fault scenarios. Results emphasize the potential of the proposed domain dissimilarity analysis reaching a classification accuracy of 92% under a transfer learning framework, an increase of 37% in comparison to classical approaches."
+  },
+  {
+   "openalex": "https://openalex.org/W7131404585",
+   "doi": "https://doi.org/10.1016/j.enbuild.2026.117233",
+   "title": "Class-aware temporal and contextual contrastive framework for semi-supervised automated fault detection and diagnosis in air handling units",
+   "year": 2026,
+   "date": "2026-02-25",
+   "venue": "Energy and Buildings",
+   "type": "article",
+   "cites": 40,
+   "abstract": "Automated Fault Detection and Diagnosis (AFDD) for Air Handling Units (AHUs) has largely relied on supervised learning, which is difficult to deploy when labeled data are scarce and fault classes are imbalanced. Existing label-efficient AFDD studies often evaluate self-supervised schemes on simulated or laboratory datasets, frequently in tabular form, and therefore do not fully capture the temporal structure and noise characteristics of real operational logs. This study proposes Class-Aware Temporal and Contextual Contrasting (CA-TCC) for label-efficient AHU AFDD on real buildings. CA-TCC is a semi-supervised framework that first performs self-supervised temporal/contextual contrastive pretraining on unlabeled operational logs and then performs class-aware semi-supervised refinement using limited labels together with unlabeled data via confidence-filtered pseudo-labels; a lightweight classifier head is subsequently trained for fault classification. Experiments on six datasets\u2014three synthetic AHU benchmarks and three real operational datasets from an auditorium, a hospital, and an office building\u2014show that CA-TCC consistently outperforms alternative self-supervised backbones across label budgets. With only 5% labeled data, CA-TCC improves macro F1 score and accuracy by approximately 5\u201310 and 5\u20139 points, respectively, while remaining within about 1\u20131.5 points of strong fully supervised models Cross-building transfer experiments demonstrate reliable source-to-target generalization across all building pairs under consistent label budgets. Additional analyses evaluate backbone fine-tuning policies, sensitivity to CA-TCC-specific hyperparameters, per-class behavior under different label fractions, and ablations of temporal, contextual, and class-aware components. Comparisons with representative baselines and inference-speed measurements further characterize suitability for near real-time AFDD."
+  },
+  {
+   "openalex": "https://openalex.org/W7214042191",
+   "doi": "https://doi.org/10.2139/ssrn.7506499",
+   "title": "Unsupervised Transfer Learning for Building HVAC Fault Detection Using Graph Deviation Networks",
+   "year": 2026,
+   "date": "2026-01-01",
+   "venue": "SSRN Electronic Journal",
+   "type": "preprint",
+   "cites": 0,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W2898606798",
+   "doi": "https://doi.org/10.1016/j.autcon.2018.09.016",
+   "title": "An auto-deployed model-based fault detection and diagnosis approach for Air Handling Units using BIM and Modelica",
+   "year": 2018,
+   "date": "2018-10-25",
+   "venue": "Automation in Construction",
+   "type": "article",
+   "cites": 57,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W7119532147",
+   "doi": "https://doi.org/10.1038/s41597-025-06179-y",
+   "title": "Labeled Datasets for Air Handling Units Operating in Faulted and Fault-free States",
+   "year": 2026,
+   "date": "2026-01-09",
+   "venue": "Scientific Data",
+   "type": "data-paper",
+   "cites": 9,
+   "abstract": "Data-driven fault detection and diagnosis (FDD) for buildings' heating, ventilating, and air conditioning (HVAC) systems has gained popularity in recent years. However, the scarcity of well-labeled data that represents true fault symptoms presents a challenge for developing new FDD methods. Furthermore, there is growing interest in applying transfer learning (TL) for building applications, where well-labeled data from one building is used to diagnose faults in a related but different building. Successful evaluation of TL algorithms requires at least two datasets that share similarities yet exhibit differences in some operational conditions. Unfortunately, the lack of comparative studies to identify suitable dataset pairs has slowed the progress of TL or other inter-dataset studies. To address these challenges, this paper focuses on the air handling unit (AHU), a key HVAC subsystem, and 1) presents the publication of eight new datasets, operating under fault-free and various faulty conditions; and 2) conducts a comprehensive study on AHU fault datasets to identify dataset pairs and their associated faults that are most suitable for evaluating TL algorithms."
+  },
+  {
+   "openalex": "https://openalex.org/W4400164111",
+   "doi": "https://doi.org/10.1016/j.enbuild.2024.114476",
+   "title": "Fault prioritisation for Air Handling units using fault modelling and actual fault occurrence data",
+   "year": 2024,
+   "date": "2024-06-30",
+   "venue": "Energy and Buildings",
+   "type": "article",
+   "cites": 19,
+   "abstract": "Fault impact analysis is an important step in developing Fault Detection and Diagnosis (FDD) tools for Heating, Ventilation and Air-Conditioning (HVAC) systems. It provides an insight into how HVAC systems react in the presence of operational faults and helps to prioritise which faults to focus on. The research in the existing literature has mostly focused on modelling several faults occurring in various HVAC systems and components to evaluate the effect of the fault on energy performance and the predicted thermal comfort of occupants. However, the real frequency of fault occurrence, an important factor which affects the overall impact a fault has on the system\u2019s performance, has barely been addressed in the reviewed literature. This paper addresses this gap by considering real fault occurrence frequency data in addition to the effect of the faults on the energy performance of the building to assess their total energy impact. A real office building in the Netherlands was modelled using DesignBuilder and its energy performance was simulated using EnergyPlus. Air Handling Unit (AHU) faults were introduced using the native fault object and Energy Management System (EMS) features available in EnergyPlus. The fault occurrence data was extracted from AHU work orders using text mining. The fault modelling and text mining results were combined to get the total energy impact of the fault and, subsequently, the faults were prioritised using the Pareto principle. The research identified that fan failure, Heat Recovery Wheel (HRW) failure, fan stuck at 50% and Heating Coil Valve (HCV) stuck at 0% are the priority faults for winter and fan failure is the priority fault for summer."
+  },
+  {
+   "openalex": "https://openalex.org/W2742184390",
+   "doi": "https://doi.org/10.6028/nist.ir.7365",
+   "title": "Results from field testing of embedded air handling unit and variable air volume box fault detection tools",
+   "year": 2006,
+   "date": "2006-01-01",
+   "venue": null,
+   "type": "report",
+   "cites": 38,
+   "abstract": "Fault detection and diagnostic (FDD) methods that can detect common mechanical faults and control errors in air-handling units (AHUs) and variable-air-volume (VAV) boxes were developed and commercialized.The tools are sufficiently simple that they can be embedded in commercial building automation and control systems and rely only upon the sensor data and control signals that are commonly available in these systems.AHU Performance Assessment Rules (APAR) is a diagnostic tool that uses a set of expert rules derived from mass and energy balances to detect faults in air-handling units.VAV box Performance Assessment Control Charts (VPACC) is a diagnostic tool that uses statistical quality control measures to detect faults or control problems in VAV boxes.This report describes the transfer of the FDD methods from research to commercial use.An interface between the FDD tools and the building operator is introduced.Results are presented from a multiple site field demonstration in which APAR and VPACC were embedded in commercial AHU and VAV box controllers.Robust FDD parameters are tabulated for both APAR and VPACC.The parameters, which eliminate the need for site-specific configuration, were developed based on experience from the field demonstration."
+  },
+  {
+   "openalex": "https://openalex.org/W4308578406",
+   "doi": "https://doi.org/10.3389/fbuil.2022.1013196",
+   "title": "A review of the Digital Twin technology for fault detection in buildings",
+   "year": 2022,
+   "date": "2022-11-09",
+   "venue": "Frontiers in Built Environment",
+   "type": "article",
+   "cites": 128,
+   "abstract": "This study aims to evaluate the utilization of technology known as Digital Twin for fault detection in buildings. The strategy consisted of studying existing applications, difficulties, and possibilities that come with it. The Digital Twin technology is one of the most intriguing newly discovered technologies rapidly evolving; however, some problems still need to be addressed. First, using Digital Twins to detect building faults to prevent future failures and cutting overall costs by improving building maintenance is still ambiguous. Second, how Digital Twin technology may be applied to discover inefficiencies inside the building to optimize energy usage is not well defined. To address these issues, we reviewed 326 documents related to Digital Twin, BIM, and fault detection in civil engineering. Then out of the 326 documents, we reviewed 115 documents related to Digital Twin for fault detection in detail. This study used a qualitative assessment to uncover Digital Twin technology\u2019s full fault detection capabilities. Our research concludes that Digital Twins need more development in areas such as scanner hardware and software, detection and prediction algorithms, modeling, and twinning programs before they will be convincing enough for fault detection and prediction. In addition, more building owners, architects, and engineers need substantial financial incentives to invest in condition monitoring before many of the strategies discussed in the reviewed papers will be used in the construction industry. For future investigation, more research needs to be devoted to exploring how machine learning may be integrated with other Digital Twin components to develop new fault detection methods."
+  },
+  {
+   "openalex": "https://openalex.org/W2910907706",
+   "doi": null,
+   "title": "Fault Detection, Diagnosis and Prognosis in HVAC Air Handling Systems",
+   "year": 2018,
+   "date": "2018-01-01",
+   "venue": "OpenCommons - UConn (University of Connecticut)",
+   "type": "dissertation",
+   "cites": 3,
+   "abstract": "As key sub-systems of HVACs, air handling systems are used to condition air to satisfy human thermal comfort and air quality requirements. Fault diagnosis is critical since it allows system operators to know which faults have occurred, how critical they are, and improve the system availability. Additionally, fault prognosis is critical since it allows system operators to know Remaining Useful lives of systems and their components, and prevents unexpected breakdowns. However, fault diagnosis of known and new fault types and fault prognosis are complex since 1) fault propagation across components is hard to capture; 2) measurement noise cause many false alarms; 3) impacts of changing environments are hard to be captured in Hidden Markov Models (HMMs); 4) normal conditions or known fault types may be identified as new fault types falsely; 5) Hidden Semi-Markov Models (HSMMs) perform well in fault prognosis but are time-consuming; and 6) HSMMs capturing impacts of concurrent failure modes are hard to establish. In this thesis, to capture fault propagation in an efficient manner, a new coupled HMM is developed. To filter out false alarms, \u201ccoupled statistical process control\u201d techniques are developed. To adapt to changing environments, a new online learning algorithm is developed. To identify new fault types with low false identification rates, a robust statistical method is developed. To estimate states of HSMMs with low computational effort, a statistical method is developed to focus on potential state transition points. To reflect accumulation of fault impacts, a statistical method is developed based on Monte-Carlo simulation."
+  },
+  {
+   "openalex": "https://openalex.org/W4410000394",
+   "doi": "https://doi.org/10.3390/systems13050330",
+   "title": "Fault Detection and Diagnosis in Air-Handling Unit (AHU) Using Improved Hybrid 1D Convolutional Neural Network",
+   "year": 2025,
+   "date": "2025-05-01",
+   "venue": "Systems",
+   "type": "article",
+   "cites": 11,
+   "abstract": "The air-handling unit (AHU) is an essential component of heating, ventilation, and air-conditioning (HVAC) systems. Hence, detecting the faults in AHUs is essential for maintaining continuous HVAC operation and preventing system breakdowns. The advent of artificial intelligence has transformed the AHU fault diagnosis techniques. Specifically, deep learning has obviated the necessity for manual feature extraction and selection, thereby streamlining the fault diagnosis process. While conventional convolutional neural networks (CNNs) effectively detect defects, incorporating more spatial variables could enhance their performance further. This paper presents a hybrid architecture combining a CNN model with a long short-term memory (LSTM) model to diagnose the faults in AHUs. The advantages of the LSTM model and convolutional layers are combined to identify significant patterns in the input data, which considerably facilitates the detection of AHU defects. The hybrid design enhances the network\u2019s capability to capture both local and global characteristics, thus improving its ability to differentiate between normal and abnormal circumstances. The proposed approach achieves strong diagnostic accuracy, exhibiting high sensitivity to nuanced fault patterns. Furthermore, its efficacy is corroborated through comparisons with state-of-the-art AHU fault identification techniques."
+  },
+  {
+   "openalex": "https://openalex.org/W4281746498",
+   "doi": "https://doi.org/10.1177/01436244221097827",
+   "title": "A holistic sequential fault detection and diagnostics framework for multiple zone variable air volume air handling unit systems",
+   "year": 2022,
+   "date": "2022-06-06",
+   "venue": "Building Services Engineering Research and Technology",
+   "type": "article",
+   "cites": 19,
+   "abstract": "A holistic fault detection and diagnostics (FDD) method should explicitly consider the dependencies between faults at the system- and zone-level to isolate the root cause. A system-level fault can trigger false alarms at the zone-level, while concealing the presence of a zone-level fault. However, most FDD methods have focused on a single component/equipment without considering the importance of the interactions between zone- and system-level devices. This paper proposes a holistic hierarchical framework for FDD, combining the process of detection and diagnosis of controls hardware and sequencing logic faults affecting the actuators at the system- and zone-level. The proposed framework follows a holistic sequential procedure to diagnose faults and suppress false alarms in this order: hard faults in air handling units (AHUs), hard faults in variable air volume (VAV) zones, sequencing logic faults in AHUs, and sequencing logic faults in VAV zones. The detection of faults is performed by visualizing the discrepancies between the expected and measured operational behaviour of AHUs and VAV boxes. Examples demonstrating the framework are provided with data from 10 different VAV AHU systems. Practical application: This paper provides a sequential hierarchical FDD framework to address two main issues in VAV AHU systems: detectability and significance. Regarding detectability, the framework prioritizes hard faults over sequencing logic faults to avoid false positives and false negatives; about significance, system-level faults are prioritized over zone-level faults to triage high-impact faults in the system. The detection of faults is performed via visualizing the biases from the expected behaviour of AHU and VAV characteristics to provide an envisioning interpretation for the experts in facilities management in commercial buildings to find the root cause of the fault and fix them on-site."
+  },
+  {
+   "openalex": "https://openalex.org/W4411278405",
+   "doi": "https://doi.org/10.1061/jccee5.cpeng-6677",
+   "title": "Fault Diagnosis of Air Handling Units in an Auditorium Using Real Operational Labeled Data across Different Operation Modes",
+   "year": 2025,
+   "date": "2025-06-13",
+   "venue": "Journal of Computing in Civil Engineering",
+   "type": "article",
+   "cites": 29,
+   "abstract": "Fault detection and diagnosis (FDD) in air handling units (AHUs) is essential for ensuring indoor air quality and prolonging system life span. However, the use of real operational data for FDD has been limited in existing research, largely due to challenges in data availability and the complexity of fault annotation. This study specifically focuses on AHUs with constant air volume (CAV) systems, a critical component of HVAC operations within an auditorium. Data from 15 different sensors installed across 13 AHUs in the auditorium were collected and analyzed. Seven operational conditions were identified\u2014including normal operation and six fault types\u2014and were annotated accordingly. Nine supervised machine learning methods were applied to FDD tasks involving these operational conditions. Three types of models were developed: an integrated model trained on both cooling and heating data sets, a cooling model trained exclusively on cooling data, and a heating model trained exclusively on heating data. Each method underwent hyperparameter tuning across 10 configurations, resulting in a total of 270 models (9 methods \u00d7 10 configurations \u00d7 3 model types). These models were validated to identify the best-performing model in each category based on F1-scores. The integrated model achieved average F1-scores of 95.43% for the cooling season and 95.65% for the heating season. The cooling model achieved F1-score of 97.82%, and the heating model reached 96.87% in their respective seasons. Based on these findings, the potential applications of these models for real operational conditions are discussed in this research."
+  },
+  {
+   "openalex": "https://openalex.org/W4389191781",
+   "doi": "https://doi.org/10.22215/etd/2023-15820",
+   "title": "Fault Detection and Diagnostics in Single-Duct Multiple-Zone Variable Air Volume Air Handling Unit Systems",
+   "year": 2023,
+   "date": "2023-01-01",
+   "venue": "Carleton University's Institutional Repository (MacOdrum Library, Carleton University)",
+   "type": "dissertation",
+   "cites": 1,
+   "abstract": "Variable air volume (VAV) air handling unit (AHU) systems are the most common heating, ventilation, and air conditioning (HVAC) configuration in North America's commercial buildings. They account for a large fraction of sensors and actuators and are prone to faults due to their control systems' complexity. This research fills the gap in VAV AHU fault detection and diagnostics (FDD) through four parts. First, inverse model-based virtual sensors are developed to detect actuator faults in AHUs. Three algorithms are explored to compensate for the lack of reliable intermediate sensor data for five AHUs. Results indicate that although generated models can act as virtual sensors to identify hard faults, they cannot isolate faults' root causes. To address this uncertainty, the second part introduces a holistic sequential hierarchical FDD framework considering the significance of zone-to-system hard and sequencing logic fault interactions in AHUs and VAVs. The proposed framework follows this fault-checking order: AHU hard faults, VAV hard faults, AHU sequencing logic faults, and VAV sequencing logic faults. Faults are detected by visualizing the discrepancies between the expected and measured operational behaviour. The third part focuses on VAV AHU control systems (sensors, actuators, and sequencing logic), studying human errors during design, installation, and operation. Human errors are identified through a literature review and interviews with control specialists. The most common errors are classified, and interview examples are listed for different building life cycle phases. Since a commonly reported error by interviewees is thermostat misplacement, resulting in negative impacts on AHU supply air temperature (SAT) setpoint, the last step of this research investigates the robustness of sequences of operation to such errors. Fault tolerance of the most vulnerable sequences: SAT setpoint, duct static pressure (DSP) setpoint and mode of operation (MOP) to zone-level faults is studied. Customized sequences are defined in EnergyPlus, and common actuator/sensor faults are injected to determine the most efficient fault-tolerant scenario. Results indicate that the ASHRAE Guideline 36 trim and respond reset logic capable of eliminating rogue zones is the most fault-tolerant scenario for SAT and DSP setpoints. Moreover, an average temperature-based control scenario for MOP significantly reduces HVAC energy use."
+  },
+  {
+   "openalex": "https://openalex.org/W7221136068",
+   "doi": "https://doi.org/10.1016/j.enbuild.2026.118347",
+   "title": "A knowledge-based fault diagnosis library for air handling units with diagnostic Bayesian networks in commercial buildings",
+   "year": 2026,
+   "date": "2026-10-09",
+   "venue": "Energy and Buildings",
+   "type": "article",
+   "cites": 0,
+   "abstract": "Diagnostic Bayesian Networks (DBNs) offer a practical trade-off for Air Handling Unit (AHU) fault diagnosis, but existing studies rely on limited expert input or single building experiments and rarely publish their model parameters. This study developed a framework for building a Knowledge-Based AHU Fault Diagnosis Library through semi-structured interviews with 17 Heating, Ventilation, and Air Conditioning professionals from three companies. The library provides the structure and parameters to develop a DBN for AHU fault diagnosis in commercial buildings. In a case study, a Knowledge-Based DBN (KDBN) derived from the library was compared against a Literature-Based DBN (LDBN), parameterized from published literature, and a Data-Driven DBN (DDBN) serving as an internal benchmark, parameterized from Building Management System data. The KDBN identified reference faults within the top two ranked faults for six of seven symptoms without prior calibration, demonstrating acceptable diagnostic performance. The LDBN identified reference faults for only three of seven symptoms, suggesting that direct parameter adoption from published literature is insufficient. The DDBN achieved top two identification for all seven symptoms, though its parameters were derived from the same dataset used to define the Experimental Benchmark. Sensitivity analysis confirmed that uniform prior probability scaling has a limited influence on diagnostic rankings, while variable prior probabilities have a greater influence. These findings suggest that a KDBN derived from the library shows promising agreement with the Experimental Benchmark, and that the library may provide a useful starting point for DBN-based AHU fault diagnosis when labeled, building-specific fault data are unavailable."
+  },
+  {
+   "openalex": "https://openalex.org/W4389974641",
+   "doi": "https://doi.org/10.48550/arxiv.2312.11405",
+   "title": "Unsupervised Learning for Fault Detection of HVAC Systems: An OPTICS -based Approach for Terminal Air Handling Units",
+   "year": 2023,
+   "date": "2023-12-18",
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "cites": 5,
+   "abstract": "The rise of AI-powered classification techniques has ushered in a new era for data-driven Fault Detection and Diagnosis in smart building systems. While extensive research has championed supervised FDD approaches, the real-world application of unsupervised methods remains limited. Among these, cluster analysis stands out for its potential with Building Management System data. This study introduces an unsupervised learning strategy to detect faults in terminal air handling units and their associated systems. The methodology involves pre-processing historical sensor data using Principal Component Analysis to streamline dimensions. This is then followed by OPTICS clustering, juxtaposed against k-means for comparison. The effectiveness of the proposed strategy was gauged using several labeled datasets depicting various fault scenarios and real-world building BMS data. Results showed that OPTICS consistently surpassed k-means in accuracy across seasons. Notably, OPTICS offers a unique visualization feature for users called reachability distance, allowing a preview of detected clusters before setting thresholds. Moreover, according to the results, while PCA is beneficial for reducing computational costs and enhancing noise reduction, thereby generally improving the clarity of cluster differentiation in reachability distance. It also has its limitations, particularly in complex fault scenarios. In such cases, PCA's dimensionality reduction may result in the loss of critical information, leading to some clusters being less discernible or entirely undetected. These overlooked clusters could be indicative of underlying faults, and their obscurity represents a significant limitation of PCA when identifying potential fault lines in intricate datasets."
+  },
+  {
+   "openalex": "https://openalex.org/W4379053483",
+   "doi": "https://doi.org/10.3390/buildings13061426",
+   "title": "Digital Twin for Fault Detection and Diagnosis of Building Operations: A Systematic Review",
+   "year": 2023,
+   "date": "2023-05-31",
+   "venue": "Buildings",
+   "type": "review",
+   "cites": 117,
+   "abstract": "Intelligence in Industry 4.0 has led to the development of smart buildings with various control systems for data collection, efficient optimization, and fault detection and diagnosis (FDD). However, buildings, especially with regard to heating, ventilation, and air conditioning (HVAC) systems, are responsible for significant global energy consumption. Digital Twin (DT) technology offers a sustainable solution for facility management. This study comprehensively reviews DT performance evaluation in building life cycle and predictive maintenance. 200 relevant papers were selected using a systematic methodology from Scopus, Web of Science, and Google Scholar, and various FDD methods were reviewed to identify their advantages and limitations. In conclusion, data-driven methods are gaining popularity due to their ability to handle large amounts of data and improve accuracy, flexibility, and adaptability. Unsupervised and semi-supervised learning as data-driven methods are important for FDD in building operations, such as with HVAC systems, as they can handle unlabeled data and identify complex patterns and anomalies. Future studies should focus on developing interpretable models to understand how the models made their predictions. Hybrid methods that combine different approaches show promise as reliable methods for further research. Additionally, deep learning methods can analyze large and complex datasets, indicating a promising area for further investigation."
+  },
+  {
+   "openalex": "https://openalex.org/W4411040281",
+   "doi": "https://doi.org/10.1016/j.buildenv.2025.113257",
+   "title": "Automated fault diagnosis detection of air handling units using real operational labelled data and transformer-based methods at 24-hour operation hospital",
+   "year": 2025,
+   "date": "2025-06-04",
+   "venue": "Building and Environment",
+   "type": "article",
+   "cites": 38,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W4226376401",
+   "doi": "https://doi.org/10.1016/j.rser.2022.112395",
+   "title": "A review of computing-based automated fault detection and diagnosis of heating, ventilation and air conditioning systems",
+   "year": 2022,
+   "date": "2022-04-06",
+   "venue": "Renewable and Sustainable Energy Reviews",
+   "type": "article",
+   "cites": 228,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W2282273443",
+   "doi": null,
+   "title": "Development of an Online Expert Rule Based Automated fault Detection and Diagnostic (AFDD) Tool for Air Handling Units: Beta Test Results",
+   "year": 2013,
+   "date": "2013-01-01",
+   "venue": "OakTrust (Texas A&M University Libraries)",
+   "type": "article",
+   "cites": 4,
+   "abstract": "Heating Ventilation and Air Conditioning (HVAC) system energy consumption accounts for an average of 40% of an industrial sites energy consumption. Studies have indicated that 20 - 30% energy savings are achievable by recommissioning Air Handling Units (AHU) in HVAC systems to rectify faulty operation. Studies have also demonstrated that continuous commissioning of building systems for optimum efficiency can yield savings of an average of over 20% of total energy cost. Automated Fault Detection and Diagnosis (AFDD) is a process concerned with automating the detection of faults and their causes in physical systems. AFDD can help support multiple stages in the commissioning process. This paper outlines the development of an AFDD tool for AHU's using expert rules then details the results of its beta testing phase on twenty-six AHU's across six large commercial & manufacturing sites. To date, validated energy savings of over 157,000 have been identified by the AFDD tool."
+  },
+  {
+   "openalex": "https://openalex.org/W4401176044",
+   "doi": "https://doi.org/10.1080/19401493.2024.2382757",
+   "title": "Development of high-fidelity air handling unit fault models for FDD innovation: lessons learned and recommendations",
+   "year": 2024,
+   "date": "2024-07-31",
+   "venue": "Journal of Building Performance Simulation",
+   "type": "article",
+   "cites": 7,
+   "abstract": "Interest in automated building analytics, including fault detection and diagnostics has been increasing; however, developers of these solutions have lacked access to ground-truth-validated data across a wide range of weather conditions for algorithm development and performance assessment. This study presents the development, and validation of faulted and fault-free models for air handling units (AHUs) \u2013 a common HVAC system design. Detailed models for the single-duct AHU (Modelica) and dual-duct AHU (HVACSIM+) were used to conduct annual simulations, for common sensor, mechanical, and control sequence faults. We report lessons learned during the efforts, including challenges and insights regarding how these simulation models, typically used for design applications, can be purposed to accurately reflect real-world system operational behaviours. Finally, we highlight considerations for researchers and FDD developers who may wish to leverage this dataset to assess the performance of their algorithms, and evolving performance of FDD solutions over time."
+  },
+  {
+   "openalex": "https://openalex.org/W1588037204",
+   "doi": null,
+   "title": "Software for fault detection in HVAC systems in commercial buildings",
+   "year": 2014,
+   "date": "2014-01-01",
+   "venue": "DSpace@MIT (Massachusetts Institute of Technology)",
+   "type": "dissertation",
+   "cites": 0,
+   "abstract": "The building sector of the United States currently consumes over 41% of the United States primary energy supply. Estimates suggest that between 5 and 30% of any building's annual energy consumption is unknowingly wasted due to pathologically malfunctioning lighting and comfort conditioning systems. This paper presents analytical methods embodied within useful software tools to quickly identify and evaluate those building system faults that cause large building energy inefficiencies. The technical contributions of this work include expert rules that adapt to HVAC equipment scale and operation and methods for sorting fault signals according to user-defined interests such as annual cost of energy inefficiencies. These contributions are particularly unique in their treatment of model and the careful consideration of user interests in fault evaluation. As a first step to developing this general framework for fault detection, first order faults such as simultaneous heating and cooling and imbalanced airflows within several large air-handling units were targeted. Savings of around $22,500 were predicted when the fault of simultaneous heating and cooling was occurring over the entire month in an air handler. Some of the other faults include the heat recovery pump operation in air handling units. An example of the potential energy savings in a large hospital that has been monitored is presented. Yearly savings of around $24,000 were predicted by correcting the operation of the heat recovery pump. Faults in the cooling system were also explored. The paper presents a strategy to load multiple centrifugal chillers with a monotonically increasing COP vs. partload ratio curve. The paper also considers the optimization of cooling tower fan operation coupled with the chiller operation. Models for cooling tower performance and chiller performance are used to define the operation that yields the minimum energy consumption of the system. The number of cooling tower fans and the use of multiple towers with a single chiller are considered. The optimum operation is compared to actual operations to signal operating faults. User testing and experiments show that embracing uncertainty within HVAC fault detection and evaluation is not only paramount to judicious fault inference but it is also central to gaining the trust and buy-in of system users who ultimately can apply fault detection information to actually fix and improve building operations."
+  },
+  {
+   "openalex": "https://openalex.org/W4292869646",
+   "doi": "https://doi.org/10.3390/s22176338",
+   "title": "Explainability and Transparency of Classifiers for Air-Handling Unit Faults Using Explainable Artificial Intelligence (XAI)",
+   "year": 2022,
+   "date": "2022-08-23",
+   "venue": "Sensors",
+   "type": "article",
+   "cites": 40,
+   "abstract": "In recent years, explainable artificial intelligence (XAI) techniques have been developed to improve the explainability, trust and transparency of machine learning models. This work presents a method that explains the outputs of an air-handling unit (AHU) faults classifier using a modified XAI technique, such that non-AI expert end-users who require justification for the diagnosis output can easily understand the reasoning behind the decision. The method operates as follows: First, an XGBoost algorithm is used to detect and classify potential faults in the heating and cooling coil valves, sensors, and the heat recovery of an air-handling unit. Second, an XAI-based SHAP technique is used to provide explanations, with a focus on the end-users, who are HVAC engineers. Then, relevant features are chosen based on user-selected feature sets and features with high attribution scores. Finally, a sliding window system is used to visualize the short history of these relevant features and provide explanations for the diagnosed faults in the observed time period. This study aimed to provide information not only about what occurs at the time of fault appearance, but also about how the fault occurred. Finally, the resulting explanations are evaluated by seven HVAC expert engineers. The proposed approach is validated using real data collected from a shopping mall."
+  },
+  {
+   "openalex": "https://openalex.org/W3045534893",
+   "doi": "https://doi.org/10.23919/acc45564.2020.9147772",
+   "title": "Transfer Learning for HVAC System Fault Detection",
+   "year": 2020,
+   "date": "2020-07-01",
+   "venue": "Proceedings of the ... American Control Conference/Proceedings of the American Control Conference",
+   "type": "conference-paper",
+   "cites": 18,
+   "abstract": "Faults in HVAC systems degrade thermal comfort and energy efficiency in buildings and have received significant attention from the research community, with data driven methods gaining in popularity. Yet the lack of labeled data, such as normal versus faulty operational status, has slowed the application of machine learning to HVAC systems. In addition, for any particular building, there may be an insufficient number of observed faults over a reasonable amount of time for training. To overcome these challenges, we present a transfer method-ology for a novel Bayesian classifier designed to distinguish between normal operations and faulty operations. The key is to train this classifier on a building with a large amount of sensor and fault data (for example, via simulation or standard test data) then transfer the classifier to a new building using a small amount of normal operations data from the new building. We demonstrate a proof-of-concept for transferring a classifier between architecturally similar buildings in different climates and show few samples are required to maintain classification precision and recall."
+  }
+ ]
+}

@@ -1,0 +1,172 @@
+{
+ "query": "control loop performance monitoring industrial evaluation oscillation detection",
+ "filter": null,
+ "count": 22153,
+ "results": [
+  {
+   "openalex": "https://openalex.org/W4414837338",
+   "doi": "https://doi.org/10.1016/j.compchemeng.2025.109437",
+   "title": "Probabilistic assessment and automatic detection of oscillations in industrial control loops",
+   "year": 2025,
+   "date": "2025-10-05",
+   "venue": "Computers & Chemical Engineering",
+   "type": "article",
+   "cites": 1,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W2289131499",
+   "doi": "https://doi.org/10.14288/1.0065169",
+   "title": "Control loop performance assessment and oscillation detection",
+   "year": 2009,
+   "date": "2009-01-01",
+   "venue": "cIRcle (University of British Columbia)",
+   "type": "dissertation",
+   "cites": 28,
+   "abstract": "In this thesis an analysis of process control loop performance based on the Harris's performance index is given. Good and poor performances will be defined and it will be shown that poor performance may be obtained when some loops are cycling. Then a procedure for localizing the oscillating loops in a cascade multiloop system will be introduced. The procedure uses data collected under normal operation and assumes knowledge of the different frequencies of the periodic component of the output signal. An oscillation index is introduced to characterize the oscillating loops. The estimation of time delay is a major step in assessing control loop performance. To overcome some difficulties of the available methods for its estimation, a new off line extended Least-Squares technique for parameter identification and time delay estimation will be introduced for processes where acting disturbances are white noise (i.e. C(q\u207b\u00b9) = 1). The Harris performance index for single-input single-output (SISO) systems is a very useful tool, therefore its extension to multivariable systems becomes necessary. The multi-input multi-output (MIMO) performance indices available in the literature involve use of the MIMO time delay matrix, also called the interactor matrix, to perform the assessment. The method proposed in this thesis does not require knowledge of the interactor matrix. The method uses knowledge of the delays between different input/output pairs of the process and defines an absolute lower bound on the achievable output variance for each output. This bound is then used to define a performance index associated with each output. The sum of these bounds is used to characterize the overall control loop performance. The results are independent of the matrix time delay representation, or interactor. This method is evaluated by application to the loops controlling a lime kiln in a Kraft pulp mill."
+  },
+  {
+   "openalex": "https://openalex.org/W2898786487",
+   "doi": null,
+   "title": "Controller Performance Monitoring: Detection and Diagnosis of Oscillations in Control Loops",
+   "year": 2018,
+   "date": "2018-01-01",
+   "venue": "NVA (Nasjonalt vitenarkiv)",
+   "type": "dissertation",
+   "cites": 1,
+   "abstract": "The profitability of any industrial process is closely related to its ability to maintain near optimal operating conditions; therefore robust methods for root cause detection of any control performance degradation is crucial not only to maintain the desired operation of any industrial process but can result in marked improvement in productivity and over all economics.\\nIn a large and complex industrial control system, disturbances/oscillations originating at one point tend to propagate both up- and downstream due to underlying interactions, process flows and recycle streams, thus leading to plant-wide effects. Effective controller performance monitoring therefore requires detection and diagnosis of such plant-wide disturbances so that targeted maintenance can be achieved within the shortest possible time.\\nOscillations are considered to be the most important indicator of control performance degradation. Oscillations not only cause product variability and effect quality but also lead to adverse economical consequences owing to loss of precious resources like raw material and energy. Therefore, automated detection and diagnosis of oscillations needs to be reliable and effective as the large scale of the control system in industrial process plants makes manual observation and diagnosis practically impossible.\\nDetection and diagnosis of oscillatory control loops is not trivial due to the causes such as presence of multiple oscillations, unknown process dynamics, non stationary effects and noise corruption, to name a few. The work presented in this thesis is aimed at addressing these challenges and at the development of improved tools for both detection and diagnosis of oscillations and plant-wide disturbances. Moreover, data driven methods are preferred over model based diagnostics as they are more general and are independent of a specific plant model. Dynamic pro cess models can be costly to develop and maintain, and for many process plants dynamic models are not available.\\nThis thesis has focussed on using the multivariate empirical mode decomposition (MEMD) and associated characteristics for the detection and diagnosis of oscillations in control loops. The methods proposed in thesis are aimed at addressing the shortcomings of the existing approaches and are fully data driven that require no a priori knowledge about the data or process itself. An improved approach for the oscillation detection has been presented that caters for non-stationary effects and reduces the mode mixing problems associated with the univariate empirical mode decomposition. Moreover, MEMD along with the proposed grouping algorithm provides a robust method to detect the plant-wide oscillations where different control variables, having common signatures of oscillations, are oscillating due to the same root cause. This helps in searching for the root cause only in the affected variables.\\nAnother important contribution of the thesis is an automated detection of harmonics in an oscillating signal. Non-linearity induced oscillations give rise to limit cycles characterised by harmonics. The proposed harmonic detection algorithm is the only algorithm to date which fully automates the harmonics detection. Moreover, an index called degree of non-linearity (DNL) based on intra-wave frequency modulation has been used to quantify the extent of non-linearity to isolate the source of non-linearity induced oscillation. Moreover, the MEMD has been combined with the concept of delayed vector variance (DVV) to differentiate between linear and non-linear causes of oscillations. This has extended the applicability of DVV to the non-stationary signals as well. The delay vector variance method is also integrated with automatic calculation of embedding dimension to make it more robust and easy to automate.\\nFinally, plant-wide disturbances tend to propagate away from source owing to process flows and interactions among the control loops. Therefore, the cause and effect relationship can be exploited to isolate the source of disturbance. The causality analysis based on convergent cross mapping (CCM) approach is also explored for isolating the source of plant-wide oscillations. The CCM works well for the short span time series.\\nThe research has been funded by the Siemens AS, Norway as a part of the Siemens-NTNU oil and gas offshore project."
+  },
+  {
+   "openalex": "https://openalex.org/W4380083384",
+   "doi": "https://doi.org/10.3390/app13126945",
+   "title": "Comparison of Single Control Loop Performance Monitoring Methods",
+   "year": 2023,
+   "date": "2023-06-08",
+   "venue": "Applied Sciences",
+   "type": "article",
+   "cites": 3,
+   "abstract": "Well-performing control loops have an integral role in efficient and sustainable industrial production. Control performance monitoring (CPM) tools are necessary to establish further process optimization and preventive maintenance. Data-driven, model-free control performance monitoring approaches are studied in this research by comparing the performance of nine CPM methods in an industrially relevant process simulation. The robustness of some of the methods is considered with varying fault intensities. The methods are demonstrated on a simulator which represents a validated state-space model of a supercritical carbon dioxide fluid extraction process. The simulator is constructed with a single-input single-output unit controller for part of the process and a combination of relevant faults in the industry are introduced into the simulation. Of the demonstrated methods, Kullback\u2013Leibler divergence, Euclidean distance, histogram intersection, and Overall Controller Efficiency performed the best in the first simulation case and could identify all the simulated fault scenarios. In the second case, integral-based methods Integral Squared Error and Integral of Time-weighted Absolute Error had the most robust performance with different fault intensities. The results highlight the applicability and robustness of some model-free methods and construct a solid foundation in the application of CPM in industrial processes."
+  },
+  {
+   "openalex": "https://openalex.org/W2935006732",
+   "doi": "https://doi.org/10.1021/acs.iecr.8b06354",
+   "title": "Industrial PID Control Loop Data Repository and Comparison of Fault Detection Methods",
+   "year": 2019,
+   "date": "2019-04-04",
+   "venue": "Industrial & Engineering Chemistry Research",
+   "type": "article",
+   "cites": 15,
+   "abstract": "This paper presents the control loop data of industrial controllers that are recently made available online. All data are verified and some of it has been published previously to develop fault detection and diagnosis methods. Methods to detect faults that occur during the operation of an industrial process are important to improve profitability and have attracted attention previously. However, these methods are not always widely used in industry. One of the reasons is that any method needs to be robust and fully automated. The purpose of the data repository is to present data to test methods so that false positives and negatives are reduced to an insignificant number. Three previously published methods, oscillation detection based on the autocorrelation function, the idle index, and a method for quantization detection, together with a simple, novel saturation detection method and one new detection method are applied to all industrial data. The results are discussed along with ways to improve the robustness and automation potential of these methods."
+  },
+  {
+   "openalex": "https://openalex.org/W7139738869",
+   "doi": null,
+   "title": "Performance Monitoring Of Closed Control Loops",
+   "year": 2015,
+   "date": "2015-01-01",
+   "venue": "Istanbul Technical University Academic Open Archive (Istanbul Technical University)",
+   "type": "dissertation",
+   "cites": 0,
+   "abstract": "In this study, the performance of the control loops in different refinery units has been evaluated. The minimum variance controller, designated as benchmark and the proximity to expected performance of the current performance has been quantified using performance index. For accurate calculation of the performance index, optimum values of certain parameters have been determined. It has been shown that sampling interval is insufficient for some loops and the estimated value of dead time is different from the actual value. The classification has been made on the basis of calculated performance index and root causes affecting the performance have been estimated with different methods. Diagnosing the root-cause has been initiated by the spectral analysis expressed as a classical and visual approach and oscillation has been detected by looking the magnitude of the peaks at the power spectral analysis. The results obtained have been supported by the methods depending on the auto-covariance function and time-domain. Equipment faults, controller parameter values and external disturbances cause the oscillation. To understand where the oscillation originated from, nonlinearity and stiction analysis were performed respectively. The higher-order statictics were used in nonlinearity analysis and interactions between frequency pairs have been examined. Stiction analysis has been made to reveal potential equipment faults in the control loops containing non-linearity. According to the results, it was concluded that valve is problematic in the presence of stiction. In the case of appearance of oscillating behavior has been emphasized that poor performance is arised from parameter settings or external disturbances."
+  },
+  {
+   "openalex": "https://openalex.org/W2944371614",
+   "doi": "https://doi.org/10.1016/j.jestch.2019.04.006",
+   "title": "Automatic oscillations detection and quantification in process control loops using linear predictive coding",
+   "year": 2019,
+   "date": "2019-05-10",
+   "venue": "Engineering Science and Technology an International Journal",
+   "type": "article",
+   "cites": 11,
+   "abstract": "Oscillations in control loops are very common and primarily responsible for product quality variations and therefore may reduce profitability of the plant. Further, there can also be multiple oscillations at the same time due to multiple sources such as improper tuned controllers, disturbances and nonlinearity etc. Detection and estimation of oscillation is desired for their effective compensation which becomes a challenging task particularly in presence of noise. This paper presents a novel oscillation detection method based on linear predictive coding (LPC). In the proposed technique roots of the linear predictive polynomial are used to detect the oscillations. Further, for the quantification spectrum of cross-correlation of linear predictive residual and original data is used. The effectiveness of the proposed oscillation detection technique has been demonstrated with several simulation examples and actual plant data. The comparative investigation with the empirical mode decomposition method, generally employed for this task, revealed that proposed technique is simple, fast, robust and capable of handling slow varying trends."
+  },
+  {
+   "openalex": "https://openalex.org/W86484796",
+   "doi": null,
+   "title": "Power System Oscillations - Detection, Estimation and Control",
+   "year": 2003,
+   "date": "2003-01-01",
+   "venue": "Lund University Publications (Lund University)",
+   "type": "dissertation",
+   "cites": 11,
+   "abstract": "The topic of this thesis is the electro-mechanical oscillations which to some extent always are present in a power system. The demand of electric power is ever increasing. At the same time, the tolerance of disruptions in the power supply is decreasing. The deregulated market together with distributed generation have then pushed the system to operate during circumstances for which it was not designed. To this we can then add that getting concessions for new lines becomes more and more difficult in densly populated areas. All these factors makes the electric power system operate with smaller safety margins. Decreasing these margins limits with sustained availability is achieved by the application of advanced monitoring and control methods. This thesis deals with this in several time-scales. When a large oscillation occurs it is important to detect it as fast as possible as the remedial action depends on if the current operating is due to a fault or an oscillation. In the thesis, a new method to distinguish these incidents from each other is presented. In a slower time-scale it is important to monitor the dynamics of the electro-mechanical modes. This information can be used to verify that simulations correspond to the real world behaviour. Real-time methods can also be used to alarm operators or arm special protection schemes if the power system enters undesired operating conditions. A number of methods are studied and then evaluated on three case studies. Finally, load modulation for damping enhancement is studied. It has previously been shown that modulation of active power at the transmission level increases the damping of the power system when correctly performed. Loads suitable for load modulation at the transmission level are rare and using actuators at the distribution level creates new problems. It is shown that it is possible to detect poor damping at the distribution level, thus reducing the need of communications. It is also shown how the variation of active and reactive power at the transmission level, caused by modulation of active power at the distribution level can be estimated without knowledge of the complete distribution network. This is most important as the active and reactive variations counteract each other. Finally load modulation at distribution level is evaluated on two test systems. It is shown that the damping is increased and that the influence of the reactive variation decreases the performance of load modulation. The degradation of the control scheme is, however, small in the studied cases."
+  },
+  {
+   "openalex": "https://openalex.org/W2277689076",
+   "doi": "https://doi.org/10.14288/1.0065329",
+   "title": "Application software for performance monitoring",
+   "year": 2009,
+   "date": "2009-01-01",
+   "venue": "cIRcle (University of British Columbia)",
+   "type": "dissertation",
+   "cites": 0,
+   "abstract": "During recent years, control loop performance monitoring has been a topic of interest in both academic and industrial circles because the method gives non-intrusive insight into the operation of control loops. Many useful results have been obtained through research, however, their industrial applications are just starting. The main reason is the lack of good application software for implementation. In this thesis, an integrated loop monitoring software system was developed. On one hand, it provides comprehensive performance monitoring tools, including process data analysis in both time domain and frequency domain, loop oscillation detection, valve friction detection, and performance index calculation. On the other hand, it integrates all the user-system interfaces from a distributed control system (DCS) into PC networks. Two direct benefits of this approach are: first, it shields the critical DCS system from user errors, avoiding potential damage to the industrial process; second, it presents a friendly graphic user interface (GUI) to the user, making the whole system much easier to use. The whole software system was developed in an industrial environment, and preliminary evaluation has been carried out."
+  },
+  {
+   "openalex": "https://openalex.org/W2056587899",
+   "doi": "https://doi.org/10.1109/tac.2008.917554",
+   "title": "Process Control Performance Assessment: From Theory to Implementation (Ordys, A.W. et al.; 2007) [Book reviews]",
+   "year": 2008,
+   "date": "2008-05-01",
+   "venue": "IEEE Transactions on Automatic Control",
+   "type": "book-review",
+   "cites": 3,
+   "abstract": "This book is timely as a state-of-the-art summary on some of the most recent developments in control loop performance assessment. In reality, the book provides a broader context to control performance assessment other than merely evaluating the controller performance. What is also discussed includes business performance benchmarking, economic auditing of control systems, plantwide disturbance diagnosis, oscillation detection, and valve stiction monitoring, As such, this book covers topics beyond traditional control loop performance assessment. Overall, the book is well written. An excellent feature is that detailed step-by-step procedures for algorithm implementation are given, which can be a good user's guide. Extensive simulation and industrial examples are cited to illustrate the algorithms. The book provides a food balance between academic and engineering aspects. Academic researchers, graduate students, and industrial practitioners who are interested in the general areas of control performance monitoring, business performance benchmarking, control system or instrument problem diagnosis will find this book a useful reference."
+  },
+  {
+   "openalex": "https://openalex.org/W2032717116",
+   "doi": "https://doi.org/10.1088/0960-1317/13/2/312",
+   "title": "Design and performance test of an oscillation loop for a MEMS resonant accelerometer",
+   "year": 2003,
+   "date": "2003-01-13",
+   "venue": "Journal of Micromechanics and Microengineering",
+   "type": "article",
+   "cites": 49,
+   "abstract": "In this paper, the design, analysis and experimental results of the self-sustained oscillation loop for a tunable surface micromachined resonant accelerometer, ACRC-RXL are presented. The fabrication process of the mechanical structure is also illustrated. For the oscillation loop analysis, an operator-theoretical approach is applied based on the describing function technique. Using the analytical results, feedback parameters are designed and the expected loop performance is characterized. Then the accelerometer system is practically implemented using the mechanical structure and signal processing electronics. The experimental results show that the developed accelerometer has a performance of bias stability of about 0.7 mg and a dynamic range over 10 g, which satisfies the navigation-graded sensor performance."
+  },
+  {
+   "openalex": "https://openalex.org/W2020055851",
+   "doi": "https://doi.org/10.3182/20050703-6-cz-1902.01721",
+   "title": "CONTROL LOOP PERFORMANCE MEASURES IN THE EVALUATION OF PROCESS ECONOMICS",
+   "year": 2005,
+   "date": "2005-01-01",
+   "venue": "IFAC Proceedings Volumes",
+   "type": "conference-paper",
+   "cites": 6,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W2292053462",
+   "doi": "https://doi.org/10.14288/1.0086131",
+   "title": "Control loop performance",
+   "year": 2008,
+   "date": "2008-01-01",
+   "venue": "cIRcle (University of British Columbia)",
+   "type": "dissertation",
+   "cites": 7,
+   "abstract": "Control loop monitoring provides the opportunity to maintain high process performance. In this thesis, the regulation performance of a process is monitored by examining the time delay, static input-output relation, and the minimum achievable output variance of the process. The time delay estimate is obtained from the Fixed Model Variable Regressor Estimator and the static input-output relation is estimated using the Adaptive Nonlinear Modeller. The minimum achievable output variance of the process is determined by modelling the closed loop noise transfer function by a Laguerre network and finding the Laguerre gains of the network using Recursive Extended Least Squares estimation. An extensive simulation study was performed to examine the operation, usefulness and limitations of the monitoring tools. These simulations confirmed the operation and benefit of the monitoring methods, and defined their limitations. The monitoring tools were applied to data generated by industrial processes. The successful application to industrial processes highlighted the benefits obtainable by control loop monitoring. Due to the ease of applying the monitoring tools and the valuable insight they provide, these monitoring tools should be applied to any process where regulation performance is a concern."
+  },
+  {
+   "openalex": "https://openalex.org/W4404651048",
+   "doi": "https://doi.org/10.1016/j.aei.2024.102949",
+   "title": "Stiction detection and recurrence analysis for control valves by phase space reconstruction method",
+   "year": 2024,
+   "date": "2024-11-23",
+   "venue": "Advanced Engineering Informatics",
+   "type": "article",
+   "cites": 15,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W7164945655",
+   "doi": "https://doi.org/10.7939/84453",
+   "title": "Advanced Deep Learning Frameworks for Industrial Control Valve Stiction Detection",
+   "year": 2026,
+   "date": "2026-01-01",
+   "venue": "ERA: Education and Research Archive (University of Alberta)",
+   "type": "dissertation",
+   "cites": 0,
+   "abstract": "Control valve stiction is a common nonlinear phenomenon in process control loops that causes oscillations, energy loss, and product variability. To improve the detection and classification of stiction behavior, a series of deep learning frameworks are developed. This research addresses this need through the development of three data-driven deep learning frameworks that leverage signal transformation, image encoding, and attention-based modeling to advance the detection and classification of control valve stiction. Together, these frameworks provide a unified methodological foundation that integrates temporal sequence learning, spatial pattern recognition, and attention-guided feature extraction, bridging the gap between traditional process control modeling and modern machine learning approaches. The first study introduces a Toeplitz matrix\u2013based hybrid convolutional neural network\u2013long short-term memory (CNN-LSTM) framework for identifying control valve stiction from process time-series data. Conventional one-dimensional analyses often fail to capture both local and global dependencies present in dynamic control signals. To overcome this limitation, process variable (PV) and controller output (CO) signals are encoded into two-dimensional Toeplitz matrices that preserve temporal correlations while enabling spatial feature extraction through convolutional layers. The subsequent LSTM layers capture long-range temporal dependencies, enhancing the model\u2019s ability to distinguish stick\u2013slip motion from normal control dynamics. Validation using benchmark datasets demonstrates the method\u2019s ability to detect and classify stiction-induced oscillations with superior accuracy and robustness compared to existing statistical and model-based techniques. Building on this foundation, the second study introduces a Bivariate Gaussian Contour Encoding framework combined with both an unsupervised KL-divergence baseline and a supervised Dual-Token Vision Transformer (ViT). Closed-loop process data are converted into probabilistic contour images via bivariate Gaussian contour modeling, where circular patterns indicate normal behavior and elliptical contours reflect stiction-induced nonlinearities. The ViT employs two learnable tokens trained with identical labels to jointly capture local spatial features and global contour structure, enabling improved generalization across synthetic and industrial datasets. The third study investigates an attention-enhanced CNN architecture by integrating the Convolutional Block Attention Module (CBAM) to refine the learning process through selective focus on salient features. The CBAM sequentially applies channel and spatial attention mechanisms, allowing the model to highlight critical dynamic signatures associated with stiction, such as abrupt amplitude changes and asymmetric valve responses. This attention-guided approach not only improves classification performance but also enhances explainability, offering visual insights into the regions of interest that drive the model\u2019s decisions. Experimental evaluations reveal that CBAM integration consistently improves accuracy and convergence rate. Collectively, these three studies contribute to the advancement of intelligent fault diagnosis frameworks for process control systems. By unifying signal-based and image-based deep learning paradigms, the proposed methods enable more accurate, interpretable, and scalable detection of control valve stiction. The findings highlight the potential of deep learning to transform industrial monitoring systems by facilitating early detection of nonlinearities, enabling predictive maintenance, and reducing operational risks. Ultimately, this research provides a comprehensive foundation for the next generation of data-driven, intelligent process control systems aimed at achieving enhanced stability, reliability, and efficiency in complex industrial environments."
+  }
+ ]
+}

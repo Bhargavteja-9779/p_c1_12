@@ -1,0 +1,282 @@
+{
+ "query": "building automation alarm flood false alarms",
+ "filter": null,
+ "count": 5341,
+ "results": [
+  {
+   "openalex": "https://openalex.org/W4391721185",
+   "doi": "https://doi.org/10.48175/ijarsct-15413",
+   "title": "IoT Based Flood Monitoring and Alarm System",
+   "year": 2024,
+   "date": "2024-02-10",
+   "venue": "International Journal of Advanced Research in Science Communication and Technology",
+   "type": "article",
+   "cites": 0,
+   "abstract": "As we all know that Flood is one of the major well known Natural Disasters. When water level suddenly rises in dams, river beds etc. A lot of Destruction happens at surrounding places. It causes a huge amount of loss to our environment and living beings as well. So in these case, it is very important to get emergency alerts of the water level situation in different conditions in the river bed. The purpose of this project is to sense the water level in river beds and check if they are in normal condition. If they reach beyond the limit, then it alerts people through LED signals and buzzer sound. Also it alerts people through IOT alerts when the water level reaches beyond the limit."
+  },
+  {
+   "openalex": "https://openalex.org/W3139340856",
+   "doi": "https://doi.org/10.1109/access.2021.3067837",
+   "title": "Detection of Historical Alarm Subsequences Using Alarm Events and a Coactivation Constraint",
+   "year": 2021,
+   "date": "2021-01-01",
+   "venue": "IEEE Access",
+   "type": "article",
+   "cites": 30,
+   "abstract": "This paper aims to provide an in-depth study of the detection of historical alarm subsequences, which are frequently used as an initial step for alarm flood analysis methods. Therefore, state-of-the-art approaches are comprehensively examined, evaluated, and compared. To overcome the limitations of these methods, a novel approach is presented, which uses outlier detection in time distances between alarm events (activation and return to normal) and an alarm coactivation constraint. The effectiveness and performance of the examined methods are illustrated by means of an openly accessible dataset, which is introduced in this paper. It is based on the \u201cTennessee-Eastman-Process\u201d, a benchmark in process automation. The intent is to provide a suitable dataset for the development and evaluation of alarm management methods in complex industrial processes using both quantitative and qualitative information from different sources. It is shown that the integration of supplementary information is beneficial for the overall performance and robustness of the detection method proposed here. This method allows for a more accurate detection of coherent historical abnormal situations, including phases with active root-cause disturbances and the normalization phases that follow their termination. Furthermore, the proposed method has the advantage that the detection results are less influenced by the alarm count, the propagation velocity, the duration of the situation, and the time distance between two causally independent situations in comparison to state-of-the-art approaches."
+  },
+  {
+   "openalex": "https://openalex.org/W4404103102",
+   "doi": "https://doi.org/10.1109/access.2024.3492348",
+   "title": "Addressing Uncertainty in Online Alarm Flood Classification Using Conformal Prediction",
+   "year": 2024,
+   "date": "2024-01-01",
+   "venue": "IEEE Access",
+   "type": "article",
+   "cites": 16,
+   "abstract": "Alarm flood management is essential for industrial process plant safety and efficiency. Online \u201calarm flood classification\u201d (AFC) assigns an observed sequence of alarms to one (of many) alarm flood classes known from the past. Nevertheless, accurately differentiating between alarm flood classes as they evolve over time remains a challenge due to classification uncertainty. Furthermore, AFC usually assigns to just one alarm flood class, preventing the operator from recognizing that multiple classes should be considered given the limited information at hand. This paper proposes a novel approach by integrating \u201cconformal prediction\u201d with \u201cearly time series classification\u201d to address these challenges, offering a probabilistic understanding of alarm flood classes to be considered, and enhancing decision-support for operators. Using a method-agnostic framework, our method can be used with existing AFC models, making them adaptable to evolving alarm dynamics. We apply our approach to five AFC methods from literature using a novel and openly accessible synthetic alarm dataset we designed. Our evaluation shows how our method can improve coverage of the existing models, particularly in the early stages of alarm floods, ensuring with high confidence that the true class is captured while preserving a reasonably small set of possible alarm flood classes."
+  },
+  {
+   "openalex": "https://openalex.org/W3183007303",
+   "doi": "https://doi.org/10.1016/j.cherd.2021.06.022",
+   "title": "Quality vs. quantity of alarm messages - How to measure the performance of an alarm system",
+   "year": 2021,
+   "date": "2021-07-05",
+   "venue": "Chemical Engineering Research and Design",
+   "type": "article",
+   "cites": 19,
+   "abstract": "Despite significant efforts to measure and assess the performance of alarm systems, to this day, no silver bullet has been found. The majority of the existing standards and guidelines focus on the alarm load of the operators, either during normal or upset plant conditions, and only a small fraction takes into consideration the actions performed by the operators. In this study, an overview of the evolution of alarm system performance metrics is presented and the current data-based approaches are grouped into seven categories based on the goals of and the methodologies associated with each metric. Deriving from our categorical overview, the terminological differences between the academic and industrial approaches of alarm system performance measurement are reflected. Moreover, we highlight how extremely unbalanced the performance measurement of alarm systems is towards quantitative metrics instead of focusing on qualitative assessment, invoking the threat of excessive alarm reductions resulting from such a unilateral approach. The critical aspects of qualitative performance measurement of alarm systems is demonstrated in terms of the comparison of the alarm system of an industrial hydrofluoric acid alkylation unit before and after the alarm rationalization process. The quality of the alarm messages is measured via their informativeness and actionability, in other words, how appropriate the parameter settings are for the everyday work and how actionable they are by the operators of the process."
+  },
+  {
+   "openalex": "https://openalex.org/W4368355225",
+   "doi": "https://doi.org/10.22214/ijraset.2023.51053",
+   "title": "A Review on Intruder Alarm System",
+   "year": 2023,
+   "date": "2023-05-31",
+   "venue": "International Journal for Research in Applied Science and Engineering Technology",
+   "type": "article",
+   "cites": 0,
+   "abstract": "This paper presents a comprehensive description, from a security and accessibility perspective, of various security systems and technologies. For everyone who owns or rents a home, home security should be a top concern. Every individual needs a safe and secure residential space. Most of the market\u2019s security systems; however, are either costly or unsafe. Many times there are a number of loopholes present in the security systems and security devices which can be breached easily. The various security automation technologies considered in this review paper include Fiber sensor, Accelerometer, Global Mobile Communication System, Mobile Home Automation Systems, Internet Home Automation Systems. There is a decrease in the price of sensors as we see progress in the technology market, which makes vibration signature identification systems a cheap and effective alternative to the expensive security systems on the market"
+  },
+  {
+   "openalex": "https://openalex.org/W3217568452",
+   "doi": "https://doi.org/10.1016/j.trip.2021.100502",
+   "title": "Alarms, alerts, and warnings in air traffic control: An analysis of reports from the Aviation Safety Reporting System",
+   "year": 2021,
+   "date": "2021-11-19",
+   "venue": "Transportation Research Interdisciplinary Perspectives",
+   "type": "article",
+   "cites": 44,
+   "abstract": "Signals (alarms, alerts, and warnings) are essential for alerting air traffic controllers to potential collisions and other adverse events. Excessive or misleading signals can increase response times and decrease their response rates. We used reports from the Aviation Safety Reporting System and structured interviews to understand the complexity of the controller\u2019s tasks in the context of potentially high-consequence situations and events, and to develop design strategies to enhance the effectiveness of signals in the ATC environment. We reviewed ASRS reports over a 6-year interval from 2015 to 2020, searching for reports that mentioned alarm, alert, or warning and were submitted by air traffic controllers. We found 370 relevant reports that we analyzed for hits, misses, false alarms, and correct rejections. Structured interviews with former controllers further explored the role of signals in air traffic control. The most common signals in reports were MSAW (139), ASDE-X and ASSC (27), CA (195), and AMASS (4). ASDE-X, ASSC, or AMASS were mentioned in 30 reports by ground or local controllers. TRACON controllers reported events involving MSAW 70 times and CA 51 times; these were also implicated by local controllers. CA was most mentioned, cited a total of 195 times in the reports. This information may help us to develop strategies that can enhance signaling modality (e.g., new auditory, visual, and tactile signals). Trust in automation may be improved by using strategies such as indicating the automation\u2019s level of confidence in situations like impending loss of separation."
+  },
+  {
+   "openalex": "https://openalex.org/W4323655875",
+   "doi": "https://doi.org/10.1016/j.arcontrol.2023.02.004",
+   "title": "A critical review of cyber-physical security for building automation systems",
+   "year": 2023,
+   "date": "2023-01-01",
+   "venue": "Annual Reviews in Control",
+   "type": "article",
+   "cites": 101,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W1543729366",
+   "doi": "https://doi.org/10.17877/de290r-14858",
+   "title": "Using root cause analysis to handle intrusion detection alarms",
+   "year": 2003,
+   "date": "2003-07-15",
+   "venue": "Technische Universit\u00e4t Dortmund Eldorado (Technische Universit\u00e4t Dortmund)",
+   "type": "dissertation",
+   "cites": 55,
+   "abstract": "Aufgrund einer kontinuierlich steigenden Anzahl von Hacker-Angriffen auf die Informationssysteme von Firmen und Institutionen haben Intrusion Detection Systeme als eine neue Sicherheitstechnologie an Bedeutung gewonnen. Diese Systeme \u00fcberwachen Computer, Netzwerke sowie andere Ressourcen und erzeugen Alarme, wenn Sicherheitsverletzungen entdeckt werden. Leider erzeugen die heutigen Intrusion Detection Systeme im Allgemeinen sehr viele zumeist falsche Alarme. Dies wirft das Problem auf, wie mit dieser Flut falscher Alarme umzugehen ist. Die vorliegende Dissertation pr\u00e4sentiert einen neuen L\u00f6sungsansatz f\u00fcr dieses Problem.Von zentraler Bedeutung f\u00fcr diesen L\u00f6sungsansatz ist die Vorstellung, dass jeder Alarm eine eindeutige Ursache besitzt. Diese Dissertation macht die Beobachtung, dass ein paar Dutzend Ursachen f\u00fcr \u00fcber 90% der Alarme verantwortlich sind. Auf diese Beobachtung aufbauend, wird folgende zweistufige Methode f\u00fcr den Umgang mit Intrusion Detection Alarmen vorgeschlagen: Der erste Schritt identifiziert Ursachen, die viele Alarme erzeugen, und der zweite Schritt entfernt diese Ursachen, wodurch die zuk\u00fcnftige Alarmlast zumeist stark gesenkt wird.Alternativ k\u00f6nnen Alarme, die eine nicht sicherheitsrelevante Ursache besitzen, durch Filter automatisch entfernt werden. Um das Aufdecken von Alarmursachen zu unterst\u00fctzen, stellen wir eine neue Data Mining Methode zum Clustern von Alarmen vor. Die Grundlage f\u00fcr diese Methode besteht darin, dass sich die meisten Ursachen in Alarmgruppen mit charakteristischen strukturellen Eigenschaften manifestieren. Wir formalisieren diese strukturellen Eigenschaften und stellen eine Clustering Methode vor, die Alarmgruppen mit diesen Eigenschaften findet. Im Allgemeinen erm\u00f6glichen es solche Alarmgruppen, die zugrunde liegenden Alarmursachen zu identifizieren. Daran anschlie\u00dfend k\u00f6nnen die identifizierten Ursachen eliminiert oder falsche Alarme herausgefiltert werden. In beiden F\u00e4llen sinkt die Zahl der Alarme, die in Zukunft noch ausgewertet werden m\u00fcssen.Die vorgestellte Methode zum Umgang mit Alarmen wird in Experimenten mit Alarmen aus 16 verschiedenen Intrusion Detection Installationen getestet. Diese Experimente best\u00e4tigen, dass es die beschriebene Alarm Clustering Methode sehr einfach macht Ursachen aufzudecken. Au\u00dferdem zeigen die Experimente, dass die Alarmlast um durchschnittlich 70% gesenkt werden kann, wenn auf die identifizierten Alarmursachen in angemessener Weise reagiert wird."
+  },
+  {
+   "openalex": "https://openalex.org/W4395683136",
+   "doi": "https://doi.org/10.3390/s24092772",
+   "title": "Identifying Characteristic Fire Properties with Stationary and Non-Stationary Fire Alarm Systems",
+   "year": 2024,
+   "date": "2024-04-26",
+   "venue": "Sensors",
+   "type": "article",
+   "cites": 13,
+   "abstract": "The article reviews issues associated with the operation of stationary and non-stationary electronic fire alarm systems (FASs). These systems are employed for the fire protection of selected buildings (stationary) or to monitor vast areas, e.g., forests, airports, logistics hubs, etc. (non-stationary). An FAS is operated under various environmental conditions, indoor and outdoor, favourable or unfavourable to the operation process. Therefore, an FAS has to exhibit a reliable structure in terms of power supply and operation. To this end, the paper discusses a representative FAS monitoring a facility and presents basic tactical and technical assumptions for a non-stationary system. The authors reviewed fire detection methods in terms of fire characteristic values (FCVs) impacting detector sensors. Another part of the article focuses on false alarm causes. Assumptions behind the use of unmanned aerial vehicles (UAVs) with visible-range cameras (e.g., Aviotec) and thermal imaging were presented for non-stationary FASs. The FAS operation process model was defined and a computer simulation related to its operation was conducted. Analysing the FAS operation process in the form of models and graphs, and the conducted computer simulation enabled conclusions to be drawn. They may be applied for the design, ongoing maintenance and operation of an FAS. As part of the paper, the authors conducted a reliability analysis of a selected FAS based on the original performance tests of an actual system in operation. They formulated basic technical and tactical requirements applicable to stationary and mobile FASs detecting the so-called vast fires."
+  },
+  {
+   "openalex": "https://openalex.org/W4416101328",
+   "doi": "https://doi.org/10.1016/j.future.2026.108603",
+   "title": "False alarms, real damage: Adversarial attacks using LLM-based models on text-based Cyber Threat Intelligence systems",
+   "year": 2026,
+   "date": "2026-05-21",
+   "venue": "Future Generation Computer Systems",
+   "type": "article",
+   "cites": 13,
+   "abstract": "Cyber Threat Intelligence (CTI) has emerged as a vital complementary approach that operates in the early phases of the cyber threat lifecycle. CTI involves collecting, processing, and analysing threat data to provide a more accurate and rapid understanding of cyber threats. Due to the large volume of data, automation through Machine Learning (ML) and Natural Language Processing (NLP) models is essential for effective CTI extraction. These automated systems leverage Open Source Intelligence (OSINT) from sources like social networks, forums, and blogs to identify Indicators of Compromise (IoCs). Although prior research has focused on adversarial attacks on specific ML models, this study expands the scope by investigating vulnerabilities within various components of the entire CTI pipeline and their susceptibility to adversarial attacks. It particularly focuses on a system-level analysis of how existing adversarial techniques interact with and across multiple stages of this pipeline, resulting in cascading attack effects. These vulnerabilities arise because they ingest textual inputs from various open sources, including real and potentially fake content. Three types of attacks against CTI pipelines are analysed \u2013 evasion, flooding, and poisoning \u2013 and their impact on the system\u2019s information selection capabilities is assessed. Specifically, focusing on fake text generation, the work demonstrates how adversarial text generation techniques can create fake cybersecurity and cybersecurity-like text that misleads classifiers, degrades performance, and disrupts system functionality. The focus is primarily on the evasion attack, as it precedes and enables flooding and poisoning attacks within the CTI pipeline. The findings reveal that the False Positive Rate (FPR) for evasion attacks reached 97% with a specialised ML classifier model, indicating the model\u2019s high vulnerability to adversarial samples. Additionally, an FPR of 75% is observed for ChatGPT-4o as a classifier, indicating its susceptibility to adversarial examples. These results underscore the need for an additional verification component at the early stage of the CTI pipeline to detect and filter out misinformation before it spreads through the system."
+  },
+  {
+   "openalex": "https://openalex.org/W7223566770",
+   "doi": "https://doi.org/10.2738/engai.2026.0003",
+   "title": "AI-Driven Alarm Management in Industrial Systems: Methods and Applications",
+   "year": 2026,
+   "date": "2026-01-01",
+   "venue": "ENGINEERING Artificial Intelligence",
+   "type": "article",
+   "cites": 0,
+   "abstract": "Industrial alarm systems are the main interface through which abnormal process conditions, equipment faults, protection events, cyber\u2013physical disturbances, and diagnostic evidence are communicated to human operators. Practical alarm systems still suffer from nuisance alarms, chattering alarms, alarm floods, false and missing alarms, weak root-cause evidence, and limited integration with operator knowledge. This paper reviews artificial intelligence (AI)-driven industrial alarm management through three connected research streams: alarm flood analytics, root-cause diagnosis, and alarm-system decision support. Beyond a model-type taxonomy, this paper provides an operational-stage synthesis of AI-driven alarm management, in which techniques are interpreted according to their functional roles in the alarm lifecycle rather than as strict chronological phases. Unlike a taxonomy that only groups many studies under broad labels, the paper discusses individual studies according to the technical method used, the alarm-management problem addressed, the operational function supported, and the remaining limitation for deployment. This synthesis connects engineering and data foundations, alarm compression and reduction, alarm flood episode recognition, root-cause explanation, evidence-grounded decision support, and lifecycle governance. Within this framework, alarm flood analytics focuses on transforming dense and noisy alarm sequences into structured episode-level evidence, while root-cause diagnosis builds on such evidence to move from statistical associations toward physically, temporally, and causally plausible explanations. Building on these diagnostic outputs, decision-support methods translate alarm evidence into operator-facing information through visualization, knowledge retrieval, and AI-assisted interaction. The review further identifies future perspectives for deployable alarm intelligence, including episode-level benchmarking, uncertainty and false/missing-alarm reasoning, cross-site transfer, evidence-grounded large language model (LLM)/retrieval-augmented generation (RAG) assistance, prompt-injection protection, lifecycle validation, and human-centered deployment. The review shows that deployable alarm intelligence requires not only high model accuracy, but also evidence traceability, uncertainty calibration, cross-site generalization, lifecycle governance, and safe boundaries for LLM-assisted operation."
+  },
+  {
+   "openalex": "https://openalex.org/W2991684623",
+   "doi": "https://doi.org/10.15446/dyna.v83n197.57589",
+   "title": "Human error and response to alarms in process safety",
+   "year": 2016,
+   "date": "2016-06-30",
+   "venue": "DYNA",
+   "type": "article",
+   "cites": 5,
+   "abstract": "Operadores humanos responden a alarmas en condiciones normales y tambi\u00e9n en situaciones inesperadas y anormales en tiempo real. El objetivo de este estudio consiste en aumentar el conocimiento de las reacciones humanas a alarmas en el \u00e1mbito laboral. Describe como los humanos pueden contribuir a accidentes y presta atenci\u00f3n a la seguridad del proceso que se efect\u00faa en el tiempo de reacci\u00f3n a las alarmas de sistema. Este experimento fue ejecutado para investigar si hay diferencias en respuestas diferenciales a alarmas visuales compar\u00e1ndolas a alarmas auditivas. Los resultados indican que las alarmas visuales son percibidas de manera m\u00e1s eficiente que las alarmas auditivas. Incluso, se pudo ver una correlaci\u00f3n negativa entre la cantidad de errores y el tiempo de reacci\u00f3n, lo que indica una diferencia individual en su disposici\u00f3n a errores cuando reaccionan a alarmas visuales en operaciones de supervisi\u00f3n."
+  },
+  {
+   "openalex": "https://openalex.org/W4409686194",
+   "doi": "https://doi.org/10.3390/s25092635",
+   "title": "Employing Eye Trackers to Reduce Nuisance Alarms",
+   "year": 2025,
+   "date": "2025-04-22",
+   "venue": "Sensors",
+   "type": "article",
+   "cites": 1,
+   "abstract": "When process operators anticipate an alarm prior to its annunciation, that alarm loses information value and becomes a nuisance. This study investigated using eye trackers to measure and adjust the salience of alarms with three methods of gaze-based acknowledgement (GBA) of alarms that estimate operator anticipation. When these methods detected possible alarm anticipation, the alarm\u2019s audio and visual salience was reduced. A total of 24 engineering students (male = 14, female = 10) aged between 18 and 45 were recruited to predict alarms and control a process parameter in three scenario types (parameter near threshold, trending, or fluctuating). The study evaluated whether behaviors of the monitored parameter affected how frequently the three GBA methods were utilized and whether reducing alarm salience improved control task performance. The results did not show significant task improvement with any GBA methods (F(3,69) = 1.357, p = 0.263, partial \u03b72 = 0.056). However, the scenario type affected which GBA method was more utilized (X2 (2, N = 432) = 30.147, p < 0.001). Alarm prediction hits with gaze-based acknowledgements coincided more frequently than alarm prediction hits without gaze-based acknowledgements (X2 (1, N = 432) = 23.802, p < 0.001, OR = 3.877, 95% CI 2.25\u20136.68, p < 0.05). Participant ratings indicated an overall preference for the three GBA methods over a standard alarm design (F(3,63) = 3.745, p = 0.015, partial \u03b72 = 0.151). This study provides empirical evidence for the potential of eye tracking in alarm management but highlights the need for additional research to increase validity for inferring alarm anticipation."
+  },
+  {
+   "openalex": "https://openalex.org/W4391250453",
+   "doi": "https://doi.org/10.1002/9781119825920.ch5",
+   "title": "AI AND ALARM ANALYTICS FOR FAILURE ANALYSIS AND PREVENTION",
+   "year": 2024,
+   "date": "2024-01-10",
+   "venue": "Wiley eBooks",
+   "type": "book-chapter",
+   "cites": 0,
+   "abstract": "This chapter is on Artificial Intelligence and Alarm Analytics for failure analysis and prevention. It discusses the current state of alarm analysis including both traditional and emerging methods. Briefly, the chapter presents an overview of process engineering, data analytics, advanced process modeling, and modern learning methods. These modern learning methods include both machine learning and other common AI techniques."
+  },
+  {
+   "openalex": "https://openalex.org/W4409922538",
+   "doi": "https://doi.org/10.3390/s25092810",
+   "title": "Crowd Evacuation in Stadiums Using Fire Alarm Prediction",
+   "year": 2025,
+   "date": "2025-04-29",
+   "venue": "Sensors",
+   "type": "article",
+   "cites": 6,
+   "abstract": "Ensuring rapid and efficient evacuation in high-density environments, such as stadiums, is critical for public safety during fire emergencies. Traditional fire alarm systems rely on reactive detection mechanisms, often resulting in delayed response times, increased panic, and overcrowding. This study introduces an AI-driven predictive fire alarm and evacuation model that leverages machine learning algorithms and real-time environmental sensor data to anticipate fire hazards before ignition, improving emergency response efficiency. To detect early fire risk indicators, the system processes data from 62,630 sensor measurements across 15 ecological parameters, including temperature, humidity, total volatile organic compounds (TVOC), CO2 levels, and particulate matter. A comparative analysis of six machine learning models\u2014Logistic Regression, Support Vector Machines (SVM), Random Forest, and proposed EvacuNet\u2014demonstrates that EvacuNet outperforms all other models, achieving an accuracy of 99.99%, precision of 1.00, recall of 1.00, and an AUC-ROC score close to 1.00. The predictive alarm system significantly reduces false alarm rates and enhances fire detection speed, allowing emergency responders to take preemptive action. Moreover, integrating AI-driven evacuation optimization minimizes bottlenecks and congestion, reduces evacuation times, and improves structured crowd movement. These findings underscore the necessity of intelligent fire detection systems in high-occupancy venues, demonstrating that AI-based predictive modeling can drastically improve fire response and evacuation efficiency. Future research should focus on integrating IoT-enabled emergency navigation, reinforcement learning algorithms, and real-time crowd management systems to further enhance predictive accuracy and minimize casualties. By adopting such advanced technologies, large-scale venues can significantly improve emergency preparedness, reduce evacuation delays, and enhance public safety."
+  },
+  {
+   "openalex": "https://openalex.org/W4200022555",
+   "doi": "https://doi.org/10.3390/s21238128",
+   "title": "Mobile Detection and Alarming Systems for Hazardous Gases and Volatile Chemicals in Laboratories and Industrial Locations",
+   "year": 2021,
+   "date": "2021-12-04",
+   "venue": "Sensors",
+   "type": "review",
+   "cites": 77,
+   "abstract": "The leakage of hazardous gases and chemical vapors is considered one of the dangerous accidents that can occur in laboratories, workshops, warehouses, and industrial sites that use or store these substances. The early detection and alarming of hazardous gases and volatile chemicals are significant to keep the safety conditions for the people and life forms who are work in and live around these places. In this paper, we investigate the available mobile detection and alarming systems for toxic, hazardous gases and volatile chemicals, especially in the laboratory environment. We included papers from January 2010 to August 2021 which may have the newest used sensors technologies and system components. We identified (236) papers from Clarivate Web of Science (WoS), IEEE, ACM Library, Scopus, and PubMed. Paper selection has been done based on a fast screening of the title and abstract, then a full-text reading was applied to filter the selected papers that resulted in (42) eligible papers. The main goal of this work is to discuss the available mobile hazardous gas detection and alarming systems based on several technical details such as the used gas detection technology (simple element, integrated, smart, etc.), sensor manufacturing technology (catalytic bead, MEMS, MOX, etc.) the sensor specifications (warm-up time, lifetime, response time, precision, etc.), processor type (microprocessor, microcontroller, PLC, etc.), and type of the used communication technology (Bluetooth/BLE, Wi-Fi/RF, ZigBee/XBee, LoRa, etc.). In this review, attention will be focused on the improvement of the detection and alarming system of hazardous gases with the latest invention in sensors, processors, communication, and battery technologies."
+  },
+  {
+   "openalex": "https://openalex.org/W3031876681",
+   "doi": "https://doi.org/10.1016/j.eswa.2020.113526",
+   "title": "Automatic alarm prioritization by data mining for fault management in cellular networks",
+   "year": 2020,
+   "date": "2020-05-30",
+   "venue": "Expert Systems with Applications",
+   "type": "article",
+   "cites": 29,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W4403338111",
+   "doi": "https://doi.org/10.1038/s41598-024-75125-6",
+   "title": "Intelligent alarm system for river embankment seepage based on BILSTM",
+   "year": 2024,
+   "date": "2024-10-11",
+   "venue": "Scientific Reports",
+   "type": "article",
+   "cites": 5,
+   "abstract": "Currently, the alarm functions of existing levee seepage monitoring systems are limited to single-parameter monitoring and lack rate-of-change alarms and correlation alarms. This can lead to false alarms, missed alarms, equipment failures, or unnecessary downtime. To enhance the intelligence of levee safety monitoring and seepage alarms, a levee seepage intelligent alarm system based on a Bidirectional Long Short-Term Memory (BILSTM) network model was designed and implemented. Firstly, data cleaning and preprocessing are carried out on the engineering safety monitoring operation data to reduce the influence of dirty data such as outliers and repetitive values on the accuracy of alarms. Secondly, for the correlation between the piezometric tube water levels of the levee and the Yangtze River water levels, a correlation analysis based on Mutual Information (MI) theory was conducted to minimize the effect of piezometric tube water level change delays on correlation. Finally, the BILSTM model was used to predict trends in these potentially abnormal data intervals. Based on engineering application requirements, alarm thresholds were established, and a multi-level alarm module was developed. Field operation test results show that the proposed method can accurately predict the piezometric tube water levels of levees, achieving intelligent alarms within the engineering safety monitoring system."
+  },
+  {
+   "openalex": "https://openalex.org/W2049169982",
+   "doi": "https://doi.org/10.1109/tns.1981.4331685",
+   "title": "The Development of an Intelligent Reliable Database Driven Alarm System at the ISR",
+   "year": 1981,
+   "date": "1981-01-01",
+   "venue": "IEEE Transactions on Nuclear Science",
+   "type": "article",
+   "cites": 2,
+   "abstract": "The monitoring of equipment and operating conditions of a complex installation is an important task for an accelerator control system, especially for a machine with high intensity circulating beams like the ISR. It is essential that the control system provides the relevant correct alarms and warnings whilst at the same time not flooding the operators with irrelevant information. At the ISR a system has been introduced which displays fault conditions as text messages on a colour display. In conjunction with these messages it is possible for the operator to obtain supplementary information concerning the fault or actions that should be taken. The operator also has facilities to cancel fault messages, to ignore them and to supervise the monitoring programs. The texts for the messages are kept on a database in order to facilitate their modification. All fault messages are printed and kept on a file for later extraction by an interrogation program. This allows for the easy analysis of fault situations or for the production of statistics."
+  },
+  {
+   "openalex": "https://openalex.org/W2767187596",
+   "doi": "https://doi.org/10.14257/ijdta.2017.10.9.04",
+   "title": "Security Alarm Systems: Modeling and Analysis of SIA Protocol",
+   "year": 2017,
+   "date": "2017-09-30",
+   "venue": "International Journal of Database Theory and Application",
+   "type": "article",
+   "cites": 0,
+   "abstract": "Modeling network specific parameters and conducting analysis on the alarm system protocols helps in predicting an event loss during communication failures.The analysis and the experiment results were conducted on one of the alarm system protocol, Security Industry Association (SIA) protocol.The contribution includes our approach to model the alarm system parameters, a tool that can help in simulation (PE Simulator) and experiment results on the retransmission mechanism deployed by the protocol.This analysis and the results can help a user to tune the device or network in order to prevent the event loss."
+  },
+  {
+   "openalex": "https://openalex.org/W7133020634",
+   "doi": null,
+   "title": "Comparison of communication protocols in the alarm management for remote systems",
+   "year": 2023,
+   "date": "2023-01-01",
+   "venue": "Tampere University Institutional Repository (Tampere University)",
+   "type": "dissertation",
+   "cites": 0,
+   "abstract": "H\u00e4lytykset ovat t\u00e4rke\u00e4 osa jokaista automaatioj\u00e4rjestelm\u00e4\u00e4. Industry 4.0:n my\u00f6t\u00e4 n\u00e4iden j\u00e4rjestelmien et\u00e4valvonta yleistyy ja siten my\u00f6s h\u00e4lytysten t\u00e4rkeys korostuu, sill\u00e4 perille p\u00e4\u00e4sem\u00e4tt\u00f6m\u00e4ll\u00e4 h\u00e4lytyksell\u00e4 saattaa olla vakavia seuraamuksia. Oikean viestint\u00e4protokollan valitseminen h\u00e4lytysten ja telemetrian v\u00e4litt\u00e4mist\u00e4 varten on siis t\u00e4rke\u00e4\u00e4, jotta voidaan varmistaa luotettava yhteys et\u00e4valvontaty\u00f6kaluihin, t\u00e4m\u00e4 korostuu erityisesti kohteissa, joissa on heikko tai ep\u00e4luotettava internetyhteys. T\u00e4m\u00e4n opinn\u00e4ytety\u00f6n tarkoituksena on m\u00e4\u00e4ritt\u00e4\u00e4, mik\u00e4 seuraavista, yleisess\u00e4 k\u00e4yt\u00f6ss\u00e4 olevista protokollista, MQTT, HTTP ja SMS, on sopivin t\u00e4h\u00e4n tarkoitukseen. Ty\u00f6n ensimm\u00e4isess\u00e4 osassa keskityt\u00e4\u00e4n ensin esittelem\u00e4\u00e4n h\u00e4lytykset osana SCADA-j\u00e4rjestelm\u00e4\u00e4 ja sen j\u00e4lkeen esittelem\u00e4\u00e4n valitut protokollat ja niiden ominaisuudet. Esittelyn j\u00e4lkeen suoritetaan vertailu protokollien v\u00e4lill\u00e4, ja sopivinta niist\u00e4 k\u00e4ytet\u00e4\u00e4n soveltuvuusselvityksess\u00e4. Ty\u00f6n toisena osana on soveltuvuusselvityksen\u00e4 toimiva k\u00e4yt\u00e4nn\u00f6n toteutus, jossa toteutetaan j\u00e4rjestelm\u00e4, jonka avulla pystyt\u00e4\u00e4n v\u00e4litt\u00e4m\u00e4\u00e4n viestit testij\u00e4rjestelm\u00e4st\u00e4 haluttuun p\u00e4\u00e4tepisteeseen. Viestienv\u00e4litysj\u00e4rjestelm\u00e4\u00e4n sis\u00e4ltyy testij\u00e4rjestelm\u00e4, joka vastaa viestien l\u00e4hett\u00e4misest\u00e4, v\u00e4liohjelmisto, joka v\u00e4litt\u00e4\u00e4 viestit m\u00e4\u00e4r\u00e4ttyyn p\u00e4\u00e4tepisteeseen hy\u00f6dynt\u00e4m\u00e4ll\u00e4 Webhook-metodia, ja Raspberry Pi:lle asennettu v\u00e4lityspalvelin, joka ker\u00e4\u00e4 viestit testij\u00e4rjestelm\u00e4st\u00e4 ja v\u00e4litt\u00e4\u00e4 ne v\u00e4liohjelmistolle. Lis\u00e4ksi v\u00e4lityspalvelimen ja sen asiakkaiden v\u00e4linen yhteys turvataan hy\u00f6dynt\u00e4m\u00e4ll\u00e4 TLS-salausta. Vertailun tulokset osoittavat, ett\u00e4 valituista protokollista MQTT on tilanteeseen kaikista sopivin, koska monet sen ominaisuuksista ovat erikoistuneet viestin onnistuneen l\u00e4hetyksen varmistamiseen. MQTT tosin lis\u00e4\u00e4 j\u00e4rjestelm\u00e4\u00e4n monimutkaisuutta, koska se vaatii erillisen v\u00e4lityspalvelimen."
+  },
+  {
+   "openalex": "https://openalex.org/W3157467719",
+   "doi": "https://doi.org/10.1002/aic.17297",
+   "title": "Hidden Markov model based approach for diagnosing cause of alarm signals",
+   "year": 2021,
+   "date": "2021-06-11",
+   "venue": "AIChE Journal",
+   "type": "article",
+   "cites": 20,
+   "abstract": "When a fault occurs in a process, it slowly propagates within the system and affects the measurements triggering a sequence of alarms in the control room. The operators are required to diagnose the cause of alarms and take necessary corrective measures. The idea of representing the alarm sequence as the fault propagation path and using the propagation path to diagnose the fault is explored. A diagnoser based on hidden Markov model is built to identify the cause of the alarm signals. The proposed approach is applied to an industrial case study: Tennessee Eastman process. The results show that the proposed approach is successful in determining the probable cause of alarms generated with high accuracy. The model was able to identify the cause accurately, even when tested with short alarm sub\u2010sequences. This allows for early identification of faults, providing more time to the operator to restore the system to normal operation."
+  },
+  {
+   "openalex": "https://openalex.org/W4404027608",
+   "doi": "https://doi.org/10.53294/ijfetr.2023.4.2.0022",
+   "title": "Alarm rationalization in engineering projects: analyzing cost-saving measures and efficiency gains",
+   "year": 2023,
+   "date": "2023-06-30",
+   "venue": "International Journal of Frontiers in Engineering and Technology Research",
+   "type": "article",
+   "cites": 25,
+   "abstract": "Alarm rationalization is a critical process in engineering projects, focusing on optimizing alarm management systems to enhance operational efficiency, reduce costs, and improve safety. This paper explores how alarm rationalization, when implemented effectively, mitigates alarm fatigue, reduces unnecessary alerts, and ensures that operators are only notified of critical issues. By analyzing cost-saving measures and efficiency gains, the study highlights how rationalization techniques can streamline decision-making and improve system reliability across various industries, such as oil and gas, manufacturing, and chemical processing. The rationalization process involves reviewing existing alarm systems, identifying redundant or non-critical alarms, and reclassifying alarms based on priority and operational impact. By refining alarm settings, engineers can decrease operator workload and minimize downtime, contributing to significant cost savings. For example, reducing nuisance alarms not only improves response times but also extends the lifespan of equipment by preventing unnecessary shutdowns. From a global perspective, the adoption of alarm rationalization varies by industry and region, with some sectors benefiting from advanced automation technologies and standardized regulatory guidelines. The implementation of intelligent alarm systems, combined with data analytics and machine learning, further enhances the ability to predict and prevent failures before they escalate into major operational disruptions. This paper also examines case studies of successful alarm rationalization projects, demonstrating tangible efficiency gains such as reduced maintenance costs, improved safety, and optimized production processes. Additionally, the discussion extends to the challenges and best practices in alarm rationalization, such as securing stakeholder buy-in, aligning rationalization efforts with organizational goals, and ensuring compliance with international safety standards. In conclusion, alarm rationalization offers engineering projects an effective pathway to achieve cost efficiency and operational excellence. However, the success of these initiatives depends on robust planning, continuous monitoring, and the integration of advanced technologies."
+  },
+  {
+   "openalex": "https://openalex.org/W2598683097",
+   "doi": null,
+   "title": "An alarm aggregation framework for critical IT Service monitoring at CERN",
+   "year": 2015,
+   "date": "2015-08-24",
+   "venue": null,
+   "type": "article",
+   "cites": 0,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W3153618595",
+   "doi": null,
+   "title": "Risks in the user interaction of alarm functionality in situation awareness systems",
+   "year": 2020,
+   "date": "2020-01-01",
+   "venue": "Theseus (Ammattikorkeakoulujen)",
+   "type": "dissertation",
+   "cites": 5,
+   "abstract": "This study aimed to identify how the perception of user alerts is supported by design instructions and standards, examine possible and realized risks associated with losing situational awareness regarding alerts, and report cybersecurity issues related to user interaction and poor design in situations requiring special attention in the cyber physical \\nenvironment. \\n \\nThis thesis was a qualitative study combining empirical and theoretical research strategies. The empirical part was carried out by examining investigation reports published by traffic management authorities in the context of deficient situation awareness. The theoretical part was accomplished by a literature review focused on situation awareness, risks related to it and means to foster it. \\n \\nThe results show that in a single accident, multiple errors in situation awareness and at different system interfaces can occur simultaneously. Situational awareness was found to be often weakened by the problems in perception. Human-software interactions, as well as human-to-human interactions are vulnerable to multitudinous errors. Furthermore, it was found that the risk of vulnerability increases with the complex and inter-connected ICT systems being as targets for cyberattacks."
+  }
+ ]
+}

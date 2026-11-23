@@ -1,0 +1,282 @@
+{
+ "query": "CARE score wind turbine early fault detection",
+ "filter": null,
+ "count": 1232,
+ "results": [
+  {
+   "openalex": "https://openalex.org/W4404700659",
+   "doi": "https://doi.org/10.3390/data9120138",
+   "title": "CARE to Compare: A Real-World Benchmark Dataset for Early Fault Detection in Wind Turbine Data",
+   "year": 2024,
+   "date": "2024-11-23",
+   "venue": "Data",
+   "type": "article",
+   "cites": 64,
+   "abstract": "Early fault detection plays a crucial role in the field of predictive maintenance for wind turbines, yet the comparison of different algorithms poses a difficult task because domain-specific public datasets are scarce. Many comparisons of different approaches either use benchmarks composed of data from many different domains, inaccessible data, or one of the few publicly available datasets that lack detailed information about the faults. Moreover, many publications highlight a couple of case studies where fault detection was successful. With this paper, we publish a high quality dataset that contains data from 36 wind turbines across 3 different wind farms as well as the most detailed fault information of any public wind turbine dataset as far as we know. The new dataset contains 89 years worth of real-world operating data of wind turbines, distributed across 44 labeled time frames for anomalies that led up to faults, as well as 51 time series representing normal behavior. Additionally, the quality of training data is ensured by turbine-status-based labels for each data point. Furthermore, we propose a new scoring method, called CARE (Coverage, Accuracy, Reliability and Earliness), which takes advantage of the information depth that is present in the dataset to identify good early fault detection models for wind turbines. This score considers the anomaly detection performance, the ability to recognize normal behavior properly, and the capability to raise as few false alarms as possible while simultaneously detecting anomalies early."
+  },
+  {
+   "openalex": "https://openalex.org/W7118015332",
+   "doi": "https://doi.org/10.1109/isgtmiddleeast65737.2025.11314324",
+   "title": "Hybrid Autoencoder-Based Framework for Early Fault Detection in Wind Turbines",
+   "year": 2025,
+   "date": "2025-11-23",
+   "venue": "IEEE PES Conference on Innovative Smart Grid Technologies - Middle East (ISGT Middle East)",
+   "type": "conference-paper",
+   "cites": 7,
+   "abstract": "Wind turbine reliability is critical to the growing renewable energy sector, where early fault detection significantly reduces downtime and maintenance costs. This paper introduces a novel ensemble-based deep learning framework for unsupervised anomaly detection in wind turbines. The method integrates Variational Autoencoders (VAE), LSTM Autoencoders, and Transformer architectures, each capturing different temporal and contextual patterns from high-dimensional SCADA data. A unique feature engineering pipeline extracts temporal, statistical, and frequency-domain indicators, which are then processed by the deep models. Ensemble scoring combines model predictions, followed by adaptive thresholding to detect operational anomalies without requiring labeled fault data. Evaluated on the CARE dataset containing 89 years of real-world turbine data across three wind farms, the proposed method achieves an AUC-ROC of 0.947 and early fault detection up to 48 hours prior to failure. This approach offers significant societal value by enabling predictive maintenance, reducing turbine failures, and enhancing operational efficiencyin large-scale wind energy deployments."
+  },
+  {
+   "openalex": "https://openalex.org/W7223652064",
+   "doi": "https://doi.org/10.3850/esrel2026061419_esrel26-p26195-cd",
+   "title": "The Role Of Reliability Knowledge In Unsupervised Fault Detection Of Wind Turbines",
+   "year": 2026,
+   "date": "2026-01-01",
+   "venue": "European Safety and Reliability Conference (ESREL)",
+   "type": "conference-paper",
+   "cites": 0,
+   "abstract": "Unsupervised learning techniques have become essential tools for data-driven fault detection in complex industrial systems. However, their effectiveness depends strongly on how the input space represents the underlying physical and causal relationships of degradation. This study investigates the role of incorporating reliability knowledge, derived from analyses such as Failure Mode and Effects Analysis, Failure Mode and Symptoms Analysis, or Failure Mode and Observability Analysis, in shaping the data representation underlying the effectiveness and interpretability of anomaly detection models. The analysis focuses on the failure-mode level, comparing generalist models, trained with all available monitoring variables, to knowledge-guided specialist models, trained only with variables causally associated with specific failure mechanisms. Two unsupervised algorithms, including One-Class Support Vector Machine and Isolation Forest, are employed as neutral demonstration vectors, so that the observed effects can be attributed primarily to the structure of the feature space rather than to algorithmic characteristics. Performance is assessed using open SCADA data from wind turbines through metrics such as false alarm rate, early warning time, and alarm persistence. Additionally, geometric distances between the subspaces learned by generalist and specialist models are analysed to quantify structural divergence in feature representation. The study aims to assess whether knowledge-guided specialization can facilitate the emergence of fault-related deviations in unsupervised settings and support more interpretable model behaviour. By examining the consistency of these effects across different learning algorithms, the study provides quantitative insights into how reliability knowledge shapes feature spaces toward physically meaningful dimensions of system behaviour."
+  },
+  {
+   "openalex": "https://openalex.org/W2625289926",
+   "doi": null,
+   "title": "Fault Detection and Isolation of Wind Turbines using Immune System Inspired Algorithms",
+   "year": 2016,
+   "date": "2016-11-01",
+   "venue": "Spectrum Research Repository (Concordia University)",
+   "type": "dissertation",
+   "cites": 0,
+   "abstract": "Recently, the research focus on renewable sources of energy has been growing intensively. This is mainly due to potential depletion of fossil fuels and its associated environmental concerns, such as pollution and greenhouse gas emissions. Wind energy is one of the fastest growing sources of renewable energy, and policy makers in both developing and developed countries have built their vision on future energy supply based on and by emphasizing the wind power. The increase in the number of wind turbines, as well as their size, have led to undeniable care and attention to health and condition monitoring as well as fault diagnosis of wind turbine systems and their components. \\n \\nIn this thesis, two main immune inspired algorithms are used to perform Fault Detection and Isolation (FDI) of a Wind Turbine (WT), namely the Negative Selection Algorithm (NSA) as well as the Dendritic Cell Algorithm (DCA). \\n \\nFirst, an NSA-based fault diagnosis methodology is proposed in which a hierarchical bank of NSAs is used to detect and isolate both individual as well as simultaneously occurring faults common to the wind turbines. A smoothing moving window filter is then utilized to further improve the reliability and performance of the proposed FDI scheme. Moreover, the performance of the proposed scheme is compared with the state-of-the-art data-driven technique, namely Support Vector Machine (SVM) to demonstrate and illustrate the superiority and advantages of the proposed NSA-based FDI scheme. Finally, a nonparametric statistical comparison test is implemented to evaluate the proposed methodology with that of the SVM under various fault severities. \\n \\nIn the second part, another immune inspired methodology, namely the Dendritic Cell Algorithm (DCA) is used to perform online sensor fault FDI. A noise filter is also designed to attenuate the measurement noise, resulting in better FDI results. The proposed DCA-based FDI scheme is then compared with the previously developed NSA-based FDI scheme, and a nonparametric statistical comparison test is also performed. \\n \\nBoth of the proposed immune inspired frameworks are applied to a well-known wind turbine benchmark model in order to validate the effectiveness of the proposed methodologies."
+  },
+  {
+   "openalex": "https://openalex.org/W1818373647",
+   "doi": null,
+   "title": "Maintenance optimisation for wind turbines.",
+   "year": 2008,
+   "date": "2008-04-30",
+   "venue": "Open Access Institutional Repository at Robert Gordon University (Robert Gordon University)",
+   "type": "dissertation",
+   "cites": 88,
+   "abstract": "Wind is becoming an increasingly important source of energy for countries that\\nratify to reduce the emission of greenhouse gases and mitigate the effects of global\\nwarming. Investments in wind farms are affected by inter-related assets and\\nstakeholders\u2019 requirements. These requirements demand a well-founded Asset\\nManagement (AM) frame-work which is currently lacking in the wind industry.\\nDrawing from processes, tools and techniques of AM in other industries, a\\nstructured model for AM in the wind industry is developed. The model divulges that\\nmaintenance is indispensable to the core business objectives of the wind industry.\\nHowever, the common maintenance strategies applied to wind turbines are\\ninadequate to support the current commercial drivers of the wind industry.\\nConsequently, a hybrid approach to the selection of a suitable maintenance strategy\\nis developed. The approach is used in a case study to demonstrate its practical\\napplication. Suitable Condition-Based Maintenance activities for wind turbines are\\ndetermined.\\nMaintenance optimisation is a means to determine the most cost-effective\\nmaintenance strategy. Field failure and maintenance data of wind turbines are\\ncollected and analysed using two quantitative maintenance optimisation techniques;\\nModelling System Failures (MSF) and Delay-Time Maintenance Model (DTMM).\\nThe MSF permits the evaluation of life-data samples and enables the design and\\nsimulation of a system\u2019s model to determine optimum maintenance activities.\\nMaximum Likelihood Estimation is used to estimate the shape (\u03b2) and scale (\u03b7)\\nparameters of the Weibull distribution for critical components and subsystems of the\\nwind turbines. Reliability Block Diagrams are designed using the estimated \u03b2 and \u03b7\\nto model the failures of the wind turbines and of a selected wind farm. The models\\nare simulated to assess and optimise the reliability, availability and maintainability\\nof the wind turbine and the farm. The DTMM examines equipment failure patterns\\nby taking into account failure consequences, inspection time and cost in order to\\ndetermine optimum inspection intervals. Defects rate (\u03b1) and mean delay-time (1/\u03b3)\\nof components and subsystems within the wind turbine are estimated. Optimal\\ninspection intervals for critical subsystems of the wind turbine are then determined."
+  },
+  {
+   "openalex": "https://openalex.org/W7151586422",
+   "doi": "https://doi.org/10.24874/pes08.01.019",
+   "title": "A FAULT DETECTION MODEL FOR PREDICTIVE MAINTENANCE OF A WIND TURBINE BASED ON A HYBRID DEEP LEARNING APPROACH",
+   "year": 2026,
+   "date": "2026-03-30",
+   "venue": "Proceedings on Engineering Sciences",
+   "type": "article",
+   "cites": 2,
+   "abstract": "In the context of Industry 4.0, predictive maintenance of wind turbines is a crucial issue for optimizing their performance.This article proposes a new hybrid deep learning approach, aligned with the principles of Industry 4.0, to improve the predictive detection of failures in wind turbines.By combining long short-term recurrent neural networks (LSTM), artificial neural networks (ANN), and genetic algorithms (GA), our hybrid model (GA-LSTM-ANN) effectively captures the temporal and nonlinear complexities of sensor data.Genetic algorithms automatically optimize the model configuration.This innovative approach offers a unique solution for predictive fault detection.Applied to a real dataset, our model has significantly outperformed traditional methods, achieving 96.32% precision, 95.91% accuracy, 96.45% F1-score, and 96.41% recall for wind turbine fault detection.These promising results open up new perspectives for optimizing the management of wind farms and contributing to the energy transition."
+  },
+  {
+   "openalex": "https://openalex.org/W2623683153",
+   "doi": "https://doi.org/10.1115/1.4036951",
+   "title": "Wind Turbine Blade Damage Detection Using Supervised Machine Learning Algorithms",
+   "year": 2017,
+   "date": "2017-08-02",
+   "venue": "Journal of vibration and acoustics",
+   "type": "article",
+   "cites": 94,
+   "abstract": "Wind turbine blades undergo high operational loads, experience variable environmental conditions, and are susceptible to failure due to defects, fatigue, and weather-induced damage. These large-scale composite structures are fundamentally enclosed acoustic cavities and currently have limited, if any, structural health monitoring (SHM) in place. A novel acoustics-based structural sensing and health monitoring technique is developed, requiring efficient algorithms for operational damage detection of cavity structures. This paper describes the selection of a set of statistical features for acoustics-based damage detection of enclosed cavities, such as wind turbine blades, as well as a systematic approach used in the identification of competent machine learning algorithms. Logistic regression (LR) and support vector machine (SVM) methods are identified and used with optimal feature selection for decision-making via binary classification algorithms. A laboratory-scale wind turbine with hollow composite blades was built for damage detection studies. This test rig allows for testing of stationary or rotating blades, of which time and frequency domain information can be collected to establish baseline characteristics. The test rig can then be used to observe any deviations from the baseline characteristics. An external microphone attached to the tower will be utilized to monitor blade health while blades are internally ensonified by wireless speakers. An initial test campaign with healthy and damaged blade specimens is carried out to arrive at several conclusions on the detectability and feature extraction capabilities required for damage detection."
+  },
+  {
+   "openalex": "https://openalex.org/W4212854684",
+   "doi": "https://doi.org/10.3390/books978-3-03897-361-4",
+   "title": "Wind Turbines",
+   "year": 2018,
+   "date": "2018-12-04",
+   "venue": "MDPI eBooks",
+   "type": "book",
+   "cites": 0,
+   "abstract": "This issue is a continuation of the previous successful Special Issue \u201cWind Turbines 2013\u201d. Similarly, this issue also focuses on recent advances in the wind energy sector on a wide range of topics, including: wind resource mapping, wind intermittency issues, aerodynamics, foundations, aeroelasticity, wind turbine technologies, control of wind turbines, diagnostics, generator concepts including gearless concepts, power electronic converters, grid interconnection, ride-through operation, protection, wind farm layouts - optimization and control, reliability, operations and maintenance, effects of wind farms on local and global climate, wind power stations, smart-grid and micro-grid related to wind turbine operation."
+  },
+  {
+   "openalex": "https://openalex.org/W7128858963",
+   "doi": "https://doi.org/10.23967/j.rimni.2025.10.74232",
+   "title": "Enhancing Wind Turbine Reliability: A Hybrid State-Space and Generative Approach to SCADA-Based Fault Detection",
+   "year": 2026,
+   "date": "2026-01-01",
+   "venue": "Revista Internacional de M\u00e9todos Num\u00e9ricos para C\u00e1lculo y Dise\u00f1o en Ingenier\u00eda",
+   "type": "article",
+   "cites": 2,
+   "abstract": "Wind turbine reliability is essential for the renewable energy sector, as failures in key parts such as gearboxes and main bearings lead to more than $10 billion in downtime and maintenance costs each year. Supervisory control and data acquisition (SCADA) systems can monitor turbines using signals such as vibration, power output, and wind speed; however, applying machine learning to this data type is challenging due to the presence of unbalanced fault types and complex time patterns. Previous research has explored physics-informed deep learning, digital twins, and contrastive learning, achieving noteable fault detection accuracy. However, challenges remain in detecting rare faults, dealing with imbalanced data, combining data sources, and model generalization. This study presents StateSpaceNetWithGen (SS-Gen), a hybrid model integrating state-space modeling for temporal dynamics with generative augmentation for class imbalance. Tested on a 35,000-sample SCADA dataset (2018\u20132019), SS-Gen achieved high accuracy (\u22481.00) and F1-score (\u22481.00) on this specific dataset, improving by 33% over baselines. To further validate the strengths of the proposed method, the methodology is validated on a second dataset with different distribution. These results support more reliable and interpretable wind turbine health monitoring and move the field toward stronger physics-informed and federated machine learning solutions.OPEN ACCESS Received: 06/10/2025 Accepted: 19/11/2025 Published: 23/01/2026"
+  },
+  {
+   "openalex": "https://openalex.org/W7197741282",
+   "doi": null,
+   "title": "Architecture-Level Fusion of SCADA and ERA5 Reanalysis Data for Enhanced Winter Fault Detection in Offshore Wind Turbines",
+   "year": 2026,
+   "date": "2026-05-15",
+   "venue": "Osuva (University of Vaasa)",
+   "type": "dissertation",
+   "cites": 0,
+   "abstract": "Wind energy is a crucial part of the global shift towards low-carbon energy systems; however, the economic uncertainties of offshore wind energy remain driven by high offshore operation and maintenance (O&M) costs in harsh environments. Predictive maintenance is vital in offshore operations to minimize downtime and avoid catastrophic failures. But current techniques are mainly based on supervisory control and data acquisition (SCADA) data, which is susceptible to environmental effects and can become unreliable in winter. This thesis assesses the benefit of incorporating weather data for anomaly detection in offshore wind turbines during winter conditions. Using the CARE to Compare benchmark dataset, a three step approach is proposed. First, a SCADA-based one-dimensional neural network (1D-CNN) is reproduced to serve as a baseline. A data-level fusion model is then used to increase SCADA inputs using meteorological information produced by ERA5. Lastly, an architecture-level fusion model is developed, which relies on two parallel branches with a global gating mechanism to control the weight of environmental information. The performance of the models is evaluated on the full test set and the winter subset (December February). On the winter subset, the SCADA-only baseline has a high recall (0.9500) and low precision (0.6472), which produces a significant number of false alarms. Under the same winter evaluation, data-level fusion also enhances precision (0.8126) and reduces recall (0.8249), so fusion is more conservative in its detection behaviour. The proposed architecture level fusion model further achieves optimum performance with a precision of 0.7995, a recall rate of 0.9234 and the highest F1-score of 0.8570 and reduces false positives by over 55 percent as compared to the baseline. These results show how weather context can improve predictive maintenance in winter and can be integrated in effective ways to achieve better predictive maintenance performance. In terms of operational implications, lowering false alarms facilitates maintenance scheduling by reducing wastage of resources on false alarms. Finally, the research exports the model's detection of winter abnormalities as data inputs to an Operations Research optimization model, bridging the gap between predictive maintenance and maintenance operations in offshore wind farms."
+  },
+  {
+   "openalex": "https://openalex.org/W7214044295",
+   "doi": "https://doi.org/10.3390/info17090930",
+   "title": "Uncertainty-Calibrated Residual Conformal Monitoring of Wind Turbine SCADA Data for Cross-Asset Anomaly Detection Under Distribution Shift",
+   "year": 2026,
+   "date": "2026-09-21",
+   "venue": "Information",
+   "type": "article",
+   "cites": 4,
+   "abstract": "Wind turbine SCADA anomaly detectors are commonly calibrated using data from the same asset or development period, whereas deployment requires transfer across turbines with different operating distributions. This mismatch can produce optimistic thresholds, excessive false alarms, and misleading generalization estimates. This study proposes UC-RCF, an uncertainty-calibrated residual conformal framework integrating nonlinear multi-output normal behavior modeling, embargoed blocked cross-fitting, uncertainty-normalized residuals, operating support assessment, channel-wise conformal evidence, reflected cumulative criticality, and cross-asset alarm calibration. Evaluation followed a nested leave-one-turbine-out, asset-disjoint protocol on CARE v6, comprising 95 monitoring cases from 36 turbines across three wind farms, including 45 anomalous and 50 normal cases. UC-RCF achieved a pooled outer-fold CARE score of 0.5903, fault coverage of 0.3920, weighted earliness of 0.2423, event-level reliability of 0.5760, and normal-case accuracy of 0.8706. It detected 25 anomalous cases and generated alarms in 18 normal cases. A farm-stratified paired turbine-cluster bootstrap estimated a CARE improvement of 0.0349 over the initial full configuration, with a 95% percentile interval of 0.0055\u20130.0671 and a bootstrap probability of improvement of 0.991. These estimates remain exploratory because the effective resampling units comprise only 36 physical turbines from three wind farms. Mahalanobis monitoring achieved a higher CARE score of 0.6012, detecting 21 anomalous cases while generating alarms in nine normal cases. UC-RCF therefore provided broader fault coverage and four additional anomalous-case detections but incurred a higher false-alarm burden, demonstrating a sensitivity\u2013reliability trade-off rather than universal detector dominance. Ablation analysis identified farm-normalized residual magnitude as the strongest case-level discriminator, with a receiver operating characteristic area under the curve of 0.854. Heteroscedastic uncertainty scaling and operating support adjustment did not consistently improve CARE or raw discrimination; the auxiliary framework components instead provide mechanisms for uncertainty characterization, score comparability, temporal persistence, and calibration auditing. At the CARE-optimal nominal case-level false-alarm budget of \u03b1=0.30, the empirical normal-case false-alarm rate was 0.36. Because temporal dependence and cross-asset distribution shift can violate exchangeability, \u03b1 is interpreted as an operational calibration target rather than a theoretically guaranteed case-level error bound. Overall, UC-RCF provides an interpretable and auditable framework for investigating residual evidence, operating support shift, temporal persistence, and calibration reliability under cross-asset deployment."
+  },
+  {
+   "openalex": "https://openalex.org/W7213873285",
+   "doi": "https://doi.org/10.1016/j.mex.2026.104171",
+   "title": "Spatio-temporal physics-informed digital twins for early fault prognostics of wind turbine generators and gearboxes",
+   "year": 2026,
+   "date": "2026-09-21",
+   "venue": "MethodsX",
+   "type": "article",
+   "cites": 1,
+   "abstract": "Utility-scale wind energy conversion systems are subjected to highly stochastic aerodynamic loading profiles, making drivetrain components-particularly high-speed gearbox shaft bearings and generator stator windings-susceptible to premature failure. Traditional predictive maintenance frameworks rely either on pure data-driven deep learning models, which suffer from high false alarm rates during transient operational profiles and frequently violate thermodynamic boundaries, or first-principles physical models, which fail to capture dynamic boundary variations due to site-specific environmental factors. This paper introduces a hybrid Spatio-Temporal Physics-Informed Digital Twin (PIDT) framework that integrates physical thermodynamic principles and material fatigue crack propagation laws directly within deep learning architectures. For SCADA thermal anomaly detection, the proposed approach combines a steady-state thermodynamic baseline model with a causal, dilated Physics-Informed Temporal Convolutional Network with Self-Attention (PI-TCN-Attn). Anomaly thresholds are dynamically derived using Peaks-Over-Threshold Extreme Value Theory fitting a Generalized Pareto Distribution to tail excesses. For vibration-based structural diagnostics, amplitude envelopes are extracted using Hilbert demodulation to isolate mesh defect energies, which are subsequently reconstructed via a Multi-Scale Convolutional LSTM Autoencoder. Remaining Useful Life is forecasted using a Physics-Informed Gated Recurrent Unit that incorporates monotonicity constraints and the Paris-Erdogan crack propagation law directly within the loss function, enabling the online discovery of material fatigue parameters. Experimental validation on real SCADA datasets and vibration condition monitoring data demonstrates that the hybrid twin provides early warning lead times for critical drivetrain failures while maintaining low false alarm rates, statistically outperforming conventional unsupervised and supervised machine learning baselines. Furthermore, the learned fatigue parameters of the bearings converge to theoretical fatigue wear limits, validating the physics-guided parameter discovery mechanism."
+  },
+  {
+   "openalex": "https://openalex.org/W3165018276",
+   "doi": "https://doi.org/10.15368/theses.2021.26",
+   "title": "Condition Monitoring and Fault Detection of Blade Damage in Small Wind Turbines Using Time-Series and Frequency Analyses",
+   "year": 2021,
+   "date": "2021-03-01",
+   "venue": "DigitalCommons - CalPoly (California State Polytechnic University)",
+   "type": "dissertation",
+   "cites": 1,
+   "abstract": "Condition monitoring systems are critical for autonomous detection of damage when operating remote wind turbines. These systems continually monitor the turbine\u2019s operating parameters and detect damage before the turbine fails. Although common in utility-scale turbines, these systems are mostly undeveloped in distributed, small-scale turbines due to their high cost and need for specialized equipment. The Cal Poly Wind Power Research Center is developing a low-cost, modular solution known as the LifeLine system. The previous version contained monitoring equipment, but lacked decision-making capabilities. The present work builds on the LifeLine by developing software-based detection of blade damage. Detection is done by monitoring of tower vibrations, rotor speed, and generator power output. First, testing is completed to inform algorithm design: the tower vibrational response is recorded, and blade damage is simulated by adding a mass imbalance to one blade. From these results, several algorithms are developed, and their performance is analyzed in a cross-validation study. The time-series method known as the Nonlinear State Estimation Technique and Sequential Probability Ratio Test (NSET+SPRT) is implemented first. This algorithm is highly successful, with a 93.3% rate of correct damage detection; however, it occasionally raises false alarms during normal operation. A custom-built algorithm known as the Adaptive Fast Fourier Transform (AFFT) is also built; its strength lies in its elimination of false alarms. The final system utilizes a joint monitoring approach, combining the benefits of the NSET+SPRT and AFFT. The final algorithm is successful, correctly categorizing 95.5% of data when operating above 120RPM, and raising no false alarms in normal operation. This version is then implemented for live monitoring on the Cal Poly Wind Turbine, allowing for robust and autonomous detection of blade damage."
+  },
+  {
+   "openalex": "https://openalex.org/W4414871555",
+   "doi": "https://doi.org/10.5194/wes-11-1963-2026",
+   "title": "Remote diagnostics for power converter faults in wind turbines based on converter control system data",
+   "year": 2026,
+   "date": "2026-06-04",
+   "venue": "Wind energy science",
+   "type": "article",
+   "cites": 0,
+   "abstract": "Power converters are among the most frequently failing subsystems of onshore and offshore wind turbines. In order to minimize the resulting downtime and production losses, the time to repair should be as low as possible. In practice, however, it is not uncommon for several turbine visits to be necessary, as information about the failure mode and the spare parts required can often only be determined on site. This paper presents a data-driven, interpretable workflow for the remote diagnosis of power-converter-related turbine shutdowns using converter control system data from an offshore wind farm. The study uses converter fault events and three data sources: high-resolution fast logs (4.5 kHz, \u2212350 to +200 ms around a fault-induced trigger), 1 min operating data, and fault flags derived from event log data. From an initial 864 engineered features we remove low-variance and highly correlated features, apply a subsampled decision-tree inclusion-rate filter to retain 34 features, and estimate diagnostic impact via subsampled logistic regression. Results show that fast-log features and converter fault flags contain the most predictive information for classifying standstill severity after a fault-induced shutdown, while low-resolution operating data contribute little. Using four of the derived features yields the best cross-validated performance in a decision tree, with an accuracy of 0.89 and an F1 score of 0.86. The proposed approach is practical for industry use and offers the potential to provide explainable decision support for improving the first-time fix rate."
+  },
+  {
+   "openalex": "https://openalex.org/W7169832497",
+   "doi": "https://doi.org/10.29354/diag/225499",
+   "title": "Cross-domain diagnosis model for early fault of wind turbine drive system based on digital twin and federated learning",
+   "year": 2026,
+   "date": "2026-07-21",
+   "venue": "Diagnostyka",
+   "type": "article",
+   "cites": 0,
+   "abstract": "A cross-domain diagnosis approach combining Digital Twin (DT) and Federated Learning (FL) is proposed to further optimize the issues of sample scarcity and privacy protection in early defect diagnosis of wind turbine transmission systems. A DT which combines both mechanism- and data-driven approaches is proposed to generate multi-condition virtual fault data. Next, the feature alignment strategy is used to reduce domain difference between simulated and real data. A cross-wind FL framework is proposed, which uses dual-path feature learning and dynamic aggregation strategy combined with data quality evaluation for synchronous training. The experimental results on Coverage, Accuracy, Reliability and Earliness (CARE) dataset show that: 1) the average F1 score of the proposed DT-FL model on three wind farm test sets is 0.942, which is better than that of the FL (F1 score is 0.907) and the standard federated average algorithm (F1 score is 0.925) which only use measured data. 2) In the cross-wind migration task, the average performance attenuation of DT-FL model is 7.6%. It has better generalization ability. The above results show that the proposed model can effectively use virtual data to enhance the diagnostic capabilities and improve the early fault identification performance under the premise of protecting data privacy."
+  },
+  {
+   "openalex": "https://openalex.org/W7204787453",
+   "doi": "https://doi.org/10.5194/wes-2026-145",
+   "title": "Chronologically calibrated PCA for wind-turbine SCADA health monitoring: a leakage-controlled CARE v6 benchmark",
+   "year": 2026,
+   "date": "2026-08-31",
+   "venue": "Wind Energy Science Discussions",
+   "type": "preprint",
+   "cites": 0,
+   "abstract": "Reliable wind-turbine prognostics and health management requires anomaly detectors that limit false-alarm burden without concealing missed events. This study evaluates chronological calibration of principal component analysis (PCA) reconstruction error on CARE to Compare v6, which contains 5 242 948 real ten-minute supervisory control and data acquisition (SCADA) records from 36 turbines in three wind farms. Turbine identities were partitioned before evaluation into 23 development turbines (58 cases) and 13 locked-test turbines (37 cases). Within each case, PCA was fitted on an earlier normal block, and a disjoint chronological block calibrated the alert threshold. Development-only selection chose global conformal PCA with \u03b1 = 0.005. On the locked test set it achieved a CARE-style score of 0.506 (farm\u2013turbine cluster-bootstrap 95 % confidence interval 0.378\u20130.632), compared with 0.252 for a fixed-contamination isolation forest comparator; the paired difference was 0.249 (95 % confidence interval 0.026\u20130.466). Mean normal-case accuracy increased from 0.252 to 0.865, and false-positive events decreased from 17 to 4. However, only 5 of 18 anomaly events were detected, including none of the five events in Farm A. A development-tuned isolation forest scored 0.542 and a conformalized isolation forest scored 0.502; neither paired comparison distinguished the selected PCA method. Ordinary empirical calibration generated exactly the same locked-test alerts as the finite-sample conformal rank rule. The evidence supports chronological, identity-disjoint calibration as a transparent reference for SCADA health monitoring, but it does not support universal superiority of PCA or of its conformal rank correction. We report the negative and equivalence findings in full so that the benchmark can be reused and contested."
+  },
+  {
+   "openalex": "https://openalex.org/W7139980106",
+   "doi": "https://doi.org/10.1038/s41598-026-41571-7",
+   "title": "Early prediction of wind turbine anomalies using 1D-CNN and temporal feature engineering on multi-source SCADA data",
+   "year": 2026,
+   "date": "2026-03-21",
+   "venue": "Scientific Reports",
+   "type": "article",
+   "cites": 13,
+   "abstract": "Early and accurate detection of anomalies in wind turbines is critical for ensuring system reliability, minimizing unplanned downtime, and reducing maintenance costs in large-scale renewable energy infrastructures. In this study, we propose a robust deep learning framework for wind turbine anomaly detection, leveraging a newly constructed dataset that integrates Supervisory Control and Data Acquisition (SCADA) data from three distinct wind farms. Extensive preprocessing and domain-specific temporal feature engineering were employed to capture complex patterns and enhance model generalizability across heterogeneous data sources. A comparative evaluation of several state-of-the-art deep learning models\u2014including 1D Convolutional Neural Networks (1D-CNN), Recurrent Neural Networks (RNN), Long Short-Term Memory (LSTM), Bidirectional LSTM (Bi-LSTM), and Gated Recurrent Units (GRU); was conducted using standard classification metrics. Among these, the 1D-CNN consistently outperformed the recurrent models, achieving an accuracy and F1-score of 85%. This performance is attributed to the model\u2019s capacity to effectively learn localized temporal dynamics in multivariate time series data. The findings demonstrate that a carefully designed 1D-CNN architecture, combined with strategic temporal feature engineering and multi-source data fusion, offers a scalable and accurate solution for early fault detection in wind turbine systems. This work lays the foundation for intelligent condition monitoring systems in the renewable energy sector. We then propose and evaluate a hybrid CNN-LSTM architecture augmented with an attention mechanism. This model leverages both CNN\u2019s strength of extracting local features. And LSTM capacity to capture temporal dependencies, while the attention layer dynamically focuses on the most important segments of the sequence. Our findings show that the suggested hybrid model performs noticeably better than the independent base models, attaining higher generalization and accuracy. This work advances wind turbine fault detection through creating a diverse, multi-source wind farm dataset for superior generalizability; pioneering a reproducible benchmarking framework across deep learning models on heterogeneous data; and a hybrid CNN-LSTM with attention, surpassing baselines by 2% while enabling practical decision-making."
+  },
+  {
+   "openalex": "https://openalex.org/W7204942786",
+   "doi": "https://doi.org/10.21203/rs.3.rs-10269372/v1",
+   "title": "Drift-Aware System Assurance for Wind-Turbine SCADA Condition Monitoring",
+   "year": 2026,
+   "date": "2026-09-01",
+   "venue": "Research Square",
+   "type": "preprint",
+   "cites": 0,
+   "abstract": "Wind-turbine supervisory control and data acquisition (SCADA) monitoring becomes most useful when anomaly scores are translated into maintenance-relevant, auditable alarm evidence. This paper develops a drift-aware system-assurance workflow for wind-turbine SCADA condition monitoring. The workflow learns preprocessing and principal component analysis (PCA) reconstruction scoring from early healthy operation, evaluates later records forward in time, governs the score stream with rolling-threshold persistent alarms, and uses phase-space descriptors to summarize alarmed operating regimes. The internal study uses 422,705 five-second records with 88 numerical variables and two labeled fault events. Under the forward protocol, PCA gives case-specific row-level ranking, with receiver operating characteristic area under the curve (ROC-AUC) = 1.000 and precision-recall area under the curve (PR-AUC) = 0.774. A case-study rolling policy (seven-day window, 0.99 quantile, 60-row persistence) overlaps both labeled events, reaching 95.5% row recall, 3.1% healthy-labeled row alarm fraction, and 9.5% row precision, while producing five operator-facing alarm episodes and 17.0 row-equivalent healthy alarm hours. Regime analysis shows structured alarm context: in-fault nearest-neighbor windows have lower correlation dimension in 95.8% of 24 pairs and lower sample entropy in all 24 pairs. The Coverage, Accuracy, Reliability, and Earliness (CARE) benchmark and an internal ten-minute aggregation test provide cross-site and resolution evidence: reconstruction ranking remains informative in CARE, while alarm-policy transfer requires site- and resolution-specific recalibration. The result is an engineering-management assurance workflow that connects anomaly scoring, drift governance, alarm burden, regime interpretation, and validation scope."
+  },
+  {
+   "openalex": "https://openalex.org/W2985305337",
+   "doi": null,
+   "title": "Failure Prognosis of Wind Turbine Components",
+   "year": 2019,
+   "date": "2019-01-01",
+   "venue": "Scholarship at UWindsor (University of Windsor)",
+   "type": "dissertation",
+   "cites": 0,
+   "abstract": "Wind energy is playing an increasingly significant role in the World's energy supply mix. In North America, many utility-scale wind turbines are approaching, or are beyond the half-way point of their originally anticipated lifespan. Accurate estimation of the times to failure of major turbine components can provide wind farm owners insight into how to optimize the life and value of their farm assets. This dissertation deals with fault detection and failure prognosis of critical wind turbine sub-assemblies, including generators, blades, and bearings based on data-driven approaches. The main aim of the data-driven methods is to utilize measurement data from the system and forecast the Remaining Useful Life (RUL) of faulty components accurately and efficiently. The main contributions of this dissertation are in the application of ALTA lifetime analysis to help illustrate a possible relationship between varying loads and generators reliability, a wavelet-based Probability Density Function (PDF) to effectively detecting incipient wind turbine blade failure, an adaptive Bayesian algorithm for modeling the uncertainty inherent in the bearings RUL prediction horizon, and a Hidden Markov Model (HMM) for characterizing the bearing damage progression based on varying operating states to mimic a real condition in which wind turbines operate and to recognize that the damage progression is a function of the stress applied to each component using data from historical failures across three different Canadian wind farms."
+  },
+  {
+   "openalex": "https://openalex.org/W4290716567",
+   "doi": "https://doi.org/10.1109/access.2022.3197167",
+   "title": "Automated Question-Answering for Interactive Decision Support in Operations & Maintenance of Wind Turbines",
+   "year": 2022,
+   "date": "2022-01-01",
+   "venue": "IEEE Access",
+   "type": "article",
+   "cites": 28,
+   "abstract": "Intelligent question-answering (QA) systems have witnessed increased interest in recent years, particularly in their ability to facilitate information access, data interpretation or decision support. The wind energy sector is one of the most promising sources of renewable energy, yet turbines regularly suffer from failures and operational inconsistencies, leading to downtimes and significant maintenance costs. Addressing these issues requires rapid interpretation of complex and dynamic data patterns under time-critical conditions. In this article, we present a novel approach that leverages interactive, natural language-based decision support for operations & maintenance (O&M) of wind turbines. The proposed interactive QA system allows engineers to pose domain-specific questions in natural language, and provides answers (in natural language) based on the automated retrieval of information on turbine sub-components, their properties and interactions, from a bespoke domain-specific knowledge graph. As data for specific faults is often sparse, we propose the use of paraphrase generation as a way to augment the existing dataset. Our QA system leverages encoder-decoder models to generate Cypher queries to obtain domain-specific facts from the KG database in response to user-posed natural language questions. Experiments with an attention-based sequence-to-sequence (Seq2Seq) model and a transformer show that the transformer accurately predicts up to 89.75% of responses to input questions, outperforming the Seq2Seq model marginally by 0.76%, though being 9.46 times more computationally efficient. The proposed QA system can help support engineers and technicians during O&M to reduce turbine downtime and operational costs, thus improving the reliability of wind energy as a source of renewable energy."
+  },
+  {
+   "openalex": "https://openalex.org/W596221410",
+   "doi": "https://doi.org/10.83056/mmu.32434485",
+   "title": "An Investigation into Vibration Based Techniques for Wind Turbine Blades Condition Monitoring",
+   "year": 2026,
+   "date": "2026-05-27",
+   "venue": "e-space (Manchester Metropolitan University)",
+   "type": "dissertation",
+   "cites": 5,
+   "abstract": "The rapid expansion of wind power has been accompanied by reported reliability problems and the aim is to provide a means of increasing wind turbine reliability, prevent break downs, increase availability and reduce maintenance costs and power outages. This research work reports the development of condition monitoring (CM) for early fault detection in wind turbine blades based on vibration measurements. The research started with a background and a survey of methods used for monitoring wind turbines. Then, finite element modelling (FEM) of three bladed horizontal axis wind turbine (HAWT) was developed to understand the nature and mechanism of the induced vibration. A HAWT test rig was constructed and equipped with computerised vibration measuring system for model verification. Statistical and spectral processing parameters then were used to analyse vibration signals that collected in healthy and faulty cases. Results obtained using time and frequency based techniques are not suitable for extracting blades condition related information. Consequently, empirical mode decomposition method (EMD), principal component analysis method (PCA) and continuous wavelet transform (CWT) are applied for extraction blade condition related features from the measured vibration. The result showed that although these methods generally proved their success in other fields, they have failed to detect small faults or changes in blade structure. Therefore, new techniques were developed using the above mentioned methods combined with feature intensity level (FIL) and crest factor. Namely, those are EDFIL, RMPCA and wavelet based FIL. The new techniques are found to be reliable, robust and sensitive to the severity of faults. Those analysis techniques are suitable to be the detection tool for an integrated wind turbine condition monitoring system. Directions for future work are also given at the end of the thesis."
+  },
+  {
+   "openalex": "https://openalex.org/W7138928505",
+   "doi": "https://doi.org/10.66135/ijsdc0101p002",
+   "title": "INTEGRATION OF MONITORING AND SECURITY BASED DEEP LEARNING NETWORK FOR WIND TURBINE SYSTEM",
+   "year": 2023,
+   "date": "2023-09-28",
+   "venue": "International Journal of System Design and Computing",
+   "type": "article",
+   "cites": 18,
+   "abstract": "Wind turbines are the modern-day equivalent of windmills. Simply, it harnesses the wind's energy to create electricity. Although huge wind turbines are the most noticeable, smaller wind turbines for residential use are also available. For example, you may use it to power your caravan or boat. A large plot of land will be necessary. In addition, it endangers the habitat of wildlife, particularly bird species. It uses wind energy to produce energy, making it a renewable energy source. To overcome this issue a novel Integration of Monitoring and Security based Deep Learning Network for wind turbine system technique has been proposed. Denoising Wind Signal to Diagnose Faults in Turbines Using Deep Recurrent Neural Network, the fault can be analysed and classified by using the Optimised Classification Algorithm, Complete Condition Monitoring Elements Integration Model for Wind Turbine System, and Defence Methods for Securing Wind Turbine Records in Cloud-based Cryptography. In terms of accuracy, the proposed fault detection and fault isolation method (CSO-SVM) is 6.5% more accurate than SVM, particle swarm optimisation SVM (PSO-SVM), and K-Nearest Neighbours (KNN)."
+  },
+  {
+   "openalex": "https://openalex.org/W4405781847",
+   "doi": "https://doi.org/10.3390/s25010060",
+   "title": "Fault Detection and Diagnosis in Industry 4.0: A Review on Challenges and Opportunities",
+   "year": 2024,
+   "date": "2024-12-25",
+   "venue": "Sensors",
+   "type": "review",
+   "cites": 231,
+   "abstract": "Integrating Machine Learning (ML) in industrial settings has become a cornerstone of Industry 4.0, aiming to enhance production system reliability and efficiency through Real-Time Fault Detection and Diagnosis (RT-FDD). This paper conducts a comprehensive literature review of ML-based RT-FDD. Out of 805 documents, 29 studies were identified as noteworthy for presenting innovative methods that address the complexities and challenges associated with fault detection. While ML-based RT-FDD offers different benefits, including fault prediction accuracy, it faces challenges in data quality, model interpretability, and integration complexities. This review identifies a gap in industrial implementation outcomes that opens new research opportunities. Future Fault Detection and Diagnosis (FDD) research may prioritize standardized datasets to ensure reproducibility and facilitate comparative evaluations. Furthermore, there is a pressing need to refine techniques for handling unbalanced datasets and improving feature extraction for temporal series data. Implementing Explainable Artificial Intelligence (AI) (XAI) tailored to industrial fault detection is imperative for enhancing interpretability and trustworthiness. Subsequent studies must emphasize comprehensive comparative evaluations, reducing reliance on specialized expertise, documenting real-world outcomes, addressing data challenges, and bolstering real-time capabilities and integration. By addressing these avenues, the field can propel the advancement of ML-based RT-FDD methodologies, ensuring their effectiveness and relevance in industrial contexts."
+  },
+  {
+   "openalex": "https://openalex.org/W4405371556",
+   "doi": "https://doi.org/10.17771/pucrio.acad.68791",
+   "title": "CRACK DETECTION IN WIND TURBINES BLADES AND PLASTIC STRAIN ACCUMULATION PREDICTION BASED ON MACHINE LEARNING",
+   "year": 2024,
+   "date": "2024-10-24",
+   "venue": null,
+   "type": "dissertation",
+   "cites": 0,
+   "abstract": "[pt] Os m\u00e9todos de aprendizado de m\u00e1quina para monitoramento de p\u00e1s deturbinas e\u00f3licas dependem principalmente de conjuntos de dados completos erotulados, que s\u00e3o caros e muitas vezes impratic\u00e1veis de obter. Al\u00e9m disso, naci\u00eancia dos materiais, a maioria dos m\u00e9todos depende de dados experimentaiscaros, com explora\u00e7\u00e3o limitada de t\u00e9cnicas de aumento de dados para reduziro custo do treinamento de modelos. O objetivo desta pesquisa \u00e9 abordar essaslacunas significativas explorando a classifica\u00e7\u00e3o de uma classe para a detec\u00e7\u00e3ode anomalias em p\u00e1s de turbinas e\u00f3licas e desenvolvendo m\u00e9todos para aumentar os dados existentes para um treinamento de modelos mais econ\u00f4micona ci\u00eancia dos materiais. Os m\u00e9todos aplicados neste trabalho para a detec\u00e7\u00e3ode anomalias incluem One Class Support Vector Machine (OCSVM), SupportVector Data Description (SVDD) e autoencoders Long Short-Term Memory(LSTM). Para aumentar os dados experimentais de materiais, foram utilizadas t\u00e9cnicas de adi\u00e7\u00e3o de ru\u00eddo e manipula\u00e7\u00e3o de imagens. Para a detec\u00e7\u00e3ode anomalias, o autoencoder LSTM atingiu uma precis\u00e3o de 97.4 por cento com aproximadamente 100 por cento de recall, enquanto o OCSVM atingiu 89 por cento de precis\u00e3o e 97 por cento de recall. O OCSVM foi considerado mais adequado devido aos custos de treinamento mais baixos e desempenho semelhante. Os resultados para aumento de dados experimentais mostraram uma melhoria de 20 por cento em rela\u00e7\u00e3oaos modelos previamente treinados, com a t\u00e9cnica de aumento melhorando significativamente o desempenho, especialmente em modelos treinados com dadosde amostras experimentais diferentes. Em conclus\u00e3o, esta pesquisa demonstraa efic\u00e1cia da classifica\u00e7\u00e3o de uma classe para a detec\u00e7\u00e3o de anomalias em p\u00e1sde turbinas e\u00f3licas e destaca os benef\u00edcios das t\u00e9cnicas de aumento de dadospara o treinamento de modelos econ\u00f4micos na ci\u00eancia dos materiais."
+  },
+  {
+   "openalex": "https://openalex.org/W4414958889",
+   "doi": "https://doi.org/10.46254/eu08.20250435",
+   "title": "Risk Analysis of Wind Turbine Using Machine Learning and AI",
+   "year": 2025,
+   "date": "2025-07-02",
+   "venue": "International Conference on Industrial Engineering and Operations Management (IEOM)",
+   "type": "conference-paper",
+   "cites": 1,
+   "abstract": "As wind energy becomes increasingly vital to the global renewable energy portfolio, ensuring the reliability of wind turbines is essential. Failures in components such as bearings, blades, and gearboxes not only disrupt operations but also escalate maintenance costs and reduce turbine lifespan. This thesis proposes a hybrid risk analysis framework that integrates traditional engineering methods with machine learning (ML) algorithms to support predictive maintenance in wind turbines. A qualitative risk matrix was developed to assess failure modes based on likelihood and impact, identifying bearings, blades, and corrosion-prone components as high-risk. For quantitative analysis, real-world SCADA data from two sites (spanning 89 years of cumulative operation) was used to train five ML models: Random Forest, Logistic Regression, Gaussian Naive Bayes, Decision Tree, and Hidden Markov Models. While these models achieved high recall for normal operations (e.g., Random Forest reached 96% for Class 0), they struggled to detect anomalies due to class imbalance and sensor variability\u2014most notably, Hidden Markov Models failed to identify any faults. To address these challenges, the study recommends the use of SMOTE for class balancing, model retraining to handle temporal drift, and enhanced labelling techniques for nuanced fault detection. Component-specific strategies\u2014such as UAV-based blade inspections and slip ring temperature tracking are proposed. Additionally, a digital twin framework is introduced to combine real-time SCADA monitoring with predictive modelling. Overall, this work demonstrates the value of combining classical risk assessment with intelligent analytics, offering a scalable solution for improving wind turbine reliability and maintenance efficiency."
+  }
+ ]
+}

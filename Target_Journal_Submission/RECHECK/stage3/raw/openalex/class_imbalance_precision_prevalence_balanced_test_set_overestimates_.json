@@ -1,0 +1,172 @@
+{
+ "query": "class imbalance precision prevalence balanced test set overestimates",
+ "filter": null,
+ "count": 3878,
+ "results": [
+  {
+   "openalex": "https://openalex.org/W4417267062",
+   "doi": "https://doi.org/10.3390/math13243956",
+   "title": "Prevalence-Insensitive Evaluation of Diagnostic Systems Under Class Imbalance: The Harmonic Mean of Per-Class Sensitivity",
+   "year": 2025,
+   "date": "2025-12-12",
+   "venue": "Mathematics",
+   "type": "article",
+   "cites": 4,
+   "abstract": "In safety-critical diagnosis under class imbalance, widely used global metrics\u2014e.g., accuracy, F-score, and MCC\u2014conflate class-conditional behavior with class priors, often yielding overly optimistic assessments of overall performance, thereby hindering stable comparisons across datasets. We formalize the prevalence sensitivity of these indices and advance a prevalence-insensitive evaluation built solely from class-conditional rates (binary TPR/TNR; multiclass per-class sensitivities). We analyze the arithmetic, geometric, and harmonic means as class-symmetric aggregators and provide a geometric characterization of their isocurves. Empirically, on 18 UCI datasets, accuracy exceeded the harmonic mean by \u223c3% on average, but the gap widened on skewed sets (e.g., cardiotocography: Acc=0.896 vs. H=0.803, +11.5%). On a 6756-sample, 35-class tumor dataset, high overall agreement (Acc=0.906, Cohen\u2019s \u03ba=0.899) coexisted with dispersed per-class sensitivities (A=0.795, G=0.743, H=0.658) and moderate MCP (0.564), evidencing weak minority-class performance despite strong accuracy. These results show that reliance on accuracy or \u03ba can overstate performance precisely where it matters most, inflating perceived safety and obscuring rare-class failure modes. Prevalence-insensitive, class-symmetric means\u2014especially the harmonic mean of per-class sensitivity\u2014yield conservative, comparable summaries better aligned with risk-aware evaluation and deployment in critical systems."
+  },
+  {
+   "openalex": "https://openalex.org/W4389074726",
+   "doi": "https://doi.org/10.1007/s10994-023-06481-z",
+   "title": "Deep reinforcement learning for multi-class imbalanced training: applications in healthcare",
+   "year": 2023,
+   "date": "2023-11-28",
+   "venue": "Machine Learning",
+   "type": "article",
+   "cites": 73,
+   "abstract": "With the rapid growth of memory and computing power, datasets are becoming increasingly complex and imbalanced. This is especially severe in the context of clinical data, where there may be one rare event for many cases in the majority class. We introduce an imbalanced classification framework, based on reinforcement learning, for training extremely imbalanced data sets, and extend it for use in multi-class settings. We combine dueling and double deep Q-learning architectures, and formulate a custom reward function and episode-training procedure, specifically with the capability of handling multi-class imbalanced training. Using real-world clinical case studies, we demonstrate that our proposed framework outperforms current state-of-the-art imbalanced learning methods, achieving more fair and balanced classification, while also significantly improving the prediction of minority classes. Supplementary Information: The online version contains supplementary material available at 10.1007/s10994-023-06481-z."
+  },
+  {
+   "openalex": "https://openalex.org/W4403513259",
+   "doi": "https://doi.org/10.1007/s13385-026-00456-9",
+   "title": "Class imbalance in insurance fraud detection models",
+   "year": 2026,
+   "date": "2026-05-05",
+   "venue": "European Actuarial Journal",
+   "type": "article",
+   "cites": 6,
+   "abstract": "Fraud in the insurance sector represents a significant challenge for companies and society, leading to substantial economic losses for insurers and impacting pricing policies, ultimately affecting the users of these insurance services. This study highlights the urgent need to develop effective methods for fraud detection, especially in contexts where data is imbalanced and fraudulent cases are much less frequent than non-fraudulent ones. The primary objective of this study is to design and validate a fraud detection model for the insurance sector, with a specific focus on automobile insurance claims. The methodology used to implement the Random Forest Quantile Classifier is detailed, emphasizing its ability to optimize classification thresholds, achieving the best possible specificity and sensitivity. This model also allows for adjusting these thresholds to meet the specific needs of the insurance company. A case study was conducted using actual data provided by an insurance company to evaluate the performance of the proposed model. The performance of the Random Forest Quantile Classifier was compared with other machine learning methods. The results indicated that the proposed model outperformed the others in fraud detection, achieving an optimal balance between true positive and true negative rates. Additionally, the model includes the ability to interpret the effects of variables on predictions, preventing it from functioning as a black box. This research contributes to advancing and improving fraud detection techniques, providing valuable tools for professionals and researchers dedicated to financial data analysis."
+  },
+  {
+   "openalex": "https://openalex.org/W4387331153",
+   "doi": "https://doi.org/10.1371/journal.pone.0291908",
+   "title": "Challenges in the real world use of classification accuracy metrics: From recall and precision to the Matthews correlation coefficient",
+   "year": 2023,
+   "date": "2023-10-04",
+   "venue": "PLoS ONE",
+   "type": "article",
+   "cites": 284,
+   "abstract": "The accuracy of a classification is fundamental to its interpretation, use and ultimately decision making. Unfortunately, the apparent accuracy assessed can differ greatly from the true accuracy. Mis-estimation of classification accuracy metrics and associated mis-interpretations are often due to variations in prevalence and the use of an imperfect reference standard. The fundamental issues underlying the problems associated with variations in prevalence and reference standard quality are revisited here for binary classifications with particular attention focused on the use of the Matthews correlation coefficient (MCC). A key attribute claimed of the MCC is that a high value can only be attained when the classification performed well on both classes in a binary classification. However, it is shown here that the apparent magnitude of a set of popular accuracy metrics used in fields such as computer science medicine and environmental science (Recall, Precision, Specificity, Negative Predictive Value, J, F1, likelihood ratios and MCC) and one key attribute (prevalence) were all influenced greatly by variations in prevalence and use of an imperfect reference standard. Simulations using realistic values for data quality in applications such as remote sensing showed each metric varied over the range of possible prevalence and at differing levels of reference standard quality. The direction and magnitude of accuracy metric mis-estimation were a function of prevalence and the size and nature of the imperfections in the reference standard. It was evident that the apparent MCC could be substantially under- or over-estimated. Additionally, a high apparent MCC arose from an unquestionably poor classification. As with some other metrics of accuracy, the utility of the MCC may be overstated and apparent values need to be interpreted with caution. Apparent accuracy and prevalence values can be mis-leading and calls for the issues to be recognised and addressed should be heeded."
+  },
+  {
+   "openalex": "https://openalex.org/W7127959428",
+   "doi": "https://doi.org/10.3390/diagnostics16030485",
+   "title": "Addressing Class Imbalance in Fetal Health Classification: Rigorous Benchmarking of Multi-Class Resampling Methods on Cardiotocography Data",
+   "year": 2026,
+   "date": "2026-02-05",
+   "venue": "Diagnostics",
+   "type": "article",
+   "cites": 5,
+   "abstract": "Background/Objectives: Fetal health is essential in prenatal care, influencing both maternal and fetal outcomes. Cardiotocography (CTG) monitors uterine contractions and fetal heart rate, yet manual interpretation exhibits significant inter-examiner variability. Machine learning offers automated alternatives; however, class imbalance in CTG datasets where pathological cases constitute less than 10% leads to poor detection of minority classes. This study aims to provide the first systematic benchmark comparing five resampling strategies across seven classifier families for multi-class CTG classification, evaluated using imbalance-aware metrics rather than overall accuracy alone. Methods: Seven machine learning models were employed: Na\u00efve Bayes (NB), Random Forest (RF), Linear Discriminant Analysis (LDA), k-Nearest Neighbors (KNN), Linear Support Vector Machine (SVM), Multinomial Logistic Regression (MLR), and Multi-Layer Perceptron (MLP). To address class imbalance, we evaluated the original unbalanced dataset (base) and five resampling methods: SMOTE, BSMOTE, ADASYN, NearMiss, and SCUT. Performance was evaluated on a held-out test set using Balanced Accuracy (BACC), Macro-F1, the Macro-Matthews Correlation Coefficient (Macro-MCC), and Macro-Averaged ROC-AUC. We also report per-class ROC curves. Results: Among all models, RF proved most reliable. Training on the original distribution (base) yielded the highest BACC (0.9118), whereas RF combined with BSMOTE provided the strongest class-balanced performance (Macro-MCC = 0.8533, Macro-F1 = 0.9073) with a near-perfect ROC-AUC (approximately 0.986\u20130.989). Overall, resampling effects proved model dependent. While some classifiers achieved optimal performance on the natural class distribution, oversampling techniques, particularly SMOTE and BSMOTE, demonstrated significant improvements in minority class discrimination and class-balanced metrics across multiple model families. Notably, certain models benefited substantially from resampling, exhibiting enhanced Macro-F1, BACC, and minority class recall without sacrificing overall accuracy. Conclusions: These findings establish robust, model-agnostic baselines for CTG-based fetal health screening. They highlight that strategic oversampling can translate improved minority class discrimination into clinically meaningful performance gains, supporting deployment in cost-sensitive and threshold-aware clinical settings."
+  },
+  {
+   "openalex": "https://openalex.org/W4413135014",
+   "doi": "https://doi.org/10.1002/isaf.70014",
+   "title": "Introducing DART: A Novel Deep Adaptive Upsampling Technique for Handling Class Imbalance",
+   "year": 2025,
+   "date": "2025-08-07",
+   "venue": "Intelligent systems in accounting, finance and management/Intelligent systems in accounting, finance & management",
+   "type": "article",
+   "cites": 3,
+   "abstract": "Class imbalance remains a persistent challenge in predictive modeling, often leading to biased machine learning outcomes that disproportionately favor the majority class. This study investigates the effectiveness of advanced resampling techniques\u2014both undersampling and oversampling\u2014across two large and highly imbalanced datasets involving credit and loan default prediction. In addition to evaluating established oversampling techniques, the study introduces and validates a novel resampling approach, Deep Adaptive Resampling Technique (DART). Each technique is assessed using a consistent suite of classifiers, including logistic regression, gradient descent, na\u00efve Bayes, random forest, CatBoost, and artificial neural networks. The results reveal that K\u2010MeansSMOTE and NearMiss outperform other resampling strategies in oversampling and undersampling, respectively, by achieving balanced trade\u2010offs in precision, recall, F1 score, AUC, and Matthews correlation coefficient. Notably, DART demonstrates exceptional performance across both datasets, achieving nearly perfect classification scores across all metrics, suggesting strong generalizability and robustness. The study further analyzes the strengths and limitations of each resampling technique and emphasizes the importance of metric selection when evaluating imbalanced datasets. By integrating empirical evaluation with theoretical insights, this research contributes to the growing body of literature on imbalanced learning and offers practical guidance for selecting appropriate resampling strategies. These findings have broader implications for domains such as finance, healthcare, and fraud detection, where class imbalance is common. Overall, the study affirms the value of hybrid and adaptive resampling methods in building more accurate and generalizable predictive models."
+  },
+  {
+   "openalex": "https://openalex.org/W7162331131",
+   "doi": "https://doi.org/10.48550/arxiv.2605.23453",
+   "title": "Class-Dependent Hybrid Data Augmentation for Multiclass Migraine Classification under Severe Class Imbalance",
+   "year": 2026,
+   "date": "2026-05-22",
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "cites": 0,
+   "abstract": "We conducted a reproducibility-oriented re-evaluation of prior migraine classification studies, correcting for data leakage and metric bias. We then introduced (i) a clinically motivated aggregation of two hemiplegic subtypes following ICHD-3 \u00a71.2.3, (ii) a class-dependent hybrid augmentation strategy that assigns generation methods based on per-class sample size, and (iii) the concept of fidelity asymmetry, motivating proportionally constrained growth as an alternative to full class balance. Experiments were performed on a dataset of 400 patients across seven migraine subtypes under a two-stage protocol, including the six-class configuration described above. Models were evaluated using stratified 5-fold cross-validation with macro-averaged F1 as the primary metric. Correcting methodological flaws reduces previously inflated performance estimates, with the corrected macro-F1 baseline standing at 0.71. The proposed framework consistently outperformed individual augmenters in macro-F1 averaged across the eight evaluated classifiers (0.862 vs. 0.836 for Gaussian Copula, 0.815 for CTGAN, and 0.801 for the no-augmentation baseline), and achieved its peak result of 0.914 with FT-Transformer under proportional augmentation. The no-augmentation FT-Transformer baseline (0.896) shows that, at the per-classifier ceiling, clinically motivated class aggregation accounts for most of the absolute improvement; the framework's principal measurable contribution is the gain in average robustness across classifiers, highlighting the dominant role of problem formulation."
+  },
+  {
+   "openalex": "https://openalex.org/W7171800084",
+   "doi": "https://doi.org/10.32628/ijsrst2613425",
+   "title": "Class Imbalance in Machine Learning for Weather and Rainfall Prediction: A PRISMA-Aligned Systematic Review",
+   "year": 2026,
+   "date": "2026-07-30",
+   "venue": "International Journal of Scientific Research in Science and Technology",
+   "type": "review",
+   "cites": 0,
+   "abstract": "Machine learning is increasingly used for rainfall and weather-event prediction, yet meteorological classification datasets are commonly dominated by non-event observations. This imbalance creates a methodological problem: a classifier may achieve high overall accuracy while failing to identify the rainy, severe, or otherwise consequential class. This PRISMA-aligned systematic review synthesizes evidence on class imbalance in machine-learning-based weather prediction, emphasizing rainfall classification, balancing methods, traditional classifiers, and performance measurement. Eligibility criteria covered English-language studies on data-driven weather or rainfall prediction that reported classifier development, imbalance treatment, or minority-sensitive evaluation. The evidence was screened and organized around four questions: why weather classes become imbalanced, how imbalance affects learning algorithms, what balancing methods can and cannot achieve, and which evaluation measures provide credible evidence of minority-event skill. The literature indicates that classifier superiority is sensitive to class prevalence, validation design, leakage control, decision threshold, and metric choice. Synthetic oversampling can improve recall and F1-score, but it may reduce precision, increase false alarms, distort local structure, or produce optimistic estimates if applied before data splitting. The review proposes a leakage-safe comparative framework in which balancing is restricted to training data and all models are evaluated on one untouched distribution. It concludes that imbalance should be treated as a central property of weather prediction rather than a secondary preprocessing issue."
+  },
+  {
+   "openalex": "https://openalex.org/W7211898337",
+   "doi": "https://doi.org/10.1038/s41598-026-65549-7",
+   "title": "Improving digital soil mapping for imbalanced classes through feature selection and resampling",
+   "year": 2026,
+   "date": "2026-09-08",
+   "venue": "Scientific Reports",
+   "type": "article",
+   "cites": 0,
+   "abstract": "Accurate classification of imbalanced soil data remains a key challenge in Digital Soil Mapping (DSM). We propose a two-step preprocessing strategy that integrates feature selection with resampling to enhance soil class prediction. Using 140 soil profiles from the Darab region (Iran), four feature selection methods (VIF, PCA, Boruta, Expert Viewpoint) were combined with the Synthetic Minority Oversampling Technique (SMOTE) and evaluated with three classifiers (C5.0, Random Forest, XGBoost). Among the tested combinations, VIF + SMOTE with the Random Forest (RF) model achieved the best performance, increasing macro F1 by 15.14% and raising the number of detectable classes from four to five. These gains were class-dependent: SMOTE improved detection for classes with stable environmental signatures (e.g., Haplosalids) but failed for geopedologically complex classes (e.g., Calciusterts). This suggests that post-resampling sample size alone is insufficient and that covariate separability and environmental context are decisive factors. Balancing also shifted variable importance toward topographic and geomorphological predictors, while reducing reliance on weaker covariates. To better address hard-to-separate classes, we recommend boundary-aware resampling (e.g., Borderline-SMOTE, SMOTE-ENN, ADASYN) and covariate enrichment (e.g., horizon descriptors). The resulting soil maps revealed clearer spatial differentiation of rare but management-relevant classes, thereby supporting more targeted and sustainable land-use decisions."
+  },
+  {
+   "openalex": "https://openalex.org/W4411137277",
+   "doi": "https://doi.org/10.1088/1741-2552/ade28c",
+   "title": "The class imbalance problem in automatic localization of the epileptogenic zone for epilepsy surgery: a systematic review",
+   "year": 2025,
+   "date": "2025-06-01",
+   "venue": "Journal of Neural Engineering",
+   "type": "review",
+   "cites": 7,
+   "abstract": "Objective. Accurate localization of the epileptogenic zone (EZ) is crucial for epilepsy surgery, but the class imbalance of epileptogenic vs. non-epileptogenic electrode contacts in intracranial electroencephalography (iEEG) data poses significant challenges for automatic localization methods. This review evaluates methodologies for handling the class imbalance in EZ localization studies that use machine learning (ML). Approach. We systematically reviewed studies employing ML to localize the EZ from iEEG data, focusing on strategies for addressing class imbalance in data handling, algorithm design, and evaluation. Results. Out of 2,128 screened studies, 35 fulfilled the inclusion criteria. Across the studies, the iEEG contacts annotated as epileptogenic prior to automatic localization constituted a median of 18.34% of all contacts. However, many of these studies did not adequately address the class imbalance problem. Techniques such as data resampling and cost-sensitive learning were used to mitigate the class imbalance problem, but the chosen evaluation metrics often failed to account for it. Significance. Class imbalance significantly impacts the reliability of EZ localization models. More comprehensive management and innovative approaches are needed to enhance the robustness and clinical utility of these models. Addressing class imbalance in ML models for EZ localization will improve both the predictive performance and reliability of these models."
+  },
+  {
+   "openalex": "https://openalex.org/W7163026667",
+   "doi": "https://doi.org/10.4108/eetismla.12078",
+   "title": "Enhancing Credit Card Fraud Detection under Severe Class Imbalance using Cost-Sensitive Learning and Threshold Optimization",
+   "year": 2026,
+   "date": "2026-06-01",
+   "venue": "EAI endorsed transactions on intelligent systems and machine learning applications.",
+   "type": "article",
+   "cites": 1,
+   "abstract": "INTRODUCTION: Credit card fraud detection remains challenging because fraudulent transactions are rare, fraud patterns evolve over time, and precision\u2013recall trade-offs vary under different class prevalences. While synthetic oversampling methods such as SMOTE are widely used, they may alter the observed feature distribution and complicate deployment interpretation. OBJECTIVES: This study develops a cost-sensitive and decision-threshold-calibrated fraud detection framework that preserves the original data distribution under severe class imbalance. METHODS: The framework combines cost-sensitive XGBoost and a Multi-Layer Perceptron trained with weighted Binary Cross-Entropy and Focal Loss. Hyperparameters are tuned using Optuna within a leakage-conscious validation protocol, and class imbalance is handled through scaleaware weighting rather than synthetic resampling. Decision thresholds are selected using minority-class F1 and an illustrative amount-aware cost criterion. SHAP analysis and a chronological split of the 2013 dataset are used to examine transformed-feature auditability and near-future generalization. RESULTS: On the imbalanced 2013 dataset, the optimized XGBoost model improves test-set PR-AUC from 0.7809 to 0.8815 and minority-class F1 from 0.7919 to 0.8497, with false positives decreasing from 21 to 13 on a test partition containing 98 fraud cases. On the balanced 2023 dataset, ranking performance is near-saturated and threshold selection mainly reduces false alarms. Under the illustrative assumption CFP = 1, amount-aware thresholding yields a lower simulated cost than the F1-optimized threshold, but with substantially more false positives. Chronological validation on the 2013 dataset yields lower PR-AUC than random stratified evaluation. CONCLUSION: The results suggest that fraud detection under class imbalance benefits from separating ranking optimization from decision-threshold selection. However, cost-aware and temporal findings should be interpreted as benchmark-based, deployment-motivated analyses rather than direct evidence of operational deployment readiness."
+  },
+  {
+   "openalex": "https://openalex.org/W7202263027",
+   "doi": "https://doi.org/10.18178/ijml.2026.16.2.1186",
+   "title": "Beyond Accuracy: A Bayesian Metric for Binary Classifier Evaluation in Imbalanced Crop Disease Data",
+   "year": 2026,
+   "date": "2026-01-01",
+   "venue": "International Journal of Machine Learning",
+   "type": "article",
+   "cites": 0,
+   "abstract": "When classes are imbalanced, the evaluation of binary classification algorithms presents a structural problem: the prevalence of the positive class varies widely across practical applications, from fraud detection and system monitoring to disease identification in medical and epidemiological settings.In these scenarios, classical accuracy yields misleadingly high values that fail to capture true discriminative capacity, as it is operates as a linear function of prevalence, dominated by the majority class and unable to penalize the trivial classifier that labels everything as the dominant class.To address this limitation, Bayesian Geometric Accuracy, defined as the geometric mean of the positive and negative predictive values, is proposed.Unlike classical accuracy, this metric is nonlinear in p"
+  },
+  {
+   "openalex": "https://openalex.org/W7204239148",
+   "doi": "https://doi.org/10.3389/fepid.2026.1839151",
+   "title": "Bayesian Youden index for algorithmic evaluation under class imbalance: mathematical foundations with applications to insulin resistance and diabetes progression",
+   "year": 2026,
+   "date": "2026-08-26",
+   "venue": "Frontiers in Epidemiology",
+   "type": "article",
+   "cites": 0,
+   "abstract": "Background The evaluation of binary classifiers under real-world conditions requires metrics that account for the dependence of predictive performance on disease prevalence. Classical accuracy metrics, including the Youden index, condition on the true class and remain invariant to changes in class distribution, making them unable to reflect the practical question of whether a positive classification is trustworthy in a given deployment context. Methods The Bayesian Youden Index is derived analytically as a prevalence-dependent extension of the classical Youden index, grounded in the equivalence between Bayesian and classical sensitivity and specificity. Its behavior is characterized across the full prevalence range, and uncertainty in all point estimates is quantified through parametric bootstrap with B = 2,000 replications. The framework is illustrated using HOMA-IR for insulin resistance detection ( n = 93) and is applicable to any binary classification task with a known confusion matrix and operational prevalence. Results The Bayesian Youden Index reaches a maximum of 0.913 (95% CI:0.823,0.997) at a prevalence of 0.334 (95% CI:0.027,0.575), compared to the constant classical value of 0.890 (95% CI:0.782,0.978). At the observed prevalence of 0.484 the Bayesian value is 0.898. Two intersection points were identified at which the Bayesian and classical formulations coincide: P 1 = 0.190 (95% CI:0.118,0.542) and P 2 = 0518 (95% CI:0.504,0.652), defining three distinct prevalence regimes with different implications for classifier deployment. The index exhibits asymmetric behavior across the prevalence range, showing that a classifier's inherent sensitivity-specificity profile can be strategically leveraged through prevalence-aware threshold selection to manage class imbalance without resorting to artificial balancing techniques. Conclusions The Bayesian Youden Index positions itself not merely as a measure of statistical fit but as a robust calibration tool that decomposes overall classifier performance into predictive confidence under realistic prevalence conditions. The findings caution against prematurely discarding results from imbalanced datasets or automatically applying balancing methods, advocating instead for a nuanced analysis in which imbalance, mediated by classifier characteristics, can sometimes enhance rather than hinder evaluated performance."
+  },
+  {
+   "openalex": "https://openalex.org/W4403680406",
+   "doi": "https://doi.org/10.1186/s13040-024-00402-z",
+   "title": "G4 & the balanced metric family \u2013 a novel approach to solving binary classification problems in medical device validation & verification studies",
+   "year": 2024,
+   "date": "2024-10-23",
+   "venue": "BioData Mining",
+   "type": "article",
+   "cites": 8,
+   "abstract": "BACKGROUND: In medical device validation and verification studies, the area under the receiver operating characteristic curve (AUROC) is often used as a primary endpoint despite multiple reports showing its limitations. Hence, researchers are encouraged to consider alternative metrics as primary endpoints. A new metric called G4 is presented, which is the geometric mean of sensitivity, specificity, the positive predictive value, and the negative predictive value. G4 is part of a balanced metric family which includes the Unified Performance Measure (also known as P4) and the Matthews' Correlation Coefficient (MCC). The purpose of this manuscript is to unveil the benefits of using G4 together with the balanced metric family when analyzing the overall performance of binary classifiers. RESULTS: Simulated datasets encompassing different prevalence rates of the minority class were analyzed under a multi-reader-multi-case study design. In addition, data from an independently published study that tested the performance of a unique ultrasound artificial intelligence algorithm in the context of breast cancer detection was also considered. Within each dataset, AUROC was reported alongside the balanced metric family for comparison. When the dataset prevalence and bias of the minority class approached 50%, all three balanced metrics provided equivalent interpretations of an AI's performance. As the prevalence rate increased / decreased and the data became more imbalanced, AUROC tended to overvalue / undervalue the true classifier performance, while the balanced metric family was resistant to such imbalance. Under certain circumstances where data imbalance was strong (minority-class prevalence < 10%), MCC was preferred for standalone assessments while P4 provided a stronger effect size when evaluating between-groups analyses. G4 acted as a middle ground for maximizing both standalone assessments and between-groups analyses. CONCLUSIONS: Use of AUROC as the primary endpoint in binary classification problems provides misleading results as the dataset becomes more imbalanced. This is explicitly noticed when incorporating AUROC in medical device validation and verification studies. G4, P4, and MCC do not share this limitation and paint a more complete picture of a medical device's performance in a clinical setting. Therefore, researchers are encouraged to explore the balanced metric family when evaluating binary classification problems."
+  },
+  {
+   "openalex": "https://openalex.org/W7225386279",
+   "doi": "https://doi.org/10.48550/arxiv.2611.07950",
+   "title": "Leakage- and Label-Aware Benchmarking of Class-Imbalance Strategies for Multimodal Chest X-Ray and EHR Classification",
+   "year": 2026,
+   "date": "2026-11-05",
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "cites": 0,
+   "abstract": "Benchmarks of class-imbalance strategies for multimodal chest X-ray (CXR) and electronic health record (EHR) prediction are often evaluated on record-level splits of cohorts in which one patient contributes several radiographs. We audit such a benchmark on 29,083 MIMIC-CXR radiographs of 10,479 patients with eight diagnosis targets. First, the record-split benchmark was misleading: a lookup table that copies the label of a development-set radiograph with the same EHR vector nearly matched the best model, and on unseen patients every model fell to the level of predicting every case positive. Second, tracing the labels back to MIMIC-IV explained why: each patient's labels are keyword matches on the diagnosis codes of a single admission, copied, with one EHR vector per patient, to all of the patient's radiographs, so about a third of the radiographs carry labels that differ from the codes of their own admission. Third, under patient-separated evaluation with admission-aligned and rule-refined labels, the initial conclusions do not hold: in the evaluated configurations no imbalance strategy raised the observed mean macro F2 over no augmentation by more than 0.01, tuned tree ensembles showed no consistent advantage over tuned logistic regression, and the released EHR variables stayed at the level of the all-positive baseline, whereas the diagnostic history available at imaging time and image embeddings exceeded it, including, with rule-refined labels, a CheXpert-trained encoder that never saw these radiographs; RAD-DINO had seen 96.6% of them during self-supervised pretraining. Adding either encoder to the diagnostic history gave no statistically significant F2 gain; exploratory AUROC gains were significant with RAD-DINO but not with DenseNet. We provide reusable diagnostics, a leakage-aware protocol and a checklist."
+  }
+ ]
+}

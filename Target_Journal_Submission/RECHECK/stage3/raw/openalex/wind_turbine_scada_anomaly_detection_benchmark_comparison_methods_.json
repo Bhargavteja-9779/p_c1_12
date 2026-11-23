@@ -1,0 +1,282 @@
+{
+ "query": "wind turbine SCADA anomaly detection benchmark comparison methods",
+ "filter": null,
+ "count": 1319,
+ "results": [
+  {
+   "openalex": "https://openalex.org/W2805986364",
+   "doi": "https://doi.org/10.1049/iet-rpg.2018.0156",
+   "title": "SCADA\u2010based wind turbine anomaly detection using Gaussian process models for wind turbine condition monitoring purposes",
+   "year": 2018,
+   "date": "2018-07-09",
+   "venue": "IET Renewable Power Generation",
+   "type": "article",
+   "cites": 146,
+   "abstract": "The penetration of wind energy into power systems is steadily increasing; this highlights the importance of operations and maintenance, and specifically the role of condition monitoring. Wind turbine power curves based on supervisory control and data acquisition data provide a cost\u2010effective approach to wind turbine health monitoring. This study proposes a Gaussian process (a non\u2010parametric machine learning approach) based algorithm for condition monitoring. The standard IEC binned power curve together with individual bin probability distributions can be used to identify operational anomalies. The IEC approach can also be modified to create a form of real\u2010time power curve. Both of these approaches will be compared with a Gaussian process model to assess both speed and accuracy of anomaly detection. Significant yaw misalignment, reflecting a yaw control error or fault, results in a loss of power. Such a fault is quite common and early detection is important to prevent loss of power generation. Yaw control error provides a useful case study to demonstrate the effectiveness of the proposed algorithms and allows the advantages and limitations of the proposed methods to be determined."
+  },
+  {
+   "openalex": "https://openalex.org/W3088889804",
+   "doi": "https://doi.org/10.3390/en13195152",
+   "title": "Comparison of New Anomaly Detection Technique for Wind Turbine Condition Monitoring Using Gearbox SCADA Data",
+   "year": 2020,
+   "date": "2020-10-02",
+   "venue": "Energies",
+   "type": "article",
+   "cites": 72,
+   "abstract": "Anomaly detection for wind turbine condition monitoring is an active area of research within the wind energy operations and maintenance (O & M) community. In this paper three models were compared for multi-megawatt operational wind turbine SCADA data. The models used for comparison were One-Class Support Vector Machine (OCSVM), Isolation Forest (IF), and Elliptical Envelope (EE). Each of these were compared for the same fault, and tested under various different data configurations. IF and EE have not previously been used for fault detection for wind turbines, and OCSVM has not been used for SCADA data. This paper presents a novel method of condition monitoring that only requires two months of data per turbine. These months were separated by a year, the first being healthy and the second unhealthy. The number of anomalies is compared, with a greater number in the unhealthy month being considered correct. It was found that for accuracy IF and OCSVM had similar performances in both training regimes presented. OCSVM performed better for generic training, and IF performed better for specific training. Overall, IF and OCSVM had an average accuracy of 82% for all configurations considered, compared to 77% for EE."
+  },
+  {
+   "openalex": "https://openalex.org/W3041811889",
+   "doi": "https://doi.org/10.1016/j.conengprac.2020.104546",
+   "title": "SCADA-data-based wind turbine fault detection: A dynamic model sensor method",
+   "year": 2020,
+   "date": "2020-07-07",
+   "venue": "Control Engineering Practice",
+   "type": "article",
+   "cites": 77,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W3138958769",
+   "doi": "https://doi.org/10.36001/ijphm.2016.v7i4.2464",
+   "title": "A SOM based Anomaly Detection Method for Wind Turbines Health Management through SCADA Data",
+   "year": 2020,
+   "date": "2020-11-13",
+   "venue": "International Journal of Prognostics and Health Management",
+   "type": "article",
+   "cites": 10,
+   "abstract": "In this paper, a data driven method for Wind Turbine system level anomaly detection and root sub-component identification is proposed. Supervisory control and data acquisition system (SCADA) data of WT is adopted and several parameters are selected based on physical knowledge in this domain and correlation coefficient analysis to build a normal behavior model. This model which is based on Self-organizing map (SOM) projects higher-dimensional SCADA data into a two-dimension-map. Afterwards, the Euclidean distance based indicator for system level anomalies is defined and a filter is created to screen out suspicious data points based on quantile function. Moreover, a failure data pattern based criterion is created for anomaly detection from system level. In order to track which sub-component should be responsible for an anomaly, a contribution proportion (CP) index is proposed. The method is tested with a two-month SCADA dataset with the measurement interval as 20 seconds. Results demonstrate capability and efficiency of the proposed method."
+  },
+  {
+   "openalex": "https://openalex.org/W2964655815",
+   "doi": "https://doi.org/10.1155/2019/5976843",
+   "title": "Abnormal Detection of Wind Turbine Based on SCADA Data Mining",
+   "year": 2019,
+   "date": "2019-01-01",
+   "venue": "Mathematical Problems in Engineering",
+   "type": "article",
+   "cites": 31,
+   "abstract": "In order to reduce the curse of dimensionality of massive data from SCADA (Supervisory Control and Data Acquisition) system and remove data redundancy, the grey correlation algorithm is used to extract the eigenvectors of monitoring data. The eigenvectors are used as input vectors and the monitoring variables related to the unit state as output vectors. The genetic algorithm and cross validation method are used to optimize the parameters of the support vector regression (SVR) model. A high precision prediction is carried out, and a reasonable threshold is set up to alarm the fault. The condition monitoring of the wind turbine is realized. The effectiveness of the method is verified by using the actual fault data of a wind farm."
+  },
+  {
+   "openalex": "https://openalex.org/W7164419990",
+   "doi": "https://doi.org/10.64388/irev9i12-1718782",
+   "title": "A Comprehensive Review of Hybrid Machine Learning Frameworks for SCADA-Based Anomaly Detection and Predictive Maintenance in Wind Turbines",
+   "year": 2026,
+   "date": "2026-06-11",
+   "venue": "Iconic Research and Engineering Journals",
+   "type": "article",
+   "cites": 0,
+   "abstract": "The rapid proliferation of Supervisory Control and Data Acquisition (SCADA) systems in wind turbines has generated massive volumes of high-dimensional, multivariate time-series data, creating significant opportunities and challenges for intelligent anomaly detection in predictive maintenance. From a Computer Science and Engineering perspective, effective analysis of this data requires advanced machine learning and deep learning techniques capable of handling severe class imbalance, noise, concept drift, non-stationarity, and complex temporal dependencies. This review paper presents a comprehensive survey of SCADA-based anomaly detection techniques for wind turbine monitoring systems, with a strong emphasis on hybrid machine learning frameworks. We systematically examine data pre-processing pipelines, feature engineering methods, classical machine learning algorithms, deep learning architectures (such as LSTM, autoencoders, and CNNs), and state-of-the-art hybrid models that integrate representation learning, temporal modelling, ensemble methods, and contrastive learning. Special attention is given to hybrid architectures such as deep autoencoder-ensemble systems, CNN-LSTM with attention mechanisms, and physics-informed neural network hybrids, which have demonstrated superior performance in feature extraction, anomaly sensitivity, and generalization across varying operating conditions. Furthermore, this paper critically analyses key research challenges in industrial AI/ML, including computational efficiency, model interpretability, scalability to edge devices, and handling of imbalanced industrial datasets. Finally, emerging research directions such as Explainable AI (XAI), federated learning, physics-informed machine learning, and standardized benchmarking for SCADA anomaly detection are discussed to guide future work in intelligent industrial monitoring systems."
+  },
+  {
+   "openalex": "https://openalex.org/W3127403190",
+   "doi": "https://doi.org/10.3390/app11031280",
+   "title": "Deep Learning Method for Fault Detection of Wind Turbine Converter",
+   "year": 2021,
+   "date": "2021-01-30",
+   "venue": "Applied Sciences",
+   "type": "article",
+   "cites": 151,
+   "abstract": "The converter is an important component in wind turbine power drive-train systems, and usually, it has a higher failure rate. Therefore, detecting the potential faults for prediction of its failure has become indispensable for condition-based maintenance and operation of wind turbines. This paper presents an approach to wind turbine converter fault detection using convolutional neural network models which are developed by using wind turbine Supervisory Control and Data Acquisition (SCADA) system data. The approach starts with the selection of fault indicator variables, and then the fault indicator variables data are extracted from a wind turbine SCADA system. Using the data, radar charts are generated, and the convolutional neural network models are applied to feature extraction from the radar charts and characteristic analysis of the feature for fault detection. Based on the analysis of the Octave Convolution (OctConv) network structure, an improved AOctConv (Attention Octave Convolution) structure is proposed in this paper, and it is applied to the ResNet50 backbone network (named as AOC\u2013ResNet50). It is found that the algorithm based on AOC\u2013ResNet50 overcomes the issues of information asymmetry caused by the asymmetry of the sampling method and the damage to the original features in the high and low frequency domains by the OctConv structure. Finally, the AOC\u2013ResNet50 network is employed for fault detection of the wind turbine converter using 10 min SCADA system data. It is verified that the fault detection accuracy using the AOC\u2013ResNet50 network is up to 98.0%, which is higher than the fault detection accuracy using the ResNet50 and Oct\u2013ResNet50 networks. Therefore, the effectiveness of the AOC\u2013ResNet50 network model in wind turbine converter fault detection is identified. The novelty of this paper lies in a novel AOC\u2013ResNet50 network proposed and its effectiveness in wind turbine fault detection. This was verified through a comparative study on wind turbine power converter fault detection with other competitive convolutional neural network models for deep learning."
+  },
+  {
+   "openalex": "https://openalex.org/W4404700659",
+   "doi": "https://doi.org/10.3390/data9120138",
+   "title": "CARE to Compare: A Real-World Benchmark Dataset for Early Fault Detection in Wind Turbine Data",
+   "year": 2024,
+   "date": "2024-11-23",
+   "venue": "Data",
+   "type": "article",
+   "cites": 64,
+   "abstract": "Early fault detection plays a crucial role in the field of predictive maintenance for wind turbines, yet the comparison of different algorithms poses a difficult task because domain-specific public datasets are scarce. Many comparisons of different approaches either use benchmarks composed of data from many different domains, inaccessible data, or one of the few publicly available datasets that lack detailed information about the faults. Moreover, many publications highlight a couple of case studies where fault detection was successful. With this paper, we publish a high quality dataset that contains data from 36 wind turbines across 3 different wind farms as well as the most detailed fault information of any public wind turbine dataset as far as we know. The new dataset contains 89 years worth of real-world operating data of wind turbines, distributed across 44 labeled time frames for anomalies that led up to faults, as well as 51 time series representing normal behavior. Additionally, the quality of training data is ensured by turbine-status-based labels for each data point. Furthermore, we propose a new scoring method, called CARE (Coverage, Accuracy, Reliability and Earliness), which takes advantage of the information depth that is present in the dataset to identify good early fault detection models for wind turbines. This score considers the anomaly detection performance, the ability to recognize normal behavior properly, and the capability to raise as few false alarms as possible while simultaneously detecting anomalies early."
+  },
+  {
+   "openalex": "https://openalex.org/W4396219630",
+   "doi": "https://doi.org/10.3390/s24092833",
+   "title": "LSTM-Autoencoder Based Anomaly Detection Using Vibration Data of Wind Turbines",
+   "year": 2024,
+   "date": "2024-04-29",
+   "venue": "Sensors",
+   "type": "article",
+   "cites": 94,
+   "abstract": "The problem of energy depletion has brought wind energy under consideration to replace oil- or chemical-based energy. However, the breakdown of wind turbines is a major concern. Accordingly, unsupervised learning was performed using the vibration signal of a wind power generator to achieve an outlier detection performance of 97%. We analyzed the vibration data through wavelet packet conversion and identified a specific frequency band that showed a large difference between the normal and abnormal data. To emphasize these specific frequency bands, high-pass filters were applied to maximize the difference. Subsequently, the dimensions of the data were reduced through principal component analysis, giving unique characteristics to the data preprocessing process. Normal data collected from a wind farm located in northern Sweden was first preprocessed and trained using a long short-term memory (LSTM) autoencoder to perform outlier detection. The LSTM Autoencoder is a model specialized for time-series data that learns the patterns of normal data and detects other data as outliers. Therefore, we propose a method for outlier detection through data preprocessing and unsupervised learning, utilizing the vibration signals from wind generators. This will facilitate the quick and accurate detection of wind power generator failures and provide alternatives to the problem of energy depletion."
+  },
+  {
+   "openalex": "https://openalex.org/W4229001178",
+   "doi": "https://doi.org/10.1016/j.apenergy.2022.119209",
+   "title": "On Wilcoxon rank sum test for condition monitoring and fault detection of wind turbines",
+   "year": 2022,
+   "date": "2022-05-05",
+   "venue": "Applied Energy",
+   "type": "article",
+   "cites": 165,
+   "abstract": "In this study, the Wilcoxon rank sum test, a nonparametric statistical test method in the field of statistics, has been exploited for the operation state monitoring and automated fault detection of wind turbines. A five-step computation procedure has been developed in which the fault detection process is relied on statistical hypothesis tests. The null hypothesis is defined as that the wind turbine is operating in the normal condition without fault. If the null hypothesis is rejected in favour of the alternative, this indicates the occurrence of a fault in the wind turbine. The detection of a fault is indicated by an abrupt change from 0 to 1 in the test decision. The method can monitor one or several key process parameters of the wind turbine simultaneously. The monitoring process for each process parameter uses only its own data, thus, is independent with the monitoring process for other parameters. Hence, we do not need to handle the correlation between the selected parameters. Two wind turbine SCADA data sets, including three fault events, were used as case studies for testing the developed method. In both cases, various process parameters were analysed. The results show that the method can effectively monitor the operation state of wind turbines and reliably detect the anomaly (or fault) several days before its occurrence."
+  },
+  {
+   "openalex": "https://openalex.org/W4399057741",
+   "doi": "https://doi.org/10.35833/mpce.2022.000769",
+   "title": "Data-driven Anomaly Detection Method Based on Similarities of Multiple Wind Turbines",
+   "year": 2024,
+   "date": "2024-01-01",
+   "venue": "Journal of Modern Power Systems and Clean Energy",
+   "type": "article",
+   "cites": 11,
+   "abstract": "The operating conditions of wind turbines (WTs) in the same wind farm (WF) may share similarities due to their shared manufacturing process, control strategy, and operating environment. However, the similarities of WTs are seldom considered in WT anomaly detection, resulting in the disregard of useful information. This paper proposes a method to improve the reliability and accuracy of WT anomaly detection using the supervisory control and data acquisition (SCADA) data of multiple WTs in the same WF. First, a similarity assessment method based on a comparison of different observation time series is proposed, which objectively quantifies the similarities of WT operating conditions. Then, the SCADA data of the target WT and selected WTs that are similar are used to establish several estimation models through a long short-term memory (LSTM) algorithm. LSTM models that exhibit good estimation performance are used to construct a combined estimation model that estimates the variations in the monitored variables of the target WT. Finally, an anomaly detection method that jointly compares the effective value and information entropy of the residuals is proposed to identify anomalies. The effectiveness and accuracy of the proposed method are verified using the data of two actual WFs."
+  },
+  {
+   "openalex": "https://openalex.org/W4392004223",
+   "doi": "https://doi.org/10.3390/en17050982",
+   "title": "Anomaly Detection on Small Wind Turbine Blades Using Deep Learning Algorithms",
+   "year": 2024,
+   "date": "2024-02-20",
+   "venue": "Energies",
+   "type": "article",
+   "cites": 53,
+   "abstract": "Wind turbine blade maintenance is expensive, dangerous, time-consuming, and prone to misdiagnosis. A potential solution to aid preventative maintenance is using deep learning and drones for inspection and early fault detection. In this research, five base deep learning architectures are investigated for anomaly detection on wind turbine blades, including Xception, Resnet-50, AlexNet, and VGG-19, along with a custom convolutional neural network. For further analysis, transfer learning approaches were also proposed and developed, utilizing these architectures as the feature extraction layers. In order to investigate model performance, a new dataset containing 6000 RGB images was created, making use of indoor and outdoor images of a small wind turbine with healthy and damaged blades. Each model was tuned using different layers, image augmentations, and hyperparameter tuning to achieve optimal performance. The results showed that the proposed Transfer Xception outperformed other architectures by attaining 99.92% accuracy on the test data of this dataset. Furthermore, the performance of the investigated models was compared on a dataset containing faulty and healthy images of large-scale wind turbine blades. In this case, our results indicated that the best-performing model was also the proposed Transfer Xception, which achieved 100% accuracy on the test data. These accuracies show promising results in the adoption of machine learning for wind turbine blade fault identification."
+  },
+  {
+   "openalex": "https://openalex.org/W7204787453",
+   "doi": "https://doi.org/10.5194/wes-2026-145",
+   "title": "Chronologically calibrated PCA for wind-turbine SCADA health monitoring: a leakage-controlled CARE v6 benchmark",
+   "year": 2026,
+   "date": "2026-08-31",
+   "venue": "Wind Energy Science Discussions",
+   "type": "preprint",
+   "cites": 0,
+   "abstract": "Reliable wind-turbine prognostics and health management requires anomaly detectors that limit false-alarm burden without concealing missed events. This study evaluates chronological calibration of principal component analysis (PCA) reconstruction error on CARE to Compare v6, which contains 5 242 948 real ten-minute supervisory control and data acquisition (SCADA) records from 36 turbines in three wind farms. Turbine identities were partitioned before evaluation into 23 development turbines (58 cases) and 13 locked-test turbines (37 cases). Within each case, PCA was fitted on an earlier normal block, and a disjoint chronological block calibrated the alert threshold. Development-only selection chose global conformal PCA with \u03b1 = 0.005. On the locked test set it achieved a CARE-style score of 0.506 (farm\u2013turbine cluster-bootstrap 95 % confidence interval 0.378\u20130.632), compared with 0.252 for a fixed-contamination isolation forest comparator; the paired difference was 0.249 (95 % confidence interval 0.026\u20130.466). Mean normal-case accuracy increased from 0.252 to 0.865, and false-positive events decreased from 17 to 4. However, only 5 of 18 anomaly events were detected, including none of the five events in Farm A. A development-tuned isolation forest scored 0.542 and a conformalized isolation forest scored 0.502; neither paired comparison distinguished the selected PCA method. Ordinary empirical calibration generated exactly the same locked-test alerts as the finite-sample conformal rank rule. The evidence supports chronological, identity-disjoint calibration as a transparent reference for SCADA health monitoring, but it does not support universal superiority of PCA or of its conformal rank correction. We report the negative and equivalence findings in full so that the benchmark can be reused and contested."
+  },
+  {
+   "openalex": "https://openalex.org/W4322743192",
+   "doi": "https://doi.org/10.3390/en16052352",
+   "title": "On Cointegration Analysis for Condition Monitoring and Fault Detection of Wind Turbines Using SCADA Data",
+   "year": 2023,
+   "date": "2023-03-01",
+   "venue": "Energies",
+   "type": "article",
+   "cites": 29,
+   "abstract": "Cointegration theory has been recently proposed for condition monitoring and fault detection of wind turbines. However, the existing cointegration-based methods and results presented in the literature are limited and not encouraging enough for the broader deployment of the technique. To close this research gap, this paper presents a new investigation on cointegration for wind turbine monitoring using a four-year SCADA data set acquired from a commercial wind turbine. A gearbox fault is used as a testing case to validate the analysis. A cointegration-based wind turbine monitoring model is established using five process parameters, including the wind speed, generator speed, generator temperature, gearbox temperature, and generated power. Two different sets of SCADA data were used to train the cointegration-based model and calculate the normalized cointegrating vectors. The first training data set involves 12,000 samples recorded before the occurrence of the gearbox fault, whereas the second one includes 6000 samples acquired after the fault occurrence. Cointegration residuals\u2014obtained from projecting the testing data (2000 samples including the gearbox fault event) on the normalized cointegrating vectors\u2014are used in control charts for operational state monitoring and automated fault detection. The results demonstrate that regardless of which training data set was used, the cointegration residuals can effectively monitor the wind turbine and reliably detect the fault at the early stage. Interestingly, despite using different training data sets, the cointegration analysis creates two residuals which are almost identical in their shapes and trends. In addition, the gearbox fault can be detected by these two residuals at the same moment. These interesting findings have never been reported in the literature."
+  },
+  {
+   "openalex": "https://openalex.org/W4296371377",
+   "doi": "https://doi.org/10.1177/0309524x221124031",
+   "title": "SCADA data for wind turbine data-driven condition/performance monitoring: A review on state-of-art, challenges and future trends",
+   "year": 2022,
+   "date": "2022-09-19",
+   "venue": "Wind Engineering",
+   "type": "article",
+   "cites": 245,
+   "abstract": "This paper reviews the recent advancement made in data-driven technologies based on SCADA data for improving wind turbines\u2019 operation and maintenance activities (e.g. condition monitoring, decision support, critical components failure detections) and the challenges associated with them. Machine learning techniques applied to wind turbines\u2019 operation and maintenance (O&M) are reviewed. The data sources, feature engineering and model selection (classification, regression) and validation are all used to categorise these data-driven models. Our findings suggest that (a) most models use 10-minute mean SCADA data, though the use of high-resolution data has shown greater advantages as compared to 10-minute mean value but comes with high computational challenges. (b) Most of SCADA data are confidential and not available in the public domain which slows down technological advancements. (c) These datasets are used for both, the classification and regression of wind turbines but are used in classification extensively. And, (d) most commonly used data-driven models are neural networks, support vector machines, probabilistic models and decision trees and each of these models has its own merits and demerits. We conclude the paper by discussing the potential areas where SCADA data-based data-driven methodologies could be used in future wind energy research."
+  },
+  {
+   "openalex": "https://openalex.org/W3040562414",
+   "doi": "https://doi.org/10.4018/ijaiml.20210701.oa6",
+   "title": "Autoencoder Based Anomaly Detection for SCADA Networks",
+   "year": 2021,
+   "date": "2021-04-26",
+   "venue": "International Journal of Artificial Intelligence and Machine Learning",
+   "type": "article",
+   "cites": 36,
+   "abstract": "Supervisory control and data acquisition (SCADA) systems are industrial control systems that are used to monitor critical infrastructures such as airports, transport, health, and public services of national importance. These are cyber physical systems, which are increasingly integrated with networks and internet of things devices. However, this results in a larger attack surface for cyber threats, making it important to identify and thwart cyber-attacks by detecting anomalous network traffic patterns. Compared to other techniques, as well as detecting known attack patterns, machine learning can also detect new and evolving threats. Autoencoders are a type of neural network that generates a compressed representation of its input data and through reconstruction loss of inputs can help identify anomalous data. This paper proposes the use of autoencoders for unsupervised anomaly-based intrusion detection using an appropriate differentiating threshold from the loss distribution and demonstrate improvements in results compared to other techniques for SCADA gas pipeline dataset."
+  },
+  {
+   "openalex": "https://openalex.org/W4413402708",
+   "doi": "https://doi.org/10.3390/machines13080746",
+   "title": "Use of Artificial Neural Networks and SCADA Data for Early Detection of Wind Turbine Gearbox Failures",
+   "year": 2025,
+   "date": "2025-08-20",
+   "venue": "Machines",
+   "type": "article",
+   "cites": 12,
+   "abstract": "This paper investigates the utilization of artificial neural networks (ANNs) for the proactive identification of gearbox failures in wind turbines, boosting the use of operational SCADA data for predictive analysis. Avoiding gearbox failures, which can strongly impact the functioning of wind turbines, is crucial for ensuring high reliability and efficiency within wind farms. Early detection can be achieved though the development of a normal behavior model based on ANNs, which are trained with data from healthy conditions derived from selected SCADA variables that are closely associated with gearbox operations. The objective of this model is to forecast deviations in the gear bearing temperature, which serve as an early warning alert for potential failures. The research employs extensive SCADA data collected from January 2018 to February 2022 from a wind farm with multiple turbines. The study guarantees the robustness of the model through a thorough data cleaning process, normalization, and splitting into training, validation, and testing sets. The findings reveal that the model is able to effectively identify anomalies in gear bearing temperatures several months prior to failure, outperforming simple data processing methods, thereby offering a significant lead time for maintenance actions. This early detection capability is highlighted by a case study involving a gearbox failure in one of the turbines, where the proposed ANN model detected the issue months ahead of the actual failure. The present paper is an extended version of the work presented at the 5th International Conference of IFToMM ITALY 2024."
+  },
+  {
+   "openalex": "https://openalex.org/W3009477790",
+   "doi": "https://doi.org/10.3390/en13051063",
+   "title": "Evaluation of Anomaly Detection of an Autoencoder Based on Maintenace Information and Scada-Data",
+   "year": 2020,
+   "date": "2020-02-29",
+   "venue": "Energies",
+   "type": "article",
+   "cites": 28,
+   "abstract": "The usage of machine learning techniques is widely spread and has also been implemented in the wind industry in the last years. Many of these techniques have shown great success but need to constantly prove the expectation of functionality. This paper describes a new method to monitor the health of a wind turbine using an undercomplete autoencoder. To evaluate the health monitoring quality of the autoencoder, the number of anomalies before an event has happened are to be considered. The results show that around 35% of all historical events that have resulted into a failure show many anomalies. Furthermore, the wind turbine subsystems which are subject to good detectability are the rotor system and the control system. If only one third of the service duties can be planned in advance, and thereby the scheduling time can be reduced, huge cost saving potentials can be seen."
+  },
+  {
+   "openalex": "https://openalex.org/W4285266041",
+   "doi": "https://doi.org/10.1109/tmech.2022.3185675",
+   "title": "Early Fault Detection in the Main Bearing of Wind Turbines Based on Gated Recurrent Unit (GRU) Neural Networks and SCADA Data",
+   "year": 2022,
+   "date": "2022-07-08",
+   "venue": "IEEE/ASME Transactions on Mechatronics",
+   "type": "article",
+   "cites": 139,
+   "abstract": "Failures in the main bearings of wind turbines are critical in terms of downtime and replacement cost. Early diagnosis of their faults would lower the levelized cost of wind energy. Thus, this work discusses a gated recurrent unit (GRU) neural network, which detects faults in the main bearing some months ahead (when the event that initiates/develops the failure releases heat) the actual fatal fault materializes. GRUs feature internal gates that govern information flow and are utilized in this study for their capacity to understand whether data in a time series is crucial enough to preserve or forget. It is noteworthy that the proposed methodology only requires healthy supervisory control and data acquisition (SCADA) data. Thus, it can be deployed to old wind parks (nearing the end of their lifespan) where specific high-frequency condition monitoring sensors are not installed and to new wind parks where faulty historical data do not exist yet. The strategy is trained, validated, and finally tested using SCADA data from an in-production wind park composed of nine wind turbines."
+  },
+  {
+   "openalex": "https://openalex.org/W4380538201",
+   "doi": "https://doi.org/10.1002/we.2843",
+   "title": "Nonstationarity in correlation matrices for wind turbine SCADA\u2010data",
+   "year": 2023,
+   "date": "2023-06-13",
+   "venue": "Wind Energy",
+   "type": "article",
+   "cites": 14,
+   "abstract": "Modern utility\u2010scale wind turbines are equipped with a Supervisory Control And Data Acquisition (SCADA) system gathering vast amounts of operational data that can be used for analysis to improve operation and maintenance of turbines. We analyze high\u2010frequency SCADA\u2010data from the Thanet offshore wind farm in the United Kindom and evaluate Pearson correlation matrices for a variety of observables with a moving time window. This renders possible a quantitative assessment of nonstationarity in mutual dependencies of different types of data. We show that a clustering algorithm applied to the correlation matrices reveals distinct correlation structures for different states. Looking first at only one and then at multiple turbines, the main dependence of these states is shown to be on wind speed. This is in accordance with known turbine control systems, which change the behavior of the turbine depending on the available wind speed. We model the boundary wind speeds separating the states based on the clustering solution. Our analysis shows that for high\u2010frequency data, the control mechanisms of a turbine lead to detectable nonstationarity in the correlation matrix. The presented methodology allows accounting for this with an automated preprocessing by sorting new data based on wind speed and comparing it to the respective operational state, thereby taking the nonstationarity into account for an analysis."
+  },
+  {
+   "openalex": "https://openalex.org/W7204942786",
+   "doi": "https://doi.org/10.21203/rs.3.rs-10269372/v1",
+   "title": "Drift-Aware System Assurance for Wind-Turbine SCADA Condition Monitoring",
+   "year": 2026,
+   "date": "2026-09-01",
+   "venue": "Research Square",
+   "type": "preprint",
+   "cites": 0,
+   "abstract": "Wind-turbine supervisory control and data acquisition (SCADA) monitoring becomes most useful when anomaly scores are translated into maintenance-relevant, auditable alarm evidence. This paper develops a drift-aware system-assurance workflow for wind-turbine SCADA condition monitoring. The workflow learns preprocessing and principal component analysis (PCA) reconstruction scoring from early healthy operation, evaluates later records forward in time, governs the score stream with rolling-threshold persistent alarms, and uses phase-space descriptors to summarize alarmed operating regimes. The internal study uses 422,705 five-second records with 88 numerical variables and two labeled fault events. Under the forward protocol, PCA gives case-specific row-level ranking, with receiver operating characteristic area under the curve (ROC-AUC) = 1.000 and precision-recall area under the curve (PR-AUC) = 0.774. A case-study rolling policy (seven-day window, 0.99 quantile, 60-row persistence) overlaps both labeled events, reaching 95.5% row recall, 3.1% healthy-labeled row alarm fraction, and 9.5% row precision, while producing five operator-facing alarm episodes and 17.0 row-equivalent healthy alarm hours. Regime analysis shows structured alarm context: in-fault nearest-neighbor windows have lower correlation dimension in 95.8% of 24 pairs and lower sample entropy in all 24 pairs. The Coverage, Accuracy, Reliability, and Earliness (CARE) benchmark and an internal ten-minute aggregation test provide cross-site and resolution evidence: reconstruction ranking remains informative in CARE, while alarm-policy transfer requires site- and resolution-specific recalibration. The result is an engineering-management assurance workflow that connects anomaly scoring, drift governance, alarm burden, regime interpretation, and validation scope."
+  },
+  {
+   "openalex": "https://openalex.org/W7139980106",
+   "doi": "https://doi.org/10.1038/s41598-026-41571-7",
+   "title": "Early prediction of wind turbine anomalies using 1D-CNN and temporal feature engineering on multi-source SCADA data",
+   "year": 2026,
+   "date": "2026-03-21",
+   "venue": "Scientific Reports",
+   "type": "article",
+   "cites": 13,
+   "abstract": "Early and accurate detection of anomalies in wind turbines is critical for ensuring system reliability, minimizing unplanned downtime, and reducing maintenance costs in large-scale renewable energy infrastructures. In this study, we propose a robust deep learning framework for wind turbine anomaly detection, leveraging a newly constructed dataset that integrates Supervisory Control and Data Acquisition (SCADA) data from three distinct wind farms. Extensive preprocessing and domain-specific temporal feature engineering were employed to capture complex patterns and enhance model generalizability across heterogeneous data sources. A comparative evaluation of several state-of-the-art deep learning models\u2014including 1D Convolutional Neural Networks (1D-CNN), Recurrent Neural Networks (RNN), Long Short-Term Memory (LSTM), Bidirectional LSTM (Bi-LSTM), and Gated Recurrent Units (GRU); was conducted using standard classification metrics. Among these, the 1D-CNN consistently outperformed the recurrent models, achieving an accuracy and F1-score of 85%. This performance is attributed to the model\u2019s capacity to effectively learn localized temporal dynamics in multivariate time series data. The findings demonstrate that a carefully designed 1D-CNN architecture, combined with strategic temporal feature engineering and multi-source data fusion, offers a scalable and accurate solution for early fault detection in wind turbine systems. This work lays the foundation for intelligent condition monitoring systems in the renewable energy sector. We then propose and evaluate a hybrid CNN-LSTM architecture augmented with an attention mechanism. This model leverages both CNN\u2019s strength of extracting local features. And LSTM capacity to capture temporal dependencies, while the attention layer dynamically focuses on the most important segments of the sequence. Our findings show that the suggested hybrid model performs noticeably better than the independent base models, attaining higher generalization and accuracy. This work advances wind turbine fault detection through creating a diverse, multi-source wind farm dataset for superior generalizability; pioneering a reproducible benchmarking framework across deep learning models on heterogeneous data; and a hybrid CNN-LSTM with attention, surpassing baselines by 2% while enabling practical decision-making."
+  },
+  {
+   "openalex": "https://openalex.org/W3129472510",
+   "doi": "https://doi.org/10.3390/en14041105",
+   "title": "Multivariate SCADA Data Analysis Methods for Real-World Wind Turbine Power Curve Monitoring",
+   "year": 2021,
+   "date": "2021-02-19",
+   "venue": "Energies",
+   "type": "article",
+   "cites": 46,
+   "abstract": "Due to the stochastic nature of the source, wind turbines operate under non-stationary conditions and the extracted power depends non-trivially on ambient conditions and working parameters. It is therefore difficult to establish a normal behavior model for monitoring the performance of a wind turbine and the most employed approach is to be driven by data. The power curve of a wind turbine is the relation between the wind intensity and the extracted power and is widely employed for monitoring wind turbine performance. On the grounds of the above considerations, a recent trend regarding wind turbine power curve analysis consists of the incorporation of the main working parameters (as, for example, the rotor speed or the blade pitch) as input variables of a multivariate regression whose target is the power. In this study, a method for multivariate wind turbine power curve analysis is proposed: it is based on sequential features selection, which employs Support Vector Regression with Gaussian Kernel. One of the most innovative aspects of this study is that the set of possible covariates includes also minimum, maximum and standard deviation of the most important environmental and operational variables. Three test cases of practical interest are contemplated: a Senvion MM92, a Vestas V90 and a Vestas V117 wind turbines owned by the ENGIE Italia company. It is shown that the selection of the covariates depends remarkably on the wind turbine model and this aspect should therefore be taken in consideration in order to customize the data-driven monitoring of the power curve. The obtained error metrics are competitive and in general lower with respect to the state of the art in the literature. Furthermore, minimum, maximum and standard deviation of the main environmental and operation variables are abundantly selected by the feature selection algorithm: this result indicates that the richness of the measurement channels contained in wind turbine Supervisory Control And Data Acquisition (SCADA) data sets should be exploited for monitoring the performance as reliably as possible."
+  },
+  {
+   "openalex": "https://openalex.org/W4416996925",
+   "doi": "https://doi.org/10.20906/cba2024/4583",
+   "title": "A Deep Learning Approach for Wind Turbine Blade Anomaly Detection",
+   "year": 2024,
+   "date": "2024-10-18",
+   "venue": "Congresso Brasileiro de Autom\u00e1tica",
+   "type": "conference-paper",
+   "cites": 1,
+   "abstract": "In the last few years, as energy demand has grown at the same rate as global environmental concerns, there has been rapid growth in both the quantity and size of wind turbines. However, ensuring reliable performance and safety remains a challenge, especially in the blades, where failure can be both catastrophic and difficult to detect through traditional inspection methods. Therefore, this paper proposes a Structural Health Monitoring (SHM) method to detect anomalies based on health data deviations from the LSTM autoencoder, which includes two LSTM layers, data reconstruction, and accelerometer data, resulting in 97.4% balanced accuracy."
+  },
+  {
+   "openalex": "https://openalex.org/W4385273680",
+   "doi": "https://doi.org/10.35833/mpce.2022.000270",
+   "title": "A Generalized Wind Turbine Anomaly Detection Method Based on Combined Probability Estimation Model",
+   "year": 2023,
+   "date": "2023-01-01",
+   "venue": "Journal of Modern Power Systems and Clean Energy",
+   "type": "article",
+   "cites": 9,
+   "abstract": "Anomaly detection based on the data collected from the supervisory control and data acquisition (SCADA) system is crucial to reduce the failure rate of wind turbines (WTs). The difficulty of this kind of approach is to dynamically identify the threshold for anomaly detection under changing operating conditions. In this paper, a generalized WT anomaly detection method based on the combined probability estimation model (CPEM) is proposed. The CPEM can estimate the conditional probability density function (PDF) of the target variable given changing conditions. Its generalization and accuracy are better than that of the independent probability estimation model because it combines the advantages of various kinds of probability estimation models through linear combination. By using the CPEM, the normal operating bounds at different operating conditions can be obtained, which dynamically form the thresholds for anomaly detection. Meanwhile, with respect to the thresholds, hypothesis testing (HT) is adopted to identify the anomaly by inspecting whether the observations exceed the thresholds at a given significance level, providing sound mathematical support for anomaly detection and making the detection results more reliable. The effectiveness of the proposed method is tested by using the actual data of WTs with known faults. The results illustrate that the proposed method can detect the abnormal operating state of the gearbox and generator much earlier than the system fault alarm."
+  }
+ ]
+}

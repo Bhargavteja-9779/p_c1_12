@@ -1,0 +1,172 @@
+{
+ "query": "anomaly detection evaluation metrics critique multivariate time series deep learning simple baselines",
+ "filter": null,
+ "count": 509,
+ "results": [
+  {
+   "openalex": "https://openalex.org/W7222850031",
+   "doi": "https://doi.org/10.63090/eijdsml/3139.7344.0016",
+   "title": "Time-Series Anomaly Detection: Benchmark Flaws, Evaluation Metrics and Strong Baselines",
+   "year": 2026,
+   "date": "2026-10-18",
+   "venue": "Eduschool International Journal of Data Science and Machine learning (EIJDSML)",
+   "type": "article",
+   "cites": 0,
+   "abstract": "Dozens of deep architectures for time-series anomaly detection have been published since 2018, most of them reporting higher scores than their predecessors on the same handful of datasets. A series of critical studies now suggests that much of this progress is an artefact. The datasets have flaws that make them easy or mislabelled. The most common scoring protocol, point adjustment, inflates results so strongly that random scores can compete with trained models. And when classical or deliberately simple methods are run under the same conditions, they often match the deep ones. This review assembles that evidence. We describe the method families briefly, then examine the benchmark critiques, the evaluation metrics and their failure modes, and the large comparison studies. A small worked example, constructed by hand and labelled as such, shows the arithmetic of point adjustment. We end with a reporting checklist and with the open question of whether pretrained time-series models change the picture. Apart from that worked example, no new result is reported."
+  },
+  {
+   "openalex": "https://openalex.org/W4410028579",
+   "doi": "https://doi.org/10.1109/tpami.2025.3566620",
+   "title": "Graph Anomaly Detection in Time Series: A Survey",
+   "year": 2025,
+   "date": "2025-05-02",
+   "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+   "type": "article",
+   "cites": 91,
+   "abstract": "With the recent advances in technology, a wide range of systems continue to collect a large amount of data over time and thus generate time series. Time-Series Anomaly Detection (TSAD) is an important task in various time-series applications such as e-commerce, cybersecurity, vehicle maintenance, and healthcare monitoring. However, this task is very challenging as it requires considering both the intra-variable dependency (relationships within a variable over time) and the inter-variable dependency (relationships between multiple variables) existing in time-series data. Recent graph-based approaches have made impressive progress in tackling the challenges of this field. In this survey, we conduct a comprehensive and up-to-date review of TSAD using graphs, referred to as G-TSAD. First, we explore the significant potential of graph representation for time-series data and and its contributions to facilitating anomaly detection. Then, we review state-of-the-art graph anomaly detection techniques, mostly leveraging deep learning architectures, in the context of time series. For each method, we discuss its strengths, limitations, and the specific applications where it excels. Finally, we address both the technical and application challenges currently facing the field, and suggest potential future directions for advancing research and improving practical outcomes."
+  },
+  {
+   "openalex": "https://openalex.org/W4405956532",
+   "doi": "https://doi.org/10.48550/arxiv.2412.20512",
+   "title": "Dive into Time-Series Anomaly Detection: A Decade Review",
+   "year": 2024,
+   "date": "2024-12-29",
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "cites": 80,
+   "abstract": "Recent advances in data collection technology, accompanied by the ever-rising volume and velocity of streaming data, underscore the vital need for time series analytics. In this regard, time-series anomaly detection has been an important activity, entailing various applications in fields such as cyber security, financial markets, law enforcement, and health care. While traditional literature on anomaly detection is centered on statistical measures, the increasing number of machine learning algorithms in recent years call for a structured, general characterization of the research methods for time-series anomaly detection. This survey groups and summarizes anomaly detection existing solutions under a process-centric taxonomy in the time series context. In addition to giving an original categorization of anomaly detection methods, we also perform a meta-analysis of the literature and outline general trends in time-series anomaly detection research."
+  },
+  {
+   "openalex": "https://openalex.org/W2982895110",
+   "doi": "https://doi.org/10.48550/arxiv.1911.07104",
+   "title": "RSM-GAN: A Convolutional Recurrent GAN for Anomaly Detection in Contaminated Seasonal Multivariate Time Series",
+   "year": 2019,
+   "date": "2019-11-16",
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "cites": 13,
+   "abstract": "Robust anomaly detection is a requirement for monitoring complex modern systems with applications such as cyber-security, fraud prevention, and maintenance. These systems generate multiple correlated time series that are highly seasonal and noisy. This paper presents a novel unsupervised deep learning architecture for multivariate time series anomaly detection, called Robust Seasonal Multivariate Generative Adversarial Network (RSM-GAN). It extends recent advancements in GANs with adoption of convolutional-LSTM layers and an attention mechanism to produce state-of-the-art performance. We conduct extensive experiments to demonstrate the strength of our architecture in adjusting for complex seasonality patterns and handling severe levels of training data contamination. We also propose a novel anomaly score assignment and causal inference framework. We compare RSM-GAN with existing classical and deep-learning based anomaly detection models, and the results show that our architecture is associated with the lowest false positive rate and improves precision by 30% and 16% in real-world and synthetic data, respectively. Furthermore, we report the superiority of RSM-GAN regarding accurate root cause identification and NAB scores in all data settings."
+  },
+  {
+   "openalex": "https://openalex.org/W7165476360",
+   "doi": "https://doi.org/10.82308/55928",
+   "title": "Time-series anomaly detection with graphs",
+   "year": 2026,
+   "date": "2026-01-01",
+   "venue": null,
+   "type": "dissertation",
+   "cites": 0,
+   "abstract": "Time-Series Anomaly Detection (TSAD), the task of identifying patterns that deviate from expected behavior, is critical in domains such as e-commerce, cybersecurity, predictive maintenance, and healthcare. Despite substantial progress, TSAD remains challenging due to the complexity of time-series signals, the diversity of anomaly types, and the scarcity of high-quality labeled data. This thesis addresses these challenges through three complementary contributions.First, the field lacks a systematic understanding of how emerging techniques such as graph modeling and self-supervised learning (SSL) can be leveraged for anomaly detection. Existing surveys often overlook the unique challenges of TSAD, leaving researchers without a roadmap to guide future work. To address this gap, we present the first comprehensive surveys on Graph-based TSAD (G-TSAD), a novel perspective on modeling time-series data using graph structures for the task of TSAD, and on Self-Supervised Learning for Anomaly Detection (SSL-AD), which demonstrates how proxy tasks can assist TSAD in obtaining robust representations from unlabeled data. These surveys highlight methodological advances and practical limitations, and provide an outlook on promising future directions for TSAD.Second, while graph-based approaches have recently been introduced to capture spatial relationships across sensors in multivariate sensory systems, they often overlook fine-grained local structures, such as sub-graphs, that can be critical for detecting anomalies. To address this, we propose EEG-CGS, a novel contrastive and generative SSL framework for anomaly detection in complex sensory systems. EEG-CGS incorporates local structural patterns into graph representations while requiring no anomaly labels during training. This design improves robustness in multivariate TSAD and demonstrates strong performance in detecting anomalous sensors and regions.Finally, a key challenge in unsupervised TSAD lies in the assumption that training data are purely normal, which is rarely valid in practice due to distribution shifts or labeling errors. Such contamination causes unsupervised methods to overfit and misclassify anomalies encountered during training. To address this, we introduce TSAD-C, a novel framework that incorporates graph representations and diffusion models, to capture both long-term temporal and spatial dependencies in time series, while explicitly handling contamination. Furthermore, unlike existing TSAD approaches benchmarked on small, curated datasets with simplistic anomalies, this thesis advances TSAD towards frameworks that generalize to complex, real-world scenarios and detect richer anomaly types, from local signal deviations to sensor- and region-level failures, with direct applications in clinical and industrial domains."
+  },
+  {
+   "openalex": "https://openalex.org/W7172072070",
+   "doi": null,
+   "title": "Velocity-Guided Representation Learning for Time Series Anomaly Detection",
+   "year": 2026,
+   "date": "2026-07-01",
+   "venue": "Institutional Repository of the University of Granada (University of Granada)",
+   "type": "dissertation",
+   "cites": 0,
+   "abstract": "La detecci\u00f3n de anomal\u00edas en series temporales multivariantes es un problema fundamental en \u00e1mbitos como la monitorizaci\u00f3n industrial, las infraestructuras cr\u00edticas o la medicina. En estos escenarios, las anomal\u00edas son poco frecuentes, rara vez est\u00e1n etiquetadas y su detecci\u00f3n temprana resulta esencial. En cambio, el comportamiento normal suele ser abundante y presentar una estructura bien definida, mientras que las anomal\u00edas son muy diversas y solo pueden entenderse en relaci\u00f3n con un patr\u00f3n de funcionamiento que, adem\u00e1s, evoluciona con el tiempo. Como no es posible anticipar todas las anomal\u00edas que pueden aparecer, el problema suele abordarse desde el aprendizaje de una sola clase: el modelo aprende \u00fanicamente a partir de datos normales y, posteriormente, identifica aquellas observaciones que se apartan de ese comportamiento. Sin embargo, esa noci\u00f3n de normalidad no puede extraerse directamente de la se\u00f1al original, sino que debe aprenderse mediante una representaci\u00f3n adecuada, lo que sit\u00faa el problema dentro del aprendizaje auto-supervisado. Existen tres grandes familias de m\u00e9todos para detectar anomal\u00edas: los basados en predicci\u00f3n, los basados en reconstrucci\u00f3n y los basados en representaci\u00f3n. Esta tesis se centra en este \u00faltimo enfoque, que la literatura considera especialmente prometedor, aunque todav\u00eda poco explorado. A partir de una revisi\u00f3n cr\u00edtica que conecta las caracter\u00edsticas propias de las series temporales con el aprendizaje auto-supervisado y la detecci\u00f3n de anomal\u00edas, identificamos una limitaci\u00f3n com\u00fan en los trabajos existentes. La mayor\u00eda de los objetivos auto-supervisados proceden de la visi\u00f3n por computador o del procesamiento del lenguaje, donde las invarianzas que pretenden capturar son diferentes de las que aparecen en series temporales. Adem\u00e1s, la mayor\u00eda de los m\u00e9todos utilizan aprendizaje contrastivo, que organiza el espacio de representaci\u00f3n de forma indirecta mediante estrategias de muestreo de pares. Como consecuencia, propiedades importantes para la detecci\u00f3n, como la compacidad de la representaci\u00f3n o la coherencia de sus direcciones locales, quedan determinadas m\u00e1s por el azar del entrenamiento que por un principio expl\u00edcito de dise\u00f1o. En este sentido, el problema no radica en la falta de nuevas arquitecturas o conjuntos de datos, sino en la ausencia de un sesgo inductivo espec\u00edficamente dise\u00f1ado para las series temporales. Para abordar esta limitaci\u00f3n proponemos VACE (Velocity-Aligned Channel Embeddings), un detector auto-supervisado cuya se\u00f1al de entrenamiento se obtiene exclusivamente de los propios datos. El modelo utiliza un encoder consciente de la estructura por canales, construido mediante convoluciones separables en profundidad, que primero extraen caracter\u00edsticas de cada canal de forma independiente y despu\u00e9s modelan sus interacciones. Sobre este encoder definimos un objetivo de consistencia de velocidad que favorece trayectorias de representaci\u00f3n suaves y direccionalmente coherentes, sin recurrir a pares negativos ni a anomal\u00edas sint\u00e9ticas durante el entrenamiento. Una vez aprendido el espacio de representaci\u00f3n, cada observaci\u00f3n recibe una puntuaci\u00f3n que combina dos criterios complementarios: una distancia de Mahalanobis, que mide cu\u00e1nto se aleja de la distribuci\u00f3n normal, y un t\u00e9rmino basado en un banco de velocidades, que eval\u00faa si su evoluci\u00f3n local sigue las direcciones caracter\u00edsticas del comportamiento normal. En esta combinaci\u00f3n, la distancia de Mahalanobis es la se\u00f1al principal y el t\u00e9rmino direccional act\u00faa como un amplificador, de modo que una observaci\u00f3n alejada de la distribuci\u00f3n normal se marca como an\u00f3mala por su posici\u00f3n, y su puntuaci\u00f3n aumenta cuando adem\u00e1s su din\u00e1mica es at\u00edpica. Evaluamos VACE sobre el benchmark TSB-AD-M con el objetivo de contrastar las hip\u00f3tesis presentadas. A pesar de emplear un encoder compacto y de bajo coste computacional, VACE alcanza resultados del estado del arte y supera a m\u00e9todos basados en transformers y en modelos fundacionales considerablemente m\u00e1s grandes. Los estudios de ablaci\u00f3n y el an\u00e1lisis de la geometr\u00eda del espacio de representaci\u00f3n indican que esta mejora proviene sobre todo de los componentes que dan forma geom\u00e9trica a la representaci\u00f3n, m\u00e1s que de la regla empleada para puntuar las anomal\u00edas. En conjunto, los resultados respaldan la idea central de esta tesis: en la detecci\u00f3n de anomal\u00edas de una sola clase sobre series temporales, incorporar un sesgo inductivo geom\u00e9trico alineado con el mecanismo de detecci\u00f3n resulta m\u00e1s efectivo que aumentar la complejidad de la arquitectura o recurrir a objetivos contrastivos m\u00e1s sofisticados."
+  },
+  {
+   "openalex": "https://openalex.org/W4391915045",
+   "doi": "https://doi.org/10.1007/s12567-023-00529-5",
+   "title": "Unmasking overestimation: a re-evaluation of deep anomaly detection in spacecraft telemetry",
+   "year": 2024,
+   "date": "2024-02-17",
+   "venue": "CEAS Space Journal",
+   "type": "article",
+   "cites": 31,
+   "abstract": "As the volume of telemetry data generated by satellites and other complex systems continues to grow, there is a pressing need for more efficient and accurate anomaly detection methods. Current techniques often rely on human analysis and preset criteria, presenting several challenges including the necessity for expert interpretation and continual updates to match the dynamic mission environment. This paper critically examines the use of deep anomaly detection (DAD) methods in addressing these challenges, evaluating their efficacy on real-world spacecraft telemetry data. It exposes limitations in current DAD research, highlighting the tendency for performance results to be overestimated and suggesting that simpler methods can sometimes outperform more complex DAD algorithms. By comparing established metrics for anomaly detection with newly proposed ones, this paper aims to improve the evaluation of DAD algorithms. It underscores the importance of using less accuracy-inflating metrics and offers a comprehensive comparison of DAD methods on popular benchmark datasets and real-life satellite telemetry data. Among the DAD methods examined, the LSTM algorithm demonstrates considerable promise. However, the paper also reveals the potential limitations of this approach, particularly in complex systems that lack a single, clear predictive failure channel. The paper concludes with a series of recommendations for future research, including the adoption of best practices, the need for high-quality, pre-split datasets, and the investigation of other prediction error methods. Through these insights, this paper contributes to the improved understanding and application of DAD methods, ultimately enhancing the reliability and effectiveness of anomaly detection in real-world scenarios."
+  },
+  {
+   "openalex": "https://openalex.org/W7152527692",
+   "doi": "https://doi.org/10.70675/b20f4057z068dz49f6zb7c1z116023738b33",
+   "title": "Representation Learning for Multivariate Time-Series",
+   "year": 2025,
+   "date": "2025-05-16",
+   "venue": "theses.fr (ABES)",
+   "type": "dissertation",
+   "cites": 0,
+   "abstract": "Apprentissage de repr\u00e9sentations pour les s\u00e9ries temporelles multivari\u00e9es Les s\u00e9ries temporelles multivari\u00e9es sont couramment exploit\u00e9es dans la maintenance pr\u00e9dictive, la sant\u00e9, la finance et la mod\u00e9lisation du climat, et se caract\u00e9risent souvent par des relations complexes entre variables, du bruit et une quantit\u00e9 limit\u00e9e de donn\u00e9es annot\u00e9es. Ces contraintes rendent les m\u00e9thodes d'apprentissage automatique, y compris celles \u00e0 base de transformeurs, difficiles \u00e0 appliquer de mani\u00e8re fiable : les mod\u00e8les peuvent surapprendre ou ne pas parvenir \u00e0 exploiter efficacement la richesse des interactions entre canaux, surtout lorsque les donn\u00e9es sont plus restreintes, plus bruit\u00e9es ou plus irr\u00e9guli\u00e8res que celles g\u00e9n\u00e9ralement rencontr\u00e9es en traitement du langage ou de la vision. Par ailleurs, les approches classiques ont tendance \u00e0 traiter chaque variable ind\u00e9pendamment, ce qui fait perdre une source d'information essentielle issue de la d\u00e9pendance entre canaux. Pour rem\u00e9dier \u00e0 ces faiblesses, cette th\u00e8se s'articule autour de deux axes principaux. D'abord, elle introduit SAMformer, une architecture bas\u00e9e sur les transformeurs qui s'appuie sur la minimisation sensible \u00e0 la g\u00e9om\u00e9trie (sharpness-aware minimization) et l'attention par canal afin de stabiliser l'entra\u00eenement et de mieux exploiter les interactions inter-variables m\u00eame en pr\u00e9sence de bruit ou de peu de donn\u00e9es. Ensuite, elle propose un cadre de r\u00e9gularisation multi-t\u00e2che offrant un \u00e9clairage analytique quant \u00e0 l'impact de la covariance, du bruit et de la taille d'\u00e9chantillon sur la g\u00e9n\u00e9ralisation et le choix des hyperparam\u00e8tres en pr\u00e9vision ou d\u00e9tection d'anomalies. Dans leur ensemble, ces contributions renforcent la robustesse, l'interpr\u00e9tabilit\u00e9 et l'efficacit\u00e9 des approches d'analyse de s\u00e9ries temporelles multivari\u00e9es."
+  },
+  {
+   "openalex": "https://openalex.org/W7151967097",
+   "doi": "https://doi.org/10.70675/ba36244ez35f1z46e5z9894zf27448d8e8a3",
+   "title": "Time Series Forecasting, Anomaly Detection and Prediction",
+   "year": 2024,
+   "date": "2024-12-19",
+   "venue": "theses.fr (ABES)",
+   "type": "dissertation",
+   "cites": 0,
+   "abstract": "Pr\u00e9visions de s\u00e9ries temporelles, anomalies D\u00e9tection et pr\u00e9visions Cette th\u00e8se CIFRE (Convention Industrielle de Formation par la Recherche) en doctorat industriel, r\u00e9alis\u00e9e en collaboration avec des partenaires industriels, vise \u00e0 r\u00e9soudre les d\u00e9fis de la pr\u00e9vision des s\u00e9ries temporelles et de la d\u00e9tection d\u2019anomalies bas\u00e9es sur des ensembles de donn\u00e9es industrielles r\u00e9elles. Dans de nombreuses applications industrielles, une pr\u00e9vision pr\u00e9cise et une d\u00e9tection rapide des anomalies sont cruciales pour optimiser les op\u00e9rations. Cependant, les mod\u00e8les existants peinent souvent \u00e0 \u00e9quilibrer pr\u00e9cision, efficacit\u00e9 computationnelle et flexibilit\u00e9 lorsqu'ils doivent traiter des ensembles de donn\u00e9es vastes et complexes.Apr\u00e8s avoir examin\u00e9 le d\u00e9veloppement des t\u00e2ches li\u00e9es aux s\u00e9ries temporelles et men\u00e9 une enqu\u00eate approfondie sur les t\u00e2ches de pr\u00e9vision des s\u00e9ries temporelles et de d\u00e9tection d\u2019anomalies, nous avons identifi\u00e9 que les principaux d\u00e9fis r\u00e9sident dans la complexit\u00e9 et l'efficacit\u00e9 des mod\u00e8les. Par cons\u00e9quent, nous proposons l\u2019architecture hi\u00e9rarchique g\u00e9n\u00e9rale Kernel-U-Net et introduisons simultan\u00e9ment une nouvelle approche pour les t\u00e2ches de pr\u00e9diction d\u2019anomalies.La premi\u00e8re contribution de cette recherche est l\u2019introduction de Kernel-U-Net, une architecture de r\u00e9seau neuronal en forme de U personnalisable par noyaux pour la pr\u00e9vision des s\u00e9ries temporelles multivari\u00e9es. Kernel-U-Net compresse les s\u00e9ries d\u2019entr\u00e9e en vecteurs latents via son encodeur et \u00e9tend ces vecteurs latents en s\u00e9ries pr\u00e9visionnelles par son d\u00e9codeur. Cette approche s\u00e9pare la partition des s\u00e9ries temporelles des op\u00e9rations par noyaux, offrant deux principaux avantages : (1) Flexibilit\u00e9 : permettant la personnalisation des noyaux pour r\u00e9pondre aux besoins sp\u00e9cifiques des ensembles de donn\u00e9es industriels ; (2) Efficacit\u00e9 computationnelle am\u00e9lior\u00e9e : r\u00e9duisant la complexit\u00e9 des couches de Transformers \u00e0 une complexit\u00e9 lin\u00e9aire. Gr\u00e2ce \u00e0 des exp\u00e9riences sur sept ensembles de donn\u00e9es r\u00e9els, Kernel-U-Net a syst\u00e9matiquement surpass\u00e9 ou \u00e9gal\u00e9 les mod\u00e8les \u00e0 l\u2019\u00e9tat de l\u2019art, notamment dans des contextes ind\u00e9pendants des canaux, ce qui le rend bien adapt\u00e9 aux t\u00e2ches de pr\u00e9vision industrielle.La deuxi\u00e8me contribution porte sur la pr\u00e9diction d\u2019anomalies. Nous proposons une nouvelle m\u00e9thode qui int\u00e8gre explicitement le temps de retard et les horizons de pr\u00e9diction dans la d\u00e9tection d\u2019anomalies des s\u00e9ries temporelles. Les mod\u00e8les traditionnels n\u00e9gligent souvent ces dynamiques temporelles, conduisant \u00e0 des analyses co\u00fbteuses a posteriori. Pour r\u00e9soudre ce probl\u00e8me, nous avons collabor\u00e9 avec des partenaires industriels pour d\u00e9velopper un ensemble de donn\u00e9es synth\u00e9tique, d\u00e9montrant que notre m\u00e9thode pr\u00e9dit avec pr\u00e9cision le d\u00e9lai et l\u2019horizon de l\u2019anomalie, \u00e9tablissant ainsi une nouvelle r\u00e9f\u00e9rence dans ce domaine."
+  },
+  {
+   "openalex": "https://openalex.org/W7202259595",
+   "doi": "https://doi.org/10.2139/ssrn.7339339",
+   "title": "Deep Learning for Anomaly Detection in Dynamic Graphs: A Verified Taxonomy, Survey, and Unified Benchmark",
+   "year": 2026,
+   "date": "2026-01-01",
+   "venue": "SSRN Electronic Journal",
+   "type": "preprint",
+   "cites": 2,
+   "abstract": "Anomaly detection in dynamic graphs (DGAD) sits at the intersection of graph learning and temporal modeling, yet it presents itself as a scattered collection of isolated methods: results are dispersed across dozens of venues, published numbers are mutually incomparable, and no reference delimits the field, so surveys routinely conflate dynamic-graph detectors with staticgraph and multivariate time-series methods. This paper supplies the missing reference in both of its layers, organization and measurement. We delimit the field with three explicit, checkable inclusion criteria; we present a catalog of twenty-four methods, each traced to its primary publication and its publication status stated, organized by a two-axis taxonomy of structural encoder \u00d7 temporal mechanism; and we list, with reasons, the prominent methods that fail each criterion. We then benchmark representatives of all seven taxonomy families, thirteen deep detectors, a non-deep streaming baseline, and a suite of parameter-free heuristics, under one injection protocol, split, and metric set. The results concern the field\u2019s evaluation practice as much as its methods. A degree heuristic that requires no training reaches AUC 0.811 on the canonical injected benchmark, above nine of thirteen deep detectors, and holds across a second corpus, a second injection model, and all 162 configurations of the protocol\u2019s parameter space; on real fraud labels it falls below chance. There the ranking rearranges by time model rather than by injected rank: both snapshot-based leaders drop to chance while the continuous-time streaming detector leads. We further find that headline AUC misranks methods on injected data, and that published implementations frequently contain resultchanging evaluation defects. We distill these findings into concrete recommendations and release the full benchmark."
+  },
+  {
+   "openalex": "https://openalex.org/W7151948891",
+   "doi": "https://doi.org/10.70675/f3f56534zcb22z4c9fzb5fez6b38e2066740",
+   "title": "Explainable algorithms for anomaly detection and time series forecasting",
+   "year": 2024,
+   "date": "2024-12-20",
+   "venue": "theses.fr (ABES)",
+   "type": "dissertation",
+   "cites": 1,
+   "abstract": "Algorithmes explicables pour la d\u00e9tection d'anomalies et la pr\u00e9vision de s\u00e9ries chronologiques L'intelligence artificielle a montr\u00e9 des performances dominantes dans le domaine de l'exploration de donn\u00e9es, avec des applications dans divers domaines, y compris des domaines critiques tels que la m\u00e9decine, la finance, la justice, etc. En cons\u00e9quence, l'explicabilit\u00e9 des mod\u00e8les de bo\u00eete noire devient de plus en plus exigeante. Nous nous concentrons sur deux applications sp\u00e9cifiques : la d\u00e9tection d'anomalies et la pr\u00e9vision de s\u00e9ries chronologiques, et pr\u00e9sentons XTREK et ADAPATCH pour chaque t\u00e2che, respectivement. XTREK est une approche non supervis\u00e9e bas\u00e9e sur un arbre pour la d\u00e9tection d'anomalies explicables, qui maximise le \u03c4 de Kendall entre les scores d'anomalie du d\u00e9tecteur d'anomalies source et ceux de XTREK. L'arbre produit par notre algorithme est de taille relativement petite, ce qui lui conf\u00e8re la transparence et l'explicabilit\u00e9 reconnues des approches bas\u00e9es sur des arbres. De plus, ses explications sont bas\u00e9es sur des \u00e9chantillons. En particulier, les scores d'anomalie sont calcul\u00e9s pour \u00eatre l'inverse de la taille de la feuille correspondante, fournissant ainsi des explications significatives lors de la comparaison d'exemples avec diff\u00e9rents scores d'anomalie. XTREK peut \u00e9galement \u00eatre utilis\u00e9 comme une approche int\u00e9gr\u00e9e au mod\u00e8le, capable de fournir des explications concises pour ses propres d\u00e9cisions. ADAPATCH est une approche bas\u00e9e sur une carte de saillance post-hoc pour la pr\u00e9vision de s\u00e9ries chronologiques explicables, qui fournit des explications visuelles locales \u00e0 l'aide d'une descente de gradient bas\u00e9e sur les perturbations. Avec un module de codage diff\u00e9rentiel dans le masque d'entr\u00e9e, une explication s\u00e9mantique plus intuitive et de niveau sup\u00e9rieur peut \u00eatre fournie. Les deux m\u00e9thodes sont ind\u00e9pendantes du mod\u00e8le, ce qui signifie que l'architecture du mod\u00e8le de bo\u00eete noire peut \u00eatre cach\u00e9e aux utilisateurs. Elles fournissent des explications pr\u00e9cises et simples et leur pr\u00e9cision est valid\u00e9e par des exp\u00e9riences approfondies."
+  },
+  {
+   "openalex": "https://openalex.org/W7162226413",
+   "doi": null,
+   "title": "Advancements in Deep Learning: Multivariate Time Series Forecasting to Single- and Multi-Agent Systems",
+   "year": 2025,
+   "date": "2025-08-01",
+   "venue": "City Research Online (City University London)",
+   "type": "dissertation",
+   "cites": 0,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W2076758681",
+   "doi": "https://doi.org/10.1007/s10994-014-5473-9",
+   "title": "Analysis of network traffic features for anomaly detection",
+   "year": 2014,
+   "date": "2014-12-04",
+   "venue": "Machine Learning",
+   "type": "article",
+   "cites": 261,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W4413212260",
+   "doi": "https://doi.org/10.36227/techrxiv.175493656.68167475/v1",
+   "title": "Anomaly Detection in Aircraft Trajectories using Machine Learning",
+   "year": 2025,
+   "date": "2025-08-11",
+   "venue": "TechRxiv",
+   "type": "preprint",
+   "cites": 0,
+   "abstract": "The aviation industry is rapidly embracing data-driven techniques to enhance safety, efficiency, and situational awareness. Anomaly detection in aircraft trajectories plays a crucial role in identifying irregular flight patterns that may indicate safety risks, system malfunctions, or security threats. This paper presents a comprehensive study of various machine learning (ML) approaches for anomaly detection in aircraft trajectories using Automatic Dependent Surveillance-Broadcast (ADS-B) data. We explore both supervised and unsupervised models, including Isolation Forests, Autoencoders, and LSTM-based sequence models, to detect outliers in spatiotemporal data. We evaluate the models using a real-world ADS-B dataset and compare their performance using precision, recall, and F1score metrics. Our findings suggest that hybrid deep learning models outperform classical methods in complex trajectory anomaly detection."
+  },
+  {
+   "openalex": "https://openalex.org/W4394862991",
+   "doi": "https://doi.org/10.1109/access.2024.3389096",
+   "title": "A Comparative Study of Using Deep Learning Algorithms in Network Intrusion Detection",
+   "year": 2024,
+   "date": "2024-01-01",
+   "venue": "IEEE Access",
+   "type": "article",
+   "cites": 111,
+   "abstract": "This study introduces a deep learning approach for network intrusion detection (NIDS), which excels in both binary and multi-classification tasks. This approach combines the strengths of six distinct deep learning algorithms: DNN, CNN, RNN, LSTM, GRU, and a Hybrid CNN-LSTM architecture. The NSL-KDD dataset, a widely recognized benchmark for intrusion detection research, was utilized for implementation and evaluation. In binary classification, the approach demonstrates exceptional capabilities, with the GRU approach outperforming others. Similarly, the DNN, LSTM, CNN, and RNN approaches exhibit robust performance, showcasing their efficacy in detecting anomalies within network data. In the multi-classification setting, the DNN approach stands out with outstanding performance. While other approaches, including RNN, CNN, LSTM, GRU, and the Hybrid CNN-LSTM approach, also maintain commendable results, the DNN approach proves to be the most effective in handling complex network patterns. This research provides valuable insights into the application of deep learning approaches using the NSL-KDD dataset for network anomaly detection, emphasizing their versatility and reliability across different classification scenarios. The findings lay the groundwork for further exploration and utilization of deep learning methodologies in enhancing network security."
+  }
+ ]
+}

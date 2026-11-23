@@ -1,0 +1,227 @@
+{
+ "query": "district heating smart meter data anomaly detection continuous monitoring",
+ "filter": null,
+ "count": 1293,
+ "results": [
+  {
+   "openalex": "https://openalex.org/W4283018281",
+   "doi": "https://doi.org/10.1007/978-3-031-10525-8_25",
+   "title": "Smart Meter Data Anomaly Detection Using Variational Recurrent Autoencoders with Attention",
+   "year": 2022,
+   "date": "2022-07-23",
+   "venue": "Communications in computer and information science",
+   "type": "conference-paper",
+   "cites": 26,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W4403391020",
+   "doi": "https://doi.org/10.1109/fmec62297.2024.10710205",
+   "title": "SHEDAD: SNN-Enhanced District Heating Anomaly Detection for Urban Substations",
+   "year": 2024,
+   "date": "2024-09-02",
+   "venue": "International Conference on Fog and Mobile Edge Computing (FMEC)",
+   "type": "conference-paper",
+   "cites": 6,
+   "abstract": "District Heating (DH) systems are essential for energy-efficient urban heating. However, despite the advancements in automated fault detection and diagnosis (FDD), DH still faces challenges in operational faults that impact efficiency. This study introduces the Shared Nearest Neighbor Enhanced District Heating Anomaly Detection (SHEDAD) approach, designed to approximate the DH network topology and allow for local anomaly detection without disclosing sensitive information, such as substation locations. The approach leverages a multi-adaptive k-Nearest Neighbor (k-NN) graph to improve the initial neighborhood creation. Moreover, it introduces a merging technique that reduces noise and eliminates trivial edges. We use the Median Absolute Deviation (MAD) and modified z-scores to flag anomalous substations. The results reveal that SHEDAD outperforms traditional clustering methods, achieving significantly lower intra-cluster variance and distance. Additionally, SHEDAD effectively isolates and identifies two distinct categories of anomalies: supply temperatures and substation performance. We identified 30 anomalous substations and reached a sensitivity of approximately 65% and specificity of approximately 97%. By focusing on this subset of poor-performing substations in the network, SHEDAD enables more targeted and effective maintenance interventions, which can reduce energy usage while optimizing network performance."
+  },
+  {
+   "openalex": "https://openalex.org/W2889801412",
+   "doi": "https://doi.org/10.1016/j.egypro.2018.08.187",
+   "title": "A machine learning approach to fault detection in district heating substations",
+   "year": 2018,
+   "date": "2018-09-01",
+   "venue": "Energy Procedia",
+   "type": "conference-paper",
+   "cites": 57,
+   "abstract": "The aim of this study is to develop a model capable of predicting the behavior of a district heating substation, including being able to distinguish datasets from well performing substations from datasets containing faults. The model developed in the study is based on machine learning algorithms and the model is trained on data from a Swedish district heating substation. A number of different models and input/output parameters are tested in the study. The results show that the model is capable of modelling the substation behavior, and that the fault detection capability of the model is high."
+  },
+  {
+   "openalex": "https://openalex.org/W2989792336",
+   "doi": "https://doi.org/10.1016/j.apenergy.2019.114059",
+   "title": "Automatic fouling detection in district heating substations: Methodology and tests",
+   "year": 2019,
+   "date": "2019-11-26",
+   "venue": "Applied Energy",
+   "type": "article",
+   "cites": 59,
+   "abstract": "Diagnosis of anomalies in heat exchangers of district heating substations is an essential point to assure high comfort level in buildings, as well as to exploit energy sources efficiently. The aim of this paper is to propose a methodology for automatically detecting fouling in the heat exchangers located in the substations of a district heating system. The methodology is tailored for large district heating networks, where a large number of buildings should be examined with reasonable availability of data. Fouling is analysed using only the data collected by the meters installed in the substations: the mass flow rate on the primary side and the temperatures on both sides of the heat exchanger. Evaluation is difficult due to the rawness of the data gathered and the variable operating conditions, which are adjusted on the basis of the external temperatures and set-points. The software created to implement the proposed methodology receives rough data as the input and it is able to manage data gap and lack of data. Furthermore, it provides a graphical output, which can be used for assisting the operators who manage the network and plan the cleaning schedules. The software has been tested considering space heating substations in six distribution networks of the Turin district heating system, for a total amount of 325 heat exchangers. A regular application of the approach and the cleaning of the heat exchangers presenting fouling is expected to lead to an average annual decrease of about 1.6% of the primary energy consumption in the entire network."
+  },
+  {
+   "openalex": "https://openalex.org/W2909741517",
+   "doi": "https://doi.org/10.1016/j.apenergy.2019.113409",
+   "title": "A data-driven approach for discovering heat load patterns in district heating",
+   "year": 2019,
+   "date": "2019-06-10",
+   "venue": "Applied Energy",
+   "type": "article",
+   "cites": 110,
+   "abstract": "Understanding the heat usage of customers is crucial for effective district heating operations and management. Unfortunately, existing knowledge about customers and their heat load behaviors is quite scarce. Most previous studies are limited to small-scale analyses that are not representative enough to understand the behavior of the overall network. In this work, we propose a data-driven approach that enables large-scale automatic analysis of heat load patterns in district heating networks without requiring prior knowledge. Our method clusters the customer profiles into different groups, extracts their representative patterns, and detects unusual customers whose profiles deviate significantly from the rest of their group. Using our approach, we present the first large-scale, comprehensive analysis of the heat load patterns by conducting a case study on many buildings in six different customer categories connected to two district heating networks in the south of Sweden. The 1222 buildings had a total floor space of 3.4 million square meters and used 1540 TJ heat during 2016. The results show that the proposed method has a high potential to be deployed and used in practice to analyze and understand customers\u2019 heat-use habits."
+  },
+  {
+   "openalex": "https://openalex.org/W7125530682",
+   "doi": "https://doi.org/10.1007/978-3-032-09844-3_14",
+   "title": "Data-Driven Fault Detection and Diagnosis in District Heating Substations and the Impact of Return Temperature Reduction",
+   "year": 2026,
+   "date": "2026-01-24",
+   "venue": "Lecture notes in networks and systems",
+   "type": "conference-paper",
+   "cites": 2,
+   "abstract": "Reducing return temperatures in district heating (DH) networks is crucial for improving overall efficiency, minimising thermal losses, and enabling the integration of renewable energy sources. Achieving this requires a detailed understanding of DH substations performance, as faults or inefficiencies in substations are a common cause of elevated return temperatures. This case study introduces a data-driven approach for fault detection and diagnosis (FDD) in DH substations, aiming to identify such inefficiencies and support targeted performance improvements. The methodology is implemented in a Python-based tool that analyses and visualises smart meter data collected from the primary side of substations. The tool offers geospatial mapping, performance indicators (e.g., return temperature, hydraulic capacity utilization), and metadata filtering (e.g., building type). Using this approach, four recurring fault patterns are identified. To support fault handling prioritisation, the tool segments inefficient substations through scatterplot visualisations. The proposed approach offers utility companies a means to enhance system reliability, reduce emissions, and improve operational performance by systematically identifying and addressing performance issues."
+  },
+  {
+   "openalex": "https://openalex.org/W4382133023",
+   "doi": "https://doi.org/10.1016/j.applthermaleng.2023.120964",
+   "title": "Automated and real-time anomaly indexing for district heating maintenance decision support system",
+   "year": 2023,
+   "date": "2023-06-26",
+   "venue": "Applied Thermal Engineering",
+   "type": "article",
+   "cites": 14,
+   "abstract": "Faults are estimated to cause a significant amount of energy consumption and waste in district heating systems (DHS), and lowering this is critical to reduce costs and energy waste, but also to increase the security of supply. There are multiple examples of data-driven fault detection and diagnosis methods being employed in DHS to detect faults, however, it has been observed that a great number of faults are detected and it is not sustainable to investigate all of them. This paper, therefore, proposes implementing Chernoff bound, which is a method that can determine the fault probability level of detected faults to filter out insignificant faults. This methodology is integrated into a general continuous fault detection maintenance framework which can utilize multiple fault detection and diagnosis methods. The Chernoff bound methodology is modified for better generalization and implementation, with regard to the input data and other methods employed. The methodology has been applied to a DHS case and has proven to be able to filter out insignificant faults while still retaining a known fault, and identifying other anomalies in the operation. This framework and the introduction of Chernoff bound as a means to rank the confidence of the various detection of faults, can help maintenance crews allocate their time and effort in a better way, to only focus on the most potential critical faults. The data used as a case study is of 1-hour frequency, and some, but not all faults can be observed in such data. The optimal data is hypothesized to be of higher frequency, increasing the capabilities of the framework."
+  },
+  {
+   "openalex": "https://openalex.org/W7106784711",
+   "doi": null,
+   "title": "Assessing machine learning algorithms for leak detection in smart district heating networks",
+   "year": 2023,
+   "date": "2023-09-03",
+   "venue": "HAL",
+   "type": "conference-paper",
+   "cites": 1,
+   "abstract": "This paper presents a comprehensive evaluation of six machine learning algorithms, including artificial neural network (ANN), support vector machines (SVM), decision trees (DT), random forests (RF), Extreme Gradient Boosting (XGboost), and Na\u00efve Bayes (NB), for detecting small and large leaks in district heating networks (DHN). The methodology employed in this study utilizes a comprehensive dataset encompassing network topology, temperatures, consumer demands, and pressure differentials. This dataset consists of 23 features, and it boasts an impressive number of samples, with a total of 9,009,630 samples for each feature. A simple network model from the CEA internal DistrictHeating library is utilized to simulate network faults, incorporating hydraulic fluid loss and insulation degradation. The results indicate that the random forests algorithm achieved remarkable accuracy rates of 98.38% during training and 97.99% during testing, demonstrating high precision and recall. Decision trees exhibited high accuracy but a slight potential for overlearning. The ANN algorithm demonstrated consistent and balanced performance across all metrics. XGBoost showed potential overlearning but maintained good recall rates. SVM and NB had lower overall performance. The findings highlight the random forests algorithm as the top performer, aiding in the selection of suitable machine learning algorithms for leak detection in DHN. Automating leak detection using these algorithms minimizes heat loss, improves energy efficiency, and reduces maintenance costs. Continuous monitoring and real-time detection enable proactive maintenance strategies, preventing heat supply disruptions and optimizing system performance."
+  },
+  {
+   "openalex": "https://openalex.org/W7154320819",
+   "doi": "https://doi.org/10.1016/j.enbuild.2026.118351",
+   "title": "Virtual smart metering in district heating networks via heterogeneous spatial-temporal graph neural networks",
+   "year": 2026,
+   "date": "2026-10-06",
+   "venue": "Energy and Buildings",
+   "type": "article",
+   "cites": 2,
+   "abstract": "Intelligent operation of thermal energy networks aims to improve energy efficiency, reliability, and operational flexibility through data-driven control, predictive optimization, and early fault detection. Achieving these goals relies on sufficient observability, requiring continuous and well-distributed monitoring of thermal and hydraulic states. However, district heating systems are typically sparsely instrumented and frequently affected by sensor faults, limiting monitoring. Virtual sensing offers a cost-effective means to enhance observability, yet its development and validation remain limited in practice. Existing data-driven methods generally assume dense synchronized data, while analytical models rely on simplified hydraulic and thermal assumptions that may not adequately capture the behavior of heterogeneous network topologies. Consequently, modeling the coupled nonlinear dependencies between pressure, flow, and temperature under realistic operating conditions remains challenging. In addition, the lack of publicly available benchmark datasets hinders systematic comparison of virtual sensing approaches. To address these challenges, we propose a heterogeneous spatial-temporal graph neural network (HSTGNN) for constructing virtual smart heat meters. The model incorporates the functional relationships inherent in district heating networks and employs dedicated branches to learn graph structures and temporal dynamics for flow, temperature, and pressure measurements, thereby enabling the joint modeling of cross-variable and spatial correlations. To support further research, we introduce a controlled laboratory dataset collected at the Aalborg Smart Water Infrastructure Laboratory, providing synchronized high-resolution measurements representative of real operating conditions. Extensive experiments demonstrate that the proposed approach significantly outperforms existing baselines, demonstrating the potential of graph-based learning to support efficient, reliable, and flexible operation of modern district heating systems."
+  },
+  {
+   "openalex": "https://openalex.org/W4396716085",
+   "doi": "https://doi.org/10.48550/arxiv.2405.02574",
+   "title": "A Data Mining-Based Dynamical Anomaly Detection Method for Integrating with an Advance Metering System",
+   "year": 2024,
+   "date": "2024-05-04",
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "cites": 6,
+   "abstract": "Building operations consume 30% of total power consumption and contribute 26% of global power-related emissions. Therefore, monitoring, and early detection of anomalies at the meter level are essential for residential and commercial buildings. This work investigates both supervised and unsupervised approaches and introduces a dynamic anomaly detection system. The system introduces a supervised Light Gradient Boosting machine and an unsupervised autoencoder with a dynamic threshold. This system is designed to provide real-time detection of anomalies at the meter level. The proposed dynamical system comes with a dynamic threshold based on the Mahalanobis distance and moving averages. This approach allows the system to adapt to changes in the data distribution over time. The effectiveness of the proposed system is evaluated using real-life power consumption data collected from smart metering systems. This empirical testing ensures that the system's performance is validated under real-world conditions. By detecting unusual data movements and providing early warnings, the proposed system contributes significantly to visual analytics and decision science. Early detection of anomalies enables timely troubleshooting, preventing financial losses and potential disasters such as fire incidents."
+  },
+  {
+   "openalex": "https://openalex.org/W4327970367",
+   "doi": "https://doi.org/10.3390/electronics12061448",
+   "title": "Intelligent Approaches to Fault Detection and Diagnosis in District Heating: Current Trends, Challenges, and Opportunities",
+   "year": 2023,
+   "date": "2023-03-18",
+   "venue": "Electronics",
+   "type": "article",
+   "cites": 60,
+   "abstract": "This paper presents a comprehensive survey of state-of-the-art intelligent fault detection and diagnosis in district heating systems. Maintaining an efficient district heating system is crucial, as faults can lead to increased heat loss, customer discomfort, and operational cost. Intelligent fault detection and diagnosis can help to identify and diagnose faulty behavior automatically by utilizing artificial intelligence or machine learning. In our survey, we review and discuss 57 papers published in the last 12 years, highlight the recent trends, identify current research gaps, discuss the limitations of current techniques, and provide recommendations for future studies in this area. While there is an increasing interest in the topic, and the past five years have shown much advancement, the absence of open-source high-quality labeled data severely hinders progress. Future research should aim to explore transfer learning, domain adaptation, and semi-supervised learning to improve current performance. Additionally, a researcher should increase knowledge of district heating data using data-centric approaches to establish a solid foundation for future fault detection and diagnosis in district heating."
+  },
+  {
+   "openalex": "https://openalex.org/W3119239736",
+   "doi": "https://doi.org/10.3390/app11010455",
+   "title": "Advanced Control and Fault Detection Strategies for District Heating and Cooling Systems\u2014A Review",
+   "year": 2021,
+   "date": "2021-01-05",
+   "venue": "Applied Sciences",
+   "type": "article",
+   "cites": 141,
+   "abstract": "Peak shaving, demand response, fast fault detection, emissions and costs reduction are some of the main objectives to meet in advanced district heating and cooling (DHC) systems. In order to enhance the operation of infrastructures, challenges such as supply temperature reduction and load uncertainty with the development of algorithms and technologies are growing. Therefore, traditional control strategies and diagnosis approaches cannot achieve these goals. Accordingly, to address these shortcomings, researchers have developed plenty of innovative methods based on their applications and features. The main purpose of this paper is to review recent publications that include both hard and soft computing implementations such as model predictive control and machine learning algorithms with applications also on both fourth and fifth generation district heating and cooling networks. After introducing traditional approaches, the innovative techniques, accomplished results and overview of the main strengths and weaknesses have been discussed together with a description of the main capabilities of some commercial platforms."
+  },
+  {
+   "openalex": "https://openalex.org/W4321105694",
+   "doi": "https://doi.org/10.3390/en16041974",
+   "title": "Smart Energy Meters for Smart Grids, an Internet of Things Perspective",
+   "year": 2023,
+   "date": "2023-02-16",
+   "venue": "Energies",
+   "type": "article",
+   "cites": 166,
+   "abstract": "Smart energy has evolved over the years to include multiple domains integrated across multiple technology themes, such as electricity, smart grid, and logistics, linked through communication technology and processed in the cloud in a holistic way to deliver on global challenges. Advances in sensing, communication, and computation technologies have been made that enable better smart system implementations. In smart energy systems, sensing technologies have spanned multiple domains with newer techniques that are more accurate, have greater dynamic ranges, and are more reliable. Similarly, communication techniques have now evolved into very high-speed, flexible, and dynamic systems. Computation techniques have seen a quantum leap with greater integration, powerful computing engines, and versatile software stacks that are easily available and modifiable. Finally, the system integration has also seen advances in the form of management, automation, and analytics paradigms. Consequently, smart energy systems have witnessed a revolutionary transformation. The complexity has correspondingly grown exponentially. With regard to smart meters, the measurement component has to scale up to meet the demands of the evolved energy eco-system by relying on the advancements offered. The internet of things (IoT) is a key technology enabler in this scenario, and the smart meter is a key component. In recent years, metering technology has evolved in both complexity and functionality. Therefore, it must use the advances offered by IoT to deliver a new role. The internet of things (IoT) is a key technology enabler in this scenario and the smart meter a key component. In recent years, metering technology has evolved in both complexity and functionality. To deliver on its new role, it must use the advances offered by IoT. In this review, we analyze the smart meter as a combination of sensing, computing, and communication nodes for flexible and complex design paradigms. The components are, in turn, reviewed vis-\u00e0-vis the advances offered by IoT. The resultant gaps are reported for future design challenges in the conclusion. The identified gaps are the lack of usage of the full spectrum of the available technology and the lack of an inter-disciplinary approach to smart meter design."
+  },
+  {
+   "openalex": "https://openalex.org/W4413275980",
+   "doi": "https://doi.org/10.1016/j.energy.2025.138016",
+   "title": "From bearings to substations: Transfer Learning for fault detection in district heating",
+   "year": 2025,
+   "date": "2025-08-18",
+   "venue": "Energy",
+   "type": "article",
+   "cites": 8,
+   "abstract": "Fault Detection and Diagnosis (FDD) in District Heating (DH) systems is vital for improving operational efficiency. As DH networks evolve towards Fourth-Generation District Heating (4GDH), their reliance on lower operational temperatures intensifies the need for robust FDD. However, implementing effective FDD faces challenges due to the lack of labelled fault data and the complexity of DH substations. This paper introduces a novel FDD methodology using Transfer Learning (TL) to bridge the gap between faulty bearings, controlled DH substation experiments and real-world operational data. We propose a fault signature method that aligns the data to reduce the domain gap, revealing similarities between faulty bearings\u2019 vibration patterns and \u0394 T readings in DH substations. The TL-enhanced models demonstrated robust performance, achieving F1 scores up to 98% on lab data and 91% on real-world operational data, respectively. These results mark a notable advancement in FDD of DH substations, as our method offers accurate fault detection and valuable insights across diverse operational contexts, ranging from valve issues, faulty sensors, wrong control strategies and normal behaviour. Notably, temperature dynamics resemble behaviour akin to faulty bearing vibrations, highlighting their potential as a critical indicator of a faulty substation, enabling more effective FDD in DH systems."
+  },
+  {
+   "openalex": "https://openalex.org/W7117976390",
+   "doi": "https://doi.org/10.1111/exsy.70194",
+   "title": "Federated Multi\u2010Source Data Fusion for Semi\u2010Supervised Fault Detection in District Heating Substations",
+   "year": 2026,
+   "date": "2026-01-01",
+   "venue": "Expert Systems",
+   "type": "article",
+   "cites": 5,
+   "abstract": "Fault detection in district heating (DH) substations is critical for energy efficiency and reliability. However, it is challenged by scarce fault labels, low\u2010frequency data, privacy concerns, and battery\u2010constrained gateways. We propose a novel hybrid semi\u2010supervised federated domain adaptation architecture for fault detection in DH. We use a one\u2010class variational autoencoder (VAE) to leverage heterogeneous sensor streams from 434 distributed substations. First, we perform cross\u2010network unsupervised pre\u2010training on multi\u2010sourced data from two independent real\u2010world DH networks, fusing their return temperature dynamics into a robust shared manifold. Second, we leverage maintenance metadata to selectively allow verified\u2010normal clients for per\u2010round fine\u2010tuning of the model. Third, we drastically reduce uplink costs by compressing each client's weight delta using 10% top\u2010 k sparsification and demonstrate that our pipeline enables robust few\u2010shot finetuning with 20% of the normal operational data while retaining high detection performance. By strategically training, our method achieves F 1 and G\u2010mean scores of up to 97% and an AUC \u2265 99% on real\u2010world DH data. To our knowledge, this is the first work to study cross\u2010domain data fusion in the DH field for fault detection, aiming to enhance and enable effective, scalable, and energy\u2010efficient monitoring of substations."
+  },
+  {
+   "openalex": "https://openalex.org/W3210888925",
+   "doi": "https://doi.org/10.3390/app11136112",
+   "title": "Opportunities for Machine Learning in District Heating",
+   "year": 2021,
+   "date": "2021-06-30",
+   "venue": "Applied Sciences",
+   "type": "article",
+   "cites": 50,
+   "abstract": "The district heating (DH) industry is facing an important transformation towards more efficient networks that utilise significantly lower water temperatures to distribute the heat. This change requires taking advantage of new technologies, and Machine Learning (ML) is a popular direction. In the last decade, we have witnessed an extreme growth in the number of published research papers that focus on applying ML techniques to the DH domain. However, based on our experience in the field, and an extensive review of the state-of-the-art, we perceive a mismatch between the most popular research directions, such as forecasting, and the challenges faced by the DH industry. In this work, we present our findings, explain and demonstrate the key gaps between the two communities and suggest a road-map ahead towards increasing the impact of ML research in the DH industry."
+  },
+  {
+   "openalex": "https://openalex.org/W7215559326",
+   "doi": null,
+   "title": "TOWARDS NON-INTRUSIVE, DATA-DRIVEN DETECTION OF DISTRICT HEATING SYSTEM CONSUMER BEHAVIOR",
+   "year": 2025,
+   "date": "2025-07-02",
+   "venue": "Innovative Mechanical Engineering",
+   "type": "article",
+   "cites": 0,
+   "abstract": "This paper takes initial steps in proposing non-intrusive, data-driven methodology for detecting consumer behavior patterns in District Heating Systems (DHS), focusing specifically on occupant presence and window opening events. Recognizing the limitations of legacy supply-driven control logic in DHS, paper aims to show the feasibility of a novel detection approach without ground truth data, utilizing environmental sensor data collected from residential apartments, including CO\u2082 concentration, indoor temperature, relative humidity, and outdoor temperature. Occupancy detection is performed by using analysis of CO\u2082 concentration signal. For window opening detection, a robust multivariate outlier detection based on the Mahalanobis distance computed over first-order differences in sensor signals was applied. Events are inferred by identifying anomalous combinations of rapid CO\u2082, temperature, and humidity changes during periods of thermal imbalance between indoor and outdoor environments. The results show consistent and interpretable behavioral patterns that demonstrate the feasibility of detecting consumer behavior using passive sensor data. This enables the integration of behavior-aware control strategies in DHS operations, with the potential to improve thermal comfort, reduce energy waste, and lower emissions."
+  },
+  {
+   "openalex": "https://openalex.org/W4408688057",
+   "doi": "https://doi.org/10.52783/pst.489",
+   "title": "Intelligent Fault Detection and Diagnostic System for Smart Meter",
+   "year": 2024,
+   "date": "2024-06-14",
+   "venue": "Power System Technology",
+   "type": "article",
+   "cites": 2,
+   "abstract": "The energy requirements of the growing population and industries are driving up energy demand in the twenty-first century. Fulfilling the increasing demand for environmental solutions is also a major challenge due to the use of fossil fuels. As a result, all existing infrastructure must be upgraded to create an efficient system. Smart Grid is a step toward more efficient power utilization. A smart meter is an important component of a smart grid that deals directly with the consumer, as well as the option of net metering. Net metering is a critical execution nowadays and a smart meter is the core component of this execution. Smart meters design is currently not fully fault free and there is a need for detection and diagnostic mechanism for a smart meter to accurately identify the faults. Therefore, design and development of a reliable smart meter is the need of the hour to cater for the said requirements. The research goal of this work is to create a system that detects and diagnoses faults in smart meters. In this study, an intelligent prototype leads to problems such as power theft, overvoltage, and long service interruptions. The presented work can intelligently identify common faults in smart meters such as overbilling, subassembly malfunction, power failure, calibration error, and subassembly failure. The proposed methodology consists of an integration of a system that collects data, analyses it, identifies the fault using mathematical models and fault identification logic and takes corrective action using modern control techniques such as State Estimators followed by ANFIS based decision making. Both modular and system testing of the protype was performed and all faults were detected and diagnosed accurately. The strategy adopted in this work will be very beneficial in modern applications, in particular, the system will provide quick and efficient treatment of equipment/system malfunctions, which will result in increased production and reduced downtime."
+  },
+  {
+   "openalex": "https://openalex.org/W7224728516",
+   "doi": null,
+   "title": "Automatic Process Monitoring in a District Heating Substation Utilizing a Contextual Shewhart Chart",
+   "year": 2022,
+   "date": "2022-09-01",
+   "venue": "University of Southern Denmark Research Portal (University of Southern Denmark)",
+   "type": "conference-paper",
+   "cites": 1,
+   "abstract": "Fault detection methods play a key role in enabling proactive maintenance in district heating systems. Faults are estimated to cause around 40 percent of energy consumption and it is therefore critical to employ methods to decrease this unnecessary waste of energy. For detection of these faults, a data-driven process monitoring methodology is presented which uses a modified version of the Shewhart chart, which is called contextual Shewhart chart. A process variable\u2019s normal operating range often shifts, and this can be due to external factors (e.g., outdoor temperature), and this is not captured by a regular Shewhart chart. However, the proposed contextual Shewhart chart can capture these effects by using a so-called contextual variable to vary the acceptable operational ranges, based on the identified external factor. The methodology has been applied to real data from a district heating substation and has shown promising results."
+  },
+  {
+   "openalex": "https://openalex.org/W4410941337",
+   "doi": "https://doi.org/10.1016/j.segan.2025.101760",
+   "title": "Supervision of Service Pipes in District Heating Networks",
+   "year": 2022,
+   "date": "2022-01-01",
+   "venue": "Sustainable Energy Grids and Networks",
+   "type": "article",
+   "cites": 2,
+   "abstract": "District heating (DH) systems supply heat to consumers in urban areas via dense pipe networks that carry heat energy using water as the transport medium. The largest assets for most district heating companies are bound to these pipe networks. Therefore, supervising the quality of these pipes is of great interest to district heating companies. The quality of the main pipe grid is typically supervised by advanced sensor wires built into the pipes. However, the service pipes connecting the consumers to the main pipes are typically not supervised at all. This paper proposes a novel approach that is able detect the quality of the service pipes and thereby enable better maintenance of the network. The proposed approach uses data from smart meters already installed for billing purposes. Using this data in a Kalman filter, heat loss parameters are estimated for individual service pipes in the different segments of the district heating network. The proposed Kalman filter does not use information about the network parameters such as pipe sizes and type, but only data from the smart meters in the network segment under consideration. The proposed approach is tested on two segments of the district heating network in Randers, Denmark. These tests show that the approach was able to pinpoint the service pipes in the considered network segment that had quality issues relating to the service pipe insulation."
+  }
+ ]
+}

@@ -1,0 +1,282 @@
+{
+ "query": "fault detection building cross-building generalization domain adaptation",
+ "filter": null,
+ "count": 11098,
+ "results": [
+  {
+   "openalex": "https://openalex.org/W3213908205",
+   "doi": "https://doi.org/10.1016/j.cja.2021.10.006",
+   "title": "Rotating machinery fault detection and diagnosis based on deep domain adaptation: A survey",
+   "year": 2021,
+   "date": "2021-11-09",
+   "venue": "Chinese Journal of Aeronautics",
+   "type": "article",
+   "cites": 163,
+   "abstract": "In practical mechanical fault detection and diagnosis, it is difficult and expensive to collect enough large-scale supervised data to train deep networks. Transfer learning can reuse the knowledge obtained from the source task to improve the performance of the target task, which performs well on small data and reduces the demand for high computation power. However, the detection performance is significantly reduced by the direct transfer due to the domain difference. Domain adaptation (DA) can transfer the distribution information from the source domain to the target domain and solve a series of problems caused by the distribution difference of data. In this survey, we review various current DA strategies combined with deep learning (DL) and analyze the principles, advantages, and disadvantages of each method. We also summarize the application of DA combined with DL in the field of fault diagnosis. This paper provides a summary of the research results and proposes future work based on analysis of the key technologies."
+  },
+  {
+   "openalex": "https://openalex.org/W4321350102",
+   "doi": "https://doi.org/10.1016/j.ress.2023.109171",
+   "title": "Cross-domain augmentation diagnosis: An adversarial domain-augmented generalization method for fault diagnosis under unseen working conditions",
+   "year": 2023,
+   "date": "2023-02-19",
+   "venue": "Reliability Engineering & System Safety",
+   "type": "article",
+   "cites": 149,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W4404027094",
+   "doi": "https://doi.org/10.1016/j.energy.2024.133704",
+   "title": "Fault detection research on novel transfer learning-based method for cross-condition, cross-system and cross-operation in public building HVAC sensors",
+   "year": 2024,
+   "date": "2024-11-05",
+   "venue": "Energy",
+   "type": "article",
+   "cites": 33,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W4312204690",
+   "doi": "https://doi.org/10.1016/j.engappai.2022.105698",
+   "title": "Video surveillance using deep transfer learning and deep domain adaptation: Towards better generalization",
+   "year": 2022,
+   "date": "2022-12-16",
+   "venue": "Engineering Applications of Artificial Intelligence",
+   "type": "article",
+   "cites": 121,
+   "abstract": "Recently, developing automated video surveillance systems (VSSs) has become crucial to ensure the security and safety of the population, especially during events involving large crowds, such as sporting events. While artificial intelligence (AI) smooths the path of computers to think like humans, machine learning (ML) and deep learning (DL) pave the way more, even by adding training and learning components. DL algorithms require data labeling and high-performance computers to effectively analyze and understand surveillance data recorded from fixed or mobile cameras installed in indoor or outdoor environments. However, they might not perform as expected, take much time in training, or not have enough input data to generalize well. To that end, deep transfer learning (DTL) and deep domain adaptation (DDA) have recently been proposed as promising solutions to alleviate these issues. Typically, they can (i) ease the training process, (ii) improve the generalizability of ML and DL models, and (iii) overcome data scarcity problems by transferring knowledge from one domain to another or from one task to another. Although the increasing number of articles proposed to develop DTL- and DDA-based VSSs, a thorough review that summarizes and criticizes the state-of-the-art is still missing. To that end, this paper introduces, to the best of the authors\u2019 knowledge, the first overview of existing DTL- and DDA-based video surveillance to (i) shed light on their benefits, (ii) discuss their challenges, and (iii) highlight their future perspectives."
+  },
+  {
+   "openalex": "https://openalex.org/W4320729625",
+   "doi": "https://doi.org/10.3390/s23042137",
+   "title": "Cross-Domain Open Set Fault Diagnosis Based on Weighted Domain Adaptation with Double Classifiers",
+   "year": 2023,
+   "date": "2023-02-14",
+   "venue": "Sensors",
+   "type": "article",
+   "cites": 20,
+   "abstract": "The application of transfer learning in fault diagnosis has been developed in recent years. It can use existing data to solve the problem of fault recognition under different working conditions. Due to the complexity of the equipment and the openness of the working environment in industrial production, the status of the equipment is changeable, and the collected signals can have new fault classes. Therefore, the open set recognition ability of the transfer learning method is an urgent research direction. The existing transfer learning model can have a severe negative transfer problem when solving the open set problem, resulting in the aliasing of samples in the feature space and the inability to separate the unknown classes. To solve this problem, we propose a Weighted Domain Adaptation with Double Classifiers (WDADC) method. Specifically, WDADC designs the weighting module based on Jensen-Shannon divergence, which can evaluate the similarity between each sample in the target domain and each class in the source domain. Based on this similarity, a weighted loss is constructed to promote the positive transfer between shared classes in the two domains to realize the recognition of shared classes and the separation of unknown classes. In addition, the structure of double classifiers in WDADC can mitigate the overfitting of the model by maximizing the discrepancy, which helps extract the domain-invariant and class-separable features of the samples when the discrepancy between the two domains is large. The model's performance is verified in several fault datasets of rotating machinery. The results show that the method is effective in open set fault diagnosis and superior to the common domain adaptation methods."
+  },
+  {
+   "openalex": "https://openalex.org/W2994831808",
+   "doi": "https://doi.org/10.1088/1361-6501/ab64aa",
+   "title": "Deep learning-based cross-domain adaptation for gearbox fault diagnosis under variable speed conditions",
+   "year": 2020,
+   "date": "2020-02-06",
+   "venue": "Measurement Science and Technology",
+   "type": "article",
+   "cites": 84,
+   "abstract": "Existing intelligent gearbox fault diagnosis approaches have two shortcomings: (a) their performance is mostly confined to manual handcrafted features, and (b) they follow a general assumption that the distribution of the data in the source domain (labeled data on which the model is trained) is similar to the target domain (unlabeled data on which the model is tested), which might not be the case in real-world applications. Substantial human expertise and domain knowledge is required for manual feature extraction, and moreover, deploying the same model for a target domain whose distribution is different from the source domain would lead to poor generalization. Since deep learning methods can automatically learn high dimensional feature representations from raw measurement data, this paper proposes a novel deep learning-based domain adaptation (DA) method for gearbox fault diagnosis under significant speed variations. A deep convolutional neural network is used as the main architecture. The paper proposes to minimize the summation of cross-entropy loss (between the labeled source domain data) and maximum mean discrepancy loss (between the labeled source and unlabeled target datasets) simultaneously to adapt the source domain model to be applied in the target domain. The proposed deep learning DA approach is evaluated using experimental data from a gearbox under variable speeds and multiple health conditions. An appropriate benchmarking with both traditional machine learning methods and other DA methods demonstrate the superiority of the proposed method."
+  },
+  {
+   "openalex": "https://openalex.org/W4315650113",
+   "doi": "https://doi.org/10.1016/j.soildyn.2022.107739",
+   "title": "Fusing damage-sensitive features and domain adaptation towards robust damage classification in real buildings",
+   "year": 2023,
+   "date": "2023-01-11",
+   "venue": "Soil Dynamics and Earthquake Engineering",
+   "type": "article",
+   "cites": 42,
+   "abstract": "Structural Health Monitoring (SHM) enables the rapid assessment of structural integrity in the immediate aftermath of strong ground motions. Data-driven techniques, often relying on damage-sensitive features (DSFs) derived from vibration monitoring, may be deployed to attribute a specific damage class to a structure. In practical applications, individual features are sensitive to specific levels of damage, and therefore combining multiple DSFs is required to formulate robust damage indicators. However, the combination of DSFs typically involves empirical thresholds that are often structure-specific and hinder generalization to different structural configurations. This work evaluates the predictive performance of a large ensemble of DSFs, computed on an extensive dataset of nonlinear simulations of frame structures with varying geometrical and material configurations. Gradient-boosted decision trees and convolutional neural networks are deployed to fuse multiple DSFs into damage classifiers, improving the predictive accuracy compared to best-practice methods and individual DSFs. A Domain Adversarial Neural Network (DANN) architecture enables the transfer of knowledge obtained from numerical simulations to real data from a large-scale shake-table test. After exposure to limited data, exclusively from the healthy state, the DANN framework yields satisfactory performance in predicting unseen damage states in the experimental data. The results demonstrate the potential of DANN in transferring knowledge from simulations to real-world monitoring applications, where only limited data characterizing exclusively the current, typically healthy, structural state is available. Overall, this work comprises the definition of multiple DSFs, their fusion through ML approaches, and the generalization of the knowledge obtained from simulations to real data through domain adaptation."
+  },
+  {
+   "openalex": "https://openalex.org/W7121324022",
+   "doi": "https://doi.org/10.1016/j.ress.2025.112135",
+   "title": "TARD: Test-time domain adaptation for robust fault detection under evolving operating conditions",
+   "year": 2026,
+   "date": "2026-01-11",
+   "venue": "Reliability Engineering & System Safety",
+   "type": "article",
+   "cites": 14,
+   "abstract": "Fault detection is essential in complex industrial systems to prevent failures and optimize performance by distinguishing abnormal from normal operating conditions. With the growing availability of condition monitoring data, data-driven approaches have increasingly applied in detecting system faults. However, these methods typically require large, diverse, and representative training datasets that capture the full range of operating scenarios, an assumption rarely met in practice, particularly in the early stages of deployment. Industrial systems often operate under highly variable and evolving conditions, making it difficult to collect comprehensive training data. This variability results in a distribution shift between training and testing data, as future operating conditions may diverge from those previously observed ones. Such domain shifts hinder the generalization of traditional models, limiting their ability to transfer knowledge across time and system instances, ultimately leading to performance degradation in practical deployments. To address these challenges, we propose a novel method for continuous test-time domain adaptation, designed to support robust early-stage fault detection in the presence of domain shifts and limited representativeness of training data. Our proposed framework \u2013Test-time domain Adaptation for Robust fault Detection (TARD) \u2013 explicitly separates input features into system parameters and sensor measurements. It employs a dedicated domain adaptation module to adapt to each input type using different strategies, enabling more targeted and effective adaptation to evolving operating conditions. We validate our approach on two real-world case studies from multi-phase flow facilities, delivering substantial improvements in both fault detection accuracy and model robustness over existing domain adaptation methods under real-world variability."
+  },
+  {
+   "openalex": "https://openalex.org/W1535163462",
+   "doi": null,
+   "title": "A Bayesian approach for predicting building cooling and heating consumption and applications in fault detection",
+   "year": 2013,
+   "date": "2013-01-01",
+   "venue": "Scholarly Commons (University of Pennsylvania)",
+   "type": "article",
+   "cites": 11,
+   "abstract": "Making a prediction typically involves dealing with uncertainties. The application of uncertainty analysis to buildings and HVAC (heating, ventilation and air conditioning) systems, however, remains limited. Most existing studies concentrate on the parameter uncertainty and parametric variability in building simulations for the design stage, and rely on Monte Carlo experiments to quantify this uncertainty. This dissertation aims to develop a rapid and direct method that is capable of quantifying uncertainty when predicting building cooling and heating consumption in the operation stage, while simultaneously capturing all sources of uncertainty and applying these to actual system operations. Gaussian Process regression, a Bayesian modeling method, is proposed for this purpose. The primary advantage of Gaussian Process regression is that it directly outputs a probability distribution that explicitly expresses prediction uncertainty. The predictive distribution covers uncertainty sources arising not only from parameter uncertainty and parametric variability, but also from modeling inadequacy and residual variability. By assuming a Gaussian input distribution and using Gaussian kernels, Gaussian Process regression takes parameter uncertainty and parametric variability into consideration without using the Monte Carlo method. This dissertation makes three main contributions. First, based on the observations from commissioning projects for approximately twenty campus buildings, some of the important uncertainties and typical problems in variable air volume system (VAV) operations are identified. Second, Gaussian Process regression is used to predict building cooling and heating consumption and to evaluate the impact of parametric variability of system control related variables. Third, a method for automated fault detection that uses Gaussian Process regression to model baselines is developed. By using the uncertainty outputs from the Gaussian Process regression together with Bayes classifiers and probabilistic graphical models, the proposed method can detect whether system performance is normal or faulty at the system component level or the whole building level with a high degree of accuracy."
+  },
+  {
+   "openalex": "https://openalex.org/W3133542152",
+   "doi": "https://doi.org/10.1109/tkde.2022.3178128",
+   "title": "Generalizing to Unseen Domains: A Survey on Domain Generalization",
+   "year": 2022,
+   "date": "2022-01-01",
+   "venue": "IEEE Transactions on Knowledge and Data Engineering",
+   "type": "article",
+   "cites": 2008,
+   "abstract": "Machine learning systems generally assume that the training and testing distributions are the same. To this end, a key requirement is to develop models that can generalize to unseen distributions. Domain generalization (DG), i.e., out-of-distribution generalization, has attracted increasing interests in recent years. Domain generalization deals with a challenging setting where one or several different but related domain(s) are given, and the goal is to learn a model that can generalize to an unseen test domain. Great progress has been made in the area of domain generalization for years. This paper presents the first review of recent advances in this area. First, we provide a formal definition of domain generalization and discuss several related fields. We then thoroughly review the theories related to domain generalization and carefully analyze the theory behind generalization. We categorize recent algorithms into three classes: data manipulation, representation learning, and learning strategy, and present several popular algorithms in detail for each category. Third, we introduce the commonly used datasets, applications, and our open-sourced codebase for fair evaluation. Finally, we summarize existing literature and present some potential research topics for the future."
+  },
+  {
+   "openalex": "https://openalex.org/W2594434602",
+   "doi": "https://doi.org/10.1016/j.enbuild.2017.02.058",
+   "title": "An ensemble learning framework for anomaly detection in building energy consumption",
+   "year": 2017,
+   "date": "2017-03-10",
+   "venue": "Energy and Buildings",
+   "type": "article",
+   "cites": 280,
+   "abstract": "During building operation, a significant amount of energy is wasted due to equipment and human-related faults. To reduce waste, today's smart buildings monitor energy usage with the aim of identifying abnormal consumption behaviour and notifying the building manager to implement appropriate energy-saving procedures. To this end, this research proposes a new pattern-based anomaly classifier, the collective contextual anomaly detection using sliding window (CCAD-SW) framework. The CCAD-SW framework identifies anomalous consumption patterns using overlapping sliding windows. To enhance the anomaly detection capacity of the CCAD-SW, this research also proposes the ensemble anomaly detection (EAD) framework. The EAD is a generic framework that combines several anomaly detection classifiers using majority voting. To ensure diversity of anomaly classifiers, the EAD is implemented by combining pattern-based (e.g., CCAD-SW) and prediction-based anomaly classifiers. The research was evaluated using real-world data provided by Powersmiths, located in Brampton, Ontario, Canada. Results show that the EAD framework improved the sensitivity of the CCAD-SW by 3.6% and reduced false alarm rate by 2.7%."
+  },
+  {
+   "openalex": "https://openalex.org/W2946724317",
+   "doi": "https://doi.org/10.1109/phm-paris.2019.00054",
+   "title": "Domain Adaptive Transfer Learning for Fault Diagnosis",
+   "year": 2019,
+   "date": "2019-05-01",
+   "venue": "Prognostics and System Health Management Conference",
+   "type": "conference-paper",
+   "cites": 187,
+   "abstract": "Thanks to digitization of industrial assets in fleets, the ambitious goal of transferring fault diagnosis models from one machine to the other has raised great interest. Solving these domain adaptive transfer learning tasks has the potential to save large efforts on manually labeling data and modifying models for new machines in the same fleet. Although data-driven methods have shown great potential in fault diagnosis applications, their ability to generalize on new machines and new working conditions are limited because of their tendency to overfit to the training set in reality. One promising solution to this problem is to use domain adaptation techniques. It aims to improve model performance on the target new machine. Inspired by its successful implementation in computer vision, we introduced Domain-Adversarial Neural Networks (DANN) to our context, along with two other popular methods existing in previous fault diagnosis research. We then carefully justify the applicability of these methods in realistic fault diagnosis settings, and offer a unified experimental protocol for a fair comparison between domain adaptation methods for fault diagnosis problems."
+  },
+  {
+   "openalex": "https://openalex.org/W2971654674",
+   "doi": "https://doi.org/10.1109/access.2019.2939876",
+   "title": "Cross-Domain Fault Diagnosis Using Knowledge Transfer Strategy: A Review",
+   "year": 2019,
+   "date": "2019-01-01",
+   "venue": "IEEE Access",
+   "type": "article",
+   "cites": 225,
+   "abstract": "Data-driven fault diagnosis has been a hot topic in recent years with the development of machine learning techniques. However, the prerequisite that the training data and the test data should follow an identical distribution prevents the conventional data-driven diagnosis methods from being applied to the engineering diagnosis problems. To tackle this dilemma, cross-domain fault diagnosis using knowledge transfer strategy is becoming popular in the past five years. The diagnosis methods based on transfer learning aim to build models that can perform well on target tasks by leveraging knowledge from semantic related but distribution different source domains. This paper for the first time summarizes the state-of-art cross-domain fault diagnosis research works. The literatures are introduced from three different viewpoints: research motivations, cross-domain strategies, and application objects. In addition, the corresponding open-source fault datasets and several future directions are also presented. The survey provides readers a framework for better understanding and identifying the research status, challenges and future directions of cross-domain fault diagnosis."
+  },
+  {
+   "openalex": "https://openalex.org/W3090201332",
+   "doi": "https://doi.org/10.1109/smc42975.2020.9283002",
+   "title": "Improving generalization of deep fault detection models in the presence of mislabeled data",
+   "year": 2020,
+   "date": "2020-10-11",
+   "venue": "Conference proceedings/Conference proceedings - IEEE International Conference on Systems, Man, and Cybernetics",
+   "type": "conference-paper",
+   "cites": 2,
+   "abstract": "Mislabeled samples are ubiquitous in real-world datasets as rule-based or expert labeling is usually based on incorrect assumptions or subject to biased opinions. Neural networks can \"memorize\" these mislabeled samples and, as a result, exhibit poor generalization. This poses a critical issue in fault detection applications, where not only the training but also the validation datasets are prone to contain mislabeled samples. In this work, we propose a novel two-step framework for robust training with label noise. In the first step, we identify outliers (including the mislabeled samples) based on the update in the hypothesis space. In the second step, we propose different approaches to modifying the training data based on the identified outliers and a data augmentation technique. Contrary to previous approaches, we aim at finding a robust solution that is suitable for real-world applications, such as fault detection, where no clean, \"noise-free\" validation dataset is available. Under an approximate assumption about the upper limit of the label noise, we significantly improve the generalization ability of the model trained under massive label noise."
+  },
+  {
+   "openalex": "https://openalex.org/W4413360092",
+   "doi": "https://doi.org/10.1109/jproc.2025.3596173",
+   "title": "Federated Domain Generalization: A Survey",
+   "year": 2025,
+   "date": "2025-04-01",
+   "venue": "Proceedings of the IEEE",
+   "type": "article",
+   "cites": 132,
+   "abstract": "Machine learning (ML) typically relies on the assumption that training and testing distributions are identical and that data are centrally stored for training and testing. However, in real-world scenarios, distributions may differ significantly, and data are often distributed across different devices, organizations, or edge nodes. Consequently, it is to develop models capable of effectively generalizing across unseen distributions in data spanning various domains. In response to this challenge, there has been a surge of interest in federated domain generalization (FDG) in recent years. FDG synergizes federated learning (FL) and domain generalization (DG) techniques, facilitating collaborative model development across diverse source domains for effective generalization to unseen domains, all while maintaining data privacy. However, generalizing the federated model under domain shifts remains a complex, underexplored issue. This article provides a comprehensive survey of the latest advancements in this field. Initially, we discuss the development process from traditional ML to domain adaptation (DA) and DG, leading to FDG, as well as provide the corresponding formal definition. Subsequently, we classify recent methodologies into four distinct categories: federated domain alignment (FDAL), data manipulation (DM), learning strategies (LSs), and aggregation optimization (AO), detailing appropriate algorithms for each. We then overview commonly utilized datasets, applications, evaluations, and benchmarks. Conclusively, this survey outlines potential future research directions."
+  },
+  {
+   "openalex": "https://openalex.org/W7226041024",
+   "doi": "https://doi.org/10.1922/comdem.v3i7s.19073",
+   "title": "A Hybrid Statistical-Semantic Framework with Domain Adaptation for Cross-Project Software Fault Prediction",
+   "year": 2026,
+   "date": "2026-11-08",
+   "venue": "Computer and decision making.",
+   "type": "article",
+   "cites": 1,
+   "abstract": "Software fault prediction is essential for improving the quality, reliability, and maintainability of complex object-oriented software systems. Existing Machine Learning (ML) approaches have achieved promising results. However, limitations remain in integrating statistical and semantic software features, handling crosses-project distribution differences, and providing interpretable predictions. Therefore, this study aims to develop an intelligent ML framework for effective Cross-Project Software Fault Prediction (CPSFP). The framework was evaluated using the PROMISE Repository dataset comprising six software projects. The proposed framework integrates Chidamber and Kemerer (CK), Halstead, and McCabe software metrics with Abstract Syntax Tree (AST), Control Flow Graph (CFG), and Program Dependency Graph (PDG) representations. GraphCodeBERT and Heterogeneous Graph Transformer (HGT) are employed for semantic feature learning, while Cross-Attention Fusion combines statistical and semantic representations. SHapley Additive exPlanations (SHAP)-Guided Recursive Feature Elimination (RFE) is applied for feature selection and explainability, followed by Domain Adversarial Neural Network (DANN) for domain-adaptive fault classification. The framework was evaluated using cross-project validation and ablation analysis to assess its predictive performance and component contributions. The ablation study showed progressive improvements with the integration of the proposed components. The current experimental evaluation achieved 99.83% accuracy and 99.83% F1-score, indicating strong fault classification performance. Overall, the proposed framework effectively combines statistical, semantic, feature-fusion, explainability, and domain-adaptation techniques for CPSFP, with potential to support reliable and interpretable software quality assessment and informed decision-making across diverse object-oriented software projects."
+  },
+  {
+   "openalex": "https://openalex.org/W3073272744",
+   "doi": "https://doi.org/10.48550/arxiv.2008.08713",
+   "title": "Generalizing Fault Detection Against Domain Shifts Using Stratification-Aware Cross-Validation",
+   "year": 2020,
+   "date": "2020-08-20",
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "cites": 4,
+   "abstract": "Incipient anomalies present milder symptoms compared to severe ones, and are more difficult to detect and diagnose due to their close resemblance to normal operating conditions. The lack of incipient anomaly examples in the training data can pose severe risks to anomaly detection methods that are built upon Machine Learning (ML) techniques, because these anomalies can be easily mistaken as normal operating conditions. To address this challenge, we propose to utilize the uncertainty information available from ensemble learning to identify potential misclassified incipient anomalies. We show in this paper that ensemble learning methods can give improved performance on incipient anomalies and identify common pitfalls in these models through extensive experiments on two real-world datasets. Then, we discuss how to design more effective ensemble models for detecting incipient anomalies."
+  },
+  {
+   "openalex": "https://openalex.org/W7203727740",
+   "doi": "https://doi.org/10.48550/arxiv.2608.14666",
+   "title": "Cross-Domain Industrial Fault Detection by Causal Mechanism Monitoring",
+   "year": 2026,
+   "date": "2026-08-01",
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "cites": 0,
+   "abstract": "Unsupervised fault detection in industrial systems is dominated by reconstruction based methods that monitor individual sensor marginal distributions. This misses coupling faults, where the physical relationship between sensor groups breaks while marginal statistics remain normal. Such faults evade marginal monitoring and persist as latent failures, with direct consequences for system reliability and safety. We propose CMR-Mamba (Causal Mechanism Representation Mamba), which trains per domain Mamba state-space encoders on healthy data. A causal cross-modal predictor regularises these encoders so that the effect-channel manifold reflects the normal cause-to-effect coupling. Anomalies are scored by k-nearest-neighbour (kNN) distance on this manifold or by the mechanism residual between the observed and the causally predicted effect embedding. We evaluate CMR-Mamba on electromechanical (Paderborn bearings), hydraulic (ZeMA) and cyber-physical (SWaT) coupling-fault domains. Ablations establish two findings. First, k-NN manifold scoring, rather than the encoder family, is the dominant source of gain over reconstruction-error scoring, improving baselines by up to 0.42 AUROC and exceeding the gain from causal regularisation. Second, aggregate AUROC is saturated by easy faults that any strong method solves, so the methods separate only on the low-separability subset. There CMR-Mamba leads the evaluated baselines on Paderborn artificial defects and on SWaT stealthy attacks, which keep every sensor inside its normal range and which marginal methods detect only at chance. CMR-Mamba therefore offers an interpretable and consistently competitive approach to coupling-fault detection across mechanical, hydraulic and cyber-physical systems. Code and data are available at https://anonymous.4open.science/status/CMR_Mamba_MFD_1177."
+  },
+  {
+   "openalex": "https://openalex.org/W4405388624",
+   "doi": "https://doi.org/10.1093/jcde/qwae105",
+   "title": "Fault frequency band segmentation and domain adaptation with fault simulated signal for fault diagnosis of rolling element bearings",
+   "year": 2024,
+   "date": "2024-12-02",
+   "venue": "Journal of Computational Design and Engineering",
+   "type": "article",
+   "cites": 19,
+   "abstract": "Rolling element bearings are vital components in rotating machinery, and ensuring their reliable operation through robust fault diagnosis is crucial in industrial settings. Deep-learning-based methods have shown promise due to their high accuracy, but they often face challenges in data acquisition and domain shifts between training and inference datasets. Existing approaches have attempted to address these issues through signal generation using simulation models, deep learning techniques, and domain adaptation under partial label scenarios. However, generated signals often lack plausibility or physical fidelity, and partial domain adaptation approaches frequently fail to incorporate fault-related knowledge. This paper proposes a novel method combining fault frequency band segmentation domain adaptation (FBSDA) with fault-added and uncertainty-aware signal simulation. To address the scarcity of fault-labeled signals, the proposed simulation method accounts for uncertainties in the signal acquisition environment by leveraging statistical cyclo-stationary modeling of fault bearings. By adding simulated fault signals to normal signals that contain system characteristic information, the generated signals more accurately reflect real-site environments and physical principles. Additionally, the FBSDA method, a domain adaptation approach focusing on segmenting fault-related information within the fault frequency band, is introduced. To enhance the focus on the fault frequency band, FBSDA employs a fault frequency segmentation module and a loss function inspired by image segmentation techniques. This method effectively reduces the domain gap between source and target domains and simultaneously captures fault information common to both simulated and real signals. The proposed method is validated through two case studies using different testbed datasets under various operating conditions. The results demonstrate the superior performance of our approach in handling domain shifts and different levels of partial labels, outperforming existing signal generation and domain adaptation methods. The proposed method also has a practical value in that the target bearing system can be diagnosed using physical knowledge even in the absence of fault signals that are difficult to obtain."
+  },
+  {
+   "openalex": "https://openalex.org/W4412391362",
+   "doi": "https://doi.org/10.3390/s25144383",
+   "title": "Source-Free Domain Adaptation Framework for Rotary Machine Fault Diagnosis",
+   "year": 2025,
+   "date": "2025-07-13",
+   "venue": "Sensors",
+   "type": "article",
+   "cites": 19,
+   "abstract": "Intelligent fault diagnosis for rotary machinery often suffers performance degradation under domain shifts between training and deployment environments. To address this, we propose a robust fault diagnosis framework incorporating three key components: (1) an order-frequency-based preprocessing method to normalize rotational variations, (2) a U-Net variational autoencoder (U-NetVAE) to enhance adaptation through reconstruction learning, and (3) a test-time training (TTT) strategy enabling unsupervised target domain adaptation without access to source data. Since existing works rarely evaluate under true domain shift conditions, we first construct a unified cross-domain benchmark by integrating four public datasets with consistent class and sensor settings. The experimental results show that our method outperforms conventional machine learning and deep learning models in both F1-score and recall across domains. Notably, our approach maintains an F1-score of 0.47 and recall of 0.51 in the target domain, outperforming others under identical conditions. Ablation studies further confirm the contribution of each component to adaptation performance. This study highlights the effectiveness of combining mechanical priors, self-supervised learning, and lightweight adaptation strategies for robust fault diagnosis in the practical domain."
+  },
+  {
+   "openalex": "https://openalex.org/W4402378055",
+   "doi": "https://doi.org/10.1007/s10462-024-10922-z",
+   "title": "Domain generalization through meta-learning: a survey",
+   "year": 2024,
+   "date": "2024-09-09",
+   "venue": "Artificial Intelligence Review",
+   "type": "article",
+   "cites": 169,
+   "abstract": "Deep neural networks (DNNs) have revolutionized artificial intelligence but often lack performance when faced with out-of-distribution data, a common scenario due to the inevitable domain shifts in real-world applications. This limitation stems from the common assumption that training and testing data share the same distribution-an assumption frequently violated in practice. Despite their effectiveness with large amounts of data and computational power, DNNs struggle with distributional shifts and limited labeled data, leading to overfitting and poor generalization across various tasks and domains. Meta-learning presents a promising approach by employing algorithms that acquire transferable knowledge across various tasks for fast adaptation, eliminating the need to learn each task from scratch. This survey paper delves into the realm of meta-learning with a focus on its contribution to domain generalization. We first clarify the concept of meta-learning for domain generalization and introduce a novel taxonomy based on the feature extraction strategy and the classifier learning methodology, offering a granular view of methodologies. Additionally, we present a decision graph to assist readers in navigating the taxonomy based on data availability and domain shifts, enabling them to select and develop a proper model tailored to their specific problem requirements. Through an exhaustive review of existing methods and underlying theories, we map out the fundamentals of the field. Our survey provides practical insights and an informed discussion on promising research directions."
+  },
+  {
+   "openalex": "https://openalex.org/W4379928303",
+   "doi": "https://doi.org/10.1016/j.eswa.2023.120696",
+   "title": "Generalized MAML for few-shot cross-domain fault diagnosis of bearing driven by heterogeneous signals",
+   "year": 2023,
+   "date": "2023-06-08",
+   "venue": "Expert Systems with Applications",
+   "type": "article",
+   "cites": 258,
+   "abstract": ""
+  },
+  {
+   "openalex": "https://openalex.org/W4304080772",
+   "doi": "https://doi.org/10.1016/j.ress.2022.108857",
+   "title": "Controlled generation of unseen faults for Partial and Open-Partial domain adaptation",
+   "year": 2022,
+   "date": "2022-10-10",
+   "venue": "Reliability Engineering & System Safety",
+   "type": "article",
+   "cites": 58,
+   "abstract": "New operating conditions can result in a significant performance drop of fault diagnostics models due to the domain shift between the training and the testing data distributions. While several domain adaptation approaches have been proposed to overcome such domain shifts, their application is limited if the fault classes represented in the two domains are not the same. To enable a better transferability between two different domains, particularly in setups where only the healthy data class is shared between the two domains, we propose a new framework for Partial and Open-Partial domain adaptation based on generating distinct fault signatures with a Wasserstein GAN. The main contribution of the proposed framework is the controlled data generation with two characteristics. Firstly, previously unobserved target faults can be generated by having only access to healthy target and faulty source samples. Secondly, distinct fault types and severity levels can be generated precisely. The proposed method is especially suited for extreme domain adaption settings that are particularly relevant in the context of complex and safety-critical systems, where only one class is shared between the two domains. We evaluate the proposed framework on Partial as well as Open-Partial domain adaptation tasks on two bearing fault diagnostics case studies. In the evaluated case studies the proposed methodology demonstrated superior results compared to other methods, particularly in the presence of large domain gaps. The experiments conducted in different label space settings (Partial and Open-Partial) showcase the versatility of the proposed framework."
+  },
+  {
+   "openalex": "https://openalex.org/W4403538337",
+   "doi": "https://doi.org/10.1016/j.ress.2024.110560",
+   "title": "Self-adaptive fault diagnosis for unseen working conditions based on digital twins and domain generalization",
+   "year": 2024,
+   "date": "2024-10-18",
+   "venue": "Reliability Engineering & System Safety",
+   "type": "article",
+   "cites": 57,
+   "abstract": "In recent years, intelligent fault diagnosis based on domain adaptation has been used to address domain shifts in cyber\u2013physical systems; however, the need for acquiring target data sufficiently limits their applicability to unseen working conditions. To overcome such limitations, domain generalization techniques have been introduced to enhance the capacity of fault diagnostic models to operate under unseen working conditions. Nevertheless, existing approaches assume access to extensive labeled training data from various source domains, posing challenges in real-world engineering scenarios due to resource constraints. Moreover, the absence of a mechanism for updating diagnostic models over time calls for the exploration of self-adaptive generalized diagnosis models that are capable of autonomous reconfiguration in response to new unseen working conditions. In such a context, this paper proposes a self-adaptive fault diagnosis system that combines several paradigms, namely Monitor-Analyze-Plan-Execute over a shared Knowledge (MAPE-K), Domain Generalization Network Models (DGNMs), and Digital Twins (DT). The MAPE-K loop enables run-time adaptation to dynamic industrial environments without human intervention. To address the scarcity of labeled training data, digital twins are used to generate supplementary data and continuously tune parameters to reflect the dynamics of new unseen working conditions. DGNM incorporates adversarial learning and a domain-based discrepancy metric to enhance feature diversity and generalization. The introduction of multi-domain data augmentation enhances feature diversity and facilitates learning correlations among multiple domains, ultimately improving the generalization of feature representations. The proposed fault diagnosis system has been evaluated on three publicly available rotating machinery datasets to demonstrate its higher performance in cross-work operation and cross-machine tasks compared to other state-of-the-art methods."
+  },
+  {
+   "openalex": "https://openalex.org/W4407084193",
+   "doi": "https://doi.org/10.1016/j.aei.2025.103140",
+   "title": "Dual adversarial and contrastive network for single-source domain generalization in fault diagnosis",
+   "year": 2025,
+   "date": "2025-02-03",
+   "venue": "Advanced Engineering Informatics",
+   "type": "article",
+   "cites": 41,
+   "abstract": ""
+  }
+ ]
+}
