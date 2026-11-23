@@ -9,7 +9,12 @@ STEP 0: journal landscape and 72-day check (in progress)
   Springer Nature, Taylor & Francis, Wiley/Hindawi, IET. Elsevier/IEEE/SAGE/OUP = UNVERIFIED (risk).
 - Compute is CPU-only, so the topic must be feasible with classical ML / small neural nets on public data.
 
+- OpenAlex: cursor paging needs API key; page= paging works. 2212 journals (cit2y>4) -> 814 after scope keyword
+  filter (`candidates_filtered.csv`).
+- Springer journal pages (link.springer.com/journal/<id>) show JCR IF + median first-decision days when rendered
+  with headless Chromium (`scripts/fetch_page.js`, run with NODE_PATH=$(npm root -g)). T&F/Wiley pages 403.
+
 ## NEXT ACTION
-1. Build candidate journal list from OpenAlex (`journal_selection/scripts/oa_list.py`; the `topics`
-   select or `works_count` filter gave HTTP 401, so simplify the query).
-2. Compute received-to-accepted stats per ISSN from Crossref -> acceptance_time_evidence.csv.
+1. `scripts/acceptance_scan.py candidates_filtered.csv` (resumable; appends to acceptance_scan_summary.csv).
+   If it was interrupted, rerun it from journal_selection/; it skips finished ISSNs.
+2. Filter: median well < 72 and p75 <= 72, n_dated >= 20; check scope/IF; pick journal.

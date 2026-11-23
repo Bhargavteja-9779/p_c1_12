@@ -1,0 +1,57 @@
+pub,journal,issn_l,cit2y,n_sampled,n_dated,median,p75,p90,max
+SpringerNature,Signal Transduction and Targeted Therapy,2059-3635,63.21,100,98,200.0,252.25,311.4,793
+SpringerNature,Electrochemical Energy Reviews,2520-8136,53.55,53,51,209.0,262.0,305.0,440
+SpringerNature,Smart Learning Environments,2196-7091,53.34,92,89,201.0,274.0,313.40000000000003,555
+SpringerNature,Vicinagearth.,3005-060X,40.44,35,34,98.0,138.75,209.6,550
+SpringerNature,Nature Reviews Clinical Oncology,1759-4774,40.01,100,0,,,,
+SpringerNature,Nature Energy,2058-7546,38.37,100,53,278.0,374.0,594.4000000000002,1603
+SpringerNature,Nature Reviews Earth & Environment,2662-138X,36.84,100,0,,,,
+SpringerNature,Nature Machine Intelligence,2522-5839,35.95,100,70,241.0,288.75,383.50000000000006,684
+SpringerNature,Artificial Intelligence Review,0269-2821,34.61,0,0,,,,
+SpringerNature,Environmental Chemistry Letters,1610-3653,33.47,83,69,192.0,261.0,303.6,486
+Wiley,Reviews of Geophysics,0096-1043,32.45,0,0,,,,
+SpringerNature,Nature Medicine,1078-8956,31.67,100,48,162.0,236.0,352.4000000000001,454
+SpringerNature,npj Digital Medicine,2398-6352,27.75,100,99,178.0,228.0,304.00000000000006,485
+SpringerNature,Military Medical Research,2054-9369,26.1,100,44,150.0,223.5,277.6000000000001,360
+SpringerNature,Nature Sustainability,2398-9629,25.81,100,75,290.0,391.5,556.0000000000003,875
+Wiley,Wiley Interdisciplinary Reviews Data Mining and Knowledge Discovery,1942-4795,25.49,100,93,250.0,332.0,470.7999999999999,1131
+SpringerNature,Nature Reviews Bioengineering,2731-6092,23.75,100,0,,,,
+SpringerNature,Journal Of Big Data,2196-1115,22.84,100,97,235.0,355.0,466.20000000000005,831
+SpringerNature,npj Materials Sustainability,2948-1775,22.7,73,69,129.0,200.0,241.40000000000003,382
+SpringerNature,Discover Artificial Intelligence,2731-0809,21.29,100,100,133.5,165.0,232.9000000000001,405
+SpringerNature,Nature Biomedical Engineering,2157-846X,21.28,100,66,474.0,600.75,693.5,938
+SpringerNature,Reviews in Environmental Science and Bio/Technology,1569-1705,20.74,73,69,74.0,111.0,178.60000000000002,345
+Wiley,Advanced Energy Materials,1614-6832,20.63,100,62,95.0,119.5,149.2,260
+SpringerNature,Archives of Computational Methods in Engineering,1134-3060,20.46,100,99,121.0,184.0,328.6,666
+Wiley,Journal of Renewable Energy,2314-4386,20.0,0,0,,,,
+SpringerNature,Experimental & Molecular Medicine,1226-3613,19.94,0,0,,,,
+SpringerNature,Business & Information Systems Engineering,1867-0202,19.21,81,56,276.0,369.25,549.0,1294
+SpringerNature,International Journal of Artificial Intelligence in Education,1560-4292,18.63,100,0,,,,
+SpringerNature,Living Reviews in Computational Astrophysics,2365-0524,18.5,11,11,181.0,318.5,485.0,727
+SpringerNature,Current Climate Change Reports,2198-6061,18.45,9,2,53.5,79.75,95.5,106
+TaylorFrancis,Journal of Information Technology Case and Application Research,1522-8053,18.44,46,0,,,,
+TaylorFrancis,British Journal of Biomedical Science,0967-4845,18.42,0,0,,,,
+Wiley,Business Strategy and the Environment,0964-4733,18.28,100,96,216.0,280.0,388.5,1009
+SpringerNature,Food Engineering Reviews,1866-7910,18.25,60,60,147.5,178.75,203.90000000000003,468
+SpringerNature,International Journal of Computer Vision,0920-5691,17.98,100,100,291.0,413.25,553.6000000000004,884
+SpringerNature,Nature Water,2731-6084,17.87,100,56,195.5,272.25,367.5,607
+SpringerNature,Nature Reviews Electrical Engineering,2948-1201,17.71,100,0,,,,
+Wiley,Comprehensive Reviews in Food Science and Food Safety,1541-4337,17.24,100,93,133.0,172.0,202.0,304
+Wiley,Carbon Energy,2637-9368,17.21,100,84,98.5,142.5,177.10000000000002,277
+SpringerNature,Journal of Computers in Education,2197-9995,17.09,52,51,209.0,323.0,453.0,752
+SpringerNature,Journal of Biomedical Science,1021-7770,17.08,0,0,,,,
+SpringerNature,Protection and Control of Modern Power Systems,2367-0983,17.08,100,0,,,,
+SpringerNature,Brain Informatics,2198-4026,17.07,81,81,125.0,181.0,245.0,412
+SpringerNature,Machine Intelligence Research,1476-8186,16.27,0,0,,,,
+SpringerNature,Education and Information Technologies,1360-2357,16.06,100,96,217.0,320.75,414.0,622
+SpringerNature,npj Mental Health Research,2731-4251,16.0,100,99,221.0,296.5,390.4000000000001,671
+SpringerNature,Visual Intelligence,2731-9008,15.97,54,53,138.0,174.0,220.8,306
+SpringerNature,Nature Climate Change,1758-678X,15.66,100,44,253.5,334.0,433.80000000000007,686
+TaylorFrancis,Journal of Digital Learning in Teacher Education,2153-2974,15.6,26,21,142.0,200.0,243.0,488
+SpringerNature,npj Computational Materials,2057-3960,15.59,100,97,130.0,171.0,244.80000000000004,434
+Wiley,EcoEnergy,2835-9380,15.55,100,98,134.5,178.5,202.7,318
+SpringerNature,Sustainable Earth Reviews,2520-8748,15.53,24,23,188.0,244.5,374.80000000000007,444
+TaylorFrancis,Journal of Toxicology and Environmental Health Part B,1093-7404,15.4,30,0,,,,
+SpringerNature,Nature Geoscience,1752-0894,15.23,100,61,311.0,429.0,565.0,882
+Wiley,Journal of Energy,2314-615X,15.11,0,0,,,,
+Wiley,Corporate Social Responsibility and Environmental Management,1535-3958,15.05,100,99,174.0,268.0,368.20000000000005,896
