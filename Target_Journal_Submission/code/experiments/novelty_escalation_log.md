@@ -110,3 +110,19 @@ Pre-registered hypotheses:
       >= 15 percentage points vs fleet conformal at B = 2, with <= 1 lost detection. Falsified otherwise.
  H3d (F12): under-delivery fusion adds >= 2 detected faults at the realised <= 2 FA/sub-yr point over F10
       alone. Falsified otherwise.
+
+## Round 3 results (2026-11-23, M1 development; results/round3_*.csv, src/evaluation/daily.py)
+Ideas counted so far: 7 + #8 daily unit, #9 fleet conformal budget, #10 adaptive conformal, #11 under-delivery
+fusion = 11. (Round-2 numbers reproduced exactly on the rebuilt machine: 0.321 recall at 1.48 FA/sub-yr.)
+- H3a FALSIFIED: daily unit best recall at <= 2 FA/sub-yr = 0.286 (10-min counter 0.321); at recall 0.214 it
+  needs 1.56 FA/sub-yr vs 0.40 for the counter (worse, not better).
+- H3b FALSIFIED (narrowly): realised FA/sub-yr with cross-fitted fleet conformal thresholds: B=1 -> 0.79,
+  B=2 -> 1.33, B=4 -> 1.96 (0.49 B, just below the 0.5 B bound). Budgets are respected (never exceeded), but
+  conservative because consecutive alarm days merge into one episode.
+- H3c FALSIFIED: adaptive thresholds reduce top-5 share only 0.87 -> 0.83 at B=2 and lose 1 detection
+  (0.179 -> 0.143) while halving false alarms.
+- H3d FALSIFIED: under-delivery fusion at <= 2 FA/sub-yr gives recall 0.214 (vs 0.286 for exec alone, daily
+  unit). Under-delivery alone: 0.107 at 0.48 FA/sub-yr.
+- Most important observation: false alarms are extremely concentrated. At budgets <= 1/sub-yr, 5 of 35
+  substations produce 90-100% of SRCR false alarms. Next step: check whether these are unlabelled persistent
+  anomalies (label noise in 'normal' time) and whether AE flags the same substations.
