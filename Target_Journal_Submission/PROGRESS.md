@@ -67,7 +67,7 @@ N7 (transparent setpoint rule beats deep NBM; learned model only valuable for co
 2. Freeze candidates C1 (rule), C2 (rule OR AE), plus all baselines at M1-chosen operating points in
    protocol.md amendments; compute AE/baselines on M2 (per-substation, online); single locked M2 evaluation;
    pooled M1+M2 inference incl. curve-AUC endpoint.
-3. Check M2 has setpoint signals for the rule (columns only) BEFORE freezing.
+3. DONE: all 58 M2 substations have the HC1 setpoint loop (DHW sup 14, DHW sto 13) -> rule applicable.
 4. Scorecard + Reviewer Number Zero with the pivoted story; then paper drafting (STEP per BRIEF).
 5. Optional round 5: residualised AE (F16) and LBNL AHU second domain (generality).
 
