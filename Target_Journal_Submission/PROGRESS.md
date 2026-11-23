@@ -59,14 +59,28 @@ STEP 0: journal landscape and 72-day check (in progress)
 ## NEXT ACTION
 State: rounds 0-4 + seeds 0-9 on M1 DONE. Candidates FROZEN (protocol.md Amendment A1): C1 rule, C2 rule OR AE.
 M1 seeds: C2 0.382+-0.017 vs AE 0.183+-0.045 vs rule 0.321 at B=2.
-1. M2 scores computing (job list /tmp/claude-0/m2jobs.txt run via xargs -P4; logs results/logs/regen/m2_*;
+1. M2 scores computing (job list code/scripts/m2_jobs.txt (run from code/: cat scripts/m2_jobs.txt | xargs -P 4 -I{} sh -c "python3 {}") run via xargs -P4; logs results/logs/regen/m2_*;
    if lost on a new machine, regenerate: run_online_method.py {rule,sigma3,loop3s,iforest} 2; qnbm/ae_cond 2;
    ae 2 k/3 seed for seeds 0-9; run_srcr_transfer.py). Check results/scores/<m>/m2 has 58 files each.
 2. Then run scripts/m2_eval.py ONCE (locked test) -> results/m2/. Log it in the M2 access log.
 3. Write m2_curves.py (curve-AUC endpoint, descriptive), error analysis by fault label.
 4. Scorecard + Reviewer Number Zero (pivoted story) -> paper drafting.
 
-## Resume notes (saved 2026-11-23 before account switch)
+## Resume notes (saved 2026-11-23, account switch #2)
+- Scores/data are NOT in git. On a new machine, from Target_Journal_Submission/code:
+  1. pip install scikit-learn scipy lightgbm pyarrow tabulate pypdf matplotlib pandas;
+     pip install torch --index-url https://download.pytorch.org/whl/cpu
+  2. bash scripts/download_data.sh && python3 scripts/build_cache.py
+  3. M1 scores (needed by m2_eval): run_online_method.py {rule,sigma3,loop3s,iforest,qnbm,ae,ae_cond,underdel} 1;
+     ae 1 k/4 SEED for seeds 1-9; run_srcr_components.py 0; round2_variants.py srcr_comp.
+     (M1 tables results/m1_table*.csv, m1_curves*.csv, round4/*.csv ARE in git, so op points need no recompute.)
+  4. M2 scores (frozen methods): see job list in NEXT ACTION item 1; run 4 in parallel (xargs -P 4).
+     Session 2 ended with M2 partially done (rule, loop3s complete) - all M2 must be recomputed on a new machine.
+  5. Then scripts/m2_eval.py ONCE, scripts/m2_curves.py.
+- Run time on 4 CPU cores: M1 regen ~2 h, AE seeds M1 ~2 h, M2 all ~3 h.
+- Branches: work pushed to both claude/sweet-bell-5gq62v and claude/wizardly-babbage-182x46 (identical).
+
+## Older resume notes (session 1)
 - Results/scores and data cache are NOT in git (large). On a new machine: run
   `bash Target_Journal_Submission/code/scripts/download_data.sh`, then `python3 code/scripts/build_cache.py`,
   then regenerate scores: run_online_method.py ae 1 / ae_cond 1, run_srcr_cv.py 1, run_online_method.py intent 1 /
