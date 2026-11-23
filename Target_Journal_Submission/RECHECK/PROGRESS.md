@@ -31,7 +31,7 @@ Branch: claude/peaceful-planck-2kznjo. Started 2026-11-23.
 - Stage 4 round 1 pre-registered (stage4/preregistration_E.md). H-E4 SUPPORTED: on M2 only 3/33 operating
   points beat random alarms at the same FA rate (code/results/chance_level.csv); M1 27/33 (in-sample).
 - Stage 2 story written (stage2_story.md). Stage 6.1 references re-verified (stage6/); EEMUA 191 dropped.
-- Stage 3 hostile prior-art search delegated (writes stage3/novelty_map_v2.csv, stage3/prior_art_report.md).
+- Stage 3 DONE: stage3/novelty_map_v2.csv (135 rows), prior_art_report.md, close_calls_verified.md (2 close calls verified; claims narrowed).
 - Stage 1 alt-journal scan (stage1/multi_journal_dates.py, 20 Elsevier journals) running: Results in Engineering
   median 93 / p75 105 (n=25), Smart Energy 127.5 / 250 (n=10): both FAIL.
 
