@@ -73,6 +73,9 @@ STEP 2-3: method fixed (factorial framing); M1 rebuild + seeds, then locked M2 e
     title pattern "[...] for [task] in district heating substations"; abstract ~230 words, single paragraph
   * Reviewer-Zero: "simpler method works" is answered head-on (it is the finding), not hidden
 
+- USER 2026-11-23: code available ON REQUEST (not public), no funding, no competing interests ->
+  manuscript/declarations.md. The repo still gets README + run_all.py + tests (for reviewers on request).
+
 ## NEXT ACTION
 1. Wait/collect M1 heavy baselines (ae_comfort, ae_cond, iforest, qnbm; logs results/logs/b_*.log; rerun
    `python3 scripts/run_online_method.py <name> 1` if fewer than 35 files in results/scores/<name>/m1).
