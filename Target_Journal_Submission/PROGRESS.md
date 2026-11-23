@@ -61,7 +61,7 @@ STEP 0: journal landscape and 72-day check (in progress)
 - New machine again: deps + data + cache rebuilt. ALL M1 + M2 score jobs (94) launched in one queue:
   code/results/logs/regen/jobs_s3.txt via runall.sh (xargs -P4); per-job logs results/logs/regen/<md5>.log
   ending in 'EXIT <code>'; file results/logs/regen/ALLDONE appears when the queue finishes.
-  If the machine is lost: rerun deps/data/cache steps, then `nohup bash results/logs/regen/runall.sh &`
+  If the machine is lost: rerun deps/data/cache steps, then `nohup bash code/scripts/runall.sh &` (job list code/scripts/jobs_s3.txt)
   (existing score files are skipped).
 
 ## NEXT ACTION
