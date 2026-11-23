@@ -849,5 +849,100 @@
   "doi": "10.46855/energy-proceedings-12258",
   "crossref": "yes",
   "cr_title": "Evaluation of an Integrated Fault Detection and Compensation for Building-Level Radiator Systems in District Heating"
+ },
+ "10.1016/j.egyai.2026.100824": {
+  "key": "10.1016/j.egyai.2026.100824",
+  "title": "From lab to practice: Towards a substation-invariant self-supervised transformer for low-label fault detection in district heating",
+  "year": 2026,
+  "venue": "Energy and AI",
+  "abstract": "Automated Fault Detection and Diagnosis (FDD) in District Heating (DH) is essential for reducing return temperatures, improving operational efficiency, and supporting the transition to low-temperature, low-carbon integrated energy systems. Practical deployment remains difficult because labelled fault data are scarce and heterogeneous across domains, while unlabelled operational data are abundant, creating a practical mismatch. To address this, we propose a Self-supervised Time Series Transformer (STST) for low-label FDD using routinely available primary-side measurements. We evaluate the method on six datasets spanning laboratory fault emulations, simulation, and real-world DH networks. The results show that primary-side temperatures contain strong fault-discriminative information, while flow measurements add sensitivity to hydraulically driven faults. The proposed method performs competitively in scarce-label and heterogeneous-field settings, achieving F 1 values between 0.77 and 0.98. Cross-domain experiments indicate that fault-relevant structure is transferable across substations within the same network, although transfer remains asymmetric across networks. Overall, the results suggest that self-supervised pre-training and regularised fine-tuning can improve transformer-based DH fault detection under stricter field conditions, while CNN-based and hybrid baselines remain highly competitive in cleaner or more separable regimes. Practical deployment across new networks, therefore, still requires attention to source\u2013target compatibility, local validation, and remaining domain shift.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1016/j.egyai.2026.100824",
+  "crossref": "yes",
+  "cr_title": "From lab to practice: Towards a substation-invariant self-supervised transformer for low-label fault detection in district heating"
+ },
+ "10.1631/jzus.a2600093": {
+  "key": "10.1631/jzus.a2600093",
+  "title": "Integrating artificial intelligence in the lifecycle evolution of district heating networks: challenges and opportunities",
+  "year": 2026,
+  "venue": "Journal of Zhejiang University. Science A",
+  "abstract": "The evolution of next-generation district heating networks toward higher efficiency and sustainability is constrained by persistent challenges in supply\u2013demand coordination and lifecycle optimization. This paper provides a comprehensive review of artificial intelligence (AI) integration across four key lifecycle stages of heating networks: planning and design, construction and renewal, operation and control, as well as maintenance and fault diagnosis. Critical research gaps are identified, including application fragmentation and persistent data silos. The literature has demonstrated that AI-based approaches can deliver significant performance improvements across multiple lifecycle stages. In the planning phase, AI can improve design computational efficiency, in some cases by up to an order of magnitude. In the construction phase, AI-enhanced management has been shown to accelerate project timelines while reducing costs. For operational control, deep learning models can reduce thermal load forecasting errors by more than half. In the maintenance phase, AI enables multiday early fault warnings with localization accuracies exceeding 95% in representative studies. To address the limitations of fragmented applications, a digital thread framework is proposed to enable cross-lifecycle data continuity and integration of decision-making across engineering phase. Finally, future research directions are outlined, emphasizing adaptive AI frameworks aligned with urban evolution, the integration of digital twins with intelligent optimization agents, and the development of interpretable and transferable AI models.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1631/jzus.a2600093",
+  "crossref": "yes",
+  "cr_title": "Integrating artificial intelligence in the lifecycle evolution of district heating networks: challenges and opportunities"
+ },
+ "2610.01842": {
+  "key": "2610.01842",
+  "title": "On the Divergence of Accuracy and Mechanism Consistency in Time Series World Models",
+  "year": "2026",
+  "venue": "arXiv",
+  "abstract": "A time series world model (TSWM) predicts a controlled system's state from its observed history and planned actions and exogenous inputs. Current approaches build forecasters with actions as covariates, trained and evaluated on prediction error under the executed plan. Yet world models compare unexecuted plans, but their responses to changed plans remain untested. We ask which design choices matter and whether accurate forecasters respond to changed plans as real systems do. We address both with a formalization and benchmark. The formalization separates state, actions and exogenous inputs, distinguishes continuous, mode and event actions, and introduces mechanism consistency, a metric built on declared action-state relations with known directions, such as a vasopressor raising blood pressure: it checks whether shifting an action moves the forecast in the declared direction. The benchmark consolidates eight public datasets with real actions from engineered infrastructure and clinical care, varying prediction space, plan fusion and plan encoding across seven backbones and five seeds. First, a frozen latent prediction space lowers MAE by 9.9% over observation space and gated output fusion lowers it by 12.7% over input concatenation on average, with both improving all eight datasets; temporal plan encoding changes average MAE by at most 2.2%. Second, prediction error and mechanism consistency diverge: the lowest-error configuration is at or below chance in consistency on four of five datasets with declared mechanisms, and no design choice avoids this. Finally, directional supervision, a loss penalizing the wrong-signed part of the response to a shifted action, significantly raises consistency on penalized mechanisms with no change in MAE. Together they give TSWMs a recipe: a frozen latent space and output-side fusion for accuracy, and a training objective for mechanism consistency.",
+  "abs_src": "arXiv API",
+  "doi": "10.48550/arXiv.2610.01842",
+  "crossref": "404"
+ },
+ "2610.05409": {
+  "key": "2610.05409",
+  "title": "BeliefGraph-JEPA: Structured Latent World Models for Action-Conditioned Time Series",
+  "year": "2026",
+  "venue": "arXiv",
+  "abstract": "Action-conditioned time-series forecasting requires accounting for how future actions and exogenous forcings influence multiple targets through partially observed effects with different delays and persistence. Direct conditioning leaves the evolution and target-specific influence of these effects implicit in the predictor, while static relational graphs specify connections without tracking evolving effects. This motivates representing future-driver influence through structured latent states that evolve over the forecast horizon and route information to individual targets. We introduce BeliefGraph-JEPA, a structured latent world model that factorizes driver influence into typed latent-effect states. These states are rolled forward under future drivers and routed through a graph to target-specific nodes, forming the predictive base of a joint-embedding predictive architecture. A capacity-controlled residual supplements this base with direct driver information. On four multi-target clinical, agricultural, environmental, and industrial systems, the framework outperforms a range of pretrained and supervised known-future-covariate baselines. Matched controls isolate latent dynamics, future rollout, graph routing, and residual capacity; future rollout and graph-first residual routing improve forecasting across all four systems.",
+  "abs_src": "arXiv API",
+  "doi": "10.48550/arXiv.2610.05409",
+  "crossref": "404"
+ },
+ "10.1016/j.egyai.2026.100959": {
+  "key": "10.1016/j.egyai.2026.100959",
+  "title": "Time-series foundation models for energy infrastructure: Evidence and requirements for digital-twin-grade integration",
+  "year": 2026,
+  "venue": "Energy and AI",
+  "abstract": "Time-series foundation models promise reusable forecasting across heterogeneous energy systems, but their readiness for operational digital twins remains unclear. This structured critical review evaluates that gap through a documented literature search and targeted follow-up completed on 28 September 2026. Five initial web queries and three subsequently added queries returned 164 records; screening and targeted follow-up yielded a core evidence corpus of 42 studies, complemented by selectively sampled contextual literature on operational requirements. Study-level extraction distinguishes direct energy evidence, transferred enabling evidence and proposed integration functions, while a qualitative maturity assessment links each judgement to supporting studies and limitations. The evidence shows conditional forecasting benefits rather than universal superiority: a district-heating study reports annual normalized errors of 12.48% for a pretrained model and 14.57% for a task-specific transformer under observed future weather, whereas an electricity-price benchmark finds no foundation model statistically superior to its seasonal decomposition baseline overall. Recent studies also demonstrate building classification, graph-conditioned prediction and physics-informed adaptation. However, the strongest evidence remains retrospective and forecasting-focused; reliable fault isolation, maintenance benefit and controlled prospective operational improvement are not yet established. To translate these gaps into an actionable evaluation framework, a worked district-heating workflow specifies forecast-origin information, local calibration, physical simulation, abstention and prospective consequence assessment. Digital-twin-grade integration is therefore framed as a system-level assessment requiring locally verified uncertainty, leakage-aware evaluation and governed operation, rather than as an intrinsic property of a pretrained checkpoint.",
+  "abs_src": "OpenAlex",
+  "doi": "10.1016/j.egyai.2026.100959",
+  "crossref": "yes",
+  "cr_title": "Time-series foundation models for energy infrastructure: Evidence and requirements for digital-twin-grade integration"
+ },
+ "https://openalex.org/W7162615597": {
+  "key": "https://openalex.org/W7162615597",
+  "title": "Role of artificial intelligence in improving the operation of district heating systems in Finland",
+  "year": 2026,
+  "venue": "LUTPub (LUT University)",
+  "abstract": "District heating (DH) systems play an important role in providing efficient heat supply for residential and industrial buildings, particularly in Finland because of its cold climate zone. With increasing digitalization of energy systems, operational data from DH networks enables the development of data-driven monitoring methods for improving system reliability and anomaly detection. This thesis investigates the use of Artificial Intelligence (AI)-based predictive models for anomaly detection in DH systems. Particularly, linear regression and decision tree models are applied to predict system behavior using operational variables. Anomalies are detected using Shewhart Statistical Process Control (SPC) charts applied to residual signals between measured and predicted values. The proposed approach is also compared with a traditional threshold-based anomaly detection method. The case study is conducted using operational time-series data from the PreDist dataset obtained from a German district heating operator. The results show that both machine learning models were capable of detecting anomalies in DH operation, with the decision tree model detecting a larger number of anomaly samples and the linear regression model producing fewer false alarms compared to the traditional model. Overall, the study demonstrates the potential of AI-based methods for supporting operational monitoring in DH systems.",
+  "abs_src": "OpenAlex",
+  "doi": ""
+ },
+ "10.1007/978-3-032-29033-5_2": {
+  "key": "10.1007/978-3-032-29033-5_2",
+  "title": "Beyond a Single Machine: AI-Based Condition Monitoring for Fleets",
+  "year": 2026,
+  "venue": "Mechanisms and machine science",
+  "abstract": "",
+  "abs_src": "OpenAlex",
+  "doi": "10.1007/978-3-032-29033-5_2",
+  "crossref": "yes",
+  "cr_title": "Beyond a\u00a0Single Machine: AI-Based Condition Monitoring for\u00a0Fleets"
+ },
+ "10.3390/s26175585": {
+  "key": "10.3390/s26175585",
+  "title": "Identifiability-Aware, Cost-Aware Triage of Physical Faults and Measurement-Integrity Anomalies in Energy Cyber-Physical Systems",
+  "year": 2026,
+  "venue": "Sensors",
+  "abstract": "After an anomaly is detected in an energy cyber-physical system, operators must decide whether to respond as if the process has physically failed or as if the measurements have lost integrity. These causes can require different actions, yet they may produce similar telemetry. We present a detection-gated triage framework that first applies a fixed canonical-variate detector and then uses nine physical-consistency features to distinguish physical process faults from measurement-integrity anomalies. Evaluations on the Tennessee Eastman Process and a wind-farm simulator yielded cause-attribution AUCs of 0.873 and 0.895 and end-to-end balanced accuracies of 0.805 and 0.792, respectively. Under the specified response-cost matrices, the policy reduced expected misattribution cost by 18.4% and 28.9% relative to blanket responses. Tests on real datasets show that ranking can transfer, but operating thresholds require plant-specific calibration. Exact matched sensor-fault/attack pairs give chance-level discrimination, demonstrating a fundamental boundary: measurement-only data cannot identify different causes that generate the same observations. The framework is therefore intended as an auditable triage aid, with ambiguous or out-of-distribution cases routed to review rather than treated as confirmed cyber attribution.",
+  "abs_src": "OpenAlex",
+  "doi": "10.3390/s26175585",
+  "crossref": "yes",
+  "cr_title": "Identifiability-Aware, Cost-Aware Triage of Physical Faults and Measurement-Integrity Anomalies in Energy Cyber-Physical Systems"
+ },
+ "10.3390/en19153593": {
+  "key": "10.3390/en19153593",
+  "title": "EVENT: A Modular, Semi-Automated Methodology for Anomaly Detection and Event Characterization in Thermal Power Plant Operational Data with an Explicit Separation of the Analyst and Expert Roles",
+  "year": 2026,
+  "venue": "Energies",
+  "abstract": "Operational data from thermal power plants are interpreted through expert judgment, following procedures that are often only partly documented and hard to reproduce. The literature offers many algorithmic techniques, yet workflow-level methodologies binding validation, detection, event creation and expert review into an auditable whole remain scarce. This article proposes EVENT (Expert eValuation of ENumerated Typed events), a semi-automated methodology for offline analysis of operational time-series data. It is organized as five steps\u2014data validation, data preparation, anomaly detection, event creation and report generation\u2014linked by machine-readable data contracts covering schematic, semantic, physical and temporal checks. Two design choices set it apart. The reporting unit is the event, not the isolated sample, and the analyst\u2019s procedural role is kept distinct from the domain expert\u2019s interpretive role. As a proof of concept, the method ran on a one-year anonymized dataset identified with the KKS coding standard. The contract checks caught all seventy constructed faults injected across eleven categories, and the pipeline ran end to end on the annual record. The workflow was additionally replicated on public wind-turbine data by three separately implemented instances. These results verify the workflow but are not a statistical validation of detection performance.",
+  "abs_src": "OpenAlex",
+  "doi": "10.3390/en19153593",
+  "crossref": "yes",
+  "cr_title": "EVENT: A Modular, Semi-Automated Methodology for Anomaly Detection and Event Characterization in Thermal Power Plant Operational Data with an Explicit Separation of the Analyst and Expert Roles"
  }
 }
