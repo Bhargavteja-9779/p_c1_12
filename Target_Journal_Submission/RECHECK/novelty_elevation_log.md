@@ -37,3 +37,11 @@ Pre-registration: RECHECK/stage4/preregistration_E.md (H-E1..H-E4), committed be
 
 ## Hypothesis count in this run
 H-E1, H-E2 (22 internal tests, Holm), H-E3, H-E4 (66 internal tests, Holm), random-label permutation check.
+
+### T1 certification bound (analytic; code/scripts/protocol_gap.py writes results/protocol_gap_t1.csv)
+With zero false positives on n normal weeks, the one-sided 95% Clopper-Pearson upper bound on the weekly alarm
+probability gives at most 52.18*q_u alarm-weeks per substation-year: n=30 (PreDist M2 normal events) -> 4.96;
+n=35 (M1) -> 4.28; n=65 (both) -> 2.35. Certifying <= 1 alarm-week/sub-yr needs n >= 155 clean normal weeks
+(<= 2: 77; <= 4: 38; <= 0.5: 312). The statistics are classical (Clopper & Pearson 1934; "rule of three",
+Hanley & Lippman-Hand 1983, both Crossref-verified); the contribution is applying them to benchmark design for
+fault detection, which no paper found so far does (pending stage3 report).

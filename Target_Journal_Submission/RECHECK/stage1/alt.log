@@ -78,3 +78,9 @@ invalid pdf header: b'<!DOC'
 EOF marker not found
 invalid pdf header: b'<!doc'
 EOF marker not found
+invalid pdf header: b'<!DOC'
+EOF marker not found
+Ignoring wrong pointing object 37 0 (offset 0)
+Ignoring wrong pointing object 59 0 (offset 0)
+Ignoring wrong pointing object 205 0 (offset 0)
+Ignoring wrong pointing object 207 0 (offset 0)
