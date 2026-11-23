@@ -73,7 +73,7 @@ STEP 2-3: method fixed (factorial framing); M1 rebuild + seeds, then locked M2 e
     title pattern "[...] for [task] in district heating substations"; abstract ~230 words, single paragraph
   * Reviewer-Zero: "simpler method works" is answered head-on (it is the finding), not hidden
 
-- USER 2026-11-23: code available ON REQUEST (not public), no funding, no competing interests ->
+- USER 2026-11-23: manuscript must state "Code will be made available on request.", no funding, no competing interests (verbatim, see
   manuscript/declarations.md. The repo still gets README + run_all.py + tests (for reviewers on request).
 
 ## NEXT ACTION
