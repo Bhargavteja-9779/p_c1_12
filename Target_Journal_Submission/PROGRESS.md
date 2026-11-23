@@ -62,6 +62,17 @@ STEP 2-3: method fixed (factorial framing); M1 rebuild + seeds, then locked M2 e
   ALL M1 factorial cells being regenerated (logs results/logs/r_*.log). The previous session's ae_comfort and
   qnbm M1 runs never finished (logs stop at s17/s19).
 
+- USER DECISION 2026-11-23 (session 3): journal = Energy and AI (confirmed by user, 72-day/IF still
+  UNVERIFIED). Priority: NO desk rejection; paper must match the journal level (journal_level_profile.md).
+  Desk-check targets (must all hold before writing is called done):
+  * >= 2 data populations: M1 (35 subs, dev) + M2 (58 subs, other manufacturer, locked) -> cross-manufacturer test
+  * >= 8 baselines incl. published AE benchmark (have 10 factorial cells), ablation of SRCR components
+    (gate / one-sided / local / p_ret), seeds 0-9 for fleet model, Wilcoxon + McNemar + cluster bootstrap, Holm
+  * public code + run_all.py, ~10 figures, 3-4 main tables, 45-55 verified references, ~8-9k words
+  * framing = systematic evaluation + finding (journal pattern #5) with a usable method, NOT "new ML model";
+    title pattern "[...] for [task] in district heating substations"; abstract ~230 words, single paragraph
+  * Reviewer-Zero: "simpler method works" is answered head-on (it is the finding), not hidden
+
 ## NEXT ACTION
 1. Wait/collect M1 heavy baselines (ae_comfort, ae_cond, iforest, qnbm; logs results/logs/b_*.log; rerun
    `python3 scripts/run_online_method.py <name> 1` if fewer than 35 files in results/scores/<name>/m1).
