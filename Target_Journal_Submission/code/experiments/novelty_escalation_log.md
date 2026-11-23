@@ -187,3 +187,16 @@ Conditions in the 24 h before each false-alarm start vs 1050 random normal times
 - 93% of SRCR-C 'false alarms' coincide with a physically real shortfall (supply > 5 K below an active
   setpoint for >= 1 h) that was not reported. They are verifiable service deviations (or unreported faults),
   i.e. actionable for an operator, which an AE alarm is not. To report as finding; not proof of faults.
+
+## Novelty map (2026-11-23; journal_selection/novelty_map.csv, 59 rows, 39 with closeness >= 2; summary md)
+Built from abstracts + Crossref/OpenAlex only (ScienceDirect blocked). Claim limits found:
+- PreDist paper (10.1016/j.energy.2026.141178) already speaks of "few false alarms": we must not claim to be
+  first to consider false alarms; our claim = every-step scoring, FA per substation-year, recall at a fixed
+  budget, cross-manufacturer locked test.
+- Heating-curve misconfiguration papers (10.1016/j.segy.2026.100256, 10.24406/publica-9049) report AE MISSES
+  of comfort-relevant drift; we report AE FALSE ALARMS and test the scoped alternative. Cite both.
+- Seasonal residual behaviour is known (10.1016/j.segy.2024.100159): frame our mechanism as empirical
+  attribution on labelled DH data. Locked-test / alarm-burden protocols exist for wind turbines: protocol
+  novelty holds only "for DH substations". Control-strategy rules exist (10.1016/j.energy.2026.142993): the
+  new part is the controlled factorial on a public benchmark.
+- TO CHECK in full text: whether 10.1016/j.egyai.2026.100824 uses PreDist.

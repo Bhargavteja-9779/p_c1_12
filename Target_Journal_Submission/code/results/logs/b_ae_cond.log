@@ -5,3 +5,15 @@ ae_cond m1 s4 75s
 ae_cond m1 s5 76s
 ae_cond m1 s6 12s
 ae_cond m1 s7 66s
+ae_cond m1 s9 69s
+ae_cond m1 s11 86s
+ae_cond m1 s13 68s
+ae_cond m1 s15 86s
+ae_cond m1 s17 69s
+ae_cond m1 s19 50s
+ae_cond m1 s21 64s
+ae_cond m1 s23 52s
+ae_cond m1 s25 32s
+ae_cond m1 s27 3s
+ae_cond m1 s29 6s
+ae_cond m1 s31 5s
