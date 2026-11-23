@@ -81,6 +81,9 @@ STEP 2-3: method fixed (factorial framing); M1 rebuild + seeds, then locked M2 e
   (10.1016/j.segy.2024.100159: seasonal model error + quantile thresholds on DH substations) is CLOSE to SRCR ->
   must be discussed in related work. Gueck 2024 CARE score: check full text before citing its definition.
 
+- Session 3 rebuild check: srcr_comp seed 0 reproduces round 4 EXACTLY (SRCR-C 0.321/0.357/0.357 at
+  0.654/1.436/1.436 FA/sub-yr; gate+1s+local 0.214/0.321/0.357). Seeds 1-9 M1 chain launched (r_srcr_seed*.log).
+
 ## NEXT ACTION
 1. Wait/collect M1 heavy baselines (ae_comfort, ae_cond, iforest, qnbm; logs results/logs/b_*.log; rerun
    `python3 scripts/run_online_method.py <name> 1` if fewer than 35 files in results/scores/<name>/m1).
