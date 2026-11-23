@@ -46,16 +46,28 @@ STEP 0: journal landscape and 72-day check (in progress)
 - Baselines rule/sigma3/loop3s/iforest/qnbm launched on M1 (check results/scores/<name>/m1 has 35 files;
   rerun scripts/run_online_method.py <name> 1 if not).
 
-## NEXT ACTION
-1. Round 3 (pre-register hypotheses in the log first): daily decision unit, LBNL AHU second domain,
-   conformal FA-budget threshold, under-delivery fusion.
-2. Novelty map (>=30, candidates in journal_selection/lit_raw.csv) + scorecard once the method is fixed.
-3. Then seeds 0-9, full baselines table on M1, single locked evaluation on M2.
+- 2026-11-23 (session 2, branch claude/stoic-carson-8teuw3): rebuilt env; D6 rounds 3-4 done (log).
+  Round 3 (daily unit, conformal budgets, under-delivery) all falsified. Round 4: dropping the primary-return
+  loop (comfort-only SRCR-C) cuts FA ~55% and gives ~10x fewer FA than AE at matched recall. BUT the
+  one-line comfort rule and own-history comfort 3-sigma are statistically indistinguishable from SRCR-C
+  (paired per-fault ranks, scripts/paired_ranks.py). Protocol amendments A1-A3 added.
+- PIVOT (decided 2026-11-23): core contribution = factorial explanation of false alarms, not a new ML model:
+  factors (i) WHAT is monitored (comfort loops vs all signals), (ii) REPRESENTATION (relative to setpoint vs
+  absolute signals), (iii) MODEL (rule / own-history stats / fleet quantile ML / AE). Cells already available:
+  rule, loop3s_c, srcr-C (comfort x relative); loop3s, srcr gate_1s_local (all loops x relative);
+  sigma3, iforest, qnbm, ae, ae_cond (all x absolute); ae_comfort (comfort x absolute).
 
+## NEXT ACTION
+1. Wait/collect M1 heavy baselines (ae_comfort, ae_cond, iforest, qnbm; logs results/logs/b_*.log; rerun
+   `python3 scripts/run_online_method.py <name> 1` if fewer than 35 files in results/scores/<name>/m1).
+   Then `python3 scripts/matched_recall.py <list> all_m1` and paired_ranks for the factorial cells.
+2. Pre-register the factorial hypotheses in protocol.md (amendment A4) BEFORE any M2 scoring.
+3. Mechanism analysis: what drives AE false alarms (per-signal reconstruction error share; setpoint changes).
+4. Novelty map (>=30) + scorecard for the pivoted framing; seeds 0-9; single locked M2 evaluation.
 ## Resume notes (saved 2026-11-23 before account switch)
 - Results/scores and data cache are NOT in git (large). On a new machine: run
   `bash Target_Journal_Submission/code/scripts/download_data.sh`, then `python3 code/scripts/build_cache.py`,
-  then regenerate scores: run_online_method.py ae 1 / ae_cond 1, run_srcr_cv.py 1, run_online_method.py intent 1 /
+  then regenerate scores (download_data.sh now creates data/raw itself): run_online_method.py ae 1 / ae_cond 1, run_srcr_cv.py 1, run_online_method.py intent 1 /
   delivery 1, run_srcr_components.py 0, round2_variants.py srcr_comp (all from Target_Journal_Submission/code).
   pip deps: scikit-learn scipy lightgbm torch(cpu) pyarrow tabulate pypdf matplotlib.
 - Novelty-map candidate abstracts saved: journal_selection/novelty_candidates.csv (37 papers).
