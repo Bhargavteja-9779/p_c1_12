@@ -265,3 +265,14 @@ Hypotheses (M1, n = 28; thresholds on the shared tau x c_thr grid; daily score b
  H5b: the best of F18-F22 reaches M1 recall >= 0.43 (12/28) at <= 2 FA/sub-yr (best existing M1: 0.393
       at B = 4, 0.357 at B = 2). Falsified otherwise.
  If H5b is falsified the round fails -> recommend option A to the user.
+
+## Round 5 results (2026-11-23, M1 development; results/round5_peer_m1.csv; scripts/round5_peer.py)
+Ideas counted: 14 + #15 peer-phys, #16 peer-comfort, #17 peer-all, #18 own-change, #19 fuse = 19.
+Faults in top 2% of normal days (threshold-free, n = 28): peer_phys 8, peer_comfort 10, peer_all 10,
+own_change 3, fuse 12 | reference: SRCR-C 11, rule 11, loop3s_c 10, qnbm 7, sigma3 6, ae_comfort 6, ae 2.
+Recall at <= 1 / 2 / 4 FA/sub-yr: peer_phys 0.179 / 0.179 / 0.179; peer_comfort 0.179 / 0.214 / 0.250;
+peer_all 0.214 / 0.250 / 0.286; own_change 0.036 / 0.071 / 0.143; fuse 0.286 / 0.321 / 0.321.
+- H5a FALSIFIED (peer_phys 8 < 11 + 3). Peer channels do rank hydraulic faults (leakage, DHW charging pump,
+  primary valve, pressure regulator) in the top 2%, but not more faults overall than SRCR-C / rule.
+- H5b FALSIFIED (best 0.321 < 0.43 at <= 2 FA/sub-yr).
+- Round 5 FAILED. Per the pre-registered time-box: stop, no M2 second look, recommend option A.
