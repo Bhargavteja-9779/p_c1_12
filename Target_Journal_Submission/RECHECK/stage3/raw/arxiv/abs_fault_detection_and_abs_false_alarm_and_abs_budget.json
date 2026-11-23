@@ -1,0 +1,17 @@
+{
+ "query": "abs:\"fault detection\" AND abs:\"false alarm\" AND abs:budget",
+ "source": "arXiv API",
+ "count": 1,
+ "results": [
+  {
+   "openalex": null,
+   "doi": "https://doi.org/10.48550/arxiv.2609.22347",
+   "arxiv_id": "http://arxiv.org/abs/2609.22347v1",
+   "title": "Verification Reward Model for Reinforcement Learning in Chip Design Verification",
+   "year": "2026",
+   "date": "2026-09-17",
+   "venue": "arXiv",
+   "abstract": "We propose a Verification Reward Model (VRM) framework for training language models to create and repair chip verification artifacts. The central object is a versioned verification contract that binds requirements, permissible stimulus, observation boundaries, reference behavior, evaluation budgets, and acceptance criteria. Compiler, simulator, formal, mutation, coverage, and expert-review evidence are converted into auditable records. Deterministic acceptance checks remain outside the learned model. A learned outcome model predicts expensive future evidence from the specification, the generated artifact, and explicitly masked partial evidence; a semantic critic identifies evidence-supported weaknesses; a deterministic reward composer translates the resulting quality vector into task-conditioned training rewards. Extensions include paired clean/fault interventions, marginal fault-discovery rewards, uncertainty-aware evaluation scheduling, and a quarantined cross-domain learning loop. Evaluation emphasizes independently validated fault detection, false alarms, generalization across design families, and total cost to reach a specified quality level. We describe a first experiment on a small, open-tool-compatible benchmark with lightweight models, with full UVM capability admitted through feature-specific qualification. This is a position paper: we specify the framework and the experiments that would test it, and we report no training, EDA, or silicon results."
+  }
+ ]
+}

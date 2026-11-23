@@ -1,0 +1,17 @@
+{
+ "query": "abs:\"fault detection\" AND abs:HVAC AND abs:transfer",
+ "source": "arXiv API",
+ "count": 1,
+ "results": [
+  {
+   "openalex": null,
+   "doi": "https://doi.org/10.48550/arxiv.1509.05421",
+   "arxiv_id": "http://arxiv.org/abs/1509.05421v1",
+   "title": "HVACMeter: Apportionment of HVAC Power to Thermal Zones and Air Handler Units",
+   "year": "2015",
+   "date": "2015-09-17",
+   "venue": "arXiv",
+   "abstract": "Heating, Ventilation and Air Conditioning (HVAC) systems consume almost half of the total energy use of commercial buildings. To optimize HVAC energy usage, it is important to understand the energy consumption of individual HVAC components at fine granularities. However, buildings typically only have aggregate building level power and thermal meters. We present HVACMeter, a system which leverages existing sensors in commercial HVAC systems to estimate the energy consumed by individual components of the HVAC system, as well by each thermal zone in buildings. HVACMeter can be generalized to any HVAC system as it uses the basic understanding of HVAC operation, heat transfer equations, and historical sensor data to estimate energy. We deploy HVACMeter to three buildings on our campus, to identify the set of sensors that are important for accurately disaggregating energy use at the level of each Air Handler Unit and each thermal zone within these buildings. HVACMeter power estimations have on an average 44.5 % less RMSE than that of mean power estimates. Furthermore, we highlight the usefulness of HVACMeter energy estimation model for a building fault detection application by quantifying the amount of energy that can be saved by fixing particular faults."
+  }
+ ]
+}

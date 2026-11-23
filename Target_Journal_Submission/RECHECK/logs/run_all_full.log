@@ -196,3 +196,9 @@ iforest m1 s33 7s
 iforest m1 s35 3s
 >> /opt/recheck_env/bin/python scripts/run_online_method.py ae 1 1/2
 ae m1 s1 19s
+qnbm m1 s8 36s
+qnbm m1 s7 42s
+ae m1 s3 49s
+qnbm m1 s10 37s
+ae m1 s2 60s
+qnbm m1 s9 56s

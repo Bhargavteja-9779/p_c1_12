@@ -1,0 +1,12 @@
+["all:\"district heating\" AND all:fault",
+ "all:\"district heating\" AND all:anomaly",
+ "abs:\"anomaly detection\" AND abs:\"false alarms\" AND abs:benchmark",
+ "abs:\"point adjustment\" AND abs:anomaly",
+ "abs:\"anomaly detection\" AND abs:evaluation AND abs:\"time series\" AND abs:flawed",
+ "abs:\"normal behaviour\" AND abs:\"wind turbine\"",
+ "abs:CARE AND abs:\"wind turbine\" AND abs:fault",
+ "abs:\"fault detection\" AND abs:HVAC AND abs:transfer",
+ "abs:\"anomaly detection\" AND abs:\"distribution shift\" AND abs:threshold",
+ "abs:\"alarm fatigue\"",
+ "abs:\"pre-registered\" AND abs:\"machine learning\" AND abs:evaluation",
+ "abs:\"anomaly detection\" AND abs:ranking AND abs:\"across datasets\" AND abs:\"time series\""]

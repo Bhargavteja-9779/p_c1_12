@@ -45,3 +45,17 @@ Decision rule: E1/E2/T1 enter the paper as a contribution only if H-E1 holds. Al
 - No method is changed. Only existing score streams are re-scored. M2 has been opened before (locked run of
   session 3); E1/E2 on M2 are secondary analyses of frozen methods, labelled as such.
 - Number of hypotheses in this round: 3 (plus 22 binomial tests inside H-E2, Holm-corrected).
+
+## Addendum (2026-11-23, before running; Stage 5 sanity checks)
+H-E4 (chance-level check): a detector that raises alarms at random (Poisson) at its achieved false-alarm rate
+   f (per substation-year) "detects" a fault with probability p0 = 1 - exp(-f * 7 / 365.25) (any alarm start in the
+   7-day window). For every cell and budget, test observed detections k of n faults against Bin(n, p0)
+   (one-sided, Holm over all cells x budgets x manufacturers). Expectation: on M1 most cells exceed chance;
+   on M2 several cells are NOT distinguishable from random alarms. Reported whatever the outcome.
+Random-label test: move every target fault's 7-day window to a random eligible normal week of the same
+   substation (200 permutations, seed 20261123) and recompute recall at the locked operating points; the
+   permutation recall must be close to p0. A detector whose real recall lies inside the permutation
+   distribution has no demonstrated skill on that manufacturer.
+Fault-exclusion leakage found in src/models/online.py (fault exclusion "known" before its report; 4/982 fits,
+   M1 subs 4 and 7 only; list in RECHECK/stage5/stage5_leak_exclusions.csv). Fix after the clean rerun; re-score
+   M1 subs 4 and 7 and report the change.
