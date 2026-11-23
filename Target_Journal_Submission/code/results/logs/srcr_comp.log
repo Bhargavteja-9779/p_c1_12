@@ -3,3 +3,12 @@ fold 1
 fold 2
 fold 3
 fold 4
+                    method  budget  tau  c_thr  recall  fa_per_sub_year  n_false_alarms
+srcr_comp__v_gate_1s_local       1  4.0   96.0   0.214            0.399            50.0
+srcr_comp__v_gate_1s_local       2  3.0   48.0   0.321            1.483           186.0
+srcr_comp__v_gate_1s_local       4  4.0   24.0   0.357            2.632           330.0
+           method  budget  tau  c_thr  recall  fa_per_sub_year  n_false_alarms
+srcr_comp__v_base       1  4.0   96.0   0.143            0.917           115.0
+srcr_comp__v_base       2  4.0   48.0   0.214            1.906           239.0
+srcr_comp__v_base       4  3.0   48.0   0.286            3.717           466.0
+SRCRDONE

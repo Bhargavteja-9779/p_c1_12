@@ -1,7 +1,7 @@
 # PROGRESS
 
 ## Current phase
-STEP 0: journal landscape and 72-day check (in progress)
+PAPER A (honest pre-registered benchmark) — writing phase. All experiments for the core story are DONE.
 
 ## Decisions so far (with reasons)
 - 2026-11-23: Acceptance time is measured from Crossref received/accepted dates (all articles of the last
@@ -46,45 +46,90 @@ STEP 0: journal landscape and 72-day check (in progress)
 - Baselines rule/sigma3/loop3s/iforest/qnbm launched on M1 (check results/scores/<name>/m1 has 35 files;
   rerun scripts/run_online_method.py <name> 1 if not).
 
-## Session 2026-11-23 (account 2)
-- New machine: data + cache rebuilt, M1 scores regenerating (logs results/logs/regen). Round 3 pre-registered;
-  scripts/round3.py written (F10 daily, F13 conformal, F12 underdel = new channel "underdel"). Novelty map
-  delegated (journal_selection/novelty_map.csv + novelty_map_summary.md).
+- 2026-11-23 (session 2, branch claude/stoic-carson-8teuw3): rebuilt env; D6 rounds 3-4 done (log).
+  Round 3 (daily unit, conformal budgets, under-delivery) all falsified. Round 4: dropping the primary-return
+  loop (comfort-only SRCR-C) cuts FA ~55% and gives ~10x fewer FA than AE at matched recall. BUT the
+  one-line comfort rule and own-history comfort 3-sigma are statistically indistinguishable from SRCR-C
+  (paired per-fault ranks, scripts/paired_ranks.py). Protocol amendments A1-A3 added.
+- PIVOT (decided 2026-11-23): core contribution = factorial explanation of false alarms, not a new ML model:
+  factors (i) WHAT is monitored (comfort loops vs all signals), (ii) REPRESENTATION (relative to setpoint vs
+  absolute signals), (iii) MODEL (rule / own-history stats / fleet quantile ML / AE). Cells already available:
+  rule, loop3s_c, srcr-C (comfort x relative); loop3s, srcr gate_1s_local (all loops x relative);
+  sigma3, iforest, qnbm, ae, ae_cond (all x absolute); ae_comfort (comfort x absolute).
 
-- Novelty map DONE: journal_selection/novelty_map.csv (47 rows) + novelty_map_summary.md. Claimable: N1 (setpoint
-  residual + gating + one-sided), N5 (continuous FA/sub-yr protocol); partial N2, N6; NOT N3 (split-conformal FA
-  guarantees are standard; fleet+conformal exists for wind, 10.1088/1742-6596/3224/6/062054), NOT N4. To check:
-  full text of 10.1016/j.energy.2026.142993 (control-strategy mode rules) and 10.1016/j.enbuild.2024.114009.
+- 2026-11-23 (session 3, branch claude/youthful-meitner-qelzen): fast-forwarded onto stoic-carson; NEXT ACTION
+  items 2 (A4), 3 (mechanism) and novelty map were already done there. Fresh container: data + cache rebuilt;
+  ALL M1 factorial cells being regenerated (logs results/logs/r_*.log). The previous session's ae_comfort and
+  qnbm M1 runs never finished (logs stop at s17/s19).
 
-## NEXT ACTION
-State: rounds 0-4 + seeds 0-9 on M1 DONE. Candidates FROZEN (protocol.md Amendment A1): C1 rule, C2 rule OR AE.
-M1 seeds: C2 0.382+-0.017 vs AE 0.183+-0.045 vs rule 0.321 at B=2.
-1. M2 scores computing (job list code/scripts/m2_jobs.txt (run from code/: cat scripts/m2_jobs.txt | xargs -P 4 -I{} sh -c "python3 {}") run via xargs -P4; logs results/logs/regen/m2_*;
-   if lost on a new machine, regenerate: run_online_method.py {rule,sigma3,loop3s,iforest} 2; qnbm/ae_cond 2;
-   ae 2 k/3 seed for seeds 0-9; run_srcr_transfer.py). Check results/scores/<m>/m2 has 58 files each.
-2. Then run scripts/m2_eval.py ONCE (locked test) -> results/m2/. Log it in the M2 access log.
-3. Write m2_curves.py (curve-AUC endpoint, descriptive), error analysis by fault label.
-4. Scorecard + Reviewer Number Zero (pivoted story) -> paper drafting.
+- USER DECISION 2026-11-23 (session 3): journal = Energy and AI (confirmed by user, 72-day/IF still
+  UNVERIFIED). Priority: NO desk rejection; paper must match the journal level (journal_level_profile.md).
+  Desk-check targets (must all hold before writing is called done):
+  * >= 2 data populations: M1 (35 subs, dev) + M2 (58 subs, other manufacturer, locked) -> cross-manufacturer test
+  * >= 8 baselines incl. published AE benchmark (have 10 factorial cells), ablation of SRCR components
+    (gate / one-sided / local / p_ret), seeds 0-9 for fleet model, Wilcoxon + McNemar + cluster bootstrap, Holm
+  * public code + run_all.py, ~10 figures, 3-4 main tables, 45-55 verified references, ~8-9k words
+  * framing = systematic evaluation + finding (journal pattern #5) with a usable method, NOT "new ML model";
+    title pattern "[...] for [task] in district heating substations"; abstract ~230 words, single paragraph
+  * Reviewer-Zero: "simpler method works" is answered head-on (it is the finding), not hidden
 
-## Resume notes (saved 2026-11-23, account switch #2)
-- Scores/data are NOT in git. On a new machine, from Target_Journal_Submission/code:
-  1. pip install scikit-learn scipy lightgbm pyarrow tabulate pypdf matplotlib pandas;
-     pip install torch --index-url https://download.pytorch.org/whl/cpu
-  2. bash scripts/download_data.sh && python3 scripts/build_cache.py
-  3. M1 scores (needed by m2_eval): run_online_method.py {rule,sigma3,loop3s,iforest,qnbm,ae,ae_cond,underdel} 1;
-     ae 1 k/4 SEED for seeds 1-9; run_srcr_components.py 0; round2_variants.py srcr_comp.
-     (M1 tables results/m1_table*.csv, m1_curves*.csv, round4/*.csv ARE in git, so op points need no recompute.)
-  4. M2 scores (frozen methods): see job list in NEXT ACTION item 1; run 4 in parallel (xargs -P 4).
-     sigma3/iforest M2 crash (no usable columns) FIXED in baselines.py; rerun them on M2.
-     Session 2 ended with M2 partially done (rule, loop3s complete) - all M2 must be recomputed on a new machine.
-  5. Then scripts/m2_eval.py ONCE, scripts/m2_curves.py.
-- Run time on 4 CPU cores: M1 regen ~2 h, AE seeds M1 ~2 h, M2 all ~3 h.
-- Branches: work pushed to both claude/sweet-bell-5gq62v and claude/wizardly-babbage-182x46 (identical).
+- USER 2026-11-23: manuscript must state "Code will be made available on request.", no funding, no competing interests (verbatim, see
+  manuscript/declarations.md. The repo still gets README + run_all.py + tests (for reviewers on request).
 
-## Older resume notes (session 1)
+- References: manuscript/novelty_refs.bib (51, Crossref-verified from novelty map) + background_refs.bib/.csv
+  (39; ISA-18.2 and EEMUA 191 UNVERIFIED/no DOI; Holm 1979 + Demsar 2006 no resolvable DOI). Hermans 2024
+  (10.1016/j.segy.2024.100159: seasonal model error + quantile thresholds on DH substations) is CLOSE to SRCR ->
+  must be discussed in related work. Gueck 2024 CARE score: check full text before citing its definition.
+
+- Session 3 rebuild check: srcr_comp seed 0 reproduces round 4 EXACTLY (SRCR-C 0.321/0.357/0.357 at
+  0.654/1.436/1.436 FA/sub-yr; gate+1s+local 0.214/0.321/0.357). Seeds 1-9 M1 chain launched (r_srcr_seed*.log).
+
+- SESSION 3 OUTCOMES (2026-11-23):
+  * LOCKED M2 (results/locked_m2_*.csv, log LOCKED_m2.log): SRCR-C 0/25 at every budget; best = sigma3 0.28,
+    qnbm 0.20, ae_comfort 0.12, rule/loop3s/loop3s_c/iforest 0.08, ae 0.04, srcr_all/ae_cond 0. HF4 failed.
+  * Secondary (results/secondary_*.csv): 5 of sigma3's 7 M2 hits are faults < 90 d after first record
+    (start-up artefact); after 90 d no method > 2/18 M2 faults. Pooled M1+M2 threshold-free: comfort scope
+    beats all-signal for fleet model (p=0.016) and AE (p=0.021). Rank transfer M1->M2: Spearman -0.33..0.07.
+  * User chose B -> round 5 (peer-relative channels, ideas #15-19) FAILED on M1 (pre-registered). 19 ideas total.
+  * USER DECISION (final): OPTION A = honest benchmark paper. Do NOT develop further methods.
+
+## NEXT ACTION (paper A)
+Story: "Fault-detector rankings do not transfer across controller manufacturers: a pre-registered
+continuous-monitoring benchmark for district heating substations" (title draft; ~13-15 words, journal style).
+RQ1 how many faults are caught on a held-out manufacturer at operational FA budgets; RQ2 do development
+rankings transfer; RQ3 why not (fault mix, start-up artefact, FA calibration transfers but detection does not);
+RQ4 does monitoring scope matter (threshold-free pooled yes; operationally no). Also: AE FA mechanism (seasonal
+regime, M1), all 19 ideas reported (search transparency).
+1. Contrast with the benchmark's own event protocol (pre-registered secondary): implement PreDist event-wise
+   evaluation (7-day windows, 50/50 fault vs normal events from P.normal_events, F0.5 / earliness) for the AE
+   and 2-3 others on M1 and M2 — read arXiv 2511.14791 (full text reachable) for exact definitions first.
+   Key sentence: "the same AE that scores X on the balanced event protocol catches 1/25 at <= 2 FA/sub-yr".
+2. SRCR-C seed summary (seeds 0-9 on M1 and M2): M1 seeds 1-8 complete (round2 csvs), seed 9 M1 missing ->
+   run `python3 scripts/run_srcr_components.py 9 && python3 scripts/round2_variants.py srcr_comp_seed9
+   v_g1l_noret,v_gate_1s_local`; M2 seed scores srcr_c_seedK exist for 1-9. Report mean/sd of M2 recall.
+3. Efficiency table from logs (seconds per substation per method; results/logs/r_*.log, r_m2_*.log).
+4. Figures (~10, real data only; load dataviz skill): fleet/data overview; protocol schematic; M1 vs M2 recall
+   per cell (rank reversal); recall-vs-FA curves M1/M2; cold-start bins; by-fault-label heatmap; AE FA
+   mechanism; threshold-free rank pairs (pooled); ablation (results/ablation_srcr_m1_seed0.csv); case plot of
+   one fault. Tables: data (done in sections/03), factorial cells + operating points M1/M2, HF tests, ideas log.
+5. Rewrite manuscript/sections/03_data_methods.md for paper A framing (SRCR-C is one of 11 cells, not "proposed";
+   add round 5 to 5.4). Then intro, related work (cite Hermans 2024, HEAT 2025, SHEDAD, PreDist paper, CARE),
+   results, discussion, limitations, conclusion; declarations from manuscript/declarations.md (user wording).
+6. Reviews REVIEW/review_01..10 + stakeholder; audits; Final_Manuscript.docx + PDF, cover_letter.docx,
+   risk_report.md (state desk-rejection risk of a negative-result benchmark plainly); decision READY / NOT READY.
+Pending from user: author names, affiliations, CRediT roles.
+
+## Resume notes (updated 2026-11-23 session 3, before account switch)
+- Score files (results/scores, ~78 dirs) and data cache are NOT in git. To rebuild everything on a new machine
+  (CPU 4 cores: ~8-10 h): pip deps below; `bash code/scripts/download_data.sh`; `python3 code/scripts/build_cache.py`;
+  then from code/: run_online_method.py <m> 1 and <m> 2 for rule sigma3 loop3s loop3s_c iforest qnbm ae ae_cond
+  ae_comfort (use k/n partitions in parallel); run_srcr_components.py 0..9 + round2_variants.py; run_m2_fleet.py
+  0..9; round5_peer.py 1. All result CSVs needed for the paper ARE in git (results/*.csv), so writing can start
+  without rebuilding; rebuild only for figures that need raw scores (curves, case plot, cold start).
+- Old resume notes:
 - Results/scores and data cache are NOT in git (large). On a new machine: run
   `bash Target_Journal_Submission/code/scripts/download_data.sh`, then `python3 code/scripts/build_cache.py`,
-  then regenerate scores: run_online_method.py ae 1 / ae_cond 1, run_srcr_cv.py 1, run_online_method.py intent 1 /
+  then regenerate scores (download_data.sh now creates data/raw itself): run_online_method.py ae 1 / ae_cond 1, run_srcr_cv.py 1, run_online_method.py intent 1 /
   delivery 1, run_srcr_components.py 0, round2_variants.py srcr_comp (all from Target_Journal_Submission/code).
   pip deps: scikit-learn scipy lightgbm torch(cpu) pyarrow tabulate pypdf matplotlib.
 - Novelty-map candidate abstracts saved: journal_selection/novelty_candidates.csv (37 papers).

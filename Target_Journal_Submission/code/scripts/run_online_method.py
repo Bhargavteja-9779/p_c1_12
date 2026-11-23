@@ -13,7 +13,9 @@ seed = int(sys.argv[4]) if len(sys.argv) > 4 else 0
 FACT = {"rule": lambda: B.RuleShortfall(), "sigma3": lambda: B.ThreeSigma(), "iforest": lambda: B.IForest(seed),
         "loop3s": lambda: B.LoopThreeSigma(), "qnbm": lambda: B.OwnQuantileNBM(seed),
         "intent": lambda: IntentChannel(seed), "delivery": lambda: DeliveryChannel(seed), "underdel": lambda: UnderDeliveryChannel(seed),
-        "ae": lambda: AEDetector(conditional=False, seed=seed), "ae_cond": lambda: AEDetector(conditional=True, seed=seed)}
+        "ae": lambda: AEDetector(conditional=False, seed=seed), "ae_cond": lambda: AEDetector(conditional=True, seed=seed),
+        "loop3s_c": lambda: B.LoopThreeSigmaComfort(),
+        "ae_comfort": lambda: AEDetector(conditional=False, seed=seed, columns=B.comfort_columns())}
 subs = P.substations(m)
 if part: k, n = map(int, part.split("/")); subs = subs[k::n]
 name = method if seed == 0 else f"{method}_seed{seed}"

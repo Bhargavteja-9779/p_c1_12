@@ -1,0 +1,6 @@
+Target_Journal_Submission/code/data/raw/
+__pycache__/
+*.pyc
+Target_Journal_Submission/code/data/cache/
+Target_Journal_Submission/code/results/scores/
+Target_Journal_Submission/code/results/logs/regen/
