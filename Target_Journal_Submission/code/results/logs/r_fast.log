@@ -139,3 +139,6 @@ loop3s_c m1 s33 0s
 loop3s_c m1 s34 0s
 loop3s_c m1 s35 0s
 iforest m1 s1 5s
+iforest m1 s2 14s
+iforest m1 s3 12s
+iforest m1 s4 11s
