@@ -1,0 +1,95 @@
+{
+ "query": "Leiria district heating fault detection indicators fault reports buildings",
+ "filter": null,
+ "count": 29,
+ "results": [
+  {
+   "openalex": "https://openalex.org/W4413275980",
+   "doi": "https://doi.org/10.1016/j.energy.2025.138016",
+   "title": "From bearings to substations: Transfer Learning for fault detection in district heating",
+   "year": 2025,
+   "date": "2025-08-18",
+   "venue": "Energy",
+   "type": "article",
+   "cites": 8,
+   "abstract": "Fault Detection and Diagnosis (FDD) in District Heating (DH) systems is vital for improving operational efficiency. As DH networks evolve towards Fourth-Generation District Heating (4GDH), their reliance on lower operational temperatures intensifies the need for robust FDD. However, implementing effective FDD faces challenges due to the lack of labelled fault data and the complexity of DH substations. This paper introduces a novel FDD methodology using Transfer Learning (TL) to bridge the gap between faulty bearings, controlled DH substation experiments and real-world operational data. We propose a fault signature method that aligns the data to reduce the domain gap, revealing similarities between faulty bearings\u2019 vibration patterns and \u0394 T readings in DH substations. The TL-enhanced models demonstrated robust performance, achieving F1 scores up to 98% on lab data and 91% on real-world operational data, respectively. These results mark a notable advancement in FDD of DH substations, as our method offers accurate fault detection and valuable insights across diverse operational contexts, ranging from valve issues, faulty sensors, wrong control strategies and normal behaviour. Notably, temperature dynamics resemble behaviour akin to faulty bearing vibrations, highlighting their potential as a critical indicator of a faulty substation, enabling more effective FDD in DH systems."
+  },
+  {
+   "openalex": "https://openalex.org/W4412463252",
+   "doi": "https://doi.org/10.1016/j.egyai.2025.100548",
+   "title": "HEAT: Hierarchical-constrained Encoder-Assisted Time series clustering for fault detection in district heating substations",
+   "year": 2025,
+   "date": "2025-07-15",
+   "venue": "Energy and AI",
+   "type": "article",
+   "cites": 15,
+   "abstract": "Fault detection in district heating (DH) substations is crucial for maintaining energy efficiency. However, existing methods often fall short and rely on labelled data or global analysis that may miss subtle anomalies. We introduce HEAT, a Hierarchical-constrained Encoder-Assisted Time series clustering method designed to enhance fault detection in DH substations. HEAT operates in a two-phase approach: first, it approximates a relative network topology using a constraint hierarchical clustering algorithm on supply temperature profiles. HEAT incorporates a Convolutional AutoEncoder (CAE) for dimensionality reduction of the time series data and uses adaptive soft constraints in the linkage function, enabling both minimum and maximum cluster size constraints while supporting domain knowledge, e.g., must-link and cannot-link constraints, using a constraint matrix. Second, we use the topology approximation to perform intra-cluster analysis using Mean Absolute Deviation (MAD) z-scores, with neighbouring substations serving as a validation mechanism, allowing for robust analysis without requiring labelled data. Experimental results demonstrate that HEAT outperforms conventional clustering methods while achieving 74.1% sensitivity and 95.5% specificity in fault detection, significantly improving over typical global analysis. HEAT not only identified major faults (e.g., sensor issues, valve failures) but also detected subtle anomalies (e.g., secondary leakages) while minimising false positives. This unsupervised method offers a viable and flexible solution for DH networks, improving operational efficiency and energy sustainability without disclosing sensitive information."
+  },
+  {
+   "openalex": "https://openalex.org/W7225244210",
+   "doi": "https://doi.org/10.48550/arxiv.2611.04682",
+   "title": "A Physically Informed Changepoint Score for Fault Prioritisation in District Heating",
+   "year": 2026,
+   "date": "2026-11-03",
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "cites": 0,
+   "abstract": "Poorly cooling district-heating installations raise return temperatures and pumped flow, increasing heat losses and pumping energy and hindering low-temperature operation. Faults often go unreported for weeks, so their onset is unknown and energy is wasted in the meantime. Utilities flag poorly cooling installations by a low supply-return temperature difference, but not when the problem began. Changepoint detectors such as the Bayesian Estimator of Abrupt Change, Seasonality, and Trend (BEAST) can date a change but report only its probability, so a large, fault-like change and a marginal one can look alike. We therefore develop a decision score that weighs each BEAST change in temperature difference and flow by its probability, size, deviation from recent operation and physical direction. Joint falls in temperature difference and rises in flow, the signature of insufficient cooling, rank first. Across 1,522 cases, 648 with a reported fault, 24 of the 25 highest-ranked cases were reported faults, and Average Precision was 0.772 against a prevalence of 0.426, likely conservative, as unreported cases may contain faults. Without using the report date, the strongest flow rise in reported-fault cases came a median of 11 days before the report (128 days in comparison cases). Combined with temperature-difference screening, the score raised Average Precision in season-matched cases from 0.486 to 0.646. After the detected change, flagged reported-fault installations returned water 16 K warmer and about half their circulated water delivered no heat. The score gives utilities a short list for inspection and a candidate onset date for each change."
+  },
+  {
+   "openalex": "https://openalex.org/W4392628645",
+   "doi": "https://doi.org/10.26868/25222708.2023.1576",
+   "title": "Towards automated fault detection and diagnosis in district heating customers: generation and analysis of a labeled dataset with ground truth",
+   "year": 2023,
+   "date": "2023-09-04",
+   "venue": "Building Simulation Conference proceedings",
+   "type": "conference-paper",
+   "cites": 11,
+   "abstract": "This study is built upon the current research in fault detection and diagnosis (FDD) in district heating (DH). Presently the main studies in this field are on interviewing DH companies regarding their FDD practices or developing algorithms to automatically detect faults in DH substations. Particularly, Gadd and Werner (2015) present a framework based on three indicators to detect anomalous patterns in the DH customer substations operation by analyzing energy and temperature data from smart heat meters (SHM). These indicators are unexpected heat load patterns according to the building's typology (I1), low annual average in supply and return temperature difference (I2), and poor correlation between energy usage and outdoor temperature (I3).Today, some DH companies apply these indicators for automated fault detection while the diagnosis process is still carried out by a human user. This is due to the lack of measurements, properly labeled system data, or infrastructure to work with advanced FDD systems.This study attempts to investigate this matter by:a) Coupling approximately 300 fault reports written by technicians with measurements from SHM data.b) Providing an overview of typical faults occurring in DH customers.c) Testing the abovementioned indicators to assess their efficacy for FDD purposes.In several European countries like Denmark, more than 50% of their building stock is connected to the DH grid. Moreover, countries outside Europe, like Russia and China, are also integrating this system into their cities. Even if many nations are implementing this solution, research shows that the DH sector must evolve, termed 4th generation district heating (4GDH), by lowering the supply temperature of the heated fluid.One of the measures to lower the supply temperature is effectively and frequently detecting and fixing the existing and future faults in the DH systems. According to Gadd and Werner (2015), on a small buildings sample, 74% of buildings displayed indicators that might imply a faulty substation, meaning a vast possibility to decrease the supply temperatures by improving the network\u2019s heat systems.The relevance of this study is, to the best of the authors\u2019 knowledge, the first large labeled faults dataset that goes to the component level in the DH substations coupled with energy measurements. Analyzing such datasets allows for developing future automated FDD algorithms, reducing the large customer\u2019s energy usage over time, decreasing the diagnosis cost related to technician inspections, and detecting anomalies before the system\u2019s complete failure.All analyzed buildings had low supply and return temperature differences (<15\u2070C), thus the reason for being visited by the DH company technicians. However, some buildings displayed unexpected heating patterns (I1), while others had a poor correlation between energy demand and outdoor temperature (I3). According to Gadd and Werner (2015), I1 is mainly caused by human factors and wrong building controls. In contrast, I3 is primarily produced by a fault in the substation. Specifically in this dataset, most faults in the present dataset are due to valve problems (e.g., incorrect regulation or broken) and incorrect user heating practices (improper radiators and towel dryers\u2019 usage), significantly decreasing the temperature difference (I2).Also, during the assessment visit, the wrong settings in the system were adjusted, increasing the temperature differences significantly (15-25\u2070C more), and the customers received advice to use their heating systems efficiently (e.g., opening windows with heating systems turned off). The results of these interventions helped increase the DH system\u2019s efficiency and lowered customers\u2019 heating expenses.This demonstrates that having detailed fault assessments in the DH sector benefits heating provider companies and their customers. Additionally proving, that assessing and correcting faults in the DH grid is a present action measure to move towards 4GDH systems."
+  },
+  {
+   "openalex": "https://openalex.org/W4409165528",
+   "doi": "https://doi.org/10.1016/j.engappai.2025.110662",
+   "title": "From data scarcity to diagnostic precision: A novel data augmentation and fault diagnosis framework for district heating substations",
+   "year": 2025,
+   "date": "2025-04-04",
+   "venue": "Engineering Applications of Artificial Intelligence",
+   "type": "article",
+   "cites": 23,
+   "abstract": "This study introduces FLAME (Fault Localization using Augmented Model Enhancement), a novel fault diagnosis framework for District Heating (DH) substations. Automated Fault Detection and Diagnosis (FDD) has become imperative as many DH substations perform sub-optimal due to faults. The main challenges complicating accurate fault diagnosis are increasing operational complexities and a scarcity of labelled data. FLAME integrates a hybrid Convolutional Neural Network and Long Short-Term Memory (CNN-LSTM) model with an attention mechanism and introduces the Fault Augmentation Signature Technique (FAST). FAST overcomes the limitations of traditional stochastic data augmentation methods by leveraging pattern mixing of the time series. The FLAME framework uses transfer learning, initially trained on augmented data using FAST and fine-tuned using original substation data. Experimental results reveal that FLAME outperforms conventional methods, obtaining F1 scores of approximately 0.95 and 0.92 on lab-simulated and real-world datasets, respectively. Additionally, the research found the importance of the temperature difference measurement ( \u0394 T ) and median-based sampling strategies for optimal fault pattern identification. These findings establish FLAME as a new benchmark in DH system diagnostics, offering a robust framework to enhance fault diagnosis accuracy and operational efficiency of DH substations."
+  },
+  {
+   "openalex": "https://openalex.org/W4410218230",
+   "doi": "https://doi.org/10.1016/j.enbuild.2025.115844",
+   "title": "Fault detection in AHU: A walkthrough for implementation in a Danish educational building",
+   "year": 2025,
+   "date": "2025-05-09",
+   "venue": "Energy and Buildings",
+   "type": "article",
+   "cites": 3,
+   "abstract": "The implementation of fault detection in research articles is relatively sparse, yet it holds significant potential to contribute to the decarbonization of our building stock. This study proposes a Fault Detection (FD) methodology that can be split into three stages. 1) FD algorithm development, testing, and validation on known datasets. 2) platform creation, data collection and curation, and method implementation. 3) FD algorithm testing on an operational system running under normal conditions with no artificially induced faults. The results showed that for step 1, using suitable evaluation metrics for realistic datasets is highly important, as otherwise wrong conclusions can be drawn. It was further found that the proposed FD methodology, as intended, led to choosing an algorithm that did not cause many false alarms, as the emphasis was on avoiding these, but also that changing the weighting of the included terms could shift the focus to prioritize other issues."
+  },
+  {
+   "openalex": "https://openalex.org/W7166516896",
+   "doi": "https://doi.org/10.1016/j.egyai.2026.100824",
+   "title": "From lab to practice: Towards a substation-invariant self-supervised transformer for low-label fault detection in district heating",
+   "year": 2026,
+   "date": "2026-06-29",
+   "venue": "Energy and AI",
+   "type": "article",
+   "cites": 1,
+   "abstract": "Automated Fault Detection and Diagnosis (FDD) in District Heating (DH) is essential for reducing return temperatures, improving operational efficiency, and supporting the transition to low-temperature, low-carbon integrated energy systems. Practical deployment remains difficult because labelled fault data are scarce and heterogeneous across domains, while unlabelled operational data are abundant, creating a practical mismatch. To address this, we propose a Self-supervised Time Series Transformer (STST) for low-label FDD using routinely available primary-side measurements. We evaluate the method on six datasets spanning laboratory fault emulations, simulation, and real-world DH networks. The results show that primary-side temperatures contain strong fault-discriminative information, while flow measurements add sensitivity to hydraulically driven faults. The proposed method performs competitively in scarce-label and heterogeneous-field settings, achieving F 1 values between 0.77 and 0.98. Cross-domain experiments indicate that fault-relevant structure is transferable across substations within the same network, although transfer remains asymmetric across networks. Overall, the results suggest that self-supervised pre-training and regularised fine-tuning can improve transformer-based DH fault detection under stricter field conditions, while CNN-based and hybrid baselines remain highly competitive in cleaner or more separable regimes. Practical deployment across new networks, therefore, still requires attention to source\u2013target compatibility, local validation, and remaining domain shift."
+  },
+  {
+   "openalex": "https://openalex.org/W4405569131",
+   "doi": "https://doi.org/10.1016/j.apenergy.2024.125122",
+   "title": "Is it returning too hot? Time series segmentation and feature clustering of end-user substation faults in district heating systems",
+   "year": 2024,
+   "date": "2024-12-19",
+   "venue": "Applied Energy",
+   "type": "article",
+   "cites": 17,
+   "abstract": "This study explores the challenges and advancements in collecting ground-truth data to enhance fault diagnosis models for district heating systems . Initiated by the need to address limitations in previous data collections, this research leverages an enriched dataset from a Danish district heating utility to identify faults in household substations . Despite some inaccurate fault categorizations, complex fault patterns, and truncated measurements, the analysis of 50 detailed cases out of 127 fault reports reveals that, while return temperature reliably indicates faults, energy usage patterns do not. By employing self-organizing maps combined with k-means clustering, fault symptoms and patterns were categorized adequately, demonstrating the utility of high-dimensional data clustering in fault diagnosis. Additionally, an algorithm using time series decomposition is suggested to identify extreme and subtle anomalies, enhancing fault detection capabilities. The paper concludes that these methodologies significantly improve the accuracy and dependability of fault diagnostics in district heating systems, paving the way for more efficient operational management."
+  }
+ ]
+}

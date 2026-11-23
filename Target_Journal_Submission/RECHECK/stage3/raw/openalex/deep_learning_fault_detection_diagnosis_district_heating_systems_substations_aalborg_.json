@@ -1,0 +1,95 @@
+{
+ "query": "deep learning fault detection diagnosis district heating systems substations Aalborg",
+ "filter": null,
+ "count": 17,
+ "results": [
+  {
+   "openalex": "https://openalex.org/W4405569131",
+   "doi": "https://doi.org/10.1016/j.apenergy.2024.125122",
+   "title": "Is it returning too hot? Time series segmentation and feature clustering of end-user substation faults in district heating systems",
+   "year": 2024,
+   "date": "2024-12-19",
+   "venue": "Applied Energy",
+   "type": "article",
+   "cites": 17,
+   "abstract": "This study explores the challenges and advancements in collecting ground-truth data to enhance fault diagnosis models for district heating systems . Initiated by the need to address limitations in previous data collections, this research leverages an enriched dataset from a Danish district heating utility to identify faults in household substations . Despite some inaccurate fault categorizations, complex fault patterns, and truncated measurements, the analysis of 50 detailed cases out of 127 fault reports reveals that, while return temperature reliably indicates faults, energy usage patterns do not. By employing self-organizing maps combined with k-means clustering, fault symptoms and patterns were categorized adequately, demonstrating the utility of high-dimensional data clustering in fault diagnosis. Additionally, an algorithm using time series decomposition is suggested to identify extreme and subtle anomalies, enhancing fault detection capabilities. The paper concludes that these methodologies significantly improve the accuracy and dependability of fault diagnostics in district heating systems, paving the way for more efficient operational management."
+  },
+  {
+   "openalex": "https://openalex.org/W4402184432",
+   "doi": "https://doi.org/10.1016/j.energy.2024.133097",
+   "title": "Identifying untraced faults associated with high return temperatures from heating systems in buildings connected to district heating networks",
+   "year": 2024,
+   "date": "2024-09-03",
+   "venue": "Energy",
+   "type": "article",
+   "cites": 14,
+   "abstract": "The district heating (DH) system is in its transition towards the 4th generation district heating (4GDH), and the high DH return temperatures need to be addressed during the process. In the existing building heating systems, many faults, malfunctions, or sub-optimal operations can lead to high DH return temperatures. However, the field of fault detection and diagnostics (FDD) within heating systems is notably under-researched in contrast to their counterparts in ventilation and air conditioning in building HVAC systems. This divergence can be attributed to several factors, including limited digital integration, a scarcity of data, and the non-obvious nature of faults in heating systems. In this study, we utilized heat cost allocators (HCA) and energy meters to investigate the features and potential impacts of four untraced faults that can lead to high district heating (DH) return temperatures in both space heating and domestic hot water systems in large buildings. We identified component-level faults, including heat exchanger overflow, space heating temperature controller failures, and excessive operating temperatures due to bypass, as well as system-level issues such as non-uniform heat distribution in buildings and its impacts. This exploration provides new, critical insights for advancing FDD research in HVAC and DH systems."
+  },
+  {
+   "openalex": "https://openalex.org/W7113353562",
+   "doi": null,
+   "title": "A spatial assessment of the district heating potential in Europe",
+   "year": 2025,
+   "date": "2025-01-01",
+   "venue": "VBN Forskningsportal (Aalborg Universitet)",
+   "type": "conference-abstract",
+   "cites": 0,
+   "abstract": "District heating (DH) systems use local energy resources to meet consumers\u2019 heating needs and play a key role in decarbonising Europe\u2019s heating sector. By integrating renewable energy and heat recovery, DH can reduce dependency on fossil fuels, improve energy security, and deliver both environmental and economic benefits. However, efficient DH planning requires detailed spatial analysis: firstly, to accurately map the geographical distribution and level of heat demand; secondly, to identify cost-effective DH areas suitable for development; and finally, to assess the integration of renewable and surplus heat sources. This study updates the Pan-European Thermal Atlas to improve the representation of heat demand compared to previous versions. The updated data is used as input to an improved DH model that maps areas based on heat density contingency and estimates the associated grid costs for 3rd and 4th generation district heating systems, incorporating heat losses. Additionally, a scenario-based analysis maps potential heat sources, including industrial surplus heat at different temperature levels, geothermal and solar energy, across Europe and associates them to the modelled DH areas, providing country-level insights into the range of potentials at different European market share levels."
+  },
+  {
+   "openalex": "https://openalex.org/W7111705009",
+   "doi": null,
+   "title": "Influence of sector coupling on a district heating system in a German town: thermal simulation and comparison of different supply scenarios",
+   "year": 2025,
+   "date": "2025-01-01",
+   "venue": "Padua Research Archive (University of Padova)",
+   "type": "conference-paper",
+   "cites": 0,
+   "abstract": "District heating grids (DHGs) offer substantial potential for decarbonising the heating sector, which accounts for around 40% of Europe\u2019s total energy consumption. Although DHGs are a mature technology, the integration of renewable energy (RE) remains limited. This study evaluates Hybrid Network Solutions (HNS) through a one-year simulation of three heat supply scenarios in a southern German town. Two innovative HNS concepts incorporate rooftop photovoltaic (PV) systems and decentralised thermal energy storage (TES) to enable sector coupling via electric heating elements and air-to-water heat pumps (HPs). Scenario 1 integrates heat supply through a DHG with decentralised Power-to-Heat (P2H) units, enabling greenhouse gas (GHG) reductions by utilizing surplus PV electricity. Scenario two introduces a dual-grid structure with a low-temperature network supplied by a large groundwater heat pump and a high-temperature DHG using waste heat. While this configuration reduces final energy demand, it results in higher GHG emissions due to reliance on grid electricity with a high primary energy factor. The findings highlight the efficiency potential of HPs and the importance of aligning heat sector electrification with power sector decarbonisation. HNS concepts can serve as scalable models for sustainable district heating, provided that a renewable electricity supply and intelligent operational strategies are ensured."
+  },
+  {
+   "openalex": "https://openalex.org/W4410867817",
+   "doi": "https://doi.org/10.1155/er/8824853",
+   "title": "Leakage Diagnosis Technologies for Heating Pipe Networks: A Comprehensive Review of Currently Used Methods",
+   "year": 2025,
+   "date": "2025-01-01",
+   "venue": "International Journal of Energy Research",
+   "type": "article",
+   "cites": 6,
+   "abstract": "The development of district heating systems (DHSs) has increased the demand for leakage diagnosis in heating networks due to its impact on thermal efficiency, heating effectiveness, and security. This paper introduces various leakage diagnosis methods, provides solutions to the challenges of current diagnosis methods, and makes suggestions for future research. Internal methods include transient analysis, machine learning (ML), and negative pressure wave (NPW) technology. External methods include unmanned aerial vehicle (UAV) infrared thermography (UAIT), acoustic sensing, and fiber optic sensing methods. Some of these methods diagnose leakages through mathematical modeling and simulations, while others use various sensors to monitor changes in the internal medium of the pipeline to identify leakages. Additionally, UAIT and other special equipment are employed for leakage diagnosis. Detailed diagnosis principles of these methods as well as the solutions provided to address existing diagnosis bottlenecks were also introduced. Furthermore, this paper also reviews the performance of these diagnosis methods in terms of sensitivity, resolution, monitoring, accuracy, and cost. Based on the characteristics of each method, it offers guidance on the selection of pipeline leakage diagnosis methods for practical engineering applications."
+  },
+  {
+   "openalex": "https://openalex.org/W4417198355",
+   "doi": "https://doi.org/10.3390/en18246464",
+   "title": "District Heating Benefits and Economic Assessment Methods: A Systematic Review and the Role of Emerging Technologies",
+   "year": 2025,
+   "date": "2025-12-10",
+   "venue": "Energies",
+   "type": "review",
+   "cites": 4,
+   "abstract": "District heating (DH) is a key solution for decarbonising heat supplies, improving energy efficiency, and generating multiple economic, social, and environmental benefits. Identifying, quantifying, and monetising these benefits is crucial to assessing the impact of DH systems, comparing them with alternative heating solutions, and informing investment decisions and policy design. This paper conducts a systematic literature review to identify and classify DH benefits and to analyse the methods used to assess their economic impacts. The identified benefits are classified into four categories: energy system, end users, environment, and society, considering 123 research papers. Across all studies, 26 monetised DH benefits, but only 10 studies explicitly described the methods applied. This work demonstrates the limited but growing use of monetisation approaches for analysing DH benefits. The crucial monetisation approaches are avoided cost, net present value, hedonic pricing, levelised cost of heat, and willingness to pay. However, the absence of a harmonised framework for evaluating and monetising DH benefits limits the comparability and consistency of existing studies. Also, the study shows how emerging technologies like AI, digital twins, IoT, and cyber\u2013physical systems are enhancing DH system performance and associated benefits. The study highlights the need for an integrated and standardised evaluation framework to assist policymakers and investors in financing efficient and sustainable DH projects."
+  },
+  {
+   "openalex": "https://openalex.org/W4416706012",
+   "doi": "https://doi.org/10.26868/25222708.2025.1775",
+   "title": "Simulation-based benchmarking of VWART for fault detection in heat interface units",
+   "year": 2025,
+   "date": "2025-08-24",
+   "venue": "Building Simulation Conference proceedings",
+   "type": "conference-paper",
+   "cites": 0,
+   "abstract": "In recent years, buildings have become increasingly digitised and monitored. As a result, in many cases, it is found that the energy performance of buildings falls short of expectations. Several studies indicate that this performance gap can be related to the presences of faults in the building's energy system, which can be responsible for 4-30% of the energy consumption [1]. Therefore, interest in fault detection and diagnosis (FDD) techniques for building energy systems has increased. However, building energy systems are inherently diverse, encompassing a wide range of components, configurations, and control strategies. This diversity makes it challenging to develop generic, robust, and reliable FDD algorithms. These FDD algorithms rely on historical and/or case-specific operational data for their development. Consequently, they may not fully capture the nuances of the different system configurations [1].In this research, we address the advantages of using a simulation-based approach for the development of reliable, robust, and generic FDD algorithms. More specifically, the approach is applied to a type of collective residential heating system called the combined heat distribution circuit (CHDC), also known as the flatstation concept. By simulating various configurations of the CHDC and common fault scenarios identified in previous research [2], operation conditions are emulated, and a fault detection strategy involving key performance indicators, such as the Volume-Weighted Average Return Temperature (VWART), and thresholds are developed. The most impactful system parameters on the performance indicators, such as the temperature regime, type of components, controls, and type of occupant, are explored. Based on this knowledge, statistical analysis, clustering techniques, and logistic regression are used to develop the FD strategy and define proper thresholds. Subsequently, the simulation-based monitoring approach is assessed by applying the methodology for one the faults encountered in previous research [2] using data from residential heat meters. Finally, we reflect on the applicability of the simulation-based approach and future improvements."
+  },
+  {
+   "openalex": "https://openalex.org/W4412224348",
+   "doi": null,
+   "title": "D5.3 \u2013 Web-app tool for proactive building integration in DH networks",
+   "year": 2023,
+   "date": "2023-03-31",
+   "venue": "VBN Forskningsportal (Aalborg Universitet)",
+   "type": "book",
+   "cites": 0,
+   "abstract": "In recent years, the amount of data generated in buildings and their energy systems has increased dramatically. However, merely having access to large amounts of data is not a guarantee of improved performance or correct decision-making towards energy efficiency. Therefore, to derive valuable insights from data, it is essential to develop tools that can effectively analyze data and visualize key metrics to provide a higher level of understanding of the building and systems\u2019 performance. This document presents the development process (methodologies and algorithms), features, and architecture of the PRELUDE District Heating Meter Data Analysis web-app. This web-app has been created to help the building owners and district heating utility companies analyze the data collected by heat meters and thus assess the performance of buildings connected to the district heating network and identify faulty systems or building operations. Several features of the PRELUDE District Heating Meter Data Analysis web-app have been implemented. They are based on data analysis methods and algorithms elaborated and validated within the PRELUDE project in the scope of WP 5 (Task 5.3) and published in peer-reviewed scientific articles (Schaffer, Tvedebrink and Marszal-Pomianowska, 2022; Leiria et al., 2022; Leiria et al., 2023). These methods are related to the following topics: - Algorithm for disaggregation of heating energy usage profile for space heating and domestic hot water production from the total heating energy use. - Overview of the different key performance indicators of multiple buildings connected to the district heating grid on an interactive map. - Overview of the different key performance indicators of an individual building regarding its heating usage. - Fault detection in the heating installations of buildings connected to the district heating network. - Support building and heating systems energy performance analysis and decision-making. The further development of the tool, tuning, and implementation of additional analysis methods is foreseen in the scope of WP 7, where District Heating data and specific cases will be used as demonstration cases. The tool is applied to datasets of the Aalborg district heating network to inform the utility company about possible problematic situations and faults detected within their client portfolio. The continuous improvement of the web-app tool aims to automatically diagnose faulty buildings through machine learning techniques and interoperability with the FusiX platform. The tool can be used alone or in conjunction with other FusiX applications. An API will be implemented to enable the direct use of the analysis algorithms implemented in the web-app."
+  }
+ ]
+}
