@@ -207,3 +207,7 @@ Built from abstracts + Crossref/OpenAlex only (ScienceDirect blocked). Claim lim
   inspected until all M1 cells and seeds are complete; then scripts/m2_evaluate.py 2 is run exactly once.
 - Session-3 rebuild reproduced round-4 M1 numbers exactly (AE 1.78 / 5.63 FA/sub-yr at recall 0.214 / 0.321;
   SRCR-C 0.18 / 0.65). New on M1: iForest needs 2.42 / 18.29 (worse than AE).
+- 2026-11-23 (session 3) BUG FIX during M2 score computation, no metric inspected: ThreeSigma and IForest
+  crashed when no signal passed the 20%-availability filter in a training window (M2 substation 33, very short
+  series). Fix: such a model returns no score (NaN) for that retraining period, as for any missing data.
+  Code path never triggered on M1 (M1 scores unchanged). sigma3 M2 recomputed for the remaining substations.
