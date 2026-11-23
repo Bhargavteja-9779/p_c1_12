@@ -200,3 +200,10 @@ Built from abstracts + Crossref/OpenAlex only (ScienceDirect blocked). Claim lim
   novelty holds only "for DH substations". Control-strategy rules exist (10.1016/j.energy.2026.142993): the
   new part is the controlled factorial on a public benchmark.
 - 10.1016/j.egyai.2026.100824 (STST): OpenAlex reference list (66 refs, checked 2026-11-23 session 3) cites neither the PreDist paper (W7159838334) nor the Zenodo record (W7105746820); abstract: six datasets, supervised F1 0.77-0.98, no continuous-monitoring FA rate. Use of PreDist: probably not, UNVERIFIED (full text blocked).
+
+## M2 access log
+- 2026-11-23 (session 3): candidate set + analysis frozen (protocol A4, A5; scripts/m2_evaluate.py committed).
+  Started computing M2 SCORE FILES (rule, sigma3, loop3s, loop3s_c). No thresholds applied, no M2 metric
+  inspected until all M1 cells and seeds are complete; then scripts/m2_evaluate.py 2 is run exactly once.
+- Session-3 rebuild reproduced round-4 M1 numbers exactly (AE 1.78 / 5.63 FA/sub-yr at recall 0.214 / 0.321;
+  SRCR-C 0.18 / 0.65). New on M1: iForest needs 2.42 / 18.29 (worse than AE).
