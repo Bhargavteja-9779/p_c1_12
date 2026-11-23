@@ -216,3 +216,6 @@ Built from abstracts + Crossref/OpenAlex only (ScienceDirect blocked). Claim lim
   significant at n = 28; HF1 threshold-free: SRCR-C vs SRCR-all 23/28 faults better, p = 0.009; AE-comfort vs
   AE p = 0.040; Loop-3s-C vs Loop-3s p = 0.060. Power warning: n = 25 on M2 -> the pooled M1+M2 secondary
   analysis (A4) is needed for adequate power; report both, primary stays M2.
+- 2026-11-23 (session 3) LOCKED EVALUATION: all 11 cells scored on M2 (seed 0, 58/58 substations each).
+  scripts/m2_evaluate.py 2 2000 run ONCE now (code as committed for A5 + the logged NaN bug fix). Output:
+  results/locked_m2_operating_points.csv, results/locked_m2_tests.csv, results/logs/LOCKED_m2.log.
