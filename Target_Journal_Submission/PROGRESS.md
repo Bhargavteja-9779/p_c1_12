@@ -57,9 +57,19 @@ STEP 0: journal landscape and 72-day check (in progress)
   full text of 10.1016/j.energy.2026.142993 (control-strategy mode rules) and 10.1016/j.enbuild.2024.114009.
 
 ## NEXT ACTION
-1. Round 3 DONE (no primary gain; see log). Round 4: pre-register, then run (candidates in log).
-2. Novelty map DONE; scorecard once the method is fixed.
-3. Then seeds 0-9, full baselines table on M1, single locked evaluation on M2.
+State (2026-11-23): rounds 0-4 done, 13 ideas counted. KEY FINDING: on M1 the expert setpoint-shortfall RULE
+dominates all learned methods incl. SRCR (same 9 faults, fewer FAs); AE detects a complementary set (pump/valve/
+leak/parameterisation). Best candidate C2 = rule OR AE (budget split): 11/28 at 1.44 FA/sub-yr; not significant
+on M1 alone (see log). SRCR fleet model is NOT a contribution -> story pivot to N5 (continuous protocol) +
+N7 (transparent setpoint rule beats deep NBM; learned model only valuable for complementary faults) + hybrid.
+1. AE seeds 1-9 on M1 running (logs results/logs/regen/aeseed_p*.log; /tmp/claude-0/seeds.sh). When done:
+   recompute C2 per seed (scripts/round4_orfusion.py with ae_seedK) -> mean +- SD.
+2. Freeze candidates C1 (rule), C2 (rule OR AE), plus all baselines at M1-chosen operating points in
+   protocol.md amendments; compute AE/baselines on M2 (per-substation, online); single locked M2 evaluation;
+   pooled M1+M2 inference incl. curve-AUC endpoint.
+3. Check M2 has setpoint signals for the rule (columns only) BEFORE freezing.
+4. Scorecard + Reviewer Number Zero with the pivoted story; then paper drafting (STEP per BRIEF).
+5. Optional round 5: residualised AE (F16) and LBNL AHU second domain (generality).
 
 ## Resume notes (saved 2026-11-23 before account switch)
 - Results/scores and data cache are NOT in git (large). On a new machine: run

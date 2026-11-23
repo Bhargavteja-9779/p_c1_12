@@ -163,3 +163,12 @@ vs single methods: optimism to be checked on M2).
 - Candidate final methods (frozen after this round): C1 = rule alone; C2 = rule OR AE with M1-chosen operating
   points per budget. Both need no cross-manufacturer model transfer (rule has no parameters to learn; AE is
   per-substation online) -> only the operating points transfer from M1 to M2.
+
+## M1 development statistics at B = 2 (results/stats/m1_paired_B2.csv; cluster bootstrap 10k over 35 substations,
+## exact McNemar on 28 faults, Holm over baselines)
+- C2 (rule OR AE) vs AE benchmark: +0.179 recall (95% CI 0.000 to 0.350), 6 vs 1 discordant faults, p = 0.125
+  (Holm 0.625), FA -0.34/sub-yr (CI -0.75 to 0.08). vs rule: +0.071 (CI -0.067 to 0.227), p = 0.625.
+- C1 (rule) vs AE: +0.107 (CI -0.133 to 0.333) at 0.69 fewer FA/sub-yr (CI -1.72 to 0.67).
+- No comparison survives Holm at n = 28 faults. Recall-at-budget is underpowered on one manufacturer; the
+  primary inference must pool M1 + M2 (52 faults) and use the paired curve-level secondary endpoint (normalised
+  area under recall-vs-FA for B in [0, 6]) as pre-registered. Not remarkable on M1 alone.

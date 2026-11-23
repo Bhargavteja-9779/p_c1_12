@@ -1,0 +1,51 @@
+{
+ "rule": [
+  "rule",
+  "4.0",
+  "18"
+ ],
+ "ae": [
+  "ae",
+  "1.5",
+  "96"
+ ],
+ "ae_cond": [
+  "ae_cond",
+  "2.0",
+  "96"
+ ],
+ "sigma3": [
+  "sigma3",
+  "2.0",
+  "48"
+ ],
+ "loop3s": [
+  "loop3s",
+  "2.0",
+  "36"
+ ],
+ "iforest": [
+  "iforest",
+  "1.0",
+  "72"
+ ],
+ "qnbm": [
+  "qnbm",
+  "2.0",
+  "96"
+ ],
+ "srcr_comp__v_gate_1s_local": [
+  "srcr_comp__v_gate_1s_local",
+  "3.0",
+  "48"
+ ],
+ "C2_rule_or_ae": [
+  "or",
+  "rule",
+  "4.0",
+  "48",
+  "ae",
+  "2.0",
+  "96"
+ ]
+}
