@@ -3,3 +3,5 @@ __pycache__/
 *.pyc
 Target_Journal_Submission/code/data/cache/
 Target_Journal_Submission/code/results/scores/
+# live logs of running jobs; final copies are force-added after runs
+Target_Journal_Submission/code/results/logs/r_*.log
