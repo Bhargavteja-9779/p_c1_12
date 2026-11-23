@@ -227,3 +227,4 @@ Built from abstracts + Crossref/OpenAlex only (ScienceDirect blocked). Claim lim
   better, p = 0.016). HF3: SRCR-C ranks worse than rule (p = 0.0003) and loop3s_c (0.003).
   Realised FA rates stayed near budget for most methods (calibration transfer OK; detection transfer failed).
   This result is final for the pre-registered analysis; M2 is now burned for method selection.
+- Post hoc descriptive: Spearman rank correlation of M1 (in-sample) vs M2 (locked) recall across the 11 cells: B=1 -0.33, B=2 -0.15, B=4 0.07 (all p > 0.3): development rankings do not transfer.
