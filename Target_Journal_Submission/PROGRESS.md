@@ -1,5 +1,7 @@
 # PROGRESS
 
+> PROMPT 2 (RECHECK) IS IN PROGRESS: read RECHECK/PROGRESS.md first; its NEXT ACTION supersedes the one below.
+
 ## Current phase
 PAPER A (honest pre-registered benchmark) — writing phase. All experiments for the core story are DONE.
 

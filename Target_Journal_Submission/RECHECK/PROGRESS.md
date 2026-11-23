@@ -37,8 +37,29 @@ Branch: claude/peaceful-planck-2kznjo. Started 2026-11-23.
 
 - LIVE FILES untracked while jobs run (remove from .gitignore and force-add when done): stage1/alt.log, stage1/alt_journal_dates.csv, stage3/raw/, logs/run_all_full.log.
 
-## NEXT ACTION
-1. Wait for run_all full (log logs/run_all_full.log); then compare ALL committed numbers (m2_evaluate output vs
-   results/locked_m2_*.csv in git), run scripts/protocol_gap.py and scripts/random_label.py (venv python).
-2. Fix exclusion leakage (knowledge time = report date), re-score M1 subs 4, 7, report delta.
-3. Finish stage1 report when alt scan ends; Stage 3 merge when agent reports; then Stage 4 scorecard, Stage 7 writing.
+## NEXT ACTION (saved 2026-11-23 for account switch)
+Stage status: 1 nearly done (journal: Energy and AI FAILS 72 d; 10/20 alternatives scanned, all FAIL, see
+stage1/alt_journal_summary_partial.md); 2 done; 3 done; 4 round 1 partly done (H-E4 supported, T1 done; H-E1/E2/E3
+and random-label test need M2 scores); 5 partly (12/12 M1 points reproduced; leak found); 6.1 done; 7 started
+(manuscript/sections/01_introduction.md, figures via code/scripts/make_figures.py); 8-10 not started.
+
+On a NEW machine (container is lost; scores are not in git):
+1. git fetch origin && fast-forward onto the newest claude/* branch (this one: claude/peaceful-planck-2kznjo).
+2. Clean env (README route): python3 -m venv /opt/recheck_env; /opt/recheck_env/bin/pip install torch --index-url
+   https://download.pytorch.org/whl/cpu; /opt/recheck_env/bin/pip install -r code/requirements.txt
+3. From code/: nohup /opt/recheck_env/bin/python run_all.py --mode full --jobs 4 > ../RECHECK/logs/run_all_full.log 2>&1 &
+   (~10 h; it was at ae_cond M2 when saved: all M1 single-substation cells done except ae_comfort partly).
+4. Finish alt-journal scan: cd RECHECK/stage1 && python3 multi_journal_dates.py "Energy Conversion and Management: X"
+   "Journal of Building Engineering" "Energy Strategy Reviews" "Applied Thermal Engineering" "Expert Systems with
+   Applications" "Knowledge-Based Systems" "Reliability Engineering & System Safety" "Building and Environment"
+   "Energy Nexus" "Energy and Built Environment"  (NOTE: script overwrites alt_journal_dates.csv -> change output
+   name first, e.g. alt_journal_dates_part2.csv). Then write stage1/stage1_journal_report.md and decide: if none
+   passes, keep Energy and AI (best fit) and state the 72-day FAIL plainly in the final report (do not hide it).
+5. After run_all: compare results/locked_m2_*.csv with git HEAD (git diff --stat code/results); then run
+   scripts/protocol_gap.py, scripts/random_label.py, scripts/chance_level.py (venv python); evaluate H-E1..H-E3
+   against RECHECK/stage4/preregistration_E.md; log in RECHECK/novelty_elevation_log.md.
+6. Fix leak in src/models/online.py known_exclusions (fault exclusion known only after its report date); re-score
+   M1 subs 4 and 7 for per-substation methods; report delta (RECHECK/stage5/).
+7. Stage 5 rest: seeds summary, efficiency table from logs, error analysis; Stage 4 scorecard; Stage 7 full
+   manuscript + DOCX; Stage 8 reviews R1-R6; Stage 9 audit; Stage 10 final_recheck_report.md.
+Pending from user: author names, affiliations, CRediT.

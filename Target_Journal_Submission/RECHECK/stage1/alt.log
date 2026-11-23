@@ -1,0 +1,245 @@
+== Results in Engineering S4210226253 Elsevier BV
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/FCSTFC+Times-Roman', '/FontDescriptor': IndirectObject(41, 0, 140542241182480), '/Type': '/Font', '/FirstChar': 32, '/LastChar': 239, '/Widths': [250, 0, 408, 0, 0, 833, 0, 180, 333, 333, 0, 0, 250, 333, 250, 278, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 278, 278, 0, 0, 0, 0, 0, 722, 667, 667, 722, 611, 556, 722, 722, 333, 389, 722, 611, 889, 722, 722, 556, 722, 667, 556, 611, 722, 722, 944, 722, 722, 611, 333, 0, 333, 0, 500, 0, 444, 500, 444, 500, 444, 333, 500, 500, 278, 278, 500, 278, 778, 500, 500, 500, 500, 333, 389, 278, 500, 500, 722, 500, 500, 444, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 722, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 444, 0, 0, 0, 0, 0, 278], '/Encoding': '/WinAnsiEncoding', '/Subtype': '/Type1'}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/JTOGFM+Times-Bold', '/FontDescriptor': IndirectObject(39, 0, 140542241182480), '/Type': '/Font', '/FirstChar': 32, '/LastChar': 122, '/Widths': [250, 0, 0, 0, 0, 1000, 833, 0, 333, 333, 0, 0, 250, 333, 250, 0, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 333, 0, 0, 0, 0, 0, 0, 722, 667, 722, 722, 667, 611, 778, 778, 389, 0, 778, 667, 944, 722, 778, 611, 0, 722, 556, 667, 722, 722, 1000, 722, 0, 0, 0, 0, 0, 0, 0, 0, 500, 556, 444, 556, 444, 333, 500, 556, 278, 0, 556, 278, 833, 556, 500, 556, 0, 444, 389, 333, 556, 500, 722, 500, 500, 444], '/Encoding': '/WinAnsiEncoding', '/Subtype': '/Type1'}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!DOC'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!DOC'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/Subtype': '/Type1', '/FirstChar': 32, '/Type': '/Font', '/FontDescriptor': IndirectObject(45, 0, 140542241148752), '/BaseFont': '/ELLNFM+Helvetica', '/Encoding': '/WinAnsiEncoding', '/LastChar': 32, '/Widths': [278]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/Subtype': '/Type1', '/FirstChar': 45, '/Type': '/Font', '/FontDescriptor': IndirectObject(48, 0, 140542241148752), '/BaseFont': '/ELLNGN+Univers', '/Encoding': '/WinAnsiEncoding', '/LastChar': 119, '/Widths': [333, 278, 278, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 278, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 556, 0, 500, 611, 556, 0, 611, 611, 278, 278, 0, 278, 944, 611, 611, 611, 0, 389, 500, 333, 611, 0, 833]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!DOC'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/Type': '/Font', '/Subtype': '/Type1', '/Encoding': '/WinAnsiEncoding', '/FontDescriptor': IndirectObject(57, 0, 140542241149952), '/BaseFont': '/EOOCNJ+Univers', '/LastChar': 119, '/Widths': [333, 278, 278, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 278, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 556, 0, 500, 611, 556, 0, 611, 611, 278, 278, 0, 278, 944, 611, 611, 611, 0, 389, 500, 333, 611, 0, 833], '/FirstChar': 45}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/Type': '/Font', '/Subtype': '/Type1', '/Encoding': '/WinAnsiEncoding', '/FontDescriptor': IndirectObject(81, 0, 140542241149952), '/BaseFont': '/EOOCNI+Helvetica', '/LastChar': 32, '/Widths': [278], '/FirstChar': 32}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<html'
+EOF marker not found
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/RBTNQP+Times-Roman', '/FontDescriptor': IndirectObject(41, 0, 140542241148032), '/Type': '/Font', '/FirstChar': 32, '/LastChar': 122, '/Widths': [250, 0, 408, 0, 0, 833, 0, 0, 333, 333, 500, 0, 250, 333, 250, 0, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 278, 0, 0, 0, 0, 0, 921, 722, 667, 667, 722, 611, 556, 722, 722, 333, 389, 722, 611, 889, 722, 722, 556, 722, 667, 556, 611, 722, 722, 944, 722, 0, 611, 333, 0, 333, 0, 0, 0, 444, 500, 444, 500, 444, 333, 500, 500, 278, 278, 500, 278, 778, 500, 500, 500, 500, 333, 389, 278, 500, 500, 722, 500, 500, 444], '/Encoding': '/WinAnsiEncoding', '/Subtype': '/Type1'}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/GPCCDJ+Times-Bold', '/FontDescriptor': IndirectObject(39, 0, 140542241148032), '/Type': '/Font', '/FirstChar': 32, '/LastChar': 114, '/Widths': [250, 0, 0, 0, 0, 0, 0, 0, 0, 0, 500, 0, 250, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 778, 0, 0, 0, 0, 944, 0, 0, 0, 0, 0, 556, 0, 0, 722, 0, 0, 0, 667, 0, 0, 0, 0, 0, 0, 500, 0, 0, 556, 444, 0, 0, 556, 278, 333, 556, 278, 833, 0, 500, 0, 0, 444], '/Encoding': '/WinAnsiEncoding', '/Subtype': '/Type1'}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+Results in Engineering candidates 112 dated 25
+== Smart Energy S4210228472 Elsevier BV
+invalid pdf header: b'<!DOC'
+EOF marker not found
+invalid pdf header: b'<html'
+EOF marker not found
+EOF marker not found
+Smart Energy candidates 15 dated 10
+== Applied Energy S109565702 Elsevier BV
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/Type': '/Font', '/Subtype': '/Type1', '/BaseFont': '/DINPro', '/FontDescriptor': IndirectObject(7, 0, 140542241149952), '/FirstChar': 0, '/LastChar': 58, '/Widths': [562, 249, 426, 611, 879, 530, 332, 562, 530, 545, 294, 543, 252, 490, 526, 421, 447, 724, 314, 496, 562, 562, 545, 545, 447, 573, 264, 514, 297, 673, 600, 459, 668, 588, 282, 656, 501, 816, 637, 478, 580, 270, 522, 522, 522, 522, 522, 522, 522, 298, 732, 298, 522, 522, 522, 297, 355, 253, 536], '/Encoding': IndirectObject(10, 0, 140542241149952)}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/Type': '/Font', '/Subtype': '/Type1', '/BaseFont': '/DINPro-Bold', '/FontDescriptor': IndirectObject(12, 0, 140542241149952), '/FirstChar': 0, '/LastChar': 23, '/Widths': [573, 232, 426, 638, 573, 352, 573, 543, 455, 309, 628, 560, 325, 275, 480, 534, 573, 561, 548, 501, 659, 644, 305, 575], '/Encoding': IndirectObject(15, 0, 140542241149952)}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/JFDMOA+ArialMT', '/Encoding': '/WinAnsiEncoding', '/FirstChar': 32, '/FontDescriptor': IndirectObject(183, 0, 140542241148752), '/LastChar': 121, '/Subtype': '/Type1', '/Type': '/Font', '/Widths': [278, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 278, 333, 278, 278, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 278, 0, 0, 0, 0, 0, 0, 667, 0, 722, 722, 667, 611, 778, 722, 278, 0, 0, 556, 833, 0, 778, 667, 0, 722, 667, 611, 722, 667, 944, 0, 0, 0, 0, 0, 0, 0, 0, 0, 556, 0, 500, 556, 556, 278, 556, 556, 222, 0, 0, 222, 833, 556, 556, 0, 0, 333, 500, 278, 556, 0, 0, 0, 500]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+invalid pdf header: b'<!DOC'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!DOC'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!DOC'
+EOF marker not found
+Ignoring wrong pointing object 37 0 (offset 0)
+Ignoring wrong pointing object 59 0 (offset 0)
+Ignoring wrong pointing object 205 0 (offset 0)
+Ignoring wrong pointing object 207 0 (offset 0)
+Applied Energy candidates 195 dated 30
+== Energy S2497375143 Elsevier BV
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+Energy candidates 87 dated 30
+== Energy and Buildings S6846437 Elsevier BV
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<html'
+EOF marker not found
+EOF marker not found
+invalid pdf header: b'<html'
+EOF marker not found
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/Type': '/Font', '/Subtype': '/Type1', '/BaseFont': '/AAAACL+STIX-Regular', '/FontDescriptor': IndirectObject(27, 0, 140542241148272), '/Encoding': '/MacRomanEncoding', '/FirstChar': 208, '/LastChar': 213, '/Widths': [500, 1000, 444, 444, 0, 333]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/Type': '/Font', '/Subtype': '/Type1', '/BaseFont': '/AAAAAJ+Univers', '/FontDescriptor': IndirectObject(53, 0, 140542241148272), '/Encoding': '/MacRomanEncoding', '/FirstChar': 46, '/LastChar': 119, '/Widths': [281, 281, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 281, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 552, 614, 500, 0, 552, 0, 614, 614, 281, 281, 0, 281, 947, 614, 614, 614, 0, 385, 500, 333, 614, 552, 833]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+invalid pdf header: b'<!doc'
+EOF marker not found
+Energy and Buildings candidates 176 dated 30
+== Advanced Engineering Informatics S112141509 Elsevier BV
+invalid pdf header: b'<html'
+EOF marker not found
+EOF marker not found
+invalid pdf header: b'<html'
+EOF marker not found
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<html'
+EOF marker not found
+EOF marker not found
+invalid pdf header: b'\n\n\n\n<'
+EOF marker not found
+Advanced Engineering Informatics candidates 42 dated 14
+== Engineering Applications of Artificial Intelligence S900972176 Elsevier BV
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/HNDAKG+CMBX12', '/FontDescriptor': IndirectObject(49, 0, 140542241149712), '/Type': '/Font', '/FirstChar': 40, '/LastChar': 121, '/Widths': [437, 437, 0, 0, 0, 375, 312, 0, 562, 562, 562, 562, 562, 562, 562, 562, 562, 562, 312, 0, 0, 0, 0, 0, 0, 849, 799, 812, 862, 738, 0, 0, 879, 418, 581, 880, 0, 1067, 0, 844, 768, 844, 839, 625, 782, 864, 849, 0, 0, 0, 687, 0, 0, 0, 0, 0, 0, 546, 625, 500, 625, 513, 343, 562, 625, 312, 0, 593, 312, 937, 625, 562, 625, 0, 459, 443, 437, 625, 593, 812, 593, 593], '/Encoding': '/WinAnsiEncoding', '/Subtype': '/Type1'}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/HVOGOB+CMR12', '/FontDescriptor': IndirectObject(37, 0, 140542241149712), '/Type': '/Font', '/FirstChar': 11, '/LastChar': 127, '/Widths': [571, 543, 543, 815, 0, 0, 0, 0, 489, 0, 0, 0, 0, 0, 0, 0, 0, 489, 0, 0, 761, 0, 0, 489, 0, 0, 815, 761, 271, 380, 380, 0, 761, 271, 326, 271, 0, 489, 489, 489, 489, 489, 489, 489, 489, 489, 489, 271, 0, 0, 761, 0, 0, 0, 734, 693, 707, 747, 666, 639, 768, 734, 353, 503, 761, 611, 897, 734, 761, 666, 761, 720, 543, 707, 734, 734, 1006, 734, 734, 598, 271, 0, 271, 0, 0, 0, 489, 543, 435, 543, 435, 299, 489, 543, 271, 299, 516, 271, 815, 543, 489, 543, 516, 380, 386, 380, 543, 516, 707, 516, 516, 435, 489, 0, 0, 0, 489], '/Encoding': IndirectObject(233, 0, 140542241149712), '/Subtype': '/Type1'}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/WDSVVJ+CMTI12', '/FontDescriptor': IndirectObject(51, 0, 140542241149712), '/Type': '/Font', '/FirstChar': 46, '/LastChar': 121, '/Widths': [300, 0, 0, 500, 500, 500, 500, 500, 500, 0, 0, 0, 300, 0, 0, 0, 0, 0, 0, 726, 0, 700, 738, 0, 0, 0, 0, 376, 0, 751, 613, 876, 0, 750, 0, 0, 0, 550, 700, 0, 726, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 500, 450, 450, 500, 450, 300, 0, 500, 300, 0, 450, 250, 800, 550, 500, 500, 0, 412, 400, 325, 525, 450, 650, 0, 475], '/Encoding': '/WinAnsiEncoding', '/Subtype': '/Type1'}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/WTPCJP+CMR7', '/FontDescriptor': IndirectObject(45, 0, 140542241149712), '/Type': '/Font', '/FirstChar': 49, '/LastChar': 49, '/Widths': [569], '/Encoding': '/WinAnsiEncoding', '/Subtype': '/Type1'}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/DCUMKZ+CMR8', '/FontDescriptor': IndirectObject(39, 0, 140542241149712), '/Type': '/Font', '/FirstChar': 37, '/LastChar': 122, '/Widths': [885, 0, 0, 413, 413, 0, 826, 0, 354, 295, 0, 531, 531, 531, 531, 531, 531, 531, 531, 531, 531, 0, 0, 0, 826, 0, 0, 0, 795, 752, 767, 811, 722, 0, 0, 795, 0, 0, 0, 663, 972, 0, 826, 722, 0, 781, 590, 767, 0, 0, 1091, 0, 0, 0, 0, 0, 0, 0, 0, 0, 531, 590, 472, 590, 472, 324, 531, 590, 295, 0, 0, 295, 885, 590, 531, 590, 0, 414, 419, 413, 590, 560, 767, 0, 560, 472], '/Encoding': '/WinAnsiEncoding', '/Subtype': '/Type1'}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/LOLBMU+CMSS8', '/FontDescriptor': IndirectObject(53, 0, 140542241149712), '/Type': '/Font', '/FirstChar': 48, '/LastChar': 57, '/Widths': [531, 531, 531, 531, 531, 531, 531, 531, 531, 531], '/Encoding': '/WinAnsiEncoding', '/Subtype': '/Type1'}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/FOXLPG+CMTI10', '/FontDescriptor': IndirectObject(47, 0, 140542241149712), '/Type': '/Font', '/FirstChar': 44, '/LastChar': 121, '/Widths': [306, 0, 0, 0, 511, 0, 511, 0, 511, 0, 511, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 743, 0, 715, 755, 0, 0, 0, 0, 385, 0, 768, 0, 0, 0, 0, 0, 0, 729, 562, 0, 743, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 511, 460, 460, 0, 460, 306, 460, 0, 306, 0, 460, 255, 0, 562, 511, 511, 0, 421, 408, 332, 536, 460, 664, 0, 485], '/Encoding': '/WinAnsiEncoding', '/Subtype': '/Type1'}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/PQFTLV+CMMI8', '/FontDescriptor': IndirectObject(41, 0, 140542241149712), '/Type': '/Font', '/FirstChar': 22, '/LastChar': 120, '/Widths': [639, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 672, 0, 0, 0, 0, 896, 0, 0, 843, 0, 0, 0, 0, 0, 618, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 546, 0, 0, 0, 0, 361, 429, 553, 0, 939, 644, 0, 0, 474, 0, 0, 383, 0, 0, 0, 598], '/Encoding': IndirectObject(239, 0, 140542241149712), '/Subtype': '/Type1'}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/JTCQLB+CMR17', '/FontDescriptor': IndirectObject(35, 0, 140542241149712), '/Type': '/Font', '/FirstChar': 45, '/LastChar': 121, '/Widths': [301, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 249, 0, 0, 0, 0, 0, 0, 693, 0, 0, 706, 0, 0, 0, 0, 0, 0, 0, 0, 850, 693, 0, 0, 0, 0, 510, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 458, 0, 406, 510, 406, 0, 458, 0, 249, 0, 484, 249, 772, 510, 458, 0, 0, 354, 359, 354, 510, 484, 667, 0, 484], '/Encoding': '/WinAnsiEncoding', '/Subtype': '/Type1'}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!DOC'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<html'
+EOF marker not found
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'\n\n\n\n<'
+EOF marker not found
+invalid pdf header: b'<!DOC'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'\n\n\n\n<'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/QIMECV+Times-Roman', '/FontDescriptor': IndirectObject(35, 0, 140542241146832), '/Type': '/Font', '/FirstChar': 32, '/LastChar': 252, '/Widths': [250, 0, 0, 0, 0, 0, 0, 0, 333, 333, 0, 0, 250, 333, 250, 278, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 278, 278, 0, 564, 0, 0, 0, 722, 667, 667, 722, 611, 556, 722, 722, 333, 389, 722, 611, 889, 722, 722, 556, 722, 667, 556, 611, 722, 722, 944, 722, 722, 611, 333, 0, 333, 0, 0, 0, 444, 500, 444, 500, 444, 333, 500, 500, 278, 278, 500, 278, 778, 500, 500, 500, 500, 333, 389, 278, 500, 500, 722, 500, 500, 444, 480, 0, 480, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 500], '/Encoding': '/WinAnsiEncoding', '/Subtype': '/Type1'}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/DOAKJI+Times-Bold', '/FontDescriptor': IndirectObject(45, 0, 140542241146832), '/Type': '/Font', '/FirstChar': 32, '/LastChar': 121, '/Widths': [250, 0, 0, 0, 0, 0, 0, 0, 333, 333, 0, 0, 0, 0, 250, 0, 500, 500, 500, 500, 500, 500, 500, 500, 0, 0, 0, 0, 0, 0, 0, 0, 0, 722, 0, 722, 722, 667, 611, 0, 0, 389, 0, 778, 667, 0, 0, 778, 611, 0, 722, 556, 667, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 500, 556, 444, 556, 444, 333, 500, 556, 278, 333, 556, 278, 833, 556, 500, 556, 556, 444, 389, 333, 556, 500, 722, 500, 500], '/Encoding': '/WinAnsiEncoding', '/Subtype': '/Type1'}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/XNVHAV+Helvetica-Bold', '/FontDescriptor': IndirectObject(51, 0, 140542241146832), '/Type': '/Font', '/FirstChar': 32, '/LastChar': 32, '/Widths': [278], '/Encoding': '/WinAnsiEncoding', '/Subtype': '/Type1'}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/MEWRRE+CMBX8', '/FontDescriptor': IndirectObject(91, 0, 140542240646128), '/Type': '/Font', '/FirstChar': 12, '/LastChar': 121, '/Widths': [680, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1020, 0, 0, 476, 476, 0, 0, 0, 408, 340, 0, 612, 612, 612, 612, 612, 612, 612, 612, 612, 612, 340, 0, 0, 0, 0, 0, 0, 922, 869, 0, 937, 0, 768, 962, 954, 459, 0, 956, 734, 0, 954, 920, 835, 0, 915, 680, 852, 0, 922, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 595, 680, 544, 680, 561, 374, 612, 680, 340, 0, 646, 340, 1020, 680, 612, 680, 0, 506, 483, 476, 680, 646, 884, 646, 646], '/Encoding': IndirectObject(472, 0, 140542240646128), '/Subtype': '/Type1'}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/SWDSHB+CMR10', '/FontDescriptor': IndirectObject(85, 0, 140542240646128), '/Type': '/Font', '/FirstChar': 1, '/LastChar': 124, '/Widths': [833, 0, 694, 0, 0, 0, 0, 0, 0, 0, 583, 555, 555, 833, 833, 0, 0, 0, 500, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 500, 0, 0, 833, 0, 277, 388, 388, 500, 777, 277, 333, 277, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 277, 277, 0, 777, 0, 472, 777, 750, 708, 722, 763, 680, 652, 784, 750, 361, 513, 777, 625, 916, 750, 777, 680, 777, 736, 555, 722, 750, 750, 1027, 750, 750, 611, 277, 0, 277, 500, 0, 277, 500, 555, 444, 555, 444, 305, 500, 555, 277, 305, 527, 277, 833, 555, 500, 555, 527, 391, 394, 388, 555, 527, 722, 527, 527, 444, 500, 1000], '/Encoding': IndirectObject(473, 0, 140542240646128), '/Subtype': '/Type1'}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/RJNFLA+CMR17', '/FontDescriptor': IndirectObject(79, 0, 140542240646128), '/Type': '/Font', '/FirstChar': 45, '/LastChar': 118, '/Widths': [301, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 249, 0, 0, 0, 0, 0, 0, 693, 654, 667, 706, 0, 0, 726, 693, 327, 0, 0, 575, 0, 0, 0, 628, 0, 680, 510, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 458, 510, 406, 510, 406, 275, 458, 510, 249, 0, 484, 249, 772, 510, 458, 510, 0, 354, 359, 354, 510, 484], '/Encoding': '/WinAnsiEncoding', '/Subtype': '/Type1'}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/CTQJOW+CMBX9', '/FontDescriptor': IndirectObject(87, 0, 140542240646128), '/Type': '/Font', '/FirstChar': 65, '/LastChar': 116, '/Widths': [892, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 575, 657, 525, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 488, 466, 460], '/Encoding': '/WinAnsiEncoding', '/Subtype': '/Type1'}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/HWQGAY+CMR12', '/FontDescriptor': IndirectObject(81, 0, 140542240646128), '/Type': '/Font', '/FirstChar': 44, '/LastChar': 117, '/Widths': [271, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 707, 747, 0, 0, 0, 734, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 734, 598, 0, 0, 0, 0, 0, 0, 489, 0, 0, 0, 435, 0, 489, 543, 271, 299, 0, 271, 0, 543, 0, 0, 0, 0, 0, 0, 543], '/Encoding': '/WinAnsiEncoding', '/Subtype': '/Type1'}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/YGMDZE+CMR9', '/FontDescriptor': IndirectObject(89, 0, 140542240646128), '/Type': '/Font', '/FirstChar': 12, '/LastChar': 122, '/Widths': [570, 0, 856, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 399, 399, 0, 0, 285, 342, 285, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 785, 0, 670, 0, 770, 370, 0, 0, 642, 0, 0, 799, 699, 0, 756, 570, 742, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 513, 570, 456, 570, 457, 314, 513, 570, 285, 0, 542, 285, 856, 570, 513, 570, 542, 402, 405, 399, 570, 542, 742, 542, 542, 456], '/Encoding': IndirectObject(486, 0, 140542240646128), '/Subtype': '/Type1'}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/AMOWNK+CMR8', '/FontDescriptor': IndirectObject(83, 0, 140542240646128), '/Type': '/Font', '/FirstChar': 11, '/LastChar': 122, '/Widths': [619, 590, 0, 885, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 295, 413, 413, 531, 0, 295, 354, 295, 531, 531, 531, 531, 531, 531, 531, 531, 531, 531, 531, 295, 0, 0, 0, 0, 0, 0, 795, 752, 767, 811, 722, 693, 833, 795, 382, 0, 0, 663, 972, 795, 826, 722, 0, 781, 590, 767, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 531, 590, 472, 590, 472, 324, 531, 590, 295, 324, 560, 295, 885, 590, 531, 590, 0, 414, 419, 413, 590, 560, 767, 560, 560, 472], '/Encoding': IndirectObject(487, 0, 140542240646128), '/Subtype': '/Type1'}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+Engineering Applications of Artificial Intelligence candidates 80 dated 27
+== International Journal of Electrical Power & Energy Systems S168377509 Elsevier BV
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+International Journal of Electrical Power & Energy Systems candidates 88 dated 30
+== Energy Reports S2898434319 Elsevier BV
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/Type': '/Font', '/Subtype': '/Type1', '/BaseFont': '/DINPro', '/FontDescriptor': IndirectObject(7, 0, 140542241146832), '/FirstChar': 0, '/LastChar': 53, '/Widths': [562, 249, 426, 732, 530, 252, 543, 562, 545, 530, 562, 421, 545, 496, 490, 526, 294, 332, 447, 562, 879, 447, 545, 724, 536, 297, 282, 314, 673, 264, 630, 297, 656, 588, 514, 459, 668, 600, 270, 522, 522, 522, 522, 522, 522, 522, 522, 298, 298, 522, 355, 253, 573, 522], '/Encoding': IndirectObject(10, 0, 140542241146832)}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/Type': '/Font', '/Subtype': '/Type1', '/BaseFont': '/DINPro-Bold', '/FontDescriptor': IndirectObject(12, 0, 140542241146832), '/FirstChar': 0, '/LastChar': 23, '/Widths': [573, 232, 426, 638, 573, 352, 573, 543, 455, 309, 628, 560, 325, 275, 480, 534, 573, 561, 548, 501, 659, 644, 305, 575], '/Encoding': IndirectObject(15, 0, 140542241146832)}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+invalid pdf header: b'<!DOC'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'\n\n\n\n\n'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+Energy Reports candidates 119 dated 30
+== Sustainable Cities and Society S163634330 Elsevier BV
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!DOC'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'\r\n\r\n<'
+EOF marker not found
+Sustainable Cities and Society candidates 81 dated 30
+== Energy Conversion and Management X S4210191901 Elsevier BV
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
