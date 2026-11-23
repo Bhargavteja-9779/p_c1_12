@@ -46,6 +46,11 @@ STEP 0: journal landscape and 72-day check (in progress)
 - Baselines rule/sigma3/loop3s/iforest/qnbm launched on M1 (check results/scores/<name>/m1 has 35 files;
   rerun scripts/run_online_method.py <name> 1 if not).
 
+## Session 2026-11-23 (account 2)
+- New machine: data + cache rebuilt, M1 scores regenerating (logs results/logs/regen). Round 3 pre-registered;
+  scripts/round3.py written (F10 daily, F13 conformal, F12 underdel = new channel "underdel"). Novelty map
+  delegated (journal_selection/novelty_map.csv + novelty_map_summary.md).
+
 ## NEXT ACTION
 1. Round 3 (pre-register hypotheses in the log first): daily decision unit, LBNL AHU second domain,
    conformal FA-budget threshold, under-delivery fusion.

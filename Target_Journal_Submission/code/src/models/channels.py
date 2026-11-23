@@ -85,3 +85,9 @@ class DeliveryChannel(_MultiBand):
     SPECS = [("p_net_meter_heat_power", True, "both", 1.0),
              ("p_net_meter_flow", True, "both", 10.0),
              ("p_net_return_temperature", True, "both", 1.0)]
+
+
+class UnderDeliveryChannel(_MultiBand):
+    """F12: heat power BELOW the substation's own weather-conditioned band (pumps, valves, regulators).
+    Heating-season gating (24-h mean outdoor temperature < 15 degC) is applied at the daily level (round3.py)."""
+    SPECS = [("p_net_meter_heat_power", True, "low", 1.0)]
