@@ -1635,7 +1635,7 @@
   {
    "id": "E10",
    "doi_or_url": "10.1111/exsy.70194",
-   "title": "Federated Multi‐Source Data Fusion for Semi‐Supervised Fault Detection in District Heating Substations",
+   "title": "Federated Multi\u2010Source Data Fusion for Semi\u2010Supervised Fault Detection in District Heating Substations",
    "year": "2026",
    "venue": "Expert Systems",
    "field": "DH substations",
@@ -1992,7 +1992,7 @@
   {
    "id": "E31",
    "doi_or_url": "10.1016/j.ymssp.2020.107142",
-   "title": "Foundations of population-based SHM, Part III: Heterogeneous populations – Mapping and transfer",
+   "title": "Foundations of population-based SHM, Part III: Heterogeneous populations \u2013 Mapping and transfer",
    "year": "2020",
    "venue": "Mechanical Systems and Signal Processing",
    "field": "Other condition monitoring",
@@ -2162,7 +2162,7 @@
   {
    "id": "E41",
    "doi_or_url": null,
-   "title": "Frühzeitige Fehlererkennung in Hausstationen: Erfahrungen aus dem Projekt PreDist",
+   "title": "Fr\u00fchzeitige Fehlererkennung in Hausstationen: Erfahrungen aus dem Projekt PreDist",
    "year": "2026",
    "venue": "Fraunhofer-Publica (talk; OpenAlex W7162230853)",
    "field": "DH substations",
@@ -2417,7 +2417,7 @@
   {
    "id": "E56",
    "doi_or_url": "10.1115/1.4052730",
-   "title": "Using Weather and Schedule Based Pattern Matching and Feature Based Principal Component Analysis for Whole Building Fault Detection—Part II Field Evaluation",
+   "title": "Using Weather and Schedule Based Pattern Matching and Feature Based Principal Component Analysis for Whole Building Fault Detection\u2014Part II Field Evaluation",
    "year": "2021",
    "venue": "ASME Journal of Engineering for Sustainable Buildings and Cities",
    "field": "Building HVAC FDD",
@@ -2553,7 +2553,7 @@
   {
    "id": "N05",
    "doi_or_url": null,
-   "title": "Predictive maintenance of district heating substations with the gray box method Prädiktive Instandhaltung von Fernwärme-Hausstationen mit Grey-Box-Verfahren",
+   "title": "Predictive maintenance of district heating substations with the gray box method Pr\u00e4diktive Instandhaltung von Fernw\u00e4rme-Hausstationen mit Grey-Box-Verfahren",
    "year": "2025",
    "venue": "Fraunhofer-Publica (Fraunhofer-Gesellschaft)",
    "field": "DH substations",
@@ -3012,7 +3012,7 @@
   {
    "id": "N32",
    "doi_or_url": null,
-   "title": "Evaluation des EnergyFaultDetector-Ansatzes für datengetriebene Zustandsüberwachung von Windenergieanlagen aus Betreiberperspektive",
+   "title": "Evaluation des EnergyFaultDetector-Ansatzes f\u00fcr datengetriebene Zustands\u00fcberwachung von Windenergieanlagen aus Betreiberperspektive",
    "year": "2026",
    "venue": "Opus-HSO (Offenburg University of Applied Sciences)",
    "field": "Wind SCADA",
@@ -3371,7 +3371,7 @@
    "doi_or_url": "10.55972/spectrum.v27i1.439",
    "title": "Low-False-Alarm Evaluation Changes the Ranking of Multisensor Anomaly Detectors",
    "year": "2026",
-   "venue": "Aplicações Operacionais em Áreas de Defesa",
+   "venue": "Aplica\u00e7\u00f5es Operacionais em \u00c1reas de Defesa",
    "field": "Multisensor AD (safety-critical)",
    "what_it_does": "Evaluates forecasting, AE and conformal multisensor detectors on four public datasets; low-false-alarm evaluation (recall at FAR<=0.05) changes rankings in seven model-dataset pairs; calibration does not fix poor separability.",
    "what_it_does_not_do": "not recorded in v2 (see how_we_differ)",
@@ -3624,7 +3624,7 @@
   {
    "id": "N68",
    "doi_or_url": "10.1111/2041-210x.13140",
-   "title": "The area under the precision‐recall curve as a performance metric for rare binary events",
+   "title": "The area under the precision\u2010recall curve as a performance metric for rare binary events",
    "year": "2019",
    "venue": "Methods in Ecology and Evolution",
    "field": "Ecology (rare events)",
@@ -4609,6 +4609,20 @@
    },
    "label": "weakest point",
    "source_file": "RECHECK/novelty_elevation_log.md 'Round 1'"
+  },
+  {
+   "date": "2026-11-24T17:00Z",
+   "scorer": "author (main agent), written BEFORE the blind reviewer's score was seen",
+   "scheme": "MASTER_PROMPT v2 6.3 (/25)",
+   "dims": {
+    "differentiation": 3,
+    "mechanism": 3,
+    "evidence": 4,
+    "breadth": 3,
+    "significance": 3
+   },
+   "total": 16,
+   "notes": "Concepts (base rate, protocol-induced ranking change, spectrum bias) are known; contributions are first measurements on two energy benchmarks + cross-manufacturer failure on PreDist. H6e failed; AE exception to selection effect unexplained; M2 burned."
   }
  ]
 }
