@@ -140,3 +140,13 @@ labels. Hill of Towie: 21 turbines, 2016-2026, 10-min SCADA + alarm log (tblAlar
 (ShutdownDuration). Fault events must be DERIVED from alarm/downtime logs by a rule written and committed before any
 detector output on this data is computed (labels may be inspected; detector outputs may not). Disk: yearly zips are
 converted to compact per-turbine parquet and deleted. Song 2026 (Zenodo 23902232) also used it -> cite.
+
+## D-2026-11-24-21  Hill of Towie fault labels are NOT credibly derivable; fresh-test plan revised
+Inspected 2019 tblAlarmLog (labels only; no detector output exists): 657,395 alarms, 327 codes, only 12 codes have
+descriptions (Hill_of_Towie_alarms_description.csv). Song 2026 used Hill of Towie only for a restart analysis
+(kp_hot.py), so no published fault rule exists to adopt. A home-made code->fault rule would be weak and attackable.
+Revised options for a fresh test of any plan_v3 method: (a) Fuhrlander FL2500 (alarm logs with system/subsystem
+descriptions; Song's published long-stop list can be adopted and cited; small: 5 turbines, ~15 turbine-years);
+(b) Hill of Towie only for false-alarm-rate estimation in normal operation (no fault labels needed: a long, clean
+normal record measures FA per turbine-year precisely). Decide after the journal quality-bar report and plan_v2
+results. 2019.zip kept (1.4 GB) for option (b).
