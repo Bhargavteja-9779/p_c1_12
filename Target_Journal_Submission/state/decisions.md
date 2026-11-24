@@ -90,3 +90,11 @@ kept (best fit; median 89 d, n=25, range 33-565; Q1 UNVERIFIED). Closest on timi
   (status skipped_compute). H6e confirmation is reported only for methods with >= 4 completed seeds; others are
   reported as incomplete. No CARE result had been inspected when this was decided (round6_care.py not yet run).
 - 13:40 UTC: still OOM with 3 workers (6.0 GB peak, cgroup kill in dmesg) -> 2 workers.
+
+## D-2026-11-24-14  Selection-effect claim: wording after prior-art check (literature/selection_effect_claim.md)
+45 queries; 64 CARE-citing + 6 PreDist-citing works screened; no paper compares alarm rates on curated normal events
+with random ordinary-operation windows in any energy domain. The concept is established in medicine (spectrum bias:
+Ransohoff & Feinstein 1978; Lijmer et al. 1999 JAMA; Rutjes et al. 2006 CMAJ; QUADAS-2) and ML (Ben-Hur & Noble 2006).
+PreDist's own Limitation 2 suggests evaluating on randomly selected events but does not run it. Wording: "we run the
+random-window check suggested by Roelofs et al. and measure a spectrum-bias-like effect in energy benchmarks";
+claim the first measurement, not the concept. Note CARE paper says 51 normal datasets, Zenodo v6 has 50 (we use 50).

@@ -1,0 +1,524 @@
+{
+ "generated": "2026-11-24",
+ "claim": "Curated 'normal events' in CARE (wind) and PreDist (district heating) are quieter than ordinary normal operation of the same assets (alarm rate 16% vs 37% on random eligible 7-day windows; rate ratio 0.30-0.61 over 4 detectors), so balanced benchmarks are optimistic through negative-sample selection in addition to the 50/50 base rate.",
+ "notes": "opened=true means abstract or full text retrieved in this session (OpenAlex abstract_inverted_index, arXiv HTML, MDPI PDF, Zenodo package). Semantic Scholar not used. No paper found that compares curated vs random normal windows for any energy benchmark. Discrepancy to fix in manuscript: CARE paper states 51 normal datasets; Zenodo v6 (used by us and later papers) has 50.",
+ "queries": [
+  {
+   "query": "spectrum bias diagnostic test",
+   "source": "openalex",
+   "n_hits": 401279,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "case-control design overestimates diagnostic accuracy",
+   "source": "openalex",
+   "n_hits": 100441,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "Ransohoff Feinstein problems of spectrum and bias",
+   "source": "openalex",
+   "n_hits": 624,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "healthy controls spectrum effect diagnostic accuracy",
+   "source": "openalex",
+   "n_hits": 158254,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "selection bias normal data anomaly detection benchmark",
+   "source": "openalex",
+   "n_hits": 33747,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "time series anomaly detection benchmark flawed",
+   "source": "openalex",
+   "n_hits": 9532,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "easy negatives evaluation bias anomaly detection",
+   "source": "openalex",
+   "n_hits": 64676,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "wind turbine SCADA anomaly detection false positive rate normal operation benchmark",
+   "source": "openalex",
+   "n_hits": 524,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "early fault detection benchmark normal events wind turbine",
+   "source": "openalex",
+   "n_hits": 3192,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "district heating fault detection benchmark dataset",
+   "source": "openalex",
+   "n_hits": 1271,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "CARE to Compare benchmark normal events",
+   "source": "openalex",
+   "n_hits": 157618,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "negative sample selection bias evaluation optimistic",
+   "source": "openalex",
+   "n_hits": 95811,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "dataset curation bias anomaly detection benchmark",
+   "source": "openalex",
+   "n_hits": 22129,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "clean normal training data assumption anomaly detection contamination",
+   "source": "openalex",
+   "n_hits": 4218,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "false alarm rate normal operation wind turbine condition monitoring evaluation realistic",
+   "source": "openalex",
+   "n_hits": 1226,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "Lijmer empirical evidence design-related bias diagnostic tests",
+   "source": "openalex",
+   "n_hits": 1157,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "Rutjes evidence of bias diagnostic accuracy",
+   "source": "openalex",
+   "n_hits": 10065,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "QUADAS-2 revised tool",
+   "source": "openalex",
+   "n_hits": 11286,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "case-control diagnostic accuracy healthy controls overestimate",
+   "source": "openalex",
+   "n_hits": 44892,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "realistic evaluation predictive maintenance false alarms prevalence",
+   "source": "openalex",
+   "n_hits": 3434,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "cites:CARE to Compare (W4404700659) - all citing works screened by title",
+   "source": "openalex",
+   "n_hits": 64,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "cites:PreDist (W7159838334) - all citing works screened by title",
+   "source": "openalex",
+   "n_hits": 6,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "choosing negative examples protein-protein interactions",
+   "source": "openalex",
+   "n_hits": 241724,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "test set negatives not representative overestimate specificity machine learning",
+   "source": "openalex",
+   "n_hits": 51444,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "normal behaviour model wind turbine false alarms long-term operation evaluation",
+   "source": "openalex",
+   "n_hits": 1089,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "anomaly detection evaluation hand-picked normal data unrealistic",
+   "source": "openalex",
+   "n_hits": 853,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "building HVAC fault detection benchmark false alarm normal operation unrepresentative",
+   "source": "openalex",
+   "n_hits": 3,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "photovoltaic fault detection benchmark normal periods selection false positives",
+   "source": "openalex",
+   "n_hits": 534,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "negative example selection bias makes task easier evaluation",
+   "source": "openalex",
+   "n_hits": 464610,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "specificity overestimated healthy controls machine learning anomaly",
+   "source": "openalex",
+   "n_hits": 3364,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "choosing negative examples prediction protein-protein interactions bias",
+   "source": "crossref",
+   "n_hits": 3262661,
+   "date": "2026-11-24",
+   "note": "crossref total-results inflated (any-term match)"
+  },
+  {
+   "query": "spectrum bias deep learning diagnostic evaluation",
+   "source": "crossref",
+   "n_hits": 6248166,
+   "date": "2026-11-24",
+   "note": "crossref total-results inflated (any-term match)"
+  },
+  {
+   "query": "unrepresentative negative examples overestimate classifier performance",
+   "source": "crossref",
+   "n_hits": 2866638,
+   "date": "2026-11-24",
+   "note": "crossref total-results inflated (any-term match)"
+  },
+  {
+   "query": "normal periods selected by experts anomaly detection evaluation false alarms",
+   "source": "crossref",
+   "n_hits": -1,
+   "date": "2026-11-24",
+   "note": "request failed / phrase search returned irrelevant matches"
+  },
+  {
+   "query": "false positive rate on randomly sampled normal windows condition monitoring",
+   "source": "crossref",
+   "n_hits": 2620433,
+   "date": "2026-11-24",
+   "note": "crossref total-results inflated (any-term match)"
+  },
+  {
+   "query": "case-control sampling bias machine learning evaluation specificity",
+   "source": "crossref",
+   "n_hits": 11424001,
+   "date": "2026-11-24",
+   "note": "crossref total-results inflated (any-term match)"
+  },
+  {
+   "query": "abs:\"CARE to Compare\"",
+   "source": "arxiv",
+   "n_hits": -1,
+   "date": "2026-11-24",
+   "note": "request failed / phrase search returned irrelevant matches"
+  },
+  {
+   "query": "all:\"spectrum bias\" AND all:\"machine learning\"",
+   "source": "arxiv",
+   "n_hits": 3,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "abs:\"selection bias\" AND abs:\"anomaly detection\" AND abs:benchmark",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "abs:\"normal events\" AND abs:\"wind\"",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "abs:\"easy negatives\" AND abs:benchmark AND abs:anomaly",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "abs:\"benchmark\" AND abs:\"fault detection\" AND abs:\"false alarm\" AND abs:\"wind turbine\"",
+   "source": "arxiv",
+   "n_hits": 2,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "abs:\"negative examples\" AND abs:\"biased\" AND abs:\"easier\"",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "abs:\"spectrum bias\" AND abs:\"anomaly\"",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "query": "abs:\"normal data\" AND abs:\"curated\" AND abs:\"anomaly detection\" AND abs:\"evaluation\"",
+   "source": "arxiv",
+   "n_hits": 1,
+   "date": "2026-11-24",
+   "note": ""
+  }
+ ],
+ "papers": [
+  {
+   "doi_or_url": "10.3390/data9120138 (arXiv 2404.10320v2; MDPI PDF read)",
+   "title": "CARE to Compare: A Real-World Benchmark Dataset for Early Fault Detection in Wind Turbine Data",
+   "year": 2024,
+   "venue": "Data (MDPI)",
+   "opened": true,
+   "what_it_shows": "Full text read. Sec 3.1.3: 'The normal labels have been determined by a combination of feedback of the wind farm operators, manual inspection of the data, and expert knowledge.' Requirement 4: dataset must be balanced. Paper reports 44 anomaly / 51 normal datasets (Zenodo v6 used by later papers: 45/50). Accuracy on normal events counts only normal-status points. Discussion/limitations address only label uncertainty of anomaly starts; no statement that normal events are easier or unrepresentative of routine operation; no comparison with random normal windows.",
+   "overlap_with_claim": "Confirms the mechanism exists (normal events hand-selected by operator feedback + manual inspection + expert knowledge) but does not acknowledge or measure the resulting optimism.",
+   "severity": "context (source of the curated negatives)"
+  },
+  {
+   "doi_or_url": "10.1016/j.energy.2026.141178 (arXiv 2511.14791v2 HTML read)",
+   "title": "Enabling predictive maintenance in district heating substations: A labelled dataset and fault detection evaluation framework based on service data (PreDist)",
+   "year": 2026,
+   "venue": "Energy",
+   "opened": true,
+   "what_it_shows": "Full text read. 'We also provide a set of pre-defined normal events. For these intervals, well-performing fault detection algorithms should not raise false alarms ... The normal events are selected across all seasons, primarily for substations in the reports list and several additional substations without faults. These intervals are free from maintenance tasks and faults.' 65 normal events (30 M1 / 35 M2). Limitation 2 ('Normal-event definition and unlabelled faults'): 'Normal events could be refined to better represent all stable operating regimes across seasons and control modes. An option would be to generate these automatically ... and evaluate the models' ability to recognise normal behaviour on randomly selected events', noting unlabelled faults may require visual inspection. Separately states reliability is overestimated because the evaluation set is balanced.",
+   "overlap_with_claim": "CLOSEST PRIOR WORK. The authors themselves flag that pre-defined normal events may not represent all operating regimes and propose random normal events as future work, but do not run that comparison, do not quantify a false-alarm gap, and do not state the direction (easier negatives -> optimism). Our result empirically executes and quantifies their suggested check. Must be cited and credited explicitly.",
+   "severity": "narrows (anticipates the idea qualitatively)"
+  },
+  {
+   "doi_or_url": "10.1056/nejm197810262991705",
+   "title": "Problems of Spectrum and Bias in Evaluating the Efficacy of Diagnostic Tests (Ransohoff & Feinstein)",
+   "year": 1978,
+   "venue": "N Engl J Med",
+   "opened": true,
+   "what_it_shows": "Abstract: unless an appropriately broad spectrum is chosen for diseased and nondiseased patients, the test may receive falsely high 'rule-in' and 'rule-out' performance.",
+   "overlap_with_claim": "Established analogue: a too-narrow (too healthy) nondiseased spectrum inflates specificity. Our curated normal events = narrow nondiseased spectrum.",
+   "severity": "established analogue (cite)"
+  },
+  {
+   "doi_or_url": "10.1001/jama.282.11.1061",
+   "title": "Empirical Evidence of Design-Related Bias in Studies of Diagnostic Tests (Lijmer et al.)",
+   "year": 1999,
+   "venue": "JAMA",
+   "opened": true,
+   "what_it_shows": "Abstract: 218 evaluations; studies using a diseased population and a separate control group overestimated diagnostic performance vs clinical-population studies (RDOR 3.0, 95% CI 2.0-4.5).",
+   "overlap_with_claim": "Quantified medical analogue of 'curated controls' (diagnostic case-control design). Our benchmark = case-control design with selected controls.",
+   "severity": "established analogue (cite; primary)"
+  },
+  {
+   "doi_or_url": "10.1503/cmaj.050090",
+   "title": "Evidence of bias and variation in diagnostic accuracy studies (Rutjes et al.)",
+   "year": 2006,
+   "venue": "CMAJ",
+   "opened": true,
+   "what_it_shows": "Abstract: 31 meta-analyses/487 studies; highest accuracy estimates in studies with severe cases and healthy controls (RDOR 4.9, 95% CI 0.6-37.3); nonconsecutive inclusion RDOR 1.5.",
+   "overlap_with_claim": "Directly the 'healthy controls too healthy' analogue; note wide CI. (Task brief said Rutjes 2005; the peer-reviewed article found is CMAJ 2006.)",
+   "severity": "established analogue (cite)"
+  },
+  {
+   "doi_or_url": "10.7326/0003-4819-140-3-200402030-00010",
+   "title": "Sources of Variation and Bias in Studies of Diagnostic Accuracy: A Systematic Review (Whiting et al.)",
+   "year": 2004,
+   "venue": "Ann Intern Med",
+   "opened": true,
+   "what_it_shows": "Abstract: best-documented effects include disease prevalence and severity, partial verification bias, etc.",
+   "overlap_with_claim": "Background on spectrum/selection effects.",
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.7326/0003-4819-155-8-201110180-00009",
+   "title": "QUADAS-2: A Revised Tool for the Quality Assessment of Diagnostic Accuracy Studies (Whiting et al.)",
+   "year": 2011,
+   "venue": "Ann Intern Med",
+   "opened": true,
+   "what_it_shows": "Abstract: 4 domains incl. 'patient selection' assessed for risk of bias and applicability.",
+   "overlap_with_claim": "Its patient-selection domain (case-control design / inappropriate exclusions signalling questions, known from the tool; only abstract read now) is the checklist item our finding maps to.",
+   "severity": "background (cite for framing)"
+  },
+  {
+   "doi_or_url": "10.7326/0003-4819-137-7-200210010-00011",
+   "title": "Spectrum Bias or Spectrum Effect? Subgroup Variation in Diagnostic Test Evaluation (Mulherin & Miller)",
+   "year": 2002,
+   "venue": "Ann Intern Med",
+   "opened": true,
+   "what_it_shows": "Abstract: proposes 'spectrum effect'; performance varies across subgroups; study samples must represent the relevant population.",
+   "overlap_with_claim": "Terminology choice: our curated-vs-random gap is a spectrum effect on the negative class.",
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1002/gps.5227",
+   "title": "Diagnostic accuracy of the MoCA ... Avoiding spectrum bias caused by healthy controls",
+   "year": 2019,
+   "venue": "Int J Geriatr Psychiatry",
+   "opened": true,
+   "what_it_shows": "Abstract: specificity 73% with healthy controls vs 37% with referred non-impaired comparisons, same test and cutoff.",
+   "overlap_with_claim": "Closest design analogue in medicine: same test/threshold, specificity on curated healthy controls vs realistic negatives. Structurally identical to our 16% vs 37% alarm-rate comparison.",
+   "severity": "analogue (optional cite)"
+  },
+  {
+   "doi_or_url": "10.1016/j.ejrad.2025.112161",
+   "title": "Impact of spectrum bias on deep learning-based stroke MRI analysis",
+   "year": 2025,
+   "venue": "Eur J Radiol",
+   "opened": true,
+   "what_it_shows": "Abstract: excluding diagnostically uncertain cases led to a four-fold increase in diagnostic odds ratio of a DL tool.",
+   "overlap_with_claim": "Spectrum bias applied to ML evaluation (medical imaging); not energy, not time series.",
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1186/1471-2105-7-s1-s2",
+   "title": "Choosing negative examples for the prediction of protein-protein interactions (Ben-Hur & Noble)",
+   "year": 2006,
+   "venue": "BMC Bioinformatics",
+   "opened": true,
+   "what_it_shows": "Abstract: the common way of choosing negatives yields high-quality non-interacting sets but 'can lead to biased estimates of prediction accuracy, because the constraints placed on the distribution of the negative examples makes the task easier'.",
+   "overlap_with_claim": "ML analogue of exactly our mechanism (constrained/curated negatives make the task easier -> optimistic accuracy). Different domain (bioinformatics, not time-series/energy).",
+   "severity": "narrows (ML analogue)"
+  },
+  {
+   "doi_or_url": "10.1093/bioinformatics/btr514",
+   "title": "Revisiting the negative example sampling problem for predicting protein-protein interactions (Park & Marcotte)",
+   "year": 2011,
+   "venue": "Bioinformatics",
+   "opened": true,
+   "what_it_shows": "Abstract: distinguishes negative subsets for testing (must be unbiased so estimates generalize to population) from training subsets.",
+   "overlap_with_claim": "Supports recommending random (unbiased) negatives for evaluation.",
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1109/tkde.2021.3112126",
+   "title": "Current Time Series Anomaly Detection Benchmarks are Flawed and are Creating the Illusion of Progress (Wu & Keogh)",
+   "year": 2021,
+   "venue": "IEEE TKDE",
+   "opened": true,
+   "what_it_shows": "Abstract: most exemplars of popular TSAD benchmarks have one of four flaws (triviality, unrealistic anomaly density, mislabeled ground truth, run-to-failure bias; flaw names quoted by CARE paper).",
+   "overlap_with_claim": "Benchmark-flaw genre; none of the four flaws is about how the negative/normal class is selected.",
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1007/978-3-030-86514-6_1",
+   "title": "Anomaly Detection: How to Artificially Increase Your F1-Score with a Biased Evaluation Protocol (Fourure et al.)",
+   "year": 2021,
+   "venue": "ECML PKDD",
+   "opened": false,
+   "what_it_shows": "No abstract retrievable via OpenAlex/Crossref; title only. Known topic (not verified now): F1 depends on test-set contamination ratio.",
+   "overlap_with_claim": "Relates to the base-rate half of our argument, not negative selection. UNVERIFIED content.",
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.5281/zenodo.23902231",
+   "title": "Reproducibility package for 'Detection without discrimination: a blinded, pre-registered test of pre-fault signals in public wind-turbine SCADA data' (Song)",
+   "year": 2026,
+   "venue": "Zenodo (unreviewed)",
+   "opened": true,
+   "what_it_shows": "Package downloaded; manuscript text grepped. Uses CARE normal events (farms B,C) and control windows (Kelmarsh/Penmanshiel) with 1000 random half-splits for an alarm-budget threshold.",
+   "overlap_with_claim": "No comparison of curated CARE normal events against random ordinary-operation windows from the same assets.",
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.3390/info17090930",
+   "title": "Uncertainty-Calibrated Residual Conformal Monitoring of Wind Turbine SCADA Data for Cross-Asset Anomaly Detection Under Distribution Shift",
+   "year": 2026,
+   "venue": "Information (MDPI)",
+   "opened": true,
+   "what_it_shows": "Abstract: CARE v6 (45 anomalous/50 normal); alarms in 18 of 50 normal cases; argues same-asset calibration gives optimistic thresholds.",
+   "overlap_with_claim": "Uses curated normal cases as the false-alarm denominator; no random-window comparison.",
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.5194/wes-2026-145",
+   "title": "Chronologically calibrated PCA for wind-turbine SCADA health monitoring: a leakage-controlled CARE v6 benchmark",
+   "year": 2026,
+   "venue": "Wind Energy Science Discussions (preprint)",
+   "opened": true,
+   "what_it_shows": "Abstract: leakage-controlled CARE evaluation, normal-case accuracy and false-positive events on locked test turbines.",
+   "overlap_with_claim": "Leakage, not negative selection; no random-window comparison.",
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.48550/arxiv.2611.25252",
+   "title": "Moving Generality from Model to Modeler: LLM Agents for PHM on a Deployment-Style Benchmark",
+   "year": 2026,
+   "venue": "arXiv",
+   "opened": true,
+   "what_it_shows": "Abstract: deployment-style PHM benchmark; published accuracies rest on papers' own conventions (e.g., RUL capping can halve error).",
+   "overlap_with_claim": "Evaluation-convention optimism in PHM generally; not negative selection.",
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.36001/phme.2026.v9i1.4977",
+   "title": "Benchmarking Time-Series Anomaly Detection Algorithms for Photovoltaic Plants",
+   "year": 2026,
+   "venue": "PHM Society European Conference",
+   "opened": true,
+   "what_it_shows": "Abstract: TimeEval benchmark on PV datasets with injected/controlled faults and fault-free days.",
+   "overlap_with_claim": "No curated-vs-random normal comparison.",
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1016/j.segy.2026.100256",
+   "title": "Challenges in detection of heating curve misconfiguration: An empirical study",
+   "year": 2026,
+   "venue": "Smart Energy",
+   "opened": true,
+   "what_it_shows": "Abstract (cites PreDist): CAE normal-behaviour model fails on gradual heating-curve drifts within normal ranges.",
+   "overlap_with_claim": "Not about negative selection.",
+   "severity": "background"
+  }
+ ]
+}
