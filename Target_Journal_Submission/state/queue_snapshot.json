@@ -862,13 +862,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae 101 0/4",
-   "status": "running",
+   "status": "done",
    "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 2,
    "after": "c4care_prep",
    "started": "2026-11-24T16:28:01+00:00",
-   "pid": 8992
+   "pid": 8992,
+   "finished": "2026-11-24T17:15:03+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_confirm-4f69c90e5e",
@@ -876,13 +878,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae 101 1/4",
-   "status": "running",
+   "status": "done",
    "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 2,
    "after": "c4care_prep",
    "started": "2026-11-24T16:34:21+00:00",
-   "pid": 9064
+   "pid": 9064,
+   "finished": "2026-11-24T17:15:43+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_confirm-e5b3a5e89d",
@@ -1618,11 +1622,15 @@
    "cycle": 5,
    "cwd": "code",
    "cmd": "python3 scripts/run_panel.py care 0 0/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T16:44:48+00:00",
    "priority": 3,
-   "after": null
+   "after": null,
+   "started": "2026-11-24T17:15:03+00:00",
+   "pid": 9802,
+   "finished": "2026-11-24T17:27:23+00:00",
+   "returncode": 0
   },
   {
    "id": "c5panel-dc090b3a56",
@@ -1630,11 +1638,15 @@
    "cycle": 5,
    "cwd": "code",
    "cmd": "python3 scripts/run_panel.py care 0 1/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T16:44:48+00:00",
    "priority": 3,
-   "after": null
+   "after": null,
+   "started": "2026-11-24T17:15:43+00:00",
+   "pid": 9891,
+   "finished": "2026-11-24T17:26:23+00:00",
+   "returncode": 0
   },
   {
    "id": "c5panel-9a868927bc",
@@ -1642,11 +1654,15 @@
    "cycle": 5,
    "cwd": "code",
    "cmd": "python3 scripts/run_panel.py care 0 2/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T16:44:48+00:00",
    "priority": 3,
-   "after": null
+   "after": null,
+   "started": "2026-11-24T17:26:23+00:00",
+   "pid": 10064,
+   "finished": "2026-11-24T17:38:03+00:00",
+   "returncode": 0
   },
   {
    "id": "c5panel-b9b5ec7171",
@@ -1654,11 +1670,15 @@
    "cycle": 5,
    "cwd": "code",
    "cmd": "python3 scripts/run_panel.py care 0 3/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T16:44:48+00:00",
    "priority": 3,
-   "after": null
+   "after": null,
+   "started": "2026-11-24T17:27:23+00:00",
+   "pid": 10118,
+   "finished": "2026-11-24T17:37:33+00:00",
+   "returncode": 0
   },
   {
    "id": "c5panel-8b50f5c8bc",
@@ -1666,11 +1686,15 @@
    "cycle": 5,
    "cwd": "code",
    "cmd": "python3 scripts/run_panel.py predist1 0 0/2",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T16:44:48+00:00",
    "priority": 3,
-   "after": null
+   "after": null,
+   "started": "2026-11-24T17:37:33+00:00",
+   "pid": 10288,
+   "finished": "2026-11-24T17:48:04+00:00",
+   "returncode": 0
   },
   {
    "id": "c5panel-46ee1ca0ab",
@@ -1678,11 +1702,15 @@
    "cycle": 5,
    "cwd": "code",
    "cmd": "python3 scripts/run_panel.py predist1 0 1/2",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T16:44:48+00:00",
    "priority": 3,
-   "after": null
+   "after": null,
+   "started": "2026-11-24T17:38:03+00:00",
+   "pid": 10323,
+   "finished": "2026-11-24T17:46:14+00:00",
+   "returncode": 0
   },
   {
    "id": "c5panel-2831f98141",
@@ -1690,11 +1718,13 @@
    "cycle": 5,
    "cwd": "code",
    "cmd": "python3 scripts/run_panel.py care 1 0/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "running",
+   "attempts": 2,
    "added": "2026-11-24T16:44:48+00:00",
    "priority": 3,
-   "after": null
+   "after": null,
+   "started": "2026-11-24T18:57:21+00:00",
+   "pid": 200
   },
   {
    "id": "c5panel-01515ba440",
@@ -1702,11 +1732,13 @@
    "cycle": 5,
    "cwd": "code",
    "cmd": "python3 scripts/run_panel.py care 1 1/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "running",
+   "attempts": 2,
    "added": "2026-11-24T16:44:48+00:00",
    "priority": 3,
-   "after": null
+   "after": null,
+   "started": "2026-11-24T18:57:21+00:00",
+   "pid": 201
   },
   {
    "id": "c5panel-f4447346d5",

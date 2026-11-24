@@ -90,7 +90,7 @@ operating points beat random alarms (chance_level.csv). 5. F17 own-history calib
 
 ## Known problems
 - Memory: a CARE farm-C AE fit peaks ~4.3 GB -> peaks ~6 GB (dmesg) -> run the queue with --workers 2 on this machine.
-- The container pauses when the user is idle: all processes die (2026-11-24 06:21 UTC). After any pause: `python3 scripts/status.py`; if heartbeat is stale, restart the queue (Resume compute).
+- Worker restarts / container pauses kill ALL processes (2026-11-24 06:21 and ~17:50 UTC; the second happened with a monitor active, so staying active does not prevent it). After any pause: `python3 scripts/status.py`; if heartbeat is stale, restart the queue (Resume compute).
 - Layer B: a `claude` CLI exists, but this is an ephemeral cloud container and an interactive session already works
   in this checkout, so the supervisor was NOT started (two agents would edit the same files). Auto-restart therefore
   does NOT work here: after a usage limit or account switch, paste BOOTSTRAP_PROMPT.txt manually.

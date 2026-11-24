@@ -125,3 +125,4 @@ Dry run of plan_v2_analysis.py on substitute scores (every panel member = sigma3
 completed without error (18 min, tables dominate). Panel jobs are cheap (~2.5 machine-h) and target the failing gate
 G3; CARE ae seeds 101-104 continue after them as budget allows. Compute is still booked to cycle 4 until its queue
 drains; cycle 5 starts with the plan_v2 analysis.
+- 18:57 UTC: second worker restart (~17:50) killed the queue; 936 panel files verified readable; queue restarted (2 workers).
