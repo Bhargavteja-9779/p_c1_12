@@ -510,3 +510,13 @@ Script unchanged since commit 8e79130 (before any CARE score existed). 36 turbin
   three methods have lower bounds 8.1-13.5 with Holm p < 0.05.
 - Unplanned observations: LOFO thresholds overshoot the budget on the held-out farm (ae_cond 7.8 FA/turbine-yr at
   B = 2; ae 4.1); benchmark-chosen points imply 6.7-16.7 FA/turbine-yr in continuous operation.
+
+## H5d RESULT — PreDist M1 selection test (pre-registered; run 2026-11-24 ~16:3x UTC; results/round5/selection_m1*.csv)
+Normal events (35) vs 2,000 random eligible normal 7-day windows, same scores, each method's M1 B=2 point.
+Pooled ratio 0.466, cluster-bootstrap 95% CI 0.20-0.73 -> H5d SUPPORTED (pre-registered criterion; the CI code
+was added after the first run because the original script omitted it, D-15; per-method numbers reproduced exactly).
+Per method: rule 0/35 vs 0.031; loop3s 0 vs 0.040; underdel 0/22 vs 0.052; srcr_comp 0 vs 0.050; iforest 0.24
+(CI 0-0.76); qnbm 0.22 (0-0.69); sigma3 0.57 (0-1.33); ae 0.997 (0.25-1.80); ae_cond 1.07 (0-2.20).
+Reading: the curated normal weeks are quieter for the rule-based and statistical detectors but NOT for the two
+autoencoders, whose alarms on normal weeks match random normal time. Together with CARE (H6c, all 4 evaluable
+methods incl. both AEs < 1), the selection effect replicates on two benchmarks but is detector-dependent on PreDist.
