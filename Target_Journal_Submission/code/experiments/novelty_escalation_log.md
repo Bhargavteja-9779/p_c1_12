@@ -250,3 +250,15 @@ as in protocol v1. For each of the 8 v1 methods (rule, sigma3, loop3s, iforest, 
  continuous protocol ranks the rule/SRCR best (0.321) and three-sigma mid (0.25).
  Meaning: a balanced event benchmark would pick detectors that, deployed on 93 substations, raise ~1,000 false
  alarms per year. This is the strongest finding so far (N5 + N7) and is tested on locked M2 in the final eval.
+
+## Round 5 results — F16 complementary-by-design partner (M1, seed 0; results/round5/*ae_noloop*)
+ ae_noloop alone: B=1 0.071, B=2 0.071 @0.36, B=4 0.179 (AE seed 0: 0.214 at B=2) -> much weaker alone.
+ rule OR ae_noloop (6x4 Pareto pairs): B=1 0.357 @0.71 ; B=2 0.393 @1.44 ; B=4 0.429 @3.33
+ (C2 = rule OR AE: 0.321 / 0.393 / 0.429).
+ H5c formally SUPPORTED as a tie at B = 2 (0.393 = 0.393), +1 fault at B = 1. No gain over C2 at the primary
+ budget, so F16 is NOT promoted to a candidate (seed extension not run; counted as tried). Mechanistic reading:
+ an AE that never sees loop temperatures/setpoints is a poor detector alone but adds as much to the rule as the
+ full AE does -> the AE's added value comes from non-loop (hydraulic/primary) signals. Supports the F18 taxonomy
+ hypothesis; to be tested on M2 via H5d/H5e.
+Round 5 summary: ideas 14-17 tried (F17 negative, F16 tie, F18 pre-registered for M2, F19 strong on M1).
+Ideas total: 17. Candidates for M2 unchanged (C1, C2); F18 + F19 added as pre-registered M2 analyses (Amendment A2).

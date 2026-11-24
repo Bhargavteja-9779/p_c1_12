@@ -80,3 +80,10 @@ Pooled M1+M2 inference (52 faults, 93 substations): paired cluster bootstrap + e
 each baseline and C1 vs AE; curve-level endpoint = normalised area under recall vs FA/sub-yr for FA in [0, 6]
 (each method's own operating curve over the shared grid; M2 part uses the full M2 curve - descriptive only).
 M2 is evaluated exactly once with these frozen specifications; any deviation is logged.
+
+## Amendment A2 (2026-11-24) — analyses added before the locked M2 evaluation
+Reason: round 5 (log: novelty_escalation_log.md). M2 detector outputs still NOT evaluated. Candidates C1/C2 unchanged.
+Added, pre-registered, run on M2 together with m2_eval.py:
+ - F19 protocol-gap analysis (scripts/protocol_gap.py 2): hypotheses H5f, H5g, H5h as written in the log.
+ - F18 fault-signature taxonomy (classes A/B/C/U fixed in the log): H5d, H5e, tested on M2 faults only.
+Negative/neutral round-5 ideas (F17 calibration, F16 ae_noloop) are reported as development results, not tested on M2.
