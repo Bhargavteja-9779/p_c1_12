@@ -168,4 +168,4 @@ on a partial zip and failed 3x (BadZipFile). Zip now complete (verified by zipfi
 now gitignored so it cannot leak to a new machine again. Sub-agent wrote literature/journal_quality_bar.md and
 journal_quality_papers.csv (34 Energy and AI papers, 6 full text; checklist used for the manuscript).
 Notable: 10.1016/j.egyai.2026.100824 also uses PreDist (daily-window classification, upper-bound F1) = closest
-same-journal comparison; 10.1016/j.egyai.*100975 = structure template (aggregate scores mislead model choice).
+same-journal comparison; 10.1016/j.egyai.2026.100975 = structure template (aggregate scores mislead model choice).
