@@ -6,7 +6,7 @@ When the user says "continue":
 1. Read `Target_Journal_Submission/PROGRESS.md`. Its "NEXT ACTION" section says exactly what to do next.
 2. Continue from there. Do not restart finished phases.
 3. After EVERY meaningful step: update PROGRESS.md, `git add -A && git commit`, and
-   `git push -u origin claude/wizardly-babbage-182x46`. The user may switch accounts at any time.
+   `git push -u origin <current claude/ branch>` (latest: claude/practical-sagan-m0onar). The user may switch accounts at any time.
 4. Integrity rules in BRIEF.md are absolute (no fabricated results, citations or journal data; mark UNVERIFIED).
 
 Environment notes: CPU only (4 cores, 15 GB RAM). Crossref, OpenAlex, arXiv, UCI, Zenodo and PyPI reachable.
