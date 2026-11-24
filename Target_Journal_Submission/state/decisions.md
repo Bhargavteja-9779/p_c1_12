@@ -181,3 +181,10 @@ plan_v2.md names scripts/plan_v2_summary.py for the Holm step, but it was never 
 seed-0 analysis and before any CARE plan_v2 output exists. It only implements the pre-registered procedure (Holm
 step-down over the 4 seed-0 one-sided p-values, alpha 0.05; robustness = seeds with unadjusted p < 0.05; robust iff
 >= 4/5). PreDist seed-0 p-values were known when writing; they do not affect the procedure.
+
+## D-2026-11-24-26  New container again (session on branch claude/intelligent-dirac-9fs327)
+Verified claude/serene-galileo-2zsx2t contains every other claude/* branch; fast-forwarded
+claude/intelligent-dirac-9fs327 to it (now the working branch; serene-galileo is an ancestor). Rebuild started (env,
+PreDist, CARE download). Queue restored from queue_snapshot, done/running/failed reset to pending (outputs gone).
+Committed result tables (e.g. results/plan_v2/predist1/seed0) are kept; regenerated scores must reproduce them
+(seed-0 PreDist analysis will be re-run only as a reproducibility check, not as a new test).

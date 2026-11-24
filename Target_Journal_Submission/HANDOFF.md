@@ -8,9 +8,9 @@ If you are a new session on another branch: `git fetch origin && git merge origi
 
 ## STANDING USER DIRECTIVES: see USER_DIRECTIVES.md (keep improving with new methods until top-notch; never ask; never stop at good enough; integrity first).
 
-## NEXT ACTION (updated 2026-11-24 ~23:00 UTC, session on branch claude/serene-galileo-2zsx2t)
-Working branch: `claude/serene-galileo-2zsx2t` (fast-forward of great-mccarthy; contains every claude/* branch).
-0. Container rebuilt 21:00 UTC (D-24); queue runs 2 workers in tmux `queue`. Check `python3 scripts/status.py`.
+## NEXT ACTION (updated 2026-11-24 ~23:10 UTC, session on branch claude/intelligent-dirac-9fs327)
+Working branch: `claude/intelligent-dirac-9fs327` (fast-forward of serene-galileo; contains every claude/* branch).
+0. Container rebuilt AGAIN 22:50 UTC (D-26); rebuild + queue restore in progress. Earlier: D-24; queue runs 2 workers in tmux `queue`. Check `python3 scripts/status.py`.
 1. DONE: plan_v2 PreDist seed 0 (results/plan_v2/predist1/seed0; entry in novelty_escalation_log.md):
    H7a p 0.0045, H7b p 0.0215, H7d supported. ~17 min runtime; per-detector cache resumes if interrupted.
    scripts/plan_v2_summary.py written (Holm, robustness counts) BEFORE any CARE plan_v2 output (D-25).
