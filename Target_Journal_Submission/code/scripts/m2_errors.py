@@ -41,3 +41,47 @@ lists["category"] = np.select(
     ["missed_by_all", "C2_only_vs_others", "missed_by_C2_found_by_other"], "shared")
 lists.to_csv(f"{OUT}/error_lists_B2.csv")
 print(lists.category.value_counts().to_string())
+
+# ---- F18 fault-signature taxonomy (pre-registered, Amendment A2): H5d, H5e on M2 faults only ----
+import json
+
+
+def taxon(label: str) -> str:
+    l = str(label).lower()
+    if l.startswith("control unit: incorrect parameterisation"):
+        return "C"
+    if l == "unknown" or l == "nan":
+        return "U"
+    if any(k in l for k in ("motorised control valve", "differential pressure regulator", "storage charging pump",
+                            "strainer", "air in the piping", "temperature monitor/controller")):
+        return "A"
+    if any(k in l for k in ("heating circuit pump", "leakage", "safety relief valve", "expansion vessel",
+                            "shut-off valve")):
+        return "B"
+    return "U"
+
+
+meta["taxon"] = meta["Fault label"].map(taxon)
+meta[["Fault label", "taxon"]].drop_duplicates().sort_values("taxon").to_csv(f"{OUT}/taxonomy_map.csv", index=False)
+m2 = meta[meta.m == 2].index
+r, a = d.loc[m2, "rule"], d.loc[m2, "ae"]
+tx = meta.loc[m2, "taxon"]
+A, BC = tx == "A", tx.isin(["B", "C"])
+ae_only = a & ~r
+res = {
+    "n_m2": int(len(m2)), "n_A": int(A.sum()), "n_BC": int(BC.sum()), "n_U": int((tx == "U").sum()),
+    "rule_recall_A": float(r[A].mean()) if A.any() else None,
+    "rule_recall_BC": float(r[BC].mean()) if BC.any() else None,
+    "share_BC_among_ae_only": float(BC[ae_only].mean()) if ae_only.any() else None,
+    "share_BC_among_rule_detected": float(BC[r].mean()) if r.any() else None,
+    "n_ae_only": int(ae_only.sum()), "n_rule_detected": int(r.sum()),
+}
+res["H5d_supported"] = (res["rule_recall_A"] is not None and res["rule_recall_BC"] is not None
+                        and res["rule_recall_A"] > res["rule_recall_BC"])
+res["H5e_supported"] = (res["share_BC_among_ae_only"] is not None and res["share_BC_among_rule_detected"] is not None
+                        and res["share_BC_among_ae_only"] > res["share_BC_among_rule_detected"])
+# descriptive: both manufacturers pooled, per class
+res["pooled_by_class"] = {k: {c: float(d.loc[meta.taxon == k, c].mean()) for c in ("rule", "ae", "C2")}
+                          | {"n": int((meta.taxon == k).sum())} for k in ("A", "B", "C", "U")}
+json.dump(res, open(f"{OUT}/taxonomy_test.json", "w"), indent=1)
+print(json.dumps(res, indent=1))
