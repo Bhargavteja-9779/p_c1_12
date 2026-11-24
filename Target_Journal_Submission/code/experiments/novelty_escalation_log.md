@@ -520,3 +520,9 @@ Per method: rule 0/35 vs 0.031; loop3s 0 vs 0.040; underdel 0/22 vs 0.052; srcr_
 Reading: the curated normal weeks are quieter for the rule-based and statistical detectors but NOT for the two
 autoencoders, whose alarms on normal weeks match random normal time. Together with CARE (H6c, all 4 evaluable
 methods incl. both AEs < 1), the selection effect replicates on two benchmarks but is detector-dependent on PreDist.
+
+## PreDist M1 protocol-gap bootstrap CIs (DESCRIPTIVE, post hoc; results/protocol_gap/m1_ci.csv)
+Point estimates reproduce m1_gap.csv exactly. Inflation at the SAME benchmark-chosen point: 22-215x, 95% CI lower
+bounds 13.4 (rule) to 120 (iforest), all > 5. Inflation vs the in-sample B=2 point: 16-44x, CI lower bounds
+3.0 (rule), 9.2-17.4 for the other 7. Continuous FA/sub-yr at benchmark-chosen points: sigma3 10.4 (8.6-12.3),
+iforest 18.3 (14.4-54.0), ae 10.7 (5.7-34.2), loop3s 11.1 (4.0-43.6); rule 1.2, qnbm 2.4, srcr 2.2 stay low.
