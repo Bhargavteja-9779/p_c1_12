@@ -161,3 +161,11 @@ seeds 0-4 (p5, after c4care_prep). Not needed for plan_v2 and deferred (p<0): Pr
 underdel/srcr comps, M1 AE seeds 1-2, CARE sigma3/iforest seed0, CARE confirm AE 101-104. skipped_compute stays.
 Regeneration compute is booked to the ledger (it is real compute) even though it reproduces lost files.
 Workers = 2 (CARE farm-C AE memory, D-13).
+
+## D-2026-11-24-23  CARE prep failure (stale marker) fixed; quality-bar benchmark received
+logs/setup_care.log (download-done marker "CAREDL") had been committed from the old machine, so prep_care.sh started
+on a partial zip and failed 3x (BadZipFile). Zip now complete (verified by zipfile), prep re-queued; the marker is
+now gitignored so it cannot leak to a new machine again. Sub-agent wrote literature/journal_quality_bar.md and
+journal_quality_papers.csv (34 Energy and AI papers, 6 full text; checklist used for the manuscript).
+Notable: 10.1016/j.egyai.2026.100824 also uses PreDist (daily-window classification, upper-bound F1) = closest
+same-journal comparison; 10.1016/j.egyai.*100975 = structure template (aggregate scores mislead model choice).
