@@ -23,7 +23,7 @@ while len(wins) < 2000:
     a = lab.start + (lab.end - lab.start) * rng.random()
     a = a.floor("D")
     if eligible(s, a): wins.append((s, a))
-rows = []
+rows = []; ALLN, ALLR = [], []
 for meth in METHODS:
     op = T[(T.method == meth) & (T.budget == 2)].iloc[0]
     al = {}
@@ -38,6 +38,7 @@ for meth in METHODS:
     rn, rr = np.mean([x[0] for x in ne]), np.mean([x[0] for x in rw])
     # cluster bootstrap over substations of the rate ratio
     nes = pd.DataFrame(ne, columns=["a", "cov", "s"]); rws = pd.DataFrame(rw, columns=["a", "cov", "s"])
+    nes["method"] = meth; rws["method"] = meth; ALLN.append(nes); ALLR.append(rws)
     bs = []
     for _ in range(2000):
         pick = rng.choice(subs, len(subs))
@@ -52,3 +53,16 @@ D = pd.DataFrame(rows); D.to_csv("results/round5/selection_m1.csv", index=False)
 pool_n = (D.alarm_rate_normal_events * D.n_normal_events).sum() / D.n_normal_events.sum()
 pool_r = (D.alarm_rate_random_windows * D.n_random_windows).sum() / D.n_random_windows.sum()
 print(D.round(3).to_string(index=False)); print("pooled ratio", pool_n / pool_r)
+
+# ADDED 2026-11-24 (deviation log D-15): the pre-registered H5d criterion is the POOLED ratio with a bootstrap CI;
+# the original script printed only the point estimate. Same windows/scores; cluster bootstrap over substations.
+AN, AR = pd.concat(ALLN), pd.concat(ALLR); brng = np.random.default_rng(1); pb = []
+gN = {k: d for k, d in AN.groupby("s")}; gR = {k: d for k, d in AR.groupby("s")}
+for _ in range(2000):
+    pick = brng.choice(subs, len(subs))
+    a = pd.concat([gN[k] for k in pick if k in gN]); b = pd.concat([gR[k] for k in pick if k in gR])
+    if len(a) and len(b) and b.a.mean() > 0: pb.append(a.a.mean() / b.a.mean())
+lo, hi = np.percentile(pb, [2.5, 97.5]); pt = AN.a.mean() / AR.a.mean()
+pd.Series({"pooled_ratio": pt, "ci_lo": lo, "ci_hi": hi, "n_boot": len(pb), "H5d_supported": bool(pt < 1 and hi < 1)}).to_csv("results/round5/selection_m1_pooled.csv")
+AN.to_csv("results/round5/selection_m1_normal_hits.csv", index=False); AR.to_csv("results/round5/selection_m1_random_hits.csv", index=False)
+print("pooled", pt, lo, hi)

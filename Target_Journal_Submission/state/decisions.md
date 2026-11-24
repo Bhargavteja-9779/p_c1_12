@@ -98,3 +98,10 @@ Ransohoff & Feinstein 1978; Lijmer et al. 1999 JAMA; Rutjes et al. 2006 CMAJ; QU
 PreDist's own Limitation 2 suggests evaluating on randomly selected events but does not run it. Wording: "we run the
 random-window check suggested by Roelofs et al. and measure a spectrum-bias-like effect in energy benchmarks";
 claim the first measurement, not the concept. Note CARE paper says 51 normal datasets, Zenodo v6 has 50 (we use 50).
+
+## D-2026-11-24-15  H5d analysis completed with its missing pooled CI (deviation, logged)
+round5_selection.py (pre-registered, commit 4c9860f) was run unchanged once (results/round5/selection_m1.csv;
+copy of run 1 kept in scratch). Its pre-registered criterion is the POOLED ratio with a bootstrap CI excluding 1,
+but the script printed only the point estimate (0.466). We appended code that computes exactly that CI (cluster
+bootstrap over substations, separate RNG so the per-method numbers are reproduced) and saves per-window hits.
+No window, threshold, method or score was changed.
