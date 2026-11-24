@@ -4623,6 +4623,26 @@
    },
    "total": 16,
    "notes": "Concepts (base rate, protocol-induced ranking change, spectrum bias) are known; contributions are first measurements on two energy benchmarks + cross-manufacturer failure on PreDist. H6e failed; AE exception to selection effect unexplained; M2 burned."
+  },
+  {
+   "date": "2026-11-24T17:20Z",
+   "scorer": "blind reviewer agent (fresh context, did not see author score)",
+   "scheme": "MASTER_PROMPT v2 6.3 (/25)",
+   "dims": {
+    "differentiation": 2,
+    "mechanism": 3,
+    "evidence": 2,
+    "breadth": 3,
+    "significance": 3
+   },
+   "total": 13,
+   "file": "review/blind_novelty_score_cycle4.md"
   }
- ]
+ ],
+ "score_of_record": {
+  "cycle": 4,
+  "total": 13,
+  "rule": "within 3 points of author's 16 -> lower score used",
+  "very_strong": false
+ }
 }

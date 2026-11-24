@@ -110,3 +110,12 @@ No window, threshold, method or score was changed.
 Order: CARE ae confirm seeds 100-102 (pre-registered confirmation) > PreDist M2 regeneration (rule..ae seed 0,
 srcr transfer; needed for M2 protocol-gap CIs, descriptive) > CARE ae seeds 103-104 > PreDist AE M1/M2 seeds 1-2
 (seed-robustness only; tables for seeds 1-9 already committed). Whatever the budget stop skips is reported.
+
+## D-2026-11-24-17  G3 FAIL (score of record 13/25); Section 6.4 ladder -> plan_v2 (2x2 protocol factorial), no pivot
+Author 16/25 (recorded first), blind reviewer 13/25 (review/blind_novelty_score_cycle4.md); lower score used.
+Pivot conditions (6.5): (a) >= 2 cycles yes, (b) score <= 14 yes, (c) "no tractable mechanism" NO: the reviewer names
+a tractable, cheap experiment. So no pivot. Next rung: experiments/plan_v2.md = pre-registered 2x2 factorial
+(window design: event windows vs continuous replay) x (threshold source: tuned on evaluated events vs on held-out
+normal operation) with an enlarged panel of cheap detectors and seeds 0-4, reporting Kendall tau with CIs and Holm.
+Expected to raise mechanism/evidence, not differentiation, so G3 may still fail; if so the honest exit (11.7)
+analysis paper is the likely outcome.
