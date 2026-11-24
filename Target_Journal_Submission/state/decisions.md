@@ -169,3 +169,9 @@ now gitignored so it cannot leak to a new machine again. Sub-agent wrote literat
 journal_quality_papers.csv (34 Energy and AI papers, 6 full text; checklist used for the manuscript).
 Notable: 10.1016/j.egyai.2026.100824 also uses PreDist (daily-window classification, upper-bound F1) = closest
 same-journal comparison; 10.1016/j.egyai.2026.100975 = structure template (aggregate scores mislead model choice).
+
+## D-2026-11-24-24  New container again (session on branch claude/serene-galileo-2zsx2t)
+Fast-forwarded to claude/great-mccarthy-85gvo2 (verified it contains every other claude/* branch). Rebuild started
+(env, PreDist, CARE download). The D-23 marker fix had not worked: logs/setup_care.log was still tracked and the root
+.gitignore pattern `logs/setup_care.log` only matched at repo root. Now untracked + ignored by its full path.
+Queue restored from snapshot, all done/running reset to pending (outputs are gone on this machine).
