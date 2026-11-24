@@ -209,3 +209,11 @@ Methods: rule, sigma3, loop3s, iforest, qnbm, ae, ae_cond, srcr_comp__v_gate_1s_
  H5c: for every method, event precision under E-(a) exceeds deployed alarm precision (continuous, B = 2) by
       a factor >= 5.
 All three falsifiable; reported regardless of outcome. M2 events are evaluated only inside the locked M2 run.
+Round 5 additions (still before any event-protocol number was computed):
+ H5d (mechanism 1, selection): at each method's continuous B = 2 operating point, the share of hand-picked normal
+     events with an alarm is LOWER than the share of randomly drawn eligible 7-day windows of normal time with an
+     alarm (same substations, same scores; 2,000 random windows, seed 0). Supported if the pooled rate ratio
+     (normal events / random windows) < 1 with a bootstrap CI excluding 1.
+ H5e (mechanism 2, resolution; analytic, F19): with N normal weeks the event protocol cannot separate deployment
+     false-alarm rates of 1 vs 4 per asset-year with >= 80% power unless N is >= several hundred; PreDist has
+     65 normal events (M1 35). Computed exactly from the binomial model p_w = 1 - exp(-lambda * 7 / 365.25).
