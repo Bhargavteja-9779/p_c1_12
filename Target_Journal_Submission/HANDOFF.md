@@ -83,7 +83,7 @@ operating points beat random alarms (chance_level.csv). 5. F17 own-history calib
 1. `cd code && pip install torch --index-url https://download.pytorch.org/whl/cpu && pip install -r requirements.txt statsmodels`
 2. `bash scripts/download_data.sh && python3 scripts/build_cache.py` (PreDist, ~2 min)
 3. CARE: `mkdir -p data/raw/care && curl -L -o data/raw/care/Care_To_Compare.zip "https://zenodo.org/records/14958989/files/Care_To_Compare.zip?download=1" && echo CAREDL >> ../logs/setup_care.log` (~6 GB, ~30 min)
-4. `cd .. && python3 scripts/queue_runner.py reset-running` then start the queue (Resume compute). state/queue.json
+4. `cp state/budget_snapshot.json state/budget.json` (restore the compute ledger), then `cd .. && python3 scripts/queue_runner.py reset-running` then start the queue (Resume compute). state/queue.json
    lists jobs marked done on the OLD machine: set them back to pending first:
    `python3 -c "import json;q=json.load(open('state/queue.json'));[j.update(status='pending',attempts=0) for j in q['jobs']];json.dump(q,open('state/queue.json','w'),indent=1)"`
    (done jobs whose outputs exist finish in seconds).
