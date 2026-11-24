@@ -27,19 +27,19 @@ for i, m in enumerate(ms):
     a.scatter(g.cont_alarm_precision, y, s=40, color=CO, zorder=3, label="Continuous monitoring", edgecolor="white", linewidth=1.5, marker="s")
     for k, r in g.iterrows():
         a.text(r.ev_precision * 1.3, k, f"{r.precision_ratio:.0f}x", va="center", fontsize=8, color=INK2)
-    a.set_xscale("log"); a.set_xlim(0.002, 3); a.set_ylim(-1.4, len(g) - 0.5); a.set_yticks(list(y)); a.set_yticklabels(lab)
+    a.set_xscale("log"); a.set_xlim(0.001, 3); a.set_ylim(-1.4, len(g) - 0.5); a.set_yticks(list(y)); a.set_yticklabels(lab)
     a.set_xlabel("Precision of alarms (log scale)"); a.grid(axis="x", color=GRID, lw=0.6); a.set_axisbelow(True)
     a.set_title(f"({'ac'[i]}) Manufacturer {m}: precision", loc="left", fontsize=9, color=INK)
     if i == 0:
         a.legend(frameon=False, fontsize=8, loc="lower left", bbox_to_anchor=(0, 1.08), ncol=2)
     b = axes[i, 1]
     b.barh(list(y), g.cont_fa_per_sub_year, color=CO, height=0.6)
-    b.axvline(2, color=INK, lw=1, ls="--"); b.text(2.3, -0.9, "budget B = 2", fontsize=8, color=INK, va="center")
+    b.axvline(2, color=INK, lw=1, ls="--"); b.text(2.15, -0.9, "budget B = 2", fontsize=8, color=INK, va="center")
     for k, r in g.iterrows():
-        b.text(max(r.cont_fa_per_sub_year, 2) + 0.3, k, f"{r.cont_fa_per_sub_year:.1f}", va="center", fontsize=8, color=INK2)
-    b.set_yticks(list(y)); b.set_yticklabels([]); b.set_xlabel("False alarms per substation-year")
+        b.text(max(r.cont_fa_per_sub_year, 2) * 1.12, k, f"{r.cont_fa_per_sub_year:.1f}", va="center", fontsize=8, color=INK2)
+    b.set_yticks(list(y)); b.set_yticklabels([]); b.set_xlabel("False alarms per substation-year (log scale)"); b.set_xscale("log")
     b.grid(axis="x", color=GRID, lw=0.6); b.set_axisbelow(True)
-    b.set_xlim(0, max(g.cont_fa_per_sub_year) * 1.18); b.set_ylim(-1.4, len(g) - 0.5)
+    b.set_xlim(0.5, 300); b.set_ylim(-1.4, len(g) - 0.5)
     b.set_title(f"({'bd'[i]}) Same operating point, continuous", loc="left", fontsize=9, color=INK)
 fig.tight_layout()
 os.makedirs("../figures", exist_ok=True)

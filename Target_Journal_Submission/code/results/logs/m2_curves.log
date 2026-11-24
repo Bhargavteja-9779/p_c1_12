@@ -8,3 +8,22 @@
  1                    ae_cond    0.224
  1 srcr_comp__v_gate_1s_local    0.310
  1              C2_rule_or_ae    0.386
+ m                     method  auc_0_6
+ 1                       rule    0.308
+ 1                     sigma3    0.266
+ 1                     loop3s    0.274
+ 1                    iforest    0.197
+ 1                       qnbm    0.216
+ 1                         ae    0.212
+ 1                    ae_cond    0.224
+ 1 srcr_comp__v_gate_1s_local    0.310
+ 1              C2_rule_or_ae    0.386
+ 2                       rule    0.130
+ 2                     sigma3    0.254
+ 2                     loop3s    0.142
+ 2                    iforest    0.096
+ 2                       qnbm    0.196
+ 2                         ae    0.096
+ 2                    ae_cond    0.128
+ 2 srcr_comp__v_gate_1s_local    0.127
+ 2              C2_rule_or_ae    0.129

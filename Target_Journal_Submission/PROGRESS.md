@@ -71,19 +71,13 @@ STEP 0: journal landscape and 72-day check (in progress)
   deliverable = one submission-ready zip; strip AI-tool mentions from deliverable files (see open question there).
 
 ## NEXT ACTION
-State (2026-11-24): all M1 scores done; M2 done for every method except AE seeds 2-9 (queue running:
-code/results/logs/regen/run_rem.sh over jobs_remaining.txt; if dead, recreate with
-`grep -v srcr scripts/jobs_s3.txt | grep " 2"` and run via xargs -P4. NEVER kill one child of xargs: it aborts
-the queue; run_srcr_components.py does NOT skip existing files - do not rerun it).
-Round 5 DONE on M1 (log + protocol Amendment A2): F17 calibration negative, F16 ae_noloop tie (not promoted),
-F19 protocol gap STRONG on M1 (event precision 22-215x continuous; 5/8 methods >4 FA/sub-yr at event-optimal
-point; rank rho 0.40), F18 taxonomy pre-registered for M2.
-When M2 AE seeds 0-9 each have 58 files:
-1. python3 scripts/m2_eval.py (ONCE) -> results/m2/; log in M2 access log.
-2. python3 scripts/protocol_gap.py 2 (F19 on M2; H5f-H5h).
-3. python3 scripts/m2_errors.py (error analysis + F18 H5d/H5e) ; python3 scripts/m2_curves.py.
-4. Record all outcomes in novelty_escalation_log.md, scorecard, Reviewer Number Zero; then the paper.
-   Story now: N5 protocol + N7 finding (balanced event benchmarks mislead; rule + AE complementary by fault class).
+State (2026-11-24): LOCKED M2 EVALUATION DONE (see novelty_escalation_log.md 'LOCKED M2 RESULTS' and 'F19 ... M2').
+C1/C2 advantage does NOT transfer to M2; F18 falsified; F19 protocol gap REPLICATED on M2. Scorecard 20/30
+(manuscript/scorecard_reviewer_zero.md) -> evaluation-paper pivot, label NOT REMARKABLE as a method paper.
+Figure done: figures/fig_protocol_gap.{png,pdf} (scripts/fig_protocol_gap.py).
+WAITING ON USER: go/no-go on the evaluation-paper pivot vs further method rounds (asked 2026-11-24).
+If go: 1. bootstrap CIs (substation clusters) for FA/sub-yr and precision ratios at event-optimal points (M1, M2);
+2. figures: transfer (M1 vs M2 recall at B=2), curves; tables; 3. manuscript (Elsevier format) + reviews + zip.
 User: authors in manuscript/authors_declarations.md; open question on Elsevier AI declaration; final = one zip.
 Auto-resume scheduled task: trig_01LvjNkbim1k1nrUB45zjTRs (every 2 h into this session).
 

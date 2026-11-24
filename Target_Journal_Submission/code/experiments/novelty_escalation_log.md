@@ -280,3 +280,16 @@ POST-HOC diagnostic (scripts/diag_loops.py; NOT used to change any method): 44/5
 Verdict so far: the rule/C2 advantage is manufacturer-specific. The honest paper is now about evaluation and
 transfer: (i) protocol gap (F19, M2 pending), (ii) M1-tuned detectors lose most recall on a second manufacturer,
 (iii) ranking of methods is not stable across manufacturers.
+
+## F19 protocol gap on LOCKED M2 (results/protocol_gap/m2_*; 26 fault + 30 normal events evaluable)
+ Event-optimal point (chosen on M2 itself, i.e. the best case for the event protocol) -> continuous FA/sub-yr:
+  three-sigma 3.2, quantile NBM 5.4, AE 6.7, AE-cond 8.6, IForest 12.7, rule 13.8, loop3s 19.3, SRCR 112.6.
+ H5f SUPPORTED on M2: 7/8 methods > 4 FA/sub-yr (M1: 5/8).
+ H5g SUPPORTED on M2: event precision 39x-274x the continuous alarm precision (M1: 22x-215x).
+ H5h (exploratory) rho = 0.26 (M1 0.40): the event protocol does not rank methods as deployment does.
+ Curve-level endpoint (normalised area, FA 0-6; descriptive): M1 C2 0.386 > SRCR 0.310 > rule 0.308 > ... ;
+  M2 three-sigma 0.254 > qnbm 0.196 > loop3s 0.142 > rule 0.130 ~ C2 0.129 ; Spearman M1 vs M2 = 0.30 (n = 9).
+FINAL STATUS OF ESCALATION LOOP (17 ideas, 5 rounds): no detector gain survives the locked test. What survives,
+pre-registered and replicated on both manufacturers: the protocol gap (N5 + N7). Story pivots to an evaluation
+paper: "balanced event benchmarks misjudge early fault detection; continuous budgeted evaluation + cross-
+manufacturer transfer show what operators would actually get". Proposed methods reported as negative results.
