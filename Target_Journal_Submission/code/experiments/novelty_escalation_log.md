@@ -186,3 +186,67 @@ vs single methods: optimism to be checked on M2).
 - 2026-11-23: M2 score run crashed for sigma3 and IForest on a substation whose training window had no usable
   numeric column. Fix: such windows get no score (NaN), as with any model without training data. Does not touch
   M1 (never triggered) nor any frozen operating point. No M2 evaluation had been run.
+
+## Round 5 plan (written 2026-11-24 BEFORE computing any event-protocol number; account 3)
+Diagnosis: the method story (rule, rule OR AE) is useful but not remarkable; the strongest candidate core idea
+is an evaluation FINDING (N5 + N7): the published balanced event-window protocol may rank detectors differently
+from deployment-realistic continuous monitoring. If true and explained, this is a reusable 2-sentence idea:
+"Balanced event benchmarks score each detector on a few hand-picked normal weeks, so they cannot see the
+false-alarm rate per asset-year that decides whether a detector is usable; rankings under the two protocols
+can disagree." It needs (i) a measured ranking disagreement, (ii) a mechanism, (iii) a second dataset.
+Fix families considered: F17 protocol-inversion study (this round); F18 second dataset (CARE wind SCADA,
+Zenodo 14958989, 6 GB) for generality; F19 analytical base-rate model linking event F0.5 to deployed
+precision; F20 residualised AE (F16, deferred); F21 per-fault-type routing (rule vs AE by loop activity).
+Event protocol E (re-implemented from the PreDist paper description): events = target faults (window
+[report - 7 d, report)) + normal_events.csv windows; event predicted positive if the criticality counter of the
+method's online score reaches c_thr at any step in the window; eventwise precision/recall/F0.5; both
+(a) benchmark-style: best F0.5 over the SAME (tau, c_thr) grid tuned on the evaluated manufacturer's events,
+(b) at the method's M1 continuous operating point for B = 2.
+Methods: rule, sigma3, loop3s, iforest, qnbm, ae, ae_cond, srcr_comp__v_gate_1s_local, underdel (seed 0), M1.
+ H5a: Kendall tau between method rankings by E-(a) F0.5 and by continuous recall at B = 2 is < 0.5.
+ H5b: at least one learned detector scores a higher E-(a) F0.5 than the rule although the rule has higher
+      continuous recall at B = 2 (a ranking inversion of the benchmark's own detector family vs the rule).
+ H5c: for every method, event precision under E-(a) exceeds deployed alarm precision (continuous, B = 2) by
+      a factor >= 5.
+All three falsifiable; reported regardless of outcome. M2 events are evaluated only inside the locked M2 run.
+Round 5 additions (still before any event-protocol number was computed):
+ H5d (mechanism 1, selection): at each method's continuous B = 2 operating point, the share of hand-picked normal
+     events with an alarm is LOWER than the share of randomly drawn eligible 7-day windows of normal time with an
+     alarm (same substations, same scores; 2,000 random windows, seed 0). Supported if the pooled rate ratio
+     (normal events / random windows) < 1 with a bootstrap CI excluding 1.
+ H5e (mechanism 2, resolution; analytic, F19): with N normal weeks the event protocol cannot separate deployment
+     false-alarm rates of 1 vs 4 per asset-year with >= 80% power unless N is >= several hundred; PreDist has
+     65 normal events (M1 35). Computed exactly from the binomial model p_w = 1 - exp(-lambda * 7 / 365.25).
+
+## Round 6 plan: F18 second dataset (written 2026-11-24 BEFORE any CARE score was computed)
+Data: CARE to Compare (Zenodo 14958989, CC-BY-4.0): 3 wind farms, 36 turbines, 95 datasets (45 anomaly, 50 normal
+events), 10-min SCADA. Overlapping datasets of one turbine agree exactly (checked: max abs diff 0.0), so each
+turbine's datasets are merged into ONE continuous series (union of timestamps) -> ~50 turbine-years.
+Continuous protocol (same code path as PreDist): burn-in 30 d; online per-turbine retraining every 90 d on up to
+730 d of own past, training rows restricted to status_type_id == 0 (normal operation, CARE convention) and outside
+known exclusions; detection window = CARE anomaly event [event_start, event_end); exclusion = [event_start - 14 d,
+event_end + 2 d) outside the window; refractory 24 h; false alarms per turbine-year.
+Methods (unchanged classes from PreDist, seed 0): sigma3, iforest, ae, ae_cond; plus temp3s = sigma3 on
+temperature sensors only (domain-informed simple detector, the analogue of the DH rule). Same tau x c grid.
+Operating points: leave-one-farm-out (choose on two farms, apply to the third) at B = 1, 2, 4 per turbine-year;
+in-sample points reported as secondary.
+Event protocol E on CARE: all 95 events, positive if alarm active in the event window; best F0.5 over the grid
+(benchmark-style, in-sample) and at the LOFO B = 2 point.
+ H6a: Kendall tau between E-best-F0.5 ranking and continuous recall@B=2 ranking < 0.5 (5 methods: descriptive).
+ H6b: event precision (E-best) exceeds deployed alarm precision at B = 2 by >= 5x for every method.
+ H6c: alarm rate on CARE normal events is lower than on random eligible 7-day normal windows (rate ratio < 1).
+ H6d (resolution): 50 normal events -> power to separate 1 vs 2 FA/turbine-year < 0.5 (analytic, as H5e).
+
+## Round 5 results (2026-11-24, M1; results/round5/protocol_compare_m1.csv, protocol_summary_m1.csv, event_grid_m1.csv)
+64 events (29 target faults + 35 normal), same online scores for both protocols, 9 methods.
+- H5a SUPPORTED: Kendall tau (benchmark-style best event F0.5 vs continuous recall at B=2) = 0.21 (p = 0.45),
+  Spearman 0.32. When the event protocol uses each method's continuous B=2 operating point instead of
+  test-tuned thresholds, Kendall tau rises to 0.64 -> most of the inversion comes from tuning thresholds on the
+  balanced test events (the benchmark practice), not from the event windows themselves.
+- H5b SUPPORTED: sigma3 (F0.5 0.84), loop3s (0.81) and IForest (0.79) beat the rule (0.75) on the event protocol,
+  yet the rule has the highest continuous recall at B=2 (0.32 vs 0.25 / 0.25 / 0.18). Under the event protocol
+  the plain three-sigma baseline is the BEST of 9 methods; under continuous monitoring it is mid-table.
+- H5c SUPPORTED: event precision exceeds deployed alarm precision by 16x (rule) to 44x (qnbm) for every method
+  (event precision 0.73-1.00 vs deployed 0.02-0.06).
+- H5e (analytic, earlier): 65 normal weeks cannot separate 1 vs 2 FA/asset-yr (power 0.23).
+Verdict round 5: primary gain of the STORY (a measured, explained ranking inversion), not of a method.

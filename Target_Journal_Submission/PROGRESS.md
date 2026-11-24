@@ -56,15 +56,41 @@ STEP 0: journal landscape and 72-day check (in progress)
   guarantees are standard; fleet+conformal exists for wind, 10.1088/1742-6596/3224/6/062054), NOT N4. To check:
   full text of 10.1016/j.energy.2026.142993 (control-strategy mode rules) and 10.1016/j.enbuild.2024.114009.
 
-## NEXT ACTION
-State: rounds 0-4 + seeds 0-9 on M1 DONE. Candidates FROZEN (protocol.md Amendment A1): C1 rule, C2 rule OR AE.
-M1 seeds: C2 0.382+-0.017 vs AE 0.183+-0.045 vs rule 0.321 at B=2.
-1. M2 scores computing (job list code/scripts/m2_jobs.txt (run from code/: cat scripts/m2_jobs.txt | xargs -P 4 -I{} sh -c "python3 {}") run via xargs -P4; logs results/logs/regen/m2_*;
-   if lost on a new machine, regenerate: run_online_method.py {rule,sigma3,loop3s,iforest} 2; qnbm/ae_cond 2;
-   ae 2 k/3 seed for seeds 0-9; run_srcr_transfer.py). Check results/scores/<m>/m2 has 58 files each.
-2. Then run scripts/m2_eval.py ONCE (locked test) -> results/m2/. Log it in the M2 access log.
-3. Write m2_curves.py (curve-AUC endpoint, descriptive), error analysis by fault label.
-4. Scorecard + Reviewer Number Zero (pivoted story) -> paper drafting.
+## NEXT ACTION (updated 2026-11-24, account 3 -> handing over to account 4)
+Branch now: claude/practical-sagan-m0onar (also push there; older branch wizardly-babbage has the same history up to 63cb0d0).
+User (2026-11-24): keep iterating until novelty is very strong; Frontiers journals are also acceptable as targets.
+
+State: rounds 0-4 done; candidates C1/C2 FROZEN. New this session:
+- Round 5 (protocol inversion, H5a-e) and Round 6 (CARE wind replication, H6a-d) PRE-REGISTERED in
+  code/experiments/novelty_escalation_log.md. Nothing of H5a-d / H6 computed yet.
+- H5e DONE (results/round5/resolution.csv): separating 1 vs 2 FA/asset-year needs ~480 normal weeks
+  (PreDist has 65; power 0.23); 1 vs 4 needs 90 (power at 65 = 0.72). Zero FP among 65 normal events still
+  allows lambda up to 2.4/yr (35 events: 4.5/yr).
+- New code: src/evaluation/event_protocol.py, scripts/round5_protocol.py (H5a-c), scripts/round5_selection.py
+  (H5d), scripts/resolution.py, src/data/care.py, src/evaluation/care_eval.py, scripts/run_care.py,
+  scripts/care_jobs.txt, scripts/regen_all_jobs.txt.
+- Frontiers acceptance-time scan was delegated to a sub-agent; if journal_selection/acceptance_time_evidence_frontiers.csv
+  and frontiers_summary.md are missing, redo it (frontiersin.org/articles/<DOI>/full pages show Received/Accepted).
+
+TO DO on the new machine (scores are NOT in git; all background jobs of account 3 are lost):
+1. Setup (from code/): pip install scikit-learn scipy lightgbm pyarrow tabulate pypdf matplotlib pandas statsmodels;
+   pip install torch --index-url https://download.pytorch.org/whl/cpu; bash scripts/download_data.sh;
+   python3 scripts/build_cache.py   (~5 min download + 1 min cache)
+2. PreDist scores: `cat scripts/regen_all_jobs.txt | xargs -P 4 -I{} sh -c "python3 {}"` (M1 all methods + AE seeds 0-9
+   + all M2 jobs; ~3-5 h), plus `python3 scripts/run_online_method.py underdel 1`,
+   `python3 scripts/run_srcr_components.py 0 && python3 scripts/round2_variants.py srcr_comp`.
+   (Measured: M1 non-AE methods + AE seed 0 finish in ~1 h.)
+3. As soon as M1 methods + srcr_comp exist: python3 scripts/round5_protocol.py 1 ; python3 scripts/round5_selection.py
+   -> record H5a-d verdicts in the escalation log.
+4. CARE: download Zenodo 14958989 (Care_To_Compare.zip, 6 GB) to code/data/raw/care/, unzip to raw/care/x/, then
+   unzip each "Wind Farm X.zip" into raw/care/x/Care_To_Compare/farm_X/ (19 GB unpacked; delete zips).
+   Then `cat scripts/care_jobs.txt | xargs -P 2 -I{} sh -c "python3 {}"`. Still to WRITE: scripts/round6_care.py
+   (LOFO operating points at B=1,2,4 using C.evaluate_substation with care_eval.labels; event protocol on all 95
+   CARE events; random-window selection test; resolution for 50 normal events) -> H6a-d.
+5. Then locked M2: scripts/m2_eval.py ONCE (+ round5_protocol.py 2 inside the same locked run), m2_curves.py.
+6. Re-score novelty (scorecard), Reviewer Number Zero, decide story: likely "deployment-realistic evaluation
+   overturns benchmark conclusions in energy fault detection" (N5 + N7 + analytic resolution result), with
+   DH + wind evidence, plus rule OR AE as practical method.
 
 ## Resume notes (2026-11-24, account switch #3)
 - Session 3 did no new work: it only saved state. NEXT ACTION above is unchanged; M2 scores still need to be computed from scratch.
