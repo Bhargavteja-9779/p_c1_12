@@ -105,3 +105,8 @@ copy of run 1 kept in scratch). Its pre-registered criterion is the POOLED ratio
 but the script printed only the point estimate (0.466). We appended code that computes exactly that CI (cluster
 bootstrap over substations, separate RNG so the per-method numbers are reproduced) and saves per-window hits.
 No window, threshold, method or score was changed.
+
+## D-2026-11-24-16  Queue re-prioritised for the remaining cycle-4 budget (~9.3 machine-h at 5.66 used)
+Order: CARE ae confirm seeds 100-102 (pre-registered confirmation) > PreDist M2 regeneration (rule..ae seed 0,
+srcr transfer; needed for M2 protocol-gap CIs, descriptive) > CARE ae seeds 103-104 > PreDist AE M1/M2 seeds 1-2
+(seed-robustness only; tables for seeds 1-9 already committed). Whatever the budget stop skips is reported.
