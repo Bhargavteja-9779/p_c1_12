@@ -150,3 +150,14 @@ descriptions; Song's published long-stop list can be adopted and cited; small: 5
 (b) Hill of Towie only for false-alarm-rate estimation in normal operation (no fault labels needed: a long, clean
 normal record measures FA per turbine-year precisely). Decide after the journal quality-bar report and plan_v2
 results. 2019.zip kept (1.4 GB) for option (b).
+
+## D-2026-11-24-22  New container (session on branch claude/great-mccarthy-85gvo2): rebuild + re-prioritised queue
+Container was new (no data, scores, tmux). Verified eloquent-shannon contains every other claude/* branch; fast-forwarded
+claude/great-mccarthy-85gvo2 to it (this is now the working branch; eloquent-shannon is an ancestor). Rebuilt env,
+PreDist cache, CARE download. Queue restored from queue_snapshot with all done/running jobs reset to pending and
+priorities set so the plan_v2 analysis inputs come first: PreDist M1 rule/loop3s/qnbm/ae(seed0)/ae_cond (p8),
+panel predist1 seeds 0-4 (p7), CARE prep (p10, waits for download), CARE seed0 temp3s/ae/ae_cond (p6), panel CARE
+seeds 0-4 (p5, after c4care_prep). Not needed for plan_v2 and deferred (p<0): PreDist M2 regen, sigma3/iforest/
+underdel/srcr comps, M1 AE seeds 1-2, CARE sigma3/iforest seed0, CARE confirm AE 101-104. skipped_compute stays.
+Regeneration compute is booked to the ledger (it is real compute) even though it reproduces lost files.
+Workers = 2 (CARE farm-C AE memory, D-13).

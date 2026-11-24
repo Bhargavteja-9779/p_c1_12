@@ -8,20 +8,20 @@ If you are a new session on another branch: `git fetch origin && git merge origi
 
 ## STANDING USER DIRECTIVES: see USER_DIRECTIVES.md (keep improving with new methods until top-notch; never ask; never stop at good enough; integrity first).
 
-## NEXT ACTION
-1. `python3 scripts/status.py`. If the container is new (no tmux "queue", no code/data/), run the
-   NEW-MACHINE steps below first.
-2. When group `c4care_seed0` is done: `cd code && python3 scripts/round6_care.py 0` (pre-registered H6a-e; the script
-   was committed BEFORE any CARE score existed). Record verdicts verbatim in code/experiments/novelty_escalation_log.md
-   and a RESULT/SURPRISE/FAILURE journal entry. Do NOT edit the script after seeing results except to fix a crash
-   (log any fix as a deviation).
-3. When `c4care_confirm` finishes (or the cycle budget stops it): `python3 scripts/round6_care.py <seed>` for
-   each completed seed in 100..104; summarise mean +- sd (H6e confirmation rule in the log).
-4. When `c4predist` is done: write+run `code/scripts/protocol_gap_ci.py` = bootstrap CIs (resample substations)
-   of the PreDist M1/M2 precision-inflation ratios and FA rates at event-optimal points (DESCRIPTIVE, post hoc);
-   run `scripts/round5_selection.py` (H5d) on M1; fix the PreDist leak (RECHECK NEXT ACTION 6) as a sensitivity run.
-5. Then: scripts/final_report.py + scripts/audit_numbers.py (not written yet), novelty re-score + blind reviewer
-   agent, manuscript (story style, Section 9) from journal/ + results, review panel (Section 10).
+## NEXT ACTION (updated 2026-11-24 ~19:55 UTC, session on branch claude/great-mccarthy-85gvo2)
+Working branch is now `claude/great-mccarthy-85gvo2` (fast-forward of eloquent-shannon, contains all branches).
+0. New container on 2026-11-24 19:40: everything regenerating (D-22). `python3 scripts/status.py`; if heartbeat stale,
+   Resume compute. Queue priorities: PreDist M1 inputs > panel PreDist > CARE prep/seed0 > panel CARE > deferred.
+1. When PreDist M1 (rule, loop3s, qnbm, ae seed0, ae_cond) + panel predist1 seeds are done, and CARE seed0
+   (temp3s, ae, ae_cond) + panel care seeds are done: `cd code && python3 scripts/plan_v2_analysis.py` (pre-registered,
+   committed before panel scores; check its CLI first). Record H7a-d verdicts verbatim in novelty_escalation_log.md +
+   journal entry. PreDist part may be run first if the script supports a dataset argument.
+2. literature/journal_quality_bar.md + journal_quality_papers.csv: being written by a sub-agent (if missing after a
+   restart, redo: benchmark ~30 recent Energy and AI papers, see D-19).
+3. Then re-score novelty (author first, then blind reviewer agent) with plan_v2 results; if G3 still fails, plan_v3
+   method cycle or honest-exit analysis paper (D-17, D-19, D-21: fresh data = Fuhrlander option a / HoT FA-only b).
+4. Old items still open: round6_care.py for confirm seeds (needs CARE ae 101-104 scores, deferred), PreDist leak
+   sensitivity run, final_report.py/audit_numbers.py refresh, manuscript.
 
 ## One-line summaries
 - Journal: Energy and AI (Elsevier, ISSN 2666-5468) — FAILS the 72-day rule (verified median 89 d, n=25,
