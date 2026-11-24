@@ -51,3 +51,8 @@ manuscript/authors_declarations.md records an earlier user request (2026-11-23) 
 deliverables. MASTER_PROMPT v2 (newer) says to state AI assistance plainly if the journal requires it; Elsevier
 (Energy and AI) requires a generative-AI declaration. Following the newer instruction and the journal policy: the
 declaration stays (worded plainly, authors to confirm). Code comments/README need not mention tools.
+
+## D-2026-11-24-10  Journal (Section 4) final for now: Energy and AI, failing the 72-day rule
+25 legitimate journals evaluated (journal_selection/journal_comparison_v2.md). None passes all rules. Energy and AI
+kept (best fit; median 89 d, n=25, range 33-565; Q1 UNVERIFIED). Closest on timing: Energy Informatics (Springer)
+70 d (n=97) but no Impact Factor shown -> Q1 not met/UNVERIFIED; ECM:X 73 d (n=30), moderate fit. G1 = FAIL, stated.

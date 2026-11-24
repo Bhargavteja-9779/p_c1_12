@@ -45,7 +45,7 @@ ledgered (UNVERIFIED, not counted). Hardware: 4-core CPU, 15 GB RAM, no GPU.
 ## Gate status (Section 7) — cycle 4 start
 | Gate | Status | Evidence / reason |
 |---|---|---|
-| G1 Journal | FAIL (stated) | Energy and AI median 89 d > 72 d; Q1 UNVERIFIED. v2 re-selection running. |
+| G1 Journal | FAIL (stated) | v2 done (journal_selection/selected_journal_v2.md, 25 journals): Energy and AI kept; median 89 d (n=25; last 12 mo 84 d) > 72 d; Q1 UNVERIFIED. Only Energy Informatics (Springer, 70 d, n=97) passes timing but shows no IF (Q1 fails/UNVERIFIED). |
 | G2 Prior art | UNKNOWN | novelty_map_v2.csv 135 rows (RECHECK/stage3); opened-count + claim table being compiled into state/novelty_ledger.json |
 | G3 Novelty >= 20/25 | FAIL so far | last score 20/30 on the brief's old scale (manuscript/scorecard_reviewer_zero.md); needs re-score on the /25 scale + blind reviewer after CARE |
 | G4 Baselines | PARTIAL | 8 detectors incl. the dataset paper's AE reproduced on the same protocol; exact reproduction of published PreDist numbers not possible (their protocol tuned on test events) — gap explained in protocol.md |
