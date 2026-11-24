@@ -78,3 +78,14 @@ kept (best fit; median 89 d, n=25, range 33-565; Q1 UNVERIFIED). Closest on timi
   concurrent evidence. CARE replication is reframed from "novel second domain" to "independent replication".
 - Section 6.4 rung 1-2 (diagnose / mechanism): the selection-effect test H5d (PreDist M1, pre-registered) and H6c
   (CARE) become priority analyses; a dedicated prior-art search for that specific claim follows once results exist.
+
+## D-2026-11-24-13  CARE compute: OOM fix and confirmation scope (deviation, logged before any CARE analysis)
+- 6 seed-0 AE/AE-cond jobs and 1 confirm job were OOM-killed (farm C: 953 columns; one AE fit peaks ~4.3 GB;
+  4 parallel jobs + PreDist exceeded 15 GB). All processes then died at ~06:21 UTC (container paused/reclaimed
+  while idle; runner heartbeat stale ~6 h). Fix: queue restarted with 3 workers; failed jobs re-queued. No code or
+  analysis change; scores are deterministic per seed, so re-running does not change results.
+- Farm-C AE fits take > 7 min per turbine; full confirmation (3 methods x 5 seeds) would need ~55 machine-h vs ~12.5 h
+  left in cycle 4. Following the pre-registered "as compute allows, priority ae, iforest, ae_cond": iforest seeds
+  100-104 (cheap) and ae seeds 100-102 first, ae 103-104 if budget remains; ae_cond confirmation NOT run
+  (status skipped_compute). H6e confirmation is reported only for methods with >= 4 completed seeds; others are
+  reported as incomplete. No CARE result had been inspected when this was decided (round6_care.py not yet run).

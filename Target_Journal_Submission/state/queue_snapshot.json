@@ -258,11 +258,13 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_online_method.py ae 1 0/4 2",
-   "status": "running",
+   "status": "done",
    "attempts": 1,
    "added": "2026-11-24T03:56:32+00:00",
    "started": "2026-11-24T04:26:28+00:00",
-   "pid": 4430
+   "pid": 4430,
+   "finished": "2026-11-24T04:33:08+00:00",
+   "returncode": 0
   },
   {
    "id": "c4predist-dc5010cc8a",
@@ -270,11 +272,13 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_online_method.py ae 1 1/4 2",
-   "status": "running",
+   "status": "done",
    "attempts": 1,
    "added": "2026-11-24T03:56:32+00:00",
    "started": "2026-11-24T04:28:48+00:00",
-   "pid": 4475
+   "pid": 4475,
+   "finished": "2026-11-24T04:33:38+00:00",
+   "returncode": 0
   },
   {
    "id": "c4predist-f3e15acd8c",
@@ -538,13 +542,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py temp3s 0",
-   "status": "running",
+   "status": "done",
    "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 5,
    "after": "c4care_prep",
    "started": "2026-11-24T04:28:58+00:00",
-   "pid": 4497
+   "pid": 4497,
+   "finished": "2026-11-24T04:30:18+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_seed0-11cfdd7b39",
@@ -552,13 +558,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py sigma3 0",
-   "status": "running",
+   "status": "done",
    "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 5,
    "after": "c4care_prep",
    "started": "2026-11-24T04:29:48+00:00",
-   "pid": 4575
+   "pid": 4575,
+   "finished": "2026-11-24T04:34:28+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_seed0-0eb5d63282",
@@ -566,11 +574,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 0 0/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 5,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T04:30:18+00:00",
+   "pid": 4652,
+   "finished": "2026-11-24T04:31:58+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_seed0-2da1df4e69",
@@ -578,11 +590,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae 0 0/4",
-   "status": "pending",
+   "status": "running",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 5,
-   "after": "c4care_prep"
+   "priority": 6,
+   "after": "c4care_prep",
+   "started": "2026-11-24T04:51:49+00:00",
+   "pid": 529,
+   "finished": "2026-11-24T04:56:49+00:00",
+   "returncode": 137
   },
   {
    "id": "c4care_seed0-252ed0fdbe",
@@ -590,11 +606,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 0 0/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "running",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 5,
-   "after": "c4care_prep"
+   "priority": 6,
+   "after": "c4care_prep",
+   "started": "2026-11-24T13:04:23+00:00",
+   "pid": 774,
+   "finished": "2026-11-24T05:07:39+00:00",
+   "returncode": 137
   },
   {
    "id": "c4care_seed0-9ab6d44455",
@@ -602,11 +622,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 0 1/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 5,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T04:33:38+00:00",
+   "pid": 4733,
+   "finished": "2026-11-24T04:35:18+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_seed0-36b6d0cb5f",
@@ -614,11 +638,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae 0 1/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "running",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 5,
-   "after": "c4care_prep"
+   "priority": 6,
+   "after": "c4care_prep",
+   "started": "2026-11-24T13:04:23+00:00",
+   "pid": 776,
+   "finished": "2026-11-24T05:22:30+00:00",
+   "returncode": 137
   },
   {
    "id": "c4care_seed0-6d7c08454f",
@@ -629,8 +657,12 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 5,
-   "after": "c4care_prep"
+   "priority": 6,
+   "after": "c4care_prep",
+   "started": "2026-11-24T05:07:39+00:00",
+   "pid": 5246,
+   "finished": "2026-11-24T05:15:00+00:00",
+   "returncode": 137
   },
   {
    "id": "c4care_seed0-d5877d362d",
@@ -638,11 +670,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 0 2/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 5,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T04:56:49+00:00",
+   "pid": 5089,
+   "finished": "2026-11-24T04:58:29+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_seed0-4caba3a402",
@@ -653,8 +689,12 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 5,
-   "after": "c4care_prep"
+   "priority": 6,
+   "after": "c4care_prep",
+   "started": "2026-11-24T05:26:40+00:00",
+   "pid": 5553,
+   "finished": "2026-11-24T05:31:50+00:00",
+   "returncode": 137
   },
   {
    "id": "c4care_seed0-44d958911c",
@@ -665,8 +705,12 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 5,
-   "after": "c4care_prep"
+   "priority": 6,
+   "after": "c4care_prep",
+   "started": "2026-11-24T05:42:20+00:00",
+   "pid": 5776,
+   "finished": "2026-11-24T05:48:11+00:00",
+   "returncode": 137
   },
   {
    "id": "c4care_seed0-faf9921097",
@@ -674,11 +718,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 0 3/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 5,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T05:15:00+00:00",
+   "pid": 5355,
+   "finished": "2026-11-24T05:16:20+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_seed0-c8e2eb1f44",
@@ -686,11 +734,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae 0 3/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 3,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 5,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T05:54:51+00:00",
+   "pid": 5968,
+   "finished": "2026-11-24T06:10:12+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_seed0-d49b0288a9",
@@ -698,11 +750,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 0 3/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 3,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 5,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T06:09:52+00:00",
+   "pid": 6180,
+   "finished": "2026-11-24T06:17:22+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_confirm-1d976919a4",
@@ -713,8 +769,12 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
-   "after": "c4care_prep"
+   "priority": 2,
+   "after": "c4care_prep",
+   "started": "2026-11-24T05:54:51+00:00",
+   "pid": 5969,
+   "finished": "2026-11-24T06:00:41+00:00",
+   "returncode": 137
   },
   {
    "id": "c4care_confirm-5879f78bd0",
@@ -725,8 +785,12 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
-   "after": "c4care_prep"
+   "priority": 2,
+   "after": "c4care_prep",
+   "started": "2026-11-24T06:09:52+00:00",
+   "pid": 6181,
+   "finished": "2026-11-24T06:09:52+00:00",
+   "returncode": 137
   },
   {
    "id": "c4care_confirm-5cc2d22e3d",
@@ -737,8 +801,10 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
-   "after": "c4care_prep"
+   "priority": 2,
+   "after": "c4care_prep",
+   "started": "2026-11-24T06:00:41+00:00",
+   "pid": 6069
   },
   {
    "id": "c4care_confirm-8381011937",
@@ -749,8 +815,10 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
-   "after": "c4care_prep"
+   "priority": 2,
+   "after": "c4care_prep",
+   "started": "2026-11-24T06:10:12+00:00",
+   "pid": 6218
   },
   {
    "id": "c4care_confirm-7d542156b0",
@@ -761,8 +829,10 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
-   "after": "c4care_prep"
+   "priority": 2,
+   "after": "c4care_prep",
+   "started": "2026-11-24T06:17:22+00:00",
+   "pid": 6304
   },
   {
    "id": "c4care_confirm-4f69c90e5e",
@@ -773,7 +843,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 2,
    "after": "c4care_prep"
   },
   {
@@ -785,7 +855,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 2,
    "after": "c4care_prep"
   },
   {
@@ -797,7 +867,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 2,
    "after": "c4care_prep"
   },
   {
@@ -809,7 +879,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 2,
    "after": "c4care_prep"
   },
   {
@@ -821,7 +891,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 2,
    "after": "c4care_prep"
   },
   {
@@ -833,7 +903,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 2,
    "after": "c4care_prep"
   },
   {
@@ -845,7 +915,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 2,
    "after": "c4care_prep"
   },
   {
@@ -953,7 +1023,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 3,
    "after": "c4care_prep"
   },
   {
@@ -965,7 +1035,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 3,
    "after": "c4care_prep"
   },
   {
@@ -977,7 +1047,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 3,
    "after": "c4care_prep"
   },
   {
@@ -989,7 +1059,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 3,
    "after": "c4care_prep"
   },
   {
@@ -1001,7 +1071,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 3,
    "after": "c4care_prep"
   },
   {
@@ -1013,7 +1083,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 3,
    "after": "c4care_prep"
   },
   {
@@ -1025,7 +1095,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 3,
    "after": "c4care_prep"
   },
   {
@@ -1037,7 +1107,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 3,
    "after": "c4care_prep"
   },
   {
@@ -1049,7 +1119,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 3,
    "after": "c4care_prep"
   },
   {
@@ -1061,7 +1131,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 3,
    "after": "c4care_prep"
   },
   {
@@ -1073,7 +1143,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 3,
    "after": "c4care_prep"
   },
   {
@@ -1085,7 +1155,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 3,
    "after": "c4care_prep"
   },
   {
@@ -1097,7 +1167,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 3,
    "after": "c4care_prep"
   },
   {
@@ -1109,7 +1179,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 3,
    "after": "c4care_prep"
   },
   {
@@ -1121,7 +1191,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 3,
    "after": "c4care_prep"
   },
   {
@@ -1133,7 +1203,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 3,
    "after": "c4care_prep"
   },
   {
@@ -1145,7 +1215,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 3,
    "after": "c4care_prep"
   },
   {
@@ -1157,7 +1227,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 3,
    "after": "c4care_prep"
   },
   {
@@ -1169,7 +1239,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 3,
    "after": "c4care_prep"
   },
   {
@@ -1181,7 +1251,7 @@
    "status": "pending",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
-   "priority": 1,
+   "priority": 3,
    "after": "c4care_prep"
   },
   {
@@ -1190,7 +1260,7 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 100 0/4",
-   "status": "pending",
+   "status": "skipped_compute",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 1,
@@ -1202,7 +1272,7 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 100 1/4",
-   "status": "pending",
+   "status": "skipped_compute",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 1,
@@ -1214,7 +1284,7 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 100 2/4",
-   "status": "pending",
+   "status": "skipped_compute",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 1,
@@ -1226,7 +1296,7 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 100 3/4",
-   "status": "pending",
+   "status": "skipped_compute",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 1,
@@ -1238,7 +1308,7 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 101 0/4",
-   "status": "pending",
+   "status": "skipped_compute",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 1,
@@ -1250,7 +1320,7 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 101 1/4",
-   "status": "pending",
+   "status": "skipped_compute",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 1,
@@ -1262,7 +1332,7 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 101 2/4",
-   "status": "pending",
+   "status": "skipped_compute",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 1,
@@ -1274,7 +1344,7 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 101 3/4",
-   "status": "pending",
+   "status": "skipped_compute",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 1,
@@ -1286,7 +1356,7 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 102 0/4",
-   "status": "pending",
+   "status": "skipped_compute",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 1,
@@ -1298,7 +1368,7 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 102 1/4",
-   "status": "pending",
+   "status": "skipped_compute",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 1,
@@ -1310,7 +1380,7 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 102 2/4",
-   "status": "pending",
+   "status": "skipped_compute",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 1,
@@ -1322,7 +1392,7 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 102 3/4",
-   "status": "pending",
+   "status": "skipped_compute",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 1,
@@ -1334,7 +1404,7 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 103 0/4",
-   "status": "pending",
+   "status": "skipped_compute",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 1,
@@ -1346,7 +1416,7 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 103 1/4",
-   "status": "pending",
+   "status": "skipped_compute",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 1,
@@ -1358,7 +1428,7 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 103 2/4",
-   "status": "pending",
+   "status": "skipped_compute",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 1,
@@ -1370,7 +1440,7 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 103 3/4",
-   "status": "pending",
+   "status": "skipped_compute",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 1,
@@ -1382,7 +1452,7 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 104 0/4",
-   "status": "pending",
+   "status": "skipped_compute",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 1,
@@ -1394,7 +1464,7 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 104 1/4",
-   "status": "pending",
+   "status": "skipped_compute",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 1,
@@ -1406,7 +1476,7 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 104 2/4",
-   "status": "pending",
+   "status": "skipped_compute",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 1,
@@ -1418,7 +1488,7 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 104 3/4",
-   "status": "pending",
+   "status": "skipped_compute",
    "attempts": 0,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 1,

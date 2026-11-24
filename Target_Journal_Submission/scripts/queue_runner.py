@@ -124,7 +124,7 @@ def run(a):
                 j["status"] = "done" if r == 0 else ("failed" if j["attempts"] >= MAX_ATTEMPTS else "pending")
                 del active[jid]
             done_groups = {g for g in {j["group"] for j in q["jobs"]}
-                           if all(x["status"] in ("done", "failed", "skipped_budget") for x in q["jobs"] if x["group"] == g)}
+                           if all(x["status"] in ("done", "failed", "skipped_budget", "skipped_compute") for x in q["jobs"] if x["group"] == g)}
             pend = [j for j in q["jobs"] if j["status"] == "pending" and j["id"] not in active
                     and (not j.get("after") or j["after"] in done_groups)]
             pend.sort(key=lambda j: -j.get("priority", 0))  # stable: FIFO within a priority
