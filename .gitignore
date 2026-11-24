@@ -30,3 +30,4 @@ Target_Journal_Submission/code/results/plan_v2/*/cache/
 # rebuild artefacts
 Target_Journal_Submission/data/
 Target_Journal_Submission/logs/setup_env.log
+Target_Journal_Submission/state/queue.lock
