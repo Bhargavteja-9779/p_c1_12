@@ -6,6 +6,8 @@ branches were merged into `claude/eloquent-shannon-czmqnz` (verified: every one 
 If you are a new session on another branch: `git fetch origin && git merge origin/claude/eloquent-shannon-czmqnz`
 (or the newest descendant), resolve, then continue here.
 
+## STANDING USER DIRECTIVES: see USER_DIRECTIVES.md (keep improving with new methods until top-notch; never ask; never stop at good enough; integrity first).
+
 ## NEXT ACTION
 1. `python3 scripts/status.py`. If the container is new (no tmux "queue", no code/data/), run the
    NEW-MACHINE steps below first.

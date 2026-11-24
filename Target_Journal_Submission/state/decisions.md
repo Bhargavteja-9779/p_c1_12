@@ -126,3 +126,10 @@ completed without error (18 min, tables dominate). Panel jobs are cheap (~2.5 ma
 G3; CARE ae seeds 101-104 continue after them as budget allows. Compute is still booked to cycle 4 until its queue
 drains; cycle 5 starts with the plan_v2 analysis.
 - 18:57 UTC: second worker restart (~17:50) killed the queue; 936 panel files verified readable; queue restarted (2 workers).
+
+## D-2026-11-24-19  New user directive (USER_DIRECTIVES.md): keep improving with new methods until top-notch
+Saved verbatim-in-substance to USER_DIRECTIVES.md, referenced from CLAUDE.md, BOOTSTRAP_PROMPT.txt, HANDOFF.md.
+Actions: (1) deeper benchmark of recent Energy and AI papers -> literature/journal_quality_bar.md (writing style,
+structure, evidence depth, what a "top" paper there contains); (2) scout fresh public labelled datasets so that any
+NEW method can be tested on data never seen (M2 burned, CARE seen); (3) after plan_v2, a method cycle (plan_v3)
+targeted at the diagnosed failure modes, pre-registered, tested on the fresh data.
