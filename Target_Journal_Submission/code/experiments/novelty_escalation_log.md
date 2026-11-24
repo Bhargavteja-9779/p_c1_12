@@ -217,3 +217,22 @@ Round 5 additions (still before any event-protocol number was computed):
  H5e (mechanism 2, resolution; analytic, F19): with N normal weeks the event protocol cannot separate deployment
      false-alarm rates of 1 vs 4 per asset-year with >= 80% power unless N is >= several hundred; PreDist has
      65 normal events (M1 35). Computed exactly from the binomial model p_w = 1 - exp(-lambda * 7 / 365.25).
+
+## Round 6 plan: F18 second dataset (written 2026-11-24 BEFORE any CARE score was computed)
+Data: CARE to Compare (Zenodo 14958989, CC-BY-4.0): 3 wind farms, 36 turbines, 95 datasets (45 anomaly, 50 normal
+events), 10-min SCADA. Overlapping datasets of one turbine agree exactly (checked: max abs diff 0.0), so each
+turbine's datasets are merged into ONE continuous series (union of timestamps) -> ~50 turbine-years.
+Continuous protocol (same code path as PreDist): burn-in 30 d; online per-turbine retraining every 90 d on up to
+730 d of own past, training rows restricted to status_type_id == 0 (normal operation, CARE convention) and outside
+known exclusions; detection window = CARE anomaly event [event_start, event_end); exclusion = [event_start - 14 d,
+event_end + 2 d) outside the window; refractory 24 h; false alarms per turbine-year.
+Methods (unchanged classes from PreDist, seed 0): sigma3, iforest, ae, ae_cond; plus temp3s = sigma3 on
+temperature sensors only (domain-informed simple detector, the analogue of the DH rule). Same tau x c grid.
+Operating points: leave-one-farm-out (choose on two farms, apply to the third) at B = 1, 2, 4 per turbine-year;
+in-sample points reported as secondary.
+Event protocol E on CARE: all 95 events, positive if alarm active in the event window; best F0.5 over the grid
+(benchmark-style, in-sample) and at the LOFO B = 2 point.
+ H6a: Kendall tau between E-best-F0.5 ranking and continuous recall@B=2 ranking < 0.5 (5 methods: descriptive).
+ H6b: event precision (E-best) exceeds deployed alarm precision at B = 2 by >= 5x for every method.
+ H6c: alarm rate on CARE normal events is lower than on random eligible 7-day normal windows (rate ratio < 1).
+ H6d (resolution): 50 normal events -> power to separate 1 vs 2 FA/turbine-year < 0.5 (analytic, as H5e).
