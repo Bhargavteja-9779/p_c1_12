@@ -38,7 +38,7 @@ If you are a new session on another branch: `git fetch origin && git merge origi
 - Background download: CARE zip -> code/data/raw/care/Care_To_Compare.zip (log logs/setup_care.log; "CAREDL" = done).
 - Supervisor (Layer B): NOT running (see Known problems).
 
-## Compute (state/budget.json)
+## Compute (state/budget.json = live, gitignored; state/budget_snapshot.json = committed copy, refresh with cp before each commit)
 Cycle 4: see `scripts/status.py` (budget 15 machine-h/cycle, global ceiling 120 h). Cycles 1-3 compute was never
 ledgered (UNVERIFIED, not counted). Hardware: 4-core CPU, 15 GB RAM, no GPU.
 

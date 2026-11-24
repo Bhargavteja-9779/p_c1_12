@@ -19,3 +19,4 @@ Target_Journal_Submission/logs/jobs/
 Target_Journal_Submission/state/heartbeat
 Target_Journal_Submission/state/queue.lock
 Target_Journal_Submission/state/*.tmp
+Target_Journal_Submission/state/budget.json
