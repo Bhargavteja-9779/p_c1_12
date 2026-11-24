@@ -45,3 +45,9 @@ Journal re-selection under Section 4 delegated to a sub-agent (journal_selection
 A `claude` CLI exists, but this cloud container is ephemeral and an interactive agent is already working in the
 same checkout; starting a second headless agent would make two agents edit the same files. The supervisor is
 for a machine the user owns (scripts/install_autostart.sh install --with-supervisor). Stated in HANDOFF.md.
+
+## D-2026-11-24-09  Generative-AI declaration is kept in the manuscript
+manuscript/authors_declarations.md records an earlier user request (2026-11-23) to remove AI-tool mentions from
+deliverables. MASTER_PROMPT v2 (newer) says to state AI assistance plainly if the journal requires it; Elsevier
+(Energy and AI) requires a generative-AI declaration. Following the newer instruction and the journal policy: the
+declaration stays (worded plainly, authors to confirm). Code comments/README need not mention tools.

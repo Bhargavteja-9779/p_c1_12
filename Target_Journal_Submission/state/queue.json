@@ -62,11 +62,13 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_online_method.py qnbm 1 0/3",
-   "status": "running",
+   "status": "done",
    "attempts": 1,
    "added": "2026-11-24T03:56:32+00:00",
-   "started": "2026-11-24T03:56:52+00:00",
-   "pid": 1383
+   "started": "2026-11-24T04:04:17+00:00",
+   "pid": 2814,
+   "finished": "2026-11-24T04:04:27+00:00",
+   "returncode": 0
   },
   {
    "id": "c4predist-f6aead5b88",
@@ -74,11 +76,13 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_online_method.py ae_cond 1 0/3",
-   "status": "running",
+   "status": "done",
    "attempts": 1,
    "added": "2026-11-24T03:56:32+00:00",
-   "started": "2026-11-24T03:56:52+00:00",
-   "pid": 1384
+   "started": "2026-11-24T04:04:27+00:00",
+   "pid": 2836,
+   "finished": "2026-11-24T04:04:37+00:00",
+   "returncode": 0
   },
   {
    "id": "c4predist-44aee2d435",
@@ -110,9 +114,11 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_online_method.py qnbm 1 2/3",
-   "status": "pending",
-   "attempts": 0,
-   "added": "2026-11-24T03:56:32+00:00"
+   "status": "running",
+   "attempts": 1,
+   "added": "2026-11-24T03:56:32+00:00",
+   "started": "2026-11-24T04:04:37+00:00",
+   "pid": 2885
   },
   {
    "id": "c4predist-fdf5a522bd",
@@ -470,11 +476,13 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "bash scripts/prep_care.sh",
-   "status": "pending",
-   "attempts": 0,
+   "status": "running",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 10,
-   "after": null
+   "after": null,
+   "started": "2026-11-24T04:04:17+00:00",
+   "pid": 2813
   },
   {
    "id": "c4care_seed0-e9771f8356",
