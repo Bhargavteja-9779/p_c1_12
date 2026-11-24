@@ -186,3 +186,26 @@ vs single methods: optimism to be checked on M2).
 - 2026-11-23: M2 score run crashed for sigma3 and IForest on a substation whose training window had no usable
   numeric column. Fix: such windows get no score (NaN), as with any model without training data. Does not touch
   M1 (never triggered) nor any frozen operating point. No M2 evaluation had been run.
+
+## Round 5 plan (written 2026-11-24 BEFORE computing any event-protocol number; account 3)
+Diagnosis: the method story (rule, rule OR AE) is useful but not remarkable; the strongest candidate core idea
+is an evaluation FINDING (N5 + N7): the published balanced event-window protocol may rank detectors differently
+from deployment-realistic continuous monitoring. If true and explained, this is a reusable 2-sentence idea:
+"Balanced event benchmarks score each detector on a few hand-picked normal weeks, so they cannot see the
+false-alarm rate per asset-year that decides whether a detector is usable; rankings under the two protocols
+can disagree." It needs (i) a measured ranking disagreement, (ii) a mechanism, (iii) a second dataset.
+Fix families considered: F17 protocol-inversion study (this round); F18 second dataset (CARE wind SCADA,
+Zenodo 14958989, 6 GB) for generality; F19 analytical base-rate model linking event F0.5 to deployed
+precision; F20 residualised AE (F16, deferred); F21 per-fault-type routing (rule vs AE by loop activity).
+Event protocol E (re-implemented from the PreDist paper description): events = target faults (window
+[report - 7 d, report)) + normal_events.csv windows; event predicted positive if the criticality counter of the
+method's online score reaches c_thr at any step in the window; eventwise precision/recall/F0.5; both
+(a) benchmark-style: best F0.5 over the SAME (tau, c_thr) grid tuned on the evaluated manufacturer's events,
+(b) at the method's M1 continuous operating point for B = 2.
+Methods: rule, sigma3, loop3s, iforest, qnbm, ae, ae_cond, srcr_comp__v_gate_1s_local, underdel (seed 0), M1.
+ H5a: Kendall tau between method rankings by E-(a) F0.5 and by continuous recall at B = 2 is < 0.5.
+ H5b: at least one learned detector scores a higher E-(a) F0.5 than the rule although the rule has higher
+      continuous recall at B = 2 (a ranking inversion of the benchmark's own detector family vs the rule).
+ H5c: for every method, event precision under E-(a) exceeds deployed alarm precision (continuous, B = 2) by
+      a factor >= 5.
+All three falsifiable; reported regardless of outcome. M2 events are evaluated only inside the locked M2 run.
