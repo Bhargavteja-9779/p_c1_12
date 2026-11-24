@@ -526,3 +526,17 @@ Point estimates reproduce m1_gap.csv exactly. Inflation at the SAME benchmark-ch
 bounds 13.4 (rule) to 120 (iforest), all > 5. Inflation vs the in-sample B=2 point: 16-44x, CI lower bounds
 3.0 (rule), 9.2-17.4 for the other 7. Continuous FA/sub-yr at benchmark-chosen points: sigma3 10.4 (8.6-12.3),
 iforest 18.3 (14.4-54.0), ae 10.7 (5.7-34.2), loop3s 11.1 (4.0-43.6); rule 1.2, qnbm 2.4, srcr 2.2 stay low.
+
+## plan_v2 — PreDist M1, seed 0 (primary), run 2026-11-24 ~22:40 UTC (script unchanged since pre-registration commit 39cecca)
+Output: results/plan_v2/predist1/seed0/{summary.json,cells.csv,bootstrap.csv,selection_per_detector.csv}; log logs/planv2_predist1_s0.log.
+17 detectors, 35 substations, 64 events (29 fault), 2,000 random windows, 2,000 cluster-bootstrap resamples.
+- Kendall tau vs CH (deployment-like reference): ET 0.181, EH 0.633, CT 0.828.
+- H7a (threshold source) diff 0.452, 95% CI [0.101, 0.837], one-sided p 0.0045.
+- H7b (window design)    diff 0.647, 95% CI [0.019, 0.865], one-sided p 0.0215.
+  Holm over the 4 tests {H7a,H7b} x {PreDist, CARE} is applied only after CARE seed 0 (plan_v2.md); verdict PENDING.
+  (Holm thresholds for ranks 1-4: 0.0125, 0.0167, 0.025, 0.05; final decision via scripts/plan_v2_summary.py.)
+- H7c (descriptive): share of ET disagreement removed by out-of-sample thresholds 0.552; by continuous windows 0.790.
+- H7d (selection effect): pooled alarm-hit ratio curated-normal / random 0.300, CI [0.113, 0.516] (< 1);
+  16/17 detectors (0.94) have ratio < 1. SUPPORTED (script verdict).
+- Recall table (ET/EH/CT/CH): balanced event windows give 0.69-0.84 recall for every detector; deployment-like CH
+  gives 0.04-0.29. ae_cond (most sophisticated) is LAST under CH (0.036) but mid-pack under ET.
