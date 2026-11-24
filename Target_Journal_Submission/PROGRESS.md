@@ -71,14 +71,21 @@ STEP 0: journal landscape and 72-day check (in progress)
   deliverable = one submission-ready zip; strip AI-tool mentions from deliverable files (see open question there).
 
 ## NEXT ACTION
-State: rounds 0-4 + seeds 0-9 on M1 DONE. Candidates FROZEN (protocol.md Amendment A1): C1 rule, C2 rule OR AE.
-M1 seeds: C2 0.382+-0.017 vs AE 0.183+-0.045 vs rule 0.321 at B=2.
-1. M2 scores computing (job list code/scripts/m2_jobs.txt (run from code/: cat scripts/m2_jobs.txt | xargs -P 4 -I{} sh -c "python3 {}") run via xargs -P4; logs results/logs/regen/m2_*;
-   if lost on a new machine, regenerate: run_online_method.py {rule,sigma3,loop3s,iforest} 2; qnbm/ae_cond 2;
-   ae 2 k/3 seed for seeds 0-9; run_srcr_transfer.py). Check results/scores/<m>/m2 has 58 files each.
-2. Then run scripts/m2_eval.py ONCE (locked test) -> results/m2/. Log it in the M2 access log.
-3. Write m2_curves.py (curve-AUC endpoint, descriptive), error analysis by fault label.
-4. Scorecard + Reviewer Number Zero (pivoted story) -> paper drafting.
+State (2026-11-24): all M1 scores done; M2 done for every method except AE seeds 2-9 (queue running:
+code/results/logs/regen/run_rem.sh over jobs_remaining.txt; if dead, recreate with
+`grep -v srcr scripts/jobs_s3.txt | grep " 2"` and run via xargs -P4. NEVER kill one child of xargs: it aborts
+the queue; run_srcr_components.py does NOT skip existing files - do not rerun it).
+Round 5 DONE on M1 (log + protocol Amendment A2): F17 calibration negative, F16 ae_noloop tie (not promoted),
+F19 protocol gap STRONG on M1 (event precision 22-215x continuous; 5/8 methods >4 FA/sub-yr at event-optimal
+point; rank rho 0.40), F18 taxonomy pre-registered for M2.
+When M2 AE seeds 0-9 each have 58 files:
+1. python3 scripts/m2_eval.py (ONCE) -> results/m2/; log in M2 access log.
+2. python3 scripts/protocol_gap.py 2 (F19 on M2; H5f-H5h).
+3. python3 scripts/m2_errors.py (error analysis + F18 H5d/H5e) ; python3 scripts/m2_curves.py.
+4. Record all outcomes in novelty_escalation_log.md, scorecard, Reviewer Number Zero; then the paper.
+   Story now: N5 protocol + N7 finding (balanced event benchmarks mislead; rule + AE complementary by fault class).
+User: authors in manuscript/authors_declarations.md; open question on Elsevier AI declaration; final = one zip.
+Auto-resume scheduled task: trig_01LvjNkbim1k1nrUB45zjTRs (every 2 h into this session).
 
 ## Resume notes (saved 2026-11-23, account switch #2)
 - Scores/data are NOT in git. On a new machine, from Target_Journal_Submission/code:
