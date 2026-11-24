@@ -8,20 +8,19 @@ If you are a new session on another branch: `git fetch origin && git merge origi
 
 ## STANDING USER DIRECTIVES: see USER_DIRECTIVES.md (keep improving with new methods until top-notch; never ask; never stop at good enough; integrity first).
 
-## NEXT ACTION (updated 2026-11-24 ~19:55 UTC, session on branch claude/great-mccarthy-85gvo2)
-Working branch is now `claude/great-mccarthy-85gvo2` (fast-forward of eloquent-shannon, contains all branches).
-0. New container on 2026-11-24 19:40: everything regenerating (D-22). `python3 scripts/status.py`; if heartbeat stale,
-   Resume compute. Queue priorities: PreDist M1 inputs > panel PreDist > CARE prep/seed0 > panel CARE > deferred.
-1. When PreDist M1 (rule, loop3s, qnbm, ae seed0, ae_cond) + panel predist1 seeds are done, and CARE seed0
-   (temp3s, ae, ae_cond) + panel care seeds are done: `cd code && python3 scripts/plan_v2_analysis.py` (pre-registered,
-   committed before panel scores; check its CLI first). Record H7a-d verdicts verbatim in novelty_escalation_log.md +
-   journal entry. PreDist part may be run first if the script supports a dataset argument.
-2. literature/journal_quality_bar.md + journal_quality_papers.csv: being written by a sub-agent (if missing after a
-   restart, redo: benchmark ~30 recent Energy and AI papers, see D-19).
-3. Then re-score novelty (author first, then blind reviewer agent) with plan_v2 results; if G3 still fails, plan_v3
-   method cycle or honest-exit analysis paper (D-17, D-19, D-21: fresh data = Fuhrlander option a / HoT FA-only b).
-4. Old items still open: round6_care.py for confirm seeds (needs CARE ae 101-104 scores, deferred), PreDist leak
-   sensitivity run, final_report.py/audit_numbers.py refresh, manuscript.
+## NEXT ACTION (updated 2026-11-24 ~23:00 UTC, session on branch claude/serene-galileo-2zsx2t)
+Working branch: `claude/serene-galileo-2zsx2t` (fast-forward of great-mccarthy; contains every claude/* branch).
+0. Container rebuilt 21:00 UTC (D-24); queue runs 2 workers in tmux `queue`. Check `python3 scripts/status.py`.
+1. DONE: plan_v2 PreDist seed 0 (results/plan_v2/predist1/seed0; entry in novelty_escalation_log.md):
+   H7a p 0.0045, H7b p 0.0215, H7d supported. ~17 min runtime; per-detector cache resumes if interrupted.
+   scripts/plan_v2_summary.py written (Holm, robustness counts) BEFORE any CARE plan_v2 output (D-25).
+2. When CARE seed0 (temp3s, ae, ae_cond) + panel care seed 0 are done: `cd code && nohup python3 scripts/plan_v2_analysis.py care 0`
+   (use nohup: may exceed 30 min). Then `python3 scripts/plan_v2_summary.py` -> record Holm verdicts verbatim.
+   Then robustness seeds 1-4 for both datasets (analysis per seed) as panel seeds finish; re-run summary.
+3. Re-score novelty (author first, then blind reviewer agent) with plan_v2 results; if G3 still fails, plan_v3
+   method cycle or honest-exit analysis paper (D-17, D-19, D-21). Quality bar: literature/journal_quality_bar.md (done).
+4. Old items still open: round6_care.py for confirm seeds (deferred), PreDist leak sensitivity run,
+   final_report.py/audit_numbers.py refresh, manuscript.
 
 ## One-line summaries
 - Journal: Energy and AI (Elsevier, ISSN 2666-5468) — FAILS the 72-day rule (verified median 89 d, n=25,

@@ -175,3 +175,9 @@ Fast-forwarded to claude/great-mccarthy-85gvo2 (verified it contains every other
 (env, PreDist, CARE download). The D-23 marker fix had not worked: logs/setup_care.log was still tracked and the root
 .gitignore pattern `logs/setup_care.log` only matched at repo root. Now untracked + ignored by its full path.
 Queue restored from snapshot, all done/running reset to pending (outputs are gone on this machine).
+
+## D-2026-11-24-25  plan_v2_summary.py written before CARE results
+plan_v2.md names scripts/plan_v2_summary.py for the Holm step, but it was never written. Written now, after the PreDist
+seed-0 analysis and before any CARE plan_v2 output exists. It only implements the pre-registered procedure (Holm
+step-down over the 4 seed-0 one-sided p-values, alpha 0.05; robustness = seeds with unadjusted p < 0.05; robust iff
+>= 4/5). PreDist seed-0 p-values were known when writing; they do not affect the procedure.
