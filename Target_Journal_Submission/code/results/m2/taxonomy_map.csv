@@ -1,0 +1,19 @@
+Fault label,taxon
+Motorised control valve (primary side) defective,A
+Temperature monitor/controller defective,A
+Differential pressure regulator defective,A
+Motorised control valve (primary side): Actuator defective,A
+Motorised control valve (primary side): Control valve jams when closed,A
+Incorrect setting of the differential pressure regulator,A
+Failure of the domestic hot water storage charging pump,A
+Air in the piping system,A
+Strainer (secondary side): Poor flow rate,A
+Motorised control valve (primary side): Incorrect setting of the actuator travel time,A
+Failure of the heating circuit pump,B
+"Safety relief valve: Water loss, does not close properly",B
+Leakage,B
+Shut-off valve closed,B
+"Heat exchanger: Leakage, external",B
+Low pre-charge at the expansion vessel,B
+Control unit: Incorrect parameterisation,C
+unknown,U

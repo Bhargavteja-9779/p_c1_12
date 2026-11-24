@@ -262,3 +262,21 @@ as in protocol v1. For each of the 8 v1 methods (rule, sigma3, loop3s, iforest, 
  hypothesis; to be tested on M2 via H5d/H5e.
 Round 5 summary: ideas 14-17 tried (F17 negative, F16 tie, F18 pre-registered for M2, F19 strong on M1).
 Ideas total: 17. Candidates for M2 unchanged (C1, C2); F18 + F19 added as pre-registered M2 analyses (Amendment A2).
+- 2026-11-24T00:58Z: LOCKED M2 EVALUATION run (scripts/m2_eval.py, single run) after Amendment A2; all 17 methods x 58 M2 score files verified readable.
+
+## LOCKED M2 RESULTS (2026-11-24, single run; results/m2/, logs/m2_eval.log)
+M2: 25 evaluable target faults, 58 substations, 85.5 exposure-years. M1-chosen operating points applied unchanged.
+ Recall at B=2 (M1 -> M2): C2 0.393 -> 0.080 ; rule 0.321 -> 0.080 ; AE 0.214 -> 0.040 ; three-sigma 0.250 -> 0.280 ;
+ qnbm 0.179 -> 0.200 ; loop3s 0.250 -> 0.080 ; iforest 0.179 -> 0.080 ; AE-cond 0.143 -> 0.000 ; SRCR 0.321 -> 0.000.
+ Seeds 0-9, B=2, M2: C2 0.088 +- 0.025 ; AE 0.076 +- 0.048.  Achieved M2 FA/sub-yr at B=2: C2 1.26, rule 0.58, AE 1.89.
+ Pooled M1+M2 (53 faults, B=2, seed 0): C2 0.245 vs AE 0.132 (d = +0.113, 95% CI 0.000-0.231, McNemar p = 0.109,
+ Holm 0.766); C2 vs rule +0.038 (CI -0.057-0.132); C2 vs AE-cond +0.170 (CI 0.075-0.282, p 0.012, Holm 0.094).
+ NO comparison survives Holm. PRIMARY HYPOTHESIS (C2 better than baselines, transferring to M2) NOT SUPPORTED.
+F18 on M2: H5d FALSIFIED (rule recall class A 0.09 vs B+C 0.10); H5e FALSIFIED (1 AE-only fault, class U/A).
+ Underpowered: the rule detects 2/25 M2 faults.
+POST-HOC diagnostic (scripts/diag_loops.py; NOT used to change any method): 44/58 M2 substations expose only the
+ HC1 loop (no DHW loops) vs 9/35 on M1; median rule shortfall -0.10 K on M2 vs +0.65 K on M1 (M2 loops track above
+ setpoint); the M1 rule thresholds spend only 0.58 of the 2 FA/sub-yr budget on M2.
+Verdict so far: the rule/C2 advantage is manufacturer-specific. The honest paper is now about evaluation and
+transfer: (i) protocol gap (F19, M2 pending), (ii) M1-tuned detectors lose most recall on a second manufacturer,
+(iii) ranking of methods is not stable across manufacturers.
