@@ -133,3 +133,10 @@ Actions: (1) deeper benchmark of recent Energy and AI papers -> literature/journ
 structure, evidence depth, what a "top" paper there contains); (2) scout fresh public labelled datasets so that any
 NEW method can be tested on data never seen (M2 burned, CARE seen); (3) after plan_v2, a method cycle (plan_v3)
 targeted at the diagnosed failure modes, pre-registered, tested on the fresh data.
+
+## D-2026-11-24-20  Fresh test dataset candidate: Hill of Towie (Zenodo 22662930 v2.1.0, CC BY 4.0)
+Scouting (literature/fresh_datasets.md, 18 candidates): no public set beyond PreDist/CARE has maintenance-log fault
+labels. Hill of Towie: 21 turbines, 2016-2026, 10-min SCADA + alarm log (tblAlarmLog) + operator downtime
+(ShutdownDuration). Fault events must be DERIVED from alarm/downtime logs by a rule written and committed before any
+detector output on this data is computed (labels may be inspected; detector outputs may not). Disk: yearly zips are
+converted to compact per-turbine parquet and deleted. Song 2026 (Zenodo 23902232) also used it -> cite.
