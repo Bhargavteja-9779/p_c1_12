@@ -1,0 +1,14 @@
+python3 scripts/run_care.py temp3s 0
+python3 scripts/run_care.py sigma3 0
+python3 scripts/run_care.py iforest 0 0/4
+python3 scripts/run_care.py ae 0 0/4
+python3 scripts/run_care.py ae_cond 0 0/4
+python3 scripts/run_care.py iforest 0 1/4
+python3 scripts/run_care.py ae 0 1/4
+python3 scripts/run_care.py ae_cond 0 1/4
+python3 scripts/run_care.py iforest 0 2/4
+python3 scripts/run_care.py ae 0 2/4
+python3 scripts/run_care.py ae_cond 0 2/4
+python3 scripts/run_care.py iforest 0 3/4
+python3 scripts/run_care.py ae 0 3/4
+python3 scripts/run_care.py ae_cond 0 3/4

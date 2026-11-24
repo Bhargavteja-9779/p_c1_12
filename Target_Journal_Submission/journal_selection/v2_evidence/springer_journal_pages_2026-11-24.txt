@@ -1,0 +1,465 @@
+=== https://energyinformatics.springeropen.com/
+Your privacy, your choice
+
+We use essential cookies to make sure the site can function. We also use optional cookies for advertising, personalisation of content, usage analysis, and social media, as well as to allow video information to be shared for both marketing, analytics and editorial purposes.
+
+By accepting optional cookies, you consent to the processing of your personal data - including transfers to third parties. Some third parties are outside of the European Economic Area, with varying standards of data protection.
+
+See our privacy policy for more information on the use of your personal data.
+
+Manage preferences for further information and to change your choices.
+
+Accept all cookies
+Reject optional cookies
+Skip to main content
+SpringerOpen journals have moved to Springer Nature Link. Learn more about website changes.
+Log in
+Find a journal
+Publish with us
+Track your research
+Search
+ Saved research
+ Cart
+Home  Energy Informatics
+Energy Informatics
+Publishing model
+Open access
+Submit your manuscript
+Save journal
+Explore open access funding Select institution
+About this journal
+Articles
+For authors
+Journal updates
+Overview
+
+Energy Informatics is an interdisciplinary open-access journal focused on the application of digital technology and information management to facilitate sustainable and resilient energy systems.
+
+Provides a unique focus on the application of digital technology to energy systems.
+Affiliated with two high profile conference series, ensuring maximum visibility and reach.
+Caters to a broad audience, including industry, for higher citations and visibility.
+Publishes original, peer-reviewed research from various scientific, technological, engineering, and social fields.
+Promotes the global transition towards sustainable and resilient energy systems.
+Editors-in-Chief
+Bo Nørregaard Jørgensen PhD
+Zheng Grace Ma PhD
+View all editors 
+Journal metrics
+Submission to first decision (median)
+13 days
+Downloads
+754.1k (2025)
+Calls for papers
+
+Collection
+
+Data-Centric AI, Digital Twins, and Knowledge Graphs for Energy Systems
+
+The transformative landscape of energy systems is increasingly reliant on advanced computational methods such as Data-Centric AI, digital twins,...
+
+Status
+Open for submissions
+Submission deadline
+29 March 2027
+
+Collection
+
+Generative AI, Foundation Models, and AI Agents for Energy System Design and Operation
+
+Generative AI and foundation models are beginning to change how energy systems are designed, forecast, and operated.
+
+Status
+Open for submissions
+Submission deadline
+29 March 2027
+View all calls for papers
+Latest articles
+A Subsystem-Aware Graph Autoencoder with uncertainty guided learning framework for explainable power transformer health classification and health-index estimation
+Tendo Joshua KayengaJeffy Briton SsemudduAndrew Ndawula
+Research
+Open access
+18 November 2026
+Part of 1 collection:
+Data-Centric AI, Digital Twins, and Knowledge Graphs for Energy Systems
+The P2P-ironing platform: evaluating the software quality and user acceptance of a decentralized cyber-physical marketplace for shore-to-ship power
+Achilleas AchilleosHoussam HamrouniKyriacos Pavlou
+Research
+Open access
+18 November 2026
+Optimal grid connection capacity of a hybrid renewable microgrid: an energy management and economic optimisation model
+Ihor BuratynskyiArtur ZaporozhetsAndrii Bosak
+Research
+Open access
+17 November 2026
+Implementing the energy data space through the OneNet connector
+Juan Adolfo Galeano MartínezFerdinando BoscoFerdinanda Ponci
+Research
+Open access
+16 November 2026
+Article: 83
+Pareto optimization of BEMU traction battery capacity and recharging infrastructure
+Stefan ArensChristoph StreulingPeter Klement
+Research
+Open access
+14 November 2026
+Article: 82
+View all articles
+Journal updates
+Articles in Press
+Supporting the Sustainable Development Goals
+
+We are proud to acknowledge that over 50% of the articles published in this journal in 2025 were related to one or more of the 17 Sustainable Development
+=== https://link.springer.com/journal/12273
+Your privacy, your choice
+
+We use essential cookies to make sure the site can function. We also use optional cookies for advertising, personalisation of content, usage analysis, and social media, as well as to allow video information to be shared for both marketing, analytics and editorial purposes.
+
+By accepting optional cookies, you consent to the processing of your personal data - including transfers to third parties. Some third parties are outside of the European Economic Area, with varying standards of data protection.
+
+See our privacy policy for more information on the use of your personal data.
+
+Manage preferences for further information and to change your choices.
+
+Accept all cookies
+Reject optional cookies
+Skip to main content
+Log in
+Find a journal
+Publish with us
+Track your research
+Search
+ Saved research
+ Cart
+Home  Building Simulation
+Building Simulation
+
+An International Journal
+
+Publishing model
+Hybrid
+Submit your manuscript
+Save journal
+Explore open access funding Select institution
+About this journal
+Articles
+For authors
+Journal updates
+Overview
+
+Building Simulation: An International Journal is dedicated to the publication of high-quality research on modeling and simulation of buildings and their systems.
+
+Covers a broad spectrum, from building thermal, lighting, acoustics modeling, and building systems, to indoor/outdoor airflow and air quality.
+Emphasizes on the latest developments and applications of modeling tools in building science and technology.
+Promotes a multidisciplinary, international perspective on building, environmental and human behavioral sciences.
+Encourages submissions that contribute to the evolving field of building simulation.
+Editor-In-Chief
+Da Yan
+View all editors 
+Societies and partnerships
+Tsinghua University Press
+Journal metrics
+Journal Impact Factor
+6.9 (2025)
+5-year Journal Impact Factor
+5.9 (2025)
+Submission to first decision (median)
+3 days
+Downloads
+222.2k (2025)
+Latest issue
+September 2026
+Volume 19, Issue 9
+View all volumes and issues
+Latest articles
+Data-driven learning of expert calibration for building energy simulation models
+Xilong LiaoBaizhan LiChenqiu Du
+Research Article
+21 November 2026
+HVAC demand response differences and strategy selection in commercial-office complexes
+Yalei LiuZhitong LinXing Shi
+Research Article
+21 November 2026
+A temperature–Gamma model for building thermal response dynamics and demand response analysis
+Da YanJingjing AnXin Zhou
+Research Article
+19 November 2026
+Deconstructing spatial variations in summer daytime land surface temperature for high-density built-up areas: An ensemble of geographically weighted machine learning models
+Yang WanHan DuYankun Wang
+Research Article
+14 November 2026
+Influence of ventilated seat cushion on infant thermal comfort in a transient thermal environment
+Xiaowen ZhangHui WangJun Li
+Research Article
+06 November 2026
+View all articles
+This journal has 
+114 open access articles
+Journal updates
+Springer Nature Editor of Distinction Awards 2026
+Best Paper Award 2024
+Best Paper Award 2023
+Supporting the Sustainable Development Goals
+
+We are proud to acknowledge that over 50% of the articles published in this journal in 2025 were related to one or more of the 17 Sustainable Development Goals (SDGs).
+
+View all updates
+Sign up for alerts
+
+Get notified when new articles are published.
+
+Journal information
+Electronic ISSN
+1996-8744
+ 
+Print ISSN
+1996-3599
+Co-Publisher information
+Co-publication with Tsinghua University Press
+Abstracted and indexed in
+ANVUR
+BFI List
+Baidu
+CLOCKSS
+CNKI
+CNPIEC
+Chemical Abstracts Service (CAS)
+Chinese Academy of Medical Science (CAMS)
+Chinese Science Citation Database
+Current Contents/Engineering, Computing and Technology
+Dimensions
+EBSCO
+EI Compendex
+Google Scholar
+INSPEC
+Naver
+Norwegian Register for Scientific Journals and Series
+OCLC WorldCat Discovery Service
+Ovid Discovery
+Portico
+ProQuest
+SCImago
+SCOPUS
+Science Citation Index Expanded (SCIE)
+TD Net Discovery Service
+Wanfang
+eLibrary.ru
+© Ts
+=== https://link.springer.com/journal/10845
+Your privacy, your choice
+
+We use essential cookies to make sure the site can function. We also use optional cookies for advertising, personalisation of content, usage analysis, and social media, as well as to allow video information to be shared for both marketing, analytics and editorial purposes.
+
+By accepting optional cookies, you consent to the processing of your personal data - including transfers to third parties. Some third parties are outside of the European Economic Area, with varying standards of data protection.
+
+See our privacy policy for more information on the use of your personal data.
+
+Manage preferences for further information and to change your choices.
+
+Accept all cookies
+Reject optional cookies
+Skip to main content
+Log in
+Find a journal
+Publish with us
+Track your research
+Search
+ Saved research
+ Cart
+Home  Journal of Intelligent Manufacturing
+Journal of Intelligent Manufacturing
+Publishing model
+Hybrid
+Submit your manuscript
+Save journal
+Explore open access funding Select institution
+About this journal
+Articles
+For authors
+Journal updates
+Overview
+
+The Journal of Intelligent Manufacturing is peer-reviewed publication dedicated to the application of artificial intelligence in manufacturing.
+
+Publishes research related to product development, manufacturing, and service systems.
+Connects the research community with industry.
+Features articles covering new methodologies and developments, case studies, and surveys.
+Covers emerging areas including additive manufacturing, digital manufacturing, cyber-physical solutions, cloud applications, and deep learning.
+Offers special issues on topics of interest to the readership.
+
+ 
+
+Editor-in-Chief
+Andrew Kusiak PhD
+View all editors 
+Journal metrics
+Journal Impact Factor
+7.7 (2025)
+5-year Journal Impact Factor
+9.2 (2025)
+Submission to first decision (median)
+8 days
+Downloads
+1.1M (2025)
+Latest issue
+December 2026
+Volume 37, Issue 12
+View all volumes and issues
+Latest articles
+Hi-LLM: a physics-anchored heterogeneous interaction large language model for robust health monitoring of special equipment
+Xifan XuYong ZhaoMeng Ma
+ReviewPaper
+17 November 2026
+Relationship-aware multichannel diffusion augmentation and graph convolutional fusion for small-sample rotating machinery fault diagnosis
+Xinyue WangLiqing FangZiqi Wang
+OriginalPaper
+16 November 2026
+AssemPlanner: a multi-agent based task planning framework for flexible assembly system
+Chenhao ZhangChaoran ZhangLong Zeng
+OriginalPaper
+13 November 2026
+An intelligent hybrid monitoring framework for robust defect detection in solder paste printing
+Tsung-Nan TsaiJi-Chian Jou
+OriginalPaper
+13 November 2026
+Shaping the digital brain for Industry 5.0: a review of industrial world models
+Jiewu LengJiaming ZhangLihui Wang
+ReviewPaper
+13 November 2026
+View all articles
+This journal has 
+405 open access articles
+Journal updates
+Indexed by Scopus
+
+The Journal of Intelligent Manufacturing is indexed by Scopus and has a CiteScore of 18.5 for 2025.
+
+Recent Top Cited Papers
+
+The Journal of Intelligent Manufacturing highlights some of the recent top cited papers from the journal.
+
+Top Downloaded Papers for 2025
+
+The Journal of Intelligent Manufacturing highlights some of the top downloaded papers from the journal in 2025.
+
+SDG 12 Related Publications from Journal of Intelligent Manufacturing
+
+The UN's Sustainable Development Goal 12 is focused on "responsible consumption and production." Learn more about SDG 12 and discover related research published in Journal of Intelligent Manufacturing.
+
+View all updates
+Sign up for alerts
+
+Get notified when new articles are published.
+
+Journal information
+Electronic ISSN
+1572-8145
+ 
+Print ISSN
+0956-5515
+Abstracted and indexed in
+ABS Academic Journal Quality Guide
+ACM Digital Library
+ANVUR
+Australian Business Deans Council (ABDC) Journal Quality List
+BFI List
+Baidu
+CLOCKSS
+CNKI
+CNPIEC
+Chinese Academy of Medical Science (CAMS)
+Current Contents/Engineering, Computing and Technology
+DBLP
+Dimensions
+EBSCO
+E
+=== https://energyinformatics.springeropen.com/about
+Your privacy, your choice
+
+We use essential cookies to make sure the site can function. We also use optional cookies for advertising, personalisation of content, usage analysis, and social media, as well as to allow video information to be shared for both marketing, analytics and editorial purposes.
+
+By accepting optional cookies, you consent to the processing of your personal data - including transfers to third parties. Some third parties are outside of the European Economic Area, with varying standards of data protection.
+
+See our privacy policy for more information on the use of your personal data.
+
+Manage preferences for further information and to change your choices.
+
+Accept all cookies
+Reject optional cookies
+Skip to main content
+SpringerOpen journals have moved to Springer Nature Link. Learn more about website changes.
+Log in
+Find a journal
+Publish with us
+Track your research
+Search
+ Saved research
+ Cart
+Home  Energy Informatics  Aims and scope
+Energy Informatics
+Publishing model
+Open access
+Submit your manuscript
+Save journal
+Explore open access funding Select institution
+About this journal
+Articles
+For authors
+Journal updates
+Aims and scope
+
+This journal aims to provide a unique platform for researchers and practitioners of energy informatics in various scientific, technological, engineering and social fields to disseminate original research on the application of digital technology and information management theory and practice to facilitate the global transition towards sustainable and resilient energy systems.
+
+The journal publishes essential, peer-reviewed, interdisciplinary research addressing scientific, engineering and business topics related to energy, including but not limited to:
+
+Innovation in data-driven energy services and business models
+Big Data-driven smart Energy Management Systems
+Management of data and information flow in the Digital Energy System 4.0
+Data analytics for energy-cost efficient system operation
+Privacy issues in energy data management
+Digitalization of energy production, delivery and consumption, including policy and strategy
+Digital technologies for enabling energy-aware user behavior
+Contextual computing for supporting human and energy system interactions
+Energy-efficient Cloud Computing and data centers
+Cyber security issues for safe and reliable Smart grid operation
+Social media’s role in the transition towards sustainable energy
+Application of Artificial Intelligence and Agent-based technology in smart energy systems
+Model-based and data-driven energy forecasting, including energy production and use
+Management of public and private procurement of digital energy technology
+Socioeconomic opportunities and barriers for adoption of digital energy technologies
+Sociotechnical aspects related to design and implementation of smart energy systems
+Innovation management in smart energy business eco-systems
+Digital entrepreneurship in emerging energy markets
+Smart grid communication architectures and protocols for improving grid resiliency, including graceful degradation and self-healing
+Demand-side management, including demand response, dynamic pricing and incentive design
+Microgrid and distributed generation management and control
+Monitoring and control of Smart Buildings, including Smart Grid interoperability
+Footer Navigation
+Discover content
+Journals A-Z
+Books A-Z
+Subjects A-Z
+Publish with us
+Journal finder
+Publish your research
+Language editing
+Open access publishing
+Products and services
+Our products
+Librarians
+Societies
+Partners and advertisers
+Our brands
+Springer
+Nature Portfolio
+BMC
+Palgrave Macmillan
+Apress
+Discover
+Corporate Navigation
+Your privacy choices/Manage cookies Your US state privacy rights Accessibility statement Terms and conditions Privacy policy Help and support Legal notice Cancel contracts here
+
+160.79.106.130
+
+Not affiliated
+
+© 2026 Springer Nature

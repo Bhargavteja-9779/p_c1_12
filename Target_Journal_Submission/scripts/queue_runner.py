@@ -54,7 +54,8 @@ def add(a):
         if jid in ids:
             continue
         q["jobs"].append({"id": jid, "group": a.group, "cycle": a.cycle, "cwd": a.cwd, "cmd": cmd,
-                          "status": "pending", "attempts": 0, "added": now()}); n += 1
+                          "status": "pending", "attempts": 0, "added": now(), "priority": a.priority,
+                          "after": a.after}); n += 1
     save(QF, q); print(f"added {n} jobs to group {a.group}")
 
 
@@ -74,7 +75,15 @@ def run(a):
     except BlockingIOError:
         print("another queue_runner holds the lock; exiting"); return
     lk.write(str(os.getpid())); lk.flush()
-    reset_running()  # anything 'running' belongs to a dead runner
+    # adopt jobs whose process is still alive (runner restarted while children kept running); others -> pending
+    q0 = load(QF, {"jobs": []}); orphans = {}
+    for j in q0["jobs"]:
+        if j["status"] == "running":
+            try:
+                os.kill(j.get("pid", -1), 0); orphans[j["id"]] = j["pid"]
+            except (OSError, TypeError):
+                j["status"] = "pending"
+    save(QF, q0)
     active = {}  # id -> Popen
     stop = threading.Event()
 
@@ -85,8 +94,8 @@ def run(a):
             with _mu:
                 t = time.time(); dt = t - last; last = t
                 with open(HB, "w") as f:
-                    f.write(now() + f" pid={os.getpid()} running={len(active)}\n")
-                if active:
+                    f.write(now() + f" pid={os.getpid()} running={len(active) + len(orphans)}\n")
+                if active or orphans:
                     b = budget(); c = b["cycles"].setdefault(str(b["cycle"]), {"machine_h": 0.0, "core_h": 0.0})
                     c["machine_h"] += dt / 3600; save(BF, b)
     th = threading.Thread(target=beat, daemon=True); th.start()
@@ -99,6 +108,12 @@ def run(a):
     while True:
         with _mu:
             q = load(QF, {"jobs": []}); byid = {j["id"]: j for j in q["jobs"]}
+            # orphans: when the process is gone, re-queue once (every job skips existing outputs -> cheap re-check)
+            for jid, pid in list(orphans.items()):
+                try:
+                    os.kill(pid, 0)
+                except OSError:
+                    j = byid[jid]; j["status"] = "pending"; j["attempts"] = max(0, j["attempts"] - 1); del orphans[jid]
             # reap finished
             for jid, p in list(active.items()):
                 r = p.poll()
@@ -108,12 +123,16 @@ def run(a):
                 j["finished"] = now(); j["returncode"] = r
                 j["status"] = "done" if r == 0 else ("failed" if j["attempts"] >= MAX_ATTEMPTS else "pending")
                 del active[jid]
-            pend = [j for j in q["jobs"] if j["status"] == "pending" and j["id"] not in active]
+            done_groups = {g for g in {j["group"] for j in q["jobs"]}
+                           if all(x["status"] in ("done", "failed", "skipped_budget") for x in q["jobs"] if x["group"] == g)}
+            pend = [j for j in q["jobs"] if j["status"] == "pending" and j["id"] not in active
+                    and (not j.get("after") or j["after"] in done_groups)]
+            pend.sort(key=lambda j: -j.get("priority", 0))  # stable: FIFO within a priority
             if over_budget():
                 for j in pend:
                     j["status"] = "skipped_budget"
                 pend = []
-            while pend and len(active) < a.workers:
+            while pend and len(active) + len(orphans) < a.workers:
                 j = pend.pop(0); j["attempts"] += 1; j["status"] = "running"; j["started"] = now()
                 log = open(os.path.join(LOGD, j["id"] + ".log"), "a")
                 log.write(f"\n=== {now()} attempt {j['attempts']}: {j['cmd']}\n"); log.flush()
@@ -121,7 +140,7 @@ def run(a):
                                                    stdout=log, stderr=subprocess.STDOUT, start_new_session=True)
                 j["pid"] = active[j["id"]].pid
             save(QF, q)
-            if not active and not pend:
+            if not active and not orphans and not pend and not any(j["status"] == "pending" for j in q["jobs"]):
                 break
         time.sleep(10)
     stop.set()
@@ -137,6 +156,7 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser(); sp = ap.add_subparsers(dest="cmd", required=True)
     p = sp.add_parser("add"); p.add_argument("--group", required=True); p.add_argument("--cwd", default="code")
     p.add_argument("--file", required=True); p.add_argument("--cycle", type=int, default=4)
+    p.add_argument("--priority", type=int, default=0); p.add_argument("--after", default=None, help="run only after this group finished")
     p = sp.add_parser("run"); p.add_argument("--workers", type=int, default=4)
     sp.add_parser("reset-running")
     a = ap.parse_args(); {"add": add, "run": run, "reset-running": reset_running}[a.cmd](a)
