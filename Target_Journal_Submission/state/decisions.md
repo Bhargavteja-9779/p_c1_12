@@ -119,3 +119,9 @@ a tractable, cheap experiment. So no pivot. Next rung: experiments/plan_v2.md = 
 normal operation) with an enlarged panel of cheap detectors and seeds 0-4, reporting Kendall tau with CIs and Holm.
 Expected to raise mechanism/evidence, not differentiation, so G3 may still fail; if so the honest exit (11.7)
 analysis paper is the likely outcome.
+
+## D-2026-11-24-18  plan_v2 panel jobs queued (30 jobs, priority 3, ahead of remaining CARE AE confirm seeds)
+Dry run of plan_v2_analysis.py on substitute scores (every panel member = sigma3; outputs in scratch, meaningless)
+completed without error (18 min, tables dominate). Panel jobs are cheap (~2.5 machine-h) and target the failing gate
+G3; CARE ae seeds 101-104 continue after them as budget allows. Compute is still booked to cycle 4 until its queue
+drains; cycle 5 starts with the plan_v2 analysis.
