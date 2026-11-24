@@ -1,0 +1,10 @@
+,0
+kendall_tau_Ebest_vs_contB2,0.2125118592516207
+kendall_p,0.4489562255783215
+spearman,0.31766971815150796
+kendall_tau_EatB2_vs_contB2,0.6375355777548621
+H5a_supported,True
+H5b_inverted_methods,sigma3;loop3s;iforest
+H5b_supported,True
+H5c_min_inflation,16.111111111111132
+H5c_supported,True

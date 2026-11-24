@@ -236,3 +236,17 @@ Event protocol E on CARE: all 95 events, positive if alarm active in the event w
  H6b: event precision (E-best) exceeds deployed alarm precision at B = 2 by >= 5x for every method.
  H6c: alarm rate on CARE normal events is lower than on random eligible 7-day normal windows (rate ratio < 1).
  H6d (resolution): 50 normal events -> power to separate 1 vs 2 FA/turbine-year < 0.5 (analytic, as H5e).
+
+## Round 5 results (2026-11-24, M1; results/round5/protocol_compare_m1.csv, protocol_summary_m1.csv, event_grid_m1.csv)
+64 events (29 target faults + 35 normal), same online scores for both protocols, 9 methods.
+- H5a SUPPORTED: Kendall tau (benchmark-style best event F0.5 vs continuous recall at B=2) = 0.21 (p = 0.45),
+  Spearman 0.32. When the event protocol uses each method's continuous B=2 operating point instead of
+  test-tuned thresholds, Kendall tau rises to 0.64 -> most of the inversion comes from tuning thresholds on the
+  balanced test events (the benchmark practice), not from the event windows themselves.
+- H5b SUPPORTED: sigma3 (F0.5 0.84), loop3s (0.81) and IForest (0.79) beat the rule (0.75) on the event protocol,
+  yet the rule has the highest continuous recall at B=2 (0.32 vs 0.25 / 0.25 / 0.18). Under the event protocol
+  the plain three-sigma baseline is the BEST of 9 methods; under continuous monitoring it is mid-table.
+- H5c SUPPORTED: event precision exceeds deployed alarm precision by 16x (rule) to 44x (qnbm) for every method
+  (event precision 0.73-1.00 vs deployed 0.02-0.06).
+- H5e (analytic, earlier): 65 normal weeks cannot separate 1 vs 2 FA/asset-yr (power 0.23).
+Verdict round 5: primary gain of the STORY (a measured, explained ranking inversion), not of a method.
