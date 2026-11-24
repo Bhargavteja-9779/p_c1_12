@@ -1,0 +1,45 @@
+== Expert Systems with Applications S13144211 Elsevier BV
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+Expert Systems with Applications candidates 80 dated 30
+== Knowledge-Based Systems S10169007 Elsevier BV
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<html'
+EOF marker not found
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'\n\n\n\n<'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+Knowledge-Based Systems candidates 71 dated 24

@@ -1,0 +1,58 @@
+== Reliability Engineering & System Safety S202403813 Elsevier BV
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!DOC'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+Reliability Engineering & System Safety candidates 80 dated 30
+== Building and Environment S56464651 Elsevier BV
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!DOC'
+EOF marker not found
+invalid pdf header: b'<html'
+EOF marker not found
+EOF marker not found
+invalid pdf header: b'<!DOC'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<html'
+EOF marker not found
+EOF marker not found
+Ignoring wrong pointing object 6 0 (offset 0)
+Ignoring wrong pointing object 8 0 (offset 0)
+Ignoring wrong pointing object 10 0 (offset 0)
+Ignoring wrong pointing object 12 0 (offset 0)
+Ignoring wrong pointing object 14 0 (offset 0)
+Ignoring wrong pointing object 16 0 (offset 0)
+Ignoring wrong pointing object 18 0 (offset 0)
+Ignoring wrong pointing object 20 0 (offset 0)
+Ignoring wrong pointing object 22 0 (offset 0)
+Ignoring wrong pointing object 28 0 (offset 0)
+Ignoring wrong pointing object 30 0 (offset 0)
+Ignoring wrong pointing object 32 0 (offset 0)
+Ignoring wrong pointing object 34 0 (offset 0)
+Ignoring wrong pointing object 47 0 (offset 0)
+Ignoring wrong pointing object 54 0 (offset 0)
+Ignoring wrong pointing object 73 0 (offset 0)
+invalid pdf header: b'<!doc'
+EOF marker not found
+Building and Environment candidates 134 dated 30

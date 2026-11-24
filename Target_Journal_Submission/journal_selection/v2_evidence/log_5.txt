@@ -1,0 +1,16 @@
+== Energy Nexus S4210238917 Elsevier BV
+Ignoring wrong pointing object 43 0 (offset 0)
+Ignoring wrong pointing object 85 0 (offset 0)
+Ignoring wrong pointing object 88 0 (offset 0)
+Ignoring wrong pointing object 201 0 (offset 0)
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+Energy Nexus candidates 28 dated 11
+== Energy and Built Environment S4210206740 Elsevier BV
+Energy and Built Environment candidates 4 dated 1

@@ -1,0 +1,39 @@
+== Energy Conversion and Management X S4210191901 Elsevier BV
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!DOC'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<html'
+EOF marker not found
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+Energy Conversion and Management: X candidates 109 dated 30
+== Journal of Building Engineering S2764478331 Elsevier BV
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+Journal of Building Engineering candidates 71 dated 26

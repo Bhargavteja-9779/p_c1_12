@@ -1,0 +1,45 @@
+== Energy Strategy Reviews S2764911704 Elsevier BV
+invalid pdf header: b'<html'
+EOF marker not found
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+Ignoring wrong pointing object 43 0 (offset 0)
+Ignoring wrong pointing object 211 0 (offset 0)
+Ignoring wrong pointing object 228 0 (offset 0)
+Ignoring wrong pointing object 230 0 (offset 0)
+Ignoring wrong pointing object 289 0 (offset 0)
+Ignoring wrong pointing object 303 0 (offset 0)
+Ignoring wrong pointing object 413 0 (offset 0)
+invalid pdf header: b'<html'
+EOF marker not found
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!DOC'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+Energy Strategy Reviews candidates 59 dated 30
+== Applied Thermal Engineering S129676613 Elsevier BV
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!DOC'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+invalid pdf header: b'<!doc'
+EOF marker not found
+Applied Thermal Engineering candidates 82 dated 30

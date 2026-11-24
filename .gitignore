@@ -15,3 +15,7 @@ Target_Journal_Submission/RECHECK/logs/run_all_full.log
 Target_Journal_Submission/RECHECK/stage1/alt.log
 Target_Journal_Submission/RECHECK/stage1/alt_journal_dates.csv
 Target_Journal_Submission/RECHECK/stage3/raw/
+Target_Journal_Submission/logs/jobs/
+Target_Journal_Submission/state/heartbeat
+Target_Journal_Submission/state/queue.lock
+Target_Journal_Submission/state/*.tmp
