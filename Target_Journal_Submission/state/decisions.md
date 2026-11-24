@@ -67,3 +67,14 @@ kept (best fit; median 89 d, n=25, range 33-565; Q1 UNVERIFIED). Closest on timi
   evaluation-paper focus; no new detector-method round is planned unless the Section 6.4 ladder calls for it.
 - No pre-coding novelty score exists (only 20/30 after the locked test); stated as a limitation of the process.
 - Novelty ledger: 158 papers opened at abstract level, 1 full text -> G2 "opened" counted at abstract level, stated.
+
+## D-2026-11-24-12  Claims narrowed after hostile prior-art search (literature/claim_table.md)
+- C1 reworded: "we quantify the overestimation acknowledged by Roelofs et al."; never call the base-rate mechanism new.
+- C2: no operator-tolerable FA figure is sourced -> results reported as functions of the FA budget (B = 1, 2, 4);
+  "operators tolerate ~2" removed unless a source is found (scorecard_reviewer_zero.md wording is superseded).
+- C3: lead with the decomposition (thresholds tuned on evaluated events vs not) and tau with a bootstrap CI.
+- C4: supporting design check citing NIST TN 2118, not a contribution.
+- C5: "control-unit manufacturer" (PreDist); CARE = "wind farm"; Song 2026 / Haneef 2026 / Vural 2026 cited as
+  concurrent evidence. CARE replication is reframed from "novel second domain" to "independent replication".
+- Section 6.4 rung 1-2 (diagnose / mechanism): the selection-effect test H5d (PreDist M1, pre-registered) and H6c
+  (CARE) become priority analyses; a dedicated prior-art search for that specific claim follows once results exist.

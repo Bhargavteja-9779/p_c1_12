@@ -1,0 +1,2370 @@
+{
+ "generated": "2026-11-24",
+ "notes": "opened=true means abstract or full text retrieved in this session (OpenAlex/Crossref/arXiv/Semantic Scholar APIs, arXiv HTML for PreDist, MDPI PDF via mdpi-res for CARE, Zenodo package for Song). Semantic Scholar mostly returned HTTP 429. ScienceDirect not accessed.",
+ "queries": [
+  {
+   "claim": "C1",
+   "query": "point adjustment time series anomaly detection evaluation overestimates",
+   "source": "openalex",
+   "n_hits": 16209,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "point adjustment time series anomaly detection evaluation overestimates",
+   "source": "crossref",
+   "n_hits": 7777618,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C1",
+   "query": "point adjustment time series anomaly detection evaluation overestimates",
+   "source": "arxiv",
+   "n_hits": 18,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "base rate fallacy anomaly detection precision",
+   "source": "openalex",
+   "n_hits": 1494,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "base rate fallacy anomaly detection precision",
+   "source": "crossref",
+   "n_hits": 2708317,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C1",
+   "query": "base rate fallacy anomaly detection precision",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "precision at deployment low prevalence fault detection",
+   "source": "openalex",
+   "n_hits": 6146,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "precision at deployment low prevalence fault detection",
+   "source": "crossref",
+   "n_hits": 3933451,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C1",
+   "query": "precision at deployment low prevalence fault detection",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "event-based evaluation early fault detection wind turbine benchmark",
+   "source": "openalex",
+   "n_hits": 4455,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "event-based evaluation early fault detection wind turbine benchmark",
+   "source": "crossref",
+   "n_hits": 11875027,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C1",
+   "query": "event-based evaluation early fault detection wind turbine benchmark",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "evaluation protocol anomaly detection continuous operation false positives",
+   "source": "openalex",
+   "n_hits": 39618,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "evaluation protocol anomaly detection continuous operation false positives",
+   "source": "crossref",
+   "n_hits": 4606947,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C1",
+   "query": "evaluation protocol anomaly detection continuous operation false positives",
+   "source": "arxiv",
+   "n_hits": 10,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "class imbalance evaluation predictive maintenance realistic",
+   "source": "openalex",
+   "n_hits": 32148,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "class imbalance evaluation predictive maintenance realistic",
+   "source": "crossref",
+   "n_hits": 3075666,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C1",
+   "query": "class imbalance evaluation predictive maintenance realistic",
+   "source": "arxiv",
+   "n_hits": 2,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "time series anomaly detection benchmarks flawed",
+   "source": "openalex",
+   "n_hits": 9525,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "time series anomaly detection benchmarks flawed",
+   "source": "crossref",
+   "n_hits": 5339351,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C1",
+   "query": "time series anomaly detection benchmarks flawed",
+   "source": "arxiv",
+   "n_hits": 8,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "range-based precision recall time series",
+   "source": "openalex",
+   "n_hits": 361768,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "range-based precision recall time series",
+   "source": "crossref",
+   "n_hits": 10803545,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C1",
+   "query": "range-based precision recall time series",
+   "source": "arxiv",
+   "n_hits": 8,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "prevalence adjusted precision anomaly detection",
+   "source": "openalex",
+   "n_hits": 22053,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "prevalence adjusted precision anomaly detection",
+   "source": "crossref",
+   "n_hits": 2202669,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C1",
+   "query": "prevalence adjusted precision anomaly detection",
+   "source": "arxiv",
+   "n_hits": 1,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "balanced test set overestimates precision imbalanced deployment",
+   "source": "openalex",
+   "n_hits": 5356,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "balanced test set overestimates precision imbalanced deployment",
+   "source": "crossref",
+   "n_hits": 1341018,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C1",
+   "query": "balanced test set overestimates precision imbalanced deployment",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "false alarm rate per turbine per year condition monitoring",
+   "source": "openalex",
+   "n_hits": 2506,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "false alarm rate per turbine per year condition monitoring",
+   "source": "crossref",
+   "n_hits": 2474291,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C2",
+   "query": "false alarm rate per turbine per year condition monitoring",
+   "source": "arxiv",
+   "n_hits": 1,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "alarm fatigue wind turbine condition monitoring false alarms",
+   "source": "openalex",
+   "n_hits": 1427,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "alarm fatigue wind turbine condition monitoring false alarms",
+   "source": "crossref",
+   "n_hits": 1642647,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C2",
+   "query": "alarm fatigue wind turbine condition monitoring false alarms",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "false alarms per year SCADA normal behaviour model",
+   "source": "openalex",
+   "n_hits": 675,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "false alarms per year SCADA normal behaviour model",
+   "source": "crossref",
+   "n_hits": 4824688,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C2",
+   "query": "false alarms per year SCADA normal behaviour model",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "operator tolerable false alarm rate fault detection",
+   "source": "openalex",
+   "n_hits": 752,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "operator tolerable false alarm rate fault detection",
+   "source": "crossref",
+   "n_hits": 2518067,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C2",
+   "query": "operator tolerable false alarm rate fault detection",
+   "source": "arxiv",
+   "n_hits": 1,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "nuisance alarms district heating fault detection",
+   "source": "openalex",
+   "n_hits": 93,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "nuisance alarms district heating fault detection",
+   "source": "crossref",
+   "n_hits": 2165619,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C2",
+   "query": "nuisance alarms district heating fault detection",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "threshold selection normal behaviour model wind turbine false alarm",
+   "source": "openalex",
+   "n_hits": 909,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "threshold selection normal behaviour model wind turbine false alarm",
+   "source": "crossref",
+   "n_hits": 5000172,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C2",
+   "query": "threshold selection normal behaviour model wind turbine false alarm",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "false alarm rate per asset per year predictive maintenance",
+   "source": "openalex",
+   "n_hits": 8020,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "false alarm rate per asset per year predictive maintenance",
+   "source": "crossref",
+   "n_hits": 1892325,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C2",
+   "query": "false alarm rate per asset per year predictive maintenance",
+   "source": "arxiv",
+   "n_hits": 2,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "evaluation of anomaly detection SCADA continuous monitoring",
+   "source": "openalex",
+   "n_hits": 10726,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "evaluation of anomaly detection SCADA continuous monitoring",
+   "source": "crossref",
+   "n_hits": 4739960,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C2",
+   "query": "evaluation of anomaly detection SCADA continuous monitoring",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C3",
+   "query": "ranking of anomaly detectors changes with evaluation metric",
+   "source": "openalex",
+   "n_hits": 10567,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C3",
+   "query": "ranking of anomaly detectors changes with evaluation metric",
+   "source": "crossref",
+   "n_hits": 3208247,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C3",
+   "query": "ranking of anomaly detectors changes with evaluation metric",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C3",
+   "query": "navigating the metric maze time series anomaly detection",
+   "source": "openalex",
+   "n_hits": 488,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C3",
+   "query": "navigating the metric maze time series anomaly detection",
+   "source": "crossref",
+   "n_hits": 5480913,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C3",
+   "query": "navigating the metric maze time series anomaly detection",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C3",
+   "query": "threshold tuning on test set anomaly detection evaluation bias",
+   "source": "openalex",
+   "n_hits": 50120,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C3",
+   "query": "threshold tuning on test set anomaly detection evaluation bias",
+   "source": "crossref",
+   "n_hits": 4943455,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C3",
+   "query": "threshold tuning on test set anomaly detection evaluation bias",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C3",
+   "query": "simple baselines outperform deep anomaly detection time series",
+   "source": "openalex",
+   "n_hits": 29410,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C3",
+   "query": "simple baselines outperform deep anomaly detection time series",
+   "source": "crossref",
+   "n_hits": 6328133,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C3",
+   "query": "simple baselines outperform deep anomaly detection time series",
+   "source": "arxiv",
+   "n_hits": 9,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C3",
+   "query": "three sigma baseline anomaly detection benchmark",
+   "source": "openalex",
+   "n_hits": 3503,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C3",
+   "query": "three sigma baseline anomaly detection benchmark",
+   "source": "crossref",
+   "n_hits": 2704109,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C3",
+   "query": "three sigma baseline anomaly detection benchmark",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C3",
+   "query": "evaluation metric choice changes ranking time series anomaly detection",
+   "source": "openalex",
+   "n_hits": 17422,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C3",
+   "query": "evaluation metric choice changes ranking time series anomaly detection",
+   "source": "crossref",
+   "n_hits": 8618337,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C3",
+   "query": "evaluation metric choice changes ranking time series anomaly detection",
+   "source": "arxiv",
+   "n_hits": 5,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C3",
+   "query": "rigorous evaluation time series anomaly detection point adjust",
+   "source": "openalex",
+   "n_hits": 32041,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C3",
+   "query": "rigorous evaluation time series anomaly detection point adjust",
+   "source": "crossref",
+   "n_hits": 7713050,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C3",
+   "query": "rigorous evaluation time series anomaly detection point adjust",
+   "source": "arxiv",
+   "n_hits": 21,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C3",
+   "query": "local evaluation time series anomaly detection affiliation",
+   "source": "openalex",
+   "n_hits": 14395,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C3",
+   "query": "local evaluation time series anomaly detection affiliation",
+   "source": "crossref",
+   "n_hits": 8012322,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C3",
+   "query": "local evaluation time series anomaly detection affiliation",
+   "source": "arxiv",
+   "n_hits": 67,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C4",
+   "query": "statistical power evaluation false alarm rate small sample",
+   "source": "openalex",
+   "n_hits": 78494,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C4",
+   "query": "statistical power evaluation false alarm rate small sample",
+   "source": "crossref",
+   "n_hits": 6175336,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C4",
+   "query": "statistical power evaluation false alarm rate small sample",
+   "source": "arxiv",
+   "n_hits": 5,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C4",
+   "query": "confidence interval false alarm rate few normal events",
+   "source": "openalex",
+   "n_hits": 22356,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C4",
+   "query": "confidence interval false alarm rate few normal events",
+   "source": "crossref",
+   "n_hits": 1643100,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C4",
+   "query": "confidence interval false alarm rate few normal events",
+   "source": "arxiv",
+   "n_hits": 2,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C4",
+   "query": "sample size required to estimate false positive rate anomaly detection benchmark",
+   "source": "openalex",
+   "n_hits": 31376,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C4",
+   "query": "sample size required to estimate false positive rate anomaly detection benchmark",
+   "source": "crossref",
+   "n_hits": 106016,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C4",
+   "query": "sample size required to estimate false positive rate anomaly detection benchmark",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C4",
+   "query": "statistical significance anomaly detection benchmark small test set",
+   "source": "openalex",
+   "n_hits": 36183,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C4",
+   "query": "statistical significance anomaly detection benchmark small test set",
+   "source": "crossref",
+   "n_hits": 4235205,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C4",
+   "query": "statistical significance anomaly detection benchmark small test set",
+   "source": "arxiv",
+   "n_hits": 1,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C4",
+   "query": "uncertainty of performance estimates fault detection benchmark",
+   "source": "openalex",
+   "n_hits": 35507,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C4",
+   "query": "uncertainty of performance estimates fault detection benchmark",
+   "source": "crossref",
+   "n_hits": 4495775,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C4",
+   "query": "uncertainty of performance estimates fault detection benchmark",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C4",
+   "query": "binomial confidence interval false alarm rate estimate",
+   "source": "openalex",
+   "n_hits": 3865,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C4",
+   "query": "binomial confidence interval false alarm rate estimate",
+   "source": "crossref",
+   "n_hits": 896339,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C4",
+   "query": "binomial confidence interval false alarm rate estimate",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C4",
+   "query": "how many test samples needed classifier evaluation",
+   "source": "openalex",
+   "n_hits": 1107015,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C4",
+   "query": "how many test samples needed classifier evaluation",
+   "source": "crossref",
+   "n_hits": 4266444,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C4",
+   "query": "how many test samples needed classifier evaluation",
+   "source": "arxiv",
+   "n_hits": 6,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C4",
+   "query": "benchmark too small to distinguish detectors statistical",
+   "source": "openalex",
+   "n_hits": 29471,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C4",
+   "query": "benchmark too small to distinguish detectors statistical",
+   "source": "crossref",
+   "n_hits": 1666397,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C4",
+   "query": "benchmark too small to distinguish detectors statistical",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C5",
+   "query": "transferability fault detection wind turbine different manufacturer",
+   "source": "openalex",
+   "n_hits": 5261,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C5",
+   "query": "transferability fault detection wind turbine different manufacturer",
+   "source": "crossref",
+   "n_hits": 3172027,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C5",
+   "query": "transferability fault detection wind turbine different manufacturer",
+   "source": "arxiv",
+   "n_hits": 1,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C5",
+   "query": "transfer learning wind turbine SCADA anomaly detection across farms",
+   "source": "openalex",
+   "n_hits": 931,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C5",
+   "query": "transfer learning wind turbine SCADA anomaly detection across farms",
+   "source": "crossref",
+   "n_hits": 5828034,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C5",
+   "query": "transfer learning wind turbine SCADA anomaly detection across farms",
+   "source": "arxiv",
+   "n_hits": 3,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C5",
+   "query": "transferability fault detection district heating substations",
+   "source": "openalex",
+   "n_hits": 1018,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C5",
+   "query": "transferability fault detection district heating substations",
+   "source": "crossref",
+   "n_hits": 2168525,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C5",
+   "query": "transferability fault detection district heating substations",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C5",
+   "query": "domain shift wind turbine normal behaviour model fleet",
+   "source": "openalex",
+   "n_hits": 1075,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C5",
+   "query": "domain shift wind turbine normal behaviour model fleet",
+   "source": "crossref",
+   "n_hits": 4906195,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C5",
+   "query": "domain shift wind turbine normal behaviour model fleet",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C5",
+   "query": "cross-farm generalization wind turbine fault detection",
+   "source": "openalex",
+   "n_hits": 1285,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C5",
+   "query": "cross-farm generalization wind turbine fault detection",
+   "source": "crossref",
+   "n_hits": 3200840,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C5",
+   "query": "cross-farm generalization wind turbine fault detection",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C5",
+   "query": "autoencoder wind turbine fault detection generalization other wind farm",
+   "source": "openalex",
+   "n_hits": 563,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C5",
+   "query": "autoencoder wind turbine fault detection generalization other wind farm",
+   "source": "crossref",
+   "n_hits": 2866998,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C5",
+   "query": "autoencoder wind turbine fault detection generalization other wind farm",
+   "source": "arxiv",
+   "n_hits": 3,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C5",
+   "query": "district heating substation fault detection fleet-wide",
+   "source": "openalex",
+   "n_hits": 213,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C5",
+   "query": "district heating substation fault detection fleet-wide",
+   "source": "crossref",
+   "n_hits": 2416248,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C5",
+   "query": "district heating substation fault detection fleet-wide",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C5",
+   "query": "CARE to Compare wind turbine early fault detection benchmark",
+   "source": "openalex",
+   "n_hits": 1240,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C5",
+   "query": "CARE to Compare wind turbine early fault detection benchmark",
+   "source": "crossref",
+   "n_hits": 5527673,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C5",
+   "query": "CARE to Compare wind turbine early fault detection benchmark",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "Tatbul precision recall range-based anomaly NeurIPS",
+   "source": "openalex",
+   "n_hits": 60,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "Tatbul precision recall range-based anomaly NeurIPS",
+   "source": "crossref",
+   "n_hits": 7353837,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C1",
+   "query": "enhanced time-series aware precision recall eTaPR",
+   "source": "openalex",
+   "n_hits": 7,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "enhanced time-series aware precision recall eTaPR",
+   "source": "crossref",
+   "n_hits": 4906668,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C1",
+   "query": "Lever classification evaluation points of significance",
+   "source": "openalex",
+   "n_hits": 35418,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "Lever classification evaluation points of significance",
+   "source": "crossref",
+   "n_hits": 3011881,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C1",
+   "query": "precision recall plot more informative than ROC imbalanced datasets",
+   "source": "openalex",
+   "n_hits": 14937,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "precision recall plot more informative than ROC imbalanced datasets",
+   "source": "crossref",
+   "n_hits": 1470410,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C1",
+   "query": "alarm fatigue anomaly detection deployment",
+   "source": "openalex",
+   "n_hits": 6792,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "alarm fatigue anomaly detection deployment",
+   "source": "crossref",
+   "n_hits": 1904235,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C1",
+   "query": "realistic evaluation predictive maintenance deployment",
+   "source": "openalex",
+   "n_hits": 110171,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "realistic evaluation predictive maintenance deployment",
+   "source": "crossref",
+   "n_hits": 2601109,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C1",
+   "query": "PreDist district heating substations early fault detection dataset",
+   "source": "openalex",
+   "n_hits": 10,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "PreDist district heating substations early fault detection dataset",
+   "source": "crossref",
+   "n_hits": 4050787,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C1",
+   "query": "CARE score coverage accuracy reliability earliness",
+   "source": "openalex",
+   "n_hits": 86901,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "CARE score coverage accuracy reliability earliness",
+   "source": "crossref",
+   "n_hits": 2849537,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C2",
+   "query": "false alarms per turbine per year normal behaviour model",
+   "source": "openalex",
+   "n_hits": 936,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "false alarms per turbine per year normal behaviour model",
+   "source": "crossref",
+   "n_hits": 4932975,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C2",
+   "query": "acceptable number of false alarms wind farm operator",
+   "source": "openalex",
+   "n_hits": 1666,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "acceptable number of false alarms wind farm operator",
+   "source": "crossref",
+   "n_hits": 922883,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C2",
+   "query": "district heating fault detection false alarm rate evaluation",
+   "source": "openalex",
+   "n_hits": 588,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "district heating fault detection false alarm rate evaluation",
+   "source": "crossref",
+   "n_hits": 4835643,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C2",
+   "query": "alarm rate anomaly detection operational cost wind",
+   "source": "openalex",
+   "n_hits": 7147,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "alarm rate anomaly detection operational cost wind",
+   "source": "crossref",
+   "n_hits": 3102987,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C3",
+   "query": "Calikus no free lunch but a cheaper supper district heating",
+   "source": "openalex",
+   "n_hits": 3,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C3",
+   "query": "Calikus no free lunch but a cheaper supper district heating",
+   "source": "crossref",
+   "n_hits": 1237632,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C3",
+   "query": "detector ranking instability evaluation protocol",
+   "source": "openalex",
+   "n_hits": 4967,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C3",
+   "query": "detector ranking instability evaluation protocol",
+   "source": "crossref",
+   "n_hits": 2636964,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C3",
+   "query": "threshold selection test set leakage anomaly detection",
+   "source": "openalex",
+   "n_hits": 22405,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C3",
+   "query": "threshold selection test set leakage anomaly detection",
+   "source": "crossref",
+   "n_hits": 3195065,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C3",
+   "query": "evaluation protocol changes ranking fault detection wind turbine",
+   "source": "openalex",
+   "n_hits": 1265,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C3",
+   "query": "evaluation protocol changes ranking fault detection wind turbine",
+   "source": "crossref",
+   "n_hits": 5328239,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C4",
+   "query": "statistical power benchmark comparison anomaly detection",
+   "source": "openalex",
+   "n_hits": 66416,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C4",
+   "query": "statistical power benchmark comparison anomaly detection",
+   "source": "crossref",
+   "n_hits": 5038180,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C4",
+   "query": "confidence intervals evaluation metrics small test sets",
+   "source": "openalex",
+   "n_hits": 438466,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C4",
+   "query": "confidence intervals evaluation metrics small test sets",
+   "source": "crossref",
+   "n_hits": 4049898,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C5",
+   "query": "transfer across wind turbine manufacturers anomaly detection",
+   "source": "openalex",
+   "n_hits": 2088,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C5",
+   "query": "transfer across wind turbine manufacturers anomaly detection",
+   "source": "crossref",
+   "n_hits": 3232146,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C5",
+   "query": "generalization normal behaviour model unseen wind farm",
+   "source": "openalex",
+   "n_hits": 351,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C5",
+   "query": "generalization normal behaviour model unseen wind farm",
+   "source": "crossref",
+   "n_hits": 4450273,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C5",
+   "query": "Mansson machine learning fault detection district heating substations",
+   "source": "openalex",
+   "n_hits": 72,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C5",
+   "query": "Mansson machine learning fault detection district heating substations",
+   "source": "crossref",
+   "n_hits": 5082711,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C5",
+   "query": "random baseline alarms comparison anomaly detection",
+   "source": "openalex",
+   "n_hits": 23361,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C5",
+   "query": "random baseline alarms comparison anomaly detection",
+   "source": "crossref",
+   "n_hits": 3013479,
+   "date": "2026-11-24",
+   "note": "n_hits = total-results reported by the API (Crossref relevance search counts are inflated: any-term matches); -1 = request failed"
+  },
+  {
+   "claim": "C5",
+   "query": "Detection without discrimination pre-fault signals wind turbine SCADA",
+   "source": "openalex",
+   "n_hits": 322,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "scada-fault-bench",
+   "source": "openalex",
+   "n_hits": 1086,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "false alarm hours per year wind SCADA benchmark",
+   "source": "openalex",
+   "n_hits": 274,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "deployment false alarm rate early fault detection benchmark balanced normal events",
+   "source": "openalex",
+   "n_hits": 2228,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "event-wise precision base rate continuous monitoring wind turbine",
+   "source": "openalex",
+   "n_hits": 2500,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C3",
+   "query": "No free lunch but a cheaper supper streaming anomaly detection",
+   "source": "openalex",
+   "n_hits": 33,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "Analysis of SCADA data for early fault detection maintenance management wind turbines Bangalore",
+   "source": "openalex",
+   "n_hits": 214,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "Using SCADA data for wind turbine condition monitoring a review Tautz-Weinert",
+   "source": "openalex",
+   "n_hits": 316,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "\"false alarms per turbine\" (phrase, default.search filter)",
+   "source": "openalex",
+   "n_hits": 1,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "\"false alarms per year\" wind turbine (phrase filter)",
+   "source": "openalex",
+   "n_hits": 4,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "\"false alarm rate\" \"per year\" condition monitoring wind (phrase filter)",
+   "source": "openalex",
+   "n_hits": 350,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "\"alarms per turbine\" (phrase filter)",
+   "source": "openalex",
+   "n_hits": 6,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C5",
+   "query": "deep learning automated drivetrain fault detection wind fleet",
+   "source": "openalex",
+   "n_hits": 246,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "\"false positives per year\" anomaly detection (phrase filter)",
+   "source": "openalex",
+   "n_hits": 11,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "prevalence precision anomaly detection deployment overestimate balanced evaluation",
+   "source": "openalex",
+   "n_hits": 613,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C2",
+   "query": "\"normal behaviour model\" evaluation \"false alarm\" fleet years (phrase filter)",
+   "source": "openalex",
+   "n_hits": 20,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1-C5",
+   "query": "citing works of CARE to Compare (filter=cites:W4404700659)",
+   "source": "openalex",
+   "n_hits": 64,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1-C5",
+   "query": "citing works of PreDist paper (filter=cites:W7159838334)",
+   "source": "openalex",
+   "n_hits": 6,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C5",
+   "query": "all:\"pre-fault\" AND all:wind AND all:blinded",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  },
+  {
+   "claim": "C1",
+   "query": "CARE to Compare title search (ti:\"CARE to Compare\")",
+   "source": "arxiv",
+   "n_hits": 0,
+   "date": "2026-11-24",
+   "note": ""
+  }
+ ],
+ "papers": [
+  {
+   "doi_or_url": "10.1016/j.energy.2026.141178 (arXiv 2511.14791)",
+   "title": "Enabling predictive maintenance in district heating substations: A labelled dataset and fault detection evaluation framework based on service data",
+   "year": 2026,
+   "venue": "Energy",
+   "opened": true,
+   "what_it_does": "PreDist dataset paper (Roelofs, Guevara Bastidas, Hugo, Faulstich, Cadenbach). 93 substations, 2 control-unit manufacturers (M1/M2), 73 faults, 65 pre-defined normal events (30/35). Evaluates EnergyFaultDetector AEs with accuracy on normal events, eventwise F0.5 'reliability' and earliness; criticality threshold chosen by 5-fold stratified CV over the evaluated events (grid 1-100). Full text read (arXiv HTML). Explicitly states: 'the reliability score is overestimated, since we use a balanced dataset ... In reality, the fraction of faults is much lower ... precision is likely lower under realistic class imbalance. Because there is no canonical normal-to-fault ratio, we retain a 50/50 split.'",
+   "what_it_does_not_do": "Does not quantify the overestimation, does not replay detectors over continuous fleet operation, reports no false alarms per substation-year, no FA-budgeted protocol, no ranking comparison, no cross-manufacturer transfer test (one generic model configuration per manufacturer, trained per event).",
+   "threatens": [
+    "C1",
+    "C3",
+    "C5"
+   ],
+   "severity": "kills"
+  },
+  {
+   "doi_or_url": "10.3390/data9120138 (preprint arXiv 2404.10320)",
+   "title": "CARE to Compare: A Real-World Benchmark Dataset for Early Fault Detection in Wind Turbine Data",
+   "year": 2024,
+   "venue": "Data (MDPI) 9(12):138",
+   "opened": true,
+   "what_it_does": "Gück, Roelofs, Faulstich. 36 turbines, 3 farms, 44 anomaly + 51 normal datasets in the published paper (Zenodo v6 description says 45/50). CARE = weighted average of Coverage (pointwise F_beta, beta=1/2, on anomaly datasets), Accuracy (tn/(fp+tn) on normal datasets, weight 2), Reliability (EVENT-based F_beta, beta=1/2: each dataset is 'alarm' if max criticality >= 72, i.e. ~12 h of consecutive anomalies, compared against dataset labels) and Earliness (weighted score). Full text read (PDF). Paper presents the balanced design as a virtue ('allows for more detailed and meaningful comparison').",
+   "what_it_does_not_do": "Reliability is NOT a per-year or per-asset false-alarm rate: it is an event-wise F0.5 on a ~50/50 set of hand-selected windows, so it inherits the base-rate inflation. No continuous-deployment replay, no prevalence correction, no statistical power analysis, no cross-farm transfer evaluation (thresholds calibrated per farm). Exact citation: Gück C., Roelofs C.M.A., Faulstich S. Data 2024, 9, 138. Note Zenodo record text cites a different working title ('...A real-world dataset for anomaly detection in wind turbine data').",
+   "threatens": [
+    "C1",
+    "C2"
+   ],
+   "severity": "narrows"
+  },
+  {
+   "doi_or_url": "10.5281/zenodo.23902231",
+   "title": "Reproducibility package for 'Detection without discrimination: a blinded, pre-registered test of pre-fault signals in public wind-turbine SCADA data' (Song, manuscript submitted to RESS)",
+   "year": 2026,
+   "venue": "Zenodo (unreviewed; manuscript not public)",
+   "opened": true,
+   "what_it_does": "Package opened (README, result JSON, code, manuscript build text). Four-stage pre-registered study on CARE v6, Kelmarsh/Penmanshiel, Fuhrlander: five detectors incl. Fraunhofer energy-fault-detector AE with the official CARE scoring code, random/all-normal/all-anomaly baselines; out-of-sample alarm-budget analysis (threshold fitted on half of normal windows, evaluated on the other half, 10% normal-window alarm budget): 'no alarm raised the odds of a fault by more than about 2'; cross-farm Kelmarsh<->Penmanshiel threshold transfer; random alarm strategy as reference.",
+   "what_it_does_not_do": "Budget is a fraction of normal windows, not false alarms per asset-year; no continuous replay of full operating history; no precision-inflation factor vs balanced benchmark; no district heating/PreDist; no Kendall-tau ranking comparison; no binomial power analysis. Not peer reviewed.",
+   "threatens": [
+    "C2",
+    "C3",
+    "C5"
+   ],
+   "severity": "narrows"
+  },
+  {
+   "doi_or_url": "10.3390/info17090930",
+   "title": "Uncertainty-Calibrated Residual Conformal Monitoring of Wind Turbine SCADA Data for Cross-Asset Anomaly Detection Under Distribution Shift",
+   "year": 2026,
+   "venue": "Information (MDPI)",
+   "opened": true,
+   "what_it_does": "States that calibrating on the same asset/period 'can produce optimistic thresholds, excessive false alarms, and misleading generalization estimates'; nested leave-one-turbine-out asset-disjoint protocol on CARE v6; reports CARE 0.59, alarms in 18/50 normal cases; flags that 36 turbines make estimates exploratory.",
+   "what_it_does_not_do": "Still evaluates on CARE's balanced event windows with CARE score; no per-year FA, no base-rate quantification, no event-vs-continuous ranking comparison, no PreDist, held-out unit is turbine not manufacturer.",
+   "threatens": [
+    "C3",
+    "C5",
+    "C4"
+   ],
+   "severity": "narrows"
+  },
+  {
+   "doi_or_url": "10.5194/wes-2026-145",
+   "title": "Chronologically calibrated PCA for wind-turbine SCADA health monitoring: a leakage-controlled CARE v6 benchmark",
+   "year": 2026,
+   "venue": "Wind Energy Science Discussions (preprint under review)",
+   "opened": true,
+   "what_it_does": "Turbine-disjoint development/locked-test split on CARE v6, chronological threshold calibration on disjoint normal block, cluster-bootstrap CIs; shows paired comparisons between several detectors are not distinguishable; only 5/18 locked-test anomalies detected; false-positive events 17 -> 4.",
+   "what_it_does_not_do": "No continuous deployment replay or per-year FA; no precision-inflation factor; no analytic power for FA rates; no district heating.",
+   "threatens": [
+    "C3",
+    "C4",
+    "C5"
+   ],
+   "severity": "narrows"
+  },
+  {
+   "doi_or_url": "10.55972/spectrum.v27i1.439",
+   "title": "Low-False-Alarm Evaluation Changes the Ranking of Multisensor Anomaly Detectors",
+   "year": 2026,
+   "venue": "Spectrum - Aplicacoes Operacionais em Areas de Defesa",
+   "opened": true,
+   "what_it_does": "Shows that evaluating at recall@FAR<=0.05 changes detector rankings vs aggregate metrics in seven model-dataset pairs (MSL, SWaT, water distribution).",
+   "what_it_does_not_do": "Not energy, FAR is pointwise not per asset-year, no event-window vs continuous protocol, no attribution of the inversion to threshold tuning on evaluated events, no Kendall tau.",
+   "threatens": [
+    "C3"
+   ],
+   "severity": "narrows"
+  },
+  {
+   "doi_or_url": "10.5220/0014392600004084",
+   "title": "The Threshold Paradox: Why Calibrating on the Test Set Introduces Bias in Anomaly Detection",
+   "year": 2026,
+   "venue": "VISAPP/VISIGRAPP 2026",
+   "opened": true,
+   "what_it_does": "Argues that calibrating thresholds on test annotations overestimates performance vs deployment (industrial image AD, MVTec).",
+   "what_it_does_not_do": "Image AD, not time series/energy; no ranking-inversion measurement; no false alarms per year.",
+   "threatens": [
+    "C3"
+   ],
+   "severity": "narrows"
+  },
+  {
+   "doi_or_url": "10.1609/aaai.v36i7.20680",
+   "title": "Towards a Rigorous Evaluation of Time-Series Anomaly Detection",
+   "year": 2022,
+   "venue": "AAAI",
+   "opened": true,
+   "what_it_does": "Point-adjust protocol overestimates performance; random scores become SOTA; comparisons after PA 'can lead to misguided rankings'; untrained model comparable.",
+   "what_it_does_not_do": "About point adjustment within labelled test series, not about class prior/base rate of balanced event sets or per-year FA; not energy.",
+   "threatens": [
+    "C1",
+    "C3"
+   ],
+   "severity": "narrows"
+  },
+  {
+   "doi_or_url": "10.1109/tkde.2021.3112126",
+   "title": "Current Time Series Anomaly Detection Benchmarks are Flawed and are Creating the Illusion of Progress",
+   "year": 2021,
+   "venue": "IEEE TKDE",
+   "opened": true,
+   "what_it_does": "Four benchmark flaws incl. 'unrealistic anomaly density'; argues published comparisons unreliable; introduces UCR archive.",
+   "what_it_does_not_do": "Does not quantify deployment precision vs benchmark precision, no FA-per-year, no energy event-window benchmarks.",
+   "threatens": [
+    "C1",
+    "C3"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.48550/arxiv.1803.03639",
+   "title": "Precision and Recall for Time Series",
+   "year": 2018,
+   "venue": "NeurIPS",
+   "opened": true,
+   "what_it_does": "Range-based precision/recall with tunable existence/overlap/positional bias.",
+   "what_it_does_not_do": "Metric definition only; no base-rate or deployment-rate analysis.",
+   "threatens": [
+    "C1"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1145/3357384.3358118",
+   "title": "Time-Series Aware Precision and Recall for Anomaly Detection (TaPR)",
+   "year": 2019,
+   "venue": "CIKM",
+   "opened": true,
+   "what_it_does": "Time-series aware P/R with detection and portion scoring, ambiguous labels.",
+   "what_it_does_not_do": "Metric only; no prevalence/deployment analysis.",
+   "threatens": [
+    "C1"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1145/3477314.3507024",
+   "title": "'Do you know existing accuracy metrics overrate time-series anomaly detections?' (eTaPR)",
+   "year": 2022,
+   "venue": "ACM SAC",
+   "opened": true,
+   "what_it_does": "Shows existing range metrics overrate imprecise/insufficient detections; proposes eTaPR with cross-referencing and length weighting.",
+   "what_it_does_not_do": "Overrating via metric design, not via class prior of balanced event sets; not energy.",
+   "threatens": [
+    "C1"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1145/3534678.3539339",
+   "title": "Local Evaluation of Time Series Anomaly Detection Algorithms (affiliation metrics)",
+   "year": 2022,
+   "venue": "KDD",
+   "opened": true,
+   "what_it_does": "Adversary can reach high P/R under event metrics; affiliation P/R normalized against a random-sampling baseline.",
+   "what_it_does_not_do": "No per-year FA or base-rate inflation; random baseline is per-event-local, not matched-FA-rate alarms across manufacturers.",
+   "threatens": [
+    "C1",
+    "C5"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1007/s10618-023-00988-8",
+   "title": "Navigating the metric maze: a taxonomy of evaluation metrics for anomaly detection in time series",
+   "year": 2023,
+   "venue": "Data Mining and Knowledge Discovery",
+   "opened": true,
+   "what_it_does": "Taxonomy and analysis of 20 TSAD metrics; shows metric choice matters for conclusions.",
+   "what_it_does_not_do": "No deployment base rate, no FA per asset-year, no energy benchmarks.",
+   "threatens": [
+    "C1",
+    "C3"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1145/319709.319710",
+   "title": "The base-rate fallacy and its implications for the difficulty of intrusion detection",
+   "year": 1999,
+   "venue": "ACM CCS",
+   "opened": true,
+   "what_it_does": "Classic: with low base rate, P(intrusion|alarm) requires unattainably low false-alarm rates; false alarm rate is the limiting factor.",
+   "what_it_does_not_do": "Intrusion detection, analytic; no time-series event-window benchmarks or energy data.",
+   "threatens": [
+    "C1",
+    "C2"
+   ],
+   "severity": "kills"
+  },
+  {
+   "doi_or_url": "10.1145/357830.357849",
+   "title": "The base-rate fallacy and the difficulty of intrusion detection",
+   "year": 2000,
+   "venue": "ACM TISSEC",
+   "opened": true,
+   "what_it_does": "Journal version of the above.",
+   "what_it_does_not_do": "As above.",
+   "threatens": [
+    "C1",
+    "C2"
+   ],
+   "severity": "kills"
+  },
+  {
+   "doi_or_url": "10.48550/arxiv.2203.08801",
+   "title": "Base-Rate Fallacy Redux and a Deep Dive Review in Cybersecurity",
+   "year": 2022,
+   "venue": "arXiv",
+   "opened": true,
+   "what_it_does": "Revisits Axelsson; argues false positives dominate; critiques metrics in non-signature IDS.",
+   "what_it_does_not_do": "Cybersecurity only.",
+   "threatens": [
+    "C1"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1371/journal.pone.0118432",
+   "title": "The Precision-Recall Plot Is More Informative than the ROC Plot When Evaluating Binary Classifiers on Imbalanced Datasets",
+   "year": 2015,
+   "venue": "PLoS ONE",
+   "opened": true,
+   "what_it_does": "Precision depends on class ratio; ROC misleading on imbalanced data.",
+   "what_it_does_not_do": "Generic classification; no time series/energy, no event-window design.",
+   "threatens": [
+    "C1"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1038/nmeth.3945",
+   "title": "Classification evaluation (Points of Significance)",
+   "year": 2016,
+   "venue": "Nature Methods",
+   "opened": false,
+   "what_it_does": "Not opened (no abstract available via APIs). Known only by title/venue as a tutorial column on classification metrics.",
+   "what_it_does_not_do": "UNVERIFIED content.",
+   "threatens": [
+    "C1"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.48550/arxiv.2604.11171",
+   "title": "Development and evaluation of CADe systems in low-prevalence setting: The RARE25 challenge",
+   "year": 2026,
+   "venue": "arXiv",
+   "opened": true,
+   "what_it_does": "Prevalence-aware hidden test set; notes strong performance on balanced/enriched sets overestimates clinical utility; PPV low under real prevalence.",
+   "what_it_does_not_do": "Medical imaging; same principle as C1 in a different domain (shows C1 principle is recognised).",
+   "threatens": [
+    "C1"
+   ],
+   "severity": "narrows"
+  },
+  {
+   "doi_or_url": "10.1016/j.ifacol.2024.07.216",
+   "title": "Anticipation, earliness, alarm cardinality: A new metric for industrial time-series anomaly detection",
+   "year": 2024,
+   "venue": "IFAC-PapersOnLine",
+   "opened": true,
+   "what_it_does": "Industrial TSAD metric (ALARM); shows common metrics give rankings contradicting operator-obvious rankings.",
+   "what_it_does_not_do": "No per-year FA, no base rate, no energy benchmarks.",
+   "threatens": [
+    "C3"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.48550/arxiv.2607.11969",
+   "title": "Did We Actually Fix It? An Independent Adversarial Stress-Test of Post-Point-Adjustment Evaluation Metrics",
+   "year": 2026,
+   "venue": "arXiv",
+   "opened": true,
+   "what_it_does": "Random detectors vs replacement metrics; best-of-N selection inflates affiliation and ROC metrics; PR metrics floored near prevalence.",
+   "what_it_does_not_do": "Not energy, not event-window balanced sets, not per-year FA.",
+   "threatens": [
+    "C1",
+    "C3"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.48550/arxiv.2405.02678",
+   "title": "Position: Quo Vadis, Unsupervised Time Series Anomaly Detection?",
+   "year": 2024,
+   "venue": "ICML",
+   "opened": true,
+   "what_it_does": "Flawed metrics/benchmarking; simple baselines competitive with deep SOTA.",
+   "what_it_does_not_do": "No deployment protocol / FA budget; not energy.",
+   "threatens": [
+    "C3"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.48550/arxiv.2409.13053",
+   "title": "Towards Unbiased Evaluation of Time-series Anomaly Detector",
+   "year": 2025,
+   "venue": "ICASSP",
+   "opened": true,
+   "what_it_does": "Balanced point adjustment to counter PA bias.",
+   "what_it_does_not_do": "No base-rate/deployment analysis.",
+   "threatens": [
+    "C1"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.48550/arxiv.2008.05788",
+   "title": "Statistical Evaluation of Anomaly Detectors for Sequences",
+   "year": 2020,
+   "venue": "arXiv",
+   "opened": true,
+   "what_it_does": "Time-tolerant P/R can overestimate performance; null distributions for significance.",
+   "what_it_does_not_do": "No FA-per-year power analysis; not energy.",
+   "threatens": [
+    "C1",
+    "C4"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1016/j.neucom.2021.07.095",
+   "title": "Anomaly detection in predictive maintenance: A new evaluation framework for temporal unsupervised anomaly detection algorithms",
+   "year": 2021,
+   "venue": "Neurocomputing",
+   "opened": true,
+   "what_it_does": "Interval-based positives/negatives; Preceding Window ROC 'preserves the imbalance scheme for evaluation' in PdM.",
+   "what_it_does_not_do": "Does not quantify balanced-vs-continuous precision inflation, no per-year FA, not energy benchmarks.",
+   "threatens": [
+    "C1"
+   ],
+   "severity": "narrows"
+  },
+  {
+   "doi_or_url": "10.48550/arxiv.2506.12183",
+   "title": "Temporal cross-validation impacts multivariate time series subsequence anomaly detection evaluation",
+   "year": 2025,
+   "venue": "arXiv",
+   "opened": true,
+   "what_it_does": "Evaluation design (TSCV) changes AUC-PR and variance.",
+   "what_it_does_not_do": "Not FA-budget/ranking inversion in energy.",
+   "threatens": [
+    "C3"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.6028/nist.tn.2118",
+   "title": "False Alarm Testing for Radiation Detection Systems",
+   "year": 2020,
+   "venue": "NIST Technical Note 2118",
+   "opened": true,
+   "what_it_does": "Binomial/Poisson hypothesis tests and power curves for how long/how many observations are needed to verify a false-alarm-rate requirement; links to alarm fatigue.",
+   "what_it_does_not_do": "Radiation portal monitors, not energy fault detection; does not address event-window benchmarks.",
+   "threatens": [
+    "C4",
+    "C2"
+   ],
+   "severity": "kills"
+  },
+  {
+   "doi_or_url": "10.2172/1032",
+   "title": "Statistical Considerations in Designing Tests of Mine Detection Systems: II - Measures Related to the False Alarm Rate",
+   "year": 1998,
+   "venue": "Sandia report (OSTI)",
+   "opened": true,
+   "what_it_does": "Statistical methods for FAR per unit area/time, sample-size of clutter area, comparing sensors.",
+   "what_it_does_not_do": "Mine detection; same statistics as C4.",
+   "threatens": [
+    "C4"
+   ],
+   "severity": "narrows"
+  },
+  {
+   "doi_or_url": "10.1037/e307182005-026",
+   "title": "Benchmark Data and Power Calculations for Evaluating Disease Outbreak Detection Methods",
+   "year": 2004,
+   "venue": "MMWR suppl. (PsycEXTRA record)",
+   "opened": true,
+   "what_it_does": "Power-based benchmark design for outbreak detectors.",
+   "what_it_does_not_do": "Surveillance domain.",
+   "threatens": [
+    "C4"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1001/jama.1983.03330370053031",
+   "title": "If Nothing Goes Wrong, Is Everything All Right? Interpreting Zero Numerators (rule of three)",
+   "year": 1983,
+   "venue": "JAMA",
+   "opened": false,
+   "what_it_does": "Only a Semantic Scholar TLDR retrieved; not counted as opened.",
+   "what_it_does_not_do": "UNVERIFIED content beyond title.",
+   "threatens": [
+    "C4"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1109/ciss.2017.7926160",
+   "title": "Impact of sample size on false alarm and missed detection rates in PCA-based anomaly detection",
+   "year": 2017,
+   "venue": "CISS",
+   "opened": true,
+   "what_it_does": "FAR dependence on training sample size.",
+   "what_it_does_not_do": "Training-sample effect, not evaluation power.",
+   "threatens": [
+    "C4"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1016/j.egyai.2024.100373",
+   "title": "Transfer learning applications for autoencoder-based anomaly detection in wind turbines",
+   "year": 2024,
+   "venue": "Energy and AI",
+   "opened": true,
+   "what_it_does": "Same group as CARE: cross-turbine transfer of AE NBMs; multi-turbine source no better than single; threshold-only fine-tuning can be comparable.",
+   "what_it_does_not_do": "Within-manufacturer turbine transfer with target fine-tuning; no random-alarm matched-FA comparison; no PreDist.",
+   "threatens": [
+    "C5"
+   ],
+   "severity": "narrows"
+  },
+  {
+   "doi_or_url": "10.1016/j.egyai.2025.100626",
+   "title": "Fault detection in new wind turbines with limited data by generative transfer learning",
+   "year": 2025,
+   "venue": "Energy and AI",
+   "opened": true,
+   "what_it_does": "CycleGAN domain mapping across 7 different WTs for NBMs with scarce data.",
+   "what_it_does_not_do": "Positive transfer method; no zero-shot held-out-manufacturer vs random-alarm test.",
+   "threatens": [
+    "C5"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.36001/phme.2021.v6i1.2835",
+   "title": "Transfer Learning Approaches for Wind Turbine Fault Detection using Deep Learning",
+   "year": 2021,
+   "venue": "PHM Society European Conference",
+   "opened": true,
+   "what_it_does": "Analyses causes of domain shift between turbines for SCADA fault detection.",
+   "what_it_does_not_do": "No FA-budgeted evaluation or manufacturer hold-out vs random.",
+   "threatens": [
+    "C5"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1109/ubmk71847.2026.11745258",
+   "title": "Farm-Specific Anomaly Detection in Wind Turbine SCADA Data",
+   "year": 2026,
+   "venue": "UBMK 2026",
+   "opened": true,
+   "what_it_does": "On CARE farms A/B/C: pooled global model 'cannot hold a stable operating point' (saturates on A, recall 0.19 on C); pointwise all detectors only marginally above trivial all-positive baseline.",
+   "what_it_does_not_do": "No per-year FA, no matched-FA random-alarm baseline, no PreDist, no ranking-inversion analysis.",
+   "threatens": [
+    "C5",
+    "C3"
+   ],
+   "severity": "narrows"
+  },
+  {
+   "doi_or_url": "10.3390/en19133142",
+   "title": "Physics-Informed Validation of an XGBoost Decision Layer for SCADA-Based Wind Turbine Anomaly Detection",
+   "year": 2026,
+   "venue": "Energies",
+   "opened": true,
+   "what_it_does": "Trains on CARE farm A, externally evaluates on unseen farms B and C; 2/3/4-sigma baselines.",
+   "what_it_does_not_do": "Reports positive row-level F1 after transfer; no FA-per-year or random-alarm baseline; supervised.",
+   "threatens": [
+    "C5"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1002/we.70050",
+   "title": "Fleet-Wide Data-Driven Model Generation Process for Residual-Based Fault Detection in Wind Energy",
+   "year": 2025,
+   "venue": "Wind Energy",
+   "opened": true,
+   "what_it_does": "Fleet-wide residual models across farms and manufacturers; notes prior CM limited to a single manufacturer; ROC evaluation.",
+   "what_it_does_not_do": "Positive cross-manufacturer generalization with ROC; no FA per year or base-rate analysis.",
+   "threatens": [
+    "C5"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1016/j.egyai.2026.100824",
+   "title": "From lab to practice: Towards a substation-invariant self-supervised transformer for low-label fault detection in district heating",
+   "year": 2026,
+   "venue": "Energy and AI",
+   "opened": true,
+   "what_it_does": "Cross-domain DH experiments: transfer within a network works, asymmetric across networks.",
+   "what_it_does_not_do": "No PreDist cross-manufacturer, no FA budget/random baseline.",
+   "threatens": [
+    "C5"
+   ],
+   "severity": "narrows"
+  },
+  {
+   "doi_or_url": "10.1016/j.energy.2025.138016",
+   "title": "From bearings to substations: Transfer Learning for fault detection in district heating",
+   "year": 2025,
+   "venue": "Energy",
+   "opened": true,
+   "what_it_does": "Transfer learning from bearing vibration to DH substation dT data; F1 up to 0.91 on operational data.",
+   "what_it_does_not_do": "No continuous-deployment FA evaluation; positive transfer claim.",
+   "threatens": [
+    "C5"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1016/j.segy.2024.100159",
+   "title": "Fault detection for district heating substations: Beyond three-sigma approaches",
+   "year": 2024,
+   "venue": "Smart Energy",
+   "opened": true,
+   "what_it_does": "Shows Gaussian/three-sigma residual assumption fails (seasonality); quantile regression thresholds.",
+   "what_it_does_not_do": "Not about benchmark protocol or ranking; supports that three-sigma is a common DH baseline.",
+   "threatens": [
+    "C3"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1016/j.eswa.2020.113453",
+   "title": "No free lunch but a cheaper supper: A general framework for streaming anomaly detection",
+   "year": 2020,
+   "venue": "Expert Systems with Applications",
+   "opened": true,
+   "what_it_does": "SAFARI framework; 20 streaming detectors compared; no single best method.",
+   "what_it_does_not_do": "Not fleet-wide DH in abstract (user's description 'fleet-wide' not confirmed by abstract); no FA-per-year.",
+   "threatens": [
+    "C3"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1016/j.egypro.2018.08.187",
+   "title": "A machine learning approach to fault detection in district heating substations",
+   "year": 2018,
+   "venue": "Energy Procedia",
+   "opened": true,
+   "what_it_does": "ML model of one Swedish substation; distinguishes faulty vs well-performing datasets.",
+   "what_it_does_not_do": "Single substation; no FA rate or deployment evaluation.",
+   "threatens": [
+    "C2"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.3390/en12010113",
+   "title": "Automated Statistical Methods for Fault Detection in District Heating Customer Installations",
+   "year": 2018,
+   "venue": "Energies",
+   "opened": true,
+   "what_it_does": "Statistical detection of poorly cooling installations among 3000.",
+   "what_it_does_not_do": "No evaluation of FA rates against ground truth.",
+   "threatens": [
+    "C2"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1016/j.energy.2023.127569",
+   "title": "Fault and anomaly detection in district heating substations: A survey on methodology and data sets",
+   "year": 2023,
+   "venue": "Energy",
+   "opened": true,
+   "what_it_does": "Survey; calls for public datasets and industry-relevant metrics as benchmarks.",
+   "what_it_does_not_do": "No metric analysis.",
+   "threatens": [
+    "C1",
+    "C2"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1016/j.energy.2024.134016",
+   "title": "Creating a labeled district heating data set: From anomaly detection towards fault detection",
+   "year": 2024,
+   "venue": "Energy",
+   "opened": true,
+   "what_it_does": "Guidelines for DH fault dataset creation.",
+   "what_it_does_not_do": "No evaluation-protocol critique.",
+   "threatens": [
+    "C1"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.48550/arxiv.2611.04682",
+   "title": "A Physically Informed Changepoint Score for Fault Prioritisation in District Heating",
+   "year": 2026,
+   "venue": "arXiv",
+   "opened": true,
+   "what_it_does": "Reports Average Precision against stated prevalence (0.426) for DH fault ranking.",
+   "what_it_does_not_do": "Prevalence is still enriched case-control; no deployment base-rate correction.",
+   "threatens": [
+    "C1"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1016/j.segy.2026.100256",
+   "title": "Challenges in detection of heating curve misconfiguration: An empirical study",
+   "year": 2026,
+   "venue": "Smart Energy",
+   "opened": true,
+   "what_it_does": "CAE NBM (same group as PreDist) fails on gradual heating-curve faults.",
+   "what_it_does_not_do": "No protocol analysis.",
+   "threatens": [
+    "C5"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.5281/zenodo.24164281",
+   "title": "scada-fault-bench: an open benchmark for fault detection in wind and PV SCADA data",
+   "year": 2026,
+   "venue": "Zenodo software record",
+   "opened": true,
+   "what_it_does": "Benchmark reporting 'false alarm hours per year' with block-bootstrap CIs, plus CARE real faults; simple baselines.",
+   "what_it_does_not_do": "Injected synthetic faults; no balanced-vs-continuous inflation analysis, no DH, no ranking-inversion study; unreviewed.",
+   "threatens": [
+    "C2",
+    "C4"
+   ],
+   "severity": "narrows"
+  },
+  {
+   "doi_or_url": "10.21203/rs.3.rs-10269372/v1",
+   "title": "Drift-Aware System Assurance for Wind-Turbine SCADA Condition Monitoring",
+   "year": 2026,
+   "venue": "Research Square preprint",
+   "opened": true,
+   "what_it_does": "Forward-in-time evaluation with rolling-threshold persistent alarms; reports operator-facing alarm episodes and healthy alarm hours.",
+   "what_it_does_not_do": "Two fault events; no fleet base-rate or ranking analysis.",
+   "threatens": [
+    "C2"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.3390/s26123896",
+   "title": "Anomaly Detection in Wind Turbines: Persistence-Based Alarm Confirmation for False-Alarm Mitigation and Detection-Latency Trade-Offs",
+   "year": 2026,
+   "venue": "Sensors",
+   "opened": true,
+   "what_it_does": "Decision-oriented evaluation: alarm persistence rule shapes false alarms vs latency for IF/OCSVM/PCA/AE.",
+   "what_it_does_not_do": "No per-year FA tolerance, no base-rate analysis.",
+   "threatens": [
+    "C2"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1109/tii.2026.3741042",
+   "title": "An Adaptive Threshold Considering Varying Operation Conditions for Wind Turbine Early Fault Detection and False Alarm Reduction",
+   "year": 2026,
+   "venue": "IEEE TII",
+   "opened": true,
+   "what_it_does": "States false alarms block large-scale deployment; quantifies root causes; 82% FA reduction.",
+   "what_it_does_not_do": "Counts false alarms but no benchmark-protocol critique.",
+   "threatens": [
+    "C2"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.3850/esrel2026061419_esrel26-p26195-cd",
+   "title": "The Role Of Reliability Knowledge In Unsupervised Fault Detection Of Wind Turbines",
+   "year": 2026,
+   "venue": "ESREL 2026",
+   "opened": true,
+   "what_it_does": "Evaluates OCSVM/IF on open SCADA with false alarm rate, early warning time, alarm persistence.",
+   "what_it_does_not_do": "No protocol comparison.",
+   "threatens": [
+    "C2"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1088/1742-6596/3224/6/062018",
+   "title": "Detecting Changes in Normal Wind Turbine Operations Using Data Driven Approaches",
+   "year": 2026,
+   "venue": "J. Phys. Conf. Ser. (TORQUE 2026)",
+   "opened": true,
+   "what_it_does": "Same AD algorithm behaves differently across NBM choices; no-NBM baseline.",
+   "what_it_does_not_do": "No base-rate/FA-per-year.",
+   "threatens": [
+    "C3"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.3390/en11071738",
+   "title": "A Robust Prescriptive Framework and Performance Metric for Diagnosing and Predicting Wind Turbine Faults Based on SCADA and Alarms Data",
+   "year": 2018,
+   "venue": "Energies",
+   "opened": true,
+   "what_it_does": "Argues evaluation 'beyond simple classification metrics' is needed; sliding-window alert metric for real-world deployment.",
+   "what_it_does_not_do": "No base-rate quantification, single farm.",
+   "threatens": [
+    "C1",
+    "C2"
+   ],
+   "severity": "narrows"
+  },
+  {
+   "doi_or_url": "10.3390/en13051063",
+   "title": "Evaluation of Anomaly Detection of an Autoencoder Based on Maintenance Information and SCADA-Data",
+   "year": 2020,
+   "venue": "Energies",
+   "opened": true,
+   "what_it_does": "Fraunhofer AE evaluated against maintenance events: ~35% of failures preceded by many anomalies.",
+   "what_it_does_not_do": "No FA-per-year or protocol comparison.",
+   "threatens": [
+    "C2"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.3390/en16020620",
+   "title": "Discussion on the Suitability of SCADA-Based Condition Monitoring for Wind Turbine Fault Diagnosis through Temperature Data Analysis",
+   "year": 2023,
+   "venue": "Energies",
+   "opened": true,
+   "what_it_does": "Controlled 11-year fleet study of 8 turbines; argues SCADA CM suitability usually shown on short, few-turbine analyses.",
+   "what_it_does_not_do": "No FA-budget/base-rate formalism.",
+   "threatens": [
+    "C1",
+    "C2"
+   ],
+   "severity": "narrows"
+  },
+  {
+   "doi_or_url": "10.1002/we.2142",
+   "title": "Deep learning for automated drivetrain fault detection",
+   "year": 2017,
+   "venue": "Wind Energy",
+   "opened": true,
+   "what_it_does": "Fleet-wide performance on 251 bearing failures (vibration).",
+   "what_it_does_not_do": "Vibration CMS; no event-protocol critique.",
+   "threatens": [
+    "C2"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1049/iet-rpg.2015.0019",
+   "title": "Economic analysis of condition monitoring systems for offshore wind turbine sub-systems",
+   "year": 2015,
+   "venue": "IET Renewable Power Generation",
+   "opened": true,
+   "what_it_does": "O&M simulation including CM false alarms and detection rates; costs.",
+   "what_it_does_not_do": "Does not give an operator-tolerable FA/asset-year figure in abstract.",
+   "threatens": [
+    "C2"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.1049/iet-rpg.2016.0248",
+   "title": "Using SCADA data for wind turbine condition monitoring - a review",
+   "year": 2016,
+   "venue": "IET Renewable Power Generation",
+   "opened": true,
+   "what_it_does": "Review of SCADA CM approaches incl. NBMs.",
+   "what_it_does_not_do": "No FA tolerance number in abstract.",
+   "threatens": [
+    "C2"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.5194/wes-5-1375-2020",
+   "title": "Change-point detection in wind turbine SCADA data for robust condition monitoring with normal behaviour models",
+   "year": 2020,
+   "venue": "Wind Energy Science",
+   "opened": true,
+   "what_it_does": "Change points in 1/3 of signals undermine NBMs (false alarms from training contamination).",
+   "what_it_does_not_do": "No protocol analysis.",
+   "threatens": [
+    "C2"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.3390/en14061728",
+   "title": "Wind Turbine Fault Detection Using Highly Imbalanced Real SCADA Data",
+   "year": 2021,
+   "venue": "Energies",
+   "opened": true,
+   "what_it_does": "Handles imbalanced SCADA data to reduce false positives.",
+   "what_it_does_not_do": "Training-side imbalance, not evaluation base rate.",
+   "threatens": [
+    "C1"
+   ],
+   "severity": "background"
+  },
+  {
+   "doi_or_url": "10.48550/arxiv.2611.25252",
+   "title": "Moving Generality from Model to Modeler: LLM Agents for PHM on a Deployment-Style Benchmark",
+   "year": 2026,
+   "venue": "arXiv",
+   "opened": true,
+   "what_it_does": "Deployment-style benchmark holding out units/conditions; published accuracies rest on own conventions.",
+   "what_it_does_not_do": "PHM/RUL, not FA-budget event detection.",
+   "threatens": [
+    "C5"
+   ],
+   "severity": "background"
+  }
+ ]
+}
