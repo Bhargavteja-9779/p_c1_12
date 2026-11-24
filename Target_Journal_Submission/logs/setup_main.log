@@ -1,2 +1,0 @@
-+ cd /home/user/p_c1_12/Target_Journal_Submission/code
-+ pip install -q torch --index-url https://download.pytorch.org/whl/cpu
