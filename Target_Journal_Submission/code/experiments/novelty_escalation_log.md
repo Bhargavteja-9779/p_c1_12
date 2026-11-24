@@ -481,3 +481,10 @@ Added hypothesis (G5 analogue, D-05):
  Same bootstrap CI (resampling substations) is computed DESCRIPTIVELY for PreDist M1 and M2 (both already seen;
  labelled post hoc).
 Analysis code: scripts/round6_care.py (committed before it is first run on real CARE scores).
+
+## Lineage note (added 2026-11-24 cycle 4; nothing above was edited)
+Sections above come from several parallel lineages. The wizardly-babbage lineage's OWN rounds 3-4 (origin of
+candidate C2 = rule OR AE and the C1/C2 freeze, protocol Amendment A1 of that lineage) are not in this merged file;
+they are preserved verbatim in RECHECK/archive_parallel_lineage/Target_Journal_Submission/code/experiments/.
+Idea numbers and hypothesis labels (#8-14, H5a-h, F16-22) mean different things in different lineages; the
+authoritative cross-lineage count is state/variants_tried.csv (82 rows, 64 distinct ideas).

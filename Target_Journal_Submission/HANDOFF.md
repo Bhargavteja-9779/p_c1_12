@@ -46,7 +46,7 @@ ledgered (UNVERIFIED, not counted). Hardware: 4-core CPU, 15 GB RAM, no GPU.
 | Gate | Status | Evidence / reason |
 |---|---|---|
 | G1 Journal | FAIL (stated) | v2 done (journal_selection/selected_journal_v2.md, 25 journals): Energy and AI kept; median 89 d (n=25; last 12 mo 84 d) > 72 d; Q1 UNVERIFIED. Only Energy Informatics (Springer, 70 d, n=97) passes timing but shows no IF (Q1 fails/UNVERIFIED). |
-| G2 Prior art | UNKNOWN | novelty_map_v2.csv 135 rows (RECHECK/stage3); opened-count + claim table being compiled into state/novelty_ledger.json |
+| G2 Prior art | PARTIAL | state/novelty_ledger.json: 164 queries, 176 papers, 158 opened (abstract level; 1 full text). Claim-targeted hostile search running (literature/claim_table.md) |
 | G3 Novelty >= 20/25 | FAIL so far | last score 20/30 on the brief's old scale (manuscript/scorecard_reviewer_zero.md); needs re-score on the /25 scale + blind reviewer after CARE |
 | G4 Baselines | PARTIAL | 8 detectors incl. the dataset paper's AE reproduced on the same protocol; exact reproduction of published PreDist numbers not possible (their protocol tuned on test events) — gap explained in protocol.md |
 | G5 Main effect | UNKNOWN | applied to the protocol-gap effect (D-05); CARE confirmation pending |
@@ -95,6 +95,8 @@ operating points beat random alarms (chance_level.csv). 5. F17 own-history calib
 - Container is reclaimed after inactivity: everything not pushed is lost (scores, data, caches are regenerable).
 - results/scores*/ and data/ are gitignored (large). Result tables/CSVs/JSON ARE committed.
 - M2 is burned as a test set (D-03). Never present a new M2 number as blind.
+- T1 certification-bound numbers are UNVERIFIED (results/protocol_gap_t1.csv never committed); recompute or drop.
+- Wizardly lineage rounds 3-4 only in RECHECK/archive_parallel_lineage/ (pointer at end of escalation log).
 - PreDist leak (known_exclusions legacy rule) still in the PreDist path; sensitivity run pending.
 
 ## Where things are

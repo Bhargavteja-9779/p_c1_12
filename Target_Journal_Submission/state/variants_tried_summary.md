@@ -10,17 +10,17 @@ read from the named result file.
 - Fork 2, wizardly-babbage (= sweet-bell, 16:09-18:29, up to 63cb0d0). Two lineages then branched from 63cb0d0 without knowing about each other:
   - focused-wozniak (2026-11-23 19:27 - 2026-11-24 01:15);
   - practical-sagan (2026-11-24 03:02-03:43).
-- Idea numbers (#8, #9, ...) and hypothesis labels (H3a, H5a, ...) were reused by different lineages for **different** ideas. The ledger therefore uses its own IDs, V001-V081.
+- Idea numbers (#8, #9, ...) and hypothesis labels (H3a, H5a, ...) were reused by different lineages for **different** ideas. The ledger therefore uses its own IDs, V001-V082. V082 is the current cycle-4 Round 6 amendment on the merged branch.
 
 ## Totals
 | Count | Value |
 |---|---|
-| Rows (idea / variant / analysis families, all lineages) | **81** |
+| Rows (idea / variant / analysis families, all lineages) | **82** |
 | Rows without `duplicate_of` (distinct ideas) | 64 |
 | Proposed-detector rows / of which actually run (not `not-run`/`dropped`) | 37 / 29 |
 | Distinct proposed-detector ideas actually run | 24 |
-| Analysis rows / protocol rows / topic rows / baseline rows | 37 / 3 / 2 / 2 |
-| Outcomes | falsified 26, supported 17, descriptive 19, not-run 14, dropped 3, tie 2 |
+| Analysis rows / protocol rows / topic rows / baseline rows | 38 / 3 / 2 / 2 |
+| Outcomes | falsified 26, supported 17, descriptive 19, not-run 15, dropped 3, tie 2 |
 | Rows with `evaluated_on_test = yes` (touched M2 outcomes or M2 fault data) | **15** |
 
 `descriptive` is an outcome value we added. It marks analyses that had no falsifiable hypothesis, such as baseline tables, a mechanism analysis or an analytic bound.
@@ -42,6 +42,7 @@ These counts share ideas #1-#7. Their ideas #8-#14 are different ideas under the
 | peaceful-planck | 10 | 0 | 2 | 0 | 2 | 5 | 1 | 1 |
 | focused-wozniak | 8 | 3 | 2 | 1 | 2 | 0 | 0 | 5 |
 | practical-sagan | 7 | 0 | 4 | 0 | 0 | 3 | 0 | 0 |
+| cycle-4 (merged branch, V082) | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 
 ## Every row that touched M2 (evaluated_on_test = yes)
 | ID | Lineage | Date (UTC) | What |

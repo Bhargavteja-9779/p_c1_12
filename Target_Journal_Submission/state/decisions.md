@@ -56,3 +56,14 @@ declaration stays (worded plainly, authors to confirm). Code comments/README nee
 25 legitimate journals evaluated (journal_selection/journal_comparison_v2.md). None passes all rules. Energy and AI
 kept (best fit; median 89 d, n=25, range 33-565; Q1 UNVERIFIED). Closest on timing: Energy Informatics (Springer)
 70 d (n=97) but no Impact Factor shown -> Q1 not met/UNVERIFIED; ECM:X 73 d (n=30), moderate fit. G1 = FAIL, stated.
+
+## D-2026-11-24-11  Ledger findings acted on
+- Multiplicity count for the paper = state/variants_tried.csv: 82 rows / 64 distinct ideas (24 distinct proposed
+  detectors actually run); M2 touched 15 times (2 locked evaluations, 1 pre-lock pilot, rest post hoc).
+- T1 certification-bound numbers (peaceful-planck lineage) cite results/protocol_gap_t1.csv, which was never
+  committed anywhere -> T1 numbers are UNVERIFIED and must not appear in the paper unless recomputed.
+- Conflicting user decisions across lineages ("option A, no more methods" vs "keep iterating"): the newest user
+  instruction (MASTER_PROMPT v2, 2026-11-24) governs: keep cycling to the gates. This is consistent with an
+  evaluation-paper focus; no new detector-method round is planned unless the Section 6.4 ladder calls for it.
+- No pre-coding novelty score exists (only 20/30 after the locked test); stated as a limitation of the process.
+- Novelty ledger: 158 papers opened at abstract level, 1 full text -> G2 "opened" counted at abstract level, stated.
