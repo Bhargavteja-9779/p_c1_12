@@ -68,7 +68,12 @@ M1 seeds: C2 0.382+-0.017 vs AE 0.183+-0.045 vs rule 0.321 at B=2.
 
 ## Resume notes (2026-11-24, account switch #3)
 - Session 3 did no new work: it only saved state. NEXT ACTION above is unchanged; M2 scores still need to be computed from scratch.
-- Latest work is on claude/wizardly-babbage-182x46 and claude/eloquent-shannon-czmqnz (both identical).
+- WARNING: branches have DIVERGED. This branch (wizardly-babbage / eloquent-shannon) is NOT the latest.
+  Newest work: claude/practical-sagan-m0onar (2026-11-24 03:43, Round 5 results, H5a-c supported).
+  Other branches with work not merged anywhere: focused-wozniak-yepo5i (M2 eval, curves, scorecard, Reviewer Zero),
+  youthful-meitner-qelzen (user chose option A, honest benchmark; writing-phase plan), peaceful-planck-2kznjo.
+  None of these is contained in practical-sagan. Before continuing, decide with the user which branch to use and
+  whether to merge the others in.
 
 ## Resume notes (saved 2026-11-23, account switch #2)
 - Scores/data are NOT in git. On a new machine, from Target_Journal_Submission/code:
