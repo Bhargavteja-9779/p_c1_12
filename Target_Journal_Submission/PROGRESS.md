@@ -66,6 +66,10 @@ M1 seeds: C2 0.382+-0.017 vs AE 0.183+-0.045 vs rule 0.321 at B=2.
 3. Write m2_curves.py (curve-AUC endpoint, descriptive), error analysis by fault label.
 4. Scorecard + Reviewer Number Zero (pivoted story) -> paper drafting.
 
+## Resume notes (2026-11-24, account switch #3)
+- Session 3 did no new work: it only saved state. NEXT ACTION above is unchanged; M2 scores still need to be computed from scratch.
+- Latest work is on claude/wizardly-babbage-182x46 and claude/eloquent-shannon-czmqnz (both identical).
+
 ## Resume notes (saved 2026-11-23, account switch #2)
 - Scores/data are NOT in git. On a new machine, from Target_Journal_Submission/code:
   1. pip install scikit-learn scipy lightgbm pyarrow tabulate pypdf matplotlib pandas;
