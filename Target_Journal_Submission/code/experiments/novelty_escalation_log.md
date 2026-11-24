@@ -488,3 +488,25 @@ candidate C2 = rule OR AE and the C1/C2 freeze, protocol Amendment A1 of that li
 they are preserved verbatim in RECHECK/archive_parallel_lineage/Target_Journal_Submission/code/experiments/.
 Idea numbers and hypothesis labels (#8-14, H5a-h, F16-22) mean different things in different lineages; the
 authoritative cross-lineage count is state/variants_tried.csv (82 rows, 64 distinct ideas).
+
+## Round 6 RESULTS — CARE seed 0 (pre-registered; run once 2026-11-24 ~15:2x UTC; results/round6/seed0/)
+Script unchanged since commit 8e79130 (before any CARE score existed). 36 turbines, 95 events (45 anomaly, 50 normal).
+| method | E-best F0.5 | E-best prec | LOFO rec@B2 | LOFO FA@B2 | LOFO prec@B2 | inflation | 95% CI | cont FA at E-best | sel. rate ratio |
+| temp3s | 0.661 | 0.842 | 0.156 | 2.44 | 0.064 | 13.1 | 8.1-25.8 | 6.7 | 0.304 |
+| sigma3 | 0.566 | 0.545 | 0.200 | 2.80 | 0.071 | 7.6 | 4.98-16.7 | 10.8 | 0.610 |
+| iforest | 0.603 | 0.708 | 0.000 | 0.00 | 0.000 | undefined (no alarms) | - | 10.6 | undefined |
+| ae | 0.667 | 0.733 | 0.178 | 4.09 | 0.045 | 16.4 | 9.9-35.2 | 16.7 | 0.430 |
+| ae_cond | 0.667 | 0.733 | 0.267 | 7.76 | 0.036 | 20.6 | 13.5-37.4 | 15.8 | 0.435 |
+- H6a SUPPORTED: Kendall tau 0.32 (p = 0.45; n = 5, descriptive); tau at LOFO B2 points 0.40.
+- H6b SUPPORTED for the 4 methods with defined deployed precision (min 7.6x); IForest's LOFO B2 point raises no
+  alarm at all (0/0), so its ratio is undefined (reported, not patched).
+- H6c SUPPORTED for 4/4 evaluable methods: alarm hit rate on the benchmark's normal events 0.16 (ae) vs 0.37 on
+  random eligible 7-day normal windows; rate ratios 0.30-0.61, all bootstrap CIs < 1 (upper 0.70-0.80).
+  Length-matched secondary: ratio 0.34 for ae (CI 0.15-0.57). => the benchmark's hand-picked normal periods are
+  systematically quieter than ordinary normal operation (a selection effect in benchmark construction).
+- H6d SUPPORTED: power to separate 1 vs 2 FA/turbine-yr with 50 normal events = 0.12 (7-d windows), 0.35 (mean
+  normal-event length 14.9 d).
+- H6e NOT SUPPORTED as pre-registered: sigma3's CI lower bound is 4.98 (< 5) and IForest is undefined. The other
+  three methods have lower bounds 8.1-13.5 with Holm p < 0.05.
+- Unplanned observations: LOFO thresholds overshoot the budget on the held-out farm (ae_cond 7.8 FA/turbine-yr at
+  B = 2; ae 4.1); benchmark-chosen points imply 6.7-16.7 FA/turbine-yr in continuous operation.

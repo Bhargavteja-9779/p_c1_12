@@ -508,7 +508,8 @@
    "cmd": "python3 scripts/run_online_method.py underdel 1",
    "status": "pending",
    "attempts": 0,
-   "added": "2026-11-24T03:56:32+00:00"
+   "added": "2026-11-24T03:56:32+00:00",
+   "priority": 4
   },
   {
    "id": "c4predist-7f69284de2",
@@ -518,7 +519,8 @@
    "cmd": "python3 scripts/run_srcr_components.py 0 && python3 scripts/round2_variants.py srcr_comp",
    "status": "pending",
    "attempts": 0,
-   "added": "2026-11-24T03:56:32+00:00"
+   "added": "2026-11-24T03:56:32+00:00",
+   "priority": 4
   },
   {
    "id": "c4care_prep-5905dc29fc",
@@ -590,15 +592,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae 0 0/4",
-   "status": "running",
+   "status": "done",
    "attempts": 2,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 6,
    "after": "c4care_prep",
-   "started": "2026-11-24T13:28:34+00:00",
-   "pid": 1617,
-   "finished": "2026-11-24T13:28:34+00:00",
-   "returncode": 137
+   "started": "2026-11-24T14:01:54+00:00",
+   "pid": 2473,
+   "finished": "2026-11-24T14:02:04+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_seed0-252ed0fdbe",
@@ -606,15 +608,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 0 0/4",
-   "status": "running",
+   "status": "done",
    "attempts": 3,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 6,
    "after": "c4care_prep",
-   "started": "2026-11-24T13:18:24+00:00",
-   "pid": 1397,
-   "finished": "2026-11-24T13:18:24+00:00",
-   "returncode": 137
+   "started": "2026-11-24T13:53:04+00:00",
+   "pid": 2262,
+   "finished": "2026-11-24T13:53:14+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_seed0-9ab6d44455",
@@ -638,15 +640,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae 0 1/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 6,
    "after": "c4care_prep",
-   "started": "2026-11-24T13:24:14+00:00",
-   "pid": 1523,
-   "finished": "2026-11-24T13:36:05+00:00",
-   "returncode": 137
+   "started": "2026-11-24T13:53:14+00:00",
+   "pid": 2272,
+   "finished": "2026-11-24T14:06:24+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_seed0-6d7c08454f",
@@ -654,15 +656,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 0 1/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 6,
    "after": "c4care_prep",
-   "started": "2026-11-24T13:36:05+00:00",
-   "pid": 1757,
-   "finished": "2026-11-24T05:15:00+00:00",
-   "returncode": 137
+   "started": "2026-11-24T14:02:04+00:00",
+   "pid": 2493,
+   "finished": "2026-11-24T14:24:05+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_seed0-d5877d362d",
@@ -686,15 +688,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae 0 2/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 6,
    "after": "c4care_prep",
-   "started": "2026-11-24T05:26:40+00:00",
-   "pid": 5553,
-   "finished": "2026-11-24T05:31:50+00:00",
-   "returncode": 137
+   "started": "2026-11-24T14:06:24+00:00",
+   "pid": 2616,
+   "finished": "2026-11-24T14:46:05+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_seed0-44d958911c",
@@ -702,15 +704,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae_cond 0 2/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 6,
    "after": "c4care_prep",
-   "started": "2026-11-24T05:42:20+00:00",
-   "pid": 5776,
-   "finished": "2026-11-24T05:48:11+00:00",
-   "returncode": 137
+   "started": "2026-11-24T14:24:05+00:00",
+   "pid": 3045,
+   "finished": "2026-11-24T14:52:36+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_seed0-faf9921097",
@@ -766,13 +768,13 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae 100 0/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "running",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 2,
    "after": "c4care_prep",
-   "started": "2026-11-24T05:54:51+00:00",
-   "pid": 5969,
+   "started": "2026-11-24T15:05:57+00:00",
+   "pid": 4570,
    "finished": "2026-11-24T06:00:41+00:00",
    "returncode": 137
   },
@@ -782,13 +784,13 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py ae 100 1/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "running",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 2,
    "after": "c4care_prep",
-   "started": "2026-11-24T06:09:52+00:00",
-   "pid": 6181,
+   "started": "2026-11-24T15:06:07+00:00",
+   "pid": 4596,
    "finished": "2026-11-24T06:09:52+00:00",
    "returncode": 137
   },
@@ -1020,11 +1022,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 100 0/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 3,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T14:46:05+00:00",
+   "pid": 3532,
+   "finished": "2026-11-24T14:47:56+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_confirm-a4b951b2fd",
@@ -1032,11 +1038,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 100 1/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 3,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T14:47:56+00:00",
+   "pid": 3595,
+   "finished": "2026-11-24T14:49:36+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_confirm-5875ef8f52",
@@ -1044,11 +1054,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 100 2/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 3,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T14:49:36+00:00",
+   "pid": 3646,
+   "finished": "2026-11-24T14:51:26+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_confirm-ea0e3d244c",
@@ -1056,11 +1070,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 100 3/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 3,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T14:51:26+00:00",
+   "pid": 3707,
+   "finished": "2026-11-24T14:53:06+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_confirm-1fc76f7bda",
@@ -1068,11 +1086,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 101 0/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 3,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T14:52:36+00:00",
+   "pid": 3749,
+   "finished": "2026-11-24T14:54:26+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_confirm-cf3e950f2e",
@@ -1080,11 +1102,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 101 1/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 3,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T14:53:06+00:00",
+   "pid": 3783,
+   "finished": "2026-11-24T14:54:46+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_confirm-b0f3b1f200",
@@ -1092,11 +1118,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 101 2/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 3,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T14:54:26+00:00",
+   "pid": 3896,
+   "finished": "2026-11-24T14:56:16+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_confirm-54139270ce",
@@ -1104,11 +1134,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 101 3/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 3,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T14:54:46+00:00",
+   "pid": 3927,
+   "finished": "2026-11-24T14:56:06+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_confirm-e1c9aef113",
@@ -1116,11 +1150,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 102 0/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 3,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T14:56:06+00:00",
+   "pid": 3994,
+   "finished": "2026-11-24T14:57:56+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_confirm-d1f5c840c2",
@@ -1128,11 +1166,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 102 1/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 3,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T14:56:16+00:00",
+   "pid": 4016,
+   "finished": "2026-11-24T14:57:46+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_confirm-af92ce8837",
@@ -1140,11 +1182,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 102 2/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 3,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T14:57:46+00:00",
+   "pid": 4091,
+   "finished": "2026-11-24T14:59:36+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_confirm-65853da5b7",
@@ -1152,11 +1198,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 102 3/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 3,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T14:57:56+00:00",
+   "pid": 4110,
+   "finished": "2026-11-24T14:59:16+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_confirm-a17af3323d",
@@ -1164,11 +1214,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 103 0/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 3,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T14:59:16+00:00",
+   "pid": 4186,
+   "finished": "2026-11-24T15:01:06+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_confirm-8ce578407c",
@@ -1176,11 +1230,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 103 1/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 3,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T14:59:36+00:00",
+   "pid": 4213,
+   "finished": "2026-11-24T15:01:06+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_confirm-67feee8ada",
@@ -1188,11 +1246,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 103 2/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 3,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T15:01:06+00:00",
+   "pid": 4288,
+   "finished": "2026-11-24T15:02:57+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_confirm-9f1fe2b0d3",
@@ -1200,11 +1262,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 103 3/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 3,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T15:01:06+00:00",
+   "pid": 4289,
+   "finished": "2026-11-24T15:02:26+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_confirm-13007e5c33",
@@ -1212,11 +1278,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 104 0/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 3,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T15:02:26+00:00",
+   "pid": 4371,
+   "finished": "2026-11-24T15:04:17+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_confirm-d79bb2fc28",
@@ -1224,11 +1294,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 104 1/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 3,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T15:02:57+00:00",
+   "pid": 4406,
+   "finished": "2026-11-24T15:04:37+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_confirm-83e216ee76",
@@ -1236,11 +1310,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 104 2/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 3,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T15:04:17+00:00",
+   "pid": 4476,
+   "finished": "2026-11-24T15:06:07+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_confirm-f43a84d815",
@@ -1248,11 +1326,15 @@
    "cycle": 4,
    "cwd": "code",
    "cmd": "python3 scripts/run_care.py iforest 104 3/4",
-   "status": "pending",
-   "attempts": 0,
+   "status": "done",
+   "attempts": 1,
    "added": "2026-11-24T04:01:27+00:00",
    "priority": 3,
-   "after": "c4care_prep"
+   "after": "c4care_prep",
+   "started": "2026-11-24T15:04:37+00:00",
+   "pid": 4503,
+   "finished": "2026-11-24T15:05:57+00:00",
+   "returncode": 0
   },
   {
    "id": "c4care_confirm-147a03d54c",

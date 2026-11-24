@@ -1,0 +1,32 @@
+{
+ "tag": "0",
+ "kendall_tau_Ebest_vs_lofoB2": 0.31622776601683794,
+ "kendall_p": 0.44848886103153174,
+ "spearman": 0.30779350562554625,
+ "kendall_tau_EatB2_vs_lofoB2": 0.39999999999999997,
+ "H6a_supported": true,
+ "H6b_min_inflation": 7.636363636363636,
+ "H6b_supported": true,
+ "H6c_rate_ratios": [
+  0.304,
+  0.61,
+  NaN,
+  0.43,
+  0.435
+ ],
+ "H6c_ci_hi": [
+  0.775,
+  0.797,
+  NaN,
+  0.751,
+  0.703
+ ],
+ "H6c_supported_methods": 4,
+ "H6d_n_normal_events": 50,
+ "H6d_power_1v2_7d": 0.11825875281070874,
+ "H6d_power_1v2_meanlen": 0.3528142482605161,
+ "normal_event_mean_len_d": 14.871944444444443,
+ "H6d_supported": true,
+ "H6e_min_ci_lo": 4.978711145013212,
+ "H6e_supported": false
+}
