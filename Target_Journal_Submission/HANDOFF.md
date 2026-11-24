@@ -73,7 +73,7 @@ operating points beat random alarms (chance_level.csv). 5. F17 own-history calib
 - Status: `python3 scripts/status.py`
 - Logs: `tail -f logs/queue_runner.log`; per job `logs/jobs/<job_id>.log`; supervisor `logs/supervisor.log`
 - Stop compute: `tmux kill-session -t queue` (jobs keep running; to kill them too: `pkill -f run_online_method; pkill -f run_care`)
-- Resume compute: `tmux new-session -d -s queue "python3 scripts/queue_runner.py run --workers 3 >> logs/queue_runner.log 2>&1"`
+- Resume compute: `tmux new-session -d -s queue "python3 scripts/queue_runner.py run --workers 2 >> logs/queue_runner.log 2>&1"`
   (adopts still-running jobs; never redoes done jobs; scripts skip existing outputs)
 - Add jobs: `python3 scripts/queue_runner.py add --group NAME --file code/scripts/LIST.txt [--priority N] [--after GROUP]`
 - Autostart (own machine only): `bash scripts/install_autostart.sh install [--with-supervisor]`; remove: `bash scripts/install_autostart.sh remove`
@@ -89,7 +89,7 @@ operating points beat random alarms (chance_level.csv). 5. F17 own-history calib
    (done jobs whose outputs exist finish in seconds).
 
 ## Known problems
-- Memory: a CARE farm-C AE fit peaks ~4.3 GB -> run the queue with --workers 3 (not 4) on a 15 GB machine.
+- Memory: a CARE farm-C AE fit peaks ~4.3 GB -> peaks ~6 GB (dmesg) -> run the queue with --workers 2 on this machine.
 - The container pauses when the user is idle: all processes die (2026-11-24 06:21 UTC). After any pause: `python3 scripts/status.py`; if heartbeat is stale, restart the queue (Resume compute).
 - Layer B: a `claude` CLI exists, but this is an ephemeral cloud container and an interactive session already works
   in this checkout, so the supervisor was NOT started (two agents would edit the same files). Auto-restart therefore

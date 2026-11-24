@@ -80,7 +80,7 @@ kept (best fit; median 89 d, n=25, range 33-565; Q1 UNVERIFIED). Closest on timi
   (CARE) become priority analyses; a dedicated prior-art search for that specific claim follows once results exist.
 
 ## D-2026-11-24-13  CARE compute: OOM fix and confirmation scope (deviation, logged before any CARE analysis)
-- 6 seed-0 AE/AE-cond jobs and 1 confirm job were OOM-killed (farm C: 953 columns; one AE fit peaks ~4.3 GB;
+- 6 seed-0 AE/AE-cond jobs and 1 confirm job were OOM-killed (farm C: 953 columns; one AE fit peaks ~6 GB (dmesg; 4.3 GB seen mid-run);
   4 parallel jobs + PreDist exceeded 15 GB). All processes then died at ~06:21 UTC (container paused/reclaimed
   while idle; runner heartbeat stale ~6 h). Fix: queue restarted with 3 workers; failed jobs re-queued. No code or
   analysis change; scores are deterministic per seed, so re-running does not change results.
@@ -89,3 +89,4 @@ kept (best fit; median 89 d, n=25, range 33-565; Q1 UNVERIFIED). Closest on timi
   100-104 (cheap) and ae seeds 100-102 first, ae 103-104 if budget remains; ae_cond confirmation NOT run
   (status skipped_compute). H6e confirmation is reported only for methods with >= 4 completed seeds; others are
   reported as incomplete. No CARE result had been inspected when this was decided (round6_care.py not yet run).
+- 13:40 UTC: still OOM with 3 workers (6.0 GB peak, cgroup kill in dmesg) -> 2 workers.
