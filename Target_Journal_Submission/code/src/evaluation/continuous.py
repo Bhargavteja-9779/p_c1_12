@@ -37,6 +37,7 @@ class SubstationLabels:
     end: pd.Timestamp
     targets: pd.DataFrame          # columns: event_id, report, win_start
     exclusions: list               # list of (start, end)
+    excl_known: list | None = None  # optional: time each exclusion becomes known (CARE amendment A1); None = legacy rule
 
 
 def substation_labels(m: int, s: int, index: pd.DatetimeIndex) -> SubstationLabels:

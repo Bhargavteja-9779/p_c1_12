@@ -1,0 +1,3 @@
+{"status": "RUNNING", "cycle": 4, "phase": "cycle4-E4-generalization (CARE replication) + protocol-gap statistics",
+ "step": "persistence built; PreDist regen queued; CARE downloading", "pivots_used": 1, "max_pivots": 3, "max_cycles": 12,
+ "branch": "claude/eloquent-shannon-czmqnz", "last_action": "merged all lineages; queued c4predist", "updated": "2026-11-24T04:10Z"}

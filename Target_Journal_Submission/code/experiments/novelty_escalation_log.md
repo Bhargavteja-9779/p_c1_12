@@ -460,3 +460,24 @@ peer_all 0.214 / 0.250 / 0.286; own_change 0.036 / 0.071 / 0.143; fuse 0.286 / 0
 - H5b FALSIFIED (best 0.321 < 0.43 at <= 2 FA/sub-yr).
 - Round 5 FAILED. Per the pre-registered time-box: stop, no M2 second look, recommend option A.
 <!-- [end parallel lineages] -->
+
+## Round 6 Amendment A1 + confirmation plan (cycle 4, written 2026-11-24 ~04:05 UTC BEFORE any CARE score exists)
+State: no CARE detector output has ever been computed or inspected (CARE zip still downloading; results/scores_care
+does not exist). The M2 locked test is burned (evaluated twice by parallel lineages; state/decisions.md D-03), so
+CARE is the only unseen data and serves as the confirmation dataset.
+A1 (leak fix, CARE path only): an exclusion interval is "known" to the online trainer only once its report time
+(event_end) has passed (src/models/online.py known_exclusions with lab.excl_known); the anomaly window
+[event_start, event_end) of past events is also removed from later training. PreDist path unchanged (legacy rule)
+so committed PreDist numbers stay reproducible; the PreDist leak (4/982 fits) is reported separately.
+Confirmation seeds: SEEDS_CONFIRM = [100,101,102,103,104] (fixed in MASTER_PROMPT v2 before any CARE output) for
+the seeded detectors iforest, ae, ae_cond, in this priority order (ae, iforest, ae_cond) as compute allows; seed 0
+is the pre-registered Round-6 run. Unseeded: sigma3, temp3s.
+Added hypothesis (G5 analogue, D-05):
+ H6e: for every method (seed 0), the precision-inflation ratio (best-F0.5 event precision / continuous alarm
+      precision at the LOFO B = 2 point) has a 95% percentile-bootstrap CI (2,000 resamples of turbines,
+      seed 0) with lower bound > 5; one-sided bootstrap p-values for "ratio <= 5", Holm-corrected over the
+      5 methods. On confirmation seeds: report mean +- sd over seeds of the ratio, of Kendall tau (H6a) and of
+      the selection rate ratio (H6c); H6e must hold for >= 4/5 confirmation seeds of each seeded method.
+ Same bootstrap CI (resampling substations) is computed DESCRIPTIVELY for PreDist M1 and M2 (both already seen;
+ labelled post hoc).
+Analysis code: scripts/round6_care.py (committed before it is first run on real CARE scores).

@@ -1,0 +1,464 @@
+{
+ "jobs": [
+  {
+   "id": "c4predist-68a3e7b191",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py rule 1",
+   "status": "done",
+   "attempts": 1,
+   "added": "2026-11-24T03:56:32+00:00",
+   "started": "2026-11-24T03:56:32+00:00",
+   "pid": 1322,
+   "finished": "2026-11-24T03:56:52+00:00",
+   "returncode": 0
+  },
+  {
+   "id": "c4predist-b6aa59bfc1",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py sigma3 1",
+   "status": "done",
+   "attempts": 1,
+   "added": "2026-11-24T03:56:32+00:00",
+   "started": "2026-11-24T03:56:32+00:00",
+   "pid": 1323,
+   "finished": "2026-11-24T03:57:12+00:00",
+   "returncode": 0
+  },
+  {
+   "id": "c4predist-81e00b07ab",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py loop3s 1",
+   "status": "done",
+   "attempts": 1,
+   "added": "2026-11-24T03:56:32+00:00",
+   "started": "2026-11-24T03:56:32+00:00",
+   "pid": 1324,
+   "finished": "2026-11-24T03:56:52+00:00",
+   "returncode": 0
+  },
+  {
+   "id": "c4predist-bff61b7b34",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py iforest 1",
+   "status": "running",
+   "attempts": 1,
+   "added": "2026-11-24T03:56:32+00:00",
+   "started": "2026-11-24T03:56:32+00:00",
+   "pid": 1326
+  },
+  {
+   "id": "c4predist-eac4d58699",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py qnbm 1 0/3",
+   "status": "running",
+   "attempts": 1,
+   "added": "2026-11-24T03:56:32+00:00",
+   "started": "2026-11-24T03:56:52+00:00",
+   "pid": 1383
+  },
+  {
+   "id": "c4predist-f6aead5b88",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae_cond 1 0/3",
+   "status": "running",
+   "attempts": 1,
+   "added": "2026-11-24T03:56:32+00:00",
+   "started": "2026-11-24T03:56:52+00:00",
+   "pid": 1384
+  },
+  {
+   "id": "c4predist-44aee2d435",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py qnbm 1 1/3",
+   "status": "running",
+   "attempts": 1,
+   "added": "2026-11-24T03:56:32+00:00",
+   "started": "2026-11-24T03:57:12+00:00",
+   "pid": 1411
+  },
+  {
+   "id": "c4predist-e92b19ae84",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae_cond 1 1/3",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-358c28a7ae",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py qnbm 1 2/3",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-fdf5a522bd",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae_cond 1 2/3",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-66f593f9eb",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae 1 0/4 0",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-67782476bf",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae 1 1/4 0",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-a02a2b516e",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae 1 2/4 0",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-bac6c7b1d5",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae 1 3/4 0",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-6720c2725c",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae 1 0/4 1",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-477e15bd69",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae 1 1/4 1",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-d780c784d6",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae 1 2/4 1",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-17bfd4b317",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae 1 3/4 1",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-4c7c40b14f",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae 1 0/4 2",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-dc5010cc8a",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae 1 1/4 2",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-f3e15acd8c",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae 1 2/4 2",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-0a86805bd9",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae 1 3/4 2",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-c1b3e5dd59",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py rule 2",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-666cebd6c0",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py sigma3 2",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-ef3d901f69",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py loop3s 2",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-0c44cd15e4",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py iforest 2",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-a631419ba9",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_srcr_transfer.py",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-510e7a4f57",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py qnbm 2 0/3",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-06699bbca7",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae_cond 2 0/3",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-9c5fcf5c8e",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py qnbm 2 1/3",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-71dbe8d8bc",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae_cond 2 1/3",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-2d3223af44",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py qnbm 2 2/3",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-714e6e1dbd",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae_cond 2 2/3",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-0f1bf39224",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae 2 0/3 0",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-fb05e54d54",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae 2 1/3 0",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-5e4cef912c",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae 2 2/3 0",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-057233001b",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae 2 0/3 1",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-c6b3b160ac",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae 2 1/3 1",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-84c160081e",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae 2 2/3 1",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-dedc365717",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae 2 0/3 2",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-0c8ad2ae9e",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae 2 1/3 2",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-0c3a1cb6d6",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py ae 2 2/3 2",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-0fd11f5e1f",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_online_method.py underdel 1",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  },
+  {
+   "id": "c4predist-7f69284de2",
+   "group": "c4predist",
+   "cycle": 4,
+   "cwd": "code",
+   "cmd": "python3 scripts/run_srcr_components.py 0 && python3 scripts/round2_variants.py srcr_comp",
+   "status": "pending",
+   "attempts": 0,
+   "added": "2026-11-24T03:56:32+00:00"
+  }
+ ]
+}

@@ -13,13 +13,16 @@ SCORES = os.path.join(os.path.dirname(__file__), "..", "..", "results", "scores_
 def labels(f: str, a: int, index: pd.DatetimeIndex) -> SubstationLabels:
     start = index.min() + pd.Timedelta(days=BURN_IN_DAYS); end = index.max()
     E = care.events(f); E = E[(E.asset == a) & (E.event_label == "anomaly")]
-    excl = []
-    for r in E.itertuples():
+    excl, known = [], []
+    for r in E.itertuples():  # amendment A1: the anomaly window itself is also removed from later training;
+        # every exclusion of an event becomes known only at its report time (event_end)
         excl.append((r.event_start - pd.Timedelta(days=14), r.event_start))
+        excl.append((r.event_start, r.event_end))
         excl.append((r.event_end, r.event_end + pd.Timedelta(days=2)))
+        known += [r.event_end] * 3
     t = pd.DataFrame({"event_id": E.event_id.values, "report": E.event_end.values, "win_start": E.event_start.values})
     t = t[(t.win_start >= start) & (t.report <= end + pd.Timedelta(days=1))]
-    return SubstationLabels(f, a, start, end, t.reset_index(drop=True), excl)
+    return SubstationLabels(f, a, start, end, t.reset_index(drop=True), excl, known)
 
 
 def all_anomaly_events(f, a, index):

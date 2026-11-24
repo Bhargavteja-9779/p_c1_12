@@ -1,0 +1,14 @@
+{
+ "cycle": 4,
+ "cycle_budget_h": 15,
+ "global_ceiling_h": 120,
+ "prior_h_unledgered": 0,
+ "prior_note": "Cycles 1-3 (sessions 1-4, 2026-11-23/24) used compute that was never ledgered; logs suggest roughly 20-30 machine-hours but this is UNVERIFIED and not counted against the ceiling.",
+ "note": "machine_h = machine wall-hours with >=1 queue job running (4-core CPU, no GPU); core_h = CPU user+sys of children",
+ "cycles": {
+  "4": {
+   "machine_h": 0.06668108118904961,
+   "core_h": 0.0
+  }
+ }
+}

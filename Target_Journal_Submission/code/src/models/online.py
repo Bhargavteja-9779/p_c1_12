@@ -18,6 +18,9 @@ GAP_DAYS = 0
 def known_exclusions(lab, t):
     """Exclusion intervals whose triggering report/disturbance happened before time t, clipped at t."""
     out = []
+    kn = getattr(lab, "excl_known", None)
+    if kn is not None:  # leak-free rule (CARE amendment A1): known only once its report time has passed
+        return [(a, min(b, t)) for (a, b), k in zip(lab.exclusions, kn) if k <= t]
     for a, b in lab.exclusions:
         # an exclusion is known once its anchor (start + 2 d for disturbances / report for faults) has passed;
         # conservative: known if its end <= t, or its start < t - 7 d (report already filed)

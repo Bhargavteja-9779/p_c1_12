@@ -1,0 +1,25 @@
+
+=== 2026-11-24T03:56:32+00:00 attempt 1: python3 scripts/run_online_method.py iforest 1
+iforest m1 s1 3s
+iforest m1 s2 11s
+iforest m1 s3 9s
+iforest m1 s4 9s
+iforest m1 s5 10s
+iforest m1 s6 2s
+iforest m1 s7 9s
+iforest m1 s8 8s
+iforest m1 s9 11s
+iforest m1 s10 6s
+iforest m1 s11 15s
+iforest m1 s12 15s
+iforest m1 s13 13s
+iforest m1 s14 12s
+iforest m1 s15 16s
+iforest m1 s16 8s
+iforest m1 s17 12s
+iforest m1 s18 14s
+iforest m1 s19 8s
+iforest m1 s20 11s
+iforest m1 s21 11s
+iforest m1 s22 4s
+iforest m1 s23 8s
