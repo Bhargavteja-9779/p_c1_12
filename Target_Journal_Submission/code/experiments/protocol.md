@@ -64,6 +64,8 @@ Later versions may ADD experiments; any change to items below is logged with dat
 - Real-world impact: for a 93-substation fleet, expected alarms per week and complaints pre-empted per year
   at each budget; technician visits per pre-empted complaint.
 
+
+<!-- [lineage merged-63cb0d0-lineages] -->
 ## Amendment A1 (2026-11-23) — candidate freeze before the locked M2 evaluation
 Reason: the novelty-escalation loop on M1 (rounds 0-4, 13 ideas, log in novelty_escalation_log.md) showed that
 the fleet SRCR model is dominated by the expert rule B1; the best development candidate is a budget-split
@@ -87,3 +89,53 @@ Added, pre-registered, run on M2 together with m2_eval.py:
  - F19 protocol-gap analysis (scripts/protocol_gap.py 2): hypotheses H5f, H5g, H5h as written in the log.
  - F18 fault-signature taxonomy (classes A/B/C/U fixed in the log): H5d, H5e, tested on M2 faults only.
 Negative/neutral round-5 ideas (F17 calibration, F16 ae_noloop) are reported as development results, not tested on M2.
+
+<!-- [lineage peaceful-planck] (parallel session; merged 2026-11-24) -->
+## Amendments (dated; original v1 analyses are still reported)
+- A1 (2026-11-23, before round 2; recorded late on 2026-11-23): tau grid extended to {1, 1.5, 2, 3, 4} for
+  ALL methods (runner.TAU_GRID). Evaluable M1 targets as computed by the harness = 28 (v1 text said 29).
+- A2 (2026-11-23, after D6 round 4 on M1, before any M2 scoring): method candidate fixed as SRCR-C
+  (comfort loops only, setpoint gating, one-sided shortfall, fleet-prior -> local calibration, criticality
+  counter). Because "comfort-only" knowledge was found on M1, two baselines receive the same knowledge:
+  B7c loop three-sigma restricted to comfort loops, gated and one-sided (own history, no fleet model) and
+  B4c autoencoder restricted to comfort signals (loop measurements, setpoints, outdoor temperature).
+- A3 (2026-11-23, added AFTER round-4 results were seen on M1, so labelled post hoc): secondary endpoint
+  "minimum false alarms per substation-year needed to reach recall r" for r in the recall levels that both
+  methods reach, with cluster-bootstrap CI over substations. The v1 primary endpoint (recall at B = 2) is
+  unchanged and remains primary.
+- A4 (2026-11-23, before ANY detector output on M2; only M2 column availability was checked: hc1 loop in
+  58/58 substations, dhw_sup 14, dhw_sto 13, p_ret 19): FACTORIAL ANALYSIS fixed as the primary question.
+  Cells: SCOPE {comfort loops, all signals} x REPRESENTATION {relative to setpoint, absolute} x MODEL.
+    comfort x relative : rule (B1), loop3s_c (B7c), SRCR-C (fleet quantile ML)
+    all     x relative : loop3s (B7), SRCR gate+1s+local with p_ret
+    comfort x absolute : ae_comfort (B4c)
+    all     x absolute : sigma3 (B2), iforest (B3), qnbm (B5), ae (B4), ae_cond (B4)
+  M2 procedure: per-substation methods run online on M2 exactly as on M1; fleet models trained on ALL M1
+  normal data (seeds 0-9), applied to M2 unchanged; every method uses its M1-chosen (tau, c_thr) for
+  B in {1, 2, 4}; realised M2 FA rates reported. Pooled M1+M2 numbers reported as secondary.
+  Pre-registered hypotheses (tested on M2, Holm-corrected within each family):
+   HF1 SCOPE: at matched recall, comfort-scope cells need fewer false alarms than all-signal cells with the
+       same representation and model class (SRCR-C vs SRCR-all; loop3s_c vs loop3s; ae_comfort vs ae):
+       paired per-fault log-rank Wilcoxon, and FA ratio with cluster-bootstrap 95% CI excluding 1.
+   HF2 REPRESENTATION: comfort x relative cells beat comfort x absolute (loop3s_c and SRCR-C vs ae_comfort).
+   HF3 MODEL: within comfort x relative, model class matters little: we report rule vs loop3s_c vs SRCR-C
+       differences with CIs; we do NOT claim equivalence (n too small), only absence/presence of a
+       significant difference.
+   HF4 PRIMARY ENDPOINT (v1): recall at B = 2 on M2, SRCR-C vs every baseline (McNemar exact + paired
+       cluster bootstrap, Holm). Expected direction: SRCR-C >= AE; no hypothesis vs rule.
+- A5 (2026-11-23, session 3, BEFORE any M2 detector output; analysis code committed first:
+  scripts/m2_evaluate.py). Details A4 left open, fixed now:
+  * Matched recall for HF1-HF3 FA ratios: r* = recall that method A (comfort / relative side of the pair)
+    reaches on M2 at its M1-chosen B = 2 operating point. FA ratio = min FA rate of B reaching r* over the full
+    (tau, c_thr) grid / same for A, each rate with +0.5 false-alarm continuity correction. If B never reaches
+    r*, the ratio is reported as infinite (favours A). 95% CI by cluster bootstrap over substations (2000
+    replicates, seed 20261123). Same grid for every method.
+  * HF4 recall difference CI: cluster bootstrap (1000 replicates) with fixed M1-chosen thresholds.
+    McNemar exact on per-fault detections. Holm within HF1, HF2 and HF4 separately; HF3 descriptive.
+  * Seeds: fleet SRCR models seeds 0-9 (each seed: own M1 cross-fitted run -> own M1 thresholds -> M2).
+    Primary tests use seed 0 (the development seed); seeds 1-9 reported as mean, sd, range of M2 recall/FA.
+    Per-substation stochastic baselines (AE family, iForest, qNBM): seed 0 only on M2, plus seeds 1-2 for
+    ae and ae_comfort if compute allows (CPU budget; disclosed). Deterministic methods need no seeds.
+  * Code is run on M1 first (in-sample dry run, M = 1) only to test it; those numbers are not reported as
+    test results.
+<!-- [end parallel lineages] -->

@@ -88,6 +88,14 @@ class DeliveryChannel(_MultiBand):
 
 
 class UnderDeliveryChannel(_MultiBand):
-    """F12: heat power BELOW the substation's own weather-conditioned band (pumps, valves, regulators).
-    Heating-season gating (24-h mean outdoor temperature < 15 degC) is applied at the daily level (round3.py)."""
-    SPECS = [("p_net_meter_heat_power", True, "low", 1.0)]
+    """Round 3 (F12): only shortfall of delivered heat power / primary flow vs the own energy signature.
+    Heating-season gating (outdoor 24 h mean < 12 degC) is applied when composing daily scores."""
+    SPECS = [("p_net_meter_heat_power", True, "low", 1.0),
+             ("p_net_meter_flow", True, "low", 10.0)]
+
+    def score(self, X):
+        s = super().score(X)
+        if "outdoor_temperature" in X:
+            to24 = X["outdoor_temperature"].rolling("24h", min_periods=12).mean().to_numpy()
+            s = np.where(to24 < 12.0, s, np.nan)
+        return s

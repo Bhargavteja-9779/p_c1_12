@@ -1,0 +1,66 @@
+tabulated 1 rule
+tabulated 1 loop3s_c
+tabulated 1 srcr_c
+tabulated 1 loop3s
+tabulated 1 srcr_all
+tabulated 1 ae_comfort
+tabulated 1 sigma3
+tabulated 1 iforest
+tabulated 1 qnbm
+tabulated 1 ae
+tabulated 1 ae_cond
+tabulated 2 rule
+tabulated 2 loop3s_c
+tabulated 2 srcr_c
+tabulated 2 loop3s
+tabulated 2 srcr_all
+tabulated 2 ae_comfort
+tabulated 2 sigma3
+tabulated 2 iforest
+tabulated 2 qnbm
+tabulated 2 ae
+tabulated 2 ae_cond
+           fa_per_sub_year                                       recall                                   
+m                        1                      2                     1                     2             
+bin               90-365 d  <90 d >365 d 90-365 d <90 d >365 d 90-365 d <90 d >365 d 90-365 d <90 d >365 d
+cell                                                                                                      
+ae                    2.55   2.28   1.56     3.72  0.59   1.44     0.17   0.0   0.25     0.00  0.14   0.00
+ae_comfort            4.58   1.71   1.28     2.93  1.41   1.95     0.67   0.0   0.25     0.00  0.43   0.00
+ae_cond               0.89   0.95   1.10     1.69  0.82   0.95     0.17   0.5   0.10     0.00  0.00   0.00
+iforest               2.89   6.66   0.83     5.11  5.40   0.86     0.17   0.0   0.20     0.00  0.29   0.00
+loop3s                3.48   2.09   1.14     0.94  0.47   0.44     0.33   0.0   0.25     0.00  0.29   0.00
+loop3s_c              2.46   0.76   1.22     1.79  0.94   2.13     0.33   0.0   0.30     0.00  0.14   0.14
+qnbm                  3.91  10.08   0.95     2.48  2.35   0.91     0.33   0.0   0.15     0.00  0.57   0.14
+rule                  1.27   0.57   1.07     0.50  0.59   0.62     0.50   0.0   0.30     0.00  0.14   0.14
+sigma3                2.97   8.75   0.58     4.37  2.94   0.83     0.33   0.0   0.25     0.18  0.71   0.00
+srcr_all              1.57   1.14   1.48     1.14  0.59   2.58     0.50   0.0   0.30     0.00  0.00   0.00
+srcr_c                2.46   0.95   1.21     0.89  0.59   1.46     0.50   0.0   0.35     0.00  0.00   0.00
+family          a          b  n  a_better  b_better  median_rank_a  median_rank_b  p_wilcoxon
+   HF1     srcr_c   srcr_all 53        41        10         0.2447         0.1758      0.0156
+   HF1   loop3s_c     loop3s 53        35        18         0.1502         0.1496      0.1043
+   HF1 ae_comfort         ae 53        35        18         0.0813         0.0992      0.0211
+   HF2   loop3s_c ae_comfort 53        29        24         0.1502         0.0813      0.1886
+   HF2     srcr_c ae_comfort 53        22        31         0.2447         0.0813      0.3736
+   HF3     srcr_c       rule 53        19        34         0.2447         0.1459      0.0804
+   HF3     srcr_c   loop3s_c 53        18        35         0.2447         0.1502      0.0311
+   HF3   loop3s_c       rule 53        31        22         0.1502         0.1459      0.1799
+cell                                                                                   n  ae  ae_comfort  ae_cond  iforest  loop3s  loop3s_c  qnbm  rule  sigma3  srcr_all  srcr_c
+Fault label                                                                                                                                                                       
+Air in the piping system                                                               1   0           0        0        0       0         0     0     0       0         0       0
+Control unit: Incorrect parameterisation                                               9   1           3        1        1       2         1     1     1       2         1       1
+Differential pressure regulator defective                                              1   0           0        0        0       0         1     0     1       0         1       1
+Failure of the domestic hot water storage charging pump                                4   0           2        0        1       2         1     2     1       3         1       1
+Failure of the heating circuit pump                                                    6   1           0        2        1       0         0     2     0       0         0       0
+Heat exchanger: Leakage, external                                                      1   0           1        0        0       0         0     0     0       0         0       0
+Incorrect setting of the differential pressure regulator                               6   1           2        1        1       2         3     0     3       1         2       2
+Leakage                                                                                7   0           2        0        1       0         0     2     1       2         1       1
+Low pre-charge at the expansion vessel                                                 1   0           0        0        0       0         1     0     1       0         0       0
+Motorised control valve (primary side) defective                                       1   0           0        0        0       0         0     0     0       0         0       1
+Motorised control valve (primary side): Actuator defective                             2   1           0        0        1       1         1     1     1       1         1       1
+Motorised control valve (primary side): Control valve jams when closed                 1   0           0        0        0       0         0     0     0       0         0       0
+Motorised control valve (primary side): Incorrect setting of the actuator travel time  1   0           0        0        0       0         0     0     0       0         0       0
+Safety relief valve: Water loss, does not close properly                               2   1           1        0        0       1         0     0     0       1         0       0
+Shut-off valve closed                                                                  2   1           0        0        0       0         0     0     0       1         0       0
+Strainer (secondary side): Poor flow rate                                              1   1           0        0        0       0         0     1     0       1         0       0
+Temperature monitor/controller defective                                               1   0           0        0        1       1         1     1     1       1         1       1
+unknown                                                                                6   0           1        0        0       0         1     0     1       1         1       1

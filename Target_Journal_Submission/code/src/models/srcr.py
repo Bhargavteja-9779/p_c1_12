@@ -98,16 +98,22 @@ class FleetQuantileModel:
 
 
 def compose(comp: pd.DataFrame, gate=True, one_sided=True, local=False, n0_days=14, win_days=60,
-            min_scale=0.5) -> pd.Series:
+            min_scale=0.5, p_ret="both") -> pd.Series:
     """Combine loop components into one score (1 + z, max over loops).
     gate: ignore a loop while its setpoint <= SP_OFF. one_sided: heating/DHW loops score shortfall only.
+    p_ret: "both" | "low" | "high" | "drop" (round 4: primary return limiter handling).
     local: fleet-prior -> local-posterior calibration of each loop's z with the substation's own PAST daily
     z values (robust median / MAD over the previous win_days days, shrinkage weight w = n / (n + n0_days))."""
     loops = sorted({c.split("__")[0] for c in comp.columns})
     best = np.full(len(comp), np.nan)
     for L in loops:
         zl, zh, sp = comp[f"{L}__zl"], comp[f"{L}__zh"], comp[f"{L}__sp"]
-        z = zl if (one_sided and L != "p_ret") else np.fmax(zl, zh)
+        if L == "p_ret":
+            if p_ret == "drop":
+                continue
+            z = {"both": np.fmax(zl, zh), "low": zl, "high": zh}[p_ret]
+        else:
+            z = zl if one_sided else np.fmax(zl, zh)
         z = pd.Series(np.asarray(z, float), index=comp.index)
         if gate:
             z[sp.to_numpy() <= SP_OFF] = np.nan

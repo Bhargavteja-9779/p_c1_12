@@ -1,0 +1,1062 @@
+Graphical Abstract
+Enabling Predictive Maintenance in District Heating Substations:
+A Labelled Dataset and Fault Detection Evaluation Framework
+based on Service Data
+CyrianaM.A.Roelofs, EdisonGuevaraBastidas, ThomasHugo, StefanFaulstich,
+Anna Cadenbach
+Seite
+ARCANA
+73 Faults 60% faults detected 
+3-5 days before incident report
+93 Substations
+239 years of operation
+Accurate
+Reliable
+Early
+arXiv:2511.14791v2  [cs.SE]  17 Apr 2026
+Highlights
+Enabling Predictive Maintenance in District Heating Substations:
+A Labelled Dataset and Fault Detection Evaluation Framework
+based on Service Data
+CyrianaM.A.Roelofs, EdisonGuevaraBastidas, ThomasHugo, StefanFaulstich,
+Anna Cadenbach
+•Public, service-report–validated labelled dataset of 93 district heating
+substations.
+•Fault labels, metadata, and open-source baseline enable benchmarking.
+•Practical scoring method rewards early and reliable fault detection.
+•Open-source baseline and root-cause-analysis with EnergyFaultDetec-
+tor.
+•The models could detect 60% of the faults before a customer reported
+the problem.
+Enabling Predictive Maintenance in District Heating
+Substations: A Labelled Dataset and Fault Detection
+Evaluation Framework based on Service Data
+Cyriana M.A. Roelofsa,∗, Edison Guevara Bastidasa, Thomas Hugoa, Stefan
+Faulsticha, Anna Cadenbacha
+aFraunhofer IEE, Joseph-Beuys-Straße 8, 34117 Kassel, Germany
+Abstract
+Earlydetectionoffaultsindistrictheatingsubstationsisimperativetoreduce
+returntemperaturesandenhanceefficiency. However, progressinthisdomain
+has been hindered by the limited availability of public, labelled datasets. We
+present an open-source framework combining a service-report-validated pub-
+lic dataset, an evaluation method based on accuracy, reliability, and earliness,
+and baseline results implemented with EnergyFaultDetector, an open-source
+Pythonframeworkdevelopedforautomatedanomalydetectioninoperational
+data from energy systems.
+The dataset contains time series of operational data from 93 substations
+across two manufacturers, annotated with a list of disturbances due to faults
+and maintenance actions, a set of normal-event examples and detailed fault
+metadata. WeevaluateEnergyFaultDetectormodels, adaptedandconfigured
+for district heating substations, using three metrics: accuracy for recognis-
+ing normal behaviour, an eventwise F-score for reliable fault detection with
+few false alarms, and earliness for early detection. The framework also sup-
+ports root cause analysis using ARCANA, a feature-attribution method for
+autoencoders. We demonstrate three use cases to assist operators in inter-
+preting anomalies and identifying underlying faults. The models achieve high
+normal-behaviour accuracy (0.98) and eventwiseF0.5 of 0.83 and could detect
+60% of the faults in the dataset before the customer reported a problem, with
+an average lead time of 3 to 5 days.
+∗Corresponding author
+Email address:cyriana.roelofs@iee.fraunhofer.de(Cyriana M.A. Roelofs)
+Integrating an open dataset, metrics, open-source code, and baselines
+establishes a reproducible, fault-centric benchmark with operationally mean-
+ingful evaluation, enabling consistent comparison and development of early
+fault detection and diagnosis methods for district heating substations.
+Keywords:District Heating, Fault Detection, Dataset, Predictive
+Maintenance, Machine Learning, District heating substation
+Nomenclature
+DHdistrict heating
+DHSdistrict heating substation
+AEautoencoder
+NBMnormal behaviour model
+MSEmean square error
+RMSEroot mean square error
+REreconstruction error
+MLmachine learning
+FDDfault detection and diagnosis
+DHWdomestic hot water
+2
+1. Introduction
+District heating plays a crucial role in the large-scale integration of re-
+newable energy for environmentally friendly heat supply [1]. The increase
+of efficiency in district heating networks and the decrease of distribution
+temperatures [2] is essential to unlock that potential.
+Detecting faults in district heating substations is key for both technical
+and operational reasons. On the one hand, identifying and correcting faults
+that lead to elevated return temperatures is essential for enabling lower sup-
+ply temperatures across the network, which in turn reduces distribution flows
+and enhances the overall energy efficiency of the system [3]. On the other
+hand, as the number of substations continues to grow [4], and due to the lack
+of appropriate monitoring tools and service personnel, utilities face increas-
+ing pressure to operate and maintain these assets efficiently while ensuring a
+secure and reliable heat supply.
+Digitalisationmeasuresforthecollectionofcustomers’operatingdataand
+novel machine learning methods enable the development of data-driven solu-
+tions for anomaly detection [5]. These developments together with efforts in
+the digitalisation and structuring of maintenance information in substations
+[6], lay the basis for the development of methods for early fault detection
+and diagnosis, enabling utilities to optimise their maintenance strategies and
+implement predictive maintenance in their O&M processes.
+Many different failure modes can occur in substations. Månsson et al.
+[7] identify six fault categories based on surveys of practitioners in Sweden:
+heat exchangers, control systems and controllers, actuators, control valves,
+the customer’s internal heating system and leakages. The study reports that
+leakages are the most common category of faults, followed by faults in the
+customers’ internal heating systems. Gadd and Werner [8] focus on the
+effects on the efficiency and divide faults into three groups: unsuitable heat
+load pattern, low average annual temperature difference, and poor substation
+control, with 70% of the analysed Swedish substations showing low annual
+temperature difference. Østergaard et al. [9] and Leoni et al. [10] similarly
+report frequent issues with heating system components, control valves and
+actuators, incorrect setpoints, and leakages.
+While the causes of substation faults are manifold, not all failure modes
+are relevant to early fault detection methods and, consequently, predictive
+maintenance. Some have clear, monitorable signatures in operational data,
+while others require additional sensors or organisational measures on the
+3
+building side [11]. Predictive maintenance depends on early, reliable, and
+interpretable detection. fault detection and diagnosis (FDD) systems provide
+these signals from operational data, ideally with enough lead time to act.
+However, progressinintelligentFDDfordistrictheatingsubstation(DHS)
+is hindered by the lack of public, labelled, real-world datasets and consistent
+evaluation metrics [12]. Most studies rely on a single, generally unlabelled
+dataset provided by a cooperating utility company [5], while public datasets
+are often simulation-based to protect customer privacy. As each study uses a
+different dataset and evaluation metric, it is difficult to compare the results
+of available methods in the literature.
+Thisstudyprovidesaframeworkfortheevaluationofearlyfaultdetection
+methods, enabling the comparison between approaches and, consequently,
+promoting the development of FDD techniques for DHS. The contribution
+and novelty of this study comprise three elements:
+1. The main contribution of this paper is the publication of a labelled
+dataset1 containing time series of 93 DHS belonging to one operator.
+This includes 10-minute operational data, timestamps of disturbances
+due to maintenance tasks, incident reports from customers, and derived
+fault labels. To the best of our knowledge, this is the first publicly
+available, service-report–validated labelled dataset for fault detection
+in DHS.
+2. Additionally, we provide an open-source fault detection baseline for
+DHS using the ‘EnergyFaultDetector’2, an autoencoder-based fault de-
+tection Python framework, originally developed for early FDD in wind
+turbines [13], and here adapted and validated for DHSs.
+3. We define an evaluation protocol for early fault detection in DHS based
+on three metrics inspired by the CARE score [14]: accuracy, reliability
+and earliness. We adapt the earliness score to work with datasets where
+the exact fault onset is unknown by comparing the detection timestamp
+with an actionable window before the incident report. Together with
+the dataset and baseline, this yields a reproducible, fault-centric bench-
+mark for early fault detection in DHS.
+1The PreDist dataset v1 can be found on Zenodo:https://doi.org/10.5281/zenodo.
+17522255under the CC BY 4.0 license.
+2Github:https://github.com/AEFDI/EnergyFaultDetector/tree/v0.3.0
+4
+2. Related work
+2.1. Fault detection in district heating substations
+A thorough overview of methodologies and datasets used is provided by
+Neumayer et al. [5], while van Dreven et al. discuss recent trends and
+practical challenges for intelligent FDD in district heating [12].
+Statistical and rule-based methods are a common baseline because they
+are simple, interpretable and require little labelled data: manual visual in-
+spection [8], fixed or adaptive thresholds (e.g. three-sigma) [3], piecewise
+linear regression [8, 15, 16] and simple physical models based on performance-
+signature metrics (such as∆T or excess flow) [17] are typically used to
+identify sub-optimally performing substations. These methods work well
+for broad screening and operator workflows but struggle with seasonality,
+heterogeneous user behaviour and coarse sampling (many studies use hourly
+billing data), which leads to high false-alarm rates or the need for substantial
+manual follow-up [5].
+From roughly 2018 onwards there has been a clear shift towards machine
+learning (ML) approaches as more metering data became available [12]. How-
+ever, because labelled faults are scarce most work remains unsupervised or
+semi-supervised. Typical unsupervised and semi-supervised techniques in-
+clude clustering and pattern mining [18, 19], regression with residual analysis
+[3, 15, 16] and outlier detection algorithms such isolation forests [20].
+Deep learning methods, such as autoencoder (AE), have recently been in-
+vestigated for reconstruction-based anomaly detection and latent-space fea-
+ture learning in substations [21, 22]. These models can capture complex,
+non-linear multivariate temporal signatures and improve sensitivity to sub-
+tle faults, but they typically require more data and explainability measures
+due to their blackbox nature.
+2.2. Public datasets
+As mentioned in the introduction, many publicly available datasets are
+simulation-based. One example is presented by Vallée et al. [23] and is partly
+available on Kaggle [24]. It was created as a reference dataset for fault de-
+tection in district heating (DH) systems, covering production, distribution,
+substations and storage with diverse fault profiles and reproducible genera-
+tion procedures. The authors benchmark several classical ML models and
+report strong performance on global-efficiency faults but difficulty detecting
+5
+thermal-loss faults, and they show encouraging preliminary transfer results
+to limited real-world data.
+Van Dreven et al. [25] present a systematic laboratory emulation of a
+generic district-heating substation (connected to a climate chamber) to gen-
+erate labelled time-series data for five fault types, validated against two real
+substations. Using a fault-detection pipeline (isolation forest and one-class
+SVM for detection, random forest and SVM for diagnosis), they show that
+higher sampling frequencies improve performance (5-min optimal for detec-
+tion, 1-min for diagnosis), while noting limitations in emulating long-term
+and user-driven behaviours.
+Next to simulation-based and laboratory-emulation-based datasets, re-
+cent work addresses the lack of shareable labelled data by generating syn-
+thetic data based on a large, non-public, fully reviewed dataset (ILSE) [26].
+The authors explore three ML-based synthetic data generation approaches:
+time-series forecasting (FCNN/LSTM), GAN-based generation (TimeGAN),
+and fault-signature transfer with Transformer models. However, synthetic
+fault data were not yet reliable enough to train fault detectors, and fault-
+signature transfer struggled due to high fault-variance and limited samples.
+This highlights the current limitations of synthetic data for FDD in DHS,
+and it further motivates public, service-validated labelled datasets and re-
+producible benchmarks.
+To the best of the authors’ knowledge, there is currently no publicly
+available, real-world annotated dataset for fault detection in district heating
+substations.
+3. PreDist Dataset
+The PreDist dataset consists of time series containing raw operational
+data from 93 DHS with control units by two manufacturers,M1andM2,
+and operated by a single utility. In addition, the time series are annotated
+with maintenance and incident reports.
+All DHS present in the dataset are indirectly connected to the district
+heating network and are of one of the following configuration types:
+•SH + DHW:onespaceheatingcircuitandonedomestichotwater(DHW)
+circuit with storage tank
+•SH: only one space heating circuit
+6
+•SH + DHW with sub-circuits: one space heating circuit with addi-
+tional sub-circuits and one DHW circuit with storage tank
+•SH with buffer tank: one space heating circuit with a buffer tank
+•SH with sub-circuits: one space heating circuit with additional sub-
+circuits
+The main configurations present in the dataset areSH + DHWandSHrep-
+resenting together 76% of all DHS. Figure 1 shows the share of configuration
+types across all substations. While we cannot assess whether this configura-
+tion mix is representative for other district heating networks due to a lack of
+public statistics for Germany or other countries, it is representative for the
+operator who provided the data.
+A schematic representation of configurationsSH + DHWandSHis shown in
+Figure 2. Both configurations exhibit one heating circuit indirectly connected
+to the DH network by means of a heat exchanger. The main components of
+the circuit are a motorised control valve on the primary side and a circulation
+pump on the secondary side. ConfigurationSH + DHWhas additionally a
+DHW circuit indirectly connected to the DH network by means of a separate
+heat exchanger. The main components of the circuit are a motorised control
+valve on the primary side, and on the secondary side a 3-way-valve, a storage
+tank and a charging pump.
+Typical operating ranges in the PreDist dataset are as follows: primary
+supply temperatures mostly between 80
+◦
+C and 110
+◦
+C, with return tempera-
+tures typically 20 to 40K lower. The secondary space-heating supply temper-
+atures vary between roughly 30
+◦
+C and 70
+◦
+C depending on outdoor conditions
+and control unit settings.
+The data are anonymised by removing personally identifiable information,
+such as names, phone numbers, and addresses, from the fault descriptions.
+Problem descriptions and maintenance measures were combined and sum-
+marised, and feature names in the time series were standardised for both
+manufacturers. All timestamps were shifted by a single, undisclosed con-
+stant offset of several years, applied consistently across all substations and
+data sources to preserve relative timing. The shift preserves time-of-day,
+day-of-week and seasonal patterns.
+7
+Figure 1: Overall share of configuration types in the dataset, covering both manufacturers.
+P1
+P2
+V1
+V2
+1
+2
+3WV
+HX1
+HX2
+Figure 2: Schematic representation of the DHS configurationSH + DHW, which is most
+common in the PreDist dataset. The figure shows the space heating circuit (1) and the
+DHW circuit (2), both indirectly connected to the district heating network via a heat
+exchanger, as well as their main components. Circuit (1) comprises control valve V1 and
+circulation pump P1; circuit (2) comprises control valve V2, charging pump P2, a storage
+tank, and a three-way valve (3WV). The configurationSHconsists only of circuit (1).
+8
+3.1. Operational data
+The time series have a 10-minute resolution and contain instantaneous
+measurements(i.e., not10-minuteaggregates)suchasprimaryandsecondary
+supply temperatures, setpoints (e.g. for the secondary supply temperature),
+and status values (e.g., circulation pump on/off). Depending on the configu-
+ration of the substation, e.g. whether a separate DHW circuit is present, the
+number of features varies across substations. For bothM1andM2datasets,
+a list of features and their units of measurement is provided as CSV files with
+the dataset on Zenodo.
+The lengths of the time series also vary across substations: the number
+of substations connected to the network increased over time, so some series
+span multiple years while others span less than one year. An overview of the
+dataset’s statistics is shown in Table 1, showing the number of substations,
+average time series length, total time series length, number of features, aver-
+age number of annual incident reports and maintenance tasks and the average
+completeness of the time series. Completeness is defined as the percentage
+of available data points with respect to the expected number of samples at a
+10-minute sampling rate, taking all features from both the energy meter and
+the control unit into account. If only the control unit or only the meter data
+are present, this is counted as an incomplete timestamp. The time series
+are the raw records provided by the utility and they may contain implausi-
+ble values, missing values, and data gaps that must be accounted for when
+analysing the data and developing ML models based on this dataset.
+M1 M2Total
+# substations 35 58 93
+Avg time series length (years) 4.1 1.6 2.6
+Total time series length (years) 144 95 239
+# Substations with time series≥1 year 30 19 49
+# features 10 – 24 13 – 41 10 – 41
+Avg # incident reports / year 0.74 2.0 1.5
+Avg # maintenance tasks / year 0.85 1.4 1.2
+Avg completeness (%) 82 97 91
+Table 1: Overview of the dataset. Averages are calculated across all substations.M1and
+M2refer to the two different control-unit manufacturers.
+9
+Figure 3: Number of faults per problem category and manufacturer (designated byM1
+andM2) in the dataset.
+3.2. Maintenance and incident reports
+In addition to the time series, we provide a list of disturbances and a
+separate list of incident reports. The disturbances list records timestamps for
+incident reports, labelled as ‘fault’, and for maintenance actions (preventive
+or corrective), labelled as ‘task’. Disturbances can be used to select time
+ranges without faults or maintenance interventions that represent expected
+normal behaviour.
+The incident reports list comprises reports with at least two weeks of
+operational data preceding the report, in which a fault was confirmed and
+subsequently corrected. Faults range from incorrect control unit or compo-
+nent settings to broken components that required replacement. Note that
+these faults are based on customer-reported incidents (i.e., issues affecting
+comfort). Faults relating solely to reduced efficiency may not be labelled in
+this dataset, as they may go unnoticed by customers.
+For each fault, a problem category (e.g. no heat) and, if known, a short
+description of the underlying cause and solution are provided. An overview
+of the number of faults per category is shown in Figure 3. In addition,
+we mark reports for which early fault detection is not possible from a data
+perspective. Examples include reports lacking normal-behaviour data prior
+to the incident and repeat incident reports, for which only the first occurrence
+can be considered. Because these reports may still be valuable (e.g., for
+testing fault diagnosis tools), we did not remove them from the final report
+list.
+Each fault has been assigned, where possible, a fault label and a moni-
+10
+Figure 4: Fault label counts for incident reports of manufacturerM1, showing their cate-
+gorisation in monitoring potential.
+toring potential, aligned with [11]. Following [11], the monitoring potential
+is rated on a 1–5 scale that reflects whether detection is possible before or
+only after fault manifestation and whether existing instrumentation suffices
+or additional effort is required. Faults that can be detected before the failure
+occurs have a higher rating than faults that can only be detected after the
+failure. Additionally, faults that can be detected with existing sensor mea-
+surements have a higher rating. For analysis, we bin the numeric rating into
+two classes: “high” (rating≥2.5) and “low” (rating<2.5), reflecting suit-
+ability for data-driven detection with available measurements. If the fault
+could not be assigned a fault label, the label and monitoring potential are
+set to ’unknown’. Faults labeled ‘unknown’ were confirmed and corrected,
+but the underlying technical cause could not be clearly identified from the
+available information. These faults are included as positive events for fault
+detection evaluation. Ratings were assigned based on incident descriptions,
+maintenance logs, substation configuration, and visual inspection of time se-
+ries where necessary. Ambiguous cases were given a more generic fault label
+and an averaged rating across plausible failure modes. Figures 4 and 5 show
+the overview of fault label occurrences, as well as their monitoring potential,
+for substations of manufacturersM1andM2respectively.
+The categorisation of incident reports into fault labels and monitoring
+potential was sometimes ambiguous and required assumptions. These labels
+and ratings support evaluation and interpretation and should be treated as
+expert estimates rather than ground truth. Pump-related issues, whether
+changes in settings or defects, were assigned one monitoring-potential rating
+11
+Figure 5: Fault label counts for incident reports of manufacturerM2, showing their cate-
+gorisation in monitoring potential.
+in line with [11]. The monitoring potential of component and non-specific
+leakages were set to 1.75, the mean rating for external leakages. When re-
+ports lacked detail, we used a general label and the average rating across
+plausible faults. A wrong adjustment of the needle throttle valve in the
+differential pressure regulator was mapped to “Incorrect setting of the dif-
+ferential pressure regulator,” which may overestimate monitoring potential if
+the issue was noise or minor oscillations. Some reports could not be labelled
+due to insufficient information.
+An important aspect of the quality of the dataset is that the distribution
+of faults is well balanced across all DHS configuration types present in the
+dataset. As can be seen in figure 6, the share of configuration types across
+faults is similar to the share of configuration types across substations for
+both manufacturers. It should be noted that not all configurations listed in
+3 are present in those figures, since not all substations exhibit faults within
+the time range of sensor data.
+Furthermore, for each fault we marked a period prior to the incident
+reportasapossible‘anomaly’onsetifthiswasvisibleinthedataandmatched
+technically expected behaviour. The end of the anomaly was set to the
+timestamp of the subsequent maintenance action plus four hours, to ensure
+the action is completed and to allow the substation to stabilise with new
+settings or repaired/replaced components. These timestamps can be used
+for data preparation, such as filtering normal behaviour for the development
+of normal behaviour models (NBMs) for early fault detection.
+We also provide a set of pre-defined normal events. For these intervals,
+12
+Figure 6: Share of configuration types across faults for manufacturersM1andM2.
+well-performing fault detection algorithms should not raise false alarms. The
+labelled fault and normal events can be combined into a balanced evaluation
+dataset for early fault detection. The normal events are selected across all
+seasons, primarily for substations in the reports list and several additional
+substations without faults. These intervals are free from maintenance tasks
+and faults.
+In Table 2 an overview of the faults and normal events is provided.
+M1 M2Total
+# faults 33 40 73
+# faults with a high monitoring potential 26 24 50
+# faults with a low monitoring potential 5 11 16
+# faults with unknown monitoring potential 2 5 7
+# pre-defined normal events 30 35 65
+Table 2: Overview of the faults and normal events.M1andM2refer to the two different
+control-unit manufacturers.
+4. Methodology for the Evaluation of FDD methods
+To illustrate how the PreDist dataset can be used to develop early fault
+detection models, we apply the EnergyFaultDetector, an open-source Python
+package developed for automated anomaly detection in operational data from
+energy systems. The framework uses an AE as NBM to detect deviations
+13
+from normal behaviour. It was originally developed by the authors for early
+fault detection in wind turbine data [13] and has been adapted here for DHSs.
+First, we select faults that are relevant for early fault detection and pre-
+process the data in Section 4.1. Next, the model used to detect anomalies is
+described in Section 4.2. The evaluation metrics are explained in Section 4.3
+and the hyperparameter optimisation is discussed in Section 4.4. Finally, we
+introduce the method used for root-cause analysis in Section 4.5
+4.1. Data selection and preparation
+Because we evaluate an early fault detection model, we select faults for
+which early detection may be feasible. We include only faults with at least 14
+days of training data representing normal behaviour. We filter repeat reports
+(some faults have multiple reports) and consider only the first occurrence,
+as our goal is to detect the problem before the customer reports a fault. In
+addition, we remove reports concerning heat-meter battery replacement and
+reports where the cause of the fault is in the building heating system, i.e.
+not in the DHS; the former are likely preventive, and the latter cannot be
+detected due to a lack of customer-side measurements. The datasets leading
+to a fault are hereafter called ‘anomaly events’, while datasets in which no
+anomalies are expected in the test data are used as is and are hereafter
+called ‘normal events’. ForM1, this leaves 29 reports and forM226 reports.
+Of these reports, 22 and 15 have a high monitoring potential forM1and
+M2, respectively. All normal events (see Section 3.2) were selected for the
+evaluation: 35 forM1and 30 forM2.
+For each selected anomaly and normal event, a training dataset is deter-
+mined based on time series visualisations and fault descriptions. If a previous
+fault or maintenance measure changed normal behaviour, the training data
+starts after that point, otherwise, we select the last 2 years up to 2 weeks
+before the event to be predicted. If less data are available, we select data
+from the start of the time series until 2 weeks before the event. In some
+cases, the first days to weeks are removed because the commissioning of the
+substation involved frequent re-parametrisation of the control unit and no
+stable normal behaviour can be selected.
+Next, the selected training datasets are prepared for training NBM mod-
+els. If any incident report or maintenance task occur in the training data,
+we filter out any possible anomalous behaviour as follows: If any anomalous
+behaviour is observed before an incident report, we filter out this period up
+to the subsequent maintenance action plus four hours to account for time
+14
+it takes to complete the work. We exclude 48 h before reports without vis-
+ible anomalies and assume the fault was fixed 24 h after the report if no
+maintenance is logged.
+Afterwards, features are selected for the models. Features that are con-
+stant throughout the training period and features that are missing in more
+than 80% of the training period are dropped. Any other missing values are
+imputed with a mean value of the training data. Finally, features are scaled
+to zero mean and unit standard deviation.
+4.2. Autoencoder-based anomaly detection
+The EnergyFaultDetector uses an AE as NBM at its core. The AE is
+a type of neural network that learns to compress and reconstruct the input
+data. As the AE is trained on data representing normal behaviour, the
+model learns to reconstruct normal data and will show a larger reconstruction
+error (RE) for behaviour that deviates from normal behaviour.
+Anomalies are detected when the average RE (anomaly score) exceeds a
+thresholdt AE. We consider two anomaly score types: the root mean square
+error (RMSE) ofREi and the Mahalanobis distance,
+MDx =
+p
+(˜x−x)T Σ−1(˜x−x),(1)
+whereΣis the covariance matrix of the training errors. Unlike the RMSE,
+the Mahalanobis distance accounts for correlations between the REs of the
+individual features. However, since the covariance matrixΣcan be hard
+to estimate reliably for high-dimensional data, we treat the score type as a
+hyperparameter. We set the thresholdtAE to the 99th quantile of the training
+anomaly scores.
+Finally, to suppress point anomalies, we use a criticality counterC: it
+increases by one when an anomaly is detected during expected normal op-
+eration, decreases by one if no anomaly is detected, and remains constant
+otherwise (i.e., an anomaly detected during a maintenance task). An event
+isflaggedasanomalousifthemaximumcriticalityC max satisfiesC max≥C thr.
+Otherwise, the event is recognised as normal behaviour.
+We train one EnergyFaultDetector model per event, using a generic model
+configuration per manufacturer. We test three AE variants: a default AE,
+a conditional AE with hour-of-day and day-of-week as conditional features,
+and a conditional “day-of-year” AE that additionally uses day-of-year. Time-
+context features are encoded cyclically (sine/cosine) and concatenated to
+both the encoder input and the decoder input.
+15
+4.3. Evaluation
+We evaluate models using three metrics - accuracy, reliability and earli-
+ness - taking inspiration from the CARE score [14], but we do not compute
+the composite CARE value and we omit coverage because anomaly onsets are
+generally unknown in this dataset. A limitation of CARE is its dependence
+on ground truth derived from annotated onsets. This only affects coverage
+and earliness, both of which rely on the anomaly onset time.
+Without a ground-truth onset coverage cannot be computed, and earli-
+ness requires a redefinition. From an O&M perspective, we are ultimately
+interested in detecting the earliest actionable anomaly before the customer
+complains. Therefore, we remove dependency on annotated onsets by defin-
+ing the detection timetdetect as the earliest timestamp in the test window at
+which the criticality crossesCthr. We normalise earliness by a window length
+W, the period in which detection remains actionable:
+E= max
+
+0,min
+
+1,treport−t detect
+W
+
+,(2)
+wheret report is the incident report timestamp. If no detection occurs within
+the test data (i.e., criticality never crossesCthr), we setE= 0for that event.
+ThedesireddetectiontimeWshouldbesettoavaluewhichmakesdetections
+actionable and is use-case specific. In this case we setW= 24 h.
+Note thatWshould not be longer than the shortest anomaly event (if
+an anomaly onset is known) or the test window length, so the event can
+be detected within the test window. It should also ideally not exceed the
+maximum achievable lead timeL∗ =t ∗
+detect−t report, wheret∗
+detect is the earliest
+detectiontime. ForagivenC thr, thedetectiondelayisd detect =C thr/f, where
+fis the sampling frequency of the data. The earliest detection time is then
+t∗
+detect =t test_start +d detect. This ensures it is possible to reachE= 1and
+all events are compared against the same maximum score. Figure 7 shows a
+schematic timeline visualisingWandd detect.
+ReliabilityRis kept as an eventwise F β score, where we setβ= 0.5,
+to favour precision over recall. We compute eventwiseF 0.5 by counting a
+true positive if an anomalous event’s criticality crossesCthr within its test
+window, a false negative otherwise, and a false positive if a normal event
+crossesC thr (true negative otherwise). We useRas our main metric to set
+theC thr and evaluate the models. In addition, theEis reported, to show
+how long beforetreport a fault can be detected.
+16
+Figure 7: Schematic timeline, illustrating detection delayddetect, earliest detection time
+t∗
+detect and desired lead timeWbefore an incident report. In Figure bd detect andW
+overlap, so earliness can never reach 1.
+To evaluate the models’ ability to recognise normal behaviour correctly
+we evaluate the pointwise accuracy A as in the CARE score and report the
+average over all normal events.
+We evaluate each event on a fixed test window of 7 days. For anomalous
+events, this window ends at the event report time. One exception to this
+rule is a fault that is visible for more than 7 days. Here, we evaluate only
+the first 7 days, since an effective early detection system should detect the
+fault within that period. An anomalous event is considered ‘detected before
+the customer report’ if the criticality thresholdCthr is crossed at least once
+within the 7-day test window preceding the incident report timestamp.
+4.4. Hyperparameter optimisation
+We tune hyperparameters of the AE models in two phases. In the first
+phase we tune the AE’s architecture to learn different types of normal sub-
+station behaviour well. We minimise validation mean square error (MSE)
+using a 80/20 train–validation split within each event.
+In the second phase, we calibrate the fault detection performance. We
+tune hyperparameters that affect detection performance using the earliness
+score on anomalous events with a provisionalCthr = 36, while keeping point-
+wise accuracy on normal events≥0.97to limit false alarms.
+Table 3 reports the final hyperparameters for each manufacturer. Because
+each substation has a different number of input features, we use a relative
+value of the latent dimension, reported as a fraction of the input features and
+then rounded to an integer.
+We perform hyperparameter optimisation on the default AE setup, then
+reuse the same configuration for the conditional AEs. The size of the la-
+tent dimension applies only to actual input features (measurements and set-
+17
+M1 M2
+# units (hidden layers) 64, 32 64, 32
+latent space dimension 0.65 0.25
+learning rate 0.00045 0.00053
+noise 0.05 0.15
+batch size 256 256
+anomaly score Mahalanobis RMSE
+Table 3: Hyperparameters of the fault detection models for each manufacturer. Noise is
+used as a regularisation hyperparameter. It represents Gaussian noise added to the input
+data of the AE.M1andM2refer to the two different control-unit manufacturers.
+points). Conditional features are not compressed. Because several fault types
+occur only once, we do not hold out a separate test set for hyperparameter
+optimisation, which may lead to overfitting. To mitigate this, we keep a
+single configuration per manufacturer across all substations. Per-substation
+tuning would likely improve scores but increases overfitting risk.
+For the criticality thresholdCthr, we performed a grid search over integer
+values from 1 to 100 using 5-fold stratified cross-validation by event label,
+selecting the value that maximised reliability averaged across folds. The
+selectedC thr per model and manufacturer is reported in Table 4.
+ModelM1 M2
+Default AE 17 24
+Conditional AE 12 19
+Day-of-year AE 9 8
+Table 4: Criticality threshold for all three model variants tested.M1andM2refer to the
+two different control-unit manufacturers.
+4.5. Root-cause analysis
+For post-hoc root-cause analysis on detected anomalies we apply AR-
+CANA, which is integrated in the EnergyFaultDetector. ARCANA is a fea-
+ture attribution method developed for AEs that helps to find a possible root
+cause for detected anomalies [13]. The method is based on the assumption
+that faults cause a deviation in only a small subset of features. For each input
+vectorx, ARCANA finds a sparse bias vectorxbias such that the corrected
+18
+inputx corr =x+x bias is reconstructed with a low MSE while keepingxbias
+sparse. To findxbias, ARCANA minimises
+L= (1−α) 1
+2∥xcorr−AE(x corr)∥2
+2 +α∥x corr−x∥ 1,(3)
+where AE is the AE model. In our experiments we useα= 0.8and initialise
+xbias with the feature-wise reconstruction errorRE.
+We compute feature importances by aggregating the bias vectors over a
+detected anomaly window: first we average the absolute bias values over the
+window to obtain unnormalised importances, then we normalise them so that
+their sum equals one. Features are ranked by these normalised importances
+and the top-3 features are reported as candidate root causes. These features
+are visualised together with their original and reconstructed time series to
+facilitate operator interpretation.
+5. Results and discussion
+As mentioned in Section 4.2, we compared three model variants: a default
+AE model, a conditional AE that uses day-of-week and hour-of-day features
+as conditional features, and a conditional AE which also takes the day-of-year
+into account, which we refer to as the ‘day-of-year AE’.
+5.1. Overall results
+The confusion matrices for all six models are shown in Figures 8 and 9.
+For bothM1andM2datasets the conditional AE models perform slightly
+better than default AE models. The day-of-year AE seems to perform best
+for both datasets, however, this is probably caused by the small amount of
+training data available for anomalous events. In the case ofM2, an average
+of 310 days of training data is available for anomalous events, whereas for
+normal events an average of 704 days is available. ForM1, the averages are
+588 for anomalies and 576 days for normal events. Although accounting for
+day-of-year can help, short training periods mean that detections may reflect
+seasonal changes rather than faults.
+An overview of accuracy on normal events and reliability is shown in
+Tables 5 and 6 for datasetsM1andM2, while Table 7 shows the results
+averaged over both datasets. Note that the reliability score is overestimated,
+since we use a balanced dataset to calculate the scores. In reality, the frac-
+tion of faults is much lower, which might lead to an overestimation of the
+19
+Figure 8: Results for the three models for theM1dataset.
+Figure 9: Results for the three models for theM2dataset.
+precision and thereby the reliability reported. Because there is no canoni-
+cal normal-to-fault ratio, we retain a 50/50 split. To aid interpretation, we
+also report eventwise precision and recall and note that precision is likely
+lower under realistic class imbalance. In general, the conditional AE-based
+Model A R Precision Recall E L (d)
+Default AE 0.98±0.01 0.90 1.00 0.66 0.59±0.16 2.8±1.2
+Conditional AE 0.98±0.01 0.88 0.95 0.69 0.73±0.17 4.0±1.0
+Day-of-year AE 0.98±0.01 0.94 1.00 0.76 0.81±0.16 4.9±0.9
+Table 5: Results for the three models on theM1dataset. Reliability is eventwiseF 0.5,
+precision and recall are also computed eventwise. Accuracy is the average pointwise ac-
+curacy on normal events. Earliness is the average earliness score on anomaly events. The
+lead timeLis an average over detected faults only. For accuracy, earliness, and lead time,
+95% confidence intervals across events are reported.
+models outperform the default AE on reliability and earliness at compara-
+ble accuracy. The earliness score and the average lead time are better for
+the conditional AE models, due to the optimal threshold being lower, i.e.
+the models are more sensitive to a change in behaviour than the default AE
+20
+Model A R Precision Recall E L (d)
+Default AE 0.98±0.01 0.68 0.90 0.35 0.25±0.16 2.7±2.1
+Conditional AE 0.98±0.01 0.71 0.85 0.42 0.35±0.19 3.7±1.8
+Day-of-year AE 0.96±0.01 0.75 0.77 0.65 0.64±0.19 5.4±0.9
+Table 6: Results for the three models on theM2dataset. Reliability is eventwiseF 0.5,
+precision and recall are also computed eventwise. Accuracy is the average pointwise ac-
+curacy on normal events. Earliness is the average earliness score on anomaly events. The
+lead timeLin days is an average over detected faults only. For accuracy, earliness, and
+lead time, 95% confidence intervals across events are reported.
+Model A R Precision Recall E L (d)
+Default AE 0.98±0.01 0.82 0.97 0.51 0.39±0.13 3.2±1.0
+Conditional AE 0.98±0.01 0.83 0.92 0.60 0.54±0.13 4.0±1.0
+Day-of-year AE 0.98±0.01 0.86 0.89 0.75 0.72±0.12 5.4±0.8
+Table 7: Results for the three models on both datasets (micro-averages). Reliability is
+eventwiseF 0.5, precision and recall are also computed eventwise. Accuracy is the average
+pointwise accuracy on normal events. Earliness is the average earliness score on anomaly
+events. The lead timeLin days is an average over detected faults only. For accuracy,
+earliness, and lead time, 95% confidence intervals across events are reported.
+(see Table 4). We also find that the day-of-year AE model detects more
+faults earlier, but with a much lower precision. This is most likely due to
+the earlier mentioned short training periods: this model variant often cannot
+reconstruct the outside temperature, and the accuracy for normal events is
+slightly lower for theM2dataset. We therefore regard the conditional AE
+as the best overall model.
+5.2. High-monitoring potential
+Next, we compare the model performance on earliness and reliability
+across all faults with the model performance for faults with a high moni-
+toring potential, as defined in Section 3.2, only. Some faults rated a high
+monitoring potential are present from commissioning onwards and are there-
+fore not detectable as a deviation from normal behaviour. These are, for
+example, ‘incorrect parametrisation of the control unit’ and ‘misplacement
+of the outdoor temperature sensor’. These are excluded from the high moni-
+toring potential faults, as these should be addressed via installation checks or
+auto-commissioning [11]. This leaves 14 faults for which early fault detection
+21
+Figure 10: Comparison of the earliness score of the three models for both datasets between
+all faults and the faults with high monitoring potential. The reference dotted line is placed
+at the earliness of default AE on all faults.
+is possible with a high monitoring potential for both datasets.
+The results are shown in Figures 10 and 11 for both datasets. The
+faults with a high monitoring potential should be detectable even before the
+actual fault and we therefore expect the models to be able to detect these
+faults earlier. Also, since a high monitoring potential indicates that the faults
+should generally be detectable without additional sensors, a higher reliability
+is expected.
+5.3. Use cases
+Using three example use-cases, we demonstrate how the criticality and
+ARCANA feature importances can be used to support early fault detection
+anddiagnosis. Foreachcase, weanalysethesevendaysprecedingtheincident
+report, compare the three models, and visualise the top-3-ranked ARCANA
+features alongside their reconstructions to guide interpretation.
+The input signals used for the use cases are listed in Table 8. Available
+features differ across DHS due to different configurations (one or two heat
+circuits, space heating or DHW or both, etc.). The complete list of available
+features across all substations in the PreDist dataset are provided with the
+dataset on Zenodo.
+5.3.1. Example 1 -M1- no DHW
+In this use-case, the substation has a combined space heating and DHW
+configuration (SH + DHW, see Section 3). The customer called because of
+lack of hot water. It turned out to be an operating error where the DHW
+22
+Figure 11: Comparison of the reliability score (eventwiseF0.5) of the three models for both
+datasets between all faults and the faults with high monitoring potential. The reference
+dotted line is placed at the reliability of default AE on all faults
+Side Feature Unit Use Case 1 Use Case 2 Use Case 3
+— outdoor temperature°C✓ ✓ ✓
+primary network supply temperature°C✓ ✓ ✓
+primary network return temperature°C✓ ✓ ✓
+primary flow (energy meter) m3/h✓ ✓ ✓
+primary heat power (energy meter) kW✓ ✓ ✓
+primary HC1 return temperature°C✓ ✓ ✓
+primary HC1 return temperature setpoint°C — —✓
+primary HC1 control valve position setpoint % — —✓
+secondary HC1 supply temperature°C✓ ✓ ✓
+secondary HC1 supply temperature setpoint°C✓ ✓ ✓
+secondary HC2 supply temperature°C✓— —
+secondary HC2 supply temperature setpoint°C✓— —
+secondary upper storage temperature°C✓—✓
+secondary lower storage temperature°C✓—✓
+Table 8: Descriptions of input features used across the three example use cases. Check
+marks indicate which features were available in each case. Available features differ per
+substation configuration. HC1 and HC2 refer to heat circuits 1 and 2. Storage tempera-
+tures refer to a either DHW tank (Use Case 1) or a heating buffer (Use Case 3).
+controller was set to night mode, leading to a very low setpoint for the DHW
+storage temperatures. Figure 12 shows a clear increase in the criticality
+trends for all three models approximately 24 hours before the report. For
+all three models, ARCANA assigns the highest importance to the secondary
+supply temperature setpoint for the DHW circuit, which drops abruptly to
+23
+Figure 12: Criticality of the three model variants in the 7 days preceding an incident report
+of datasetM1for ‘no DHW’ (example use-case 1). Multiple deviations from learned
+behaviour are detected before the report. All three models detect a problem 24 hours
+before the report is made, with the default and conditional AE models detecting a change
+in behaviour 5-6 days before the report. After the problem is fixed, the criticality reduces
+to zero again.
+10 ◦C and returns to 65◦C after the controller is reset to automatic, as seen
+in Figure 13. The models fail to reconstruct this step change, which causes
+a high anomaly score. The default AE and the day-of-year AE also detect
+anomalies in the days before the controller setting was changed. The second
+highest importance is assigned to the secondary supply temperature of heat
+circuit 1 for the default and conditional AEs. This turns out to be the cause
+for the default AE and the day-of-year AE to detect anomalies before the
+controller setting was changed. This is due to a changed behaviour in the
+secondary supply temperature in heat circuit 1 as seen in Figure 14, from
+more or less constant to daily oscillations.
+5.3.2. Example 2 -M1- insufficient heat
+For the second example the problem was a defective differential pressure
+regulator. The substation has a combined space heating and DHW configu-
+ration (SH + DHW, see Section 3). The criticality trends, shown in Figure 15,
+rise 3–4 days before the report for all model variants. While the criticality
+of the default and conditional AE models decreases after the problem is ad-
+dressed, the criticality according to the day-of-year AE keeps increasing. As
+the training period was short, and the problem occurs in April, the day-of-
+year AE model likely detects a seasonal change as well, instead of an actual
+problem. ARCANA identifies the primary-side flow as the main driver for
+the detected anomalies. In Figure 16 the time series of the ARCANA top-3
+24
+Figure 13: Top-3 deviating features for example use-case 1 according to the conditional
+AE. The reconstructions of the default AE and conditional AE alongside the actual values
+are shown. Features are sorted by ARCANA importance in descending order. The vertical
+red line represents the time of the incident report.
+Figure 14: Secondary supply temperature of the DHS in use-case 1 during training and
+testing. The behaviour of the secondary supply temperature changes after the training
+period.
+25
+Figure 15: Criticality of the three model variants in the 7 days preceding an incident report
+of datasetM1(example use-case 2). The criticality rises 3 to 4 days before the report
+is made for across all models. For the default and conditional AE models, the criticality
+decreases after the fault is addressed.
+features are shown, alongside the reconstruction of the default AE and the
+conditional AE. It can be seen that the flow is near-zero, which the models
+cannot reconstruct properly. The intermittent zero-flow values are a charac-
+teristic of a failing differential pressure regulator that intermittently restricts
+flow.
+5.3.3. Example 3 -M2- no heat
+The subject of this use-case is a substation with only one heating cir-
+cuit including a buffer storage tank (SH with buffer tank, see Section 3).
+In this event the charging of the storage tank became very slow, leading to
+no space heating. The cause was a malfunctioning charging pump. Fig-
+ure 17 shows rising criticality across all three models, with anomalies flagged
+approximately 10 hours before the report. Since the problem was only par-
+tially addressed, the criticality does not decrease to zero after the report.
+ARCANA feature importances are dominated by the upper storage temper-
+ature (55%), while the heat-circuit-1 control valve set-point and primary-side
+flow contribute substantially less (15% and 12%) to the anomalies detected.
+As shown in Figure 18, the models fail to reconstruct the drop in the upper
+storage temperature, that does not come back up again. After the report the
+problem is addressed, but not yet resolved. A day later the upper storage
+temperature decreases again. The identified abnormal opening of the control
+valve is probably led by the controller trying to achieve the desired upper
+storage temperature, while the charging pump is not capable of delivering
+the required flow. These indications can support in the root-cause analysis
+26
+Figure 16: Top-3 deviating features for example use-case 2 according to the conditional
+AE. The reconstructions of the default AE and conditional AE alongside the actual values
+are shown. Features are sorted by ARCANA importance in descending order. The vertical
+red line represents the time of the incident report.
+of the fault.
+5.4. Limitations and future research
+This dataset and baseline results provide a practical starting point for
+early fault detection in DHS under realistic constraints: limited, noisy, and
+sometimes incomplete training data. The baseline is intended as a reference
+against which new models can be compared. However, several aspects should
+be considered in future work.
+I Limited samples and labels: The dataset contains relatively few events
+per fault label. In addition, the substations differ in configuration (e.g.,
+space-heating only vs. combined space-heating and DHW, presence of
+sub-circuits, etc.) and available signals (see Section 3). Because of
+this sparsity and heterogeneity, we deliberately refrain from reporting
+per-label or per-configuration performance metrics, and instead focus
+on aggregated eventwise results. Configuration-specific statistics can be
+dominated by small-sample effects and by the particular mix of faults
+occurring in each group rather than by the configuration itself. The
+reported overall detection rate of 60% and the aggregate accuracy, relia-
+bility, and earliness values should therefore be interpreted as benchmark
+results for this specific operator and dataset, rather than as a univer-
+sally performance guarantees across all district heating fleets. Future
+27
+Figure 17: Criticality of the three model variants in the 7 days preceding an incident report
+for ‘no heat’ of datasetM2(example use-case 3). All three models detect anomalies 10
+hours before the report is made.
+Figure 18: Top-3 deviating features for example use-case 3 according to the conditional
+AE. The reconstructions of the default AE and conditional AE alongside the actual values
+are shown. Features are sorted by ARCANA importance in descending order. The vertical
+red line represents the time of the incident report.
+28
+work should extend the dataset with additional operators and faults to
+assess generalisation across networks, operating contexts and substation
+types.
+II Normal-event definition and unlabelled faults: Normal events could be
+refined to better represent all stable operating regimes across seasons
+and control modes. An option would be to generate these automatically
+from the time series, based on the incident reports and maintenance
+tasks and evaluate the models’ ability to recognise normal behaviour on
+randomly selected events. However, since the time series may contain
+unlabelled faults, e.g. faults not reported by the customer because they
+did not influence the comfort level, some visual inspection of the select
+normal behaviour time series may still be needed.
+III Data resolution: Due to the 10-minute resolution, it is not possible to
+detect faults such as brief valve oscillations. Some fault types may be
+under-representedordifficulttoconfirm(e.g., progressiveheat-exchanger
+fouling with subtle signatures). A dataset with higher-frequency data
+or targeted event logging would therefore be interesting, to test whether
+these fault types can also be detected beforehand.
+IV Limited training data: As some reports in the dataset only have a small
+amount of training data available, transfer learning strategies, such as
+cross-substation pretraining or domain adaptation between manufac-
+turers, should be researched used to improve early detection results.
+Physics-informed methods should also be explored. For example by em-
+bedding thermal and hydraulic constraints in the AE network or other
+grey-box approaches can regularise learning, enforce physical plausibil-
+ity, and help fault diagnosis.
+V Control parameter drift: In addition, incorrect or drifting parametrisa-
+tion of the control unit (e.g., heating-curve slope and offset) is a common
+cause of sub-optimal operation, contributing to low annual temperature
+differences and elevated return temperatures [3]. As buildings and cus-
+tomer behaviour change over time, initially adequate settings become
+misaligned and should be re-tuned; detecting when control parameter
+updates are needed is not addressed in this work and should be focus of
+future research.
+VI Deployment and operator interaction: The present work evaluates mod-
+els offline; real-time deployment requires context-specific adaptations
+(e.g., hardware, datainfrastructure, maintenanceworkflows)beyondthis
+study’s scope. Future work should bridge detection and action by devel-
+29
+oping operator decision support tools that translate anomaly patterns
+and feature attributions into concrete recommendations (inspection, ad-
+justments, repairs), integrated into existing workflows to ensure timely
+interventions [7].
+6. Conclusions
+This work presents a reproducible early fault detection framework for
+DHSbyintegratingapubliclyavailable, anonymised, service-report–validated
+dataset, anevaluationmethodfocusedonoperationalutility, andopen-source
+baseline implementations with the EnergyFaultDetector, an AE-based early
+fault detection framework for energy systems.
+The central outcome of this work is the publicly available, anonymised
+dataset of 10-minute operational data from 93 DHS from two manufacturers,
+M1andM2. It includes annotations about maintenance tasks, customer
+incident reports, and faults. Annotations include fault descriptions, fault
+labels and monitoring-potential ratings, enabling reproducible benchmarking
+of early fault detection. While limited to a single operator and 10-minute
+sampling the dataset provides a realistic foundation for method development
+and comparison.
+We tested three model variants of the EnergyFaultDetector as baseline
+early fault detection method on this dataset. The conditional AE variants
+outperformed the default AE model, however, the day-of-year AE also had a
+higher false-positive rate and slightly reduced normal-event accuracy onM2.
+The conditional AE achieves high normal-behaviour accuracy and detects
+60% of the faults pre-report, with a high reliability and average lead time of
+about 4 days for detected faults.
+To demonstrate practical value, three case studies apply ARCANA for
+post-hoc root-cause analysis: incorrect night-mode setting for domestic hot
+water, a failing differential pressure regulator, and a malfunctioning storage
+charging pump. In each case, ARCANA highlights the features contributing
+most to the anomalies, consistent with operator findings, supporting diagno-
+sis and actionability.
+Future work should focus on expanding the dataset, e.g., cover more
+fault types, and explore physics-informed models and transfer learning to
+improve fault detection. By coupling an open dataset, transparent metrics,
+and baseline implementations, this benchmark invites consistent comparisons
+and accelerates practical FDD adoption in DH O&M.
+30
+Acknowledgements
+The development of methods presented was funded by the German Fed-
+eralMinistryforEconomicAffairsandEnergy(BMWE)throughtheresearch
+project “PreDist” (grant number 03EN3082). The dataset is based on the op-
+erational and service data provided by enercity Netz GmbH.
+References
+[1] H. Lund, Renewable heating strategies and their consequences for stor-
+age and grid infrastructures comparing a smart grid to a smart energy
+systems approach, Energy 151 (2018) 94–102. doi:https://doi.org/
+10.1016/j.energy.2018.03.010.
+[2] H. Lund, S. Werner, R. Wiltshire, S. Svendsen, J. E. Thorsen,
+F. Hvelplund, B. V. Mathiesen, 4th generation district heating (4gdh),
+Energy 68 (2014) 1–11. doi:10.1016/j.energy.2014.02.089.
+[3] H. Gadd, S. Werner, Achieving low return temperatures from district
+heating substations, Applied Energy 136 (2014) 59–67. URL:https:
+//linkinghub.elsevier.com/retrieve/pii/S0306261914009696.
+doi:10.1016/j.apenergy.2014.09.022.
+[4] Agora Energiewende, Prognos, GEF, Wärmenetze – klimaneutral,
+wirtschaftlich und bezahlbar, Technical Report 335/07-S-2024/DE,
+Agora Energiewende; Prognos; GEF, 2024. Autor:innen: Dr. Noha
+Saad; Nils Thamling; Mohammad Alkasabreh (Prognos); Susanne
+Ochse (GEF). Letzte Überarbeitung: 30. Dezember 2024. Projekt:
+Wärmenetze: klimaneutral, wirtschaftlich und bezahlbar.
+[5] M. Neumayer, D. Stecher, S. Grimm, A. Maier, D. Bücker,
+J. Schmidt, Fault and anomaly detection in district heating sub-
+stations: A survey on methodology and data sets, Energy 276
+(2023) 127569. URL:https://linkinghub.elsevier.com/retrieve/
+pii/S0360544223009635. doi:10.1016/j.energy.2023.127569.
+[6] S. Månsson, I. Lundholm Benzi, M. Thern, R. Salenbien, K. Sernhed, P.-
+O. Johansson Kallioniemi, A taxonomy for labeling deviations in district
+heating customer data, Smart Energy 2 (2021) 100020. doi:https://
+doi.org/10.1016/j.segy.2021.100020.
+31
+[7] S. Månsson, P.-O. Johansson Kallioniemi, M. Thern, T. Van Oevelen,
+K. Sernhed, Faults in district heating customer installations and ways to
+approach them: Experiences from swedish utilities, Energy 180 (2019)
+163–174. doi:https://doi.org/10.1016/j.energy.2019.04.220.
+[8] H. Gadd, S. Werner, Fault detection in district heating sub-
+stations, Applied Energy 157 (2015) 51–59. URL:https:
+//linkinghub.elsevier.com/retrieve/pii/S0306261915009010.
+doi:10.1016/j.apenergy.2015.07.061.
+[9] D.S.Østergaard, K.M.Smith, M.Tunzi, S.Svendsen, Low-temperature
+operation of heating systems to enable 4th generation district heating:
+A review, Energy 248 (2022) 123529. doi:https://doi.org/10.1016/
+j.energy.2022.123529.
+[10] P. Leoni, R. Geyer, R.-R. Schmidt, Developing innovative busi-
+ness models for reducing return temperatures in district heat-
+ing systems: Approach and first results, Energy 195 (2020)
+116963. URL:https://linkinghub.elsevier.com/retrieve/pii/
+S0360544220300700. doi:10.1016/j.energy.2020.116963.
+[11] E. Guevara Bastidas, S. Faulstich, H. Dittmer, M. Neumayer,
+G. S. Mohan, K. Sercan-Calismaz, F. Hosenfelder, T. Gle-
+newinkel, K. Fischer-Florschütz, A. Cadenbach, Prioritisa-
+tion of faults in district heating substations: Towards predic-
+tive maintenance and optimised operation, Energy 333 (2025)
+137210. URL:https://linkinghub.elsevier.com/retrieve/pii/
+S036054422502852X. doi:10.1016/j.energy.2025.137210, publisher:
+Elsevier BV.
+[12] J. Van Dreven, V. Boeva, S. Abghari, H. Grahn, J. Al Koussa, E. Mo-
+toasca, Intelligent Approaches to Fault Detection and Diagnosis in Dis-
+trict Heating: Current Trends, Challenges, and Opportunities, Elec-
+tronics 12 (2023) 1448. URL:https://www.mdpi.com/2079-9292/12/
+6/1448. doi:10.3390/electronics12061448.
+[13] C. M. Roelofs, M.-A. Lutz, S. Faulstich, S. Vogt, Autoencoder-based
+anomaly root cause analysis for wind turbines, Energy and AI 4
+(2021) 100065. URL:https://linkinghub.elsevier.com/retrieve/
+pii/S2666546821000197. doi:10.1016/j.egyai.2021.100065.
+32
+[14] C. Gück, C. M. A. Roelofs, S. Faulstich, CARE to Compare: A Real-
+World Benchmark Dataset for Early Fault Detection in Wind Turbine
+Data, Data 9 (2024) 138. URL:https://www.mdpi.com/2306-5729/
+9/12/138. doi:10.3390/data9120138.
+[15] S. Månsson, K. Davidsson, P. Lauenburg, M. Thern, Automated Sta-
+tistical Methods for Fault Detection in District Heating Customer In-
+stallations, Energies 12 (2018) 113. URL:https://www.mdpi.com/
+1996-1073/12/1/113. doi:10.3390/en12010113.
+[16] F. Theusch, P. Klein, R. Bergmann, W. Wilke, W. Bock, A. We-
+ber, Fault Detection and Condition Monitoring in District Heat-
+ing Using Smart Meter Data, PHM Society European Conference 6
+(2021) 11. URL:https://papers.phmsociety.org/index.php/phme/
+article/view/2786. doi:10.36001/phme.2021.v6i1.2786.
+[17] D. Leiria, K. H. Andersen, S. P. Melgaard, H. Johra, A. Marszal-
+Pomianowska, M. S. Piscitelli, A. Capozzoli, M. Z. Pomianowski, To-
+wards automated fault detection and diagnosis in district heating cus-
+tomers: generation and analysis of a labeled dataset with ground truth,
+in: ProceedingsofBuildingSimulation2023: 18thConferenceofIBPSA,
+2023, pp. 3615 – 3623. URL:https://publications.ibpsa.org/
+conference/paper/?id=bs2023_1576. doi:10.26868/25222708.2023.
+1576.
+[18] E. Calikus, S. Nowaczyk, A. Sant’Anna, H. Gadd, S. Werner, A
+data-driven approach for discovering heat load patterns in dis-
+trict heating, Applied Energy 252 (2019) 113409. URL:https:
+//linkinghub.elsevier.com/retrieve/pii/S0306261919310839.
+doi:10.1016/j.apenergy.2019.113409.
+[19] S. Abghari, V. Boeva, J. Brage, C. Johansson, H. Grahn, N. Laves-
+son, Higher Order Mining for Monitoring District Heating Substa-
+tions, in: 2019 IEEE International Conference on Data Science and
+Advanced Analytics (DSAA), IEEE, Washington, DC, USA, 2019, pp.
+382–391. URL:https://ieeexplore.ieee.org/document/8964173/.
+doi:10.1109/DSAA.2019.00053.
+[20] S. Farouq, S. Byttner, M.-R. Bouguelia, N. Nord, H. Gadd,
+Large-scale monitoring of operationally diverse district heating
+33
+substations: A reference-group based approach, Engineering Ap-
+plications of Artificial Intelligence 90 (2020) 103492. URL:https:
+//linkinghub.elsevier.com/retrieve/pii/S0952197620300117.
+doi:10.1016/j.engappai.2020.103492.
+[21] F. Zhang, H. Fleyeh, Anomaly Detection of Heat Energy Usage in Dis-
+trict Heating Substations Using LSTM based Variational Autoencoder
+Combined with Physical Model, in: 2020 15th IEEE Conference on
+Industrial Electronics and Applications (ICIEA), IEEE, Kristiansand,
+Norway, 2020, pp. 153–158. URL:https://ieeexplore.ieee.org/
+document/9248108/. doi:10.1109/ICIEA48937.2020.9248108.
+[22] Y. Choi, S. Yoon, Autoencoder-driven fault detection and di-
+agnosis in building automation systems: Residual-based and la-
+tent space-based approaches, Building and Environment 203
+(2021) 108066. URL:https://linkinghub.elsevier.com/retrieve/
+pii/S0360132321004686. doi:10.1016/j.buildenv.2021.108066.
+[23] M. Vallée, T. Wissocq, Y. Gaoua, N. Lamaison, Genera-
+tion and evaluation of a synthetic dataset to improve fault de-
+tection in district heating and cooling systems, Energy 283
+(2023) 128387. URL:https://linkinghub.elsevier.com/retrieve/
+pii/S0360544223017814. doi:10.1016/j.energy.2023.128387.
+[24] M. Vallée, T. Wissocq, N. Lamaison, Kaggle Dataset: Fault Detection
+and Diagnosis in District Heating, 2024. URL:https://www.kaggle.
+com/datasets/mathieuvallee/ai-dhc/data.
+[25] J. Van Dreven, V. Boeva, S. Abghari, H. Grahn, J. Al Koussa,
+A systematic approach for data generation for intelligent fault de-
+tection and diagnosis in District Heating, Energy 307 (2024)
+132711. URL:https://linkinghub.elsevier.com/retrieve/pii/
+S036054422402485X. doi:10.1016/j.energy.2024.132711.
+[26] D. Stecher, L. Ziegltrum, P. Reiprich, C. Fuchs, A. Maier,
+J. Schmidt, Neural network synthetic dataset generation for
+fault detection in district heating substations, Smart Energy 20
+(2025) 100206. URL:https://linkinghub.elsevier.com/retrieve/
+pii/S2666955225000346. doi:10.1016/j.segy.2025.100206.
+34

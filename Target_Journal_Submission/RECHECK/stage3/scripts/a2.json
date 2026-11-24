@@ -1,0 +1,10 @@
+["abs:\"heat meter\" AND abs:anomaly",
+ "abs:substation AND abs:\"fault detection\" AND abs:heating",
+ "abs:\"anomaly detection\" AND abs:\"false alarm\" AND abs:\"per year\"",
+ "abs:\"fault detection\" AND abs:\"false alarm\" AND abs:budget",
+ "abs:\"anomaly detection\" AND abs:\"site\" AND abs:generalization AND abs:\"fault\"",
+ "abs:\"event-wise\" AND abs:\"anomaly detection\"",
+ "abs:\"building\" AND abs:\"fault detection\" AND abs:benchmark",
+ "abs:\"time series anomaly detection\" AND abs:benchmark AND abs:\"model selection\"",
+ "abs:\"isolation forest\" AND abs:autoencoder AND abs:\"fault detection\" AND abs:comparison",
+ "abs:\"wind turbine\" AND abs:\"false alarm\""]

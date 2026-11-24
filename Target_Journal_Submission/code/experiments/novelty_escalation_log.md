@@ -83,105 +83,127 @@ families; 6 composed variants evaluated.
  F14 Change primary endpoint emphasis to false alarms at matched recall (better powered; pre-register as
      secondary, already listed in protocol amendments).
 
-## Round 3 plan (hypotheses written BEFORE running; 2026-11-23, new machine, scores regenerated from code)
-Base score for all round-3 variants: srcr_comp composed with gate + one-sided + local (round-2 best, "R2").
- F10 Daily decision unit (inference/protocol): one decision per substation-day ("morning report").
-     Daily score D = 90th percentile of the 10-min score within the calendar day (>= 72 valid steps), alarm
-     raised at the END of the day (00:00 next day; conservative for lead time). Threshold swept on M1.
- F13 Substation-level conformal threshold (theory): alarm on day d if D_d > q_(1-alpha) of the substation's OWN
-     past normal daily scores (previous 365 days, known exclusions removed; split-conformal rank rule
-     k = ceil((n+1)(1-alpha))). If n < 60 own days, the calibration set is the pooled daily scores of the OTHER
-     cross-fitting folds' substations (fleet prior). alpha = B / 365 per day for budget B FA/sub-yr.
-     Guarantee (exchangeable normal days): P(false alarm on a normal day) <= alpha -> E[FA/sub-yr] <= B.
- F12 Under-delivery channel: delivery channel restricted to the low side of heat power (one-sided), and only
-     on heating-season days (24-h mean outdoor temperature < 15 degC); fused with R2 at the daily level by
-     max of fleet-calibrated surprise levels (as fusion.py, daily).
- H3a (F10): at <= 2 FA/sub-yr, daily unit recall >= R2 10-min recall (0.321); falsified if lower.
- H3b (F13): (i) achieved M1 FA/sub-yr within [0.5B, 1.5B] for B in {1, 2, 4} (calibration validity);
-     (ii) share of false alarms from the 5 worst substations drops from 72% (round 1) to < 40%;
-     (iii) recall at the B = 2 conformal setting >= 0.36. Falsified per item.
- H3c (F12): adding the under-delivery channel to F10 raises detected faults at <= 2 FA/sub-yr by >= 2
-     (absolute count) versus F10 alone. Falsified otherwise.
- F11 (second domain, LBNL AHU) deferred to round 4: needs a separate data pipeline.
+## Round 3 plan (hypotheses written BEFORE running, 2026-11-23, new machine; M1 only)
+Diagnosis carried from round 2: recall differences are 1-3 faults (n=28) and cannot carry the paper; the
+better-powered and operator-relevant quantity is the false-alarm rate, and in particular whether an operator
+can SET it in advance (alarm budget) and get it on unseen substations / an unseen manufacturer.
+Families tested this round (ideas #8-#11):
+ F10 Daily decision unit: D_d = 95th percentile of the 10-min composed SRCR score (gate+1s+local) over day d
+     (NaN if < 72 valid steps); alarm active during day d+1 if D_d > thr (causal; consecutive alarm days merge
+     into one episode, then 24 h refractory as before).
+ F13 Fleet conformal alarm budget: thr = empirical (1 - alpha) quantile of D over NORMAL days of the training
+     folds' substations (cross-fitted, never the substation itself), alpha = B / 365.25 for budget B false
+     alarms per substation-year. Zero-shot (no own history needed). Same rule applied to the AE baseline
+     (AE score daily 95th percentile) so the comparison is fair.
+ F13b Substation-adaptive conformal: thr_s(d) = max(fleet thr, own-past (1 - alpha) quantile of D over the
+     substation's previous normal days, used only once >= 1/alpha own normal days exist).
+ F12 Under-delivery channel: delivery channel restricted to 'low' heat power / flow during heating season
+     (outdoor 24 h mean < 12 degC), mapped to a fleet-calibrated level and fused by max with the execution
+     channel at the daily unit.
+ F11 Second domain (LBNL AHU FDD data) -> deferred: checked only for reachability this round.
+Pre-registered hypotheses:
+ H3a (F10): daily unit + threshold sweep reaches recall >= 0.321 at <= 2 FA/sub-yr AND needs >= 30% fewer
+      false alarms than the 10-min counter version at matched recall 0.214. Falsified if either fails.
+ H3b (F13): on held-out folds the realised FA/sub-yr for B in {1, 2, 4} lies in [0.5 B, 1.25 B] for SRCR;
+      reported for AE too (no hypothesis on AE). Falsified if any budget falls outside.
+ H3c (F13b): adaptive conformal lowers the share of false alarms coming from the 5 worst substations by
+      >= 15 percentage points vs fleet conformal at B = 2, with <= 1 lost detection. Falsified otherwise.
+ H3d (F12): under-delivery fusion adds >= 2 detected faults at the realised <= 2 FA/sub-yr point over F10
+      alone. Falsified otherwise.
 
-## Round 3 results (2026-11-23, M1 development; results/round3/round3_srcr_comp__v_gate_1s_local.csv)
-Reproducibility: all M1 scores regenerated from code on a new machine; round-2 table reproduced exactly.
-Ideas counted so far: 7 + #8 daily unit, #9 conformal per-substation threshold (+1 post-hoc fallback variant,
-counted), #10 under-delivery channel = 10 families (11 with the post-hoc variant).
-- H3a SUPPORTED only weakly (no gain): daily unit recall at <=2 FA/sub-yr 0.321 = R2 10-min 0.321, but with more
-  false alarms (271 vs 186). B=1: 0.214 = 0.214; B=4: 0.357 = 0.357. The daily unit is an equivalent, simpler
-  operator interface, not an improvement.
-- H3b (i) PARTLY FALSIFIED: achieved FA/sub-yr 0.40 (B=1, below 0.5B because 70% of days have too little own
-  history for alpha=1/365), 1.45 (B=2, valid), 3.14 (B=4, valid). (ii) SUPPORTED: share of false alarms from the
-  5 worst substations 0.33 (B=2) vs 0.66 with a global daily threshold. (iii) FALSIFIED: recall 0.179 at B=2
-  (post-hoc fleet fallback: 0.214). Conformal thresholds equalise the alarm burden but cost recall.
-- Diagnosis: top-5 FA substations (35, 21, 18, 33, 8) hold 66% of FAs but only 6/28 target faults; Spearman
-  rho(FA count, target faults) = 0.30 (p = 0.08). Own-past thresholds absorb slowly developing degradation
-  (a fault's precursor becomes part of the 'normal' calibration set) -> lost detections.
-- H3c FALSIFIED: R2 + under-delivery at <=2 FA/sub-yr recall 0.214 (-3 faults vs F10). Post-hoc observation
-  (NOT pre-registered, not claimable): at B=4 the fusion reaches 0.464 vs 0.357 (+3 faults).
-- Verdict round 3: no gain on the primary endpoint. Rounds without primary gain: 1 (r1), 0 (r2: FA gain),
-  1 (r3). Not remarkable yet.
+## Round 3 results (2026-11-23, M1 development; results/round3_*.csv, src/evaluation/daily.py)
+Ideas counted so far: 7 + #8 daily unit, #9 fleet conformal budget, #10 adaptive conformal, #11 under-delivery
+fusion = 11. (Round-2 numbers reproduced exactly on the rebuilt machine: 0.321 recall at 1.48 FA/sub-yr.)
+- H3a FALSIFIED: daily unit best recall at <= 2 FA/sub-yr = 0.286 (10-min counter 0.321); at recall 0.214 it
+  needs 1.56 FA/sub-yr vs 0.40 for the counter (worse, not better).
+- H3b FALSIFIED (narrowly): realised FA/sub-yr with cross-fitted fleet conformal thresholds: B=1 -> 0.79,
+  B=2 -> 1.33, B=4 -> 1.96 (0.49 B, just below the 0.5 B bound). Budgets are respected (never exceeded), but
+  conservative because consecutive alarm days merge into one episode.
+- H3c FALSIFIED: adaptive thresholds reduce top-5 share only 0.87 -> 0.83 at B=2 and lose 1 detection
+  (0.179 -> 0.143) while halving false alarms.
+- H3d FALSIFIED: under-delivery fusion at <= 2 FA/sub-yr gives recall 0.214 (vs 0.286 for exec alone, daily
+  unit). Under-delivery alone: 0.107 at 0.48 FA/sub-yr.
+- Most important observation: false alarms are extremely concentrated. At budgets <= 1/sub-yr, 5 of 35
+  substations produce 90-100% of SRCR false alarms. Next step: check whether these are unlabelled persistent
+  anomalies (label noise in 'normal' time) and whether AE flags the same substations.
 
-## Diagnosis after round 3: full M1 baseline table (results/m1_table.csv, m1_curves.csv; same tau/c grid for all)
-Min FA/sub-yr needed to reach recall 0.214 / 0.286 / 0.321 (6 / 8 / 9 of 28 faults):
-  B1 rule (HC/DHW shortfall vs setpoint, no learning) 0.15 / 1.08 / 1.08 ; SRCR R2 0.40 / 1.48 / 1.48 ;
-  sigma3 1.35 / 2.74 / 2.74 ; loop3s 1.12 / 3.56 / 3.56 ; AE (benchmark) 1.78 / 5.63 / 5.63 ;
-  AE-cond 2.25 / 4.05 / 4.05 ; IForest 2.42 / 18.3 / 18.3 ; qnbm 1.89(0.179) / 3.70(0.321).
-- THE EXPERT RULE DOMINATES EVERY LEARNED METHOD, INCLUDING SRCR. Rule and SRCR detect exactly the same 9 faults
-  (44, 57, 1, 62, 38, 7, 69, 15, 10); SRCR adds no detection and more false alarms. The fleet quantile model is
-  therefore NOT a contribution on M1. What carries the signal is the setpoint-relative, one-sided (shortfall)
-  representation itself, which the rule already has.
-- AE detects 6 faults, 4 of which neither rule nor SRCR detect: 20 (safety valve water loss), 53 (shut-off valve
-  closed), 49 (DHW night-mode parameterisation), 47 (heating pump blocked). Union rule|AE = 13/28.
-- Consequence for the story (honest pivot, N5 + N7): under deployment-realistic continuous evaluation, a
-  transparent setpoint-shortfall rule beats the published deep NBM benchmark by ~5x fewer false alarms at equal
-  recall, and the learned model's value lies in a COMPLEMENTARY fault set (hydraulic / pump / valve faults that
-  do not show as a tracking shortfall).
+## Round 4 plan (hypotheses written BEFORE running, 2026-11-23; M1 only)
+Diagnosis: in raw components, the primary-return limiter loop (p_ret, two-sided) has the highest exceedance
+rate (sub 18: 1.5% of steps z>3; sub 35: 0.9%, all in the heating season) while comfort loops rarely exceed.
+High primary return temperature is an efficiency problem that customers do not report (no comfort loss), so
+it is plausibly NOT a target-fault signal. Families:
+ F15 Comfort-only execution channel: drop p_ret (keep hc*, dhw_* shortfall, gated, local-calibrated).
+ F16 p_ret low-side only (return far BELOW limit = valve stuck closed / no flow) kept, high side dropped.
+ F17 CUSUM alarm logic on z: S_t = max(0, S_{t-1} + min(z_t, 10) - k), alarm while S_t >= h; k in {0,1,2},
+     h on a 12-value grid matched to the counter grid budget (same number of operating points per method).
+ H4a: F15 or F16 reduces M1 false alarms by >= 30% at matched recall 0.214 vs gate+1s+local, with no lost
+      detection at the <= 2 FA/sub-yr operating point (recall stays >= 0.321). Falsified otherwise.
+ H4b: F17 raises recall at <= 2 FA/sub-yr by >= 0.07 (2 faults) over the counter for the best variant of H4a.
 
-## Round 4 plan (hypotheses written BEFORE running)
- F15 Budget-split OR-fusion: alarm = rule alarm OR learned-detector alarm; the FA budget B is split between the
-     two by choosing the pair of operating points (each from its own Pareto front on M1) maximising recall subject
-     to combined FA <= B. Partners pre-registered: AE (benchmark), underdel, qnbm (3 ideas, all counted).
- F16 Residualised learned detector: train/score the AE only on time when the rule is quiet... (NOT run in round 4;
-     listed for round 5 if F15 supported).
- H4a: best F15 pair reaches recall >= 0.393 (11/28) at <= 2 FA/sub-yr (rule alone: 0.321). Falsified otherwise.
- H4b: the rule+AE pair alone reaches >= 0.357 (10/28) at <= 2 FA/sub-yr. Falsified otherwise.
- Multiplicity: 3 partners x 3 budgets reported; final candidate tested once on M2.
+## Round 4 results (2026-11-23, M1 development; results/round2_srcr_comp_v_g1l_noret-v_g1l_retlow.csv,
+## results/round4_cusum_*.csv, results/matched_recall_r4_vs_ae.csv)
+Ideas counted so far: 11 + #12 comfort-only (drop p_ret), #13 p_ret low-side only, #14 CUSUM = 14.
+- H4a SUPPORTED: comfort-only (gate + one-sided + local, p_ret dropped) needs 0.18 FA/sub-yr for recall 0.214
+  (gate+1s+local: 0.40, -55%) and keeps recall 0.357 at <= 2 FA/sub-yr (no lost detection).
+  Recall at budgets B = 1/2/4: 0.321 / 0.357 / 0.357 (0.65 / 1.44 / 1.44 FA/sub-yr realised).
+  p_ret low-side only: 0.286 / 0.357 / 0.393 — between the two.
+- H4b FALSIFIED: CUSUM on the comfort-only score reaches only 0.286 at <= 2 FA/sub-yr (counter 0.357).
+- Versus AE (re-run on this machine, same grid): minimum FA/sub-yr to reach recall 0.214: AE 1.78 vs
+  comfort-only SRCR 0.18 (~10x); recall 0.321: AE 5.63 vs 0.65 (~8.7x). Recall at <= 1 FA/sub-yr: 0.321 vs 0.143.
+- Interpretation (to test, not yet claimed): the primary return limiter reacts to efficiency problems
+  (high return temperature) that do not reach customers and are not reported; scoring only the loops that
+  carry comfort makes alarms match what customers report. This is a 2-sentence reusable idea:
+  "Score only the control loops whose failure the stakeholder experiences, relative to the controller's own
+  setpoint, with a fleet model that needs no own history."
+- DECISION: fix the method candidate = SRCR-C (comfort loops, gated, one-sided, fleet-prior -> local
+  calibration, criticality counter). Next: seeds 0-9, all baselines on M1, novelty map + scorecard, then the
+  single locked evaluation on M2.
 
-## Round 4 results (2026-11-23, M1; results/round4/orfusion_best_ae_underdel_qnbm.csv)
-Ideas counted: 10 + 3 OR-fusion partners = 13 (+1 post-hoc conformal variant).
-Pareto points per method: rule 6, AE 8, underdel 6, qnbm 9 -> 48 / 36 / 54 pairs searched (extra tuning freedom
-vs single methods: optimism to be checked on M2).
- B=1: rule+AE 0.321 @0.50 ; rule+qnbm 0.321 @0.72 ; rule+underdel 0.321 @0.66   (rule alone 0.286 @0.35)
- B=2: rule+AE 0.393 @1.44 ; rule+qnbm 0.393 @1.98 ; rule+underdel 0.357 @1.33   (rule alone 0.321 @1.08)
- B=4: rule+AE 0.429 @2.02 ; rule+qnbm 0.393 @1.98 ; rule+underdel 0.429 @2.92   (rule alone 0.321)
-- H4a SUPPORTED: rule+AE and rule+qnbm reach 0.393 (11/28) at <= 2 FA/sub-yr.
-- H4b SUPPORTED: rule+AE 0.393 >= 0.357.
-- Effect sizes are small in absolute faults (+2 over rule, +5 over AE alone at B=2; n = 28) -> needs bootstrap
-  CIs, seeds 0-9 for AE, and the locked M2 test before any claim.
-- Candidate final methods (frozen after this round): C1 = rule alone; C2 = rule OR AE with M1-chosen operating
-  points per budget. Both need no cross-manufacturer model transfer (rule has no parameters to learn; AE is
-  per-substation online) -> only the operating points transfer from M1 to M2.
+## Desk-rejection check after round 4: "does a simpler method work?" (2026-11-23, M1; results/matched_recall_fast_baselines.csv)
+Minimum FA/sub-yr needed to reach a recall level (same tau x c_thr grid for all):
+| recall | SRCR-C | rule (comfort shortfall > 5 K) | loop3s_c (own-history, comfort, gated, 1-sided) | loop3s | sigma3 | AE |
+| 0.214  | 0.18   | 0.15 | 0.14 | 1.12 | 1.35 | 1.78 |
+| 0.250  | 0.60   | 0.17 | 0.44 | 1.62 | 1.37 | 2.15 |
+| 0.321  | 0.65   | 1.08 | 3.53 | 3.56 | 2.74 | 5.63 |
+| 0.357  | 1.44   | 11.5 | 20.5 | 3.84 | 5.06 | 5.63 |
+- HONEST FINDING: the large gain over AE comes mostly from WHAT is monitored (comfort loops, relative to the
+  setpoint), not from the fleet model. The expert rule is as good as SRCR-C up to recall 0.25. SRCR-C is only
+  better at higher recall (0.321-0.357), i.e. 1-2 extra faults (n = 28) — not statistically remarkable.
+- Consequence for the paper: the learned fleet model cannot be sold as the core novelty. Candidate core
+  contribution shifts to an evaluation finding (N5 + N7): under deployment-realistic continuous monitoring,
+  deep normal-behaviour models (the published benchmark) raise ~10x more false alarms than a setpoint-relative
+  comfort rule at equal recall. This must be confirmed on the locked M2 and against ae_comfort / ae_cond /
+  iforest / qnbm (running).
 
-## M1 development statistics at B = 2 (results/stats/m1_paired_B2.csv; cluster bootstrap 10k over 35 substations,
-## exact McNemar on 28 faults, Holm over baselines)
-- C2 (rule OR AE) vs AE benchmark: +0.179 recall (95% CI 0.000 to 0.350), 6 vs 1 discordant faults, p = 0.125
-  (Holm 0.625), FA -0.34/sub-yr (CI -0.75 to 0.08). vs rule: +0.071 (CI -0.067 to 0.227), p = 0.625.
-- C1 (rule) vs AE: +0.107 (CI -0.133 to 0.333) at 0.69 fewer FA/sub-yr (CI -1.72 to 0.67).
-- No comparison survives Holm at n = 28 faults. Recall-at-budget is underpowered on one manufacturer; the
-  primary inference must pool M1 + M2 (52 faults) and use the paired curve-level secondary endpoint (normalised
-  area under recall-vs-FA for B in [0, 6]) as pre-registered. Not remarkable on M1 alone.
+## Mechanism of false alarms (2026-11-23, M1; scripts/mechanism_fa.py, results/mechanism_fa_*.csv)
+Conditions in the 24 h before each false-alarm start vs 1050 random normal times (30 per substation):
+| condition (24 h before)                   | AE FA (n=223, 32 subs) | SRCR-C FA (n=180, 20 subs) | random normal |
+| summer month (May-Sep)                    | 0.61 | 0.15 | 0.41 |
+| heating off (median HC1 setpoint <= 20 C) | 0.23 | 0.04 | 0.10 |
+| comfort shortfall > 5 K for >= 1 h        | 0.17 | 0.93 | 0.18 |
+| setpoint range >= 10 K                    | 0.65 | 0.82 | 0.63 |
+- AE false alarms are enriched for seasonal regime changes (summer, heating off) and NOT for comfort
+  shortfall (0.17 ~ base 0.18): they flag changes of operating regime, not loss of service.
+- 93% of SRCR-C 'false alarms' coincide with a physically real shortfall (supply > 5 K below an active
+  setpoint for >= 1 h) that was not reported. They are verifiable service deviations (or unreported faults),
+  i.e. actionable for an operator, which an AE alarm is not. To report as finding; not proof of faults.
 
-## Seeds 0-9 on M1 (AE retrained per seed; rule deterministic; C2 operating points re-selected per seed on M1)
- recall mean +- SD (min-max) over 10 seeds:
-  AE alone  B=1 0.13 (seeds 1-9: 0.127+-0.026) ; B=2 0.183+-0.045 (0.107-0.250; seed 0 = 0.214) ; B=4 0.313+-0.024
-  C2 rule OR AE  B=1 0.343+-0.018 (0.321-0.357) ; B=2 0.382+-0.017 (0.357-0.393) ; B=4 0.429+-0.024 (0.393-0.464)
-  rule alone B=1 0.286 ; B=2 0.321 ; B=4 0.321
- C2 >= rule in 10/10 seeds at every budget; C2 - AE at B=2 ~ +0.20 in every seed. Stable across seeds.
- Files: results/m1_table_aeseeds.csv, results/round4/orfusion_best_ae_seed1_..._ae_seed9.csv
+## Novelty map (2026-11-23; journal_selection/novelty_map.csv, 59 rows, 39 with closeness >= 2; summary md)
+Built from abstracts + Crossref/OpenAlex only (ScienceDirect blocked). Claim limits found:
+- PreDist paper (10.1016/j.energy.2026.141178) already speaks of "few false alarms": we must not claim to be
+  first to consider false alarms; our claim = every-step scoring, FA per substation-year, recall at a fixed
+  budget, cross-manufacturer locked test.
+- Heating-curve misconfiguration papers (10.1016/j.segy.2026.100256, 10.24406/publica-9049) report AE MISSES
+  of comfort-relevant drift; we report AE FALSE ALARMS and test the scoped alternative. Cite both.
+- Seasonal residual behaviour is known (10.1016/j.segy.2024.100159): frame our mechanism as empirical
+  attribution on labelled DH data. Locked-test / alarm-burden protocols exist for wind turbines: protocol
+  novelty holds only "for DH substations". Control-strategy rules exist (10.1016/j.energy.2026.142993): the
+  new part is the controlled factorial on a public benchmark.
+- 10.1016/j.egyai.2026.100824 (STST): OpenAlex reference list (66 refs, checked 2026-11-23 session 3) cites neither the PreDist paper (W7159838334) nor the Zenodo record (W7105746820); abstract: six datasets, supervised F1 0.77-0.98, no continuous-monitoring FA rate. Use of PreDist: probably not, UNVERIFIED (full text blocked).
 
 ## M2 access log
+
+<!-- [lineage merged-63cb0d0-lineages] -->
 - 2026-11-23: after Amendment A1 freeze, M2 detector SCORES computed for all frozen methods (no evaluation yet).
 - 2026-11-23: M2 score run crashed for sigma3 and IForest on a substation whose training window had no usable
   numeric column. Fix: such windows get no score (NaN), as with any model without training data. Does not touch
@@ -360,4 +382,81 @@ FINAL STATUS OF ESCALATION LOOP (17 ideas, 5 rounds): no detector gain survives 
 pre-registered and replicated on both manufacturers: the protocol gap (N5 + N7). Story pivots to an evaluation
 paper: "balanced event benchmarks misjudge early fault detection; continuous budgeted evaluation + cross-
 manufacturer transfer show what operators would actually get". Proposed methods reported as negative results.
+<!-- [end parallel lineages] -->
+
+<!-- [lineage peaceful-planck] (parallel session; merged 2026-11-24) -->
+- 2026-11-23 (session 3): candidate set + analysis frozen (protocol A4, A5; scripts/m2_evaluate.py committed).
+  Started computing M2 SCORE FILES (rule, sigma3, loop3s, loop3s_c). No thresholds applied, no M2 metric
+  inspected until all M1 cells and seeds are complete; then scripts/m2_evaluate.py 2 is run exactly once.
+- Session-3 rebuild reproduced round-4 M1 numbers exactly (AE 1.78 / 5.63 FA/sub-yr at recall 0.214 / 0.321;
+  SRCR-C 0.18 / 0.65). New on M1: iForest needs 2.42 / 18.29 (worse than AE).
+- 2026-11-23 (session 3) BUG FIX during M2 score computation, no metric inspected: ThreeSigma and IForest
+  crashed when no signal passed the 20%-availability filter in a training window (M2 substation 33, very short
+  series). Fix: such a model returns no score (NaN) for that retraining period, as for any missing data.
+  Code path never triggered on M1 (M1 scores unchanged). sigma3 M2 recomputed for the remaining substations.
+- 2026-11-23 (session 3) DRY RUN of scripts/m2_evaluate.py on M1 (in-sample, development only; files
+  results/DRYRUN_insample_m1_*.csv). Code runs end-to-end (27 min, 2000 boots). M1 in-sample: no HF4 contrast
+  significant at n = 28; HF1 threshold-free: SRCR-C vs SRCR-all 23/28 faults better, p = 0.009; AE-comfort vs
+  AE p = 0.040; Loop-3s-C vs Loop-3s p = 0.060. Power warning: n = 25 on M2 -> the pooled M1+M2 secondary
+  analysis (A4) is needed for adequate power; report both, primary stays M2.
+- 2026-11-23 (session 3) LOCKED EVALUATION: all 11 cells scored on M2 (seed 0, 58/58 substations each).
+  scripts/m2_evaluate.py 2 2000 run ONCE now (code as committed for A5 + the logged NaN bug fix). Output:
+  results/locked_m2_operating_points.csv, results/locked_m2_tests.csv, results/logs/LOCKED_m2.log.
+- LOCKED M2 RESULT (2026-11-23, session 3; results/locked_m2_*.csv): NEGATIVE for the proposed method.
+  Recall at B = 2 (M1-chosen thresholds), n = 25: sigma3 0.28, qnbm 0.20, ae_comfort 0.12, rule 0.08,
+  loop3s_c 0.08, loop3s 0.08, iforest 0.08, ae 0.04, srcr_c 0.00, srcr_all 0.00, ae_cond 0.00.
+  HF4 (SRCR-C >= baselines) FAILED: SRCR-C worse than sigma3 (McNemar p = 0.016 raw) and qnbm (0.0625).
+  HF1 (scope) not supported on M2 (p 0.37 / 0.93 / 0.28). HF2: SRCR-C vs AE-comfort reversed (AE-comfort
+  better, p = 0.016). HF3: SRCR-C ranks worse than rule (p = 0.0003) and loop3s_c (0.003).
+  Realised FA rates stayed near budget for most methods (calibration transfer OK; detection transfer failed).
+  This result is final for the pre-registered analysis; M2 is now burned for method selection.
+- Post hoc descriptive: Spearman rank correlation of M1 (in-sample) vs M2 (locked) recall across the 11 cells: B=1 -0.33, B=2 -0.15, B=4 0.07 (all p > 0.3): development rankings do not transfer.
+- SECONDARY (pre-registered; results/secondary_*.csv), 2026-11-23 session 3:
+  * Cold start: 7/25 M2 target faults occur < 90 d after the substation's first record (M1: 2/28). sigma3's 7
+    M2 detections: 5 are < 90 d faults (median history 70 d); its FA rate in that bin is 2.94/sub-yr on M2,
+    8.75 on M1. After 90 d no method exceeds 2/18 M2 faults at B = 2. Apparent M2 winners = start-up artefact.
+  * Pooled M1+M2 threshold-free ranks (n = 53): scope effect supported for fleet model (SRCR-C vs SRCR-all
+    41/10, p = 0.016) and AE (AE-comfort vs AE 35/18, p = 0.021); Loop-3s-C vs Loop-3s p = 0.10.
+    Fleet model worse than own-history comfort statistic (p = 0.031) and rule (p = 0.080).
+  * By label: leakage (7) and heating-circuit pump failure (6) are almost never caught by comfort-scoped
+    methods; AE / qNBM / sigma3 catch 1-2 each.
+
+## USER DECISION (2026-11-23, session 3): option B = develop a new method on M1 after the locked M2 failure.
+Integrity consequences (to be stated in the paper): M2 is no longer a clean test. Round 5 is MOTIVATED by the
+M2 diagnosis (hydraulic fault types, start-up period, short histories). Any M2 evaluation of a round-5 method
+is a DISCLOSED SECOND LOOK, run once, after the method is frozen and committed. Time-box: ONE round; if its
+hypotheses fail on M1, stop and recommend option A.
+
+## Round 5 plan (hypotheses written BEFORE any round-5 code was written, 2026-11-23; M1 only)
+Diagnosis (from locked M2 + secondary analyses): comfort-loop scope misses hydraulic faults (leakage, pumps,
+pressure regulators); own-history models are immature in a substation's first months; AE false alarms follow
+seasonal regime. Novelty-map check: same-day peer comparison exists (HEAT, Energy and AI 2025; SHEDAD 2024;
+multi-turbine reference 2022); changepoints on dT/flow exist (arXiv 2026). Any gain is incremental unless it is
+large. Families (ideas #15-#19; total ideas tried becomes 19):
+ F18 PEER-PHYS: daily physics features compared with the SAME DAY's distribution over the other substations
+     of the fleet (robust median / 1.4826 MAD, leave-one-out): primary cooling dT (low side), primary return
+     temperature (high side), DHW upper-storage 10th percentile (low side). No own history, no training;
+     seasonal regime and weather are shared by peers and cancel. Daily score used from the NEXT day (causal).
+ F19 PEER-COMFORT: same-day peer z of the daily HC1/DHW shortfall (gated, one-sided).
+ F20 PEER-ALL: max of F18 and F19.
+ F21 OWN-CHANGE: changepoint of daily dT and flow vs the substation's previous 14 days (robust z, own history).
+ F22 FUSE: max(PEER-ALL, SRCR-C) with per-channel scaling fixed a priori (each channel score = z / 3).
+Hypotheses (M1, n = 28; thresholds on the shared tau x c_thr grid; daily score broadcast to 10-min steps):
+ H5a: PEER-PHYS ranks >= 3 more M1 faults within the top 2% of normal days than the best existing cell
+      (threshold-free, diagnose.fault_ranks), with >= 2 of the gained faults hydraulic (leakage, pump,
+      pressure regulator, valve). Falsified otherwise.
+ H5b: the best of F18-F22 reaches M1 recall >= 0.43 (12/28) at <= 2 FA/sub-yr (best existing M1: 0.393
+      at B = 4, 0.357 at B = 2). Falsified otherwise.
+ If H5b is falsified the round fails -> recommend option A to the user.
+
+## Round 5 results (2026-11-23, M1 development; results/round5_peer_m1.csv; scripts/round5_peer.py)
+Ideas counted: 14 + #15 peer-phys, #16 peer-comfort, #17 peer-all, #18 own-change, #19 fuse = 19.
+Faults in top 2% of normal days (threshold-free, n = 28): peer_phys 8, peer_comfort 10, peer_all 10,
+own_change 3, fuse 12 | reference: SRCR-C 11, rule 11, loop3s_c 10, qnbm 7, sigma3 6, ae_comfort 6, ae 2.
+Recall at <= 1 / 2 / 4 FA/sub-yr: peer_phys 0.179 / 0.179 / 0.179; peer_comfort 0.179 / 0.214 / 0.250;
+peer_all 0.214 / 0.250 / 0.286; own_change 0.036 / 0.071 / 0.143; fuse 0.286 / 0.321 / 0.321.
+- H5a FALSIFIED (peer_phys 8 < 11 + 3). Peer channels do rank hydraulic faults (leakage, DHW charging pump,
+  primary valve, pressure regulator) in the top 2%, but not more faults overall than SRCR-C / rule.
+- H5b FALSIFIED (best 0.321 < 0.43 at <= 2 FA/sub-yr).
+- Round 5 FAILED. Per the pre-registered time-box: stop, no M2 second look, recommend option A.
 <!-- [end parallel lineages] -->
