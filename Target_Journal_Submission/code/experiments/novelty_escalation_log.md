@@ -187,6 +187,8 @@ vs single methods: optimism to be checked on M2).
   numeric column. Fix: such windows get no score (NaN), as with any model without training data. Does not touch
   M1 (never triggered) nor any frozen operating point. No M2 evaluation had been run.
 
+
+<!-- [lineage practical-sagan] -->
 ## Round 5 plan (written 2026-11-24 BEFORE computing any event-protocol number; account 3)
 Diagnosis: the method story (rule, rule OR AE) is useful but not remarkable; the strongest candidate core idea
 is an evaluation FINDING (N5 + N7): the published balanced event-window protocol may rank detectors differently
@@ -250,3 +252,112 @@ Event protocol E on CARE: all 95 events, positive if alarm active in the event w
   (event precision 0.73-1.00 vs deployed 0.02-0.06).
 - H5e (analytic, earlier): 65 normal weeks cannot separate 1 vs 2 FA/asset-yr (power 0.23).
 Verdict round 5: primary gain of the STORY (a measured, explained ranking inversion), not of a method.
+
+<!-- [lineage focused-wozniak] (parallel session; merged 2026-11-24) -->
+## Round 5 plan (written 2026-11-23 BEFORE running; user asked for more novelty; M2 still NOT evaluated)
+Diagnosis: (i) the gain of C2 is small in absolute faults; (ii) "rule OR AE" reads as a mere combination with no
+reason WHY the two are complementary; (iii) per-substation fixed thresholds may spend the fleet FA budget on a
+few noisy substations. Three genuinely different fix families (all on M1 only; ideas 14-16):
+ F17 Substation-calibrated alarm evidence (budget redistribution). Online, per substation and per 90-day block,
+     map the raw score to its exceedance probability under the substation's OWN past scores (up to 365 d before
+     the block, known exclusions removed): e = -log10 p. Same criticality counter; tau grid on e {2, 2.5, 3, 4},
+     same c grid. Applied to rule, AE (seed 0) and their OR-fusion.
+     H5a: calibrated rule OR calibrated AE reaches M1 recall >= 0.429 (12/28) at <= 2 FA/sub-yr (C2: 0.393).
+     H5b: the FA share of the 5 noisiest substations falls versus uncalibrated C2 at B = 2.
+ F16 Complementary-by-design learned partner: AE trained WITHOUT any loop measurement/setpoint column
+     ("ae_noloop": drops every column containing "setpoint" and the secondary loop supply / DHW
+     upper-storage temperatures (NOLOOP in run_online_method.py); keeps primary-side, return, valve, pump, flow signals), so it can only see hydraulic/primary/pressure behaviour the rule cannot.
+     H5c: rule OR ae_noloop >= C2 recall at B = 2 on M1 (seed 0; seeds 0-4 if supported).
+ F18 Pre-registered physics-based fault-signature taxonomy, tested ONLY on locked M2 (prediction, not fitting).
+     Classes fixed from the fault label text before M2 evaluation:
+       A supply-path restriction (shows as loop measurement below setpoint): primary motorised control valve
+         (all 4 labels), differential pressure regulator (setting / defective), DHW storage charging pump,
+         strainer poor flow, air in piping, temperature monitor/controller defective.
+       B circulation / hydraulic integrity: heating-circuit pump failure, leakage, heat exchanger external
+         leakage, safety relief valve water loss, low expansion-vessel pre-charge, shut-off valve closed.
+       C intent error (wrong setpoint/parameter; the loop tracks a wrong target): control unit incorrect
+         parameterisation.  U: unknown.
+     H5d (M2): rule recall in class A > rule recall in classes B+C.
+     H5e (M2): among faults detected by AE but not by the rule, the share in B+C exceeds the share of B+C among
+     faults detected by the rule. Caveat: M1 detections were seen when writing this taxonomy, so only M2 counts.
+ Multiplicity: ideas 14-16 counted (total 16). Any survivor becomes candidate C3 in protocol Amendment A2,
+ written BEFORE m2_eval.py runs; C1/C2 stay as frozen.
+
+## Round 5 results — F17 substation calibration (M1; results/round5/)
+ cal_rule: B=1 0.250 @0.61, B=2 0.286 @1.96, B=4 0.286 (raw rule 0.286 / 0.321 / 0.321)
+ cal_ae:   B=1 0.143, B=2 0.143 @0.85, B=4 0.250 (raw AE seed 0: 0.214 at B=2)
+ cal_rule OR cal_ae (8x6 Pareto pairs): B=1 0.286, B=2 0.321 @1.07, B=4 0.357 (C2: 0.321 / 0.393 / 0.429)
+ H5a FALSIFIED (0.321 < 0.429). H5b FALSIFIED: top-5 substations' FA share 0.376 (C2) -> 0.470 (calibrated).
+ Reason (diagnosis): calibrating each substation against its own past makes a quiet, well-tuned substation
+ alarm on small deviations that are normal fleet-wide, so the budget moves TO quiet substations instead of away
+ from noisy ones; and faults in substations with a chronically poor history are pushed below threshold. Absolute,
+ physically scaled evidence (Kelvin of shortfall) carries information that rank calibration discards.
+ F17 dropped. Negative result kept for the paper ("own-history calibration hurts").
+
+## Round 5 addition — F19 protocol-gap analysis (pre-registered 2026-11-23 before running; idea 17)
+Same online scores, same alarm logic, two protocols. Event protocol (as in the dataset benchmark): fault events
+(efd_possible, window = 7 d before report) and the dataset's predefined normal events (Event start-end); an event
+is flagged if the alarm is active at any step in its window; event precision, recall, F0.5. Continuous protocol
+as in protocol v1. For each of the 8 v1 methods (rule, sigma3, loop3s, iforest, qnbm, ae, ae_cond, srcr):
+ (i) the (tau, c) maximising event F0.5 on M1 -> its continuous FA/sub-yr and recall (M1; M2 in locked eval);
+ (ii) event precision vs continuous alarm precision at that point; (iii) Spearman correlation between the
+ method ranking by best event F0.5 and by continuous recall at B = 2.
+ H5f: the event-F0.5-optimal point exceeds 4 FA/sub-yr (2x the primary budget) for >= 5 of 8 methods (M1 and M2).
+ H5g: event precision >= 5x continuous alarm precision for every method at the event-optimal point.
+ H5h (exploratory): rank correlation < 0.5 (protocol choice changes which method looks best).
+
+## Round 5 results — F19 protocol gap (M1; results/protocol_gap/m1_*.csv; 29 fault + ~35 normal events)
+ At each method's event-F0.5-optimal (tau, c):  event precision | continuous alarm precision | continuous FA/sub-yr
+  rule 1.00 | 0.045 | 1.2 ; sigma3 0.91 | 0.008 | 10.4 ; loop3s 0.94 | 0.008 | 11.1 ; iforest 0.93 | 0.004 | 18.3 ;
+  qnbm 0.91 | 0.019 | 2.4 ; AE 0.74 | 0.008 | 10.7 ; AE-cond 0.73 | 0.006 | 13.9 ; SRCR 1.00 | 0.031 | 2.2
+ H5f SUPPORTED on M1: 5/8 methods exceed 4 FA/sub-yr (10.4-18.3) at the event-optimal point.
+ H5g SUPPORTED on M1: event precision is 22x-215x the continuous alarm precision (min 22x, rule).
+ H5h (exploratory) SUPPORTED: Spearman rho = 0.40 (p = 0.32, n = 8) between event-F0.5 ranking and continuous
+ recall@B=2 ranking. Event protocol ranks three-sigma best (F0.5 0.84) and the rule second-to-last (0.75);
+ continuous protocol ranks the rule/SRCR best (0.321) and three-sigma mid (0.25).
+ Meaning: a balanced event benchmark would pick detectors that, deployed on 93 substations, raise ~1,000 false
+ alarms per year. This is the strongest finding so far (N5 + N7) and is tested on locked M2 in the final eval.
+
+## Round 5 results — F16 complementary-by-design partner (M1, seed 0; results/round5/*ae_noloop*)
+ ae_noloop alone: B=1 0.071, B=2 0.071 @0.36, B=4 0.179 (AE seed 0: 0.214 at B=2) -> much weaker alone.
+ rule OR ae_noloop (6x4 Pareto pairs): B=1 0.357 @0.71 ; B=2 0.393 @1.44 ; B=4 0.429 @3.33
+ (C2 = rule OR AE: 0.321 / 0.393 / 0.429).
+ H5c formally SUPPORTED as a tie at B = 2 (0.393 = 0.393), +1 fault at B = 1. No gain over C2 at the primary
+ budget, so F16 is NOT promoted to a candidate (seed extension not run; counted as tried). Mechanistic reading:
+ an AE that never sees loop temperatures/setpoints is a poor detector alone but adds as much to the rule as the
+ full AE does -> the AE's added value comes from non-loop (hydraulic/primary) signals. Supports the F18 taxonomy
+ hypothesis; to be tested on M2 via H5d/H5e.
+Round 5 summary: ideas 14-17 tried (F17 negative, F16 tie, F18 pre-registered for M2, F19 strong on M1).
+Ideas total: 17. Candidates for M2 unchanged (C1, C2); F18 + F19 added as pre-registered M2 analyses (Amendment A2).
+- 2026-11-24T00:58Z: LOCKED M2 EVALUATION run (scripts/m2_eval.py, single run) after Amendment A2; all 17 methods x 58 M2 score files verified readable.
+
+## LOCKED M2 RESULTS (2026-11-24, single run; results/m2/, logs/m2_eval.log)
+M2: 25 evaluable target faults, 58 substations, 85.5 exposure-years. M1-chosen operating points applied unchanged.
+ Recall at B=2 (M1 -> M2): C2 0.393 -> 0.080 ; rule 0.321 -> 0.080 ; AE 0.214 -> 0.040 ; three-sigma 0.250 -> 0.280 ;
+ qnbm 0.179 -> 0.200 ; loop3s 0.250 -> 0.080 ; iforest 0.179 -> 0.080 ; AE-cond 0.143 -> 0.000 ; SRCR 0.321 -> 0.000.
+ Seeds 0-9, B=2, M2: C2 0.088 +- 0.025 ; AE 0.076 +- 0.048.  Achieved M2 FA/sub-yr at B=2: C2 1.26, rule 0.58, AE 1.89.
+ Pooled M1+M2 (53 faults, B=2, seed 0): C2 0.245 vs AE 0.132 (d = +0.113, 95% CI 0.000-0.231, McNemar p = 0.109,
+ Holm 0.766); C2 vs rule +0.038 (CI -0.057-0.132); C2 vs AE-cond +0.170 (CI 0.075-0.282, p 0.012, Holm 0.094).
+ NO comparison survives Holm. PRIMARY HYPOTHESIS (C2 better than baselines, transferring to M2) NOT SUPPORTED.
+F18 on M2: H5d FALSIFIED (rule recall class A 0.09 vs B+C 0.10); H5e FALSIFIED (1 AE-only fault, class U/A).
+ Underpowered: the rule detects 2/25 M2 faults.
+POST-HOC diagnostic (scripts/diag_loops.py; NOT used to change any method): 44/58 M2 substations expose only the
+ HC1 loop (no DHW loops) vs 9/35 on M1; median rule shortfall -0.10 K on M2 vs +0.65 K on M1 (M2 loops track above
+ setpoint); the M1 rule thresholds spend only 0.58 of the 2 FA/sub-yr budget on M2.
+Verdict so far: the rule/C2 advantage is manufacturer-specific. The honest paper is now about evaluation and
+transfer: (i) protocol gap (F19, M2 pending), (ii) M1-tuned detectors lose most recall on a second manufacturer,
+(iii) ranking of methods is not stable across manufacturers.
+
+## F19 protocol gap on LOCKED M2 (results/protocol_gap/m2_*; 26 fault + 30 normal events evaluable)
+ Event-optimal point (chosen on M2 itself, i.e. the best case for the event protocol) -> continuous FA/sub-yr:
+  three-sigma 3.2, quantile NBM 5.4, AE 6.7, AE-cond 8.6, IForest 12.7, rule 13.8, loop3s 19.3, SRCR 112.6.
+ H5f SUPPORTED on M2: 7/8 methods > 4 FA/sub-yr (M1: 5/8).
+ H5g SUPPORTED on M2: event precision 39x-274x the continuous alarm precision (M1: 22x-215x).
+ H5h (exploratory) rho = 0.26 (M1 0.40): the event protocol does not rank methods as deployment does.
+ Curve-level endpoint (normalised area, FA 0-6; descriptive): M1 C2 0.386 > SRCR 0.310 > rule 0.308 > ... ;
+  M2 three-sigma 0.254 > qnbm 0.196 > loop3s 0.142 > rule 0.130 ~ C2 0.129 ; Spearman M1 vs M2 = 0.30 (n = 9).
+FINAL STATUS OF ESCALATION LOOP (17 ideas, 5 rounds): no detector gain survives the locked test. What survives,
+pre-registered and replicated on both manufacturers: the protocol gap (N5 + N7). Story pivots to an evaluation
+paper: "balanced event benchmarks misjudge early fault detection; continuous budgeted evaluation + cross-
+manufacturer transfer show what operators would actually get". Proposed methods reported as negative results.
+<!-- [end parallel lineages] -->

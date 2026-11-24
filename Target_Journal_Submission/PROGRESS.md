@@ -56,6 +56,8 @@ STEP 0: journal landscape and 72-day check (in progress)
   guarantees are standard; fleet+conformal exists for wind, 10.1088/1742-6596/3224/6/062054), NOT N4. To check:
   full text of 10.1016/j.energy.2026.142993 (control-strategy mode rules) and 10.1016/j.enbuild.2024.114009.
 
+
+<!-- [lineage practical-sagan] -->
 ## NEXT ACTION (updated 2026-11-24, account 3 -> handing over to account 4)
 Branch now: claude/practical-sagan-m0onar (also push there; older branch wizardly-babbage has the same history up to 63cb0d0).
 User (2026-11-24): keep iterating until novelty is very strong; Frontiers journals are also acceptable as targets.
@@ -100,6 +102,33 @@ TO DO on the new machine (scores are NOT in git; all background jobs of account 
   youthful-meitner-qelzen (user chose option A, honest benchmark; writing-phase plan), peaceful-planck-2kznjo.
   None of these is contained in practical-sagan. Before continuing, decide with the user which branch to use and
   whether to merge the others in.
+
+<!-- [lineage focused-wozniak] (parallel session; merged 2026-11-24) -->
+
+## Session 3 (2026-11-23, account 3, branch claude/focused-wozniak-yepo5i)
+- New machine again: deps + data + cache rebuilt. ALL M1 + M2 score jobs (94) launched in one queue:
+  code/results/logs/regen/jobs_s3.txt via runall.sh (xargs -P4); per-job logs results/logs/regen/<md5>.log
+  ending in 'EXIT <code>'; file results/logs/regen/ALLDONE appears when the queue finishes.
+  If the machine is lost: rerun deps/data/cache steps, then `nohup bash code/scripts/runall.sh &` (job list code/scripts/jobs_s3.txt)
+  (existing score files are skipped).
+- Added while waiting: code/scripts/m2_errors.py (error analysis, run after m2_eval.py), code/tests/
+  (5 unit tests, pytest passes), code/requirements.txt, manuscript/draft_methods.md (data/protocol/methods,
+  no results).
+
+- USER INPUT (2026-11-23): authors + declarations saved in manuscript/authors_declarations.md. Final
+  deliverable = one submission-ready zip; strip AI-tool mentions from deliverable files (see open question there).
+
+## NEXT ACTION
+State (2026-11-24): LOCKED M2 EVALUATION DONE (see novelty_escalation_log.md 'LOCKED M2 RESULTS' and 'F19 ... M2').
+C1/C2 advantage does NOT transfer to M2; F18 falsified; F19 protocol gap REPLICATED on M2. Scorecard 20/30
+(manuscript/scorecard_reviewer_zero.md) -> evaluation-paper pivot, label NOT REMARKABLE as a method paper.
+Figure done: figures/fig_protocol_gap.{png,pdf} (scripts/fig_protocol_gap.py).
+WAITING ON USER: go/no-go on the evaluation-paper pivot vs further method rounds (asked 2026-11-24).
+If go: 1. bootstrap CIs (substation clusters) for FA/sub-yr and precision ratios at event-optimal points (M1, M2);
+2. figures: transfer (M1 vs M2 recall at B=2), curves; tables; 3. manuscript (Elsevier format) + reviews + zip.
+User: authors in manuscript/authors_declarations.md; open question on Elsevier AI declaration; final = one zip.
+Auto-resume scheduled task: trig_01LvjNkbim1k1nrUB45zjTRs (every 2 h into this session).
+<!-- [end parallel lineages] -->
 
 ## Resume notes (saved 2026-11-23, account switch #2)
 - Scores/data are NOT in git. On a new machine, from Target_Journal_Submission/code:

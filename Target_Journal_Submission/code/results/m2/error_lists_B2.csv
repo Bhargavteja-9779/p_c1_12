@@ -1,0 +1,54 @@
+,C2,rule,ae,any_other,fault_label,problem,efd_possible,category
+1_67,False,False,False,False,Motorised control valve (primary side) defective,no dhw,True,missed_by_all
+1_44,True,True,False,True,Temperature monitor/controller defective,no dhw,True,shared
+1_57,False,True,False,True,Differential pressure regulator defective,no heat,True,missed_by_C2_found_by_other
+1_1,True,True,True,True,Motorised control valve (primary side): Actuator defective,no dhw,True,shared
+1_5,False,False,False,False,Failure of the heating circuit pump,no heat,True,missed_by_all
+1_20,False,False,True,False,"Safety relief valve: Water loss, does not close properly",no dhw,True,missed_by_C2_found_by_other
+1_65,False,False,False,False,Leakage,leakage,True,missed_by_all
+1_3,False,False,False,True,Control unit: Incorrect parameterisation,no heat,True,missed_by_C2_found_by_other
+1_24,False,False,False,False,Failure of the heating circuit pump,noise,True,missed_by_all
+1_53,True,False,True,False,Shut-off valve closed,no dhw,True,C2_only_vs_others
+1_29,False,False,False,False,Motorised control valve (primary side): Control valve jams when closed,no heat,True,missed_by_all
+1_49,True,False,True,True,Control unit: Incorrect parameterisation,no dhw,True,shared
+1_37,False,False,False,False,Control unit: Incorrect parameterisation,no heat,True,missed_by_all
+1_34,False,False,False,False,unknown,other,True,missed_by_all
+1_6,False,False,False,False,Control unit: Incorrect parameterisation,not enough heat,True,missed_by_all
+1_32,False,False,False,False,Control unit: Incorrect parameterisation,not enough heat,True,missed_by_all
+1_52,False,False,False,False,Control unit: Incorrect parameterisation,no heat,True,missed_by_all
+1_62,True,True,False,True,Control unit: Incorrect parameterisation,not enough heat,True,shared
+1_13,False,False,False,True,Failure of the heating circuit pump,not enough heat,True,missed_by_C2_found_by_other
+1_38,True,True,False,True,Incorrect setting of the differential pressure regulator,not enough heat,True,shared
+1_40,False,False,False,True,"Safety relief valve: Water loss, does not close properly",leakage,True,missed_by_C2_found_by_other
+1_7,True,True,True,True,Incorrect setting of the differential pressure regulator,no dhw,True,shared
+1_69,True,True,False,True,unknown,no heat,True,shared
+1_23,False,False,False,False,Control unit: Incorrect parameterisation,not enough heat,True,missed_by_all
+1_47,True,False,True,True,Failure of the heating circuit pump,no heat,True,shared
+1_15,True,True,False,True,Failure of the domestic hot water storage charging pump,no heat,True,shared
+1_10,True,True,False,True,Leakage,leakage,True,shared
+1_45,False,False,False,False,"Heat exchanger: Leakage, external",leakage,True,missed_by_all
+2_35,False,False,False,False,unknown,not enough heat,True,missed_by_all
+2_37,False,False,False,True,unknown,not enough heat,True,missed_by_C2_found_by_other
+2_41,False,False,False,False,Air in the piping system,other,True,missed_by_all
+2_5,False,False,False,False,Leakage,leakage,True,missed_by_all
+2_25,False,False,False,True,Failure of the heating circuit pump,no heat,True,missed_by_C2_found_by_other
+2_32,False,False,False,False,unknown,no heat,True,missed_by_all
+2_38,False,False,False,False,Incorrect setting of the differential pressure regulator,no dhw,True,missed_by_all
+2_40,False,False,False,False,unknown,no heat,True,missed_by_all
+2_18,True,True,False,True,Incorrect setting of the differential pressure regulator,no heat,True,shared
+2_13,False,False,False,True,Leakage,leakage,True,missed_by_C2_found_by_other
+2_31,False,False,False,False,Motorised control valve (primary side): Actuator defective,other,True,missed_by_all
+2_10,False,False,False,True,Leakage,leakage,True,missed_by_C2_found_by_other
+2_29,False,False,False,False,Leakage,leakage,True,missed_by_all
+2_36,False,False,False,False,Failure of the domestic hot water storage charging pump,no dhw,True,missed_by_all
+2_30,False,False,False,False,Control unit: Incorrect parameterisation,no dhw,True,missed_by_all
+2_1,False,False,False,True,Shut-off valve closed,no heat,True,missed_by_C2_found_by_other
+2_22,True,False,False,False,Incorrect setting of the differential pressure regulator,noise,True,C2_only_vs_others
+2_6,False,False,False,False,Leakage,leakage,True,missed_by_all
+2_12,False,False,True,True,Strainer (secondary side): Poor flow rate,no heat,True,missed_by_C2_found_by_other
+2_3,False,False,False,False,Motorised control valve (primary side): Incorrect setting of the actuator travel time,no heat,True,missed_by_all
+2_20,False,False,False,True,Failure of the domestic hot water storage charging pump,no heat,True,missed_by_C2_found_by_other
+2_28,False,True,False,False,Low pre-charge at the expansion vessel,no heat,True,missed_by_C2_found_by_other
+2_2,False,False,False,False,Incorrect setting of the differential pressure regulator,noise,True,missed_by_all
+2_21,False,False,False,True,Failure of the domestic hot water storage charging pump,no heat,True,missed_by_C2_found_by_other
+2_8,False,False,False,False,Failure of the heating circuit pump,no heat,True,missed_by_all

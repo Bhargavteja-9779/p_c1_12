@@ -6,6 +6,9 @@ from src.evaluation import runner as R
 from src.models import online as O
 from src.models import baselines as B
 from src.models.ae import AEDetector
+# ae_noloop (round 5, F16): drop every column whose name contains one of these substrings
+NOLOOP = ("setpoint", "s_hc1_supply_temperature", "s_hc1.1_supply_temperature", "s_hc1.2_supply_temperature",
+          "s_hc1.3_supply_temperature", "s_dhw_supply_temperature", "s_dhw_upper_storage_temperature")
 from src.models.channels import IntentChannel, DeliveryChannel, UnderDeliveryChannel
 method, m = sys.argv[1], int(sys.argv[2])
 part = sys.argv[3] if len(sys.argv) > 3 and "/" in sys.argv[3] else None
@@ -13,7 +16,8 @@ seed = int(sys.argv[4]) if len(sys.argv) > 4 else 0
 FACT = {"rule": lambda: B.RuleShortfall(), "sigma3": lambda: B.ThreeSigma(), "iforest": lambda: B.IForest(seed),
         "loop3s": lambda: B.LoopThreeSigma(), "qnbm": lambda: B.OwnQuantileNBM(seed),
         "intent": lambda: IntentChannel(seed), "delivery": lambda: DeliveryChannel(seed), "underdel": lambda: UnderDeliveryChannel(seed),
-        "ae": lambda: AEDetector(conditional=False, seed=seed), "ae_cond": lambda: AEDetector(conditional=True, seed=seed)}
+        "ae": lambda: AEDetector(conditional=False, seed=seed), "ae_noloop": lambda: AEDetector(conditional=False, seed=seed, drop_cols=NOLOOP),
+        "ae_cond": lambda: AEDetector(conditional=True, seed=seed)}
 subs = P.substations(m)
 if part: k, n = map(int, part.split("/")); subs = subs[k::n]
 name = method if seed == 0 else f"{method}_seed{seed}"

@@ -1,0 +1,74 @@
+       group                                                    level  n  rule  sigma3  loop3s  iforest  qnbm   ae  ae_cond  srcr_comp__v_gate_1s_local   C2
+manufacturer                                                        1 28  0.32    0.25    0.25     0.18  0.18 0.21     0.14                        0.32 0.39
+manufacturer                                                        2 25  0.08    0.28    0.08     0.08  0.20 0.04     0.00                        0.00 0.08
+     problem                                                  leakage  9  0.11    0.33    0.11     0.11  0.22 0.00     0.00                        0.11 0.11
+     problem                                                   no dhw 10  0.30    0.40    0.40     0.30  0.30 0.50     0.20                        0.30 0.50
+     problem                                                  no heat 20  0.25    0.25    0.15     0.15  0.25 0.10     0.05                        0.15 0.20
+     problem                                                    noise  3  0.00    0.00    0.00     0.00  0.00 0.00     0.00                        0.00 0.33
+     problem                                          not enough heat  8  0.25    0.25    0.12     0.00  0.00 0.00     0.12                        0.25 0.25
+     problem                                                    other  3  0.00    0.00    0.00     0.00  0.00 0.00     0.00                        0.00 0.00
+   component                                 Air in the piping system  1  0.00    0.00    0.00     0.00  0.00 0.00     0.00                        0.00 0.00
+   component                                             Control unit  9  0.11    0.22    0.22     0.11  0.11 0.11     0.11                        0.11 0.22
+   component                Differential pressure regulator defective  1  1.00    0.00    0.00     0.00  0.00 0.00     0.00                        1.00 0.00
+   component  Failure of the domestic hot water storage charging pump  4  0.25    0.75    0.50     0.25  0.50 0.00     0.00                        0.25 0.25
+   component                      Failure of the heating circuit pump  6  0.00    0.00    0.00     0.17  0.33 0.17     0.33                        0.00 0.17
+   component                                           Heat exchanger  1  0.00    0.00    0.00     0.00  0.00 0.00     0.00                        0.00 0.00
+   component Incorrect setting of the differential pressure regulator  6  0.50    0.17    0.33     0.17  0.00 0.17     0.17                        0.33 0.67
+   component                                                  Leakage  7  0.14    0.29    0.00     0.14  0.29 0.00     0.00                        0.14 0.14
+   component                   Low pre-charge at the expansion vessel  1  1.00    0.00    0.00     0.00  0.00 0.00     0.00                        0.00 0.00
+   component                   Motorised control valve (primary side)  4  0.25    0.25    0.25     0.25  0.25 0.25     0.00                        0.25 0.25
+   component         Motorised control valve (primary side) defective  1  0.00    0.00    0.00     0.00  0.00 0.00     0.00                        0.00 0.00
+   component                                      Safety relief valve  2  0.00    0.50    0.50     0.00  0.00 0.50     0.00                        0.00 0.00
+   component                                    Shut-off valve closed  2  0.00    0.50    0.00     0.00  0.00 0.50     0.00                        0.00 0.50
+   component                                Strainer (secondary side)  1  0.00    1.00    0.00     0.00  1.00 1.00     0.00                        0.00 0.00
+   component                 Temperature monitor/controller defective  1  1.00    1.00    1.00     1.00  1.00 0.00     0.00                        1.00 1.00
+   component                                                  unknown  6  0.17    0.17    0.00     0.00  0.00 0.00     0.00                        0.17 0.17
+efd_possible                                                     True 53  0.21    0.26    0.17     0.13  0.19 0.13     0.08                        0.17 0.25
+     mon_pot                                                     high 15  0.07    0.13    0.13     0.13  0.20 0.13     0.20                        0.07 0.20
+     mon_pot                                                      low 21  0.29    0.29    0.19     0.14  0.14 0.14     0.05                        0.19 0.33
+     mon_pot                                                      mid 11  0.27    0.45    0.27     0.18  0.36 0.18     0.00                        0.27 0.18
+category
+missed_by_all                  26
+missed_by_C2_found_by_other    14
+shared                         11
+C2_only_vs_others               2
+{
+ "n_m2": 25,
+ "n_A": 11,
+ "n_BC": 10,
+ "n_U": 4,
+ "rule_recall_A": 0.09090909090909091,
+ "rule_recall_BC": 0.1,
+ "share_BC_among_ae_only": 0.0,
+ "share_BC_among_rule_detected": 0.5,
+ "n_ae_only": 1,
+ "n_rule_detected": 2,
+ "H5d_supported": false,
+ "H5e_supported": false,
+ "pooled_by_class": {
+  "A": {
+   "rule": 0.3684210526315789,
+   "ae": 0.15789473684210525,
+   "C2": 0.3684210526315789,
+   "n": 19
+  },
+  "B": {
+   "rule": 0.10526315789473684,
+   "ae": 0.15789473684210525,
+   "C2": 0.15789473684210525,
+   "n": 19
+  },
+  "C": {
+   "rule": 0.1111111111111111,
+   "ae": 0.1111111111111111,
+   "C2": 0.2222222222222222,
+   "n": 9
+  },
+  "U": {
+   "rule": 0.16666666666666666,
+   "ae": 0.0,
+   "C2": 0.16666666666666666,
+   "n": 6
+  }
+ }
+}

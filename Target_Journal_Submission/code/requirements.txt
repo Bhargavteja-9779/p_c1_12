@@ -1,0 +1,11 @@
+# Tested with Python 3.13 (CPU only)
+numpy==2.5.3
+pandas==3.0.5
+scikit-learn==1.9.1
+scipy==1.18.1
+lightgbm==4.7.0
+pyarrow==26.0.1
+torch==2.15.0  # CPU wheel: pip install torch --index-url https://download.pytorch.org/whl/cpu
+matplotlib
+tabulate
+pypdf
