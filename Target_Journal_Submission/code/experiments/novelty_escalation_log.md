@@ -540,3 +540,9 @@ Output: results/plan_v2/predist1/seed0/{summary.json,cells.csv,bootstrap.csv,sel
   16/17 detectors (0.94) have ratio < 1. SUPPORTED (script verdict).
 - Recall table (ET/EH/CT/CH): balanced event windows give 0.69-0.84 recall for every detector; deployment-like CH
   gives 0.04-0.29. ae_cond (most sophisticated) is LAST under CH (0.036) but mid-pack under ET.
+
+### 2026-11-25 01:12 UTC — plan_v2 PreDist seed 0: reproducibility check (G9)
+On a fresh container (D-26), all PreDist M1 inputs and panel seed-0 scores were regenerated from raw data and
+`scripts/plan_v2_analysis.py predist1 0` was re-run. All four outputs in results/plan_v2/predist1/seed0
+(bootstrap.csv, cells.csv, selection_per_detector.csv, summary.json) are byte-identical to the committed versions
+(empty git diff). H7a/H7b/H7d seed-0 PreDist numbers are therefore reproducible end-to-end. No new test.
