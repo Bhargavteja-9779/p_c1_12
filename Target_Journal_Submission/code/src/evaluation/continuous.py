@@ -21,6 +21,7 @@ Known limitation: unreported faults exist in "normal" time, so false-alarm rates
 from __future__ import annotations
 from dataclasses import dataclass
 import numpy as np
+import os
 import pandas as pd
 from ..data import predist as P
 
@@ -46,25 +47,28 @@ def substation_labels(m: int, s: int, index: pd.DatetimeIndex) -> SubstationLabe
     F = P.faults(m)
     F = F[F["sub"] == s]
     W = pd.Timedelta(days=WINDOW_DAYS)
-    excl = []
+    excl, known = [], []
+    leakfree = os.environ.get("PREDIST_EXCL_RULE", "legacy") == "leakfree"  # G8 sensitivity (experiments/leak_sensitivity.md)
     for _, r in F.iterrows():
         a0 = r["Possible anomaly start"] if pd.notna(r["Possible anomaly start"]) else r["Report date"] - W
         a0 = min(a0, r["Report date"] - W)
         a1 = r["Possible anomaly end"] if pd.notna(r["Possible anomaly end"]) else r["Report date"]
         a1 = max(a1, r["Report date"] + pd.Timedelta(days=1))
-        excl.append((a0, a1))
+        excl.append((a0, a1)); known.append(r["Report date"])  # a fault is known only once it is reported
     D = P.disturbances(m)
     for t in D.loc[D["sub"] == s, "Event start"].dropna():
         excl.append((t - pd.Timedelta(days=2), t + pd.Timedelta(days=2)))
     for (mm, ss, a, b) in P.KNOWN_ANOMALIES:
         if mm == m and ss == s:
             excl.append((pd.Timestamp(a) if a else index.min(), pd.Timestamp(b) if b else index.max()))
+    # non-fault exclusions keep the legacy rule: known once ended, or 7 d after start
+    known += [min(b, a + pd.Timedelta(days=7)) for a, b in excl[len(known):]]
     T = F[F["efd_possible"] == True]
     targets = pd.DataFrame({"event_id": T["Event ID"].values, "report": T["Report date"].values})
     targets["win_start"] = targets["report"] - W
     # a target is evaluable only if its window lies inside the monitored span
     targets = targets[(targets["win_start"] >= start) & (targets["report"] <= end + pd.Timedelta(days=1))]
-    return SubstationLabels(m, s, start, end, targets.reset_index(drop=True), excl)
+    return SubstationLabels(m, s, start, end, targets.reset_index(drop=True), excl, known if leakfree else None)
 
 
 def alarm_starts(alarm: pd.Series) -> pd.DatetimeIndex:
