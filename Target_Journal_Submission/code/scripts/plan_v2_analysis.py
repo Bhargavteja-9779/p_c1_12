@@ -149,6 +149,11 @@ for d in DETS:
     et, eh, ct, ch, pts = cells(tab[d][0], tab[d][1], ones); point[d] = pts
     rows.append({"detector": d, "ET": et, "EH": eh, "CT": ct, "CH": ch})
 Rt = pd.DataFrame(rows); Rt.to_csv(f"{OUT}/cells.csv", index=False)
+# per-asset contributions to CH at the held-out points (used by plan_v3 arm 1 for its bootstrap; added pre-run)
+pd.DataFrame([{"detector": d, "asset": aname(ASSETS[i]), "fold": int(FOLD[i]),
+               "n_tgt": tab[d][0][i, point[d][FOLD[i]][0], point[d][FOLD[i]][1], 0],
+               "n_det": tab[d][0][i, point[d][FOLD[i]][0], point[d][FOLD[i]][1], 1]} for d in DETS for i in range(A)]
+             ).to_csv(f"{OUT}/ch_per_asset.csv", index=False)
 kt = lambda x: kendalltau(Rt[x], Rt.CH).statistic
 obs = {"tau_ET": kt("ET"), "tau_EH": kt("EH"), "tau_CT": kt("CT")}
 

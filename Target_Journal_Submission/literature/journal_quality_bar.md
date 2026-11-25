@@ -1,205 +1,176 @@
-# Energy and AI: the quality bar we have to meet or beat
+# Energy and AI (ISSN 2666-5468): quality bar for our early-fault-detection evaluation paper
 
-Built 2026-11-24. Companion data: `literature/journal_quality_papers.csv` (34 papers). This file builds on `journal_selection/journal_benchmark.csv` (40 papers, 16 read in full), `journal_level_profile.md` and `style_notes.md`, and does not repeat them. Every number below comes from a source I opened (OpenAlex, Crossref, Semantic Scholar, or a PDF I read). Anything I could not check is marked UNVERIFIED.
+Built 2026-11-24/25. Companion table: `energy_ai_papers_v2.csv` (39 papers). This file extends
+`journal_selection/journal_benchmark.csv`, `journal_level_profile.md` and `style_notes.md` and does not repeat them.
 
-## 0. Sample, sources and caveats
+## 0. Sample and sources (what was actually read)
 
-### How the papers were chosen
+- **Population.** OpenAlex source `S4210241048` (Energy and AI), publication date 2024-01-01 or later: 636 works, fetched on 2026-11-24.
+- **Selection.** Each title and abstract was keyword-scored for topic proximity (fault, anomaly, condition monitoring, predictive maintenance, district heating, substation, wind/SCADA, HVAC/heat pump, false alarm, transfer, benchmark, reproducibility). I then hand-picked 39 papers:
+  - 29 on fault detection, anomaly detection, CM or PdM in wind, district heating, HVAC/heat pumps, PV, batteries, fuel cells, engines and the grid;
+  - 10 benchmark or evaluation papers (DH forecasting, transfer, audits, datasets).
+- **Full texts read: 10, plus 1 partial.**
+  - Typeset Elsevier versions from repositories: 100824 (Univ. Antwerp), 100366 (ETS Montreal), 100413 (HAL).
+  - arXiv preprints: 100373, 100626, 100658, 100942, 100867, 100870.
+  - Partial: 100819, from an earlier arXiv version with a different title.
+- **Abstract only: 28.** Abstracts come from the OpenAlex `abstract_inverted_index`.
+- **Blocked routes** (bot walls or forbidden): RWTH, UPC, NTNU/NVA, Kassel, PolyU, DiVA. ScienceDirect returns 403. The Elsevier text-mining API without a key returns metadata only.
+- **Citations.** OpenAlex `cited_by_count` as of 2026-11-24.
+- **How to read the CSV.** Every cell that comes from an abstract says so implicitly (`full_text_read = n`). Unknown values are `UNVERIFIED`.
+- **Corpus-wide check.** I searched all 636 titles and abstracts:
+  - "CARE" (the wind benchmark), "PreDist", "spectrum bias", "selection bias", "event-based" and "alarm budget" never appear.
+  - "false-alarm" appears once, in a power-system security benchmark (10.1016/j.egyai.2026.100811), which is off-topic for us.
+  - In the full texts I read, "false alarm" appears once, in passing (100366).
 
-- **Group A, the most-cited papers (16).**
-  - **Window.** Crossref `filter=issn:2666-5468,from-pub-date:2024-06-01,type:journal-article` returns 601 items. I ranked them by OpenAlex `cited_by_count`, retrieved on 2026-11-24.
-  - **Exclusions.** I left out reviews, overviews, perspectives and surveys: 100419, 100424, 100375, 100378, 100406, 100361, 100455, 100514, 100518 and 100508.
-  - **What is left.** The top 15 research articles, plus 100414 (number 16) because it had a repository PDF. In the end, that PDF returned HTTP 503.
-  - **Example of the citation sources disagreeing.** Six highly cited 2024 papers (100347, 100368, 100372, 100360, 100371, 100345) have a Crossref issue date of 2024-05, so they fall outside the window and are not included.
-- **Group B, the papers closest to our topic (18).** These come from a keyword screen of all 600 OpenAlex 2024+ articles in the journal. The keywords were fault, anomaly, condition monitoring, wind turbine, district heating, substation, benchmark, HVAC, reliability and diagnosis. I kept the papers about fault or anomaly detection, wind, district heating, and evaluation or benchmarking methodology. 7 of the 18 are also in `journal_benchmark.csv`.
-- **DOI checks.** All 34 DOIs resolve on Crossref, and Crossref lists the container as *Energy and AI*.
+## (a) Top 5 papers and what makes them strong
 
-### Citation counts
+Selection rule: topical relevance weighted by citations, with full text required so that the claims can be checked. The five most-cited papers in the set by raw count are 100413 (57), 100345 (54), 100366 (46), 100412 (43) and 100373 (32). Of these, only 100373 is close to our topic. The others are battery, fuel-cell and blade-imaging papers, and their strength is mostly a typeset package plus a single dataset (see the note after the table).
 
-The CSV gives three counts for each paper: OpenAlex, Crossref `is-referenced-by-count` and Semantic Scholar, all retrieved on 2026-11-24. They differ a lot. For example, 100444 has 139 in OpenAlex, 119 in Crossref and 113 in Semantic Scholar.
-
-### Full text
-
-I could read **6 of the 34** in full.
-
-- **Published Elsevier PDFs in institutional repositories (3):**
-  - 100824 (Univ. Antwerp);
-  - 100397 (Coventry);
-  - 100366 (ETS Montreal).
-- **arXiv author versions (3):**
-  - 100571;
-  - 100975 (v1);
-  - 100450 (posted 2022 and revised later).
-- **Why the rest are abstract-only (28):**
-  - ScienceDirect PDF links return 403.
-  - The HAL copies (100380, 100413) return a bot-check page.
-  - DiVA (100548) timed out, and UPM (100414) returned 503.
-  - There are no arXiv or Zenodo copies.
-
-Every row for those 28 papers is coded from the OpenAlex abstract only. Their structure, figure and table counts, and statistics columns are "UNVERIFIED (abstract only)".
-
-Together with the 16 full texts in `journal_benchmark.csv`, **22 distinct Energy and AI papers have now been read in full**. 100824 was abstract-only before and is now full text.
-
-### Caveats
-
-- **Preprints vs published versions.** Counts taken from preprints (100571, 100975, 100450) may differ from the published versions. Their page counts are preprint pages and are not used as journal length.
-- **Citations do not measure rigour.** The most-cited papers are mostly forecasting or materials papers with thin evaluation (see Section 2). "Best" in this file therefore means two things: highest-cited (Group A) and most rigorous on our topic (the Group B exemplars 100824, 100975, 100788, 100722 and 100856, plus 100942, 100867, 100870 and 100704 from the earlier benchmark).
-
-## 1. What a top Energy and AI paper contains
-
-| Element | Evidence (n = papers where it could be checked) | Source |
-|---|---|---|
-| **Highlights** | 3/3 new typeset PDFs (100397, 100366 and 100824 have 5 bullets each). 7/16 benchmark full texts (all 4 typeset ones). Never seen in an author preprint, so it is added at production or required at submission. | PDFs |
-| **Graphical abstract** | 3/3 new typeset PDFs, 6/16 benchmark. Always a pipeline or overview figure. | PDFs |
-| **Keywords** | 6/6 new full texts; 16/16 benchmark. | PDFs |
-| **Nomenclature / acronym box** | 2/6 new (100397 has symbols + abbreviations, 100975 has an acronym box); 2/16 benchmark (100373, 100448). | PDFs |
-| **Explicit contribution list** | 3/6 new use bullets: 100824 ("The main contributions of this paper are:", 4 bullets starting with "We introduce / We provide / We derive"), 100571 (subsection "1.1. Contributions", 4 bullets with bold lead-ins) and 100450 (bold lead-ins). 100975 states its 3 contributions in one closing paragraph. 100397 and 100366 have no list. Benchmark: at least 11/16 have a list. | PDFs |
-| **Roadmap paragraph** ("Section 2 reviews ...") | 100824, 100571 and 100975 have one. | PDFs |
-| **Separate Related-work section** | 3/6 new (100824, 100571, 100975); 11/16 benchmark. | PDFs |
-| **Dedicated Limitations subsection** | 3/6 new: 100824 §6.5, 100975 §6.5, and 100571 §5.4 "Key Findings and Limitations". 3/16 benchmark. Evaluation-type papers tend to have one; method papers usually do not. | PDFs |
-| **"Implications for practice" subsection** | 100975 §6.4, and 100824 §6.4 "DH field implications". | PDFs |
-| **Back matter** | CRediT 4/4 of the new typeset or near-final texts that I checked (100397, 100366, 100824, 100975). Data availability 4/6. Generative-AI declaration 3/6 (100571, 100450, 100975). 100975 names "Open AI Codex and Anthropic Claude" for code assistance. | PDFs |
-| **Typeset length** | New: 10 (100366), 14 (100397), 17 (100824). Pooled with the benchmark's 11, 16, 17 and 19 pages: **median 16 pages, range 10-19 (n = 7)**. | PDFs |
-| **Main-text figures** | New full texts: 8, 9, 15, 7, 10 and 11, **median 9.5**. Benchmark median 10 (n = 16). | PDFs |
-| **Main-text tables** | New: 6, 11, 11, 8, 7 and 4, **median 7.5**. Benchmark median 3.5. Appendix tables are common in addition, e.g. 100975 has A.8-A.12. | PDFs |
-| **References (Crossref)** | All 34: **median 48.5** (IQR 38.75-66.25, range 22-89). Group A median 45, Group B median 53. The evaluation exemplars have 72 (100824), 69 (100975) and 89 (100788). | Crossref |
-| **Title** | Median 14 words in A and 14.5 in B. A colon appears in 4/16 Group A titles and 10/18 Group B titles. In Group B the "Topic: specific claim" form is common (100856, 100963, 100788, 100824). | OpenAlex |
-| **Abstract** | Single paragraph. Median 208 words (A) and 215 words (B), range 149-276. Numbers in the abstract: 13/16 A and 8/18 B contain a percentage. A "this paper/we propose / introduce / develop" sentence appears in 9/16 A and 15/18 B. | OpenAlex |
-| **Review time (one data point)** | 100824 prints "Received 6 May 2026; revised 14 June 2026; accepted 23 June 2026", which is 48 days from receipt to acceptance. Elsevier dates are not in Crossref, so other papers are UNVERIFIED. | PDF |
-
-## 2. How much evidence papers provide
-
-### Typical paper vs the best papers
-
-| Dimension | Typical (journal medians from the earlier benchmark, n stated there) | Most-cited Group A (abstract evidence, n = 16) | Best-in-class on rigour (full text read) |
+| # | DOI | Cites | Why it is in the top 5 |
 |---|---|---|---|
-| **Datasets / sites** | Median 1 (full texts: 2) | Mostly 1-2. 100444 (most cited, 139) reports one PV setting; 100413 one public battery set | **6** DH datasets, 4 public and 2 private (100824). **18** heating datasets (100722, abstract). **54** (100867) |
-| **Baselines** | Median 2-2.5 | 0-6. 100380 has 3, 100434 has 2, 100474 has 1 | **5** strong TS classifiers from one library (100824). 13-14 (100942, 100704). **8** detectors (100788, abstract) |
-| **Seeds / repeats** | Reported in 3/15 full texts | Not stated in any abstract | 100975 fixes 3 seeds (42, 7, 101). 100824 reports mean ± 95% CI over repeated seeds and repeated stratified CV, but the number of repeats is UNVERIFIED |
-| **Significance tests** | 4/15 full texts (27%) | **0/16** abstracts mention a statistical test | 100824: Friedman (α = 0.05) + paired Wilcoxon + Cohen's d + 95% CIs. 100975: Diebold-Mariano with HAC lag. 100942: CD diagrams + block-bootstrap CIs. 100870: Friedman + Holm-Wilcoxon |
-| **Ablation** | 3/16 full texts | 0/16 abstracts mention one | 100824 component ablation (Table 7). 100975 grouped-information ablation |
-| **Leakage-safe / out-of-sample protocol stated** | Not coded before | Not visible in abstracts | 100975: "common pre-auction information boundary and rolling-origin design" over a full held-out calendar year, with validation in the prior half-year. 100824 standardises using training-split statistics only |
-| **Public code** | 9/15 full texts (arXiv-biased) | **0/16** abstracts mention code. The only public artefact is a web tool (100414) | 100975: Zenodo DOI. 100571: GitHub. 100819: GitHub with data and models (abstract). 100824: no code statement; data partly public |
-| **Data availability** | Slot present in 9/16 | n/a | "Data will be made available on request" appears in 100397 and 100366 (both top-cited). 100824 gives a split public/private statement |
+| 1 | 10.1016/j.egyai.2026.100824 (van Dreven et al., DH substation self-supervised transformer) | 2 | **Our closest competitor.** It uses PreDist split per manufacturer (M1/M2), with M1<->M2 zero-shot transfer. |
+| 2 | 10.1016/j.egyai.2024.100373 (Roelofs et al., AE transfer learning, wind) | 32 | The most-cited wind CM paper. It is a cross-turbine transfer study. |
+| 3 | 10.1016/j.egyai.2025.100626 (Jonas & Meyer, CycleGAN transfer, wind) | 14 | A cross-turbine NBM transfer study across 7 wind farms. |
+| 4 | 10.1016/j.egyai.2025.100658 (Mukhtar et al., reproducibility of HVAC FDD) | 17 | An evaluation-methodology paper in FDD with no method contribution. |
+| 5 | 10.1016/j.egyai.2026.100942 (Spoek et al., TSFM heat-load evaluation) | 4 | A pure systematic-evaluation paper in DH with the strongest statistics in the set. |
 
-### What this means for us
+### What they contain, concretely
 
-- **Citations do not reward rigour in this journal.** The most-cited wind fault-detection paper in the window is 100366 (46 citations). It uses one lab dataset, 2 baselines, a single 80% training split, no statistics, and data only on request, and its highlights claim "100 % accuracy". The evaluation-heavy papers (100824, 100975, 100788) are too new to have citations yet.
-- **What exceeding the best papers means.** The rigour bar to exceed is set by 100824 and 100975, which have:
-  - several datasets, some of them public;
-  - at least 5 strong baselines;
-  - paired non-parametric tests with effect sizes and CIs;
-  - fixed seeds;
-  - an ablation;
-  - a leakage-safe protocol;
-  - archived code;
-  - a dedicated limitations subsection.
+**1. 100824: 17 typeset pages, 7 figures, 8 tables.**
+- **Front matter.** Graphical abstract, plus 5 highlights.
+- **Structure.** Introduction (with research question and a 4-bullet contribution list), Related work, Data sources, Methods, Experimental setup (Experiments EXP1-3 and Baselines), Results (with **6.4 "DH field implications"** and **6.5 "Limitations"**, 4 bullets), Conclusion and future work.
+- **Data.** 6 datasets: lab, simulation and 4 field datasets (CSDH 250 substations, PreDist M1/M2 with 93 substations, BDH 36 centres). Two are private.
+- **Baselines.** 5 strong time-series classifiers (InceptionTime, MiniRocket, MLSTM-FCN, TST, TSSequencerPlus), with a parameter-count table.
+- **Statistics.** Repeated stratified CV with seeds, 95% CIs, Friedman test followed by paired Wilcoxon tests, and Cohen's d.
+- **Ablation.** A component ablation (Table 7).
+- **Other analyses.** A standard split vs a substation-out split (Table 8), and UMAP embedding plots.
+- **Candour.** It reports where its own method loses to baselines.
+- **Weaknesses we can exploit.**
+  - The protocol is window-level classification with fault ratios of 20-83%.
+  - F1 is "upper-bound macro F1", i.e. computed with an oracle threshold.
+  - There is no time-based false-alarm rate and no continuous monitoring.
+  - It acknowledges that "the absence of a report does not guarantee fault-free operation" but does not quantify the effect.
+  - No code link.
 
-## 3. Writing style
+**2. 100373: arXiv version, 7 figures, 0 tables.**
+- A nomenclature list.
+- Two offshore wind farms (240 and 30 sensors) and 3 failure case studies.
+- Thresholds tuned on the F0.5 score ("to prioritise precision over recall"), plus a criticality measure over time.
+- Short and focused, with a single baseline.
+- **Its strength is the question** (does transfer work across turbines?) and the use of real failures, not the rigour: there are no statistics and no code.
 
-All quotes are 25 words or fewer and come from text I read. The DOI suffix is given; the prefix is 10.1016/j.egyai.
+**3. 100626: arXiv version, 10 figures, 2 tables.**
+- **Contributions.** Explicit roman-numeral contribution list with a "first to" claim.
+- **Data.** 7 turbines from 7 wind farms, giving 28 domain pairs.
+- **Scarcity sweep.** Data-scarcity levels from 1 to 8 weeks.
+- **Outputs.** Qualitative anomaly-score timelines against logged incidents. Code is public.
+- **Caveat.** The F1 measures agreement with an abundant-data NBM, not with fault labels. The authors note that they "cannot determine" whether some high scores are "false positives or identified but unlogged abnormal states."
 
-### Patterns to follow
+**4. 100658: arXiv version, 13 figures, 2 tables.**
+- A coded corpus of 65 FDD studies.
+- A strong headline number in the abstract (72% of studies do not state data availability).
+- A policy-style closing that calls for guidelines.
+- Code and data released.
+- **Why it matters for us.** It proves that the journal publishes **pure evaluation and meta-science in FDD**.
 
-- **Evaluation papers lead with the gap between the reported metric and the decision that matters.**
-  - 100975 (full text) frames its whole contribution as "evidence that aggregate rankings are uninformative about price-spike reliability".
-  - In its practice section it says "model selection on CRPS or marginal coverage is insufficient and can be actively misleading."
-  - This is the same logical shape as our claim: balanced event-window scores mislead deployed alarm precision and rankings.
-- **Failure-of-standard-evaluation papers make a prescriptive closing statement.**
-  - 100856 (abstract): "Lab-aware evaluation should therefore be a standard component of ML reporting, not an optional addition."
-  - It also gives a concrete pass/fail criterion ("requires LOLO R² > 0").
-- **Scope is stated honestly, and competitive baselines are credited.**
-  - 100824 (abstract) concedes that "CNN-based and hybrid baselines remain highly competitive in cleaner or more separable regimes".
-  - Its introduction justifies breadth "to move beyond maximising accuracy on a single curated dataset".
-- **Label-quality limitations are stated specifically.**
-  - 100824 §6.5: "the absence of a report does not guarantee fault-free operation".
-  - This applies directly to PreDist and CARE labels, and we should say the same.
-- **Mechanism statements, not just scores.**
-  - 100975: "Recalibration and combination therefore address different failures and are not substitutes."
-  - Each finding comes with a structural reason.
-- **Null and negative results are reported openly.**
-  - 100722 (abstract) reports that static features yield "only minor, often statistically non-significant, and sometimes slightly negative effects".
-  - 100975 reports a "non-significant 4.4% difference" in CRPS.
-- **Benchmark protocols are described by what they isolate.**
-  - 100788 (abstract) says its protocol "isolates detection accuracy from downstream model adaptation effectiveness".
-  - It reports a sobering headline number ("Maximum MCC of 0.32").
-- **Contribution lists.** Typically 3-4 bullets, each starting with a verb ("We introduce...", "We provide...", "We derive...", from 100824), or with a bold noun phrase (100571, 100450).
+**5. 100942: arXiv version, 8 figures, 9 tables.**
+- 13 trained baselines.
+- 95% block-bootstrap CIs and critical-difference diagrams.
+- Ablations and sensitivity analyses (covariates, context length, resolution, weather-forecast realism).
+- Cross-network transfer, with one public external network.
+- A Limitations subsection.
+- Code plus Zenodo.
 
-### Patterns to avoid
+### Recurring strength markers across the top 5 and the typeset papers
 
-These appear in highly cited papers, but they conflict with our integrity rules and would weaken an evaluation paper:
+- **Graphical abstract and highlights.** All 3 typeset PDFs I read have both (100824, 100366, 100413).
+- **A framework or pipeline figure.** Fig. 1 in 100824 is a two-stage pipeline overview.
+- **Data in a table.** A table summarising datasets (type, availability, resolution, number of samples, fault ratio) and a table of methods (family, parameters).
+- **Two kinds of results.** Quantitative tables with mean ± CI, plus qualitative timelines before documented failures (100373, 100626).
+- **A practical section.** An explicit deployment or field-implications section (100824 §6.4), or latency figures (100525 reports 14/12/24 ms inference; 100366 reports processing time).
 
-- Hype in highlights. 100366: "Revolutionizing wind energy maintenance ..." and "Flawless fault Detection, achieving 100 % accuracy ...".
-- Unsupported superlatives in abstracts:
-  - 100450: "remarkable accuracy (96% classification, 2.3% MAPE)";
-  - 100645: "This work presents a milestone ...";
-  - 100459: "achieves state-of-the-art performance".
-- "Novel", "first" and "state-of-the-art" in abstracts: 3, 7 and 4 of the 34 respectively (OpenAlex abstracts). We use them only if Section 6 literature evidence supports them (MASTER_PROMPT rule 7).
+**Note on the high-citation, off-topic papers** (100413, 100366): both are short, typeset at 10-13 pages, use one dataset, have no statistical tests and make data available only "on request". Their citations reflect the topic (batteries, blade imaging), not rigour. They are not the bar for rigour.
 
-## 4. Checklist: what our manuscript must have to be at or above the best papers
+## (b) Typical structure, length, abstract, highlights, contributions and tone
 
-Each item gives the bar it beats or matches.
+- **Sections.** Introduction (with a contribution list and a roadmap paragraph), Related work, Data, Method or Protocol, Experimental setup (including baselines and metrics), Results, Discussion or field implications, Limitations, Conclusion and future work. Back matter: CRediT, competing interests, data availability (with code availability as a separate heading in 100413), and a generative-AI declaration (2025-26).
+  - Benchmark papers sometimes separate Results and Discussion (100867 states an "IMRaD + CRISP-DM" structure).
+- **Length.**
+  - Typeset pages: 10 (100366), 13 (100413), 17 (100824). The earlier profile gives 11-19, median 16.5.
+  - Figures: median 10 main-text figures.
+  - Tables: 3-9 main tables (benchmarks have more, e.g. 100870 has 11 and 100942 has 9).
+  - References: 45-90. Benchmark and evaluation papers sit at the top: 100867 has 86 references, 100658 has 88, 100788 has 82 and 100971 has 92.
+- **Abstract.** One paragraph of about 220-300 words. Order: context, gap, "This study/paper ...", setting, several hard numbers, then a practical implication.
+  - Evaluation papers end on a normative sentence. Examples from abstracts: "Lab-aware evaluation should therefore be a standard component of ML reporting, not an optional addition." (100856); "Benchmark objectives should disclose their implied violation price alongside any reported energy saving." (100936).
+- **Highlights.** 4-5 bullets of about 10-15 words, mixing method and finding statements. Verbatim from 100824: "Evaluated in-depth, from lab and synthetic data, to multiple real-world DH networks."; "Cross-domain transfer is feasible, but currently asymmetric."
+  - 100366's highlights are hype-heavy ("Revolutionizing wind energy maintenance ..."). Avoid this style.
+- **How contributions are listed.** 3-4 bullets, or roman or arabic numerals, introduced by "The main contributions of this paper are:" or "Our contributions are as follows:". Verbatim examples:
+  1. "We provide a broad empirical reference for DH substation fault detection using six datasets spanning controlled laboratory emulations, synthetic benchmarks, and field deployments." (100824)
+  2. "Our study is the first to investigate and demonstrate domain mapping for unsupervised anomaly detection with time series for WT fault detection." (100626)
+  3. "We provide a systematic evaluation of two TSFMs, TabPFN-TS and Chronos-2, for probabilistic heat load forecasting in DHNs." (100942)
+  4. "A benchmark of recent TSFMs in univariate, covariate-informed, and fine-tuned modes against task-specifically tuned XGBoost and random forest." (100867)
+  5. "An empirical benchmark of nine forecasting architectures, including linear, MLP-based, convolutional, and Transformer-based models, alongside classical baselines (SARIMA, naïve seasonal) on two real-world smart meter datasets." (100870)
+- **Tone.**
+  - Assertive in abstracts and highlights.
+  - Hedged, effect-size-aware wording in the best bodies. 100824 writes "we refrain from making strong pairwise claims for this dataset and interpret differences primarily through effect sizes and CI".
+  - Limitations are given as bullets or a short subsection.
 
-1. **A headline finding stated as a measured ranking inversion and precision gap, in the abstract and the highlights.** Give numbers from result files, for example deployed alarm precision vs balanced-window precision, and how many detector-pair rankings flip. Bar: 100975's "aggregate rankings are uninformative" framing, which has no ranking-flip count.
-2. **A protocol section that defines the "information boundary" of deployment.** It should cover:
-   - continuous replay;
-   - thresholds fixed out-of-sample, on a validation period, before test;
-   - false-alarm budget per asset per unit time;
-   - no event-window balancing;
-   - a side-by-side table: balanced-benchmark protocol vs deployment protocol.
+## (c) How evaluation and benchmark (non-method) papers frame their contribution here
 
-   Bar: 100975 §3-4 (information boundary, rolling origin). 100824 evaluates PreDist only as balanced-ish daily-window classification at 20-32% fault prevalence.
-3. **At least 2 domains with public data and DOIs: PreDist (DH substations) and CARE to Compare (wind).** Bar: median 1 dataset; 100824 uses 6 datasets but only 4 are public. We should list exact subsets, assets, events and prevalence in one dataset table, as in 100824 Table 2.
-4. **A detector panel of at least 5.** It should include a simple rule or threshold baseline, classical unsupervised detectors and at least one modern deep model, with equal tuning budgets logged. Bar: 5 in 100824; 3 in 100828.
-5. **Paired statistics across assets and events.** Use a Friedman test with Holm-corrected Wilcoxon, or a CD diagram; effect sizes; block or event-level bootstrap 95% CIs on precision, alarms per asset-year and detection delay; seeds fixed before test and reported. Bar: 100824 (Friedman + Wilcoxon + d + CI) and 100975 (DM + 3 fixed seeds). We exceed it only if the CIs cover the deployment metrics themselves, not just AUC or F1.
-6. **A sensitivity analysis that turns each protocol choice on and off.** The choices are balancing, threshold leakage and window length. This is the evaluation-paper version of an ablation, and it shows which choice drives the overstatement. Bar: 100824 Table 7 and the 100975 grouped ablation; both are 19% or less of the journal.
-7. **An operator-unit translation in an "Implications for practice" subsection.** For example: alarms per 100 substations per month at a fixed recall, and what a false-alarm budget implies. Bar: 100975 §6.4 converts errors to GBP/MWh.
-8. **A dedicated Limitations / threats-to-validity subsection.** It should be specific, covering:
-   - label noise (unreported faults, as worded in 100824);
-   - limited event counts and wide CIs;
-   - only 2 domains;
-   - detector-panel coverage.
+They exist and are increasing in 2026. Ten of the 39 are coded as benchmark-evaluation or meta-research. Their framing follows a repeatable template:
 
-   Bar: 3/16 benchmark full texts + 100824 + 100975. A threats-to-validity format would be above everything observed so far.
-9. **Code and data archived with a Zenodo DOI, plus a Data availability statement, a CRediT section to be completed by the authors, and a GenAI declaration.** Bar: 100975 (Zenodo). The top-cited papers mostly offer data "on request".
-10. **A reporting recommendation or minimum-reporting checklist for FDD benchmarks.** It should be prescriptive, as in 100856, and cover what any FDD paper should report: prevalence, threshold source, alarms per asset-time, event-level CIs.
-11. **The submission package.** Aim for:
-    - highlights: 3-5 bullets, quantified, with no hype words;
-    - a graphical abstract: a pipeline figure contrasting the two protocols;
-    - 4-8 keywords;
-    - an acronym nomenclature box (NBM, SCADA, DH, FDD, FAR...).
+1. **Name an evaluation gap, not a model gap.** Examples:
+   - "a systematic, use-case-differentiated evaluation is still missing" (100867 abstract);
+   - "lacking application-specific benchmarks with documented ground truth" (100788);
+   - within-lab R² "can diverge sharply from cross-laboratory predictive performance" (100856);
+   - benchmark weights "imply a price ... rarely stated or checked" (100936).
+2. **Provide a protocol or framework as the contribution.** Examples:
+   - a "standardized evaluation protocol ... isolates detection accuracy from downstream model adaptation" (100788);
+   - a "diagnostic framework" plus a pass threshold, LOLO R² > 0 (100856);
+   - a taxonomy plus a dataset collection (100867).
+3. **Quantify how far the standard practice misleads.** 100856 shows within-lab R² of 0.44 collapsing to LOLO R² of -3.05. 100936 shows that none of 102 policies held the thermal band.
+4. **Close with a reporting recommendation** addressed to the community.
+5. **Back the evidence with statistics, robustness and released code.** 100942, 100870 and 100867 all use Friedman/Wilcoxon or bootstrap and release code.
 
-    Target size: about 9-10 main figures, 5-8 main tables, 50-70 references, about 16 typeset pages.
-12. **Mixed and negative results shown openly.** Examples: detectors whose ranking does not change, and cases where balanced and deployed metrics agree. Bar: 100722 and 100975 do this; most papers do not.
-13. **A direct engagement with prior DH/PreDist results.** Explain why the window metrics in 100824 and HEAT (100548), which reports sensitivity and specificity, are not deployed alarm precision. Frame this as a measurement point, not an attack. Re-evaluate under our protocol only those methods we can actually reimplement; anything else is labelled as an argument, not a result.
-14. **A title that names the claim and the setting, in "Topic: claim" form, 13-15 words, with no "novel".** This matches the journal's median title length of 13-14 words, and the colon form is used in 10/18 topic-close papers.
+**Implication.** Our paper should be framed as "deployment-faithful evaluation exposes a protocol gap", with a protocol, a quantified gap and a normative reporting rule. The 100856/100936/100788 audit-style framing is the in-journal precedent. A "new detector" framing is not.
 
-## 5. Papers to cite or compare against, and why
+## (d) Checklist: at or above the best of these papers
 
-### Must cite and position against
+Data and protocol
+1. Two asset classes (DH substations on PreDist; wind on CARE to Compare). Report the number of assets, events and normal periods per dataset in one **dataset summary table** (type, availability, resolution, number of assets, number of events, normal-period share), as in 100824 Table 2.
+2. Explicitly **position against 100824**, which uses the same PreDist M1/M2 data. Reproduce its window-level, balanced, oracle-threshold protocol as one arm. Then show what changes under continuous, false-alarm-budgeted monitoring.
+3. Use a **time-based false-alarm metric** (alarms per asset-year or per 1000 h) at fixed budgets, plus detection rate and lead time. No paper in the set reports this.
+4. Run **balanced-event vs continuous evaluation on the same data and the same models**, with rank-reversal analysis.
+5. **Cross-manufacturer and cross-farm transfer** under the deployment protocol (train on M1, test on M2, and vice versa; across CARE farms). Report asymmetry, which 100824 found but only at window level.
+6. A **selection (spectrum-bias) analysis**: quantify how curated normal periods inflate specificity, with a controlled manipulation and a dose-response plot. 100824 only names the label-noise issue.
 
-| Paper | Why |
-|---|---|
-| **10.1016/j.egyai.2026.100824** (van Dreven et al. 2026, self-supervised transformer for low-label DH fault detection; full text) | Closest paper: same journal, same domain, and it uses PreDist (M1/M2) with window-level ROC-AUC and upper-bound macro F1. It is the natural "balanced benchmark" reference point. Cite its label-noise limitation as well. |
-| **10.1016/j.egyai.2025.100548** (HEAT, DH substation clustering; abstract) | Same group. It reports sensitivity and specificity and claims to minimise false positives. We can contrast this with alarm precision under a budget. |
-| **10.1016/j.egyai.2026.100788** (concept-drift detection benchmark in DH; abstract) | Closest benchmarking-methodology precedent in DH: a detector-centric protocol with robustness checks. We should frame our work as the analogous protocol for fault detectors. |
-| **10.1016/j.egyai.2026.100975** (tail reliability, GB day-ahead prices; full text, arXiv v1) | Same type of claim in the same journal: aggregate scores mislead model selection. It is a style and structure template. |
-| **10.1016/j.egyai.2026.100856** (cross-laboratory generalisation failure; abstract) | An Energy and AI precedent for "standard evaluation overstates real performance, and here is a diagnostic protocol". It supports the publishability of evaluation-failure papers in this journal. |
-| **10.1016/j.egyai.2024.100373** and **10.1016/j.egyai.2025.100626** (wind autoencoder NBM transfer; generative transfer for new turbines; in journal_benchmark.csv, full text) | Wind normal-behaviour-model detectors in this journal. These are thresholded detectors whose evaluation our protocol applies to. |
-| **10.1016/j.egyai.2025.100658** (reproducibility of ML-based HVAC FDD; benchmark full text) | Meta-research precedent on FDD reporting quality. It supports our reporting checklist. |
+Baselines and statistics
+7. **At least 5 baselines**, including a trivial or rule baseline and a chance or permutation reference, plus classical NBM/AE and at least one strong modern model. Top papers use 5-14 baselines.
+8. **Repeated seeds** (say how many), **95% bootstrap CIs** (block bootstrap over assets or events), Friedman + Wilcoxon/Holm or critical-difference diagrams, and **effect sizes**.
+9. **Sensitivity and ablation of the protocol itself**: budget level, event-window definition, threshold-calibration period, and normal-period curation rule.
+10. **Hedge wherever tests are not significant**, in the style of 100824's effect-size wording.
 
-### Cite as context or contrast
+Presentation (Energy and AI conventions)
+11. Graphical abstract, built around a protocol-gap figure (benchmark score vs deployment score).
+12. 4-5 highlights of 10-15 words, each carrying a number. No hype words.
+13. One-paragraph abstract of 220-280 words containing 3-4 hard numbers and a closing normative sentence.
+14. Introduction ending in a research question, a 3-4 item contribution list that starts with verbs, and a roadmap.
+15. **Framework or pipeline figure** (Fig. 1) showing the two protocols side by side.
+16. **Qualitative timeline figures**: anomaly score vs threshold before documented faults, with false alarms marked (as in 100373/100626, but quantified).
+17. An explicit **"Practical implications for operators"** section covering the alarm-budget trade-off, inspection cost and calibration data needed (compare 100824 §6.4). Also report compute cost and latency.
+18. A **Limitations** subsection in bullet form, plus future work.
+19. About 15-17 typeset pages, 8-12 figures, 4-9 tables and 60-90 references. Evaluation papers here run at about 80-90 references.
+20. Code on GitHub **with a Zenodo DOI**, exact dataset versions and split files, and a data-availability statement. Both datasets are public, so the full study can be reproduced. This beats 100824, which has private data and no code link.
+21. A **reporting-checklist table** for future FDD studies, which turns the 100658 critique into a positive tool.
+22. Cite in-journal precedents in the introduction and related work: 100824, 100548, 100373, 100626, 100658, 100788, 100856, 100942.
+23. Show **conservative nomenclature** (an acronym list) and define every metric by equation.
 
-- **10.1016/j.egyai.2026.100828** (LLM agent for wind condition monitoring). One documented failure, 24 queries, and baselines that include a fixed threshold and an isolation forest. It shows how thin event counts are in wind condition monitoring.
-- **10.1016/j.egyai.2024.100366** (hyperspectral blade inspection, most-cited wind fault-detection paper). Lab data, single split, "100 % accuracy". Use it as context for why deployment-realistic evaluation is needed. Cite it neutrally.
-- **10.1016/j.egyai.2026.100845** (heat-pump evaporator fault detection) and **10.1016/j.egyai.2026.100862** (speed-invariant gearbox autoencoder). These are residual- or threshold-based detectors where threshold choice is central, and 100862 claims "threshold-consistent health indicators".
-- **10.1016/j.egyai.2026.100722** (heating-load transfer-learning benchmark over 18 datasets). A model for reporting non-significant effects at scale.
-- **10.1016/j.egyai.2026.100942**, **10.1016/j.egyai.2026.100867** and **10.1016/j.egyai.2026.100870** (from journal_benchmark.csv). Statistical-reporting exemplars in the journal: CD diagrams, block bootstrap, Friedman/Nemenyi, Holm-Wilcoxon.
+## (e) Gaps: what none of the 39 papers does that our study does
 
-### Not needed
+1. **Continuous monitoring with a false-alarm budget.** No paper evaluates fault detectors under a fixed alarm budget per asset-time. Evaluation is window or sample classification (100824, 100766, 100892), accuracy or F1 on lab rigs (100565, 100681, 100845), or agreement with a reference model (100626). Among all 636 abstracts, "false alarm" appears only in an off-topic grid-security paper.
+2. **Protocol comparison as the result.** No paper puts balanced-event and deployment protocols side by side on the same data and models to measure how much the benchmark overstates field performance. 100856 does the analogous thing for perovskite materials ML, and 100936 for DRL cooling. **Nobody has done it for fault detection or condition monitoring.**
+3. **Selection (spectrum) bias in curated normal periods.** 100824 and 100626 acknowledge unlogged faults and label noise qualitatively. None measures the effect of how normal periods are chosen.
+4. **Two public, heterogeneous energy-asset benchmarks in one study.** No paper uses CARE to Compare. PreDist appears only in 100824, and only at window level. No paper crosses DH substations and wind turbines.
+5. **Cross-manufacturer transfer under deployment metrics.** Transfer appears in 100373, 100626 and 100824, but always with classification or proxy metrics, never alarm rate or lead time at fixed budgets.
 
-The Group A top-cited forecasting, materials and fuel-cell papers (100444, 100480, 100420, 100474, 100380, 100496, 100489, 100459, 100559, 100434, 100414) are off-topic. They are useful here only as style and length evidence.
-
-### Before citing
-
-Before any of these go into `paper/` references, re-open each one and check it under BRIEF integrity rules. Seven of the sources in this section (100548, 100788, 100856, 100828, 100845, 100862, 100722) are abstract-only, so any claim about their methods beyond the abstract must be marked UNVERIFIED.
+**Main in-journal threat.** 100824 already "provides a broad empirical reference" on PreDist M1/M2, including cross-manufacturer transfer. Our novelty claim has to rest on the **protocol** (continuous, budgeted, selection-aware), not on the datasets or on transfer alone.

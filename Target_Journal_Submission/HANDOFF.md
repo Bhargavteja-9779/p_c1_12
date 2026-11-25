@@ -8,21 +8,26 @@ If you are a new session on another branch: `git fetch origin && git merge origi
 
 ## STANDING USER DIRECTIVES: see USER_DIRECTIVES.md (keep improving with new methods until top-notch; never ask; never stop at good enough; integrity first).
 
-## NEXT ACTION (updated 2026-11-24 ~23:10 UTC, session on branch claude/intelligent-dirac-9fs327)
-Working branch: `claude/intelligent-dirac-9fs327` (fast-forward of serene-galileo; contains every claude/* branch).
-0. Container rebuilt AGAIN 22:50 UTC (D-26): env + PreDist cache + CARE zip (verified) done; queue running since 22:54 (2 workers). 01:00: CARE prep + all PreDist panel seeds done; CARE AE seed0 running; PreDist plan_v2 analyses seeds 0-4 running sequentially (nohup, logs/planv2_predist1_chain.log; seed 0 = reproducibility check vs committed numbers: byte-identical, G9). 01:15 worker restart killed all processes; 01:17 queue + seeds 1-4 chain restarted (disk survived). Earlier: D-24; queue runs 2 workers in tmux `queue`. Check `python3 scripts/status.py`.
-1. DONE: plan_v2 PreDist seeds 0-4 ALL done (H7a 5/5, H7b 5/5 but CI incl. 0 in seeds 2,4, H7d 5/5; tally in novelty_escalation_log.md). Seed 0 reproduced byte-identically on new machine. Earlier seed-0 note:
-   H7a p 0.0045, H7b p 0.0215, H7d supported. ~17 min runtime; per-detector cache resumes if interrupted.
-   scripts/plan_v2_summary.py written (Holm, robustness counts) BEFORE any CARE plan_v2 output (D-25).
-2. DONE 08:02 UTC: CARE seed 0 + Holm (verbatim in novelty_escalation_log.md): H7a rejected on PreDist AND CARE;
-   H7b rejected on PreDist only (CARE p 0.15, sign reversed); H7d supported on both. PreDist seeds 0-4 all done.
-   RUNNING: `nohup bash scripts/care_seed_chain.sh &` (from Target_Journal_Submission/) runs CARE analysis seeds 1-4
-   as each panel seed finishes, then plan_v2_summary.py. Progress: logs/planv2_care_chain.log. After a worker
-   restart: restart queue, then re-launch the chain (idempotent).
-3. Re-score novelty (author first, then blind reviewer agent) with plan_v2 results; if G3 still fails, plan_v3
-   method cycle or honest-exit analysis paper (D-17, D-19, D-21). Quality bar: literature/journal_quality_bar.md (done).
-4. Old items still open: round6_care.py for confirm seeds (deferred), PreDist leak sensitivity run,
-   final_report.py/audit_numbers.py refresh, manuscript.
+## NEXT ACTION (updated 2026-11-25 21:05 UTC; SINGLE WRITER = session on branch claude/serene-galileo-2zsx2t, D-29)
+Working branch: claude/serene-galileo-2zsx2t (contains all claude/* branches).
+RUNNING (restart all three after any worker restart; all idempotent; check `python3 scripts/status.py` heartbeat):
+- queue (tmux `queue`, 2 workers): CARE seed-0 extras (ae/ae_cond parts), then CARE panel seeds 0-4 (p5),
+  then PreDist panel seeds 1-4 (p4, raised for D-30).
+- `nohup bash scripts/care_seed_chain.sh &` -> CARE plan_v2 seeds 1-4 + plan_v2_summary.py (logs/planv2_care_chain.log).
+- `nohup bash scripts/leak_seed_chain.sh [scratch dir] &` -> leak-free PreDist plan_v2 seeds 1-4 (seed 0 done)
+  -> code/results/leak_sensitivity/leakfree_outputs/seed<S>/ (logs/leak_seed_chain.log).
+DONE this session: PreDist seed-0 rerun reproduces exactly; plan_v3 arm 1 PreDist (H8b yes, H8a/H8c no, legacy);
+G8 leak sensitivity: NOT robust by its criterion (H8c flips to supported; lof_pca CH +4 faults) but every H7 verdict
+and the Holm outcome unchanged -> D-30: leak-free is PRIMARY for PreDist; legacy = sensitivity row.
+Then, in order:
+1. CARE: when CARE seed-0 extras + panel seed 0 exist: `cd code && nohup python3 scripts/plan_v3_window_arm.py care &`
+   (CARE plan_v2 seed 0 is committed; check ch_per_asset.csv exists in results/plan_v2/care/seed0 — if not, rerun
+   plan_v2_analysis.py care 0 first: reproducibility check by git diff). Then Holm over H8a-c x 2 datasets.
+2. Robustness tallies: CARE seeds 1-4 (chain) and leak-free PreDist seeds 1-4 (chain); write a leak-free summary
+   (plan_v2_summary.py logic on leakfree_outputs) and log verbatim.
+3. Blind novelty re-score (author score first) with plan_v2 + plan_v3 + E* + leak result.
+4. Manuscript to the journal checklist (literature/journal_quality_bar.md, 23 items); review loop until G10.
+5. Open: final_report.py/audit_numbers.py refresh.
 
 ## One-line summaries
 - Journal: Energy and AI (Elsevier, ISSN 2666-5468) — FAILS the 72-day rule (verified median 89 d, n=25,
@@ -55,7 +60,7 @@ ledgered (UNVERIFIED, not counted). Hardware: 4-core CPU, 15 GB RAM, no GPU.
 | G5 Main effect | UNKNOWN | applied to the protocol-gap effect (D-05); CARE confirmation pending |
 | G6 Ablation | N/A-PARTIAL | evaluation paper: "components" = protocol ingredients (test-tuned thresholds vs event windows; Kendall tau 0.21 -> 0.64 when thresholds are not test-tuned, round 5) |
 | G7 Generalization | PENDING | PreDist M1 + M2 done (gap replicates); CARE running |
-| G8 Leakage | PARTIAL | leak found (4/982 PreDist fits, RECHECK/stage5); fixed for CARE (A1); PreDist sensitivity run pending |
+| G8 Leakage | PARTIAL | PreDist leak (4/588 refits, subs 4,7) quantified: H7 verdicts + Holm unchanged, H8c flips, 1 detector CH +4/28 (results/leak_sensitivity); leak-free now primary (D-30); leak-free seeds 1-4 pending |
 | G9 Reproducibility | PARTIAL | clean-env re-run reproduced 12/12 M1 operating points exactly (RECHECK stage 5); fresh-clone test of final tables pending |
 | G10 Review | NOT STARTED | |
 | G11 Audit | NOT STARTED | scripts/audit_numbers.py to be written |
@@ -92,6 +97,7 @@ operating points beat random alarms (chance_level.csv). 5. F17 own-history calib
    (done jobs whose outputs exist finish in seconds).
 
 ## Known problems
+- 2026-11-25: GitHub access refused (github_link_required). If commits exist locally that are not on origin, push them first once access is restored (`git log origin/claude/eloquent-shannon-czmqnz..HEAD`).
 - Memory: a CARE farm-C AE fit peaks ~4.3 GB -> peaks ~6 GB (dmesg) -> run the queue with --workers 2 on this machine.
 - Worker restarts / container pauses kill ALL processes (2026-11-24 06:21 and ~17:50 UTC; the second happened with a monitor active, so staying active does not prevent it). After any pause: `python3 scripts/status.py`; if heartbeat is stale, restart the queue (Resume compute).
 - Layer B: a `claude` CLI exists, but this is an ephemeral cloud container and an interactive session already works

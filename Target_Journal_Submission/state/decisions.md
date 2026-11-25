@@ -151,6 +151,29 @@ descriptions; Song's published long-stop list can be adopted and cited; small: 5
 normal record measures FA per turbine-year precisely). Decide after the journal quality-bar report and plan_v2
 results. 2019.zip kept (1.4 GB) for option (b).
 
+<!-- [lineage eloquent-shannon] -->
+- 2026-11-25 13:07 UTC: resumed after ~17.5 h stop (queue dead). Queue restarted (2 workers). GitHub push/fetch
+  now refused (github_link_required: the user must reconnect GitHub at claude.ai); committing locally until fixed.
+
+## D-2026-11-25-22  Journal quality bar received (literature/journal_quality_bar.md, 39 papers, 10 full texts)
+- CORRECTION: van Dreven et al. 2026 (10.1016/j.egyai.2026.100824, Energy and AI) already test PreDist M1<->M2
+  transfer (balanced daily windows, best-threshold F1, no FA rate over time). Our "first cross-manufacturer test on
+  PreDist" wording is withdrawn (related-work draft corrected). Residual: locked budgeted thresholds + continuous
+  operation + matched-rate random-alarm reference.
+- In-journal gap confirmed: no Energy and AI paper since 2024 evaluates under continuous monitoring with a FA budget;
+  "false-alarm" appears in 1 of 636 abstracts; none uses CARE. The journal publishes audit/evaluation papers
+  (10.1016/j.egyai.2025.100658, 100856, 100936) -> evaluation framing is acceptable there.
+- plan_v3 (next): (1) re-run van Dreven's protocol arm (daily windows, best-threshold F1, M1->M2) with our detectors
+  on PreDist and quantify its gap to continuous budgeted monitoring (M2 numbers labelled post hoc; this measures
+  protocols on fixed detectors, it does not select a method); (2) controlled manipulation of normal-period selection
+  (checklist item 3); (3) robust operating-point selection as the constructive method; (4) the journal checklist
+  (23 items) drives the manuscript: graphical abstract, numeric highlights, protocol figure, practical implications,
+  limitations, Friedman/Wilcoxon + effect sizes, code DOI.
+- 2026-11-25: plan_v3 arm 1 pre-registered (experiments/plan_v3.md, scripts/plan_v3_window_arm.py). plan_v2_analysis.py
+  now also saves ch_per_asset.csv (added BEFORE plan_v2 was run on real scores; needed by plan_v3 bootstrap).
+
+<!-- [lineage intelligent-dirac] (parallel session; merged 2026-11-24) -->
+
 ## D-2026-11-24-22  New container (session on branch claude/great-mccarthy-85gvo2): rebuild + re-prioritised queue
 Container was new (no data, scores, tmux). Verified eloquent-shannon contains every other claude/* branch; fast-forwarded
 claude/great-mccarthy-85gvo2 to it (this is now the working branch; eloquent-shannon is an ancestor). Rebuilt env,
@@ -194,3 +217,41 @@ plan_v2.md was pre-registered as the cycle-5 plan ("cycle 5 budget 15 h"), but t
 advanced and kept booking plan_v2 work to cycle 4. Cycle 4 is closed at 11.95 machine-h (includes regeneration after
 three container rebuilds). From 2026-11-25 02:15 UTC all compute is booked to cycle 5 (15 h cap). Global ceiling
 (120 h) unchanged and unaffected (it sums all cycles): 11.95 h ledgered so far. MAX_CYCLES 12: this is cycle 5.
+<!-- [end parallel lineages] -->
+
+## D-2026-11-25-28  Single writer: session on claude/great-mccarthy-85gvo2; queue rebuilt on this container
+At 13:30 UTC six sessions of this account were running "continue" in parallel. The user chose this session to
+continue ("Continue from here"); the others should stop. Working branch: claude/great-mccarthy-85gvo2 (contains
+every claude/* branch incl. eloquent-shannon 3837ba1). Ledger: merged budget_snapshot + 0.87 machine-h (cycle 4) used
+on this container on 2026-11-24 19:47-20:39 and missing from the merged ledger. Queue rebuilt from the merged
+queue_snapshot (all statuses reset; jobs whose outputs exist finish instantly): CARE seed-0 temp3s/ae/ae_cond (p6) and
+CARE panel seeds 0-4 (p5) are the real work; PreDist panel seeds 1-4 deprioritised (-1; already analysed and
+committed). Running now: plan_v2 predist1 seed 0 rerun (reproducibility check vs committed summary.json; writes
+ch_per_asset.csv needed by plan_v3 arm 1).
+
+## D-2026-11-25-29  Single writer moves to the session on claude/serene-galileo-2zsx2t
+User (to this session, 14:50 UTC): "check recent branch and continue from there". claude/great-mccarthy-85gvo2 contains
+every claude/* branch; fast-forwarded serene-galileo to it (bdd0c2c). The D-28 writer had not pushed for 85 min
+(checked 13:35 -> 15:00, no branch moved), so this session continues as the single writer on
+claude/serene-galileo-2zsx2t. Ledger: merged snapshot + 1.54 machine-h (cycle 4) from this container 2026-11-24
+22:50-23:52, missing from the merge. Queue restored from the merged snapshot (statuses reset; existing outputs finish
+instantly). Restarted: queue (2 workers), scripts/care_seed_chain.sh (CARE plan_v2 seeds 1-4 + summary), PreDist
+plan_v2 seed-0 rerun (reproducibility check by git diff vs committed tables; writes ch_per_asset.csv for plan_v3 arm 1).
+
+## D-2026-11-25-30  PreDist: leak-free exclusion rule becomes PRIMARY; legacy reported as sensitivity
+The G8 sensitivity run failed its pre-registered robustness criterion (H8c flips; lof_pca CH changes by 4 faults),
+although every H7 conclusion and the Holm outcome are unchanged. Because the leak-free rule is the correct one (no
+future information) and CARE already uses it (A1), PreDist analyses reported in the paper use the leak-free rule from
+now on, with the legacy numbers shown as a sensitivity row; the switch from legacy to leak-free and its effect are
+stated in the paper. This is a bug fix, not a re-analysis choice: it is applied to every PreDist analysis equally.
+Consequences: (1) H8c is reported with both values and NOT claimed (borderline: CI upper 0.497 vs 0.575);
+(2) PreDist robustness seeds 1-4 must be re-run leak-free (panel seeds 1-4 for subs 4 and 7 only + plan_v2 analysis;
+needs panel predist1 seeds 1-4 scores, currently not on this container); (3) earlier M1 round tables (rounds 0-8)
+are legacy and are only cited as development history, not as paper results.
+
+## D-2026-11-25-31  Single writer moves to the session on claude/intelligent-dirac-9fs327
+User (to this session, ~21:50 UTC): "recheck latest branch and recent progress" + asked for the final submission.
+serene-galileo (D-29 writer) last pushed 20:47 UTC. Merged origin/claude/serene-galileo-2zsx2t into
+claude/intelligent-dirac-9fs327 (conflict only in novelty_escalation_log.md, both sides kept). This branch adds
+CARE plan_v2 robustness seeds 1-4 (done 09:40 UTC here; serene-galileo did not have them). From now on the single
+writer is this session; other sessions should stop.

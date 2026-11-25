@@ -1,0 +1,17 @@
+{
+ "dataset": "predist1",
+ "n_days": 45632,
+ "n_faulty_days": 221,
+ "n_bal": 442,
+ "H8a_min_drop": 0.1228226726801051,
+ "H8a_supported": false,
+ "H8b_share_ge10": 1.0,
+ "H8b_supported": true,
+ "H8c_tau": 0.21737453291558786,
+ "H8c_ci": [
+  -0.17678817855146736,
+  0.4968978544235082
+ ],
+ "n_boot": 2000,
+ "H8c_supported": true
+}

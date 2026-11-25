@@ -1,0 +1,8 @@
+{
+ "verdict_flips": [
+  "H8c_supported"
+ ],
+ "max_abs_CH_change": 0.1428571428571429,
+ "ch_one_fault": 0.03571428571428571,
+ "robust": false
+}
