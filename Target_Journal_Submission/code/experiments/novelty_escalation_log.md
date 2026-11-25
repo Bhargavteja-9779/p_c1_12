@@ -546,3 +546,8 @@ On a fresh container (D-26), all PreDist M1 inputs and panel seed-0 scores were 
 `scripts/plan_v2_analysis.py predist1 0` was re-run. All four outputs in results/plan_v2/predist1/seed0
 (bootstrap.csv, cells.csv, selection_per_detector.csv, summary.json) are byte-identical to the committed versions
 (empty git diff). H7a/H7b/H7d seed-0 PreDist numbers are therefore reproducible end-to-end. No new test.
+
+### 2026-11-25 01:28 UTC — plan_v2 PreDist robustness seed 1 (results/plan_v2/predist1/seed1)
+tau_ET 0.156, tau_EH 0.727, tau_CT 0.715. H7a diff 0.571 (CI 0.214-0.903), p 0.0015; H7b diff 0.559
+(CI 0.040-0.892), p 0.016; H7d pooled ratio 0.290 (CI 0.111-0.497), 16/17 detectors < 1 -> supported.
+H7c shares: threshold 0.68, window 0.66. Counts toward the >= 4/5 robustness rule (seed 1: H7a yes, H7b yes, H7d yes).
