@@ -1,0 +1,93 @@
+{
+ "predist_leakfree": {
+  "tests": [
+   {
+    "dataset": "care",
+    "hyp": "H7a",
+    "p_prereg": 0.0055,
+    "p_T1": 0.06496751624187906,
+    "p_T2": 0.18384080795960203
+   },
+   {
+    "dataset": "predist1",
+    "hyp": "H7a",
+    "p_prereg": 0.017,
+    "p_T1": NaN,
+    "p_T2": 0.18439078046097696
+   },
+   {
+    "dataset": "care",
+    "hyp": "H7b",
+    "p_prereg": 0.1495,
+    "p_T1": 0.6796601699150425,
+    "p_T2": 0.6119694015299235
+   },
+   {
+    "dataset": "predist1",
+    "hyp": "H7b",
+    "p_prereg": 0.012,
+    "p_T1": NaN,
+    "p_T2": 0.09179541022948852
+   }
+  ],
+  "holm_p_T1": "not computable (bootstrap missing for this version)",
+  "holm_p_T2": {
+   "care_H7a": false,
+   "predist1_H7a": false,
+   "care_H7b": false,
+   "predist1_H7b": false
+  }
+ },
+ "predist_legacy": {
+  "tests": [
+   {
+    "dataset": "care",
+    "hyp": "H7a",
+    "p_prereg": 0.0055,
+    "p_T1": 0.06496751624187906,
+    "p_T2": 0.18384080795960203
+   },
+   {
+    "dataset": "predist1",
+    "hyp": "H7a",
+    "p_prereg": 0.0045,
+    "p_T1": 0.0074962518740629685,
+    "p_T2": 0.07639618019099045
+   },
+   {
+    "dataset": "care",
+    "hyp": "H7b",
+    "p_prereg": 0.1495,
+    "p_T1": 0.6796601699150425,
+    "p_T2": 0.6119694015299235
+   },
+   {
+    "dataset": "predist1",
+    "hyp": "H7b",
+    "p_prereg": 0.0215,
+    "p_T1": 0.0014992503748125937,
+    "p_T2": 0.027148642567871608
+   }
+  ],
+  "holm_p_T1": {
+   "care_H7a": false,
+   "predist1_H7a": true,
+   "care_H7b": false,
+   "predist1_H7b": true
+  },
+  "holm_p_T2": {
+   "care_H7a": false,
+   "predist1_H7a": false,
+   "care_H7b": false,
+   "predist1_H7b": false
+  }
+ },
+ "robustness": {
+  "care_primary_H7a": "0/5 seeds (T2 and T1 < 0.05)",
+  "care_primary_H7b": "0/5 seeds (T2 and T1 < 0.05)",
+  "predist1_leakfree_H7a": "0/1 seeds (T2 only < 0.05)",
+  "predist1_leakfree_H7b": "0/1 seeds (T2 only < 0.05)",
+  "predist1_legacy_H7a": "2/5 seeds (T2 and T1 < 0.05)",
+  "predist1_legacy_H7b": "3/5 seeds (T2 and T1 < 0.05)"
+ }
+}

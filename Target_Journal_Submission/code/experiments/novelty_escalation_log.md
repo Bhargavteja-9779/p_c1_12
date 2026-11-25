@@ -690,3 +690,17 @@ Reading: two substations (one efd_possible fault, sub 7 event 67) move tau_ET by
 recall by 4/28. The headline effects (out-of-sample thresholds and continuous replay restore the ranking; selection
 effect) survive; individual detector numbers and the borderline H8c do not. Rank statistics on 17 detectors x 28
 faults are fragile; the paper must say so and report the leak-free numbers as primary for PreDist (D-30).
+
+### 2026-11-25 ~22:55 UTC — plan_v2 Amendment A1 RESULTS (pre-registered in 324f9e9 before running; results/plan_v2/amendment_A1/)
+Seed 0, one-sided p (pre-registered percentile | T1 null-centred bootstrap | T2 within-detector label swap):
+  H7a CARE 0.0055 | 0.065 | 0.184 ; H7a PreDist leak-free 0.017 | n/a (no bootstrap file) | 0.184 ;
+  H7a PreDist legacy 0.0045 | 0.0075 | 0.076 ; H7b PreDist leak-free 0.012 | n/a | 0.092 ;
+  H7b PreDist legacy 0.0215 | 0.0015 | 0.027 ; H7b CARE 0.1495 | 0.680 | 0.612.
+Holm T2 (leak-free PreDist + CARE): no test rejected. Holm T1 (legacy PreDist + CARE): PreDist H7a and H7b rejected,
+CARE H7a and H7b not. Robustness (T1 and T2 both < 0.05): CARE H7a 0/5, H7b 0/5; PreDist legacy H7a 2/5, H7b 3/5.
+VERDICT (A1 decision rule): H7a and H7b are NOT "confirmed under A1" on any dataset. The pre-registered Holm result
+(3/4 rejected) stands as the plan_v2 result of record but is reported together with A1, and the paper must not claim
+that the threshold-source or window-design effect on RANKINGS is statistically established. With 15-17 detectors and
+a tie-bound reference (1-12 detected faults), rank-agreement contrasts are underpowered. What remains claimable:
+descriptive tau pattern (EH > ET on both datasets in 10/10 seed-dataset cells), protocol gap / FA burden at
+benchmark-chosen thresholds, and the selection effect (H7d).
