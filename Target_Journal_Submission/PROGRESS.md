@@ -56,23 +56,26 @@ STEP 0: journal landscape and 72-day check (in progress)
   guarantees are standard; fleet+conformal exists for wind, 10.1088/1742-6596/3224/6/062054), NOT N4. To check:
   full text of 10.1016/j.energy.2026.142993 (control-strategy mode rules) and 10.1016/j.enbuild.2024.114009.
 
-## NEXT ACTION (updated 2026-11-24, account 3 -> handing over to account 4)
-Branch now: claude/practical-sagan-m0onar (also push there; older branch wizardly-babbage has the same history up to 63cb0d0).
-User (2026-11-24): keep iterating until novelty is very strong; Frontiers journals are also acceptable as targets.
+## NEXT ACTION (updated 2026-11-25, account 4)
+Branch: claude/practical-sagan-m0onar. User: keep improving until novelty scorecard is top level; Frontiers OK.
 
-State: rounds 0-4 done; candidates C1/C2 FROZEN. New this session:
-- Round 5 (protocol inversion, H5a-e) and Round 6 (CARE wind replication, H6a-d) PRE-REGISTERED in
-  code/experiments/novelty_escalation_log.md. Nothing of H5a-d / H6 computed yet.
-- H5e DONE (results/round5/resolution.csv): separating 1 vs 2 FA/asset-year needs ~480 normal weeks
-  (PreDist has 65; power 0.23); 1 vs 4 needs 90 (power at 65 = 0.72). Zero FP among 65 normal events still
-  allows lambda up to 2.4/yr (35 events: 4.5/yr).
-- New code: src/evaluation/event_protocol.py, scripts/round5_protocol.py (H5a-c), scripts/round5_selection.py
-  (H5d), scripts/resolution.py, src/data/care.py, src/evaluation/care_eval.py, scripts/run_care.py,
-  scripts/care_jobs.txt, scripts/regen_all_jobs.txt.
-- Frontiers acceptance-time scan was delegated to a sub-agent; if journal_selection/acceptance_time_evidence_frontiers.csv
-  and frontiers_summary.md are missing, redo it (frontiersin.org/articles/<DOI>/full pages show Received/Accepted).
+DONE this account (all in code/experiments/novelty_escalation_log.md, results in code/results/round5..8):
+- R5: H5a-d SUPPORTED on M1. Benchmark-style event protocol ranks 9 detectors almost independently of continuous
+  deployment ranking (Kendall 0.21); three-sigma is best on events, mid-table in deployment; event precision
+  inflated 16-44x; hand-picked normal weeks alarm 0.43x as often as random normal weeks (CI 0.18-0.68).
+- R7: corrected protocol E* FALSIFIED vs start-based ranking (0.32) -> diagnosis: alarm starts vs active time.
+- R8: alarm-DAYS burden: setpoint-relative rule/SRCR 0.32/0.36 recall at 8 alarm-days/sub-yr; benchmark AE 0.04,
+  IForest 0. H8b (tau 0.68), H8c (E* vs day-based 0.61) supported; H8a narrowly falsified (SRCR > rule by 1 fault).
+- R6 script ready (scripts/round6_care.py); temp3s-only run: CARE normal events alarm 0.11x random windows.
+- Background (if lost: rerun): CARE scoring `cat scripts/care_jobs.txt | xargs -P 2 ...` (farm C needs ~2.5 GB/job:
+  max 2 parallel!), PreDist `cat scripts/resume_predist.txt | xargs -P 2 ...` (M2 jobs + AE seeds 3-9 M1).
+- Sub-agents (if their files are missing, redo): journal_selection/novelty_map_protocol.csv + _summary.md
+  (evaluation-critique literature), journal_selection/acceptance_time_evidence_frontiers.csv + frontiers_summary.md.
+NEXT: (1) when CARE scores done: python3 scripts/round6_care.py -> H6a-d; also alarm-days on CARE.
+(2) bootstrap CIs for Kendall tau (R5, R8). (3) locked M2: m2_eval.py once + round5_protocol.py 2 + round8 on M2.
+(4) re-score novelty; Reviewer Number Zero; then manuscript.
 
-TO DO on the new machine (scores are NOT in git; all background jobs of account 3 are lost):
+(older) TO DO on the new machine (scores are NOT in git; all background jobs of account 3 are lost):
 1. Setup (from code/): pip install scikit-learn scipy lightgbm pyarrow tabulate pypdf matplotlib pandas statsmodels;
    pip install torch --index-url https://download.pytorch.org/whl/cpu; bash scripts/download_data.sh;
    python3 scripts/build_cache.py   (~5 min download + 1 min cache)
