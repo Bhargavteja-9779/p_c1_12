@@ -1,0 +1,5 @@
+rule m1 s4 0s
+rule m1 s7 0s
+loop3s m1 s4 0s
+loop3s m1 s7 1s
+qnbm m1 s4 56s
