@@ -1,4 +1,4 @@
-# plan_v2 Amendment A1 — calibrated tests for H7a/H7b (written 2026-11-25 ~22:45 UTC, BEFORE running them)
+# plan_v2 Amendment A1 — calibrated tests for H7a/H7b (written 2026-11-25 ~21:45 UTC, BEFORE running them; time corrected afterwards, the commit 324f9e9 timestamp is authoritative)
 
 Reason: the blind reviewer (review/blind_novelty_score_cycle5.md) showed that the pre-registered percentile bootstrap
 is biased in favour of H7a (tuned cells are re-tuned inside each resample, which inflates their in-sample optimism

@@ -691,7 +691,7 @@ recall by 4/28. The headline effects (out-of-sample thresholds and continuous re
 effect) survive; individual detector numbers and the borderline H8c do not. Rank statistics on 17 detectors x 28
 faults are fragile; the paper must say so and report the leak-free numbers as primary for PreDist (D-30).
 
-### 2026-11-25 ~22:55 UTC — plan_v2 Amendment A1 RESULTS (pre-registered in 324f9e9 before running; results/plan_v2/amendment_A1/)
+### 2026-11-25 ~21:50 UTC (corrected; commit time authoritative) — plan_v2 Amendment A1 RESULTS (pre-registered in 324f9e9 before running; results/plan_v2/amendment_A1/)
 Seed 0, one-sided p (pre-registered percentile | T1 null-centred bootstrap | T2 within-detector label swap):
   H7a CARE 0.0055 | 0.065 | 0.184 ; H7a PreDist leak-free 0.017 | n/a (no bootstrap file) | 0.184 ;
   H7a PreDist legacy 0.0045 | 0.0075 | 0.076 ; H7b PreDist leak-free 0.012 | n/a | 0.092 ;

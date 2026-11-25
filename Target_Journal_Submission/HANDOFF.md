@@ -8,26 +8,17 @@ If you are a new session on another branch: `git fetch origin && git merge origi
 
 ## STANDING USER DIRECTIVES: see USER_DIRECTIVES.md (keep improving with new methods until top-notch; never ask; never stop at good enough; integrity first).
 
-## NEXT ACTION (updated 2026-11-25 21:05 UTC; SINGLE WRITER = session on branch claude/serene-galileo-2zsx2t, D-29)
-Working branch: claude/serene-galileo-2zsx2t (contains all claude/* branches).
-RUNNING (restart all three after any worker restart; all idempotent; check `python3 scripts/status.py` heartbeat):
-- queue (tmux `queue`, 2 workers): CARE seed-0 extras (ae/ae_cond parts), then CARE panel seeds 0-4 (p5),
-  then PreDist panel seeds 1-4 (p4, raised for D-30).
-- `nohup bash scripts/care_seed_chain.sh &` -> CARE plan_v2 seeds 1-4 + plan_v2_summary.py (logs/planv2_care_chain.log).
-- `nohup bash scripts/leak_seed_chain.sh [scratch dir] &` -> leak-free PreDist plan_v2 seeds 1-4 (seed 0 done)
-  -> code/results/leak_sensitivity/leakfree_outputs/seed<S>/ (logs/leak_seed_chain.log).
-DONE this session: PreDist seed-0 rerun reproduces exactly; plan_v3 arm 1 PreDist (H8b yes, H8a/H8c no, legacy);
-G8 leak sensitivity: NOT robust by its criterion (H8c flips to supported; lof_pca CH +4 faults) but every H7 verdict
-and the Holm outcome unchanged -> D-30: leak-free is PRIMARY for PreDist; legacy = sensitivity row.
-Then, in order:
-1. CARE: when CARE seed-0 extras + panel seed 0 exist: `cd code && nohup python3 scripts/plan_v3_window_arm.py care &`
-   (CARE plan_v2 seed 0 is committed; check ch_per_asset.csv exists in results/plan_v2/care/seed0 — if not, rerun
-   plan_v2_analysis.py care 0 first: reproducibility check by git diff). Then Holm over H8a-c x 2 datasets.
-2. Robustness tallies: CARE seeds 1-4 (chain) and leak-free PreDist seeds 1-4 (chain); write a leak-free summary
-   (plan_v2_summary.py logic on leakfree_outputs) and log verbatim.
-3. Blind novelty re-score (author score first) with plan_v2 + plan_v3 + E* + leak result.
-4. Manuscript to the journal checklist (literature/journal_quality_bar.md, 23 items); review loop until G10.
-5. Open: final_report.py/audit_numbers.py refresh.
+## NEXT ACTION (updated 2026-11-25 ~22:00 UTC; SINGLE WRITER = session on claude/intelligent-dirac-9fs327, D-31)
+Working branch: claude/intelligent-dirac-9fs327 (contains every claude/* branch).
+DONE: plan_v2 complete (PreDist + CARE seeds 0-4); Holm of record 3/4 rejected; blind review 14/25 (score of record,
+G3 FAILS, D-32); Amendment A1 (calibrated tests, pre-registered 324f9e9): H7a/H7b NOT confirmed on any dataset.
+SUBMISSION DRAFT written at user request: submission/manuscript.md + .docx, figures/, NUMBER_SOURCES.md,
+SUBMISSION_ASSESSMENT.md (honest: likely major revision / reject risk; G1, G3 fail).
+RUNNING: `nohup bash scripts/leak_seed_chain.sh &` (leak-free PreDist seeds 1-4; logs/leak_seed_chain.log). Queue is
+STOPPED (only deferred jobs left; not needed for the paper).
+Next, in order: 1) when leak chain finishes, re-run code/scripts/plan_v2_amendment_A1.py and switch Fig. 4 / robustness
+sentences to leak-free; 2) amendment A2 (detector families + AUC reference; pre-register first); 3) modern baseline;
+4) FA-budget sweep; 5) authors: Zenodo DOI, CRediT, affiliations.
 
 ## One-line summaries
 - Journal: Energy and AI (Elsevier, ISSN 2666-5468) — FAILS the 72-day rule (verified median 89 d, n=25,
