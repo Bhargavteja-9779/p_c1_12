@@ -652,3 +652,19 @@ Recall at an ALARM-DAYS budget (M1, 28 faults), D = 4 / 8 / 16 alarm-days per su
 - Consequence: report BOTH burden measures in the paper; the generic learned NBMs (AE, IForest, quantile NBM) are
   "persistent alarmers": few alarm starts, many alarm-days. Physically anchored residuals do not have this problem.
 <!-- [end parallel lineages] -->
+
+## plan_v2 PreDist seed-0 RERUN (reproducibility, D-29), 2026-11-25 ~15:25 UTC
+New container, regenerated scores: summary.json, cells.csv, bootstrap.csv, selection_per_detector.csv identical to the
+committed files (git diff empty). New file ch_per_asset.csv (input of plan_v3 arm 1).
+
+## plan_v3 arm 1 — PreDist M1 (pre-registered, script unchanged since f09c88e), 2026-11-25 ~15:30 UTC
+Output: results/plan_v3/predist1/{summary.json,window_arm.csv}; log logs/planv3_predist1.log.
+45,632 asset-days, 221 faulty; W-bal 442 days. 17 detectors.
+- H8a NOT SUPPORTED: min prevalence drop 0.123 < 0.15 (robust_z_max); 14/17 detectors drop >= 0.15
+  (W-bal oracle macro F1 0.53-0.63 -> 0.35-0.44 on W-nat at the same threshold).
+- H8b SUPPORTED: at the W-bal-optimal threshold every detector (17/17) implies >= 10 false-alarm days per
+  substation-year: range 83-174, median 125.
+- H8c NOT SUPPORTED: Kendall tau (W-bal oracle F1 vs CH) 0.246, CI [-0.122, 0.575]; upper bound not < 0.5.
+- Descriptive: W-nat ORACLE macro F1 is 0.500-0.526 for every detector (~chance level for macro F1 on 0.5% prevalence:
+  the best natural-prevalence threshold is effectively "never alarm"). W-bal AUROC 0.53-0.66.
+Holm over H8a-c x 2 datasets pending CARE arm 1 (needs CARE seed-0 extras + panel seed 0).
