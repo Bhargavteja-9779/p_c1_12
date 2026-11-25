@@ -526,3 +526,68 @@ Point estimates reproduce m1_gap.csv exactly. Inflation at the SAME benchmark-ch
 bounds 13.4 (rule) to 120 (iforest), all > 5. Inflation vs the in-sample B=2 point: 16-44x, CI lower bounds
 3.0 (rule), 9.2-17.4 for the other 7. Continuous FA/sub-yr at benchmark-chosen points: sigma3 10.4 (8.6-12.3),
 iforest 18.3 (14.4-54.0), ae 10.7 (5.7-34.2), loop3s 11.1 (4.0-43.6); rule 1.2, qnbm 2.4, srcr 2.2 stay low.
+
+## plan_v2 — PreDist M1, seed 0 (primary), run 2026-11-24 ~22:40 UTC (script unchanged since pre-registration commit 39cecca)
+Output: results/plan_v2/predist1/seed0/{summary.json,cells.csv,bootstrap.csv,selection_per_detector.csv}; log logs/planv2_predist1_s0.log.
+17 detectors, 35 substations, 64 events (29 fault), 2,000 random windows, 2,000 cluster-bootstrap resamples.
+- Kendall tau vs CH (deployment-like reference): ET 0.181, EH 0.633, CT 0.828.
+- H7a (threshold source) diff 0.452, 95% CI [0.101, 0.837], one-sided p 0.0045.
+- H7b (window design)    diff 0.647, 95% CI [0.019, 0.865], one-sided p 0.0215.
+  Holm over the 4 tests {H7a,H7b} x {PreDist, CARE} is applied only after CARE seed 0 (plan_v2.md); verdict PENDING.
+  (Holm thresholds for ranks 1-4: 0.0125, 0.0167, 0.025, 0.05; final decision via scripts/plan_v2_summary.py.)
+- H7c (descriptive): share of ET disagreement removed by out-of-sample thresholds 0.552; by continuous windows 0.790.
+- H7d (selection effect): pooled alarm-hit ratio curated-normal / random 0.300, CI [0.113, 0.516] (< 1);
+  16/17 detectors (0.94) have ratio < 1. SUPPORTED (script verdict).
+- Recall table (ET/EH/CT/CH): balanced event windows give 0.69-0.84 recall for every detector; deployment-like CH
+  gives 0.04-0.29. ae_cond (most sophisticated) is LAST under CH (0.036) but mid-pack under ET.
+
+### 2026-11-25 01:12 UTC — plan_v2 PreDist seed 0: reproducibility check (G9)
+On a fresh container (D-26), all PreDist M1 inputs and panel seed-0 scores were regenerated from raw data and
+`scripts/plan_v2_analysis.py predist1 0` was re-run. All four outputs in results/plan_v2/predist1/seed0
+(bootstrap.csv, cells.csv, selection_per_detector.csv, summary.json) are byte-identical to the committed versions
+(empty git diff). H7a/H7b/H7d seed-0 PreDist numbers are therefore reproducible end-to-end. No new test.
+
+### 2026-11-25 01:28 UTC — plan_v2 PreDist robustness seed 1 (results/plan_v2/predist1/seed1)
+tau_ET 0.156, tau_EH 0.727, tau_CT 0.715. H7a diff 0.571 (CI 0.214-0.903), p 0.0015; H7b diff 0.559
+(CI 0.040-0.892), p 0.016; H7d pooled ratio 0.290 (CI 0.111-0.497), 16/17 detectors < 1 -> supported.
+H7c shares: threshold 0.68, window 0.66. Counts toward the >= 4/5 robustness rule (seed 1: H7a yes, H7b yes, H7d yes).
+
+### 2026-11-25 01:41 UTC — plan_v2 PreDist robustness seed 2 (results/plan_v2/predist1/seed2)
+tau_ET 0.134, tau_EH 0.644, tau_CT 0.818. H7a diff 0.510 (CI 0.132-0.886), p 0.0045; H7b diff 0.684
+(CI -0.027-0.906), p 0.031; H7d ratio 0.277 (CI 0.095-0.511), 16/17 detectors < 1 -> supported.
+Note: for H7b the one-sided p (0.031) is < 0.05 but the reported two-sided 95% CI includes 0. The pre-registered
+robustness rule counts unadjusted p < 0.05, so seed 2 counts for H7b; the manuscript must report this seed as
+borderline (CI includes 0) rather than as clean support.
+
+### 2026-11-25 01:55 UTC — plan_v2 PreDist robustness seed 3 (results/plan_v2/predist1/seed3)
+tau_ET 0.283, tau_EH 0.569, tau_CT 0.756. H7a diff 0.287 (CI 0.024-0.740), p 0.018; H7b diff 0.473
+(CI 0.005-0.777), p 0.0225; H7d ratio 0.317 (CI 0.118-0.554), 16/17 detectors < 1 -> supported.
+Smallest effects so far (tau_ET highest of seeds 0-3); all three still hold. PreDist tally after 4 seeds:
+H7a 4/4, H7b 4/4 (seed 2 borderline CI), H7d 4/4 -> robustness rule (>= 4/5) already met for PreDist.
+
+### 2026-11-25 02:08 UTC — plan_v2 PreDist robustness seed 4 + PreDist tally (seeds 0-4 complete)
+Seed 4: tau_ET 0.259, tau_EH 0.596, tau_CT 0.756. H7a diff 0.337 (CI 0.021-0.732), p 0.021; H7b diff 0.498
+(CI -0.025-0.799), p 0.0325; H7d ratio 0.300 (CI 0.110-0.510), 16/17 < 1 -> supported.
+PreDist robustness (unadjusted one-sided p < 0.05, pre-registered rule >= 4/5):
+  H7a 5/5 (p 0.0045, 0.0015, 0.0045, 0.018, 0.021)  -> robust
+  H7b 5/5 (p 0.0215, 0.016, 0.031, 0.0225, 0.0325) -> robust by the rule, BUT two-sided 95% CI includes 0 in
+      seeds 2 and 4; report H7b on PreDist as "robust by the pre-registered rule, effect imprecise".
+  H7d 5/5 (pooled ratio 0.28-0.32; 16/17 detectors < 1 in every seed) -> robust
+H7c (descriptive): out-of-sample thresholds remove 40-68% of the ET ranking disagreement; continuous replay 66-79%.
+Confirmatory Holm step (4 seed-0 tests incl. CARE) still pending CARE seed 0.
+
+### 2026-11-25 08:02 UTC — plan_v2 CARE seed 0 + CONFIRMATORY HOLM STEP (scripts/plan_v2_summary.py, verbatim)
+CARE seed 0 (15 detectors, 36 turbines, 95 events, 45 faults): tau_ET 0.435, tau_EH 0.744, tau_CT 0.305.
+H7a diff 0.310 (CI 0.144-0.935), p 0.0055. H7b diff -0.130 (CI -0.286-0.858), p 0.1495. H7d ratio 0.424
+(CI 0.265-0.614), 13/14 detectors < 1 -> supported. H7c: threshold share 0.548, window share -0.230.
+Holm (alpha 0.05, 4 seed-0 tests):
+| test | p (one-sided) | Holm threshold | H0 rejected |
+| H7a_predist1 | 0.0045 | 0.0125 | True |
+| H7b_predist1 | 0.0215 | 0.0250 | True |
+| H7a_care | 0.0055 | 0.0167 | True |
+| H7b_care | 0.1495 | 0.0500 | False |
+Interpretation (pre-registered framing): threshold source (H7a: tuning thresholds on the evaluated events) distorts
+detector rankings on BOTH energy domains -> confirmatory, cross-domain. Window design (H7b) is supported on PreDist
+only; on CARE continuous replay with in-sample thresholds agrees LESS with deployment than event-window ET does
+(negative diff, window share -0.23) -> H7b does NOT generalize and must be reported as dataset-dependent.
+Selection effect (H7d, descriptive per plan) holds on both datasets. CARE robustness seeds 1-4 pending (queue).

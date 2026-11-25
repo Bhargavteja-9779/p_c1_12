@@ -150,6 +150,8 @@ descriptions; Song's published long-stop list can be adopted and cited; small: 5
 (b) Hill of Towie only for false-alarm-rate estimation in normal operation (no fault labels needed: a long, clean
 normal record measures FA per turbine-year precisely). Decide after the journal quality-bar report and plan_v2
 results. 2019.zip kept (1.4 GB) for option (b).
+
+<!-- [lineage eloquent-shannon] -->
 - 2026-11-25 13:07 UTC: resumed after ~17.5 h stop (queue dead). Queue restarted (2 workers). GitHub push/fetch
   now refused (github_link_required: the user must reconnect GitHub at claude.ai); committing locally until fixed.
 
@@ -169,3 +171,50 @@ results. 2019.zip kept (1.4 GB) for option (b).
   limitations, Friedman/Wilcoxon + effect sizes, code DOI.
 - 2026-11-25: plan_v3 arm 1 pre-registered (experiments/plan_v3.md, scripts/plan_v3_window_arm.py). plan_v2_analysis.py
   now also saves ch_per_asset.csv (added BEFORE plan_v2 was run on real scores; needed by plan_v3 bootstrap).
+
+<!-- [lineage intelligent-dirac] (parallel session; merged 2026-11-24) -->
+
+## D-2026-11-24-22  New container (session on branch claude/great-mccarthy-85gvo2): rebuild + re-prioritised queue
+Container was new (no data, scores, tmux). Verified eloquent-shannon contains every other claude/* branch; fast-forwarded
+claude/great-mccarthy-85gvo2 to it (this is now the working branch; eloquent-shannon is an ancestor). Rebuilt env,
+PreDist cache, CARE download. Queue restored from queue_snapshot with all done/running jobs reset to pending and
+priorities set so the plan_v2 analysis inputs come first: PreDist M1 rule/loop3s/qnbm/ae(seed0)/ae_cond (p8),
+panel predist1 seeds 0-4 (p7), CARE prep (p10, waits for download), CARE seed0 temp3s/ae/ae_cond (p6), panel CARE
+seeds 0-4 (p5, after c4care_prep). Not needed for plan_v2 and deferred (p<0): PreDist M2 regen, sigma3/iforest/
+underdel/srcr comps, M1 AE seeds 1-2, CARE sigma3/iforest seed0, CARE confirm AE 101-104. skipped_compute stays.
+Regeneration compute is booked to the ledger (it is real compute) even though it reproduces lost files.
+Workers = 2 (CARE farm-C AE memory, D-13).
+
+## D-2026-11-24-23  CARE prep failure (stale marker) fixed; quality-bar benchmark received
+logs/setup_care.log (download-done marker "CAREDL") had been committed from the old machine, so prep_care.sh started
+on a partial zip and failed 3x (BadZipFile). Zip now complete (verified by zipfile), prep re-queued; the marker is
+now gitignored so it cannot leak to a new machine again. Sub-agent wrote literature/journal_quality_bar.md and
+journal_quality_papers.csv (34 Energy and AI papers, 6 full text; checklist used for the manuscript).
+Notable: 10.1016/j.egyai.2026.100824 also uses PreDist (daily-window classification, upper-bound F1) = closest
+same-journal comparison; 10.1016/j.egyai.2026.100975 = structure template (aggregate scores mislead model choice).
+
+## D-2026-11-24-24  New container again (session on branch claude/serene-galileo-2zsx2t)
+Fast-forwarded to claude/great-mccarthy-85gvo2 (verified it contains every other claude/* branch). Rebuild started
+(env, PreDist, CARE download). The D-23 marker fix had not worked: logs/setup_care.log was still tracked and the root
+.gitignore pattern `logs/setup_care.log` only matched at repo root. Now untracked + ignored by its full path.
+Queue restored from snapshot, all done/running reset to pending (outputs are gone on this machine).
+
+## D-2026-11-24-25  plan_v2_summary.py written before CARE results
+plan_v2.md names scripts/plan_v2_summary.py for the Holm step, but it was never written. Written now, after the PreDist
+seed-0 analysis and before any CARE plan_v2 output exists. It only implements the pre-registered procedure (Holm
+step-down over the 4 seed-0 one-sided p-values, alpha 0.05; robustness = seeds with unadjusted p < 0.05; robust iff
+>= 4/5). PreDist seed-0 p-values were known when writing; they do not affect the procedure.
+
+## D-2026-11-24-26  New container again (session on branch claude/intelligent-dirac-9fs327)
+Verified claude/serene-galileo-2zsx2t contains every other claude/* branch; fast-forwarded
+claude/intelligent-dirac-9fs327 to it (now the working branch; serene-galileo is an ancestor). Rebuild started (env,
+PreDist, CARE download). Queue restored from queue_snapshot, done/running/failed reset to pending (outputs gone).
+Committed result tables (e.g. results/plan_v2/predist1/seed0) are kept; regenerated scores must reproduce them
+(seed-0 PreDist analysis will be re-run only as a reproducibility check, not as a new test).
+
+## D-2026-11-25-27  Compute ledger advanced to cycle 5 (plan_v2)
+plan_v2.md was pre-registered as the cycle-5 plan ("cycle 5 budget 15 h"), but the ledger (state/budget.json) was never
+advanced and kept booking plan_v2 work to cycle 4. Cycle 4 is closed at 11.95 machine-h (includes regeneration after
+three container rebuilds). From 2026-11-25 02:15 UTC all compute is booked to cycle 5 (15 h cap). Global ceiling
+(120 h) unchanged and unaffected (it sums all cycles): 11.95 h ledgered so far. MAX_CYCLES 12: this is cycle 5.
+<!-- [end parallel lineages] -->

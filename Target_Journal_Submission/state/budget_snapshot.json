@@ -1,5 +1,5 @@
 {
- "cycle": 4,
+ "cycle": 5,
  "cycle_budget_h": 15,
  "global_ceiling_h": 120,
  "prior_h_unledgered": 0,
@@ -7,7 +7,11 @@
  "note": "machine_h = machine wall-hours with >=1 queue job running (4-core CPU, no GPU); core_h = CPU user+sys of children",
  "cycles": {
   "4": {
-   "machine_h": 7.752291968332404,
+   "machine_h": 11.960975934399503,
+   "core_h": 0.0
+  },
+  "5": {
+   "machine_h": 1.450699106918441,
    "core_h": 0.0
   }
  }

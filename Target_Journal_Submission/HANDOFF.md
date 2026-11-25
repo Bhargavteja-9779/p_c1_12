@@ -8,20 +8,21 @@ If you are a new session on another branch: `git fetch origin && git merge origi
 
 ## STANDING USER DIRECTIVES: see USER_DIRECTIVES.md (keep improving with new methods until top-notch; never ask; never stop at good enough; integrity first).
 
-## NEXT ACTION
-1. `python3 scripts/status.py`. If the container is new (no tmux "queue", no code/data/), run the
-   NEW-MACHINE steps below first.
-2. When group `c4care_seed0` is done: `cd code && python3 scripts/round6_care.py 0` (pre-registered H6a-e; the script
-   was committed BEFORE any CARE score existed). Record verdicts verbatim in code/experiments/novelty_escalation_log.md
-   and a RESULT/SURPRISE/FAILURE journal entry. Do NOT edit the script after seeing results except to fix a crash
-   (log any fix as a deviation).
-3. When `c4care_confirm` finishes (or the cycle budget stops it): `python3 scripts/round6_care.py <seed>` for
-   each completed seed in 100..104; summarise mean +- sd (H6e confirmation rule in the log).
-4. When `c4predist` is done: write+run `code/scripts/protocol_gap_ci.py` = bootstrap CIs (resample substations)
-   of the PreDist M1/M2 precision-inflation ratios and FA rates at event-optimal points (DESCRIPTIVE, post hoc);
-   run `scripts/round5_selection.py` (H5d) on M1; fix the PreDist leak (RECHECK NEXT ACTION 6) as a sensitivity run.
-5. Then: scripts/final_report.py + scripts/audit_numbers.py (not written yet), novelty re-score + blind reviewer
-   agent, manuscript (story style, Section 9) from journal/ + results, review panel (Section 10).
+## NEXT ACTION (updated 2026-11-24 ~23:10 UTC, session on branch claude/intelligent-dirac-9fs327)
+Working branch: `claude/intelligent-dirac-9fs327` (fast-forward of serene-galileo; contains every claude/* branch).
+0. Container rebuilt AGAIN 22:50 UTC (D-26): env + PreDist cache + CARE zip (verified) done; queue running since 22:54 (2 workers). 01:00: CARE prep + all PreDist panel seeds done; CARE AE seed0 running; PreDist plan_v2 analyses seeds 0-4 running sequentially (nohup, logs/planv2_predist1_chain.log; seed 0 = reproducibility check vs committed numbers: byte-identical, G9). 01:15 worker restart killed all processes; 01:17 queue + seeds 1-4 chain restarted (disk survived). Earlier: D-24; queue runs 2 workers in tmux `queue`. Check `python3 scripts/status.py`.
+1. DONE: plan_v2 PreDist seeds 0-4 ALL done (H7a 5/5, H7b 5/5 but CI incl. 0 in seeds 2,4, H7d 5/5; tally in novelty_escalation_log.md). Seed 0 reproduced byte-identically on new machine. Earlier seed-0 note:
+   H7a p 0.0045, H7b p 0.0215, H7d supported. ~17 min runtime; per-detector cache resumes if interrupted.
+   scripts/plan_v2_summary.py written (Holm, robustness counts) BEFORE any CARE plan_v2 output (D-25).
+2. DONE 08:02 UTC: CARE seed 0 + Holm (verbatim in novelty_escalation_log.md): H7a rejected on PreDist AND CARE;
+   H7b rejected on PreDist only (CARE p 0.15, sign reversed); H7d supported on both. PreDist seeds 0-4 all done.
+   RUNNING: `nohup bash scripts/care_seed_chain.sh &` (from Target_Journal_Submission/) runs CARE analysis seeds 1-4
+   as each panel seed finishes, then plan_v2_summary.py. Progress: logs/planv2_care_chain.log. After a worker
+   restart: restart queue, then re-launch the chain (idempotent).
+3. Re-score novelty (author first, then blind reviewer agent) with plan_v2 results; if G3 still fails, plan_v3
+   method cycle or honest-exit analysis paper (D-17, D-19, D-21). Quality bar: literature/journal_quality_bar.md (done).
+4. Old items still open: round6_care.py for confirm seeds (deferred), PreDist leak sensitivity run,
+   final_report.py/audit_numbers.py refresh, manuscript.
 
 ## One-line summaries
 - Journal: Energy and AI (Elsevier, ISSN 2666-5468) — FAILS the 72-day rule (verified median 89 d, n=25,
@@ -41,7 +42,7 @@ If you are a new session on another branch: `git fetch origin && git merge origi
 - Supervisor (Layer B): NOT running (see Known problems).
 
 ## Compute (state/budget.json = live, gitignored; state/budget_snapshot.json = committed copy, refresh with cp before each commit; same for state/queue.json -> state/queue_snapshot.json)
-Cycle 4: see `scripts/status.py` (budget 15 machine-h/cycle, global ceiling 120 h). Cycles 1-3 compute was never
+Cycle 5 since 2026-11-25 02:15 (D-27; cycle 4 closed at 11.95 h): see `scripts/status.py` (budget 15 machine-h/cycle, global ceiling 120 h). Cycles 1-3 compute was never
 ledgered (UNVERIFIED, not counted). Hardware: 4-core CPU, 15 GB RAM, no GPU.
 
 ## Gate status (Section 7) — cycle 4 start

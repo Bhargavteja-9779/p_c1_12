@@ -1,3 +1,12 @@
-{"status": "RUNNING", "cycle": 4, "phase": "cycle4-E4-generalization (CARE replication) + protocol-gap statistics",
- "step": "persistence built; PreDist regen queued; CARE downloading", "pivots_used": 1, "max_pivots": 3, "max_cycles": 12,
- "branch": "claude/eloquent-shannon-czmqnz", "last_action": "merged all lineages; queued c4predist", "updated": "2026-11-24T04:10Z"}
+{
+ "status": "RUNNING",
+ "cycle": 4,
+ "phase": "cycle4->5: regenerate plan_v2 inputs on new container; quality-bar benchmark (sub-agent)",
+ "step": "queue restored (D-22); waiting for PreDist M1 + panel + CARE",
+ "pivots_used": 1,
+ "max_pivots": 3,
+ "max_cycles": 12,
+ "branch": "claude/great-mccarthy-85gvo2",
+ "last_action": "new container rebuilt; queue started 2 workers",
+ "updated": "2026-11-24T19:48Z"
+}

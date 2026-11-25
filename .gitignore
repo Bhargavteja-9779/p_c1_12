@@ -22,3 +22,12 @@ Target_Journal_Submission/state/*.tmp
 Target_Journal_Submission/state/budget.json
 Target_Journal_Submission/state/queue.json
 Target_Journal_Submission/code/results/scores_panel/
+logs/setup_care.log
+Target_Journal_Submission/logs/setup_care.log
+Target_Journal_Submission/logs/setup_main.log
+Target_Journal_Submission/code/results/plan_v2/*/cache/
+
+# rebuild artefacts
+Target_Journal_Submission/data/
+Target_Journal_Submission/logs/setup_env.log
+Target_Journal_Submission/state/queue.lock
