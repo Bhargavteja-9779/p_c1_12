@@ -48,13 +48,16 @@ the calculation itself is not a contribution.
 
 Transfer of normal-behaviour models between wind turbines has been studied with autoencoders
 [10.1016/j.egyai.2024.100373], and a pooled CARE model was reported unable to hold a stable operating point across
-farms [10.1109/ubmk71847.2026.11745258]. A substation-invariant self-supervised model was proposed for district
-heating [10.1016/j.egyai.2026.100824]. Closest to our CARE analysis, a blinded, pre-registered study of public
+farms [10.1109/ubmk71847.2026.11745258]. For district heating, van Dreven et al. proposed a substation-invariant
+self-supervised transformer and tested it on PreDist with both control-unit manufacturers, including M1-to-M2
+transfer [10.1016/j.egyai.2026.100824]; they score daily windows of which 20-83% of samples are faulty and report
+F1 at the best threshold, without a false-alarm rate over time. Closest to our CARE analysis, a blinded, pre-registered study of public
 wind SCADA data (manuscript under review; reproducibility package [10.5281/zenodo.23902232]) reports detection
 without discrimination at alarm budgets, a random-alarm reference and cross-farm threshold transfer. We regard it as
-concurrent, independent evidence for the wind part of our results. For district heating, no study has frozen
-thresholds on the substations of one control-unit manufacturer and applied them unchanged to another, or compared
-every operating point with random alarms raised at the same rate.
+concurrent, independent evidence for the wind part of our results. For district heating, cross-manufacturer transfer on PreDist has
+therefore been studied [10.1016/j.egyai.2026.100824], but with thresholds chosen at their best value on the evaluated
+windows; no study has locked thresholds on one manufacturer at a false-alarm budget, applied them unchanged to the
+other in continuous operation, or compared every operating point with random alarms raised at the same rate.
 
 ### 2.5 Summary of the gap
 
@@ -64,4 +67,4 @@ every operating point with random alarms raised at the same rate.
 | Benchmark-chosen thresholds give many false alarms per asset-year | Leakage-controlled CARE studies (wind) | We convert the thresholds selected by the PreDist/CARE event protocols themselves into false alarms per asset-year. |
 | Rankings change between protocols, mostly through threshold tuning on evaluated events | Kim et al.; Salem and Ferrugem | We decompose the change into threshold tuning and window design, on two energy benchmarks. |
 | Event protocols cannot resolve operational false-alarm rates | NIST TN 2118 (method) | Applied to the PreDist/CARE designs (supporting check only). |
-| Thresholds do not transfer across control-unit manufacturers (district heating) | Wind transfer studies; Song (concurrent, wind) | First locked cross-manufacturer test on PreDist with a matched-rate random-alarm reference. |
+| Budgeted thresholds do not transfer across control-unit manufacturers (district heating) | van Dreven et al. 2026 (PreDist M1-M2, best-threshold F1); Song (concurrent, wind) | Thresholds locked at a false-alarm budget on one manufacturer and applied unchanged in continuous operation, with a matched-rate random-alarm reference. |

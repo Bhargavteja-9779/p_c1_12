@@ -152,3 +152,18 @@ normal record measures FA per turbine-year precisely). Decide after the journal 
 results. 2019.zip kept (1.4 GB) for option (b).
 - 2026-11-25 13:07 UTC: resumed after ~17.5 h stop (queue dead). Queue restarted (2 workers). GitHub push/fetch
   now refused (github_link_required: the user must reconnect GitHub at claude.ai); committing locally until fixed.
+
+## D-2026-11-25-22  Journal quality bar received (literature/journal_quality_bar.md, 39 papers, 10 full texts)
+- CORRECTION: van Dreven et al. 2026 (10.1016/j.egyai.2026.100824, Energy and AI) already test PreDist M1<->M2
+  transfer (balanced daily windows, best-threshold F1, no FA rate over time). Our "first cross-manufacturer test on
+  PreDist" wording is withdrawn (related-work draft corrected). Residual: locked budgeted thresholds + continuous
+  operation + matched-rate random-alarm reference.
+- In-journal gap confirmed: no Energy and AI paper since 2024 evaluates under continuous monitoring with a FA budget;
+  "false-alarm" appears in 1 of 636 abstracts; none uses CARE. The journal publishes audit/evaluation papers
+  (10.1016/j.egyai.2025.100658, 100856, 100936) -> evaluation framing is acceptable there.
+- plan_v3 (next): (1) re-run van Dreven's protocol arm (daily windows, best-threshold F1, M1->M2) with our detectors
+  on PreDist and quantify its gap to continuous budgeted monitoring (M2 numbers labelled post hoc; this measures
+  protocols on fixed detectors, it does not select a method); (2) controlled manipulation of normal-period selection
+  (checklist item 3); (3) robust operating-point selection as the constructive method; (4) the journal checklist
+  (23 items) drives the manuscript: graphical abstract, numeric highlights, protocol figure, practical implications,
+  limitations, Friedman/Wilcoxon + effect sizes, code DOI.
