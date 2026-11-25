@@ -8,30 +8,26 @@ If you are a new session on another branch: `git fetch origin && git merge origi
 
 ## STANDING USER DIRECTIVES: see USER_DIRECTIVES.md (keep improving with new methods until top-notch; never ask; never stop at good enough; integrity first).
 
-## NEXT ACTION (updated 2026-11-25 15:05 UTC; SINGLE WRITER = session on branch claude/serene-galileo-2zsx2t, D-29)
-Working branch: claude/serene-galileo-2zsx2t (fast-forward of great-mccarthy bdd0c2c; contains all claude/* branches). Other parallel sessions were asked to stop.
-This container: queue (2 workers) regenerating CARE seed-0 extras + CARE panel seeds 0-4; plan_v2 predist1 seed-0
-rerun in progress (logs/planv2_predist_s0_rerun.log; compare with committed summary.json, then run plan_v3 arm 1 predist1).
-State after merging every lineage (eloquent-shannon, intelligent-dirac <- serene-galileo <- great-mccarthy,
-practical-sagan account 4): decision logs of both lineages are kept side by side in state/decisions.md (D-22..D-27
-numbers collide between lineages; read the lineage markers).
-Results in hand:
-- plan_v2 (2x2 protocol factorial): PreDist seeds 0-4: H7a 5/5, H7b 5/5 (imprecise), H7d 5/5; CARE seed 0: H7a yes,
-  H7b NO (p 0.15), H7d yes; Holm: 3/4 rejected (code/results/plan_v2/summary.md).
-- account 4 rounds 7-8: corrected event protocol E* (random normal weeks) tracks alarm-DAYS burden (tau 0.61);
-  generic NBMs are "persistent alarmers"; report both burden measures.
-- Novelty: 13/25 of record (cycle 4); cycle-5 author score 15/25 (intelligent-dirac), blind review pending.
-RUNNING (2026-11-25 14:00): queue (2 workers): CARE panel seeds 2-4; `scripts/care_seed_chain.sh` (nohup) runs CARE
-plan_v2 seeds 1-4 + summary as panels finish (logs/planv2_care_chain.log); PreDist seed-0 plan_v2 rerun
-(reproducibility check + ch_per_asset.csv; compare with committed summary.json).
+## NEXT ACTION (updated 2026-11-25 21:05 UTC; SINGLE WRITER = session on branch claude/serene-galileo-2zsx2t, D-29)
+Working branch: claude/serene-galileo-2zsx2t (contains all claude/* branches).
+RUNNING (restart all three after any worker restart; all idempotent; check `python3 scripts/status.py` heartbeat):
+- queue (tmux `queue`, 2 workers): CARE seed-0 extras (ae/ae_cond parts), then CARE panel seeds 0-4 (p5),
+  then PreDist panel seeds 1-4 (p4, raised for D-30).
+- `nohup bash scripts/care_seed_chain.sh &` -> CARE plan_v2 seeds 1-4 + plan_v2_summary.py (logs/planv2_care_chain.log).
+- `nohup bash scripts/leak_seed_chain.sh [scratch dir] &` -> leak-free PreDist plan_v2 seeds 1-4 (seed 0 done)
+  -> code/results/leak_sensitivity/leakfree_outputs/seed<S>/ (logs/leak_seed_chain.log).
+DONE this session: PreDist seed-0 rerun reproduces exactly; plan_v3 arm 1 PreDist (H8b yes, H8a/H8c no, legacy);
+G8 leak sensitivity: NOT robust by its criterion (H8c flips to supported; lof_pca CH +4 faults) but every H7 verdict
+and the Holm outcome unchanged -> D-30: leak-free is PRIMARY for PreDist; legacy = sensitivity row.
 Then, in order:
-1. CARE robustness tally (seeds 1-4) -> plan_v2_summary.py -> log verdicts verbatim.
-2. plan_v3 arm 1 (experiments/plan_v3.md; window-level oracle protocol in the style of van Dreven 2026):
-   `cd code && python3 scripts/plan_v3_window_arm.py predist1` and `... care` (needs ch_per_asset.csv from plan_v2 seed 0).
-3. Blind novelty re-score (author score first) with plan_v2 + plan_v3 + E*.
-4. Manuscript to the journal checklist (literature/journal_quality_bar.md, 23 items): story-style, graphical abstract,
-   highlights, protocol figure, practical implications, limitations; then review loop (Section 10) until G10.
-5. Open: PreDist leak sensitivity run, final_report.py/audit_numbers.py refresh.
+1. CARE: when CARE seed-0 extras + panel seed 0 exist: `cd code && nohup python3 scripts/plan_v3_window_arm.py care &`
+   (CARE plan_v2 seed 0 is committed; check ch_per_asset.csv exists in results/plan_v2/care/seed0 — if not, rerun
+   plan_v2_analysis.py care 0 first: reproducibility check by git diff). Then Holm over H8a-c x 2 datasets.
+2. Robustness tallies: CARE seeds 1-4 (chain) and leak-free PreDist seeds 1-4 (chain); write a leak-free summary
+   (plan_v2_summary.py logic on leakfree_outputs) and log verbatim.
+3. Blind novelty re-score (author score first) with plan_v2 + plan_v3 + E* + leak result.
+4. Manuscript to the journal checklist (literature/journal_quality_bar.md, 23 items); review loop until G10.
+5. Open: final_report.py/audit_numbers.py refresh.
 
 ## One-line summaries
 - Journal: Energy and AI (Elsevier, ISSN 2666-5468) — FAILS the 72-day rule (verified median 89 d, n=25,
@@ -64,7 +60,7 @@ ledgered (UNVERIFIED, not counted). Hardware: 4-core CPU, 15 GB RAM, no GPU.
 | G5 Main effect | UNKNOWN | applied to the protocol-gap effect (D-05); CARE confirmation pending |
 | G6 Ablation | N/A-PARTIAL | evaluation paper: "components" = protocol ingredients (test-tuned thresholds vs event windows; Kendall tau 0.21 -> 0.64 when thresholds are not test-tuned, round 5) |
 | G7 Generalization | PENDING | PreDist M1 + M2 done (gap replicates); CARE running |
-| G8 Leakage | PARTIAL | leak found (4/982 PreDist fits, RECHECK/stage5); fixed for CARE (A1); PreDist sensitivity run pending |
+| G8 Leakage | PARTIAL | PreDist leak (4/588 refits, subs 4,7) quantified: H7 verdicts + Holm unchanged, H8c flips, 1 detector CH +4/28 (results/leak_sensitivity); leak-free now primary (D-30); leak-free seeds 1-4 pending |
 | G9 Reproducibility | PARTIAL | clean-env re-run reproduced 12/12 M1 operating points exactly (RECHECK stage 5); fresh-clone test of final tables pending |
 | G10 Review | NOT STARTED | |
 | G11 Audit | NOT STARTED | scripts/audit_numbers.py to be written |
