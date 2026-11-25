@@ -7,7 +7,7 @@
  "note": "machine_h = machine wall-hours with >=1 queue job running (4-core CPU, no GPU); core_h = CPU user+sys of children",
  "cycles": {
   "4": {
-   "machine_h": 8.810112288726707,
+   "machine_h": 10.818692059781812,
    "core_h": 0.0
   }
  }
