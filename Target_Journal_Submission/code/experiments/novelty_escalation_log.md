@@ -558,3 +558,9 @@ tau_ET 0.134, tau_EH 0.644, tau_CT 0.818. H7a diff 0.510 (CI 0.132-0.886), p 0.0
 Note: for H7b the one-sided p (0.031) is < 0.05 but the reported two-sided 95% CI includes 0. The pre-registered
 robustness rule counts unadjusted p < 0.05, so seed 2 counts for H7b; the manuscript must report this seed as
 borderline (CI includes 0) rather than as clean support.
+
+### 2026-11-25 01:55 UTC — plan_v2 PreDist robustness seed 3 (results/plan_v2/predist1/seed3)
+tau_ET 0.283, tau_EH 0.569, tau_CT 0.756. H7a diff 0.287 (CI 0.024-0.740), p 0.018; H7b diff 0.473
+(CI 0.005-0.777), p 0.0225; H7d ratio 0.317 (CI 0.118-0.554), 16/17 detectors < 1 -> supported.
+Smallest effects so far (tau_ET highest of seeds 0-3); all three still hold. PreDist tally after 4 seeds:
+H7a 4/4, H7b 4/4 (seed 2 borderline CI), H7d 4/4 -> robustness rule (>= 4/5) already met for PreDist.
