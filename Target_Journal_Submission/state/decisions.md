@@ -255,3 +255,11 @@ serene-galileo (D-29 writer) last pushed 20:47 UTC. Merged origin/claude/serene-
 claude/intelligent-dirac-9fs327 (conflict only in novelty_escalation_log.md, both sides kept). This branch adds
 CARE plan_v2 robustness seeds 1-4 (done 09:40 UTC here; serene-galileo did not have them). From now on the single
 writer is this session; other sessions should stop.
+
+## D-2026-11-25-32  Cycle-5 novelty score of record = 14/25 (blind), G3 FAILS; calibration amendment A-H7a
+Author 15/25 (review/author_novelty_score_cycle5.md, written first), blind reviewer 14/25
+(review/blind_novelty_score_cycle5.md): within 3 points -> lower score = 14/25 of record. Differentiation 2 -> G3 fails.
+Reviewer found the pre-registered percentile bootstrap biased in favour of H7a (CARE seed 0: bootstrap mean dA 0.522
+vs point 0.310) and, in its own unregistered checks, basic-bootstrap CI incl. 0 and label-swap p 0.12 on CARE.
+Decision: pre-register amendment plan_v2_amendment_A1.md (calibrated tests, computable from committed files) BEFORE
+running it; report both the pre-registered Holm result and the amendment result in the paper, whichever way it goes.
