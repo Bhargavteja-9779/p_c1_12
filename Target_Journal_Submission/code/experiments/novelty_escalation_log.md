@@ -591,3 +591,10 @@ detector rankings on BOTH energy domains -> confirmatory, cross-domain. Window d
 only; on CARE continuous replay with in-sample thresholds agrees LESS with deployment than event-window ET does
 (negative diff, window share -0.23) -> H7b does NOT generalize and must be reported as dataset-dependent.
 Selection effect (H7d, descriptive per plan) holds on both datasets. CARE robustness seeds 1-4 pending (queue).
+
+### 2026-11-25 09:40 UTC — plan_v2 CARE robustness seeds 1-4 (chain DONE) — FINAL plan_v2 tally
+CARE seeds 1-4: H7a p 0.0125 / 0.004 / 0.002 / 0.011 (all CIs exclude 0); H7b p 0.135 / 0.111 / 0.1045 / 0.1455
+(not supported; CT tau 0.23-0.29 < ET in every seed); H7d ratio 0.413-0.428, CI upper <= 0.616, supported 4/4.
+FINAL (pre-registered rule >= 4/5): PreDist H7a 5/5, H7b 5/5 (imprecise), H7d 5/5; CARE H7a 5/5, H7b 0/5, H7d 5/5.
+Claims of record: threshold-source effect robust and Holm-confirmed on two domains; selection effect robust on two
+domains; window-design effect PreDist-only (reverses on CARE).

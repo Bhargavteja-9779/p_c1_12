@@ -13,4 +13,4 @@ robustness (seeds [0, 1, 2, 3, 4]): H7a 5/5, H7b 5/5, H7d 5/5 (claim robust only
 
 ## care
 seed 0: tau ET 0.435, EH 0.744, CT 0.305; H7c shares 0.548 / -0.230; H7d ratio 0.424 CI [0.265, 0.614] supported=True
-robustness (seeds [0]): H7a 1/1, H7b 0/1, H7d 1/1 (claim robust only if >= 4 of 5 seeds)
+robustness (seeds [0, 1, 2, 3, 4]): H7a 5/5, H7b 0/5, H7d 5/5 (claim robust only if >= 4 of 5 seeds)
