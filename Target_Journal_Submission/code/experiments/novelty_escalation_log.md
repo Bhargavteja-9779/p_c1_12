@@ -575,3 +575,19 @@ PreDist robustness (unadjusted one-sided p < 0.05, pre-registered rule >= 4/5):
   H7d 5/5 (pooled ratio 0.28-0.32; 16/17 detectors < 1 in every seed) -> robust
 H7c (descriptive): out-of-sample thresholds remove 40-68% of the ET ranking disagreement; continuous replay 66-79%.
 Confirmatory Holm step (4 seed-0 tests incl. CARE) still pending CARE seed 0.
+
+### 2026-11-25 08:02 UTC — plan_v2 CARE seed 0 + CONFIRMATORY HOLM STEP (scripts/plan_v2_summary.py, verbatim)
+CARE seed 0 (15 detectors, 36 turbines, 95 events, 45 faults): tau_ET 0.435, tau_EH 0.744, tau_CT 0.305.
+H7a diff 0.310 (CI 0.144-0.935), p 0.0055. H7b diff -0.130 (CI -0.286-0.858), p 0.1495. H7d ratio 0.424
+(CI 0.265-0.614), 13/14 detectors < 1 -> supported. H7c: threshold share 0.548, window share -0.230.
+Holm (alpha 0.05, 4 seed-0 tests):
+| test | p (one-sided) | Holm threshold | H0 rejected |
+| H7a_predist1 | 0.0045 | 0.0125 | True |
+| H7b_predist1 | 0.0215 | 0.0250 | True |
+| H7a_care | 0.0055 | 0.0167 | True |
+| H7b_care | 0.1495 | 0.0500 | False |
+Interpretation (pre-registered framing): threshold source (H7a: tuning thresholds on the evaluated events) distorts
+detector rankings on BOTH energy domains -> confirmatory, cross-domain. Window design (H7b) is supported on PreDist
+only; on CARE continuous replay with in-sample thresholds agrees LESS with deployment than event-window ET does
+(negative diff, window share -0.23) -> H7b does NOT generalize and must be reported as dataset-dependent.
+Selection effect (H7d, descriptive per plan) holds on both datasets. CARE robustness seeds 1-4 pending (queue).
