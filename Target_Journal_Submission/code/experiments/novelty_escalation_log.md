@@ -292,3 +292,17 @@ operating point per method chosen on M1 over the same grid to maximise recall s.
  H8b: Kendall tau between start-based (B=2) and day-based (D=8) method rankings >= 0.5.
  H8c: E* (round 7) recall ranking agrees better with the day-based continuous ranking (tau >= 0.6) than with the
       start-based one (0.32) -> confirms the diagnosis.
+
+## Round 8 results (2026-11-25; results/round8/burden_days_m1.csv, curves_m1.csv, summary_m1.csv)
+Recall at an ALARM-DAYS budget (M1, 28 faults), D = 4 / 8 / 16 alarm-days per sub-yr:
+  rule 0.286 / 0.321 / 0.321 ; SRCR(gate,1s,local) 0.214 / 0.357 / 0.357 ; loop3s 0.143 / 0.214 / 0.321 ;
+  sigma3 0 / 0.107 / 0.250 ; AE (benchmark) 0 / 0.036 / 0.214 ; AE-cond 0.036 / 0.143 / 0.214 ;
+  qnbm 0 / 0 / 0.214 ; IForest 0 / 0 / 0 ; underdel 0.071 / 0.143 / 0.250.
+- H8a FALSIFIED in its strict form: SRCR (0.357) beats the rule (0.321) by ONE fault at D = 8. The broader pattern
+  is stronger than under start-counting: the two setpoint-relative one-sided detectors are the only ones above
+  0.22 at D <= 8; the benchmark AE detects 1/28 faults at 8 alarm-days per sub-yr.
+- H8b SUPPORTED: Kendall tau (start-based B=2 vs day-based D=8 ranking) = 0.68.
+- H8c SUPPORTED: E* (round 7) agrees with the day-based ranking (tau 0.61) far better than with the start-based
+  ranking (0.32) -> diagnosis confirmed: the cheap random-week protocol E* tracks alarm-active burden.
+- Consequence: report BOTH burden measures in the paper; the generic learned NBMs (AE, IForest, quantile NBM) are
+  "persistent alarmers": few alarm starts, many alarm-days. Physically anchored residuals do not have this problem.
