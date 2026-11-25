@@ -272,3 +272,23 @@ recall at that fixed weekly FP rate (not F0.5 on a 50/50 set).
  H7c (cost): E* needs only event windows + random weeks (no full continuous replay); its ranking agrees with
       continuous evaluation while the benchmark protocol does not, on both datasets.
 Seeds: random weeks seed 0 (calibration) and seed 1 (evaluation); sensitivity seeds 2-5.
+
+## Round 7 results (2026-11-25; results/round7/estar_m1_seed1_n500.csv)
+- H7a FALSIFIED: Kendall tau(E* recall, continuous recall@B2) = 0.32 (p = 0.27) vs 0.21 for the benchmark protocol.
+  Detail handling (not pre-specified): if no grid point reaches p*, recall = 0 (as runner.best_at_budgets);
+  this happened for sigma3. iforest and underdel reached only rate 0 points -> recall 0.
+- Diagnosis: E* measures "alarm ACTIVE at any time in a random week", while the continuous protocol counts alarm
+  STARTS (rising edges, 24 h refractory). sigma3 never gets its weekly active-rate below 3.8% on the grid yet
+  has only 1.37 alarm starts per sub-yr at its B=2 point -> its alarms persist for long periods. A stuck alarm
+  counts as ONE false alarm under the start-based definition. This exposes a weakness in OUR primary protocol:
+  alarm burden should also be measured as alarm-active time, not only alarm starts.
+- Not supported -> E* in this form is not a contribution. Lesson kept for round 8.
+
+## Round 8 plan: alarm-burden definition robustness (written BEFORE computing)
+R8 = primary-endpoint robustness of the continuous protocol: burden measured as ALARM-DAYS per sub-yr (distinct
+calendar days with the alarm active at any time, outside windows/exclusions), budgets D in {4, 8, 16} days/sub-yr;
+operating point per method chosen on M1 over the same grid to maximise recall s.t. alarm-days <= D.
+ H8a: the rule is first or tied-first in recall at D = 8 (the main finding survives the stricter burden measure).
+ H8b: Kendall tau between start-based (B=2) and day-based (D=8) method rankings >= 0.5.
+ H8c: E* (round 7) recall ranking agrees better with the day-based continuous ranking (tau >= 0.6) than with the
+      start-based one (0.32) -> confirms the diagnosis.
