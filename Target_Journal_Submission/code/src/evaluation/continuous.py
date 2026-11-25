@@ -100,7 +100,15 @@ def evaluate_substation(alarm: pd.Series, lab: SubstationLabels) -> dict:
     days = days[days > 0].index
     blocked = windows + lab.exclusions
     exposure = sum(1 for d in days if not _in_any(d + pd.Timedelta(hours=12), blocked))
-    return {"detections": det, "false_alarms": fa, "exposure_days": exposure}
+    # alarm burden as active time (round 8): calendar days with the alarm active at a step outside windows/exclusions
+    act = alarm.index[alarm.fillna(False).astype(bool).values]
+    ad = 0
+    if len(act):
+        free = np.ones(len(act), bool)
+        for a, b in blocked:
+            free &= ~((act >= a) & (act < b))
+        ad = len(pd.DatetimeIndex(act[free]).normalize().unique())
+    return {"detections": det, "false_alarms": fa, "exposure_days": exposure, "alarm_days": ad}
 
 
 def summarise(results: list[dict]) -> dict:
@@ -111,4 +119,5 @@ def summarise(results: list[dict]) -> dict:
     return {"n_faults": len(det), "recall": rec, "n_false_alarms": n_fa,
             "exposure_years": expo / 365.25, "fa_per_sub_year": n_fa / (expo / 365.25) if expo else np.nan,
             "median_lead_h": det.loc[det["detected"], "lead_h"].median() if len(det) else np.nan,
-            "alarm_precision": det["detected"].sum() / max(1, det["detected"].sum() + n_fa)}
+            "alarm_precision": det["detected"].sum() / max(1, det["detected"].sum() + n_fa),
+            "alarm_days_per_sub_year": sum(r.get("alarm_days", 0) for r in results) / (expo / 365.25) if expo else np.nan}

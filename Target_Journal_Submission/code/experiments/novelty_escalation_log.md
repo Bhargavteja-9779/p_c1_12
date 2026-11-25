@@ -275,6 +275,8 @@ Event protocol E on CARE: all 95 events, positive if alarm active in the event w
 - H5e (analytic, earlier): 65 normal weeks cannot separate 1 vs 2 FA/asset-yr (power 0.23).
 Verdict round 5: primary gain of the STORY (a measured, explained ranking inversion), not of a method.
 
+<!-- [lineage merged-main] -->
+
 <!-- [lineage focused-wozniak] (parallel session; merged 2026-11-24) -->
 ## Round 5 plan (written 2026-11-23 BEFORE running; user asked for more novelty; M2 still NOT evaluated)
 Diagnosis: (i) the gain of C2 is small in absolute faults; (ii) "rule OR AE" reads as a mere combination with no
@@ -591,3 +593,62 @@ detector rankings on BOTH energy domains -> confirmatory, cross-domain. Window d
 only; on CARE continuous replay with in-sample thresholds agrees LESS with deployment than event-window ET does
 (negative diff, window share -0.23) -> H7b does NOT generalize and must be reported as dataset-dependent.
 Selection effect (H7d, descriptive per plan) holds on both datasets. CARE robustness seeds 1-4 pending (queue).
+
+<!-- [lineage practical-sagan-account4] (parallel session; merged 2026-11-24) -->
+- H5d SUPPORTED (results/round5/selection_m1.csv, selection_pooled_m1.csv): at each method's B=2 operating point,
+  hand-picked normal events carry alarms at 0.43x the rate of 2,000 random eligible normal weeks (pooled over 9
+  methods; cluster bootstrap 95% CI 0.18-0.68). For rule, loop3s, underdel and SRCR NONE of the 35 normal events
+  alarms, while 3-11% of random normal weeks do. Exception: AE / AE-cond ratio ~1.0. Mechanism: the benchmark's
+  normal weeks are easier than typical operation, so event-protocol precision is inflated beyond the base-rate
+  effect alone.
+
+## Round 7 plan: F22 corrected ("deployment-calibrated") event protocol (written 2026-11-25 BEFORE computing it)
+Diagnosis after round 5: the balanced protocol fails for three separable reasons, each measured: (i) thresholds
+tuned on the test events (tau 0.21 -> 0.64 when fixed), (ii) hand-picked easy normal weeks (H5d, ratio 0.43),
+(iii) too few normal weeks to resolve FA rates (H5e). Constructive fix, cheap enough for any benchmark that has
+continuous data: E* = same fault windows, but (a) normal windows = N_rand random eligible weeks drawn uniformly over
+all monitored normal time (N_rand chosen by the H5e power rule; here 500), (b) each method's threshold is fixed
+BEFORE scoring the evaluated events, at the point whose random-week alarm rate on a DISJOINT calibration set of
+random weeks matches a target weekly FP rate p* = 1 - exp(-B * 7 / 365.25), B = 2 (no test-event tuning), (c) report
+recall at that fixed weekly FP rate (not F0.5 on a 50/50 set).
+ H7a: Kendall tau between E* recall ranking and continuous recall@B=2 ranking >= 0.7 on PreDist M1 (9 methods),
+      vs 0.21 for the benchmark protocol.
+ H7b: the same holds on CARE (5 methods; descriptive) with tau >= 0.6.
+ H7c (cost): E* needs only event windows + random weeks (no full continuous replay); its ranking agrees with
+      continuous evaluation while the benchmark protocol does not, on both datasets.
+Seeds: random weeks seed 0 (calibration) and seed 1 (evaluation); sensitivity seeds 2-5.
+
+## Round 7 results (2026-11-25; results/round7/estar_m1_seed1_n500.csv)
+- H7a FALSIFIED: Kendall tau(E* recall, continuous recall@B2) = 0.32 (p = 0.27) vs 0.21 for the benchmark protocol.
+  Detail handling (not pre-specified): if no grid point reaches p*, recall = 0 (as runner.best_at_budgets);
+  this happened for sigma3. iforest and underdel reached only rate 0 points -> recall 0.
+- Diagnosis: E* measures "alarm ACTIVE at any time in a random week", while the continuous protocol counts alarm
+  STARTS (rising edges, 24 h refractory). sigma3 never gets its weekly active-rate below 3.8% on the grid yet
+  has only 1.37 alarm starts per sub-yr at its B=2 point -> its alarms persist for long periods. A stuck alarm
+  counts as ONE false alarm under the start-based definition. This exposes a weakness in OUR primary protocol:
+  alarm burden should also be measured as alarm-active time, not only alarm starts.
+- Not supported -> E* in this form is not a contribution. Lesson kept for round 8.
+
+## Round 8 plan: alarm-burden definition robustness (written BEFORE computing)
+R8 = primary-endpoint robustness of the continuous protocol: burden measured as ALARM-DAYS per sub-yr (distinct
+calendar days with the alarm active at any time, outside windows/exclusions), budgets D in {4, 8, 16} days/sub-yr;
+operating point per method chosen on M1 over the same grid to maximise recall s.t. alarm-days <= D.
+ H8a: the rule is first or tied-first in recall at D = 8 (the main finding survives the stricter burden measure).
+ H8b: Kendall tau between start-based (B=2) and day-based (D=8) method rankings >= 0.5.
+ H8c: E* (round 7) recall ranking agrees better with the day-based continuous ranking (tau >= 0.6) than with the
+      start-based one (0.32) -> confirms the diagnosis.
+
+## Round 8 results (2026-11-25; results/round8/burden_days_m1.csv, curves_m1.csv, summary_m1.csv)
+Recall at an ALARM-DAYS budget (M1, 28 faults), D = 4 / 8 / 16 alarm-days per sub-yr:
+  rule 0.286 / 0.321 / 0.321 ; SRCR(gate,1s,local) 0.214 / 0.357 / 0.357 ; loop3s 0.143 / 0.214 / 0.321 ;
+  sigma3 0 / 0.107 / 0.250 ; AE (benchmark) 0 / 0.036 / 0.214 ; AE-cond 0.036 / 0.143 / 0.214 ;
+  qnbm 0 / 0 / 0.214 ; IForest 0 / 0 / 0 ; underdel 0.071 / 0.143 / 0.250.
+- H8a FALSIFIED in its strict form: SRCR (0.357) beats the rule (0.321) by ONE fault at D = 8. The broader pattern
+  is stronger than under start-counting: the two setpoint-relative one-sided detectors are the only ones above
+  0.22 at D <= 8; the benchmark AE detects 1/28 faults at 8 alarm-days per sub-yr.
+- H8b SUPPORTED: Kendall tau (start-based B=2 vs day-based D=8 ranking) = 0.68.
+- H8c SUPPORTED: E* (round 7) agrees with the day-based ranking (tau 0.61) far better than with the start-based
+  ranking (0.32) -> diagnosis confirmed: the cheap random-week protocol E* tracks alarm-active burden.
+- Consequence: report BOTH burden measures in the paper; the generic learned NBMs (AE, IForest, quantile NBM) are
+  "persistent alarmers": few alarm starts, many alarm-days. Physically anchored residuals do not have this problem.
+<!-- [end parallel lineages] -->

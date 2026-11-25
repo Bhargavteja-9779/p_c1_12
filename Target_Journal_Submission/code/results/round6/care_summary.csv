@@ -1,0 +1,16 @@
+,0
+kendall_tau,
+kendall_p,
+spearman,
+H6a_supported,False
+H6b_min_inflation,13.233082706766918
+H6b_supported,True
+H6c_ratio,0.111731843575419
+H6c_ci_lo,0.0
+H6c_ci_hi,0.34875027501476386
+H6c_supported,True
+n_normal_events,50
+H6d_power_1v2,0.30836250988037084
+H6d_power_1v4,0.8567860924347286
+H6d_supported,True
+zero_fp_upper95_lambda,1.563130304165136
