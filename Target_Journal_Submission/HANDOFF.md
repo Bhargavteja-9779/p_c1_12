@@ -14,7 +14,7 @@ Working branch: `claude/intelligent-dirac-9fs327` (fast-forward of serene-galile
 1. DONE: plan_v2 PreDist seeds 0-4 ALL done (H7a 5/5, H7b 5/5 but CI incl. 0 in seeds 2,4, H7d 5/5; tally in novelty_escalation_log.md). Seed 0 reproduced byte-identically on new machine. Earlier seed-0 note:
    H7a p 0.0045, H7b p 0.0215, H7d supported. ~17 min runtime; per-detector cache resumes if interrupted.
    scripts/plan_v2_summary.py written (Holm, robustness counts) BEFORE any CARE plan_v2 output (D-25).
-2. When CARE seed0 (temp3s, ae, ae_cond) + panel care seed 0 are done: `cd code && nohup python3 scripts/plan_v2_analysis.py care 0`
+2. 07:55 UTC 2026-11-25: CARE seed0 inputs + panel care seed 0 DONE (another worker restart ~03:35, queue restarted 07:54). CARE analysis RUNNING (nohup, logs/planv2_care_s0.log; chain marker logs/planv2_care_chain.log). If it died: rerun `cd code && nohup python3 scripts/plan_v2_analysis.py care 0`
    (use nohup: may exceed 30 min). Then `python3 scripts/plan_v2_summary.py` -> record Holm verdicts verbatim.
    Then robustness seeds 1-4 for CARE (PreDist done) (analysis per seed) as panel seeds finish; re-run summary.
 3. Re-score novelty (author first, then blind reviewer agent) with plan_v2 results; if G3 still fails, plan_v3
