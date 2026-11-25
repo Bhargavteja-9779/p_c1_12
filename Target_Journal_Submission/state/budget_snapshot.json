@@ -7,12 +7,13 @@
  "note": "machine_h = machine wall-hours with >=1 queue job running (4-core CPU, no GPU); core_h = CPU user+sys of children",
  "cycles": {
   "4": {
-   "machine_h": 11.960975934399503,
+   "machine_h": 12.830975934399502,
    "core_h": 0.0
   },
   "5": {
-   "machine_h": 1.450699106918441,
+   "machine_h": 1.4590324755509694,
    "core_h": 0.0
   }
- }
+ },
+ "note_d28": "+0.87 machine-h cycle 4: great-mccarthy container 2026-11-24 19:47-20:39 (7.15->8.02 on its local ledger), not in the merged ledger"
 }

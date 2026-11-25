@@ -218,3 +218,13 @@ advanced and kept booking plan_v2 work to cycle 4. Cycle 4 is closed at 11.95 ma
 three container rebuilds). From 2026-11-25 02:15 UTC all compute is booked to cycle 5 (15 h cap). Global ceiling
 (120 h) unchanged and unaffected (it sums all cycles): 11.95 h ledgered so far. MAX_CYCLES 12: this is cycle 5.
 <!-- [end parallel lineages] -->
+
+## D-2026-11-25-28  Single writer: session on claude/great-mccarthy-85gvo2; queue rebuilt on this container
+At 13:30 UTC six sessions of this account were running "continue" in parallel. The user chose this session to
+continue ("Continue from here"); the others should stop. Working branch: claude/great-mccarthy-85gvo2 (contains
+every claude/* branch incl. eloquent-shannon 3837ba1). Ledger: merged budget_snapshot + 0.87 machine-h (cycle 4) used
+on this container on 2026-11-24 19:47-20:39 and missing from the merged ledger. Queue rebuilt from the merged
+queue_snapshot (all statuses reset; jobs whose outputs exist finish instantly): CARE seed-0 temp3s/ae/ae_cond (p6) and
+CARE panel seeds 0-4 (p5) are the real work; PreDist panel seeds 1-4 deprioritised (-1; already analysed and
+committed). Running now: plan_v2 predist1 seed 0 rerun (reproducibility check vs committed summary.json; writes
+ch_per_asset.csv needed by plan_v3 arm 1).
