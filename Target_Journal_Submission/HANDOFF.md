@@ -14,9 +14,11 @@ Working branch: `claude/intelligent-dirac-9fs327` (fast-forward of serene-galile
 1. DONE: plan_v2 PreDist seeds 0-4 ALL done (H7a 5/5, H7b 5/5 but CI incl. 0 in seeds 2,4, H7d 5/5; tally in novelty_escalation_log.md). Seed 0 reproduced byte-identically on new machine. Earlier seed-0 note:
    H7a p 0.0045, H7b p 0.0215, H7d supported. ~17 min runtime; per-detector cache resumes if interrupted.
    scripts/plan_v2_summary.py written (Holm, robustness counts) BEFORE any CARE plan_v2 output (D-25).
-2. 07:55 UTC 2026-11-25: CARE seed0 inputs + panel care seed 0 DONE (another worker restart ~03:35, queue restarted 07:54). CARE analysis RUNNING (nohup, logs/planv2_care_s0.log; chain marker logs/planv2_care_chain.log). If it died: rerun `cd code && nohup python3 scripts/plan_v2_analysis.py care 0`
-   (use nohup: may exceed 30 min). Then `python3 scripts/plan_v2_summary.py` -> record Holm verdicts verbatim.
-   Then robustness seeds 1-4 for CARE (PreDist done) (analysis per seed) as panel seeds finish; re-run summary.
+2. DONE 08:02 UTC: CARE seed 0 + Holm (verbatim in novelty_escalation_log.md): H7a rejected on PreDist AND CARE;
+   H7b rejected on PreDist only (CARE p 0.15, sign reversed); H7d supported on both. PreDist seeds 0-4 all done.
+   RUNNING: `nohup bash scripts/care_seed_chain.sh &` (from Target_Journal_Submission/) runs CARE analysis seeds 1-4
+   as each panel seed finishes, then plan_v2_summary.py. Progress: logs/planv2_care_chain.log. After a worker
+   restart: restart queue, then re-launch the chain (idempotent).
 3. Re-score novelty (author first, then blind reviewer agent) with plan_v2 results; if G3 still fails, plan_v3
    method cycle or honest-exit analysis paper (D-17, D-19, D-21). Quality bar: literature/journal_quality_bar.md (done).
 4. Old items still open: round6_care.py for confirm seeds (deferred), PreDist leak sensitivity run,
