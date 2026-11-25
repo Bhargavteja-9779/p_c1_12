@@ -237,3 +237,14 @@ claude/serene-galileo-2zsx2t. Ledger: merged snapshot + 1.54 machine-h (cycle 4)
 22:50-23:52, missing from the merge. Queue restored from the merged snapshot (statuses reset; existing outputs finish
 instantly). Restarted: queue (2 workers), scripts/care_seed_chain.sh (CARE plan_v2 seeds 1-4 + summary), PreDist
 plan_v2 seed-0 rerun (reproducibility check by git diff vs committed tables; writes ch_per_asset.csv for plan_v3 arm 1).
+
+## D-2026-11-25-30  PreDist: leak-free exclusion rule becomes PRIMARY; legacy reported as sensitivity
+The G8 sensitivity run failed its pre-registered robustness criterion (H8c flips; lof_pca CH changes by 4 faults),
+although every H7 conclusion and the Holm outcome are unchanged. Because the leak-free rule is the correct one (no
+future information) and CARE already uses it (A1), PreDist analyses reported in the paper use the leak-free rule from
+now on, with the legacy numbers shown as a sensitivity row; the switch from legacy to leak-free and its effect are
+stated in the paper. This is a bug fix, not a re-analysis choice: it is applied to every PreDist analysis equally.
+Consequences: (1) H8c is reported with both values and NOT claimed (borderline: CI upper 0.497 vs 0.575);
+(2) PreDist robustness seeds 1-4 must be re-run leak-free (panel seeds 1-4 for subs 4 and 7 only + plan_v2 analysis;
+needs panel predist1 seeds 1-4 scores, currently not on this container); (3) earlier M1 round tables (rounds 0-8)
+are legacy and are only cited as development history, not as paper results.

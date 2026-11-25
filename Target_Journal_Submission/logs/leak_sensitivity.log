@@ -3,3 +3,12 @@ rule m1 s7 0s
 loop3s m1 s4 0s
 loop3s m1 s7 1s
 qnbm m1 s4 56s
+qnbm m1 s7 54s
+ae m1 s4 50s
+ae m1 s7 48s
+ae_cond m1 s4 57s
+ae_cond m1 s7 47s
+predist1 0 s4 (237210, 15) 56s
+predist1 0 s7 (234306, 17) 53s
+10
+LEAKRUN DONE

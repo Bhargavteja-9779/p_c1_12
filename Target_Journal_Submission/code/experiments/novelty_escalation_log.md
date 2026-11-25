@@ -668,3 +668,18 @@ Output: results/plan_v3/predist1/{summary.json,window_arm.csv}; log logs/planv3_
 - Descriptive: W-nat ORACLE macro F1 is 0.500-0.526 for every detector (~chance level for macro F1 on 0.5% prevalence:
   the best natural-prevalence threshold is effectively "never alarm"). W-bal AUROC 0.53-0.66.
 Holm over H8a-c x 2 datasets pending CARE arm 1 (needs CARE seed-0 extras + panel seed 0).
+
+## G8 leak sensitivity — PreDist M1 seed 0 (experiments/leak_sensitivity.md), 2026-11-25 ~20:55 UTC
+Leak-free rule rescored subs 4 and 7 for all 17 detectors; score changes confined to the 4 affected refit periods
+(checked: 0 changed steps outside them). Outputs: results/leak_sensitivity/{compare.csv,cells.csv,verdict.json,leakfree_outputs/}.
+PRE-REGISTERED CRITERION: NOT ROBUST (verdict.json robust=false): H8c flips (not supported -> supported: tau 0.217,
+CI [-0.177, 0.497]) and max |delta CH| = 0.143 (lof_pca, 4 faults; also gmm_pca 2, pca_t2/knn_pca/ae_cond 1).
+Direction of every conclusion unchanged:
+- tau_ET 0.181 -> 0.344, tau_EH 0.633 -> 0.652, tau_CT 0.828 -> 0.834.
+- H7a diff 0.452 -> 0.307, CI [0.016, 0.773], p 0.0045 -> 0.017; H7b diff 0.647 -> 0.489, CI [0.043, 0.752], p 0.0215 -> 0.012.
+  Holm (with CARE seed-0 p 0.0055 / 0.1495 unchanged) still rejects H7a_predist1, H7b_predist1, H7a_care; H7b_care not.
+- H7d ratio 0.300 -> 0.207 (CI [0.052, 0.372]); still supported. H8a still not supported, H8b still supported.
+Reading: two substations (one efd_possible fault, sub 7 event 67) move tau_ET by 0.16 and one detector's deployment
+recall by 4/28. The headline effects (out-of-sample thresholds and continuous replay restore the ranking; selection
+effect) survive; individual detector numbers and the borderline H8c do not. Rank statistics on 17 detectors x 28
+faults are fragile; the paper must say so and report the leak-free numbers as primary for PreDist (D-30).

@@ -1,0 +1,33 @@
+source,quantity,legacy,leakfree,identical
+plan_v2,n_detectors,17,17,True
+plan_v2,n_assets,35,35,True
+plan_v2,n_events,64,64,True
+plan_v2,n_fault_events,29,29,True
+plan_v2,n_random_windows,2000,2000,True
+plan_v2,n_boot,2000,2000,True
+plan_v2,tau_ET,0.1811529110205406,0.3441282785273711,False
+plan_v2,tau_EH,0.6331217169742315,0.6515869183317051,False
+plan_v2,tau_CT,0.8277521955697078,0.833547454399439,False
+plan_v2,sel_ratio,0.3003798922166269,0.20690303771278096,False
+plan_v2,H7a_diff,0.4519688059536909,0.307458639804334,False
+plan_v2,H7a_ci,"[0.10110181885689982, 0.837187813831776]","[0.015913169076253602, 0.7729291317744417]",False
+plan_v2,H7a_p,0.0045,0.017,False
+plan_v2,H7b_diff,0.6465992845491673,0.4894191758720679,False
+plan_v2,H7b_ci,"[0.01940861958099437, 0.8646171001153385]","[0.04263257106421024, 0.7519111215964253]",False
+plan_v2,H7b_p,0.0215,0.012,False
+plan_v2,H7c_share_threshold,0.5519575168997497,0.46877861895615364,False
+plan_v2,H7c_share_window,0.7896459464184369,0.7462117359979707,False
+plan_v2,H7d_ci,"[0.1125491884774063, 0.5157462859789761]","[0.05190864763781743, 0.37208602477189384]",False
+plan_v2,H7d_share_detectors_ratio_lt1,0.9411764705882353,0.9411764705882353,True
+plan_v2,H7d_supported,true,true,True
+plan_v3,n_days,45632,45632,True
+plan_v3,n_faulty_days,221,221,True
+plan_v3,n_bal,442,442,True
+plan_v3,H8a_min_drop,0.1228226726801051,0.1228226726801051,True
+plan_v3,H8a_supported,false,false,True
+plan_v3,H8b_share_ge10,1.0,1.0,True
+plan_v3,H8b_supported,true,true,True
+plan_v3,H8c_tau,0.24641644145347896,0.21737453291558786,False
+plan_v3,H8c_ci,"[-0.12227615508389013, 0.5745281438029487]","[-0.17678817855146736, 0.4968978544235082]",False
+plan_v3,n_boot,2000,2000,True
+plan_v3,H8c_supported,false,true,False
