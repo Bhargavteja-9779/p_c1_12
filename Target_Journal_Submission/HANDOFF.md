@@ -8,8 +8,8 @@ If you are a new session on another branch: `git fetch origin && git merge origi
 
 ## STANDING USER DIRECTIVES: see USER_DIRECTIVES.md (keep improving with new methods until top-notch; never ask; never stop at good enough; integrity first).
 
-## NEXT ACTION (updated 2026-11-25 13:40 UTC; SINGLE WRITER = session on branch claude/great-mccarthy-85gvo2, D-28)
-Working branch: claude/great-mccarthy-85gvo2 (contains all claude/* branches). Other parallel sessions were asked to stop.
+## NEXT ACTION (updated 2026-11-25 15:05 UTC; SINGLE WRITER = session on branch claude/serene-galileo-2zsx2t, D-29)
+Working branch: claude/serene-galileo-2zsx2t (fast-forward of great-mccarthy bdd0c2c; contains all claude/* branches). Other parallel sessions were asked to stop.
 This container: queue (2 workers) regenerating CARE seed-0 extras + CARE panel seeds 0-4; plan_v2 predist1 seed-0
 rerun in progress (logs/planv2_predist_s0_rerun.log; compare with committed summary.json, then run plan_v3 arm 1 predist1).
 State after merging every lineage (eloquent-shannon, intelligent-dirac <- serene-galileo <- great-mccarthy,

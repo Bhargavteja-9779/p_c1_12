@@ -228,3 +228,12 @@ queue_snapshot (all statuses reset; jobs whose outputs exist finish instantly): 
 CARE panel seeds 0-4 (p5) are the real work; PreDist panel seeds 1-4 deprioritised (-1; already analysed and
 committed). Running now: plan_v2 predist1 seed 0 rerun (reproducibility check vs committed summary.json; writes
 ch_per_asset.csv needed by plan_v3 arm 1).
+
+## D-2026-11-25-29  Single writer moves to the session on claude/serene-galileo-2zsx2t
+User (to this session, 14:50 UTC): "check recent branch and continue from there". claude/great-mccarthy-85gvo2 contains
+every claude/* branch; fast-forwarded serene-galileo to it (bdd0c2c). The D-28 writer had not pushed for 85 min
+(checked 13:35 -> 15:00, no branch moved), so this session continues as the single writer on
+claude/serene-galileo-2zsx2t. Ledger: merged snapshot + 1.54 machine-h (cycle 4) from this container 2026-11-24
+22:50-23:52, missing from the merge. Queue restored from the merged snapshot (statuses reset; existing outputs finish
+instantly). Restarted: queue (2 workers), scripts/care_seed_chain.sh (CARE plan_v2 seeds 1-4 + summary), PreDist
+plan_v2 seed-0 rerun (reproducibility check by git diff vs committed tables; writes ch_per_asset.csv for plan_v3 arm 1).
