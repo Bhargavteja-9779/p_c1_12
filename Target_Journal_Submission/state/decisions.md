@@ -188,3 +188,9 @@ claude/intelligent-dirac-9fs327 to it (now the working branch; serene-galileo is
 PreDist, CARE download). Queue restored from queue_snapshot, done/running/failed reset to pending (outputs gone).
 Committed result tables (e.g. results/plan_v2/predist1/seed0) are kept; regenerated scores must reproduce them
 (seed-0 PreDist analysis will be re-run only as a reproducibility check, not as a new test).
+
+## D-2026-11-25-27  Compute ledger advanced to cycle 5 (plan_v2)
+plan_v2.md was pre-registered as the cycle-5 plan ("cycle 5 budget 15 h"), but the ledger (state/budget.json) was never
+advanced and kept booking plan_v2 work to cycle 4. Cycle 4 is closed at 11.95 machine-h (includes regeneration after
+three container rebuilds). From 2026-11-25 02:15 UTC all compute is booked to cycle 5 (15 h cap). Global ceiling
+(120 h) unchanged and unaffected (it sums all cycles): 11.95 h ledgered so far. MAX_CYCLES 12: this is cycle 5.

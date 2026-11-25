@@ -11,12 +11,12 @@ If you are a new session on another branch: `git fetch origin && git merge origi
 ## NEXT ACTION (updated 2026-11-24 ~23:10 UTC, session on branch claude/intelligent-dirac-9fs327)
 Working branch: `claude/intelligent-dirac-9fs327` (fast-forward of serene-galileo; contains every claude/* branch).
 0. Container rebuilt AGAIN 22:50 UTC (D-26): env + PreDist cache + CARE zip (verified) done; queue running since 22:54 (2 workers). 01:00: CARE prep + all PreDist panel seeds done; CARE AE seed0 running; PreDist plan_v2 analyses seeds 0-4 running sequentially (nohup, logs/planv2_predist1_chain.log; seed 0 = reproducibility check vs committed numbers: byte-identical, G9). 01:15 worker restart killed all processes; 01:17 queue + seeds 1-4 chain restarted (disk survived). Earlier: D-24; queue runs 2 workers in tmux `queue`. Check `python3 scripts/status.py`.
-1. DONE: plan_v2 PreDist seed 0 (results/plan_v2/predist1/seed0; entry in novelty_escalation_log.md):
+1. DONE: plan_v2 PreDist seeds 0-4 ALL done (H7a 5/5, H7b 5/5 but CI incl. 0 in seeds 2,4, H7d 5/5; tally in novelty_escalation_log.md). Seed 0 reproduced byte-identically on new machine. Earlier seed-0 note:
    H7a p 0.0045, H7b p 0.0215, H7d supported. ~17 min runtime; per-detector cache resumes if interrupted.
    scripts/plan_v2_summary.py written (Holm, robustness counts) BEFORE any CARE plan_v2 output (D-25).
 2. When CARE seed0 (temp3s, ae, ae_cond) + panel care seed 0 are done: `cd code && nohup python3 scripts/plan_v2_analysis.py care 0`
    (use nohup: may exceed 30 min). Then `python3 scripts/plan_v2_summary.py` -> record Holm verdicts verbatim.
-   Then robustness seeds 1-4 for both datasets (analysis per seed) as panel seeds finish; re-run summary.
+   Then robustness seeds 1-4 for CARE (PreDist done) (analysis per seed) as panel seeds finish; re-run summary.
 3. Re-score novelty (author first, then blind reviewer agent) with plan_v2 results; if G3 still fails, plan_v3
    method cycle or honest-exit analysis paper (D-17, D-19, D-21). Quality bar: literature/journal_quality_bar.md (done).
 4. Old items still open: round6_care.py for confirm seeds (deferred), PreDist leak sensitivity run,
@@ -40,7 +40,7 @@ Working branch: `claude/intelligent-dirac-9fs327` (fast-forward of serene-galile
 - Supervisor (Layer B): NOT running (see Known problems).
 
 ## Compute (state/budget.json = live, gitignored; state/budget_snapshot.json = committed copy, refresh with cp before each commit; same for state/queue.json -> state/queue_snapshot.json)
-Cycle 4: see `scripts/status.py` (budget 15 machine-h/cycle, global ceiling 120 h). Cycles 1-3 compute was never
+Cycle 5 since 2026-11-25 02:15 (D-27; cycle 4 closed at 11.95 h): see `scripts/status.py` (budget 15 machine-h/cycle, global ceiling 120 h). Cycles 1-3 compute was never
 ledgered (UNVERIFIED, not counted). Hardware: 4-core CPU, 15 GB RAM, no GPU.
 
 ## Gate status (Section 7) — cycle 4 start
