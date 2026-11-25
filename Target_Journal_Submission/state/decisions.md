@@ -167,3 +167,5 @@ results. 2019.zip kept (1.4 GB) for option (b).
   (checklist item 3); (3) robust operating-point selection as the constructive method; (4) the journal checklist
   (23 items) drives the manuscript: graphical abstract, numeric highlights, protocol figure, practical implications,
   limitations, Friedman/Wilcoxon + effect sizes, code DOI.
+- 2026-11-25: plan_v3 arm 1 pre-registered (experiments/plan_v3.md, scripts/plan_v3_window_arm.py). plan_v2_analysis.py
+  now also saves ch_per_asset.csv (added BEFORE plan_v2 was run on real scores; needed by plan_v3 bootstrap).
