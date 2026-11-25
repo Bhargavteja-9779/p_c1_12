@@ -564,3 +564,14 @@ tau_ET 0.283, tau_EH 0.569, tau_CT 0.756. H7a diff 0.287 (CI 0.024-0.740), p 0.0
 (CI 0.005-0.777), p 0.0225; H7d ratio 0.317 (CI 0.118-0.554), 16/17 detectors < 1 -> supported.
 Smallest effects so far (tau_ET highest of seeds 0-3); all three still hold. PreDist tally after 4 seeds:
 H7a 4/4, H7b 4/4 (seed 2 borderline CI), H7d 4/4 -> robustness rule (>= 4/5) already met for PreDist.
+
+### 2026-11-25 02:08 UTC — plan_v2 PreDist robustness seed 4 + PreDist tally (seeds 0-4 complete)
+Seed 4: tau_ET 0.259, tau_EH 0.596, tau_CT 0.756. H7a diff 0.337 (CI 0.021-0.732), p 0.021; H7b diff 0.498
+(CI -0.025-0.799), p 0.0325; H7d ratio 0.300 (CI 0.110-0.510), 16/17 < 1 -> supported.
+PreDist robustness (unadjusted one-sided p < 0.05, pre-registered rule >= 4/5):
+  H7a 5/5 (p 0.0045, 0.0015, 0.0045, 0.018, 0.021)  -> robust
+  H7b 5/5 (p 0.0215, 0.016, 0.031, 0.0225, 0.0325) -> robust by the rule, BUT two-sided 95% CI includes 0 in
+      seeds 2 and 4; report H7b on PreDist as "robust by the pre-registered rule, effect imprecise".
+  H7d 5/5 (pooled ratio 0.28-0.32; 16/17 detectors < 1 in every seed) -> robust
+H7c (descriptive): out-of-sample thresholds remove 40-68% of the ET ranking disagreement; continuous replay 66-79%.
+Confirmatory Holm step (4 seed-0 tests incl. CARE) still pending CARE seed 0.
