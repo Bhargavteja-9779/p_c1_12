@@ -150,3 +150,5 @@ descriptions; Song's published long-stop list can be adopted and cited; small: 5
 (b) Hill of Towie only for false-alarm-rate estimation in normal operation (no fault labels needed: a long, clean
 normal record measures FA per turbine-year precisely). Decide after the journal quality-bar report and plan_v2
 results. 2019.zip kept (1.4 GB) for option (b).
+- 2026-11-25 13:07 UTC: resumed after ~17.5 h stop (queue dead). Queue restarted (2 workers). GitHub push/fetch
+  now refused (github_link_required: the user must reconnect GitHub at claude.ai); committing locally until fixed.

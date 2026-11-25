@@ -91,6 +91,7 @@ operating points beat random alarms (chance_level.csv). 5. F17 own-history calib
    (done jobs whose outputs exist finish in seconds).
 
 ## Known problems
+- 2026-11-25: GitHub access refused (github_link_required). If commits exist locally that are not on origin, push them first once access is restored (`git log origin/claude/eloquent-shannon-czmqnz..HEAD`).
 - Memory: a CARE farm-C AE fit peaks ~4.3 GB -> peaks ~6 GB (dmesg) -> run the queue with --workers 2 on this machine.
 - Worker restarts / container pauses kill ALL processes (2026-11-24 06:21 and ~17:50 UTC; the second happened with a monitor active, so staying active does not prevent it). After any pause: `python3 scripts/status.py`; if heartbeat is stale, restart the queue (Resume compute).
 - Layer B: a `claude` CLI exists, but this is an ephemeral cloud container and an interactive session already works
