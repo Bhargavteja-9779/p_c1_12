@@ -551,3 +551,10 @@ On a fresh container (D-26), all PreDist M1 inputs and panel seed-0 scores were 
 tau_ET 0.156, tau_EH 0.727, tau_CT 0.715. H7a diff 0.571 (CI 0.214-0.903), p 0.0015; H7b diff 0.559
 (CI 0.040-0.892), p 0.016; H7d pooled ratio 0.290 (CI 0.111-0.497), 16/17 detectors < 1 -> supported.
 H7c shares: threshold 0.68, window 0.66. Counts toward the >= 4/5 robustness rule (seed 1: H7a yes, H7b yes, H7d yes).
+
+### 2026-11-25 01:41 UTC — plan_v2 PreDist robustness seed 2 (results/plan_v2/predist1/seed2)
+tau_ET 0.134, tau_EH 0.644, tau_CT 0.818. H7a diff 0.510 (CI 0.132-0.886), p 0.0045; H7b diff 0.684
+(CI -0.027-0.906), p 0.031; H7d ratio 0.277 (CI 0.095-0.511), 16/17 detectors < 1 -> supported.
+Note: for H7b the one-sided p (0.031) is < 0.05 but the reported two-sided 95% CI includes 0. The pre-registered
+robustness rule counts unadjusted p < 0.05, so seed 2 counts for H7b; the manuscript must report this seed as
+borderline (CI includes 0) rather than as clean support.
