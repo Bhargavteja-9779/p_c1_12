@@ -256,3 +256,19 @@ Verdict round 5: primary gain of the STORY (a measured, explained ranking invers
   alarms, while 3-11% of random normal weeks do. Exception: AE / AE-cond ratio ~1.0. Mechanism: the benchmark's
   normal weeks are easier than typical operation, so event-protocol precision is inflated beyond the base-rate
   effect alone.
+
+## Round 7 plan: F22 corrected ("deployment-calibrated") event protocol (written 2026-11-25 BEFORE computing it)
+Diagnosis after round 5: the balanced protocol fails for three separable reasons, each measured: (i) thresholds
+tuned on the test events (tau 0.21 -> 0.64 when fixed), (ii) hand-picked easy normal weeks (H5d, ratio 0.43),
+(iii) too few normal weeks to resolve FA rates (H5e). Constructive fix, cheap enough for any benchmark that has
+continuous data: E* = same fault windows, but (a) normal windows = N_rand random eligible weeks drawn uniformly over
+all monitored normal time (N_rand chosen by the H5e power rule; here 500), (b) each method's threshold is fixed
+BEFORE scoring the evaluated events, at the point whose random-week alarm rate on a DISJOINT calibration set of
+random weeks matches a target weekly FP rate p* = 1 - exp(-B * 7 / 365.25), B = 2 (no test-event tuning), (c) report
+recall at that fixed weekly FP rate (not F0.5 on a 50/50 set).
+ H7a: Kendall tau between E* recall ranking and continuous recall@B=2 ranking >= 0.7 on PreDist M1 (9 methods),
+      vs 0.21 for the benchmark protocol.
+ H7b: the same holds on CARE (5 methods; descriptive) with tau >= 0.6.
+ H7c (cost): E* needs only event windows + random weeks (no full continuous replay); its ranking agrees with
+      continuous evaluation while the benchmark protocol does not, on both datasets.
+Seeds: random weeks seed 0 (calibration) and seed 1 (evaluation); sensitivity seeds 2-5.
