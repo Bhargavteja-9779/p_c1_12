@@ -250,3 +250,9 @@ Event protocol E on CARE: all 95 events, positive if alarm active in the event w
   (event precision 0.73-1.00 vs deployed 0.02-0.06).
 - H5e (analytic, earlier): 65 normal weeks cannot separate 1 vs 2 FA/asset-yr (power 0.23).
 Verdict round 5: primary gain of the STORY (a measured, explained ranking inversion), not of a method.
+- H5d SUPPORTED (results/round5/selection_m1.csv, selection_pooled_m1.csv): at each method's B=2 operating point,
+  hand-picked normal events carry alarms at 0.43x the rate of 2,000 random eligible normal weeks (pooled over 9
+  methods; cluster bootstrap 95% CI 0.18-0.68). For rule, loop3s, underdel and SRCR NONE of the 35 normal events
+  alarms, while 3-11% of random normal weeks do. Exception: AE / AE-cond ratio ~1.0. Mechanism: the benchmark's
+  normal weeks are easier than typical operation, so event-protocol precision is inflated beyond the base-rate
+  effect alone.

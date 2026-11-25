@@ -23,7 +23,7 @@ while len(wins) < 2000:
     a = lab.start + (lab.end - lab.start) * rng.random()
     a = a.floor("D")
     if eligible(s, a): wins.append((s, a))
-rows = []
+rows = []; allw = []
 for meth in METHODS:
     op = T[(T.method == meth) & (T.budget == 2)].iloc[0]
     al = {}
@@ -38,6 +38,7 @@ for meth in METHODS:
     rn, rr = np.mean([x[0] for x in ne]), np.mean([x[0] for x in rw])
     # cluster bootstrap over substations of the rate ratio
     nes = pd.DataFrame(ne, columns=["a", "cov", "s"]); rws = pd.DataFrame(rw, columns=["a", "cov", "s"])
+    allw.append(nes.assign(kind="normal_event", method=meth)); allw.append(rws.assign(kind="random", method=meth))
     bs = []
     for _ in range(2000):
         pick = rng.choice(subs, len(subs))
@@ -52,3 +53,14 @@ D = pd.DataFrame(rows); D.to_csv("results/round5/selection_m1.csv", index=False)
 pool_n = (D.alarm_rate_normal_events * D.n_normal_events).sum() / D.n_normal_events.sum()
 pool_r = (D.alarm_rate_random_windows * D.n_random_windows).sum() / D.n_random_windows.sum()
 print(D.round(3).to_string(index=False)); print("pooled ratio", pool_n / pool_r)
+
+A = pd.concat(allw); A.to_csv("results/round5/selection_windows_m1.csv", index=False)
+bs = []
+g = {k: v for k, v in A.groupby("s")}
+for _ in range(2000):
+    pick = rng.choice(subs, len(subs)); Z = pd.concat([g[k] for k in pick if k in g])
+    a = Z[Z.kind == "normal_event"].a.mean(); b = Z[Z.kind == "random"].a.mean()
+    if b > 0 and a == a: bs.append(a / b)
+lo, hi = np.percentile(bs, [2.5, 97.5])
+pd.Series({"pooled_ratio": pool_n / pool_r, "ci_lo": lo, "ci_hi": hi, "H5d_supported": bool(hi < 1)}).to_csv("results/round5/selection_pooled_m1.csv")
+print("pooled", pool_n / pool_r, lo, hi)
