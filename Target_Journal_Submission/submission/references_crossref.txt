@@ -32,3 +32,6 @@
 [32] Tautz‐Weinert J., Watson S.J., Using SCADA data for wind turbine condition monitoring – a review, IET Renewable Power Generation, 11 (2016) 382-394. https://doi.org/10.1049/iet-rpg.2016.0248
 [33] Gadd H., Werner S., Achieving low return temperatures from district heating substations, Applied Energy, 136 (2014) 59-67. https://doi.org/10.1016/j.apenergy.2014.09.022
 [34] Efron B., Bootstrap Methods: Another Look at the Jackknife, The Annals of Statistics, 7 (1979) 1-26. https://doi.org/10.1214/aos/1176344552
+[35] Reising D.V.C., Downs J.L., Bayn D., Human Performance Models for Response to Alarm Notifications in the Process Industries: An Industrial Case Study, Proceedings of the Human Factors and Ergonomics Society Annual Meeting, 48 (2004) 1189-1193. https://doi.org/10.1177/154193120404801009
+[36] Goetz C., Pragmatic Analytics of Control System Alarms for Improved Drilling Performance and Equipment Maintenance, SPE/IADC Drilling Conference and Exhibition (2017) D031S018R004. https://doi.org/10.2118/184659-MS
+[37] Tahavori M., Shaker H.R., Time-series foundation models for energy infrastructure: Evidence and requirements for digital-twin-grade integration, Energy and AI, 26 (2026) 100959. https://doi.org/10.1016/j.egyai.2026.100959

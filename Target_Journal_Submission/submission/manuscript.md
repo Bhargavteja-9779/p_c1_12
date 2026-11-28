@@ -3,175 +3,193 @@ title: "Benchmark scores do not show deployable fault detection: false-alarm bur
 author: "[Author names and affiliations to be completed by the authors]"
 ---
 
-<!-- Every number in this manuscript is traced to a committed result file; see submission/NUMBER_SOURCES.md. -->
+<!-- Version 2 (2026-11-28). Every number is traced to a committed result file in submission/NUMBER_SOURCES.md. -->
 
 # Highlights
 
-- Balanced event benchmarks were replayed continuously on 35 substations and 36 wind turbines.
-- Benchmark-chosen thresholds imply 6.7–16.7 false alarms per turbine-year.
-- On district heating they imply 83–176 false-alarm days per substation-year.
-- Curated normal periods attract 0.21–0.42 times the alarms of random normal time.
-- Ranking shifts are consistent in direction but not significant under calibrated tests.
+- We replay balanced fault-detection benchmarks continuously on 35 substations and 36 wind turbines.
+- Thresholds chosen on the benchmark imply 6.7–16.7 false alarms per turbine-year in operation.
+- On district heating, the same practice implies 83–176 false-alarm days per substation-year.
+- Curated normal periods draw 0.21–0.42 times the alarms of random normal operation.
+- The benchmark winner ranks 13th of 17 in deployment at two false alarms per year.
 
 # Abstract
 
-Public benchmarks for early fault detection in energy systems score detectors on short event windows. These windows are balanced between faults and hand-picked normal periods, and the decision thresholds are tuned on the events being scored. Operators, by contrast, run a detector continuously and with a fixed threshold. They judge it by the number of faults it finds within a tolerable number of false alarms. We measure the distance between these two views on two public, labelled benchmarks. The first is PreDist, with 35 district heating substations, and the second is CARE to Compare, with 36 wind turbines in three farms. We use a pre-registered panel of 15–17 detectors that ranges from z-scores to conditional autoencoders. The same online scores are evaluated under four protocols. These cross balanced event windows or continuous replay with thresholds tuned on the evaluated events or chosen out of sample. Thresholds that maximise the benchmark score imply 6.7–16.7 false alarms per turbine-year in continuous operation. On district heating they imply 83–176 false-alarm days per substation-year. Benchmark precision exceeds deployed alarm precision by 7.6–20.6 times. The curated normal periods are systematically quieter than ordinary operation: they attract alarms at 0.21 (95% CI 0.05–0.37) and 0.42 (0.27–0.61) times the rate of random normal windows. Agreement between benchmark and deployment-like detector rankings is low (Kendall τ 0.34 and 0.43). It is higher when thresholds are chosen out of sample (0.65 and 0.74), in all ten seed–dataset combinations. However, this ranking effect is not statistically established once the bootstrap is calibrated. We give a reporting checklist that makes benchmark results interpretable for deployment.
+Public benchmarks for early fault detection in energy systems score detectors on short event windows. The windows are balanced between faults and hand-picked normal periods, and the thresholds are tuned on the events being scored. Operators instead run a detector continuously with a fixed threshold. They judge it by how many faults it finds within a tolerable number of false alarms.
+
+We measure the gap between these two views on two public, labelled benchmarks: PreDist (35 district heating substations) and CARE to Compare (36 wind turbines in three farms). A pre-registered panel of 15–17 detectors is evaluated under four protocols built from the same online scores.
+
+- **False-alarm burden.** Thresholds that maximise the benchmark score imply 6.7–16.7 false alarms per turbine-year in continuous operation, and 83–176 false-alarm days per substation-year. Benchmark precision exceeds deployed alarm precision by 7.6–20.6 times.
+- **Curated-normal bias.** The curated normal periods are quieter than ordinary operation. They draw alarms at 0.21 (95% CI 0.05–0.37) and 0.42 (0.27–0.61) times the rate of random normal windows.
+- **Ranking.** Across false-alarm budgets of 0.5–8 per asset-year, the benchmark winner is outside the deployment top three at 60–100% of budgets in every seed. On district heating it ranks 13th of 17 at two false alarms per year. On wind turbines, the benchmark ranking is essentially unrelated to the multi-budget deployment ranking (Kendall τ between −0.06 and 0.12).
+
+Choosing thresholds out of sample improves agreement in every seed. However, under calibrated randomisation tests this improvement is not statistically established with current benchmark sizes. We release the protocol and a reporting checklist.
 
 **Keywords:** fault detection; anomaly detection; evaluation protocol; false alarms; district heating; wind turbine SCADA
 
 # Nomenclature
 
-| Acronym | Meaning |
+| Symbol / acronym | Meaning |
 |---|---|
-| AE | autoencoder |
-| CH | continuous replay, out-of-sample thresholds (deployment-like reference) |
+| B | false-alarm budget, alarms per asset-year |
+| CH, CH_B | continuous replay with out-of-sample thresholds (deployment-like reference), at budget B |
+| CHA | mean of CH_B over B ∈ {0.5, 1, 2, 4, 8} (multi-budget reference) |
 | CT | continuous replay, thresholds tuned in sample |
-| DH | district heating |
 | EH | event windows, out-of-sample thresholds |
 | ET | event windows, thresholds tuned on the evaluated events (benchmark practice) |
+| AE | autoencoder |
 | FA | false alarm |
-| LOFO | leave-one-farm-out |
 | NBM | normal-behaviour model |
 | SCADA | supervisory control and data acquisition |
+| τ | Kendall's rank correlation (tau-b) |
 
 # 1. Introduction
 
-Data-driven early fault detection is one of the most active applications of machine learning in energy systems. District heating substations and wind turbines are typical targets. Both record operational data at 10-minute resolution from many similar assets, faults are costly, and labelled faults are rare [21, 24, 32]. In district heating, undetected substation faults also raise return temperatures and the cost of low-temperature networks [22, 23, 33]. Most proposed detectors are unsupervised normal-behaviour models. They raise an alarm when the measured behaviour departs from the learned normal behaviour by more than a threshold [19, 24, 28].
+Early fault detection from operational data is one of the most active uses of machine learning in energy systems. District heating substations and wind turbines are typical targets. Many similar assets record 10-minute data, faults are costly, and labelled faults are scarce [21, 24, 32]. In district heating, substation faults also raise return temperatures, which increases supply costs and works against low-temperature networks [22, 23, 33]. Most proposed detectors are unsupervised normal-behaviour models that raise an alarm when operation departs from learned normal behaviour by more than a threshold [19, 24, 28].
 
-A detector is only useful if operators can act on its alarms. Experience with industrial alarm systems shows that alarm floods are common and that a high alarm rate is itself a safety and cost problem [25, 26]. The operational question is therefore concrete. How many faults does the detector find before they are reported, at a number of false alarms per asset and year that the operator can follow up?
+A detector is useful only if its alarms can be followed up. Industrial alarm management treats the alarm rate as a design constraint, because alarm floods degrade operator response [25, 26, 35, 36]. The operator's question is therefore concrete: how many faults does the detector find before they are reported, at a false-alarm rate per asset and year that the maintenance team can handle?
 
-Public benchmarks answer a different question. The two labelled public datasets used here are typical. PreDist [1] and CARE to Compare [2] score detectors on short windows before known faults and on a similar number of hand-picked normal periods. The decision threshold is chosen to maximise an event-level F0.5 score on these same events. The PreDist authors state that this balanced design overestimates precision, because faults are far rarer in practice [1]. Studies of time-series anomaly detection outside energy have also shown three things:
+Public benchmarks answer a different question. The two labelled public datasets used here, PreDist [1] and CARE to Compare [2], work in the same way:
 
-- point-adjusted and tuned evaluation can mislead model rankings [3, 13];
-- calibrating thresholds on test data biases results [5];
-- low-false-alarm evaluation changes rankings [4].
+- detectors are scored on short windows before known faults and on a similar number of hand-picked normal periods;
+- the decision threshold is chosen to maximise an event-level F0.5 score on those same events.
 
-On wind SCADA data, recent studies report the following under leakage-controlled or cross-asset protocols [6–9]:
+The PreDist authors state that the balanced design overestimates precision, because faults are much rarer in practice [1]. Outside energy, it is known that tuned or point-adjusted evaluation can mislead rankings [3, 13], that calibrating thresholds on test data biases results [5], and that low-false-alarm evaluation reorders detectors [4]. On wind SCADA data, leakage-controlled and cross-asset studies report optimistic thresholds and weak discrimination at an alarm budget [6–9]. A recent review in this journal calls for leakage-aware evaluation of energy time-series models [37].
 
-- optimistic same-asset thresholds;
-- excessive false alarms;
-- weak discrimination at an alarm budget.
+What has not been measured is how far the benchmark view is from deployment on the benchmarks the energy community actually uses. Such a measurement needs four things:
 
-What is missing is a measurement of how far the benchmark view is from deployment, on the benchmarks that the energy community actually uses. Such a measurement should replay every detector over the full continuous history of every asset. It should cover enough detectors for rank statistics, and the analysis plan should be fixed before the results are seen. The closest work in this journal uses PreDist with window-level scores and an upper-bound F1 [14]. Energy and AI has also published evaluation studies showing that aggregate scores can mislead model choice in forecasting [15] and that standard evaluation can overstate cross-laboratory generalisation [16]. This paper brings the same kind of scrutiny to fault-detection benchmarks.
+- replaying every detector over every asset's full record;
+- enough detectors for rank statistics;
+- several false-alarm budgets;
+- an analysis plan fixed before the results are seen.
 
-We do not claim that the base-rate effect is new [10, 11] or that threshold leakage is new [3–5]. Our contributions are measurements and a reporting proposal:
+This journal has published evaluation studies of this kind for forecasting [15], materials discovery [16] and concept drift in district heating [17]. The closest fault-detection study evaluates PreDist with window-level scores at an oracle threshold [14].
 
-1. **We quantify the false-alarm burden that benchmark-chosen thresholds imply in continuous operation.** The measurement covers two public energy benchmarks and 15–17 detectors. The resulting burdens range from 6.7 to 16.7 alarms per turbine-year and from 83 to 176 alarm days per substation-year.
-2. **We identify and measure a selection effect in benchmark construction.** Curated normal periods are quieter than random normal time for 16 of 17 and 13 of 14 detectors. This holds in every seed, and it inflates benchmark precision beyond the base-rate effect.
-3. **We test, with a pre-registered 2×2 factorial, whether threshold source or window design drives the gap between benchmark and deployment rankings.** We report that the effect is consistent in direction on both datasets. It is not statistically established once the bootstrap is calibrated, and we explain why rank-based claims of this kind need more detectors and events than current benchmarks provide.
-4. **We propose a reporting checklist.** It lets a benchmark result be read in operator units.
+We do not claim that the base-rate effect [10, 11] or threshold leakage [3–5] is new. Our contributions are measurements, a negative result and a reporting proposal:
 
-Section 2 reviews related work. Section 3 describes the data and detectors, and Section 4 the protocols and statistics. Section 5 reports the results, Section 6 discusses implications and limitations, and Section 7 concludes.
+1. **False-alarm burden.** On two public energy benchmarks and 15–17 detectors, we quantify the false-alarm burden that benchmark-chosen thresholds imply in continuous operation, and the resulting precision inflation (Section 5.2).
+2. **Curated-normal bias.** We identify and measure a selection effect in how the benchmarks were built: curated normal periods are quieter than ordinary operation, which inflates benchmark precision beyond the base-rate effect (Section 5.3).
+3. **Operator-budget analysis.** We show that the benchmark winner is not the deployment winner at almost any false-alarm budget. We also show that thresholds calibrated on held-out assets do not reliably deliver their target budget (Section 5.4).
+4. **A pre-registered test of what drives ranking disagreement, reported as a negative result.** We decompose the disagreement into threshold source and window design. The direction is consistent, but the effect is not established under calibrated tests, and we explain why the available benchmark sizes cannot establish it (Section 5.5).
+5. **A reporting checklist** that makes benchmark results readable in operator units (Section 6.2).
 
 # 2. Related work
 
-**Benchmarks for early fault detection in energy systems.** CARE to Compare [2] provides SCADA data of 36 turbines from three wind farms. It has 95 labelled events: 44–45 anomalies and 50–51 normal periods, depending on the version. It also defines the CARE score, a weighted mean of four components:
+**Benchmarks for early fault detection in energy systems.**
 
-- coverage, a pointwise F0.5;
-- accuracy on normal periods;
-- reliability, an event-wise F0.5;
-- earliness.
+- *CARE to Compare* [2] provides SCADA data from 36 turbines in three wind farms. It has 95 labelled events: 45 anomalies and 50 normal periods in the version used. The CARE score combines a pointwise F0.5, accuracy on normal periods, an event-wise F0.5 (reliability) and an earliness term.
+- *PreDist* [1] provides 10-minute data from 93 district heating substations of two controller manufacturers, labelled from service records. Its reliability score is an event-wise F0.5, with the threshold chosen by cross-validation over the evaluated events. Both dataset papers present the balanced design as a choice made for comparability, and PreDist notes the resulting overestimate [1].
+- *Other evaluations on these and related data.* Van Dreven et al. [14] evaluate a self-supervised transformer on PreDist with window-level ROC-AUC and macro F1. Other district heating studies report case studies, substation-level accuracy, clustering quality or sample-level false-alarm counts [18, 21, 24, 27, 28]. A reproducibility study of HVAC fault detection [20] and a drift-detection benchmark for district heating [17] show, in this journal, that evaluation design shapes reported performance.
 
-PreDist [1] provides 10-minute data from 93 district heating substations of two controller manufacturers, labelled from service records. Its reliability score is an event-wise F0.5 over fault windows and normal events, with the threshold selected by cross-validation over the evaluated events. Both papers present the balanced event design as a deliberate choice for comparability, and PreDist explicitly notes the precision overestimate [1]. Van Dreven et al. [14] evaluate a self-supervised transformer on PreDist using window-level ROC-AUC and macro F1 at an oracle threshold. Other district heating studies report case studies, substation-level accuracy or sample-level false-alarm counts [18, 21, 24, 27, 28]. A drift-detection benchmark for district heating [17] and a reproducibility study of HVAC fault detection [20] in this journal also argue that evaluation design shapes reported performance.
+**Evaluation pitfalls in anomaly detection.**
 
-**Evaluation pitfalls in anomaly detection.** The base-rate fallacy [10] and the weakness of ROC analysis on imbalanced data [11] are textbook issues. For time series, Kim et al. [3] showed that point adjustment produces misleading rankings, and Wu and Keogh [13] criticised unrealistic anomaly density in popular benchmarks. Cools et al. [5] showed that calibrating thresholds on the test set biases reported performance, and Salem and Ferrugem [4] showed that low-false-alarm evaluation changes detector rankings. Lavin and Ahmad [30] proposed a streaming benchmark that rewards early detection and penalises false positives.
+- The base-rate fallacy [10] and the weakness of ROC analysis on imbalanced data [11] are textbook issues.
+- For time series, Kim et al. [3] showed that point adjustment produces misleading rankings, and Wu and Keogh [13] criticised unrealistic anomaly density in benchmarks.
+- Cools et al. [5] showed that calibrating thresholds on the test set biases results, and Salem and Ferrugem [4] that low-false-alarm evaluation changes detector rankings.
+- Lavin and Ahmad [30] proposed a streaming benchmark that penalises false positives.
 
-**Wind turbine SCADA.** Recent CARE-based studies use leakage-controlled calibration [6], cross-asset conformal monitoring [8] and farm-specific models [9]. An unreviewed, pre-registered reproducibility study evaluates detectors at an alarm budget against random alarms and reports weak discrimination [7]. Our work differs in three ways. We replay benchmark-chosen thresholds over the full continuous record. We measure the curated-normal selection effect. We decompose ranking disagreement into threshold-source and window-design factors on two domains under one protocol.
+**Wind turbine SCADA.** Recent CARE-based work covers several protocols:
 
-**Statistical design of false-alarm tests.** False-alarm testing standards use binomial and Poisson power calculations to size such tests [12]. We use the same reasoning to show how little a benchmark's normal periods can certify about a deployed false-alarm rate.
+- leakage-controlled calibration [6];
+- cross-asset conformal monitoring [8];
+- farm-specific models [9];
+- an unreviewed, pre-registered study at an alarm budget [7].
+
+None of these replays benchmark-chosen thresholds over the full continuous record. None measures the curated-normal selection effect, and none compares rankings across budgets under one protocol on two domains.
+
+**Alarm-rate guidance.** Process-industry alarm management (EEMUA 191, as reported in [35]) recommends no more than about one alarm per 10 minutes per control-room operator in normal operation. The Norwegian YA-711 guidance, reproduced in [36], gives similar figures. These limits concern operator workload in a control room, not maintenance alarms per monitored asset. To our knowledge, no published operator source gives a tolerable false-alarm rate per turbine-year or per substation-year. We therefore report results as a function of the budget rather than at a single assumed value.
 
 # 3. Data and detectors
 
 ## 3.1 Datasets
 
-**PreDist** [1] (CC BY 4.0) contains data from 93 German district heating substations. We use the 35 substations of the first controller manufacturer, about 144 substation-years of 10-minute data. The 58 substations of the second manufacturer were used in an earlier locked transfer test that was evaluated more than once. They are therefore excluded from all analyses here (Section 6.3). There are 29 early-detectable fault reports. The detection window is the 7 days before each report, as defined by the dataset [1]. The 35 curated normal events come from the dataset's event list.
+**PreDist** [1] (CC BY 4.0) contains data from 93 German district heating substations. We use the 35 substations of the first controller manufacturer: 144 substation-years of 10-minute data, 29 early-detectable fault reports and 35 curated normal events. Detection windows are the 7 days before each report, following the dataset [1]. The 58 substations of the second manufacturer were used in an earlier locked transfer test that was evaluated more than once, so they are excluded here (Section 6.3).
 
-**CARE to Compare** [2] contains 36 turbines in three farms and 95 events: 45 anomalies and 50 normal periods in the version used. The event windows are those of the dataset.
+**CARE to Compare** [2] contains 36 turbines in three farms and 95 events (45 anomalies, 50 normal periods). We use the dataset's event windows.
 
 ## 3.2 Detector panel
 
-The panel was fixed before any score was computed (pre-registration plan_v2; Supplementary S2). It has 12 generic detectors that run on both datasets:
+The panel was fixed before any of its scores were computed (pre-registration plan_v2, Supplementary S2). It has 12 generic detectors that run on both datasets:
 
 - per-signal maximum and mean z-scores, a robust z-score, an EWMA z-score and a quantile-exceedance fraction;
 - PCA residual (SPE) and Hotelling T²;
 - Ledoit–Wolf Mahalanobis distance;
-- k-nearest-neighbour, LOF and GMM scores on PCA components;
-- an isolation forest on PCA components [29].
+- k-nearest-neighbour, LOF, GMM and isolation-forest scores on PCA components [29].
 
-The panel also includes dataset-specific detectors from earlier rounds. On PreDist these are an expert control-loop rule, a loop-residual three-sigma statistic, an own-history quantile NBM [28], the PreDist benchmark autoencoder [1] and a conditional autoencoder. On CARE they are a temperature three-sigma statistic, an autoencoder and a conditional autoencoder.
+The dataset-specific detectors from earlier work are added to these:
 
-Every detector is trained online on the asset's own past: it is retrained every 90 days, and its nominal threshold is the 99th percentile of its training scores. Stochastic detectors were run with seeds 0–4. All detectors share one alarm logic. A persistence counter increases when the score exceeds τ and decreases otherwise, and an alarm is active while the counter is at least c. The (τ, c) grid is the same for every detector.
+- *PreDist:* an expert control-loop rule, a loop-residual three-sigma statistic, an own-history quantile NBM [28], the PreDist benchmark autoencoder [1] and a conditional autoencoder.
+- *CARE:* a temperature three-sigma statistic, an autoencoder and a conditional autoencoder.
+
+For robustness analyses the detectors are grouped into six pre-specified families: z-score, linear, density, physics/expert, NBM and autoencoder.
+
+Every detector is trained online on the asset's own past. It is retrained every 90 days, and its nominal threshold is the 99th percentile of its training scores. Stochastic detectors are run with seeds 0–4. All detectors share one alarm logic and one (τ, c) grid: a persistence counter rises while the score exceeds τ and falls otherwise, and an alarm is active while the counter is at least c.
 
 # 4. Evaluation protocols and statistics
 
-## 4.1 Four protocols
+## 4.1 Four protocols on the same scores
 
-Each detector's online score series is evaluated in a 2×2 design (Table 1).
+Each detector's online score series is evaluated in a 2×2 design (Fig. 1, Table 1).
 
-The **window design** is either:
+The **window design** is one of two:
 
-- *event windows*: the benchmark's fault windows and curated normal events, with an event counted as flagged if an alarm is active anywhere in its window; or
-- *continuous replay*: every monitored step of every asset, counting alarm starts outside fault windows and exclusion intervals as false alarms per asset-year.
+- *event windows:* the benchmark's fault windows and curated normal events; an event is flagged if an alarm is active anywhere in it;
+- *continuous replay:* every monitored step of every asset; alarm starts outside fault windows and exclusion intervals count as false alarms per asset-year.
 
-The **threshold source** is either:
+The **threshold source** is also one of two:
 
-- *tuned on the evaluated events*: the (τ, c) that maximises event F0.5, or recall at ≤ 2 FA per asset-year in the continuous case; or
-- *out of sample*: the point chosen on held-out assets at a budget of B = 2 FA per asset-year. On CARE the held-out set is defined by leave-one-farm-out; on PreDist by 5-fold substation cross-validation with fixed folds.
+- *tuned on the evaluated events:* the (τ, c) that maximises event F0.5, or recall at ≤ B false alarms per asset-year for continuous replay;
+- *chosen out of sample:* the point selected on held-out assets at budget B. For CARE the held-out set is leave-one-farm-out; for PreDist it is 5-fold substation cross-validation with fixed folds.
 
-The CH cell (continuous replay, out-of-sample thresholds) is the deployment-like reference.
+The CH cell is the deployment-like reference. We evaluate it at B = 2 as pre-registered, and additionally at B ∈ {0.5, 1, 2, 4, 8}. The mean over these budgets (CHA) is a multi-budget reference.
 
 **Table 1.** The four protocol cells.
 
 | | Thresholds tuned on evaluated events | Thresholds chosen out of sample |
 |---|---|---|
 | **Event windows** | ET (benchmark practice): event F0.5 | EH: event F0.5 at held-out B = 2 point |
-| **Continuous replay** | CT: recall at in-sample point with ≤ 2 FA/asset-yr | **CH (reference)**: recall at held-out B = 2 point |
+| **Continuous replay** | CT: recall at in-sample point, ≤ 2 FA/asset-yr | **CH (reference)**: recall at held-out point, budget B |
 
-## 4.2 Hypotheses and pre-registration
+## 4.2 Pre-registered analyses
 
-All hypotheses and the analysis script were committed before any panel score existed (plan_v2). They are:
+All analyses were committed to version control before they were run. Commit times are listed in Supplementary S1.
 
-- **H7a, threshold source:** τ(EH, CH) − τ(ET, CH) > 0.
-- **H7b, window design:** τ(CT, CH) − τ(ET, CH) > 0.
-- **H7d, selection effect:** the pooled alarm-hit rate on curated normal events divided by the rate on 2,000 random eligible normal windows of matched length is below 1.
+**Burden and selection effect.** These were pre-registered in earlier rounds, and the selection effect again in plan_v2.
 
-τ is Kendall's tau between the per-detector scores of two cells. Tests are one-sided, using a cluster bootstrap over assets with 2,000 replicates [31, 34]. Tuned cells are re-tuned inside each replicate. Holm's correction is applied over {H7a, H7b} × {PreDist, CARE}. Robustness counts the seeds, out of 5, in which each hypothesis holds.
+- *CARE burden:* the continuous false-alarm rate at each detector's benchmark-optimal point, and the inflation factor (event precision ÷ deployed alarm precision at the held-out B = 2 point), with cluster-bootstrap 95% CIs [31, 34].
+- *PreDist burden:* the false-alarm days per substation-year implied by the oracle threshold of a balanced window-level protocol in the style of [14]. The balanced set has 442 asset-days, including all 221 faulty days, out of 45,632 asset-days.
+- *Selection effect (H7d):* the pooled alarm-hit rate on curated normal events divided by the rate on 2,000 random eligible normal windows of matched length, at each detector's held-out B = 2 point.
 
-After a blind internal review found the percentile bootstrap biased towards H7a, we pre-registered Amendment A1 before running it. A1 adds two tests:
+**Ranking disagreement (plan_v2).** Two contrasts test what drives disagreement with the reference:
 
-- T1, a null-centred bootstrap;
-- T2, an exact within-detector label-swap randomisation test.
+- H7a: τ(EH, CH) − τ(ET, CH) > 0 (threshold source);
+- H7b: τ(CT, CH) − τ(ET, CH) > 0 (window design).
 
-A result is called *confirmed* only if both T1 and T2 reject after Holm.
+They were tested with a one-sided percentile cluster bootstrap over assets and Holm's correction over the two datasets. A blind internal review found that this bootstrap is biased towards the alternative, because the tuned cells are re-tuned inside each resample.
 
-## 4.3 Alarm-burden measurements
+We therefore pre-registered two amendments before running them:
 
-The burden measurements were pre-registered in earlier rounds.
+- **A1** adds a null-centred bootstrap (T1) and an exact within-detector label-swap randomisation test (T2). A contrast counts as *confirmed* only if both reject after Holm.
+- **A2** repeats the contrasts against the multi-budget reference CHA (H9a, H9b) with the label-swap test, Holm, and a robustness rule of at least 4 of 5 seeds. It adds three descriptive analyses: the deployment rank of the benchmark winner at each budget, the realised false-alarm rate of held-out thresholds, and leave-one-family-out stability.
 
-**CARE.** For each detector we compute:
+## 4.3 Leakage control and reproducibility
 
-- the benchmark-optimal (τ, c);
-- its continuous FA rate per turbine-year;
-- the inflation factor, i.e. event precision divided by deployed alarm precision, at the leave-one-farm-out B = 2 point, with cluster-bootstrap CIs.
+A legacy exclusion rule in the PreDist pipeline let 4 of 588 model refits (substations 4 and 7) see the timing of future fault reports. All PreDist results reported as primary use the corrected, leak-free rule. The legacy results are given as a sensitivity analysis. CARE used the leak-free rule from the start.
 
-**PreDist.** We compute the oracle threshold that maximises macro F1 on a balanced window-level set, in the style of [14]. This set contains 442 asset-days, with all 221 faulty days. We report the false-alarm days per substation-year that this threshold implies over all 45,632 asset-days.
-
-## 4.4 Leakage control
-
-A legacy exclusion rule in the PreDist pipeline let 4 of 588 model refits (substations 4 and 7) see the timing of future fault reports. All PreDist numbers reported as primary use the corrected, leak-free rule (Supplementary S4). The legacy values are shown as a sensitivity analysis. CARE used the leak-free rule from the start.
+The leak-free PreDist seed-0 analysis was regenerated from raw data on a second machine and reproduced the reported tables exactly. The legacy seed-0 analysis was reproduced byte-for-byte on a third.
 
 # 5. Results
 
-## 5.1 Benchmark scores and deployment-like recall
+## 5.1 Benchmark scores versus deployment-like recall
 
-Under benchmark practice (ET), every detector looks useful (Table 2). Event F0.5 is 0.69–0.84 on PreDist and 0.57–0.69 on CARE. Under the deployment-like reference (CH), the same detectors find 7–32% of PreDist faults and 0–27% of CARE anomalies at about 2 false alarms per asset-year.
+Under benchmark practice (ET), every detector looks useful. Event F0.5 ranges from 0.69 to 0.84 on PreDist and from 0.57 to 0.69 on CARE (Table 2). Under the deployment-like reference at B = 2, the same detectors find 7–32% of PreDist faults and 0–27% of CARE anomalies.
 
-The detector with the best benchmark score is not the best deployed detector (Fig. 2):
+The detector with the best benchmark score is not the best deployed detector (Fig. 3):
 
-- On PreDist the benchmark favours the loop-residual three-sigma statistic (ET 0.84), which reaches CH recall of 0.11. The GMM detector reaches CH recall of 0.32.
-- On CARE the benchmark favours the mean z-score (0.69, CH 0.16), while the conditional autoencoder has the highest CH recall (0.27).
+- On PreDist, the benchmark favours the loop-residual three-sigma statistic (ET 0.84). It finds 11% of faults at B = 2, while the GMM detector finds 32%.
+- On CARE, the benchmark favours the mean z-score (ET 0.69, CH 0.16), while the conditional autoencoder reaches CH 0.27.
 
-**Table 2.** Benchmark score (ET, event F0.5) and deployment-like recall (CH, continuous, out-of-sample threshold, B = 2) per detector, seed 0. PreDist uses the leak-free rule.
+**Table 2.** Benchmark score (ET, event F0.5) and deployment-like recall (CH, B = 2) per detector, seed 0; PreDist leak-free.
 
 | Detector | PreDist ET | PreDist CH | CARE ET | CARE CH |
 |---|---|---|---|---|
@@ -195,116 +213,147 @@ The detector with the best benchmark score is not the best deployed detector (Fi
 
 ## 5.2 False-alarm burden at benchmark-chosen thresholds
 
-**CARE.** At the thresholds that maximise the benchmark score, continuous operation yields the following false-alarm rates:
+**CARE.** At the thresholds that maximise the benchmark score, continuous operation produces these false-alarm rates:
 
 | Detector | False alarms per turbine-year |
 |---|---|
-| Temperature three-sigma | 6.7 |
-| Isolation forest | 10.6 |
-| Three-sigma | 10.8 |
-| Conditional autoencoder | 15.8 |
-| Autoencoder | 16.7 |
+| temperature three-sigma | 6.7 |
+| isolation forest | 10.6 |
+| three-sigma | 10.8 |
+| conditional autoencoder | 15.8 |
+| autoencoder | 16.7 |
 
-Event precision at the benchmark point is 0.55–0.84. Deployed alarm precision at the out-of-sample B = 2 point is 0.036–0.071. The resulting inflation factors are 7.6 (95% CI 5.0–16.7) to 20.6 (13.5–37.4) for the four detectors that raise alarms. The isolation forest raises no alarm at its held-out point, so its ratio is undefined and is reported as such.
+Event precision at the benchmark point is 0.55–0.84. Deployed alarm precision at the held-out B = 2 point is 0.036–0.071. For the four detectors that raise alarms, the inflation factor therefore ranges from 7.6 (95% CI 5.0–16.7) to 20.6 (13.5–37.4). The isolation forest raises no alarm at its held-out point, so its ratio is undefined.
 
-**PreDist.** At the oracle threshold of the balanced window protocol, every one of the 17 detectors implies at least 10 false-alarm days per substation-year. The range is 83–176 days, with a median of 135. At natural prevalence (0.5% faulty days), the best achievable macro F1 is 0.50–0.53 for every detector. This is essentially the score of never raising an alarm.
+**PreDist.** At the oracle threshold of the balanced window protocol, all 17 detectors imply at least 10 false-alarm days per substation-year. The range is 83–176, with a median of about 135. At natural prevalence (0.5% faulty days), the best achievable macro F1 is 0.50–0.53 for every detector, essentially the score of never raising an alarm.
 
 ## 5.3 Selection effect in curated normal periods
 
-Curated normal events attract far fewer alarms than ordinary normal operation (Fig. 3). We compared each detector's alarm-hit rate on the curated events with its rate on 2,000 random eligible normal windows, at its held-out B = 2 point. The pooled ratio is:
+Curated normal events draw far fewer alarms than ordinary normal operation (Fig. 4). The pooled ratio of alarm-hit rates (curated ÷ random normal windows) is:
 
-- 0.21 (95% CI 0.05–0.37) on PreDist (leak-free; legacy 0.30, 0.11–0.52);
+- 0.21 (95% CI 0.05–0.37) on PreDist (legacy rule: 0.30, 0.11–0.52);
 - 0.42 (0.27–0.61) on CARE.
 
-The ratio is below 1 for 16 of 17 PreDist detectors and 13 of 14 evaluable CARE detectors. H7d holds in 5 of 5 seeds on CARE and in 5 of 5 seeds on PreDist (seeds 1–4 with the legacy rule; leak-free seed 0).
+The ratio is below 1 for 16 of 17 PreDist detectors and 13 of 14 evaluable CARE detectors, and H7d holds in every seed analysed: 5 of 5 on CARE, 5 of 5 on PreDist with the legacy rule, and 3 of 3 completed leak-free PreDist seeds (pooled ratios 0.18–0.23) [LEAKFREE_SEEDS_PENDING]. The effect is detector-dependent:
 
-The effect is detector-dependent:
-
-- On PreDist, ten detectors raise no alarm at all on the 35 curated normal events. The conditional autoencoder (2.45) and the autoencoder (0.76) are the exceptions.
-- On CARE, the robust z-score is the exception (3.20).
+- on PreDist, ten detectors raise no alarm at all on the 35 curated normal events, while the conditional autoencoder (2.45) is an exception;
+- on CARE, the robust z-score (3.20) is an exception.
 
 Because curated normal periods are easier than typical operation, benchmark precision is inflated beyond what the base rate alone explains.
 
-## 5.4 What drives ranking disagreement?
+## 5.4 The operator's view across budgets
 
-Kendall's τ between the benchmark ranking (ET) and the deployment-like ranking (CH) is low (Fig. 1): 0.34 on PreDist (legacy 0.18) and 0.43 on CARE. Choosing thresholds out of sample (EH) raises it to 0.65 and 0.74. Replaying continuously with in-sample thresholds (CT) raises it on PreDist (0.83) but lowers it on CARE (0.30). The EH > ET pattern appears in all 5 seeds on both datasets (PreDist seeds 1–4: legacy rule).
+Fig. 5 shows deployment-like recall as a function of the false-alarm budget. The thresholds are always chosen on held-out assets.
 
-With the pre-registered percentile bootstrap, Holm rejects three of the four tests (Table 3): H7a on both datasets and H7b on PreDist. H7b on CARE is not rejected in any seed.
+**The benchmark winner is not the deployment winner.**
 
-Under the calibrated tests of Amendment A1, neither effect is confirmed on either dataset. For H7a, the CARE p-values are 0.065 (T1) and 0.18 (T2), and the PreDist leak-free label-swap p-value is 0.18. We therefore report the threshold-source effect as **consistent in direction but not statistically established**.
+- On PreDist (leak-free), the benchmark winner ranks 15th, 12th, 13th, 3rd and 2nd of 17 at B = 0.5, 1, 2, 4 and 8. At B ≤ 1 it finds no faults, or 11% of them. The expert control-loop rule finds 29% at every budget up to 4.
+- On CARE, the benchmark winner ranks 4th at B ≤ 4 and 7th at B = 8.
+- Across all ten seed–dataset runs, the benchmark winner is outside the deployment top three at 60–100% of the budgets.
 
-Two features of the design limit power:
+**Against the multi-budget reference, the benchmark ranking carries little information.** τ(ET, CHA) is −0.06 to 0.12 across the five CARE seeds and 0.43 on PreDist (leak-free, seed 0; legacy seeds 0.30–0.49).
 
-- With 15–17 detectors, τ has few distinct values.
-- The CH reference counts only 2–9 detected faults per detector on PreDist and 0–12 on CARE, so many detectors are tied.
+**Held-out calibration does not reliably deliver the target budget.** On CARE, held-out thresholds overshoot low budgets. The median realised rate over detectors is 1.84 false alarms per turbine-year at a target of 0.5 and at a target of 1, and 2.20 at a target of 2. On PreDist they stay within budget (0.33, 0.82 and 1.66 at the same three targets). An operator who sets a threshold on other farms should therefore expect more alarms than planned.
 
-Fig. 4 shows the per-seed p-values of the pre-registered test.
+## 5.5 What drives ranking disagreement? A negative result
 
-**Table 3.** Ranking-disagreement tests, seed 0, one-sided p-values. Pre-registered = percentile cluster bootstrap with the Holm decision of record; T1 = null-centred bootstrap; T2 = within-detector label swap (Amendment A1). PreDist leak-free has no saved bootstrap replicates, so T1 is given for the legacy run.
+Against the pre-registered B = 2 reference, τ(ET, CH) is 0.34 on PreDist (legacy 0.18) and 0.43 on CARE. Out-of-sample thresholds raise it to 0.65 and 0.74 (EH), and the increase appears in all five seeds of both datasets. Continuous replay with in-sample thresholds raises it on PreDist (0.83) but lowers it on CARE (0.30).
 
-| Test | Pre-registered p (Holm) | T1 | T2 |
-|---|---|---|---|
-| H7a PreDist (leak-free / legacy) | 0.017 / 0.0045 (rejected) | – / 0.0075 | 0.18 / 0.076 |
-| H7b PreDist (leak-free / legacy) | 0.012 / 0.0215 (rejected) | – / 0.0015 | 0.092 / 0.027 |
-| H7a CARE | 0.0055 (rejected) | 0.065 | 0.18 |
-| H7b CARE | 0.1495 (not rejected) | 0.68 | 0.61 |
+The pre-registered percentile bootstrap rejects three of the four Holm-corrected tests (Table 3). The calibrated tests of Amendment A1 confirm none:
 
-## 5.5 How much can a benchmark certify?
+- for the threshold-source effect (H7a), T1/T2 p-values are 0.060/0.18 on PreDist and 0.065/0.18 on CARE;
+- for the window-design effect (H7b), T1 rejects on PreDist (p = 0.007), but T2 does not (0.092).
 
-A benchmark with *n* normal windows can say little about a deployed false-alarm rate. The 65 normal 7-day windows of PreDist give power 0.23 to distinguish 1 from 2 false alarms per asset-year. The 50 normal periods of CARE give power 0.12 with 7-day windows, or 0.35 at their actual mean length of 14.9 days. Even a perfect event score therefore cannot certify an operator's alarm budget.
+Against the multi-budget reference (Amendment A2), the label-swap tests are also not significant:
+
+- seed-0 p-values for H9a and H9b are 0.41 and 0.16 on PreDist, and 0.16 and 0.11 on CARE;
+- across CARE seeds, H9a reaches p < 0.05 in 2 of 5 seeds and H9b in 0 of 5;
+- the direction is stable: H9b is positive whichever detector family is removed, on both datasets, and H9a in 25 of 25 CARE and 5 of 6 leak-free PreDist family drops.
+
+We therefore report the threshold-source and window-design effects on rankings as **consistent in direction but not statistically established**. The design limits power in two ways. With 15–17 detectors, τ has few distinct values. The reference counts only 2–9 detected faults per detector on PreDist and 0–12 on CARE, so many detectors are tied. Establishing such contrasts will need benchmarks with more faults and more independent detectors than PreDist and CARE currently provide.
+
+**Table 3.** Ranking-disagreement tests, seed 0, one-sided p-values. Pre-reg. = percentile cluster bootstrap with the Holm decision of record. T1 = null-centred bootstrap; T2 = within-detector label swap (A1). A2 = label swap against the multi-budget reference. PreDist results are leak-free.
+
+| Contrast | Pre-reg. (Holm) | T1 | T2 | A2 |
+|---|---|---|---|---|
+| Threshold source, PreDist | 0.017 (rejected) | 0.060 | 0.18 | 0.41 |
+| Window design, PreDist | 0.012 (rejected) | 0.007 | 0.092 | 0.16 |
+| Threshold source, CARE | 0.0055 (rejected) | 0.065 | 0.18 | 0.16 |
+| Window design, CARE | 0.15 (not rejected) | 0.68 | 0.61 | 0.11 |
+
+## 5.6 How much can a benchmark certify?
+
+With n normal windows, a benchmark says little about a deployed false-alarm rate. The 65 normal 7-day windows of PreDist give power 0.23 to distinguish 1 from 2 false alarms per asset-year. The 50 normal periods of CARE give power 0.12 for 7-day windows, or 0.35 at their mean length of 14.9 days [12]. Even a perfect event score therefore cannot certify an operator's alarm budget.
 
 # 6. Discussion
 
 ## 6.1 Implications for practice
 
-For an operator of 100 substations, the PreDist oracle threshold implies roughly 13,500 false-alarm days per year (median 135 per substation). For a 36-turbine fleet, the CARE benchmark-chosen thresholds imply 240–600 false alarms per year. In both cases the benchmark score gives no warning.
+At the median PreDist oracle threshold, a utility with 100 substations would face about 13,500 false-alarm days per year. For a 36-turbine fleet, the benchmark-chosen CARE thresholds would produce 240–600 false alarms per year. The benchmark score warns of neither.
 
-Three practical rules follow:
+The budget sweep adds two practical points:
+
+- the detector to deploy depends on the budget, and at tight budgets simple physically anchored rules can beat every learned detector;
+- thresholds transferred from other farms can exceed their target budget, so the first months of deployment should include monitoring of the alarm rate itself.
+
+Three rules follow:
 
 1. Choose thresholds on assets or periods that are not evaluated.
-2. Report recall at a stated false-alarm budget per asset-year, measured by continuous replay.
-3. Report the false-alarm rate on random normal time, not only on curated normal periods.
+2. Compare detectors at the budget the maintenance team can actually absorb, measured by continuous replay.
+3. Check the alarm rate on random normal time, not only on curated normal periods.
 
-## 6.2 Implications for benchmark design and reporting
+## 6.2 A reporting checklist for early fault detection benchmarks
 
-We propose that early fault detection papers report the following minimum set, in addition to any benchmark score:
+In addition to any benchmark score, we propose reporting:
 
 - (i) the threshold source and the data it was chosen on;
-- (ii) recall at fixed false-alarm budgets in continuous replay, with confidence intervals clustered by asset;
-- (iii) the asset-years of normal exposure behind the false-alarm estimate;
-- (iv) the alarm rate on random normal windows next to the curated normal events;
-- (v) the number of detectors and events behind any ranking claim, with a calibrated test.
+- (ii) recall at several false-alarm budgets per asset-year in continuous replay, with confidence intervals clustered by asset;
+- (iii) the realised false-alarm rate of transferred thresholds;
+- (iv) the asset-years of normal exposure behind every false-alarm estimate;
+- (v) the alarm rate on random normal windows next to curated normal events;
+- (vi) for any ranking claim, the number of detectors and events and a calibrated test.
 
-Items (ii)–(iv) need only the continuous data that both benchmarks already publish.
+Items (ii)–(v) need only the continuous data that PreDist and CARE already publish.
 
 ## 6.3 Limitations
 
-- **Labels.** The absence of a fault report does not guarantee fault-free operation. Measured false-alarm rates are therefore upper bounds.
-- **Event counts.** Fault events are few (29 on PreDist, 45 on CARE), and confidence intervals are wide.
-- **Ranking claims.** The ranking analysis is underpowered. Its main contrast is not established under calibrated tests. Some panel members are close variants, so the seeds do not give fully independent replications. Only four panel members are stochastic.
-- **Detector coverage.** The panel does not include a large pretrained foundation model.
-- **Prior use of the data.** Both datasets had been used in earlier development rounds of this project, so all analyses here are pre-registered but exploratory, not blind.
-- **Excluded manufacturer.** The second PreDist manufacturer was excluded because an earlier locked test on it was evaluated more than once.
-- **Leakage fix.** Correcting a leak in the legacy PreDist exclusion rule changed individual detector results. One detector's recall changed by 4 of 28 faults. The direction of every conclusion was unchanged, and we report the leak-free numbers as primary.
-- **Budget level.** We know of no published operator source for a tolerable alarm budget. Two false alarms per asset-year is therefore an assumption, not an operator requirement.
+- **Labels.** The absence of a fault report does not guarantee fault-free operation, so measured false-alarm rates are upper bounds.
+- **Event counts.** Fault events are few (29 and 45), and intervals are wide.
+- **Ranking analysis.** It is underpowered, and its contrasts are not established under calibrated tests. Panel members within a family are related, and only four detectors are stochastic, so seeds are not independent replications.
+- **Panel coverage.** The panel does not include a large pretrained time-series foundation model [37].
+- **Prior use of the data.** Both datasets were used in earlier development rounds of this project, so the analyses are pre-registered but exploratory, not blind.
+- **Second manufacturer.** The second PreDist manufacturer is excluded because an earlier locked test on it was evaluated more than once.
+- **Leak correction.** Correcting the legacy PreDist exclusion rule changed some individual detector results; one detector's recall changed by 4 of 28 faults. Every conclusion kept its direction, and leak-free numbers are primary.
+- **Budget.** No operator source gives a tolerable false-alarm budget per asset, so results are reported across budgets.
 
 # 7. Conclusions
 
-On two public energy benchmarks and 15–17 detectors, the balanced event-window view and the continuous, threshold-fixed view describe different detectors. Benchmark-chosen thresholds imply false-alarm burdens of 6.7–16.7 alarms per turbine-year and 83–176 alarm days per substation-year. Curated normal periods attract a fifth to two-fifths of the alarms of ordinary operation, so benchmark precision is inflated beyond the base-rate effect. Out-of-sample thresholds bring benchmark rankings closer to deployment rankings in every seed and on both datasets. With current benchmark sizes, however, this ranking effect cannot be established under calibrated tests. Reporting recall at a false-alarm budget in continuous replay, with thresholds chosen out of sample and random normal windows as controls, would make benchmark results meaningful for operators.
+On two public energy benchmarks and 15–17 detectors, the balanced event-window view and the continuous, threshold-fixed view describe different detectors.
+
+- Benchmark-chosen thresholds imply 6.7–16.7 false alarms per turbine-year and 83–176 false-alarm days per substation-year.
+- Curated normal periods draw a fifth to two-fifths of the alarms of ordinary operation.
+- The benchmark winner is outside the deployment top three at most budgets.
+- Out-of-sample thresholds bring rankings closer in every seed, but current benchmark sizes cannot establish this effect under calibrated tests.
+
+Reporting recall across false-alarm budgets in continuous replay, with out-of-sample thresholds and random normal windows as controls, would make fault-detection benchmarks informative for the operators they are meant to serve.
 
 # Figures
 
-![**Fig. 1.** Kendall's τ between each protocol cell and the deployment-like ranking (CH), seed 0, with 95% cluster-bootstrap intervals. Orange: benchmark practice (ET). Hollow markers: PreDist leak-free point estimates (primary). The calibrated tests of Amendment A1 do not establish the EH − ET difference (Table 3).](figures/fig2_tau_by_cell.png)
+![**Fig. 1.** Study design: the same online detector scores are evaluated under four protocols. ET is current benchmark practice and CH the deployment-like reference.](figures/fig1_protocol_design.png)
 
-![**Fig. 2.** Benchmark score (ET, event F0.5 with thresholds tuned on the evaluated events) against deployment-like recall (CH) for every detector, seed 0. The best benchmark detector is not the best deployed detector on either dataset.](figures/fig3_benchmark_vs_deployment.png)
+![**Fig. 2.** Kendall's τ between each protocol cell and the deployment-like ranking (CH, B = 2), seed 0, with 95% cluster-bootstrap intervals. PreDist leak-free; hollow markers: legacy exclusion rule. Under calibrated tests (Table 3) the differences between cells are not established.](figures/fig2_tau_by_cell.png)
 
-![**Fig. 3.** Selection effect: the ratio of each detector's alarm-hit rate on curated normal events to its rate on 2,000 random normal windows, at its held-out B = 2 operating point. Values below 1 mean the curated normal periods are quieter than ordinary operation. PreDist leak-free.](figures/fig4_selection_effect.png)
+![**Fig. 3.** Benchmark score (ET) against deployment-like recall (CH, B = 2) for every detector, seed 0.](figures/fig3_benchmark_vs_deployment.png)
 
-![**Fig. 4.** One-sided p-values of the pre-registered percentile-bootstrap tests per seed (dashed line: 0.05). PreDist seeds use the legacy exclusion rule. Under the calibrated tests (Table 3) these effects are not confirmed.](figures/fig5_seed_robustness.png)
+![**Fig. 4.** Selection effect: each detector's alarm-hit rate on curated normal events divided by its rate on 2,000 random normal windows, at its held-out B = 2 point. Values below 1 mean the curated periods are quieter than ordinary operation. PreDist leak-free.](figures/fig4_selection_effect.png)
+
+![**Fig. 5.** Deployment-like recall across false-alarm budgets, with thresholds chosen on held-out assets, seed 0. Orange: the detector with the best benchmark score; blue: the detector with the best mean recall over budgets; grey: all other detectors.](figures/fig5_operator_budget_curves.png)
+
+![**Fig. 6.** Per-seed one-sided p-values of the pre-registered percentile-bootstrap tests (dashed line: 0.05). PreDist seeds use the legacy exclusion rule. These p-values are biased low; see Table 3 for the calibrated tests.](figures/fig5_seed_robustness.png)
 
 # Declarations
 
-**Data availability.** PreDist (doi:10.5281/zenodo.19496480) and CARE to Compare (Zenodo record 14958989) are public. All code, pre-registrations, logs and result tables will be archived with a DOI on Zenodo upon acceptance [to be created by the authors].
+**Data availability.** PreDist (doi:10.5281/zenodo.19496480) and CARE to Compare (Zenodo record 14958989) are public. All code, pre-registrations with commit history, logs and result tables will be archived with a DOI on Zenodo upon acceptance [to be created by the authors].
 
 **CRediT author statement.** [To be completed by the authors.]
 
@@ -383,3 +432,9 @@ On two public energy benchmarks and 15–17 detectors, the balanced event-window
 [33] Gadd H., Werner S., Achieving low return temperatures from district heating substations, Applied Energy, 136 (2014) 59-67. https://doi.org/10.1016/j.apenergy.2014.09.022
 
 [34] Efron B., Bootstrap Methods: Another Look at the Jackknife, The Annals of Statistics, 7 (1979) 1-26. https://doi.org/10.1214/aos/1176344552
+
+[35] Reising D.V.C., Downs J.L., Bayn D., Human Performance Models for Response to Alarm Notifications in the Process Industries: An Industrial Case Study, Proceedings of the Human Factors and Ergonomics Society Annual Meeting, 48 (2004) 1189-1193. https://doi.org/10.1177/154193120404801009
+
+[36] Goetz C., Pragmatic Analytics of Control System Alarms for Improved Drilling Performance and Equipment Maintenance, SPE/IADC Drilling Conference and Exhibition (2017) D031S018R004. https://doi.org/10.2118/184659-MS
+
+[37] Tahavori M., Shaker H.R., Time-series foundation models for energy infrastructure: Evidence and requirements for digital-twin-grade integration, Energy and AI, 26 (2026) 100959. https://doi.org/10.1016/j.egyai.2026.100959

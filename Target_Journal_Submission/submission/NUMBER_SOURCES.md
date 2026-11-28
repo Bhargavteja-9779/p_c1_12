@@ -14,3 +14,13 @@
 | Leak: 4/588 refits, subs 4 and 7; lof_pca CH changes by 4/28 | results/leak_sensitivity/affected_m1.csv, compare.csv, verdict.json |
 | Dataset sizes (35 substations, 144 sub-yr, 29 faults, 35 normal events; 36 turbines, 95 events, 45 anomalies) | results/dataset_summary.md; plan_v2 summary.json (n_assets, n_events, n_fault_events) |
 | References [1]–[34] | submission/references_crossref.txt (Crossref API; [7] DataCite), built by DOI on 2026-11-25 |
+
+## Added in version 2 (2026-11-28)
+| Number(s) | Source file |
+|---|---|
+| Benchmark-winner deployment ranks (15/12/13/3/2 PreDist leak-free; 4/4/4/4/7 CARE), outside top-3 at 60-100% of budgets, realised FA medians (0.33/0.82/1.66; 1.84/1.84/2.20), expert rule 0.29 at B <= 4 | code/results/plan_v2/amendment_A2/{predist1_leakfree,care_primary,predist1_legacy}_seed*.json and *_cells.csv |
+| tau(ET,CHA) CARE -0.06..0.12, PreDist 0.43 (legacy 0.30-0.49); A2 p-values; LOFO counts | same A2 JSON files |
+| Leak-free T1/T2 (0.060/0.18; 0.007/0.092) | code/results/plan_v2/amendment_A1/tests.csv, summary.json (re-run 2026-11-28 with leak-free bootstrap) |
+| Leak-free seeds 2-3 H7d ratios 0.18-0.23 | code/results/leak_sensitivity/leakfree_outputs/seed{2,3}/summary.json |
+| Alarm-rate guidance (EEMUA via [35], YA-711 via [36]); review [37] | literature/prior_art_recheck_2026-11-28.md; Crossref-verified in references_crossref.txt |
+| Fig. 1 (schematic), Fig. 5 (budget curves) | scripts/make_fig1_schematic.py; scripts/make_fig_operator_curves.py leakfree |
