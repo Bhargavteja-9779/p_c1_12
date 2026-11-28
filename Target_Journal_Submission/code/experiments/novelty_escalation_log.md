@@ -725,3 +725,10 @@ Panel seed-0 scores of subs 4 and 7 rescored with PREDIST_EXCL_RULE=leakfree; pl
 isolated root. cells.csv, summary.json and selection_per_detector.csv identical to the committed leak-free outputs
 (produced on another container 2026-11-25). bootstrap.csv (not saved then) added to leakfree_outputs/seed0.
 Leak-free seed 2 done by the chain (03:49). Seed 1 failed (race with a duplicate chain, killed); re-run pending.
+
+### 2026-11-28 ~04:20 UTC — A1 + A2 on leak-free PreDist seed 0 (primary)
+A1 (now computable with the regenerated leak-free bootstrap): H7a T1 0.060, T2 0.184; H7b T1 0.0070, T2 0.092.
+Holm T1 rejects only PreDist H7b; Holm T2 rejects nothing -> no test "confirmed under A1" (unchanged verdict).
+A2 leak-free seed 0: tau(ET,CHA) 0.43, tau(EH,CHA) 0.48, tau(CT,CHA) 0.72; H9a p 0.410, H9b p 0.162 (seed 2: 0.366,
+0.153). Benchmark winner loop3s ranks 15/12/13/3/2 of 17 by deployment recall at B 0.5/1/2/4/8 (outside top-3 at 3/5
+budgets); deployment winner at B <= 1 is the expert rule (recall 0.286). Realised held-out FA median 0.33/0.82/1.66/3.08/5.39.

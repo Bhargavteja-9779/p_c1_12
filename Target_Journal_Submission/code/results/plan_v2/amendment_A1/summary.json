@@ -12,7 +12,7 @@
     "dataset": "predist1",
     "hyp": "H7a",
     "p_prereg": 0.017,
-    "p_T1": NaN,
+    "p_T1": 0.06046976511744128,
     "p_T2": 0.18439078046097696
    },
    {
@@ -26,11 +26,16 @@
     "dataset": "predist1",
     "hyp": "H7b",
     "p_prereg": 0.012,
-    "p_T1": NaN,
+    "p_T1": 0.0069965017491254375,
     "p_T2": 0.09179541022948852
    }
   ],
-  "holm_p_T1": "not computable (bootstrap missing for this version)",
+  "holm_p_T1": {
+   "care_H7a": false,
+   "predist1_H7a": false,
+   "care_H7b": false,
+   "predist1_H7b": true
+  },
   "holm_p_T2": {
    "care_H7a": false,
    "predist1_H7a": false,
@@ -85,8 +90,8 @@
  "robustness": {
   "care_primary_H7a": "0/5 seeds (T2 and T1 < 0.05)",
   "care_primary_H7b": "0/5 seeds (T2 and T1 < 0.05)",
-  "predist1_leakfree_H7a": "0/1 seeds (T2 only < 0.05)",
-  "predist1_leakfree_H7b": "0/1 seeds (T2 only < 0.05)",
+  "predist1_leakfree_H7a": "0/3 seeds (T2 and T1 < 0.05)",
+  "predist1_leakfree_H7b": "0/3 seeds (T2 and T1 < 0.05)",
   "predist1_legacy_H7a": "2/5 seeds (T2 and T1 < 0.05)",
   "predist1_legacy_H7b": "3/5 seeds (T2 and T1 < 0.05)"
  }

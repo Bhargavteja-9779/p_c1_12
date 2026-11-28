@@ -12,8 +12,8 @@ LBL = {"ET": "Event windows,\ntest-tuned\nthresholds", "EH": "Event windows,\nou
        "CT": "Continuous,\ntest-tuned\nthresholds"}
 
 # Fig 2: Kendall tau with deployment-like reference (CH), per cell, bootstrap 95% CI.
-# PreDist: legacy run carries the bootstrap file (filled marker + CI); leak-free primary point = hollow marker.
-F2 = {"PreDist (district heating)": (f"{R}/plan_v2/predist1/seed0", f"{R}/leak_sensitivity/leakfree_outputs/seed0"),
+# PreDist: leak-free primary (filled + CI); legacy exclusion rule = hollow sensitivity marker.
+F2 = {"PreDist (district heating)": (f"{R}/leak_sensitivity/leakfree_outputs/seed0", f"{R}/plan_v2/predist1/seed0"),
       "CARE (wind turbines)": (f"{R}/plan_v2/care/seed0", None)}
 fig, axs = plt.subplots(1, 2, figsize=(7.2, 3.1), sharey=True)
 for ax, (name, (d, lf)) in zip(axs, F2.items()):
@@ -32,7 +32,7 @@ for ax, (name, (d, lf)) in zip(axs, F2.items()):
     ax.set_xlim(-0.5, 2.8); ax.axhline(0, color=INK2, lw=0.8); ax.set_ylim(-0.5, 1.05)
     ax.yaxis.grid(True, color=GRID, lw=0.8); ax.set_axisbelow(True)
     ax.set_title(f"{name}\n{s['n_detectors']} detectors, {s['n_assets']} assets, seed 0", fontsize=9, color=INK)
-axs[0].plot([], [], "o", color=INK2, label="estimate, 95% bootstrap CI"); axs[0].plot([], [], "o", mfc="white", mec=INK2, label="leak-free (primary), point")
+axs[0].plot([], [], "o", color=INK2, label="estimate, 95% bootstrap CI"); axs[0].plot([], [], "o", mfc="white", mec=INK2, label="legacy exclusion rule (sensitivity)")
 axs[0].legend(fontsize=7, frameon=False, loc="lower right")
 axs[0].set_ylabel("Kendall's tau with the\ndeployment-like ranking (CH)")
 fig.tight_layout(); fig.savefig(f"{OUT}/fig2_tau_by_cell.png", dpi=300); fig.savefig(f"{OUT}/fig2_tau_by_cell.pdf")

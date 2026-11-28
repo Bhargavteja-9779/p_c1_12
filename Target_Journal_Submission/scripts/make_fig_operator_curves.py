@@ -7,7 +7,7 @@ BLUE, ORANGE, INK, INK2, GRID, GRAY = "#257de0", "#f47230", "#191919", "#666666"
 plt.rcParams.update({"font.size": 9, "axes.spines.top": False, "axes.spines.right": False, "axes.edgecolor": INK2,
                      "xtick.color": INK2, "ytick.color": INK2})
 fig, axs = plt.subplots(1, 2, figsize=(7.2, 3.2), sharey=True)
-for ax, (name, f) in zip(axs, [(f"PreDist ({V} rule)", f"{D}/predist1_{V}_seed0_cells.csv"), ("CARE", f"{D}/care_primary_seed0_cells.csv")]):
+for ax, (name, f) in zip(axs, [(f"PreDist ({ {'leakfree': 'leak-free'}.get(V, V)} rule)", f"{D}/predist1_{V}_seed0_cells.csv"), ("CARE", f"{D}/care_primary_seed0_cells.csv")]):
     X = pd.read_csv(f); be = X.loc[X.ET.idxmax()]; de = X.loc[X.CHA.idxmax()]
     for _, r in X.iterrows():
         ax.plot(BS, [r[f"CH_{b}"] for b in BS], color=GRAY, lw=1, zorder=1)
