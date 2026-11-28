@@ -719,3 +719,9 @@ Descriptive (robust across all 10 runs):
     Realised held-out FA (median over detectors) at B 0.5/1/2/4/8: CARE s0 1.84/1.84/2.20/3.39/6.76 (overshoot at
     low budgets); PreDist s0 0.33/0.81/1.66/2.87/5.73 (within budget).
  D2 leave-one-family-out: H9a diff positive in 25/25 CARE and 23/30 PreDist family drops; H9b positive in 25/25 and 30/30.
+
+### 2026-11-28 03:58 UTC — leak-free PreDist seed 0 re-generated on a second container (G9)
+Panel seed-0 scores of subs 4 and 7 rescored with PREDIST_EXCL_RULE=leakfree; plan_v2_analysis.py predist1 0 run in an
+isolated root. cells.csv, summary.json and selection_per_detector.csv identical to the committed leak-free outputs
+(produced on another container 2026-11-25). bootstrap.csv (not saved then) added to leakfree_outputs/seed0.
+Leak-free seed 2 done by the chain (03:49). Seed 1 failed (race with a duplicate chain, killed); re-run pending.
