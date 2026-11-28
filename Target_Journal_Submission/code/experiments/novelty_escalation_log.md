@@ -705,7 +705,7 @@ a tie-bound reference (1-12 detected faults), rank-agreement contrasts are under
 descriptive tau pattern (EH > ET on both datasets in 10/10 seed-dataset cells), protocol gap / FA burden at
 benchmark-chosen thresholds, and the selection effect (H7d).
 
-### 2026-11-28 ~04:30 UTC — plan_v2 Amendment A2 RESULTS (pre-registered c881aea; results/plan_v2/amendment_A2/)
+### 2026-11-28 ~03:38 UTC — plan_v2 Amendment A2 RESULTS (pre-registered c881aea; results/plan_v2/amendment_A2/)
 Area-like reference CHA = mean CH recall over B in {0.5,1,2,4,8}. Label-swap one-sided p (20,000 perms):
  CARE seeds 0-4: H9a p 0.158/0.125/0.019/0.053/0.015; H9b p 0.110/0.092/0.056/0.138/0.070.
  PreDist LEGACY seeds 0-4 (leak-free pending): H9a p 0.355/0.344/0.451/0.531/0.399; H9b p 0.183/0.158/0.243/0.222/0.065.
