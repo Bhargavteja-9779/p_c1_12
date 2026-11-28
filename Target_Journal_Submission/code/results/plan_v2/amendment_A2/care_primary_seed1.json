@@ -1,0 +1,105 @@
+{
+ "dataset": "care",
+ "seed": 1,
+ "version": "primary",
+ "n_detectors": 15,
+ "tau_ET_CHA": 0.03827795011754764,
+ "tau_EH_CHA": 0.4476190476190477,
+ "tau_CT_CHA": 0.5143444998736397,
+ "H9a_diff": 0.40934109750150005,
+ "H9a_p_labelswap": 0.12464376781160942,
+ "H9b_diff": 0.4760665497560921,
+ "H9b_p_labelswap": 0.09249537523123844,
+ "D1_regret": [
+  {
+   "B": 0.5,
+   "bench_best": "z_mean",
+   "bench_best_CH": 0.15555555555555556,
+   "best_CH": 0.24444444444444444,
+   "best_det": "ae_cond",
+   "bench_best_rank": 4,
+   "median_FA_realised": 1.7439498986199227
+  },
+  {
+   "B": 1.0,
+   "bench_best": "z_mean",
+   "bench_best_CH": 0.15555555555555556,
+   "best_CH": 0.24444444444444444,
+   "best_det": "ae_cond",
+   "bench_best_rank": 4,
+   "median_FA_realised": 1.81561907253581
+  },
+  {
+   "B": 2.0,
+   "bench_best": "z_mean",
+   "bench_best_CH": 0.15555555555555556,
+   "best_CH": 0.26666666666666666,
+   "best_det": "ae_cond",
+   "bench_best_rank": 4,
+   "median_FA_realised": 2.197854666753875
+  },
+  {
+   "B": 4.0,
+   "bench_best": "z_mean",
+   "bench_best_CH": 0.2222222222222222,
+   "best_CH": 0.3111111111111111,
+   "best_det": "z_max",
+   "bench_best_rank": 3,
+   "median_FA_realised": 3.392340898685329
+  },
+  {
+   "B": 8.0,
+   "bench_best": "z_mean",
+   "bench_best_CH": 0.26666666666666666,
+   "best_CH": 0.4888888888888889,
+   "best_det": "pca_t2",
+   "bench_best_rank": 6,
+   "median_FA_realised": 7.76416050755445
+  }
+ ],
+ "D1_share_budgets_bench_best_outside_top3": 0.8,
+ "D2_leave_one_family_out": {
+  "zscore": {
+   "H9a_diff": 0.1111111111111111,
+   "H9b_diff": 0.501280411827603
+  },
+  "linear": {
+   "H9a_diff": 0.4078137512056494,
+   "H9b_diff": 0.2722605646881403
+  },
+  "density": {
+   "H9a_diff": 0.38215333762542414,
+   "H9b_diff": 0.36194504344357536
+  },
+  "physics_expert": {
+   "H9a_diff": 0.5162399908307741,
+   "H9b_diff": 0.48653609432523287
+  },
+  "autoencoder": {
+   "H9a_diff": 0.5128205128205128,
+   "H9b_diff": 0.7050072461277831
+  }
+ },
+ "D3_family_median": {
+  "zscore": {
+   "ET": 0.5958549222797928,
+   "CHA": 0.16444444444444445
+  },
+  "linear": {
+   "ET": 0.6204379562043796,
+   "CHA": 0.2088888888888889
+  },
+  "density": {
+   "ET": 0.5993107201160893,
+   "CHA": 0.14
+  },
+  "physics_expert": {
+   "ET": 0.6611570247933883,
+   "CHA": 0.13333333333333336
+  },
+  "autoencoder": {
+   "ET": 0.6666666666666667,
+   "CHA": 0.1622222222222222
+  }
+ }
+}
