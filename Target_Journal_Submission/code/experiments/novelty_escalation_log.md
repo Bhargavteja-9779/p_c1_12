@@ -704,3 +704,18 @@ that the threshold-source or window-design effect on RANKINGS is statistically e
 a tie-bound reference (1-12 detected faults), rank-agreement contrasts are underpowered. What remains claimable:
 descriptive tau pattern (EH > ET on both datasets in 10/10 seed-dataset cells), protocol gap / FA burden at
 benchmark-chosen thresholds, and the selection effect (H7d).
+
+### 2026-11-28 ~04:30 UTC — plan_v2 Amendment A2 RESULTS (pre-registered c881aea; results/plan_v2/amendment_A2/)
+Area-like reference CHA = mean CH recall over B in {0.5,1,2,4,8}. Label-swap one-sided p (20,000 perms):
+ CARE seeds 0-4: H9a p 0.158/0.125/0.019/0.053/0.015; H9b p 0.110/0.092/0.056/0.138/0.070.
+ PreDist LEGACY seeds 0-4 (leak-free pending): H9a p 0.355/0.344/0.451/0.531/0.399; H9b p 0.183/0.158/0.243/0.222/0.065.
+ Holm seed 0 (CARE + PreDist legacy): nothing rejected. Robustness (>= 4/5 needed): CARE H9a 2/5, H9b 0/5; PreDist 0/5.
+ -> H9a, H9b NOT supported. Ranking-mechanism claims remain unestablished (consistent with A1).
+Descriptive (robust across all 10 runs):
+ D0 tau(ET, CHA): CARE -0.06..0.12 (benchmark ranking ~uninformative about multi-budget deployment ranking);
+    PreDist 0.30..0.49. tau(EH,CHA) CARE 0.44..0.65; tau(CT,CHA) CARE 0.43..0.51, PreDist 0.59..0.73.
+ D1 benchmark-best detector outside the deployment top-3 at 60-100% of the 5 budgets in every run
+    (PreDist s0: pca_spe rank 6/8/10/13/2 at B 0.5/1/2/4/8; CARE s0: z_mean rank 4/4/4/4/7).
+    Realised held-out FA (median over detectors) at B 0.5/1/2/4/8: CARE s0 1.84/1.84/2.20/3.39/6.76 (overshoot at
+    low budgets); PreDist s0 0.33/0.81/1.66/2.87/5.73 (within budget).
+ D2 leave-one-family-out: H9a diff positive in 25/25 CARE and 23/30 PreDist family drops; H9b positive in 25/25 and 30/30.
